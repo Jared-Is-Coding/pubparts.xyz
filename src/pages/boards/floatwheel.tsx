@@ -1,9 +1,9 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import * as React from "react"
 import { Container } from "react-bootstrap"
-import Footer from "../components/Footer"
-import MetaData from "../components/MetaData"
-import Navbar from "../components/Navbar"
+import Footer from "../../components/Footer"
+import MetaData from "../../components/MetaData"
+import Navbar from "../../components/Navbar"
 
 export const Head: HeadFC = () => (
     <>
@@ -19,7 +19,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Navbar isHomepage={true} />
 
                 <h1 className="flex-center">
-                    PubParts.xyz
+                    Floatwheel Frame Parts
                 </h1>
 
                 <p className="tagline flex-center">

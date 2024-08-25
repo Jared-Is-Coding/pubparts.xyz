@@ -1,29 +1,47 @@
 {
-  "name": "pubparts.xyz",
-  "version": "1.0.0",
-  "private": true,
-  "description": "pubparts.xyz",
-  "author": "Jared Harrison",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "gatsby": "^5.13.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.19",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "typescript": "^5.3.3"
-  }
+    "name": "pubparts.xyz",
+    "version": "1.0.0",
+    "private": true,
+    "license": "Apache-2.0",
+    "description": "pubparts.xyz",
+    "author": "Jared Harrison <jared@jarediscoding.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Jared-Is-Coding/pubparts.xyz"
+    },
+    "bugs": {
+        "url": "https://github.com/Jared-Is-Coding/pubparts.xyz/issues"
+    },
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "gatsby": "^5.13.5",
+        "gatsby-plugin-robots-txt": "^1.8.0",
+        "gatsby-plugin-sass": "^6.13.1",
+        "gatsby-plugin-sitemap": "^6.13.1",
+        "postcss": "^8.4.41",
+        "react": "^18.3.1",
+        "react-bootstrap": "^2.10.4",
+        "react-dom": "^18.3.1",
+        "react-icons": "^5.3.0",
+        "sass": "^1.77.8"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.19",
+        "@types/react": "^18.2.55",
+        "@types/react-dom": "^18.2.19",
+        "typescript": "^5.3.3"
+    },
+    "overrides": {
+        "@parcel/watcher": "~2.1.0"
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    }
 }

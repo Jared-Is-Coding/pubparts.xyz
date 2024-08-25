@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.card {
+    background-color: $tertiary-color !important;
+    border-radius: $card-border-radius !important;
+    margin-bottom: 20px;
+
+    img {
+        aspect-ratio: 16/9;
+    }
+
+    .card-body {
+        min-height: 3em;
+    }
+}
+
+.searchBarField {
+    padding-bottom: 20px;
+}

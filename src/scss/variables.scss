@@ -1,0 +1,24 @@
+/**
+ * ------------------
+ *   Root Variables
+ * ------------------
+ **/
+
+$root-font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+$site-font-family: "Moderustic", $root-font-family;
+$h1-font-family: "Ubuntu", $site-font-family;
+$site-font-size: calc(16px + 0.390625vw);
+$h1-font-size: 200%;
+$h2-font-size: 160%;
+$h3-font-size: 130%;
+$brand-font-size: 175%;
+
+$primary-color: #000000;
+$secondary-color: #ffffff;
+$secondary-color-muted: #0c2525;
+$tertiary-color: #081818;
+$link-color: #9fffff;
+$card-background-color: $secondary-color;
+
+$card-border-radius: 12px;
+$carousel-border-radius: 40px;

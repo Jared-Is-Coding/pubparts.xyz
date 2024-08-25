@@ -1,0 +1,66 @@
+/**
+ * ------------------
+ *     Font Family
+ * ------------------
+ **/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: $site-font-family !important;
+    font-size: $site-font-size !important;
+}
+
+h1 {
+    font-family: $h1-font-family !important;
+    font-size: $h1-font-size !important;
+}
+
+h2 {
+    font-size: $h2-font-size !important;
+}
+
+h3 {
+    font-size: $h3-font-size !important;
+    font-weight: bold !important;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-family: $h1-font-family !important;
+    font-size: $brand-font-size !important;
+}
+
+
+/**
+ * ------------------
+ *       Sizing
+ * ------------------
+ **/
+
+h1 {
+    padding-top: 50px;
+}
+
+h2 {
+    padding-top: 0;
+    margin-top: calc(20px + 1em) !important;
+    margin-bottom: calc(20px + 1em) !important;
+}
+
+h3 {
+    padding-top: 25px;
+}
+
+footer {
+    height: 10%;
+    margin-top: calc(20px + 1.2vh);
+    margin-bottom: 2%;
+}

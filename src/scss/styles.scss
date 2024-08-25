@@ -1,0 +1,134 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./colors.scss";
+
+/**
+ * ------------------
+ *    Page Elements
+ * ------------------
+ **/
+
+html {
+    height: 100%;
+}
+
+nav.navbar {
+    background: $primary-color;
+}
+
+#site-navbar {
+    flex-direction: row-reverse;
+
+    .navbar-nav a {
+        text-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    div#site-navbar.navbar-collapse.collapse.show {
+        border-bottom: dashed 2px;
+    }
+}
+
+.dropdown .dropdown-menu {
+    -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    border: 0;
+}
+
+.dropdown.show .dropdown-menu {
+    -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+
+    max-height: 190px;
+    opacity: 1;
+    visibility: visible;
+    border: solid 1px;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+
+    .tagline {
+        font-weight: bold;
+    }
+}
+
+body {
+    padding-top: 70px;
+}
+
+main {
+    padding-bottom: 10px;
+}
+
+footer {
+    margin: 30px 0px 0px 0px;
+    padding-bottom: 30px;
+
+    .footerTopBar {
+        border-top: solid 3px $card-background-color;
+    }
+}
+  
+
+/**
+ * ------------------
+ *     Containers
+ * ------------------
+ **/
+
+.flex-col {
+	display : flex;
+	flex-direction : column;
+
+    > * {
+        padding: 5px;
+    }
+}
+
+.flex-row {
+	display : flex;
+	flex-direction : row;
+
+    > * {
+        padding: 5px;
+    }
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.flex-top {
+    align-self: baseline;
+}
+
+.row-item {
+    &:not(:first-child) {
+        margin-left: 15px;
+    }
+}

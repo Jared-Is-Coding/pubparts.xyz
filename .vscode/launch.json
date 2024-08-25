@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Gatsby develop",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceRoot}/node_modules/.bin/gatsby",
+        "windows": {
+            // https://github.com/gatsbyjs/gatsby/issues/27355
+            "program": "${workspaceRoot}/node_modules/gatsby/dist/bin/gatsby"
+        },
+        "args": ["develop"],
+        "env": {
+          "PARCEL_WORKERS": "0",
+          "GATSBY_CPU_COUNT": "1",
+        },
+        "runtimeArgs": ["--nolazy"],
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Gatsby build",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceRoot}/node_modules/.bin/gatsby",
+        "windows": {
+            // https://github.com/gatsbyjs/gatsby/issues/27355
+            "program": "${workspaceRoot}/node_modules/gatsby/dist/bin/gatsby"
+        },
+        "args": ["build"],
+        "env": {
+          "PARCEL_WORKERS": "0",
+          "GATSBY_CPU_COUNT": "1",
+        },
+        "runtimeArgs": ["--nolazy"],
+        "console": "integratedTerminal"
+      }
+    ]
+  }

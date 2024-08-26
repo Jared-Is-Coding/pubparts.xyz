@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
+import { PartSubmissionEmail } from "../util/SiteVariables"
 
 type NavbarProps = {
     isHomepage?: boolean
@@ -32,7 +33,7 @@ export default ({isHomepage}: NavbarProps) => (
                         <NavDropdown.Item href="/boards/xr" target="_self">XR/+</NavDropdown.Item>
                         <NavDropdown.Item href="/boards/misc" target="_self">Misc Parts</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href={`mailto:pubparts@jarediscoding.com?subject=PubParts.xyz | Item Submission or Update&body=Name of item:%0D%0AItem frame type (XR/GT/etc...):%0D%0ALink to site where item is posted:`}>Submit New/Updated Part</Nav.Link>
+                    <Nav.Link href={`mailto:${PartSubmissionEmail}`}>Contribute</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Container>

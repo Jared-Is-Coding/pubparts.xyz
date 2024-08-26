@@ -1,9 +1,10 @@
-import { type HeadFC, type PageProps } from "gatsby"
+import { Link, type HeadFC, type PageProps } from "gatsby"
 import * as React from "react"
 import { Button, Col, Container, Row } from "react-bootstrap"
 import Footer from "../components/Footer"
 import MetaData from "../components/MetaData"
 import Navbar from "../components/Navbar"
+import { PartSubmissionEmail } from "../util/SiteVariables"
 
 export const Head: HeadFC = () => (
     <>
@@ -30,7 +31,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <main>
                 <Container>
                     <p>A collection of open source or otherwise aftermarket OneWheel parts.</p>
-                    <p>Your contributions are welcome (and encouraged) to help make this a well-stocked library!</p>
+                    <p>Your <a href={`mailto:${PartSubmissionEmail}`}>contributions</a> are welcome (and encouraged) to help make this a well-stocked library!</p>
                     <p>Here's a list of the current frame types I've started indexing:</p>
 
                     <Row className="flex-center flex-row">
@@ -60,7 +61,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             md={{span: 4, offset: 0}}
                             lg={{span: 2, offset: 0}}
                             className="flex-center flex-top">
-                            <Button className="full-width" href="/boards/xr" variant="info">XR</Button>
+                            <Button className="full-width" href="/boards/xr" variant="info">XR/+</Button>
                         </Col>
                         <Col
                             xs={{span: 6, offset: 0}}

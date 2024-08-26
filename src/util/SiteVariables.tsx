@@ -1,0 +1,2 @@
+// General Links
+export const PartSubmissionEmail = "pubparts@jarediscoding.com?subject=PubParts.xyz | Item Submission or Update&body=Name of item:%0D%0AItem frame type (XR/GT/etc...):%0D%0ALink to site where item is posted:"

@@ -5,8 +5,6 @@ export default [
         typeOfPart: "Fender",
         imageSrc: "https://media.printables.com/media/prints/668887/images/5261871_d0e99459-37d6-4fbd-a28d-72cd83006514_2c154b38-29fd-40cf-8421-e9c7e3f79575/thumbs/inside/1280x960/jpg/make3.webp",
         externalUrl: "https://www.printables.com/model/668887",
-        zipUrl: "/files/boards/pint/onewheel-pint-tfl-standard-wtf-rails-to-stock-fender-adapter-model_files.zip",
-        zipLastUpdated: "2024-08-26"
     },
     {
         title: "GT40 Fender Plug Protector",
@@ -14,8 +12,6 @@ export default [
         typeOfPart: "Fender",
         imageSrc: "https://media.printables.com/media/prints/662651/images/5219377_4ae6bce8-5941-4590-a196-09ff4c225a08_9a8db6f7-426e-488b-96ef-49de39aae118/thumbs/inside/1280x960/jpg/make2.webp",
         externalUrl: "https://www.printables.com/model/662651",
-        zipUrl: "/files/boards/pint/onewheel-gt40-fender-plug-protector-model_files.zip",
-        zipLastUpdated: "2024-08-26"
     },
     {
         title: "Controller Gasket",
@@ -37,6 +33,13 @@ export default [
         typeOfPart: "Battery Box",
         imageSrc: "https://media.printables.com/media/prints/865541/images/6645361_01d1332a-2b28-4620-9876-730c6fdf1f7b_7bd66a14-8bb8-455f-98c5-770d72d1fd37/thumbs/inside/1280x960/webp/99ckkzz_d.webp",
         externalUrl: "https://www.printables.com/model/865541",
+    },
+    {
+        title: "WTF Fender Delete",
+        fabricationMethod: "3d Printed",
+        typeOfPart: "Fender",
+        imageSrc: "https://media.printables.com/media/prints/773955/images/6016708_7d5c9f5e-d8cd-483d-b335-00eb0a4d3d4b_64b703bb-650f-4b37-a000-925ab263212f/thumbs/inside/1280x960/jpeg/img_6913.webp",
+        externalUrl: "https://www.printables.com/model/773955",
     },
     {
         title: "Superflux/XR Pint axle blocks",

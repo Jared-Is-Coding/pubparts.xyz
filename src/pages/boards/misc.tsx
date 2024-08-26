@@ -14,7 +14,7 @@ export const Head: HeadFC = () => (
     <>
         <html lang="en" />
         <MetaData
-            title="Misc Parts | PubParts.xyz"
+            title="VESC Misc Parts | PubParts.xyz"
             description="Open source or otherwise aftermarket parts for no particular board platform" />
     </>
 )
@@ -26,7 +26,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <Navbar />
 
             <h1 className="flex-center">
-                Miscellaneous Parts
+                VESC Miscellaneous Parts
             </h1>
 
             <p className="tagline flex-center">

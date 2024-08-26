@@ -32,7 +32,7 @@ export default ({isHomepage}: NavbarProps) => (
                         <NavDropdown.Item href="/boards/gt" target="_self">GT/GT-S</NavDropdown.Item>
                         <NavDropdown.Item href="/boards/pint" target="_self">Pint/Pint X</NavDropdown.Item>
                         <NavDropdown.Item href="/boards/xr" target="_self">XR/+</NavDropdown.Item>
-                        <NavDropdown.Item href="/boards/misc" target="_self">Misc Parts</NavDropdown.Item>
+                        <NavDropdown.Item href="/boards/misc" target="_self">VESC Misc Parts</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href={`mailto:${PartSubmissionEmail}`}>Contribute</Nav.Link>
                 </Nav>

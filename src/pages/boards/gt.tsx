@@ -7,11 +7,14 @@ import { ItemListSearchbar } from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
 import gtparts from "../../parts/gtparts"
+import "../../scss/pages/items.scss"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="GT Parts | PubParts.xyz" />
+        <MetaData
+            title="GT/GT-S Parts | PubParts.xyz"
+            description="Open source or otherwise aftermarket parts for the GT/GT-S frame platform" />
     </>
 )
 
@@ -22,7 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <Navbar />
 
             <h1 className="flex-center">
-                GT Frame Parts
+                GT/GT-S Frame Parts
             </h1>
 
             <p className="tagline flex-center">

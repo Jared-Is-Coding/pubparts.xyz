@@ -7,11 +7,14 @@ import { ItemListSearchbar } from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
 import floatwheelparts from "../../parts/floatwheelparts"
+import "../../scss/pages/items.scss"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="Floatwheel Parts | PubParts.xyz" />
+        <MetaData
+            title="Floatwheel Parts | PubParts.xyz"
+            description="Open source or otherwise aftermarket parts for the Floatwheel frame platform" />
     </>
 )
 

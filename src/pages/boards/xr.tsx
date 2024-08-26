@@ -12,7 +12,9 @@ import "../../scss/pages/items.scss"
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="XR Parts | PubParts.xyz" />
+        <MetaData
+            title="XR/+ Parts | PubParts.xyz"
+            description="Open source or otherwise aftermarket parts for the XR/+ frame platform" />
     </>
 )
 
@@ -23,7 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Navbar />
 
                 <h1 className="flex-center">
-                    XR Frame Parts
+                    XR/+ Frame Parts
                 </h1>
 
                 <p className="tagline flex-center">

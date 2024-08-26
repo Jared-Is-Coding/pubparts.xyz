@@ -7,11 +7,14 @@ import { ItemListSearchbar } from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
 import pintparts from "../../parts/pintparts"
+import "../../scss/pages/items.scss"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="Pint Parts | PubParts.xyz" />
+        <MetaData
+            title="Pint Parts | PubParts.xyz"
+            description="Open source or otherwise aftermarket parts for the Pint frame platform" />
     </>
 )
 

@@ -11,7 +11,7 @@ import gtparts from "../../parts/gtparts"
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="Home | PubParts.xyz" />
+        <MetaData title="GT Parts | PubParts.xyz" />
     </>
 )
 

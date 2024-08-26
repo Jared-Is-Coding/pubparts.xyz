@@ -11,7 +11,7 @@ import floatwheelparts from "../../parts/floatwheelparts"
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="Home | PubParts.xyz" />
+        <MetaData title="Floatwheel Parts | PubParts.xyz" />
     </>
 )
 

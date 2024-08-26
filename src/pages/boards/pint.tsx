@@ -11,7 +11,7 @@ import pintparts from "../../parts/pintparts"
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="Home | PubParts.xyz" />
+        <MetaData title="Pint Parts | PubParts.xyz" />
     </>
 )
 

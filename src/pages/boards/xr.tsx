@@ -12,7 +12,7 @@ import "../../scss/pages/items.scss"
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="Home | PubParts.xyz" />
+        <MetaData title="XR Parts | PubParts.xyz" />
     </>
 )
 

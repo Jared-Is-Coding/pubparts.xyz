@@ -11,7 +11,7 @@ import miscparts from "../../parts/miscparts"
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="Home | PubParts.xyz" />
+        <MetaData title="Misc Parts | PubParts.xyz" />
     </>
 )
 

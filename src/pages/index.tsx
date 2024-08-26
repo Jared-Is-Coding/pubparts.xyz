@@ -1,4 +1,4 @@
-import { Link, type HeadFC, type PageProps } from "gatsby"
+import { type HeadFC, type PageProps } from "gatsby"
 import * as React from "react"
 import { Button, Col, Container, Row } from "react-bootstrap"
 import Footer from "../components/Footer"

@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Card, Col, Image } from "react-bootstrap"
+import { Card, Col } from "react-bootstrap"
 
 export default (item: itemData, index: number) => (
     <>
@@ -14,14 +14,13 @@ export default (item: itemData, index: number) => (
                     <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
                         <Card.Img variant="top" src={item.imageSrc} />
                     </div>
-                    {/* <Image className="card-img-top" src={item.imageSrc} /> */}
                     <Card.Body>
                         <Card.Title>{item.title}</Card.Title>
                         {item.price &&
                             <Card.Text>
                                 <i>Price: {item.price ?? "???"}</i>
                             </Card.Text>
-                        }
+                        } 
                         {item.externalUrl &&
                             <Card.Link href={item.externalUrl} target="_blank">External Listing</Card.Link>
                         }

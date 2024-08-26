@@ -5,8 +5,13 @@ export default [
         typeOfPart: "Axle Block",
         imageSrc: "https://media.printables.com/media/prints/958730/images/7335410_cf5e5944-b73c-4402-9941-3a71282c36e2_bc9af74d-ceb8-4690-8117-06c01196396c/thumbs/inside/1280x960/png/screenshot_5.webp",
         externalUrl: "https://www.printables.com/model/958730",
-        zipUrl: "/files/boards/gt/onewheel-gt-axle-block-covers-model_files.zip",
-        zipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "Axle Blocks for SuperFlux/XR/Pint Compatible Clamping",
+        fabricationMethod: "CNC",
+        typeOfPart: "Axle Block",
+        imageSrc: "https://media.printables.com/media/prints/891335/images/6867920_de218173-939a-4dbc-96e0-9d69901d460e_317961e5-c34b-4a51-99fa-a964e2bac679/thumbs/inside/1280x960/png/screenshot-2024-05-31-104710.webp",
+        externalUrl: "https://www.printables.com/model/891335",
     },
     {
         title: "Axle Blocks for SuperFlux/XR/Pint Compatible Finned",
@@ -14,8 +19,6 @@ export default [
         typeOfPart: "Axle Block",
         imageSrc: "https://media.printables.com/media/prints/904044/images/6911541_a746e382-396d-4f97-9e21-59fd7d9d2ad8_7c1263ee-7f87-4cba-b622-e6bb27b4365e/thumbs/inside/1280x960/png/image1.webp",
         externalUrl: "https://www.printables.com/model/904044",
-        zipUrl: "/files/boards/gt/onewheel-gt-axle-blocks-for-superfluxxrpint-compatible-finned-model_files.zip",
-        zipLastUpdated: "2024-08-26"
     },
     {
         title: "Axle Blocks for SuperFlux/XR/Pint Compatible",
@@ -37,8 +40,6 @@ export default [
         typeOfPart: "Controller Box",
         imageSrc: "https://media.printables.com/media/prints/874153/images/6707129_52503706-7132-4b3d-b199-3e60fda5c337_b9a3b653-79b7-453a-bc56-4d665ddf5663/thumbs/inside/1280x960/png/screenshot-2024-05-09-103107.webp",
         externalUrl: "https://www.printables.com/model/874153",
-        zipUrl: "/files/boards/gt/gt-pub-box-small-model_files.zip",
-        zipLastUpdated: "2024-08-26"
     },
     {
         title: "PubBox: Controller Box for 24s",

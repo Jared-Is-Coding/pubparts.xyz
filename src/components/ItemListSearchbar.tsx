@@ -1,6 +1,5 @@
 import React, { ChangeEvent, Component } from "react"
 import { Form } from "react-bootstrap"
-import ItemCard from "./ItemCard"
 
 export class ItemListSearchbar extends Component {
     state = {

@@ -43,7 +43,7 @@ export default [
     {
         title: "PubBox: Controller Box for 24s",
         fabricationMethod: "CNC",
-        typeOfPart: "Battery Box",
+        typeOfPart: "Controller Box",
         imageSrc: "https://media.printables.com/media/prints/865564/images/6701264_9eec4bf8-ef38-4534-ab71-cc01c027b962_1d9143a5-1761-47f2-820e-cee9d2f698b0/thumbs/inside/1280x960/png/flttbli1.webp",
         externalUrl: "https://www.printables.com/model/865564"
     },

@@ -1,6 +1,7 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import * as React from "react"
 import { Col, Container, Row } from "react-bootstrap"
+import CopyrightCard from "../../components/CopyrightCard"
 import Footer from "../../components/Footer"
 import ItemCard from "../../components/ItemCard"
 import { ItemListSearchbar } from "../../components/ItemListSearchbar"
@@ -47,6 +48,8 @@ const IndexPage: React.FC<PageProps> = () => {
                         {!!xrparts.length &&
                             xrparts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
                         }
+
+                        <CopyrightCard />
                     </Row>
                 </Container>
             </main>

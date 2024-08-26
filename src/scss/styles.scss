@@ -72,8 +72,9 @@ main {
 }
 
 footer {
-    margin: 30px 0px 0px 0px;
-    padding-bottom: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     .footerTopBar {
         border-top: solid 3px $card-background-color;

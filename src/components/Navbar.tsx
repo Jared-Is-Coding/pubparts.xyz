@@ -26,6 +26,7 @@ export default ({isHomepage}: NavbarProps) => (
             <Navbar.Collapse id="site-navbar">
                 <Nav variant="underline" justify>
                     <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/resources">Resources</Nav.Link>
                     <NavDropdown title="Frame Types" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-frames-dropdown">
                         <NavDropdown.Item href="/boards/floatwheel" target="_self">Floatwheel</NavDropdown.Item>
                         <NavDropdown.Item href="/boards/gt" target="_self">GT/GT-S</NavDropdown.Item>

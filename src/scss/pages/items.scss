@@ -9,6 +9,10 @@
         aspect-ratio: 16/9;
     }
 
+    .card-title {
+        color: $secondary-color;
+    }
+
     .card-body {
         min-height: 3em;
     }

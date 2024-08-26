@@ -6,15 +6,27 @@ type itemData = {
     /**
      * Item price text
      */ 
-    type: "CNC" | "3d Printed"
+    fabricationMethod: "CNC" | "3d Printed"
     /**
-     * Item URL
-     */
-    url: string
+     * Item type text
+     */ 
+    typeOfPart: "Rail" | "Motor" | "Footpad" | "Battery Box" | "Controller Box" | "Bumper" | "Axle Block" | "Miscellaneous" | "Fender"
     /**
      * Image source url
      */
     imageSrc: string
+    /**
+     * Item external URL
+     */
+    externalUrl?: string
+    /**
+     * Item ZIP direct download URL
+     */
+    zipUrl?: string
+    /**
+     * Item ZIP direct download last updated
+     */
+    zipLastUpdated?: string
     /**
      * Item price text
      */ 

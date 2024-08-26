@@ -1,24 +1,35 @@
 import * as React from "react"
-import { Card } from "react-bootstrap"
+import { Card, Col } from "react-bootstrap"
 
-type MerchCardProps = {
-    item: itemData
-}
-
-export default ({item}: MerchCardProps) => (
-    <Card>
-        <Card.Img variant="top" src={item.imageSrc} />
-        <Card.Body>
-            <Card.Title>
-                <a target="_blank" href={item.url}>
-                    {item.title}
-                </a>
-            </Card.Title>
-            {item.price &&
-                <Card.Text>
-                    <i>Price: {item.price ?? "???"}</i>
-                </Card.Text>
-            }
-        </Card.Body>
-    </Card>
+export default (item: itemData, index: number) => (
+    <>
+        <Col
+            xs={{span: 10, offset: 1}}
+            md={{span: 6, offset: 0}}
+            lg={{span: 4, offset: 0}}
+            className="flex-center flex-top searchableItem"
+            key={`merch-card-item-${item.title}-${index}`}
+            partName={`${item.title}`}>
+                <Card>
+                    <Card.Img variant="top" src={item.imageSrc} />
+                    <Card.Body>
+                        <Card.Title>{item.title}</Card.Title>
+                        {item.price &&
+                            <Card.Text>
+                                <i>Price: {item.price ?? "???"}</i>
+                            </Card.Text>
+                        }
+                        {item.externalUrl &&
+                            <Card.Link href={item.externalUrl} target="_blank">External Listing</Card.Link>
+                        }
+                        {item.zipUrl &&
+                            <Card.Link href={item.zipUrl}>ZIP Download</Card.Link>
+                        }
+                        {item.zipUrl && item.zipLastUpdated &&
+                            <Card.Text>ZIP Date: {item.zipLastUpdated}</Card.Text>
+                        }
+                    </Card.Body>
+                </Card>
+        </Col>
+    </>
 )

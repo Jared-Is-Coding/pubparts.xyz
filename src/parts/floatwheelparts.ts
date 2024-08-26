@@ -10,7 +10,7 @@ export default [
     {
         title: "Bearing Cover",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Motor"],
+        typeOfPart: ["Bearing Cover"],
         imageSrc: "https://cdn.discordapp.com/attachments/780659726035058708/1169043702832955443/IMG_2364.jpg?ex=66cdad8a&is=66cc5c0a&hm=c3b2d6491988d147c447de0bd6b4e623db280bff627a0a761322858f8b75a864&",
         externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit?gid=0#gid=0",
         dropboxUrl: "https://www.dropbox.com/scl/fi/x8laz3pw6ftx217j4kc3l/ADV_Bearing_Cover_V1.12.5_Final.zip?rlkey=r8cx7ggvs5txgyivy84mzzodx&st=22dfuzfb&dl=0",
@@ -19,7 +19,7 @@ export default [
     {
         title: "Bearing Cover",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Motor"],
+        typeOfPart: ["Bearing Cover"],
         imageSrc: "https://media.printables.com/media/prints/735915/images/5752621_138c6cc3-89a1-4433-98a8-6af2b2a37729_45ef76be-c844-4bc6-b00e-e3dd827245ac/thumbs/inside/1280x960/png/fusion360_vctooaqigf.webp",
         externalUrl: "https://www.printables.com/model/735915",
         dropboxUrl: "https://www.dropbox.com/scl/fi/w4f01xjyewwvjo61r8mf9/bearing-cover-floatwheel-adv-model_files.zip?rlkey=40mvvi3eebrl6ppf0u7jvv5ya&st=9kba5p84&dl=0",
@@ -28,7 +28,7 @@ export default [
     {
         title: "Bearing Cover",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Motor"],
+        typeOfPart: ["Bearing Cover"],
         imageSrc: "https://media.printables.com/media/prints/913187/images/6975393_c50bc36e-6e36-4b22-956f-e31d368e898a_22224114-fa44-4a3f-a18c-ca1c6c90b3ec/thumbs/inside/1280x960/jpg/adv_bearing_cover-v2.webp",
         externalUrl: "https://www.printables.com/model/913187",
         dropboxUrl: "https://www.dropbox.com/scl/fi/el2bymscc4xzimzqjep69/floatwheel-adv-bearing-cover-model_files.zip?rlkey=a0zjmvybeycxyqztwbsrbcql8&st=p8yurjl6&dl=0",
@@ -37,7 +37,7 @@ export default [
     {
         title: "Bearing Cover Case",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Motor"],
+        typeOfPart: ["Bearing Cover"],
         imageSrc: "https://cdn.discordapp.com/attachments/780659726035058708/1200101149886386226/20240108_101024.png?ex=66cdf1ca&is=66cca04a&hm=667d1ae8329f6fea9daa5c664af507c697b220aee27c51d9611bdaaa7a0410ea&",
         externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit?gid=0#gid=0",
         dropboxUrl: "https://www.dropbox.com/scl/fi/pl5uqf62pohhjztexza47/bearing-cover-case.zip?rlkey=r3jky1ssq6qd7v3i5hwoe27v9&st=xhd0q4og&dl=0",

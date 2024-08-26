@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Card, Col } from "react-bootstrap"
+import { Card, Col, Image } from "react-bootstrap"
 
 export default (item: itemData, index: number) => (
     <>
@@ -11,7 +11,10 @@ export default (item: itemData, index: number) => (
             key={`merch-card-item-${item.title}-${index}`}
             partName={`${item.title}`}>
                 <Card>
-                    <Card.Img variant="top" src={item.imageSrc} />
+                    <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
+                        <Card.Img variant="top" src={item.imageSrc} />
+                    </div>
+                    {/* <Image className="card-img-top" src={item.imageSrc} /> */}
                     <Card.Body>
                         <Card.Title>{item.title}</Card.Title>
                         {item.price &&

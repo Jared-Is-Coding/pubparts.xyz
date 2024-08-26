@@ -10,10 +10,7 @@ type itemData = {
     /**
      * Item type text
      */ 
-    typeOfPart: "Rail" | "Motor" | "Footpad" | "Battery Box"
-                | "Controller Box" | "Bumper" | "Axle Block"
-                | "Miscellaneous" | "Fender" | "Port Cover"
-                | "Stand" | "Rim Saver" | "Rail Attachment"
+    typeOfPart: PartType[]
     /**
      * Image source url
      */
@@ -35,3 +32,8 @@ type itemData = {
      */ 
     price?: string
 }
+
+type PartType = "Rail" | "Motor" | "Footpad" | "Battery Box"
+                | "Controller Box" | "Bumper" | "Axle Block"
+                | "Miscellaneous" | "Fender" | "Port Cover"
+                | "Stand" | "Rim Saver" | "Rail Attachment"

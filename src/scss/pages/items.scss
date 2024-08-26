@@ -5,8 +5,10 @@
     border-radius: $card-border-radius !important;
     margin-bottom: 20px;
 
-    .vstack .card-link {
-        margin-left: 0 !important;
+    .display-over-top {
+        position: absolute;
+        top: 5px;
+        right: 5px;
     }
 
     .card-img-holder {
@@ -35,6 +37,10 @@
 
     .card-body {
         min-height: 3em;
+    }
+
+    .vstack .card-link {
+        margin-left: 0 !important;
     }
 }
 

@@ -3,7 +3,7 @@ export default [
         title: "Full ADV Step File",
         fabricationMethod: "Other",
         typeOfPart: ["Miscellaneous"],
-        externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit?gid=0#gid=0",
+        externalUrl: "https://discord.com/channels/778267964239511644/780659726035058708/1150277813488853033",
         dropboxUrl: "https://www.dropbox.com/scl/fi/z02pyuy8f399gg5p2tui6/full-adv-step.zip?rlkey=xxt8e0kokh81yk7ubz2gy5cgl&st=fxiyrhha&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
     },

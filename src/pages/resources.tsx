@@ -32,7 +32,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Container>
                     <Stack direction="vertical" gap={1}>
                         <a href="https://docs.google.com/spreadsheets/d/1EPqBROovzQ03iRKpK6Xfy0T7oEG6ZpiBP0-BecQBbUA/edit" target="_blank">Spreadsheet: All Things VESC Battery Comparison</a>
-                        <a href="https://docs.google.com/spreadsheets/d/1EPqBROovzQ03iRKpK6Xfy0T7oEG6ZpiBP0-BecQBbUA/edit" target="_blank">Spreadsheet: ADV 3d Printed List</a>
+                        <a href="https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit" target="_blank">Spreadsheet: ADV 3d Printed List</a>
                     </Stack>
                 </Container>
             </main>

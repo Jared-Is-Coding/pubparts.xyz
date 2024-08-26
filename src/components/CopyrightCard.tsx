@@ -7,7 +7,7 @@ export default () => (
         <Col
             xs={{span: 12}}
             md={{span: 12}}
-            lg={{span: 10, offset: 1}}
+            lg={{span: 12}}
             className="flex-center flex-top">
             <Card>
                 <Card.Body>

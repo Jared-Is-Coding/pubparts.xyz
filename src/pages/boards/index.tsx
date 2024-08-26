@@ -1,14 +1,14 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import * as React from "react"
 import { Button, Col, Container, Row } from "react-bootstrap"
-import Footer from "../components/Footer"
-import MetaData from "../components/MetaData"
-import Navbar from "../components/Navbar"
+import Footer from "../../components/Footer"
+import MetaData from "../../components/MetaData"
+import Navbar from "../../components/Navbar"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="Home | PubParts.xyz" />
+        <MetaData title="Boards | PubParts.xyz" />
     </>
 )
 
@@ -29,10 +29,8 @@ const IndexPage: React.FC<PageProps> = () => {
 
             <main>
                 <Container>
-                    <p>A collection of open source or otherwise aftermarket OneWheel parts.</p>
-                    <p>Your contributions are welcome (and encouraged) to help make this a well-stocked library!</p>
-                    <p>Here's a list of the current frame types I've started indexing:</p>
-
+                    <p>What are you doing here?</p>
+                    
                     <Row className="flex-center flex-row">
                         <Col
                             xs={{span: 6, offset: 0}}

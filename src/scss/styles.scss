@@ -132,3 +132,22 @@ footer {
         margin-left: 15px;
     }
 }
+  
+
+/**
+ * ------------------
+ *     Helpers
+ * ------------------
+ **/
+
+.full-width {
+    width: 100%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.titlecase {
+    text-transform: capitalize;
+}

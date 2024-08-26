@@ -20,7 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
     return (
         <>
             <header>
-                <Navbar isHomepage={true} />
+                <Navbar />
 
                 <h1 className="flex-center">
                     XR Frame Parts

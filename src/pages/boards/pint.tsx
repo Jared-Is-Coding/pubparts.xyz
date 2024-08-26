@@ -13,8 +13,8 @@ export const Head: HeadFC = () => (
     <>
         <html lang="en" />
         <MetaData
-            title="Pint Parts | PubParts.xyz"
-            description="Open source or otherwise aftermarket parts for the Pint frame platform" />
+            title="Pint/Pint X Parts | PubParts.xyz"
+            description="Open source or otherwise aftermarket parts for the Pint/Pint X frame platform" />
     </>
 )
 
@@ -25,7 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <Navbar />
 
             <h1 className="flex-center">
-                Pint Frame Parts
+                Pint/Pint X Frame Parts
             </h1>
 
             <p className="tagline flex-center">

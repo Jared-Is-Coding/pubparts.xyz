@@ -16,5 +16,12 @@ export default [
         externalUrl: "https://www.printables.com/model/675193",
         zipUrl: "/files/boards/misc/onewheel-pintxr-extended-stand-model_files.zip",
         zipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "OneWheel Sheet Metal Stand",
+        fabricationMethod: "Other",
+        typeOfPart: "Miscellaneous",
+        imageSrc: "https://media.printables.com/media/prints/893405/images/6838103_6d172e57-e922-4a98-891f-c2cb83f332e4_3a17524e-1122-442c-ae80-3d060683c12f/thumbs/inside/1280x960/png/screenshot-2024-05-27-064158.webp",
+        externalUrl: "https://www.printables.com/model/675193"
     }
 ] as itemData[]

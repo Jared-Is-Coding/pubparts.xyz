@@ -6,7 +6,7 @@ type itemData = {
     /**
      * Item price text
      */ 
-    fabricationMethod: "CNC" | "3d Printed"
+    fabricationMethod: "CNC" | "3d Printed" | "Other"
     /**
      * Item type text
      */ 

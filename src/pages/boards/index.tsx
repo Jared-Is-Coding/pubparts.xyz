@@ -51,7 +51,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             md={{span: 4, offset: 0}}
                             lg={{span: 2, offset: 0}}
                             className="flex-center flex-top">
-                            <Button className="full-width" href="/boards/pint" variant="info">Pint</Button>
+                            <Button className="full-width" href="/boards/pint" variant="info">Pint/Pint X</Button>
                         </Col>
                         <Col
                             xs={{span: 6, offset: 0}}

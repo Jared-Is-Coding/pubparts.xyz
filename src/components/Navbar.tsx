@@ -29,7 +29,7 @@ export default ({isHomepage}: NavbarProps) => (
                     <NavDropdown title="Frame Types" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-frames-dropdown">
                         <NavDropdown.Item href="/boards/floatwheel" target="_self">Floatwheel</NavDropdown.Item>
                         <NavDropdown.Item href="/boards/gt" target="_self">GT/GT-S</NavDropdown.Item>
-                        <NavDropdown.Item href="/boards/pint" target="_self">Pint</NavDropdown.Item>
+                        <NavDropdown.Item href="/boards/pint" target="_self">Pint/Pint X</NavDropdown.Item>
                         <NavDropdown.Item href="/boards/xr" target="_self">XR/+</NavDropdown.Item>
                         <NavDropdown.Item href="/boards/misc" target="_self">Misc Parts</NavDropdown.Item>
                     </NavDropdown>

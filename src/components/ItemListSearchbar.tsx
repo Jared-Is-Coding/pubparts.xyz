@@ -65,7 +65,7 @@ export class ItemListSearchbar extends Component {
                     </Form.Text>
                 </div>
 
-                <p id="noResultsText" style={{display: "none"}}>No results.</p>
+                <h2 id="noResultsText" style={{display: "none"}}>No results.</h2>
             </>
 
         )

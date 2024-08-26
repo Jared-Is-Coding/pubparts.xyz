@@ -67,21 +67,12 @@ export default [
         zipLastUpdated: "2024-08-26"
     },
     {
-        title: "6in Hub Rim Saver",
+        title: "Rim Saver for 6in Hub",
         fabricationMethod: "3d Printed",
         typeOfPart: "Motor",
         imageSrc: "https://media.printables.com/media/prints/662104/images/5214682_631ba4a0-2218-4c14-9839-34426e5e4018_08a4158e-4fe0-44a9-9761-bd6018465d63/thumbs/inside/1280x960/png/rimsaver1.webp",
         externalUrl: "https://www.printables.com/model/662104",
         zipUrl: "/files/boards/xr/cleaned-up-rimsaver-for-6-inch-onewheel-motor-step-file-provided-model_files.zip",
-        zipLastUpdated: "2024-08-26"
-    },
-    {
-        title: "SuperFlux Motor Plates",
-        fabricationMethod: "CNC",
-        typeOfPart: "Motor",
-        imageSrc: "https://media.printables.com/media/prints/675082/images/5328357_81abee0f-57ec-4351-a2d6-92976e695b98_76f4b5f0-5f66-44ac-86ab-cac4e7334214/thumbs/inside/1280x960/png/finned-hub-plate-v3-v4.webp",
-        externalUrl: "https://www.printables.com/model/675082",
-        zipUrl: "/files/boards/xr/superflux-motor-plates-for-funwheel-model_files.zip",
         zipLastUpdated: "2024-08-26"
     },
     {
@@ -94,7 +85,7 @@ export default [
         zipLastUpdated: "2024-08-26"
     },
     {
-        title: "Mushies Footpads - VOW systems",
+        title: "VOW Systems: Mushies Footpad",
         fabricationMethod: "3d Printed",
         typeOfPart: "Footpad",
         imageSrc: "https://media.printables.com/media/prints/967377/images/7383151_42dd71a7-35fe-45a3-a832-7998116b5ae7_4dad2734-5063-4db7-8ce8-5cccc360069b/thumbs/inside/1280x960/png/screenshot-2024-08-07-at-212054.webp",
@@ -103,7 +94,7 @@ export default [
         zipLastUpdated: "2024-08-26"
     },
     {
-        title: "Extended battery box - VOW systems",
+        title: "VOW Systems: Extended battery box",
         fabricationMethod: "3d Printed",
         typeOfPart: "Battery Box",
         imageSrc: "https://media.printables.com/media/prints/967352/images/7383039_4c6f3c2a-7702-4e44-9990-17a23e322e90_7d2edc3f-44de-4113-bec1-5e1cfb223ec3/thumbs/inside/1280x960/png/screenshot-2024-08-07-at-211107.webp",
@@ -157,7 +148,7 @@ export default [
         zipLastUpdated: "2024-08-26"
     },
     {
-        title: "FlightFins",
+        title: "Flight Fins",
         fabricationMethod: "3d Printed",
         typeOfPart: "Miscellaneous",
         imageSrc: "https://media.printables.com/media/prints/960086/images/7332056_04ab3d42-9c0a-4bb4-b9d2-b758696e9962_08694c12-e680-4804-96f4-e9592767b9e6/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-160440.webp",
@@ -181,6 +172,42 @@ export default [
         imageSrc: "https://media.printables.com/media/prints/957776/images/7302743_6d5df488-8c8d-4bcc-be7c-409768d28c62_578b145e-63d6-4196-9f9e-dabee0b707db/thumbs/inside/1280x960/png/screenshot-2024-07-29-at-164109.webp",
         externalUrl: "https://www.printables.com/model/957776",
         zipUrl: "/files/boards/xr/rails-onewheel-xr-model_files.zip",
+        zipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "PubHubs: XR Blocks Finned Axle Block Covers",
+        fabricationMethod: "CNC",
+        typeOfPart: "Axle Block",
+        imageSrc: "https://media.printables.com/media/prints/939143/images/7177680_2003f289-20f7-434e-a207-93eb2f088ee1_9a99df68-c4f1-400a-a885-ee7b8aa1fd01/thumbs/inside/1280x960/png/1.webp",
+        externalUrl: "https://www.printables.com/model/939143",
+        zipUrl: "/files/boards/xr/onewheel-pubhubs-xr-blocks-finned-axle-block-covers-model_files.zip",
+        zipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "WTF Rails to C&R or Stock Fender Adapters",
+        fabricationMethod: "3d Printed",
+        typeOfPart: "Fender",
+        imageSrc: "https://media.printables.com/media/prints/661560/images/6855093_7f7ef72d-7827-4dfc-b894-e7da30a4b640_9368095b-0bf5-4da7-a257-f42a6ae29c50/thumbs/inside/1280x960/jpg/pic.webp",
+        externalUrl: "https://www.printables.com/model/661560",
+        zipUrl: "/files/boards/xr/onewheel-xr-the-float-life-wtf-rails-to-cr-or-stock-fender-adapters-model_files.zip",
+        zipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "Simple Rail Guards",
+        fabricationMethod: "3d Printed",
+        typeOfPart: "Rails",
+        imageSrc: "https://media.printables.com/media/prints/649224/images/5226630_67670a7f-ade9-4f9e-ba5c-cdc8c5dfc601_d4820082-db4a-47f1-b0c5-1aaa7f7554e0/thumbs/inside/1280x960/png/make.webp",
+        externalUrl: "https://www.printables.com/model/649224",
+        zipUrl: "/files/boards/xr/onewheel-xr-rail-guards-model_files.zip",
+        zipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "TFL Circle Cutout Rail Guards",
+        fabricationMethod: "3d Printed",
+        typeOfPart: "Rails",
+        imageSrc: "https://media.printables.com/media/prints/691922/images/5439182_046c1445-b3a0-4a70-b45d-fb813dfe3ece_6e933c0e-efcc-4144-bca3-95eae3c50a53/thumbs/inside/1280x960/jpg/img_5296.webp",
+        externalUrl: "https://www.printables.com/model/691922",
+        zipUrl: "/files/boards/xr/the-float-life-2023-onewheel-xr-wtf-bumper-model_files.zip",
         zipLastUpdated: "2024-08-26"
     }
 ] as itemData[]

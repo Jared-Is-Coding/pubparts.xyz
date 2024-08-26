@@ -1,9 +1,12 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import * as React from "react"
-import { Container } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import Footer from "../../components/Footer"
+import ItemCard from "../../components/ItemCard"
+import { ItemListSearchbar } from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
+import floatwheelparts from "../../parts/floatwheelparts"
 
 export const Head: HeadFC = () => (
     <>
@@ -15,33 +18,37 @@ export const Head: HeadFC = () => (
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <>
-            <header>
-                <Navbar isHomepage={true} />
+        <header>
+            <Navbar isHomepage={true} />
 
-                <h1 className="flex-center">
-                    Floatwheel Frame Parts
-                </h1>
+            <h1 className="flex-center">
+                Floatwheel Frame Parts
+            </h1>
 
-                <p className="tagline flex-center">
-                    <br />
-                </p>
-            </header>
+            <p className="tagline flex-center">
+                <br />
+            </p>
+        </header>
 
-            <main>
-                <Container>
-                    {/* Desktop View */}
-                    <div className="d-none d-lg-inline">
-                        <p>So I hear you've got a OneWheel...</p>
-                    </div>
+        <main>
+            <Container>
+                <ItemListSearchbar />
 
-                    {/* Mobile View */}
-                    <div className="d-inline d-lg-none">
-                        <p>So I hear you've got a OneWheel...</p>
-                    </div>
-                </Container>
-            </main>
-                
-            <Footer />
+                <h2 id="itemListHeader" style={{display: "unset"}}>Items</h2>
+                <Row>
+                    {!floatwheelparts.length &&
+                        <Col xs={{span: 12}}>
+                            <p>No items.</p>
+                        </Col>
+                    }
+                    {!!floatwheelparts.length &&
+                        floatwheelparts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
+                    }
+                </Row>
+            </Container>
+        </main>
+            
+        <Footer />
         </>
     )
 }

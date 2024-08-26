@@ -47,13 +47,13 @@ nav.navbar {
 }
 
 .dropdown.show .dropdown-menu {
-    -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
-    -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
-    -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
-    -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
-    transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -webkit-transition: max-height 0.3s, opacity 0.1s 0.2s, visibility 0s;
+    -moz-transition: max-height 0.3s, opacity 0.1s 0.2s, visibility 0s;
+    -ms-transition: max-height 0.3s, opacity 0.1s 0.2s, visibility 0s;
+    -o-transition: max-height 0.3s, opacity 0.1s 0.2s, visibility 0s;
+    transition: max-height 0.3s, opacity 0.1s 0.2s, visibility 0s;
 
-    max-height: 190px;
+    max-height: 100vh;
     opacity: 1;
     visibility: visible;
     border: solid 1px;

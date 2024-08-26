@@ -6,7 +6,7 @@ import ItemCard from "../../components/ItemCard"
 import { ItemListSearchbar } from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
-import pintparts from "../../parts/pintparts"
+import miscparts from "../../parts/miscparts"
 
 export const Head: HeadFC = () => (
     <>
@@ -22,7 +22,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <Navbar isHomepage={true} />
 
             <h1 className="flex-center">
-                Pint Frame Parts
+                Miscellaneous Parts
             </h1>
 
             <p className="tagline flex-center">
@@ -36,13 +36,13 @@ const IndexPage: React.FC<PageProps> = () => {
 
                 <h2 id="itemListHeader" style={{display: "unset"}}>Items</h2>
                 <Row>
-                    {!pintparts.length &&
+                    {!miscparts.length &&
                         <Col xs={{span: 12}}>
                             <p>No items.</p>
                         </Col>
                     }
-                    {!!pintparts.length &&
-                        pintparts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
+                    {!!miscparts.length &&
+                        miscparts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
                     }
                 </Row>
             </Container>

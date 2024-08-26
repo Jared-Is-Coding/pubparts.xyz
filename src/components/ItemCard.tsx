@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Card, Col } from "react-bootstrap"
+import { Card, Col, Stack } from "react-bootstrap"
 
 export default (item: itemData, index: number) => (
     <>
@@ -15,21 +15,22 @@ export default (item: itemData, index: number) => (
                         <Card.Img variant="top" src={item.imageSrc} />
                     </div>
                     <Card.Body>
-                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Title as="h3">{item.title}</Card.Title>
                         {item.price &&
                             <Card.Text>
                                 <i>Price: {item.price ?? "???"}</i>
                             </Card.Text>
                         } 
-                        {item.externalUrl &&
-                            <Card.Link href={item.externalUrl} target="_blank">External Listing</Card.Link>
-                        }
-                        {item.zipUrl &&
-                            <Card.Link href={item.zipUrl}>ZIP Download</Card.Link>
-                        }
-                        {item.zipUrl && item.zipLastUpdated &&
-                            <Card.Text>ZIP Date: {item.zipLastUpdated}</Card.Text>
-                        }
+                        <Stack direction="vertical" gap={1}>
+                            {item.externalUrl &&
+                                <Card.Link href={item.externalUrl} target="_blank">External Listing</Card.Link>
+                            }
+                            {item.dropboxUrl &&
+                                <Card.Link href={item.dropboxUrl}>ZIP Download{!!item.dropboxZipLastUpdated &&
+                                    <>{` (${item.dropboxZipLastUpdated})`}</>
+                                }</Card.Link>
+                            }
+                        </Stack>
                     </Card.Body>
                 </Card>
         </Col>

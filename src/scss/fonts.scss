@@ -25,12 +25,12 @@ h1 {
 
 h2 {
     font-size: $h2-font-size !important;
+    font-weight: bold !important;
+    text-decoration: underline;
 }
 
 h3 {
     font-size: $h3-font-size !important;
-    font-weight: bold !important;
-    text-decoration: underline;
 }
 
 .navbar-brand {
@@ -47,16 +47,14 @@ h3 {
 
 h1 {
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
     padding-top: 0;
     margin-top: 10px !important;
-    margin-bottom: 10px !important;
-}
-
-h3 {
-    padding-top: 25px;
+    margin-bottom: 15px !important;
 }
 
 footer {

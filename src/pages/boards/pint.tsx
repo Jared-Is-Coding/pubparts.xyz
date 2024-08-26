@@ -37,7 +37,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <Container>
                 <ItemListSearchbar />
 
-                <h2 id="itemListHeader" style={{display: "unset"}}>Items</h2>
+                <h2 id="itemListHeader" style={{display: "block"}}>Items</h2>
                 <Row>
                     {!pintparts.length &&
                         <Col xs={{span: 12}}>

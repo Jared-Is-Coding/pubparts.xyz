@@ -22,11 +22,11 @@ type itemData = {
     /**
      * Item ZIP direct download URL
      */
-    zipUrl?: string
+    dropboxUrl?: string
     /**
      * Item ZIP direct download last updated
      */
-    zipLastUpdated?: string
+    dropboxZipLastUpdated?: string
     /**
      * Item price text
      */ 

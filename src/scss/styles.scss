@@ -59,13 +59,8 @@ nav.navbar {
     border: solid 1px;
 }
 
-h1 {
-    display: flex;
-    flex-direction: column;
-
-    .tagline {
-        font-weight: bold;
-    }
+h1 .tagline {
+    font-weight: bold;
 }
 
 body {

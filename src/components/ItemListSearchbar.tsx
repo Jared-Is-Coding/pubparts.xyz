@@ -37,11 +37,11 @@ export class ItemListSearchbar extends Component {
         if (!noResultsText) return
 
         if (hiddenCount == items.length) {
-            noResultsText.style.display = "initial"
+            noResultsText.style.display = "block"
             if (itemListHeader) itemListHeader.style.display = "none"
         } else {
             noResultsText.style.display = "none"
-            if (itemListHeader) itemListHeader.style.display = "initial"
+            if (itemListHeader) itemListHeader.style.display = "block"
         }
     }
 

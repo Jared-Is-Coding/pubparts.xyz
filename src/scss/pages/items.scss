@@ -5,6 +5,10 @@
     border-radius: $card-border-radius !important;
     margin-bottom: 20px;
 
+    .vstack .card-link {
+        margin-left: 0 !important;
+    }
+
     .card-img-holder {
         width: 100%;
         height: 300px;
@@ -35,5 +39,5 @@
 }
 
 .searchBarField {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }

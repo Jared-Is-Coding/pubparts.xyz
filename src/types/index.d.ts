@@ -6,7 +6,10 @@ type itemData = {
     /**
      * Item price text
      */ 
-    fabricationMethod: "CNC" | "3d Printed" | "Other"
+    fabricationMethod:
+        | "CNC"
+        | "3d Printed"
+        | "Other"
     /**
      * Item type text
      */ 
@@ -33,8 +36,18 @@ type itemData = {
     price?: string
 }
 
-type PartType = "Rail" | "Motor" | "Footpad" | "Battery Box"
-                | "Controller Box" | "Bumper" | "Axle Block"
-                | "Miscellaneous" | "Fender" | "Port Cover"
-                | "Stand" | "Rim Saver" | "Rail Attachment"
-                | "Bearing Cover"
+type PartType =
+    | "Rail"
+    | "Motor"
+    | "Footpad"
+    | "Battery Box"
+    | "Controller Box"
+    | "Bumper"
+    | "Axle Block"
+    | "Miscellaneous"
+    | "Fender"
+    | "Port Cover"
+    | "Stand"
+    | "Rim Saver"
+    | "Rail Attachment"
+    | "Bearing Cover"

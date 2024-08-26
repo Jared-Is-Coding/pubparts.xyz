@@ -9,7 +9,8 @@ export default (item: itemData, index: number) => (
             lg={{span: 4, offset: 0}}
             className="flex-center flex-top searchableItem"
             key={`merch-card-item-${item.title}-${index}`}
-            partName={`${item.title}`}>
+            partName={`${item.title}`}
+            partTypes={`${item.typeOfPart.join(",").replaceAll(" ", "")}`}>
                 <Card>
                     {!!item.imageSrc &&
                         <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
@@ -21,7 +22,7 @@ export default (item: itemData, index: number) => (
                         <Stack className="display-over-top" direction="horizontal" gap={1}>
                             {item.typeOfPart.map((part) => (
                                 <>
-                                    <Badge bg="primary">{part}</Badge>
+                                    <Badge pill bg="primary">{part}</Badge>
                                 </>
                             ))}
                         </Stack>

@@ -181,7 +181,7 @@ export default [
     {
         title: "Rail Guards and Power Plug Cover",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Rail Attachment"],
+        typeOfPart: ["Rail Attachment", "Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/732800/images/5730875_46df41e8-a5a8-42df-9424-4766b7caa1a1_d7b12ed6-cb9c-4e08-865d-3b68d17c14e1/thumbs/inside/1280x960/jpeg/img_4825-2.webp",
         externalUrl: "https://www.printables.com/model/732800",
         dropboxUrl: "https://www.dropbox.com/scl/fi/xqltse9em4hynstm4psun/floatwheel-adv-pro-rail-guards-and-power-plug-cover-model_files.zip?rlkey=xyl1dtl04p157ke7r27b0bwmq&st=1w41itqx&dl=0",

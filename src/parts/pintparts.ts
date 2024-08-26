@@ -11,7 +11,7 @@ export default [
     {
         title: "GT40 Fender Plug Protector",
         fabricationMethod: "3d Printed",
-        typeOfPart: "Fender",
+        typeOfPart: "Port Cover",
         imageSrc: "https://media.printables.com/media/prints/662651/images/5219377_4ae6bce8-5941-4590-a196-09ff4c225a08_9a8db6f7-426e-488b-96ef-49de39aae118/thumbs/inside/1280x960/jpg/make2.webp",
         externalUrl: "https://www.printables.com/model/662651",
         dropboxUrl: "https://www.dropbox.com/scl/fi/y3vudzmug6eakqxy0ybk2/onewheel-gt40-fender-plug-protector-model_files.zip?rlkey=b0fqzv3uup88087ga6w6tu0r1&st=bxizloa3&dl=0",
@@ -54,7 +54,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "Superflux/XR Pint axle blocks",
+        title: "Superflux/XR Pint Axle Blocks",
         fabricationMethod: "CNC",
         typeOfPart: "Axle Block",
         imageSrc: "https://media.printables.com/media/prints/865558/images/7007284_302fc19a-e3a7-4411-84fe-f35b3ce8e530_f08a2b95-b034-45db-b461-109dff4e4124/thumbs/inside/1280x960/jpg/pxl_20240306_195519913.webp",

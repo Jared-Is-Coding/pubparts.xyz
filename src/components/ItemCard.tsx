@@ -11,9 +11,11 @@ export default (item: itemData, index: number) => (
             key={`merch-card-item-${item.title}-${index}`}
             partName={`${item.title}`}>
                 <Card>
-                    <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
-                        <Card.Img variant="top" src={item.imageSrc} />
-                    </div>
+                    {!!item.imageSrc &&
+                        <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
+                            <Card.Img variant="top" src={item.imageSrc} />
+                        </div>
+                    }
                     <Card.Body>
                         <Card.Title as="h3">{item.title}</Card.Title>
                         {item.price &&

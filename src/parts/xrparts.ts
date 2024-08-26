@@ -69,7 +69,7 @@ export default [
     {
         title: "Rim Saver for 6in Hub",
         fabricationMethod: "3d Printed",
-        typeOfPart: "Motor",
+        typeOfPart: "Rim Saver",
         imageSrc: "https://media.printables.com/media/prints/662104/images/5214682_631ba4a0-2218-4c14-9839-34426e5e4018_08a4158e-4fe0-44a9-9761-bd6018465d63/thumbs/inside/1280x960/png/rimsaver1.webp",
         externalUrl: "https://www.printables.com/model/662104",
         dropboxUrl: "https://www.dropbox.com/scl/fi/x9tghvrh8izzji7t96rms/cleaned-up-rimsaver-for-6-inch-onewheel-motor-step-file-provided-model_files.zip?rlkey=jxav0papoy2cultqwxi2nkzeo&st=9wwpx147&dl=0",
@@ -132,7 +132,7 @@ export default [
     {
         title: "XLR Charger Plug Cover",
         fabricationMethod: "3d Printed",
-        typeOfPart: "Miscellaneous",
+        typeOfPart: "Port Cover",
         imageSrc: "https://media.printables.com/media/prints/960104/images/7332212_7de0442a-40a1-4b68-ad13-c71be93fed95_99676bf0-d136-46d4-9679-3f1de84a9374/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-162051.webp",
         externalUrl: "https://www.printables.com/model/960104",
         dropboxUrl: "https://www.dropbox.com/scl/fi/xhbgmpz5dltswndqwvqq7/xlr-charger-plug-onewheel-xr-model_files.zip?rlkey=s4y1twcql325spnad04eum46b&st=opo7fq0h&dl=0",
@@ -150,7 +150,7 @@ export default [
     {
         title: "Flight Fins",
         fabricationMethod: "3d Printed",
-        typeOfPart: "Miscellaneous",
+        typeOfPart: "Fender",
         imageSrc: "https://media.printables.com/media/prints/960086/images/7332056_04ab3d42-9c0a-4bb4-b9d2-b758696e9962_08694c12-e680-4804-96f4-e9592767b9e6/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-160440.webp",
         externalUrl: "https://www.printables.com/model/960086",
         dropboxUrl: "https://www.dropbox.com/scl/fi/pn7phvfgzgrohad6miqrl/flightfins-onewheel-xr-model_files.zip?rlkey=hjl0bwj28znjbctcg2opp6d6r&st=u76u4ih6&dl=0",
@@ -159,7 +159,7 @@ export default [
     {
         title: "Stock XR Bumpers",
         fabricationMethod: "3d Printed",
-        typeOfPart: "Bumpers",
+        typeOfPart: "Bumper",
         imageSrc: "https://media.printables.com/media/prints/960081/images/7331999_f26e12e2-30c9-49a2-9bee-cdd10b4ce7de_9168edff-c37b-4df8-97bd-34dcdceeb191/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-155954.webp",
         externalUrl: "https://www.printables.com/model/960081",
         dropboxUrl: "https://www.dropbox.com/scl/fi/bs77pf37wscajusehvgox/bumpers-onewheel-xr-model_files.zip?rlkey=hq05o3kyk2qj4ohbwlacxecu1&st=3oksox1f&dl=0",
@@ -168,7 +168,7 @@ export default [
     {
         title: "Stock XR Rails",
         fabricationMethod: "CNC",
-        typeOfPart: "Rails",
+        typeOfPart: "Rail",
         imageSrc: "https://media.printables.com/media/prints/957776/images/7302743_6d5df488-8c8d-4bcc-be7c-409768d28c62_578b145e-63d6-4196-9f9e-dabee0b707db/thumbs/inside/1280x960/png/screenshot-2024-07-29-at-164109.webp",
         externalUrl: "https://www.printables.com/model/957776",
         dropboxUrl: "https://www.dropbox.com/scl/fi/3w6sff2sekov2qcrisd2z/rails-onewheel-xr-model_files.zip?rlkey=5386furp3saowfmq9xi5t8hda&st=gv0qih6w&dl=0",
@@ -195,7 +195,7 @@ export default [
     {
         title: "Simple Rail Guards",
         fabricationMethod: "3d Printed",
-        typeOfPart: "Rails",
+        typeOfPart: "Rail Attachment",
         imageSrc: "https://media.printables.com/media/prints/649224/images/5226630_67670a7f-ade9-4f9e-ba5c-cdc8c5dfc601_d4820082-db4a-47f1-b0c5-1aaa7f7554e0/thumbs/inside/1280x960/png/make.webp",
         externalUrl: "https://www.printables.com/model/649224",
         dropboxUrl: "https://www.dropbox.com/scl/fi/amgd2ged4bb2gtydwpg6d/onewheel-xr-rail-guards-model_files.zip?rlkey=q3lmfhteld29lf8415rorkeco&st=mm89bswr&dl=0",
@@ -204,7 +204,7 @@ export default [
     {
         title: "TFL Circle Cutout Rail Guards",
         fabricationMethod: "3d Printed",
-        typeOfPart: "Rails",
+        typeOfPart: "Rail Attachment",
         imageSrc: "https://media.printables.com/media/prints/691922/images/5439182_046c1445-b3a0-4a70-b45d-fb813dfe3ece_6e933c0e-efcc-4144-bca3-95eae3c50a53/thumbs/inside/1280x960/jpg/img_5296.webp",
         externalUrl: "https://www.printables.com/model/691922",
         dropboxUrl: "https://www.dropbox.com/scl/fi/fy65aelmopf5us3nejd1z/the-float-life-2023-onewheel-xr-wtf-bumper-model_files.zip?rlkey=97pvcm7vvvn2ioqlh5cs2dc1x&st=zh6ij4dx&dl=0",

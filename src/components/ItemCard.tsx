@@ -10,7 +10,8 @@ export default (item: itemData, index: number) => (
             className="flex-center flex-top searchableItem"
             key={`merch-card-item-${item.title}-${index}`}
             partName={`${item.title}`}
-            partTypes={`${item.typeOfPart.join(",").replaceAll(" ", "")}`}>
+            partTypes={`${item.typeOfPart.join(",").replaceAll(" ", "")}`}
+            partFabricationMethod={`${item.fabricationMethod}`}>
                 <Card>
                     {!!item.imageSrc &&
                         <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
@@ -25,6 +26,7 @@ export default (item: itemData, index: number) => (
                                     <Badge pill bg="primary">{part}</Badge>
                                 </>
                             ))}
+                            <Badge pill bg="primary">{item.fabricationMethod}</Badge>
                         </Stack>
                     }
                     <Card.Body>

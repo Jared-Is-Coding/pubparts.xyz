@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
-import { PartSubmissionEmail } from "../util/SiteVariables"
+import { NewPartEmail, RemovedPartEmail, UpdatedPartEmail } from "../util/SiteVariables"
 
 type NavbarProps = {
     isHomepage?: boolean
@@ -34,7 +34,11 @@ export default ({isHomepage}: NavbarProps) => (
                         <NavDropdown.Item href="/boards/xr" target="_self">XR/+</NavDropdown.Item>
                         <NavDropdown.Item href="/boards/misc" target="_self">VESC Misc Parts</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href={`mailto:${PartSubmissionEmail}`}>Contribute</Nav.Link>
+                    <NavDropdown title="Contribute" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-contribute-dropdown">
+                        <NavDropdown.Item href={`mailto:${NewPartEmail}`}>New Part</NavDropdown.Item>
+                        <NavDropdown.Item href={`mailto:${UpdatedPartEmail}`}>Updated Part</NavDropdown.Item>
+                        <NavDropdown.Item href={`mailto:${RemovedPartEmail}`}>Removed Part</NavDropdown.Item>
+                    </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
         </Container>

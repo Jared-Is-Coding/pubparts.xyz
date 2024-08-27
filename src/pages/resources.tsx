@@ -1,10 +1,9 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import * as React from "react"
-import { Button, Col, Container, Row, Stack } from "react-bootstrap"
+import { Container, Stack } from "react-bootstrap"
 import Footer from "../components/Footer"
 import MetaData from "../components/MetaData"
 import Navbar from "../components/Navbar"
-import { PartSubmissionEmail } from "../util/SiteVariables"
 
 export const Head: HeadFC = () => (
     <>

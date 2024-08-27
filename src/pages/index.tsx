@@ -4,7 +4,7 @@ import { Button, Col, Container, Row } from "react-bootstrap"
 import Footer from "../components/Footer"
 import MetaData from "../components/MetaData"
 import Navbar from "../components/Navbar"
-import { PartSubmissionEmail } from "../util/SiteVariables"
+import { NewPartEmail } from "../util/SiteVariables"
 
 export const Head: HeadFC = () => (
     <>
@@ -31,7 +31,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <main>
                 <Container>
                     <p>A collection of open source or otherwise aftermarket OneWheel parts.</p>
-                    <p>Your <a href={`mailto:${PartSubmissionEmail}`}>contributions</a> are welcome (and encouraged) to help make this a well-stocked library!</p>
+                    <p>Your <a href={`mailto:${NewPartEmail}`}>contributions</a> are welcome (and encouraged) to help make this a well-stocked library!</p>
                     <p>Here's a list of the current frame types I've started indexing:</p>
 
                     <Row className="flex-center flex-row">

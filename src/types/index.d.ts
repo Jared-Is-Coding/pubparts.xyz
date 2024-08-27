@@ -7,7 +7,7 @@ type itemData = {
      * Item price text
      */ 
     fabricationMethod:
-        | "3d Printed"
+        | "3DP"
         | "CNC"
         | "Other"
     /**
@@ -49,6 +49,7 @@ type PartType =
     | "Motor Cover"
     | "Port Cover"
     | "Rail Attachment"
-    | "Rail"
+    | "Rails"
     | "Rim Saver"
     | "Stand"
+    | "Tool"

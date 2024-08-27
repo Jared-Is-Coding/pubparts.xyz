@@ -263,5 +263,23 @@ export default [
         externalUrl: "https://www.printables.com/model/220062",
         dropboxUrl: "https://www.dropbox.com/scl/fi/lef6qi7lbeyo45nf0m73z/1wheel-xlr-charge-port-gasket-model_files.zip?rlkey=zwtnbar41wsmw02xtgs800j1l&st=ul5usbmf&dl=0",
         dropboxZipLastUpdated: "2024-08-27"
+    },
+    {
+        title: "Atlowshop Big Battery Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://media.printables.com/media/prints/987242/images/7522617_545606e3-b628-4e59-af1a-78c21db70ab7_a6e92503-62b8-479a-b4a2-284f0bd6f78c/thumbs/inside/1280x960/jpg/20240605_145529-scaled-e1718062700155.webp",
+        externalUrl: "https://www.printables.com/model/987242",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/g177hgkfb7pxzo1ku08gy/atlowshop-big-battery-box-model_files.zip?rlkey=0cwfgn58cnk5zvy2ay03h09o7&st=peqpeb3w&dl=0",
+        dropboxZipLastUpdated: "2024-08-27"
+    },
+    {
+        title: "Atlowshop \"Atlowglider\" Controller Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/987260/images/7522686_03eb27d6-71ae-4696-9c4e-6dbc29daca5e_a1d19ccd-5791-4cf0-8cb5-fe857f81c8b5/thumbs/inside/1280x960/png/screenshot-2024-08-26-145104.webp",
+        externalUrl: "https://www.printables.com/model/987260",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/d9nq9d0w121hixhic13ps/atlowglider-model_files.zip?rlkey=gzkl6nbfyawmtsmvhjizfauds&st=io0ibtv4&dl=0",
+        dropboxZipLastUpdated: "2024-08-27"
     }
 ] as itemData[]

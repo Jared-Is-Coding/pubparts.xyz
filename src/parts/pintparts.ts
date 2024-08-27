@@ -20,7 +20,7 @@ export default [
     {
         title: "Controller Gasket",
         fabricationMethod: "3DP",
-        typeOfPart: ["Controller Box"],
+        typeOfPart: ["Gasket"],
         imageSrc: "https://media.printables.com/media/prints/865562/images/6645487_380bebc7-6df0-456b-bbf0-098dee48fe9a_03aac7fb-6563-4ae7-9ad9-6bf1f6a6a6e3/thumbs/inside/1280x960/jpg/large_display_23f89272-101f-440c-8b09-b90b56a7db19_865562.webp",
         externalUrl: "https://www.printables.com/model/865562",
         dropboxUrl: "https://www.dropbox.com/scl/fi/lx2a7p92q4x21afvn7lmf/onewheel-pint-controller-gasket-model_files.zip?rlkey=h0vnq61sra4o7tysuvnq2lp75&st=1jp0eoea&dl=0",
@@ -29,7 +29,7 @@ export default [
     {
         title: "Battery Gasket",
         fabricationMethod: "3DP",
-        typeOfPart: ["Battery Box"],
+        typeOfPart: ["Gasket"],
         imageSrc: "https://media.printables.com/media/prints/865561/images/6645484_ca2ff31f-1b7b-40c6-b6a3-2f72a7e2b2e9_72b98800-26a5-4ae4-9d49-021826cd21e9/thumbs/inside/1280x960/jpg/large_display_6a078196-f0ca-40eb-a4cd-7ae886a1a264_865561.webp",
         externalUrl: "https://www.printables.com/model/865561",
         dropboxUrl: "https://www.dropbox.com/scl/fi/s8nqlv28fzg1f8ox6hwiu/onewheel-pint-battery-gasket-model_files.zip?rlkey=dcnc3a0gavzdfa2msfpzd319j&st=sehl9vf9&dl=0",

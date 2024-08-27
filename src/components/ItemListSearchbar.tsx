@@ -118,12 +118,9 @@ export class ItemListSearchbar extends Component {
                                 id="inputSearch"
                                 aria-describedby="inputSearchHelpBlock"
                                 value={this.state.searchText}
-                                placeholder="Search text..."
+                                placeholder="Search text to filter by..."
                                 onChange={(e) => this.setSearchText(e)}
                             />
-                            <Form.Text id="inputSearchHelpBlock">
-                                Provide some text to filter by
-                            </Form.Text>
                         </div>
 
                         <div className="searchTypeCheckBoxes">
@@ -132,9 +129,11 @@ export class ItemListSearchbar extends Component {
                             <Form.Check label="Battery Box" name="batteryBox" id="batteryBox" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
                             <Form.Check label="Bearing Cover" name="bearingCover" id="bearingCover" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
                             <Form.Check label="Bumper" name="bumper" id="bumper" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
+                            <Form.Check label="Connector Cover" name="connectorCover" id="connectorCover" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
                             <Form.Check label="Controller Box" name="controllerBox" id="controllerBox" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
                             <Form.Check label="Fender" name="fender" id="fender" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
                             <Form.Check label="Footpad" name="footpad" id="footpad" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
+                            <Form.Check label="Gasket" name="gasket" id="gasket" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
                             <Form.Check label="Miscellaneous" name="miscellaneous" id="miscellaneous" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
                             <Form.Check label="Motor" name="motor" id="motor" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
                             <Form.Check label="Port Cover" name="portCover" id="portCover" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
@@ -149,6 +148,7 @@ export class ItemListSearchbar extends Component {
                             <Form.Label as="h3">Fabrication Method:</Form.Label>
                             <Form.Check label="3d Printed" name="3dp" id="3dp" type="checkbox" inline onChange={(e) => this.setFabricationCheckbox(e)} />
                             <Form.Check label="CNC" name="cnc" id="cnc" type="checkbox" inline onChange={(e) => this.setFabricationCheckbox(e)} />
+                            <Form.Check label="Laser Cut" name="laserCut" id="laserCut" type="checkbox" inline onChange={(e) => this.setFabricationCheckbox(e)} />
                         </div>
                     </Stack>
                 </div>

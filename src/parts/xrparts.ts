@@ -78,7 +78,7 @@ export default [
     {
         title: "PubBox Connector Cover",
         fabricationMethod: "3DP",
-        typeOfPart: ["Controller Box"],
+        typeOfPart: ["Connector Cover"],
         imageSrc: "https://media.printables.com/media/prints/931764/images/7102548_83b61ead-d769-406c-a41d-b021f3d5367b_12574008-f4aa-40b5-a7b6-1758a9f41c8a/thumbs/inside/1280x960/png/img_0689.webp",
         externalUrl: "https://www.printables.com/model/931764",
         dropboxUrl: "https://www.dropbox.com/scl/fi/668b4z3kdnkgtfk34j1ez/retrofit-pubbox-connector-cover-model_files.zip?rlkey=zr7vo4sao6ohe73w4vs4qpaoz&st=rvvmqpa3&dl=0",
@@ -141,7 +141,7 @@ export default [
     {
         title: "Stock XR Connector Cover",
         fabricationMethod: "3DP",
-        typeOfPart: ["Controller Box"],
+        typeOfPart: ["Connector Cover"],
         imageSrc: "https://media.printables.com/media/prints/960109/images/7332235_bb80b444-95db-4a85-bb93-aca4e9215a3d_e1cba53e-da5b-48a5-909c-fc7e1d0b7ee3/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-162458.webp",
         externalUrl: "https://www.printables.com/model/960109",
         dropboxUrl: "https://www.dropbox.com/scl/fi/o8i6qf6wsfy67wrw8kj7d/connector-cover-onewheel-xr-model_files.zip?rlkey=7xwm439s5rni7aao8u38yjo28&st=mifjf0um&dl=0",
@@ -231,7 +231,7 @@ export default [
     {
         title: "FlowGlider Connector Cover",
         fabricationMethod: "3DP",
-        typeOfPart: ["Controller Box"],
+        typeOfPart: ["Connector Cover"],
         imageSrc: "https://cdn.thingiverse.com/assets/1d/20/8e/bf/73/large_display_stronger003.jpg",
         externalUrl: "https://www.thingiverse.com/thing:4716667",
         dropboxUrl: "https://www.dropbox.com/scl/fi/w9u8q1nfvmzg9othoy8je/flowglider-connector-cover.zip?rlkey=rds1z7zp9qz9wkgdwvxagufv0&st=u9twyfvg&dl=0",
@@ -245,5 +245,23 @@ export default [
         externalUrl: "https://www.thingiverse.com/thing:4847732",
         dropboxUrl: "https://www.dropbox.com/scl/fi/34ofrg0e4bj3d0zbk97r4/onewheel-xr-cable-clip-4847732.zip?rlkey=tnq779wxm2lis8g9gct37tnb1&st=82ae7yew&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "Grip Tape for Onewheel XR",
+        fabricationMethod: "Laser Cut",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://cdn.thingiverse.com/assets/47/73/33/36/b8/large_display_grip.jpg",
+        externalUrl: "https://www.thingiverse.com/thing:5343206",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/t0r5yvz1kaorc8ydkmmye/Onewheel-XR-Grip-Tape-5343206.zip?rlkey=fi2imxxbg2ui0hoxdxbzsj65c&st=plw5ft2x&dl=0",
+        dropboxZipLastUpdated: "2024-08-27"
+    },
+    {
+        title: "XLR Charge Port Gasket",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Gasket"],
+        imageSrc: "https://media.printables.com/media/prints/220062/images/2005926_dca126cf-c170-46bc-97ee-ffee304c980d/thumbs/inside/1280x960/jpg/6a66c33c-340a-41c7-ae86-ca46c86651d0.webp",
+        externalUrl: "https://www.printables.com/model/220062",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/lef6qi7lbeyo45nf0m73z/1wheel-xlr-charge-port-gasket-model_files.zip?rlkey=zwtnbar41wsmw02xtgs800j1l&st=ul5usbmf&dl=0",
+        dropboxZipLastUpdated: "2024-08-27"
     }
 ] as itemData[]

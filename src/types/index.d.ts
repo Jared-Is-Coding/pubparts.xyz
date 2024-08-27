@@ -9,6 +9,7 @@ type itemData = {
     fabricationMethod:
         | "3DP"
         | "CNC"
+        | "Laser Cut"
         | "Other"
     /**
      * Item type text
@@ -41,9 +42,11 @@ type PartType =
     | "Battery Box"
     | "Bearing Cover"
     | "Bumper"
+    | "Connector Cover"
     | "Controller Box"
     | "Fender"
     | "Footpad"
+    | "Gasket"
     | "Miscellaneous"
     | "Motor"
     | "Motor Cover"

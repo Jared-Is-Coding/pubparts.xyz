@@ -11,7 +11,7 @@ export default (item: itemData, index: number) => (
             key={`merch-card-item-${item.title}-${index}`}
             partName={`${item.title}`}
             partTypes={`${item.typeOfPart.join(",").replaceAll(" ", "")}`}
-            partFabricationMethod={`${item.fabricationMethod}`}>
+            partFabricationMethod={`${item.fabricationMethod.replaceAll(" ", "")}`}>
                 <Card>
                     {!!item.imageSrc &&
                         <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>

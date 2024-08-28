@@ -76,5 +76,14 @@ export default [
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/585322/images/4668816_5569d34a-fff9-4d2f-84ad-72a342e5eadc/thumbs/inside/1280x960/jpg/img_8647.webp",
         externalUrl: "https://www.printables.com/model/585322"
+    },
+    {
+        title: "Bonk Bar and Block",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/845546/images/6507684_7e6b313e-498e-4617-82f4-19eaf02b13e2_36073cb2-0625-4185-a272-f4b46253805b/thumbs/inside/1280x960/jpg/img_2032.webp",
+        externalUrl: "https://www.printables.com/model/845546",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/95okrl6a5swefuru345g6/onewheel-bonk-bar-and-block-model_files.zip?rlkey=3d4fvtiiexo91edxlnbedllhk&st=kjji907z&dl=0",
+        dropboxZipLastUpdated: "2024-08-28"
     }
 ] as itemData[]

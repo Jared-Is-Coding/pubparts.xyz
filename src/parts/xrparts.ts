@@ -40,7 +40,7 @@ export default [
         price: "~$80/pair from JLCPCB"
     },
     {
-        title: "CNC PubBox V1 - XR VESC Box",
+        title: "CNC PubBox V1 - XR VESC Box + Lid",
         fabricationMethod: "CNC",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/586518/images/4972379_3be303b5-bb1c-46fd-826f-b16d964dfd93_e2a8e05b-4f0a-402d-ac37-e718008ccdf5/thumbs/inside/1280x960/png/pubbox1.webp",
@@ -49,7 +49,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "CNC PubBox V2 - XR VESC Box",
+        title: "CNC PubBox V2 - XR VESC Box + Lid",
         fabricationMethod: "CNC",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/882071/images/6805730_d4772e6d-58e7-47c7-8696-a02077548a8f_2e2dd769-80d3-440b-9724-c4f895f93e90/thumbs/inside/1280x960/png/cnc-pubbox-v20-handle-v34-lfoc-2s2p.webp",
@@ -58,7 +58,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "3DP PubBox V1 - XR VESC Box",
+        title: "3DP PubBox V1 - XR VESC Box + Lid",
         fabricationMethod: "3DP",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/670275/images/6065874_a6347037-184b-427e-b683-124167242c89_efe5dcf6-e025-4200-bf45-de189efffa9a/thumbs/inside/1280x960/png/3dp-home.webp",
@@ -67,7 +67,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "3DP PubBox for HyperCore Plug - XR VESC Box",
+        title: "3DP PubBox for HyperCore Plug - XR VESC Box + Lid",
         fabricationMethod: "3DP",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/798937/images/6186753_117208fa-c32c-408c-828b-d333ce282aa4_73035746-4467-4c9f-ab49-f681335691e5/thumbs/inside/1280x960/png/img_0416.webp",
@@ -112,7 +112,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "VOW Systems: Extended battery box",
+        title: "VOW Systems: Extended Battery Box + Lid",
         fabricationMethod: "3DP",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/967352/images/7383039_4c6f3c2a-7702-4e44-9990-17a23e322e90_7d2edc3f-44de-4113-bec1-5e1cfb223ec3/thumbs/inside/1280x960/png/screenshot-2024-08-07-at-211107.webp",
@@ -290,7 +290,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "Atlowshop Big Battery Box",
+        title: "Atlowshop Big Battery Box (TORque Box Lid Compatible)",
         fabricationMethod: "3DP",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/987242/images/7522617_545606e3-b628-4e59-af1a-78c21db70ab7_a6e92503-62b8-479a-b4a2-284f0bd6f78c/thumbs/inside/1280x960/jpg/20240605_145529-scaled-e1718062700155.webp",
@@ -308,9 +308,9 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "PubParts FlowGlider Controller Box - Ubox 85v and More",
+        title: "PubParts FlowGlider Controller Box + Lid + Parts - Ubox 85v and More",
         fabricationMethod: "3DP",
-        typeOfPart: ["Controller Box"],
+        typeOfPart: ["Controller Box", "Connector Cover", "Gasket"],
         imageSrc: "https://media.printables.com/media/prints/989094/images/7536202_d1c6bcb8-5dea-49ce-84c2-391efbaba0eb_82216453-6078-4cf8-8fec-ec7fd50e567c/thumbs/inside/1280x960/png/cover.webp",
         externalUrl: "https://www.printables.com/model/989094",
         dropboxUrl: "https://www.dropbox.com/scl/fi/z4u536q829mstekjszpy8/pubparts-flowglider-controller-box-ubox85v-and-more-model_files.zip?rlkey=h3uujsyp2j0unejwhw31r1wnp&st=0r5dho3f&dl=0",

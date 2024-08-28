@@ -19,11 +19,12 @@ export default (item: itemData, index: number) => (
                 }
 
                 {item.typeOfPart?.length &&
-                    <Stack className="display-over-top" direction="horizontal" gap={1}>
+                    <Stack className="display-over-top" direction="vertical" gap={1}>
                         {item.typeOfPart.map((part, pillIndex) => (
-                            <Badge key={`item-card-${index}-pill-${pillIndex}`} pill bg="primary">{part}</Badge>
+                            <Badge key={`item-card-${index}-pill-${pillIndex}`} pill bg="dark">{part}</Badge>
                         ))}
-                        <Badge pill bg="primary">{item.fabricationMethod}</Badge>
+                        
+                        <Badge pill bg="dark">{item.fabricationMethod}</Badge>
                     </Stack>
                 }
                 <Card.Body>

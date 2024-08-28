@@ -274,6 +274,13 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
+        title: "Grip Tape DXF Outlines - Cobra, Kush Wide, Stock",
+        fabricationMethod: "Laser",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000579551/design/2024-08-09_bac8c3ea94466.jpg?x-oss-process=image/resize,w_1000/format,webp",
+        externalUrl: "https://makerworld.com/en/models/579551"
+    },
+    {
         title: "XLR Charge Port Gasket",
         fabricationMethod: "3DP",
         typeOfPart: ["Gasket"],

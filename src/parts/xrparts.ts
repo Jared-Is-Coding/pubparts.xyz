@@ -167,7 +167,7 @@ export default [
     },
     {
         title: "Stock Axle Block Covers",
-        fabricationMethod: "3d Printed",
+        fabricationMethod: "3DP",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://cdn.thingiverse.com/assets/ac/f9/d4/6a/6c/large_display_FGLB002_-_standard_mounting_block_cable_plate.png",
         externalUrl: "https://www.thingiverse.com/thing:5419699",
@@ -266,7 +266,7 @@ export default [
     },
     {
         title: "Grip Tape for Onewheel XR",
-        fabricationMethod: "Laser Cut",
+        fabricationMethod: "Laser",
         typeOfPart: ["Footpad"],
         imageSrc: "https://cdn.thingiverse.com/assets/47/73/33/36/b8/large_display_grip.jpg",
         externalUrl: "https://www.thingiverse.com/thing:5343206",
@@ -275,7 +275,7 @@ export default [
     },
     {
         title: "XLR Charge Port Gasket",
-        fabricationMethod: "3d Printed",
+        fabricationMethod: "3DP",
         typeOfPart: ["Gasket"],
         imageSrc: "https://media.printables.com/media/prints/220062/images/2005926_dca126cf-c170-46bc-97ee-ffee304c980d/thumbs/inside/1280x960/jpg/6a66c33c-340a-41c7-ae86-ca46c86651d0.webp",
         externalUrl: "https://www.printables.com/model/220062",
@@ -284,7 +284,7 @@ export default [
     },
     {
         title: "Atlowshop Big Battery Box",
-        fabricationMethod: "3d Printed",
+        fabricationMethod: "3DP",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/987242/images/7522617_545606e3-b628-4e59-af1a-78c21db70ab7_a6e92503-62b8-479a-b4a2-284f0bd6f78c/thumbs/inside/1280x960/jpg/20240605_145529-scaled-e1718062700155.webp",
         externalUrl: "https://www.printables.com/model/987242",
@@ -293,7 +293,7 @@ export default [
     },
     {
         title: "Atlowshop \"Atlowglider\" Controller Box",
-        fabricationMethod: "3d Printed",
+        fabricationMethod: "3DP",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/987260/images/7522686_03eb27d6-71ae-4696-9c4e-6dbc29daca5e_a1d19ccd-5791-4cf0-8cb5-fe857f81c8b5/thumbs/inside/1280x960/png/screenshot-2024-08-26-145104.webp",
         externalUrl: "https://www.printables.com/model/987260",
@@ -302,7 +302,7 @@ export default [
     },
     {
         title: "PubParts FlowGlider Controller Box - Ubox 85v and More",
-        fabricationMethod: "3d Printed",
+        fabricationMethod: "3DP",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/989094/images/7536202_d1c6bcb8-5dea-49ce-84c2-391efbaba0eb_82216453-6078-4cf8-8fec-ec7fd50e567c/thumbs/inside/1280x960/png/cover.webp",
         externalUrl: "https://www.printables.com/model/989094",

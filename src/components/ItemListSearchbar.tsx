@@ -148,7 +148,7 @@ export class ItemListSearchbar extends Component {
                             <Form.Label as="h3">Fabrication Method:</Form.Label>
                             <Form.Check label="3d Printed" name="3dp" id="3dp" type="checkbox" inline onChange={(e) => this.setFabricationCheckbox(e)} />
                             <Form.Check label="CNC" name="cnc" id="cnc" type="checkbox" inline onChange={(e) => this.setFabricationCheckbox(e)} />
-                            <Form.Check label="Laser Cut" name="laserCut" id="laserCut" type="checkbox" inline onChange={(e) => this.setFabricationCheckbox(e)} />
+                            <Form.Check label="Laser Cut" name="laser" id="laser" type="checkbox" inline onChange={(e) => this.setFabricationCheckbox(e)} />
                         </div>
                     </Stack>
                 </div>

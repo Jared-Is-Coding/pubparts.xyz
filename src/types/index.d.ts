@@ -9,7 +9,7 @@ type itemData = {
     fabricationMethod:
         | "3DP"
         | "CNC"
-        | "Laser Cut"
+        | "Laser"
         | "Other"
     /**
      * Item type text

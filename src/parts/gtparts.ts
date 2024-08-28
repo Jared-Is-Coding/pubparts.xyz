@@ -86,5 +86,14 @@ export default [
         externalUrl: "https://www.printables.com/model/865565",
         dropboxUrl: "https://www.dropbox.com/scl/fi/71hsznle01plf4ne3v5tq/sf-gt-axle-bolts-model_files.zip?rlkey=dthnuz48wjkgvnm5luiz8pnn9&st=rpcja0xv&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "Stock Controller Box Gasket",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Gasket"],
+        imageSrc: "https://media.printables.com/media/prints/919483/images/7018416_1b0e6aed-f664-435b-a98c-965818ff9e01_af6fb348-20d1-4f38-85d3-a96b1c6f4743/thumbs/inside/1280x960/jpeg/img_0609.webp",
+        externalUrl: "https://www.printables.com/model/919483",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/6n3fasa6g0oam9srgi4qh/onewheel-gt-controller-box-gasket-model_files.zip?rlkey=sns2p0a6n5qdxkruqfo4jgzmm&st=xb6yjzx4&dl=0",
+        dropboxZipLastUpdated: "2024-08-28"
     }
 ] as itemData[]

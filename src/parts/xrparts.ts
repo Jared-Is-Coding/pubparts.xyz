@@ -315,5 +315,12 @@ export default [
         externalUrl: "https://www.printables.com/model/989094",
         dropboxUrl: "https://www.dropbox.com/scl/fi/z4u536q829mstekjszpy8/pubparts-flowglider-controller-box-ubox85v-and-more-model_files.zip?rlkey=h3uujsyp2j0unejwhw31r1wnp&st=0r5dho3f&dl=0",
         dropboxZipLastUpdated: "2024-08-28"
+    },
+    {
+        title: "6 Pin Molex To 20mm Cable Gland for Floatboxx",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/606685/images/4822641_48f07d34-7133-44cc-b4d0-d3225912641b_e0037b62-c651-4ca8-804f-c5126c785537/thumbs/inside/1280x960/png/gland.webp",
+        externalUrl: "https://www.printables.com/model/606685"
     }
 ] as itemData[]

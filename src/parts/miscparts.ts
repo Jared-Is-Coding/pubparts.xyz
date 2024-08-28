@@ -60,5 +60,21 @@ export default [
         imageSrc: "/images/boards/misc/sf-connector-nut-tool.png",
         dropboxUrl: "https://www.dropbox.com/scl/fi/y3rn6rre8vtazm0lucccj/sf-connector-nut-tool.zip?rlkey=fp0btlcbx12t6o7yc3i3kl77g&st=pbv6wdso&dl=0",
         dropboxZipLastUpdated: "2024-08-27"
+    },
+    {
+        title: "GX16-3 Charge Port Plug",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Port Cover"],
+        imageSrc: "https://media.printables.com/media/prints/927738/images/7075088_b93c2053-ebcc-44e6-907a-72b20eb8f1b4_c05558cd-7cc3-4025-901c-04b149a2dd5b/thumbs/inside/1280x960/png/screenshot-2024-06-29-193038.webp",
+        externalUrl: "https://www.printables.com/model/927738",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/twfphrzgtymce2tfwy21y/gx16-3-charge-plug-port-for-vesc-onewheel-model_files.zip?rlkey=gb0k2eqfrtbnynpyfh9ehsdre&st=avsjbfx8&dl=0",
+        dropboxZipLastUpdated: "2024-08-28"
+    },
+    {
+        title: "AFU and ChiBatterySystems Onewheel Charger Bumpers",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/585322/images/4668816_5569d34a-fff9-4d2f-84ad-72a342e5eadc/thumbs/inside/1280x960/jpg/img_8647.webp",
+        externalUrl: "https://www.printables.com/model/585322"
     }
 ] as itemData[]

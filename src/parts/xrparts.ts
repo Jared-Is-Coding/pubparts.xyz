@@ -166,6 +166,15 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
+        title: "Stock Axle Block Covers",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Axle Block"],
+        imageSrc: "https://cdn.thingiverse.com/assets/ac/f9/d4/6a/6c/large_display_FGLB002_-_standard_mounting_block_cable_plate.png",
+        externalUrl: "https://www.thingiverse.com/thing:5419699",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/01f1v2gz5eqjqo5in12y1/apple-airtag-connector-cover-for-onewheel-5417299.zip?rlkey=b3zybckyogth5yl9hevj5co9o&st=ijgp0al1&dl=0",
+        dropboxZipLastUpdated: "2024-08-27"
+    },
+    {
         title: "Flight Fins",
         fabricationMethod: "3DP",
         typeOfPart: ["Fender"],
@@ -236,6 +245,15 @@ export default [
         externalUrl: "https://www.thingiverse.com/thing:4716667",
         dropboxUrl: "https://www.dropbox.com/scl/fi/w9u8q1nfvmzg9othoy8je/flowglider-connector-cover.zip?rlkey=rds1z7zp9qz9wkgdwvxagufv0&st=u9twyfvg&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "FlowGlider Connector Cover - Apple Airtag Slot",
+        fabricationMethod: "3DP",
+        typeOfPart: ["Connector Cover"],
+        imageSrc: "https://cdn.thingiverse.com/assets/d6/8a/33/51/2e/large_display_aatc_001.jpg",
+        externalUrl: "https://www.thingiverse.com/thing:5417299",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/01f1v2gz5eqjqo5in12y1/apple-airtag-connector-cover-for-onewheel-5417299.zip?rlkey=b3zybckyogth5yl9hevj5co9o&st=u65uvlhn&dl=0",
+        dropboxZipLastUpdated: "2024-08-27"
     },
     {
         title: "FlowGlider Cable Clip",

@@ -211,7 +211,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "WTF Rails to C&R or Stock Fender Adapters",
+        title: "PubParts WTF Rails to C&R or Stock Fender Adapters",
         fabricationMethod: "3DP",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/661560/images/6855093_7f7ef72d-7827-4dfc-b894-e7da30a4b640_9368095b-0bf5-4da7-a257-f42a6ae29c50/thumbs/inside/1280x960/jpg/pic.webp",
@@ -299,5 +299,14 @@ export default [
         externalUrl: "https://www.printables.com/model/987260",
         dropboxUrl: "https://www.dropbox.com/scl/fi/d9nq9d0w121hixhic13ps/atlowglider-model_files.zip?rlkey=gzkl6nbfyawmtsmvhjizfauds&st=io0ibtv4&dl=0",
         dropboxZipLastUpdated: "2024-08-27"
+    },
+    {
+        title: "PubParts FlowGlider Controller Box - Ubox 85v and More",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/989094/images/7536202_d1c6bcb8-5dea-49ce-84c2-391efbaba0eb_82216453-6078-4cf8-8fec-ec7fd50e567c/thumbs/inside/1280x960/png/cover.webp",
+        externalUrl: "https://www.printables.com/model/989094",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/z4u536q829mstekjszpy8/pubparts-flowglider-controller-box-ubox85v-and-more-model_files.zip?rlkey=h3uujsyp2j0unejwhw31r1wnp&st=0r5dho3f&dl=0",
+        dropboxZipLastUpdated: "2024-08-28"
     }
 ] as itemData[]

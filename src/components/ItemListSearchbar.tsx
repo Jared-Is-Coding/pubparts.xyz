@@ -118,6 +118,19 @@ export class ItemListSearchbar extends Component {
             if (itemListHeader) itemListHeader.style.display = "block"
         }
     }
+    
+    componentDidMount() {
+        // Get query parameters
+        const queryParams = new URLSearchParams(window.location.search)
+        const keyword = queryParams.get("keyword") ?? queryParams.get("search") ?? ""
+
+        // Set base state if there's a search preset
+        if (keyword) {
+            this.setState({
+                searchText: decodeURIComponent(keyword)
+            }, this.doSearch)
+        }
+    }
 
     render = () => {
         return (

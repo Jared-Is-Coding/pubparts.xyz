@@ -317,7 +317,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-28"
     },
     {
-        title: "6 Pin Molex To 20mm Cable Gland for Floatboxx",
+        title: "6 Pin Molex to 20mm Cable Gland for Floatboxx",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/606685/images/4822641_48f07d34-7133-44cc-b4d0-d3225912641b_e0037b62-c651-4ca8-804f-c5126c785537/thumbs/inside/1280x960/png/gland.webp",
@@ -331,5 +331,12 @@ export default [
         externalUrl: "https://www.printables.com/model/989723",
         dropboxUrl: "https://www.dropbox.com/scl/fi/8brcsu0scupthff9o6crf/btg-fender-delete-sd-extended-dubs-model_files.zip?rlkey=a0ejqmf32227f3lkwm19s2i74&st=sd8bnqsl&dl=0",
         dropboxZipLastUpdated: "2024-08-29"
+    },
+    {
+        title: "PubParts OW XR Frame Full Assembly",
+        fabricationMethod: "Other",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/991294/images/7550375_fbd5baaa-dc30-456a-af7b-b4a72c990696_9511c85e-c416-47d8-bea2-dd5be571d41e/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/991294"
     }
 ] as itemData[]

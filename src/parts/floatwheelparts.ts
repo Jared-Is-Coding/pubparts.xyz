@@ -12,7 +12,7 @@ export default [
         title: "Bearing Cover",
         fabricationMethod: "3DP",
         typeOfPart: ["Bearing Cover"],
-        imageSrc: "https://cdn.discordapp.com/attachments/780659726035058708/1169043702832955443/IMG_2364.jpg?ex=66cdad8a&is=66cc5c0a&hm=c3b2d6491988d147c447de0bd6b4e623db280bff627a0a761322858f8b75a864&",
+        imageSrc: "/images/boards/floatwheel/bearing-cover-floatwheel.jpg",
         externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit?gid=0#gid=0",
         dropboxUrl: "https://www.dropbox.com/scl/fi/x8laz3pw6ftx217j4kc3l/ADV_Bearing_Cover_V1.12.5_Final.zip?rlkey=r8cx7ggvs5txgyivy84mzzodx&st=22dfuzfb&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
@@ -39,7 +39,7 @@ export default [
         title: "Bearing Cover Case",
         fabricationMethod: "3DP",
         typeOfPart: ["Bearing Cover"],
-        imageSrc: "https://cdn.discordapp.com/attachments/780659726035058708/1200101149886386226/20240108_101024.png?ex=66cdf1ca&is=66cca04a&hm=667d1ae8329f6fea9daa5c664af507c697b220aee27c51d9611bdaaa7a0410ea&",
+        imageSrc: "/images/boards/floatwheel/bearing-cover-holder.png",
         externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit?gid=0#gid=0",
         dropboxUrl: "https://www.dropbox.com/scl/fi/pl5uqf62pohhjztexza47/bearing-cover-case.zip?rlkey=r3jky1ssq6qd7v3i5hwoe27v9&st=xhd0q4og&dl=0",
         dropboxZipLastUpdated: "2024-08-26"

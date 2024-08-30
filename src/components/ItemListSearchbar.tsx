@@ -46,13 +46,22 @@ export class ItemListSearchbar extends Component {
     }
 
     doSearch = () => {
+        // Get all items (by class name)
         const items = document.querySelectorAll(".searchableItem")
+
+        // Get search text, lower case
         const searchTextLC = this.state.searchText.toLowerCase()
+
+        // Get filter checkboxes
         const typeCheckboxesChecked = this.state.typeCheckboxesEnabled.toLowerCase()
         const fabCheckboxesChecked = this.state.fabricationCheckboxesEnabled.toLowerCase()
+
+        // Count the number of hidden items, to check for display of "no results"
         let hiddenCount = 0
 
+        // Start filtering items
         items.forEach((item) => {
+            // Get part information, lower case
             const itemPartTypes = item.getAttribute("parttypes")?.toLowerCase()
             const itemFabricationMethod = item.getAttribute("partfabricationmethod")?.toLowerCase()
 
@@ -62,10 +71,12 @@ export class ItemListSearchbar extends Component {
             //      3. Keyword text is provided and no part type is selected
             //      4. Keyword text is provided and the item is of the selected part type(s)
             if (
+                // Search text matches part name
                 (
                     this.state.searchText
                     && !item.getAttribute("partname")?.toLowerCase().includes(searchTextLC)
                 )
+                // Part type matches checked items
                 || (
                     typeCheckboxesChecked.length
                     && (
@@ -74,6 +85,7 @@ export class ItemListSearchbar extends Component {
                         : !typeCheckboxesChecked.toLowerCase().includes(itemPartTypes ?? "false")
                     )
                 )
+                // Part fabrication method matches checked items
                 || (
                     fabCheckboxesChecked.length
                     && (
@@ -83,17 +95,21 @@ export class ItemListSearchbar extends Component {
                     )
                 )
             ) {
+                // Hide
                 (item as HTMLElement).style.display = "none";
                 hiddenCount++
             } else {
+                // Show
                 (item as HTMLElement).style.display = "initial";
             }
         })
 
+        // Get results headers
         const noResultsText = document.getElementById("noResultsText")
         const itemListHeader = document.getElementById("itemListHeader")
         if (!noResultsText) return
 
+        // Display accordingly
         if (hiddenCount == items.length) {
             noResultsText.style.display = "block"
             if (itemListHeader) itemListHeader.style.display = "none"

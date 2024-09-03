@@ -197,4 +197,4 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/dtlcg38g6lrs2y5ts9fzl/easy-print-thick-floatwheel-bumper-model_files.zip?rlkey=g488jwqtp1q1uz7zi4gka5sfo&st=byegqe0b&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
     }
-] as itemData[]
+] as ItemData[]

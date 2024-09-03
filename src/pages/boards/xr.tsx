@@ -7,7 +7,7 @@ import ItemCard from "../../components/ItemCard"
 import { ItemListSearchbar } from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
-import xrparts from "../../parts/xrparts"
+import xrparts from "../../lists/parts/xrparts"
 import "../../scss/pages/items.scss"
 
 export const Head: HeadFC = () => (
@@ -34,11 +34,13 @@ const IndexPage: React.FC<PageProps> = () => {
                 </p>
             </header>
 
-            <main>
+            <main className="page-items">
                 <Container>
                     <ItemListSearchbar />
 
                     <h2 id="itemListHeader" style={{display: "block"}}>Items</h2>
+                    <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
+
                     <Row>
                         {!xrparts.length &&
                             <Col xs={{span: 12}}>

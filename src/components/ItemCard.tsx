@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
 
-export default (item: itemData, index: number) => (
+export default (item: ItemData, index: number) => (
     <Col
         xs={{span: 10, offset: 1}}
         md={{span: 6, offset: 0}}
@@ -27,6 +27,7 @@ export default (item: itemData, index: number) => (
                         <Badge pill bg="dark">{item.fabricationMethod}</Badge>
                     </Stack>
                 }
+                
                 <Card.Body>
                     <Card.Title as="h3">{item.title}</Card.Title>
 

@@ -85,5 +85,14 @@ export default [
         externalUrl: "https://www.printables.com/model/845546",
         dropboxUrl: "https://www.dropbox.com/scl/fi/95okrl6a5swefuru345g6/onewheel-bonk-bar-and-block-model_files.zip?rlkey=3d4fvtiiexo91edxlnbedllhk&st=kjji907z&dl=0",
         dropboxZipLastUpdated: "2024-08-28"
+    },
+    {
+        title: "Dragan Hooks v2",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://cdn.thingiverse.com/assets/e9/9e/bb/cd/ef/large_display_TH01.jpg",
+        externalUrl: "https://www.thingiverse.com/thing:5178142",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/a5jfaeh5dihjoktaq9uhs/Toe-Hook-for-Streetboard-Snakeboard-Longboard-5178142.zip?rlkey=qvy0kx88qpvyz48t5qtmi493m&st=aw7qqeaj&dl=0",
+        dropboxZipLastUpdated: "2024-09-02"
     }
-] as itemData[]
+] as ItemData[]

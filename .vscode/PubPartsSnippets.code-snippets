@@ -34,5 +34,22 @@
             "\tdropboxZipLastUpdated: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
             "}"
         ]
+    },
+
+    "New_Resource_Entry": {
+        "description": "New entry for PubParts resource lists",
+        "prefix": [
+            "resource",
+            "newresource"
+        ],
+        "body": [
+            ",",
+            "{",
+            "\ttitle: \"$1\",",
+            "\ttypeOfResource: [\"Spreadsheet\"],",
+            "\texternalUrl: \"\",",
+            "\tdescription: \"\"",
+            "}"
+        ]
     }
 }

@@ -7,7 +7,7 @@ import ItemCard from "../../components/ItemCard"
 import { ItemListSearchbar } from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
-import pintparts from "../../parts/pintparts"
+import pintparts from "../../lists/parts/pintparts"
 import "../../scss/pages/items.scss"
 
 export const Head: HeadFC = () => (
@@ -22,39 +22,41 @@ export const Head: HeadFC = () => (
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <>
-        <header>
-            <Navbar />
+            <header>
+                <Navbar />
 
-            <h1 className="flex-center">
-                Pint/Pint X Frame Parts
-            </h1>
+                <h1 className="flex-center">
+                    Pint/Pint X Frame Parts
+                </h1>
 
-            <p className="tagline flex-center">
-                <br />
-            </p>
-        </header>
+                <p className="tagline flex-center">
+                    <br />
+                </p>
+            </header>
 
-        <main>
-            <Container>
-                <ItemListSearchbar />
+            <main className="page-items">
+                <Container>
+                    <ItemListSearchbar />
 
-                <h2 id="itemListHeader" style={{display: "block"}}>Items</h2>
-                <Row>
-                    {!pintparts.length &&
-                        <Col xs={{span: 12}}>
-                            <p>No items.</p>
-                        </Col>
-                    }
-                    {!!pintparts.length &&
-                        pintparts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
-                    }
+                    <h2 id="itemListHeader" style={{display: "block"}}>Items</h2>
+                    <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
+
+                    <Row>
+                        {!pintparts.length &&
+                            <Col xs={{span: 12}}>
+                                <p>No items.</p>
+                            </Col>
+                        }
+                        {!!pintparts.length &&
+                            pintparts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
+                        }
+                    
+                        <CopyrightCard />
+                    </Row>
+                </Container>
+            </main>
                 
-                    <CopyrightCard />
-                </Row>
-            </Container>
-        </main>
-            
-        <Footer />
+            <Footer />
         </>
     )
 }

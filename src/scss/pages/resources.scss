@@ -1,0 +1,32 @@
+@import "../variables.scss";
+
+.page-resources {
+    .card {
+        background-color: $tertiary-color !important;
+        border-radius: $card-border-radius !important;
+        margin-bottom: 20px;
+
+        .display-over-top {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            align-items: flex-end;
+        }
+
+        .card-title {
+            color: $secondary-color;
+        }
+
+        .card-body {
+            min-height: 3em;
+        }
+    }
+    
+    .card.resource-website a {
+        color: $link-color !important;
+    }
+    
+    .card.resource-spreadsheet a {
+        color: $alt-link-color !important;
+    }
+}

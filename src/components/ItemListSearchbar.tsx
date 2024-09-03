@@ -180,9 +180,9 @@ export class ItemListSearchbar extends Component {
                             <Form.Check label="Laser Cut" name="laser" id="laser" type="checkbox" inline onChange={(e) => this.setFabricationCheckbox(e)} />
                         </div>
                     </Stack>
-                </div>
 
-                <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
+                    <hr />
+                </div>
             </>
 
         )

@@ -1,10 +1,10 @@
-type itemData = {
+type ItemData = {
     /**
      * Item title text
      */
     title: string
     /**
-     * Item price text
+     * Item fabrication method
      */ 
     fabricationMethod:
         | "3DP"
@@ -12,7 +12,7 @@ type itemData = {
         | "Laser"
         | "Other"
     /**
-     * Item type text
+     * Item type
      */ 
     typeOfPart: PartType[]
     /**
@@ -56,3 +56,26 @@ type PartType =
     | "Rim Saver"
     | "Stand"
     | "Tool"
+
+type ResourceData = {
+    /**
+     * Resource title text
+     */
+    title: string
+    /**
+     * Resource type
+     */ 
+    typeOfResource: ResourceType[]
+    /**
+     * Resource external URL
+     */
+    externalUrl: string
+    /**
+     * Resource description text
+     */
+    description?: string
+}
+
+type ResourceType =
+    | "Spreadsheet"
+    | "Website"

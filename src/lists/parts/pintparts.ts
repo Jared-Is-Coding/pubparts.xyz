@@ -87,4 +87,4 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/yz0i568b3spb2ovtg6vie/onewheel-pint-rail-model-model_files.zip?rlkey=hwwyw4wzo4v8im8g0n3td6yq8&st=bm6y3efz&dl=0",
         dropboxZipLastUpdated: "2024-08-27"
     }
-] as itemData[]
+] as ItemData[]

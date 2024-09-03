@@ -96,4 +96,4 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/6n3fasa6g0oam9srgi4qh/onewheel-gt-controller-box-gasket-model_files.zip?rlkey=sns2p0a6n5qdxkruqfo4jgzmm&st=xb6yjzx4&dl=0",
         dropboxZipLastUpdated: "2024-08-28"
     }
-] as itemData[]
+] as ItemData[]

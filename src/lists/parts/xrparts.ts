@@ -346,4 +346,4 @@ export default [
         imageSrc: "https://media.printables.com/media/prints/993611/images/7565636_e24b8cb7-c1d7-44ce-a348-e7218a6c56b4_3f4277d8-cd44-420a-bbb2-3dfd28b8c317/thumbs/inside/1280x960/png/mushies.webp",
         externalUrl: "https://www.printables.com/model/993611"
     }
-] as itemData[]
+] as ItemData[]

@@ -28,5 +28,11 @@ export default [
         typeOfResource: ["Website"],
         externalUrl: "https://pev.dev/",
         description: "A place to share information and ideas about DIY PEVs"
+    },
+    {
+        title: "ESC Log Video",
+        typeOfResource: ["Website"],
+        externalUrl: "https://lachlanhurst.github.io/esc-log-video/",
+        description: "Tool for generating data overlay videos from VESC log files"
     }
 ] as ResourceData[]

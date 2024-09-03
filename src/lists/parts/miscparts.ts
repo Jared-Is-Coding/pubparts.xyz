@@ -94,5 +94,12 @@ export default [
         externalUrl: "https://www.thingiverse.com/thing:5178142",
         dropboxUrl: "https://www.dropbox.com/scl/fi/a5jfaeh5dihjoktaq9uhs/Toe-Hook-for-Streetboard-Snakeboard-Longboard-5178142.zip?rlkey=qvy0kx88qpvyz48t5qtmi493m&st=aw7qqeaj&dl=0",
         dropboxZipLastUpdated: "2024-09-02"
+    },
+    {
+        title: "Battery Assemblies for Fitment",
+        fabricationMethod: "Other",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/994910/images/7573698_8dd278b0-b2be-4f9b-a9b3-c16abdaeed60_85158e69-6523-4577-9abe-b25964a56534/thumbs/inside/1280x960/png/screenshot-2024-09-02-220926.webp",
+        externalUrl: "https://www.printables.com/model/994910"
     }
 ] as ItemData[]

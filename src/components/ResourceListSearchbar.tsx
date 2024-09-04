@@ -1,8 +1,12 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react"
 import { Form, Stack } from "react-bootstrap"
+import isBrowser from "../hooks/isBrowser"
 import { toTitleCase } from "../hooks/toTitleCase"
 
 export default () => {
+    // Check for browser window
+    if (!isBrowser()) return
+
     // Manually created list
     const resourceTypeCheckboxes = {
         "App": false,

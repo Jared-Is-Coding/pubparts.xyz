@@ -71,7 +71,15 @@ type ResourceData = {
     /**
      * Resource external URL
      */
-    externalUrl: string
+    externalUrl?: string
+    /**
+     * Apple App Store link
+     */
+    appStoreLink?: string
+    /**
+     * Google Play Store link
+     */
+    playStoreLink?: string
     /**
      * Resource description text
      */

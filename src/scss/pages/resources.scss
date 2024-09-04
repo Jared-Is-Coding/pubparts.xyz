@@ -30,7 +30,8 @@
         color: $alt-link-color !important;
     }
     
-    .card.resource-app a {
+    .card.resource-app a,
+    .card.resource-app h3 {
         color: $alt2-link-color !important;
     }
 }

@@ -22,11 +22,25 @@ export default (resource: ResourceData, index: number) => (
                         </Stack>
                     }
 
-                    <Card.Title as="h3">
-                        <a href={resource.externalUrl} target="_blank">
-                            {resource.title}
-                        </a>
-                    </Card.Title>
+                    {(resource.externalUrl || resource.appStoreLink || resource.playStoreLink) &&
+                        <Card.Title as="h3">
+                            {resource.externalUrl &&
+                                <a href={resource.externalUrl} target="_blank">
+                                    {resource.title}
+                                </a>
+                            }
+                            
+                            {!resource.externalUrl && (resource.appStoreLink || resource.playStoreLink) &&
+                                <>
+                                    {resource.title}
+                                    <> (</>
+                                    {resource.appStoreLink && <><a href={resource.appStoreLink} target="_blank">App Store</a></>}
+                                    {resource.playStoreLink && <> | <a href={resource.playStoreLink} target="_blank">Play Store</a></>}
+                                    <>)</>
+                                </>
+                            }
+                        </Card.Title>
+                    }
                     
                     {resource.description &&
                         <Card.Text>

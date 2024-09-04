@@ -34,7 +34,8 @@ export default () => {
         "3d Printed": false,
         "CNC": false,
         "Laser": false,
-        "Other": false
+        "Other": false,
+        "Prefabricated": false
     }
 
     const partTypes = Object.keys(partTypeCheckboxes) as PartType[]

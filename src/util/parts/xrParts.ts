@@ -103,7 +103,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "VOW Systems: Mushies Footpad",
+        title: "VOW Systems: DIY Mushies Footpad",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad"],
         imageSrc: "https://media.printables.com/media/prints/967377/images/7383151_42dd71a7-35fe-45a3-a832-7998116b5ae7_4dad2734-5063-4db7-8ce8-5cccc360069b/thumbs/inside/1280x960/png/screenshot-2024-08-07-at-212054.webp",
@@ -345,5 +345,61 @@ export default [
         typeOfPart: ["Footpad"],
         imageSrc: "https://media.printables.com/media/prints/993611/images/7565636_e24b8cb7-c1d7-44ce-a348-e7218a6c56b4_3f4277d8-cd44-420a-bbb2-3dfd28b8c317/thumbs/inside/1280x960/png/mushies.webp",
         externalUrl: "https://www.printables.com/model/993611"
+    },
+    {
+        title: "Floatboxx",
+        fabricationMethod: "Prefabricated",
+        typeOfPart: ["Controller Box", "Footpad", "Tool", "Miscellaneous", "Rails"],
+        imageSrc: "https://primary.jwwb.nl/public/r/e/z/temp-cwzckgievmvjujmcqibl/floatboxxxlmcwithlidandfootpad.jpg",
+        externalUrl: "https://www.floatboxx.com/",
+        price: "$25-$250"
+    },
+    {
+        title: "Funwheel Controller Box Complete",
+        fabricationMethod: "Prefabricated",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://www.fungineers.us/cdn/shop/files/Photoroom-20240601-170053_2_1426x.png?v=1721869640",
+        externalUrl: "https://www.fungineers.us/products/funwheel-controller-box",
+        price: "$600"
+    },
+    {
+        title: "VOW Systems: XR Controller Casing",
+        fabricationMethod: "Prefabricated",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://vow.systems/cdn/shop/files/Controller_Casing_7.png?v=1720866053&width=1426",
+        externalUrl: "https://vow.systems/products/xr-controller-casing",
+        price: "$206"
+    },
+    {
+        title: "VOW Systems: XR Battery Casing",
+        fabricationMethod: "Prefabricated",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://vow.systems/cdn/shop/files/Battery_Casing_3.png?v=1720865968&width=1426",
+        externalUrl: "https://vow.systems/products/xr-battery-casing",
+        price: "$206"
+    },
+    {
+        title: "VOW Systems: XR Sym Casing",
+        fabricationMethod: "Prefabricated",
+        typeOfPart: ["Battery Box", "Controller Box"],
+        imageSrc: "https://vow.systems/cdn/shop/files/Sym_Casing_3_9e6194bc-c2fa-427c-9423-6564437464ee.png?v=1720866116&width=1426",
+        externalUrl: "https://vow.systems/products/xr-sym-casing",
+        price: "$206"
+    },
+    {
+        title: "VOW Systems: Prefabricated XR Mushies Footpad",
+        fabricationMethod: "Prefabricated",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://vow.systems/cdn/shop/files/Mushies_1_0583de09-af43-43fc-8b27-7c86a71b9e6f.png?v=1720866091&width=1426",
+        externalUrl: "https://vow.systems/products/xr-mushies",
+        price: "$69-$172"
+    },
+    {
+        title: "VOW Systems: XR DIY Bundle",
+        fabricationMethod: "Prefabricated",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://vow.systems/cdn/shop/files/Lids1.png?v=1720867495&width=1426",
+        externalUrl: "https://vow.systems/products/xr-diy-bundle?variant=49474202763583",
+        price: "69-$86"
     }
 ] as ItemData[]

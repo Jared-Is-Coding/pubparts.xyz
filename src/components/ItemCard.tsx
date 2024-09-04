@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
+import { toTitleCase } from "../hooks/toTitleCase"
 
 export default (item: ItemData, index: number) => (
     <Col
@@ -8,9 +9,9 @@ export default (item: ItemData, index: number) => (
         lg={{span: 4, offset: 0}}
         className="flex-center flex-top searchableItem"
         key={`item-card-${index}`}
-        partname={`${item.title}`}
-        parttypes={`${item.typeOfPart.join(",").replaceAll(" ", "")}`}
-        partfabricationmethod={`${item.fabricationMethod.replaceAll(" ", "")}`}>
+        parttitle={item.title}
+        parttypes={item.typeOfPart.join(",")}
+        partfabricationmethod={item.fabricationMethod}>
             <Card>
                 {!!item.imageSrc &&
                     <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
@@ -20,8 +21,8 @@ export default (item: ItemData, index: number) => (
 
                 {item.typeOfPart?.length &&
                     <Stack className="display-over-top" direction="vertical" gap={1}>
-                        {item.typeOfPart.map((part, pillIndex) => (
-                            <Badge key={`item-card-${index}-pill-${pillIndex}`} pill bg="dark">{part}</Badge>
+                        {item.typeOfPart.map((p, pillIndex) => (
+                            <Badge key={`item-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(p)}</Badge>
                         ))}
                         
                         <Badge pill bg="dark">{item.fabricationMethod}</Badge>
@@ -42,6 +43,7 @@ export default (item: ItemData, index: number) => (
                             {item.externalUrl &&
                                 <Card.Link href={item.externalUrl} target="_blank">External Listing</Card.Link>
                             }
+
                             {item.dropboxUrl &&
                                 <Card.Link href={item.dropboxUrl}>ZIP Download{!!item.dropboxZipLastUpdated &&
                                     <>{` (${item.dropboxZipLastUpdated})`}</>

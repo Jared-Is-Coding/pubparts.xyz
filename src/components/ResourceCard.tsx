@@ -12,7 +12,7 @@ export default (resource: ResourceData, index: number) => (
         resourcetitle={resource.title}
         resourcetypes={resource.typeOfResource.join(",")}
         resourcedescription={resource.description ?? ""}>
-            <Card className={resource.typeOfResource?.map((r) => `resource-${r}`).join(" ")}>
+            <Card className={resource.typeOfResource?.map((r) => `resource-${r.toLowerCase()}`).join(" ")}>
                 <Card.Body>
                     {resource.typeOfResource?.length &&
                         <Stack className="display-over-top" direction="vertical" gap={1}>

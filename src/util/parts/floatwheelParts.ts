@@ -10,7 +10,7 @@ export default [
     },
     {
         title: "Bearing Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Bearing Cover"],
         imageSrc: "/images/boards/floatwheel/bearing-cover-floatwheel.jpg",
         externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit?gid=0#gid=0",
@@ -19,7 +19,7 @@ export default [
     },
     {
         title: "Bearing Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Bearing Cover"],
         imageSrc: "https://media.printables.com/media/prints/735915/images/5752621_138c6cc3-89a1-4433-98a8-6af2b2a37729_45ef76be-c844-4bc6-b00e-e3dd827245ac/thumbs/inside/1280x960/png/fusion360_vctooaqigf.webp",
         externalUrl: "https://www.printables.com/model/735915",
@@ -28,7 +28,7 @@ export default [
     },
     {
         title: "Bearing Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Bearing Cover"],
         imageSrc: "https://media.printables.com/media/prints/913187/images/6975393_c50bc36e-6e36-4b22-956f-e31d368e898a_22224114-fa44-4a3f-a18c-ca1c6c90b3ec/thumbs/inside/1280x960/jpg/adv_bearing_cover-v2.webp",
         externalUrl: "https://www.printables.com/model/913187",
@@ -37,7 +37,7 @@ export default [
     },
     {
         title: "Bearing Cover Case",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Bearing Cover"],
         imageSrc: "/images/boards/floatwheel/bearing-cover-holder.png",
         externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit?gid=0#gid=0",
@@ -46,7 +46,7 @@ export default [
     },
     {
         title: "\"WINGLETS\" Extension for regular footpads (ADV PRO)",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad"],
         imageSrc: "https://cdn.thingiverse.com/assets/e6/48/ec/fa/66/large_display_4a358e72-4dc1-4847-961e-301b2e186d0c.jpg",
         externalUrl: "https://www.thingiverse.com/thing:6728108",
@@ -55,7 +55,7 @@ export default [
     },
     {
         title: "HYPERFORMA 3D Printable Footpads (Original & Wide)",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad"],
         imageSrc: "https://media.printables.com/media/prints/621834/images/4937122_da8ced91-1565-48ba-a782-c2d1cc30965b_ee48b877-7f8f-457f-8ead-7e7af61b7b16/thumbs/inside/1280x960/png/screenshot-2023-10-22-110221.webp",
         externalUrl: "https://www.printables.com/model/621834",
@@ -64,7 +64,7 @@ export default [
     },
     {
         title: "HYPERFORMA Mini Fender + 12 mm + Mudguard + Delete Fenders",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/596132/images/4761368_e114ef6a-4643-45a2-b1a6-757b75b44f25_de762551-cbf9-403d-bd12-f7b0314be53d/thumbs/inside/1280x960/png/immagine-2023-09-29-232427.webp",
         externalUrl: "https://www.printables.com/model/596132",
@@ -73,7 +73,7 @@ export default [
     },
     {
         title: "HYPERFORMA Split Slim Top Fender",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/749391/images/5848555_a7d7d33d-d38b-4cd8-851e-3fd44a928b9b_bebc99ff-3d36-41df-bcbd-b2443edee236/thumbs/inside/1280x960/png/screenshot-2024-02-03-163350.webp",
         externalUrl: "https://www.printables.com/model/749391",
@@ -82,7 +82,7 @@ export default [
     },
     {
         title: "HYPERFORMA ADV Pro Rail Guards - Split Design",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Rail Attachment"],
         imageSrc: "https://media.printables.com/media/prints/795217/images/6158954_784453ce-8025-472a-9c3f-4fd8ad81eb7b_0ef6e085-eae9-449d-919a-dad0ec1e73f1/thumbs/inside/1280x960/png/screenshot-2024-03-06-210554.webp",
         externalUrl: "https://www.printables.com/model/795217",
@@ -91,7 +91,7 @@ export default [
     },
     {
         title: "HYPERFORMA Charger Plug Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/564996/images/4760914_235d9eba-77e8-4027-a7ea-9c8edc73c007_a8dac027-e84a-4084-a8f0-6b00c267e7b5/thumbs/inside/1280x960/jpg/photo_2023-09-29_21-44-31.webp",
         externalUrl: "https://www.printables.com/model/564996",
@@ -100,7 +100,7 @@ export default [
     },
     {
         title: "HYPERFORMA Power Button Plug Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/565002/images/4760711_ed744a1d-07bb-4a94-8cdb-9a5b06b1ce98_d856752b-27ee-435b-81c9-69660c253fc9/thumbs/inside/1280x960/png/immagine-2023-09-29-214957.webp",
         externalUrl: "https://www.printables.com/model/565002",
@@ -109,7 +109,7 @@ export default [
     },
     {
         title: "HYPERFORMA Car Stand",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Stand"],
         imageSrc: "https://media.printables.com/media/prints/596190/images/4760815_cf512321-79b6-402c-82f9-1a97ac6fbadb_1d195b55-9aaa-42bf-8d11-09ab7ea46bf2/thumbs/inside/1280x960/png/immagine-2023-09-29-220335.webp",
         externalUrl: "https://www.printables.com/model/596190",
@@ -118,7 +118,7 @@ export default [
     },
     {
         title: "HYPERFORMA Vertical Stand",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Stand"],
         imageSrc: "https://media.printables.com/media/prints/642938/images/5076809_f75ebe22-f6db-4518-8a3d-77ffe93c4654_13003252-5e1d-4156-b7c5-aadad57f79d2/thumbs/inside/1280x960/png/screenshot-2023-11-10-175442.webp",
         externalUrl: "https://www.printables.com/model/642938",
@@ -127,7 +127,7 @@ export default [
     },
     {
         title: "HYPERFORMA Rim Saver",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Rim Saver"],
         imageSrc: "https://media.printables.com/media/prints/672083/images/5283997_d01c325d-d569-4bdf-a1aa-25b2e3266993_5c1d4a86-7ffe-4ff1-972a-138d5c4f4a06/thumbs/inside/1280x960/png/screenshot-2023-12-06-200427.webp",
         externalUrl: "https://www.printables.com/model/672083",
@@ -136,7 +136,7 @@ export default [
     },
     {
         title: "HYPERFORMA Rail Guards",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Rail Attachment"],
         imageSrc: "https://media.printables.com/media/prints/765165/images/5959844_18f95566-c4be-47a5-b011-492669220c49_d72f06a6-d791-4805-96cb-e00945791c17/thumbs/inside/1280x960/png/screenshot-2024-02-14-184406.webp",
         externalUrl: "https://www.printables.com/model/765165",
@@ -145,7 +145,7 @@ export default [
     },
     {
         title: "Stock Drop-Top Fender",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/554088/images/4447195_70254a39-79e6-4513-b643-52198c4e429b/thumbs/inside/1280x960/png/floatwheel-fender-pic.webp",
         externalUrl: "https://www.printables.com/model/554088",
@@ -154,7 +154,7 @@ export default [
     },
     {
         title: "Drop-Top Fender",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/650212/images/5129075_081b9e08-a978-4c72-9fc8-7ebb2a999c74_1aa3903b-89da-48c1-a0a1-0f3d9c220af3/thumbs/inside/1280x960/jpg/img_20231117_174357.webp",
         externalUrl: "https://www.printables.com/model/650212",
@@ -163,7 +163,7 @@ export default [
     },
     {
         title: "Flight Fins Fender",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/553959/images/4446174_a04da9a1-b8ab-4915-b461-5a0779e5ea2f/thumbs/inside/1280x960/jpg/pxl_20230815_161443780.webp",
         externalUrl: "https://www.printables.com/model/553959",
@@ -172,7 +172,7 @@ export default [
     },
     {
         title: "Hub Bolts Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/737187/images/5761116_604a3e91-f258-4c96-80b7-f053ca3108d1_0cc1b4d5-29d4-4c7d-b1ea-affcfc1fb803/thumbs/inside/1280x960/jpg/adv_hub_bolts_cover_img_01.webp",
         externalUrl: "https://www.printables.com/model/737187",
@@ -181,7 +181,7 @@ export default [
     },
     {
         title: "Rail Guards and Power Plug Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Rail Attachment", "Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/732800/images/5730875_46df41e8-a5a8-42df-9424-4766b7caa1a1_d7b12ed6-cb9c-4e08-865d-3b68d17c14e1/thumbs/inside/1280x960/jpeg/img_4825-2.webp",
         externalUrl: "https://www.printables.com/model/732800",
@@ -190,7 +190,7 @@ export default [
     },
     {
         title: "Easy Print Thick Floatwheel Bumper",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Bumper"],
         imageSrc: "https://media.printables.com/media/prints/908883/images/6946996_829c1971-9c26-4068-a96f-4539e982b88b_8d1ed58d-be70-43ee-81dc-996711b32822/thumbs/inside/1280x960/jpg/20240610_141217.webp",
         externalUrl: "https://www.printables.com/model/908883",

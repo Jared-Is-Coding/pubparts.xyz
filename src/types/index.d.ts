@@ -6,11 +6,7 @@ type ItemData = {
     /**
      * Item fabrication method
      */ 
-    fabricationMethod:
-        | "3DP"
-        | "CNC"
-        | "Laser"
-        | "Other"
+    fabricationMethod: FabricationMethod
     /**
      * Item type
      */ 
@@ -57,6 +53,12 @@ type PartType =
     | "Stand"
     | "Tool"
 
+type FabricationMethod =
+    | "3d Printed"
+    | "CNC"
+    | "Laser"
+    | "Other"
+
 type ResourceData = {
     /**
      * Resource title text
@@ -77,6 +79,6 @@ type ResourceData = {
 }
 
 type ResourceType =
-    | "spreadsheet"
-    | "website"
-    | "app"
+    | "Spreadsheet"
+    | "Website"
+    | "App"

@@ -10,7 +10,7 @@ export default [
     },
     {
         title: "OneWheel Extended Stand",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Stand"],
         imageSrc: "https://media.printables.com/media/prints/675193/images/5513095_26a9cd37-2f63-4af6-bf8c-e121ae53f8a3_dcd9dd8f-5c13-4f76-9abd-49c3b9b12dd7/thumbs/inside/1280x960/png/render.webp",
         externalUrl: "https://www.printables.com/model/675193",
@@ -28,7 +28,7 @@ export default [
     },
     {
         title: "GX16 Charge Port Cap",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/966192/images/7374783_ac0656f4-82b4-4162-b35c-ae2f7eda7f96_5fd13502-461c-48fc-95e1-2b3d337d3f7f/thumbs/inside/1280x960/png/img_0819.webp",
         externalUrl: "https://www.printables.com/model/966192",
@@ -37,7 +37,7 @@ export default [
     },
     {
         title: "GX16-2 Tool",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Tool"],
         imageSrc: "https://media.printables.com/media/prints/853671/images/6565721_2bf68af0-4acd-4367-8de2-1bc68694d1cc_f7383e5d-a0db-4a78-8c29-8e8f81856436/thumbs/inside/1280x960/png/capture.webp",
         externalUrl: "https://www.printables.com/model/853671",
@@ -46,7 +46,7 @@ export default [
     },
     {
         title: "16mm Power Button Wrench (GX16)",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Tool"],
         imageSrc: "https://media.printables.com/media/prints/988177/images/7528993_f08ec8b3-cafc-4065-82ed-5d0371b607f7_6c3c8ba3-01ec-4f80-9d8b-4749004b1c18/thumbs/inside/1280x960/png/img_0913.webp",
         externalUrl: "https://www.printables.com/model/988177",
@@ -55,7 +55,7 @@ export default [
     },
     {
         title: "SF Connector Nut Tool",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Tool"],
         imageSrc: "/images/boards/misc/sf-connector-nut-tool.png",
         dropboxUrl: "https://www.dropbox.com/scl/fi/y3rn6rre8vtazm0lucccj/sf-connector-nut-tool.zip?rlkey=fp0btlcbx12t6o7yc3i3kl77g&st=pbv6wdso&dl=0",

@@ -4,11 +4,11 @@ import { Col, Container, Row } from "react-bootstrap"
 import CopyrightCard from "../../components/CopyrightCard"
 import Footer from "../../components/Footer"
 import ItemCard from "../../components/ItemCard"
-import { ItemListSearchbar } from "../../components/ItemListSearchbar"
+import ItemListSearchbar from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
-import floatwheelParts from "../../util/parts/floatwheelParts"
 import "../../scss/pages/items.scss"
+import floatwheelParts from "../../util/parts/floatwheelParts"
 
 export const Head: HeadFC = () => (
     <>

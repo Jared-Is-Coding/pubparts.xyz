@@ -5,9 +5,9 @@ import { toTitleCase } from "../hooks/toTitleCase"
 export default () => {
     // Manually created list
     const resourceTypeCheckboxes = {
-        "app": false,
-        "spreadsheet": false,
-        "website": false
+        "App": false,
+        "Spreadsheet": false,
+        "Website": false
     }
 
     const resourceTypes = Object.keys(resourceTypeCheckboxes) as ResourceType[]
@@ -51,7 +51,7 @@ export default () => {
         // Start filtering resources
         resources.forEach((resource) => {
             // Get part information, lower case
-            const resourceTypes = resource.getAttribute("resourcetypes")?.split(",")
+            const dataResourceTypes = resource.getAttribute("resourcetypes")?.split(",")
 
             // Resources may only display if there is
             //      1. No keyword text is provided and no resource type is selected
@@ -68,7 +68,7 @@ export default () => {
                 // Resource type matches checked items
                 || (
                     Object.values(checkedBoxes).some((v) => !!v)
-                    && !resourceTypes?.some((r) => !!checkedBoxes[r as ResourceType])
+                    && !dataResourceTypes?.some((r) => !!checkedBoxes[r as ResourceType])
                 )
             ) {
                 // Hide
@@ -93,7 +93,10 @@ export default () => {
             noResultsText.style.display = "none"
             if (resourceListHeader) resourceListHeader.style.display = "block"
         }
-    }, [searchText, checkedBoxes])
+    }, [
+        searchText,
+        checkedBoxes
+    ])
     
     return (
         <>

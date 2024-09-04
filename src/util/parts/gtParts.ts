@@ -64,7 +64,7 @@ export default [
     },
     {
         title: "Charge Port Retainer Tool",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Tool"],
         imageSrc: "https://media.printables.com/media/prints/865563/images/6645491_c0910af8-1d98-4bc8-99a8-02178ef5cea8_e77fc594-9557-4b05-8db9-6981b8d8481f/thumbs/inside/1280x960/png/large_display_9d483fba-dc39-4af9-9f48-be6cc1a71497_865563.webp",
         externalUrl: "https://www.printables.com/model/865563",

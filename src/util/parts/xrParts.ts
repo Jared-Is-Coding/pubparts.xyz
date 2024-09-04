@@ -59,7 +59,7 @@ export default [
     },
     {
         title: "3DP PubBox V1 - XR VESC Box + Lid",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/670275/images/6065874_a6347037-184b-427e-b683-124167242c89_efe5dcf6-e025-4200-bf45-de189efffa9a/thumbs/inside/1280x960/png/3dp-home.webp",
         externalUrl: "https://www.printables.com/model/670275",
@@ -68,7 +68,7 @@ export default [
     },
     {
         title: "3DP PubBox for HyperCore Plug - XR VESC Box + Lid",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/798937/images/6186753_117208fa-c32c-408c-828b-d333ce282aa4_73035746-4467-4c9f-ab49-f681335691e5/thumbs/inside/1280x960/png/img_0416.webp",
         externalUrl: "https://www.printables.com/model/798937",
@@ -77,7 +77,7 @@ export default [
     },
     {
         title: "PubBox Connector Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
         imageSrc: "https://media.printables.com/media/prints/931764/images/7102548_83b61ead-d769-406c-a41d-b021f3d5367b_12574008-f4aa-40b5-a7b6-1758a9f41c8a/thumbs/inside/1280x960/png/img_0689.webp",
         externalUrl: "https://www.printables.com/model/931764",
@@ -86,7 +86,7 @@ export default [
     },
     {
         title: "Rim Saver for 6in Hub",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Rim Saver"],
         imageSrc: "https://media.printables.com/media/prints/662104/images/5214682_631ba4a0-2218-4c14-9839-34426e5e4018_08a4158e-4fe0-44a9-9761-bd6018465d63/thumbs/inside/1280x960/png/rimsaver1.webp",
         externalUrl: "https://www.printables.com/model/662104",
@@ -104,7 +104,7 @@ export default [
     },
     {
         title: "VOW Systems: Mushies Footpad",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad"],
         imageSrc: "https://media.printables.com/media/prints/967377/images/7383151_42dd71a7-35fe-45a3-a832-7998116b5ae7_4dad2734-5063-4db7-8ce8-5cccc360069b/thumbs/inside/1280x960/png/screenshot-2024-08-07-at-212054.webp",
         externalUrl: "https://www.printables.com/model/967377",
@@ -113,7 +113,7 @@ export default [
     },
     {
         title: "VOW Systems: Extended Battery Box + Lid",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/967352/images/7383039_4c6f3c2a-7702-4e44-9990-17a23e322e90_7d2edc3f-44de-4113-bec1-5e1cfb223ec3/thumbs/inside/1280x960/png/screenshot-2024-08-07-at-211107.webp",
         externalUrl: "https://www.printables.com/model/967352",
@@ -122,7 +122,7 @@ export default [
     },
     {
         title: "Stock XR/+ Fender",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/960339/images/7333748_6d6f5346-2405-4c23-8566-0513c67f4c43_b796b20d-ff4e-4190-9979-6e5f7dc42a10/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-212639.webp",
         externalUrl: "https://www.printables.com/model/960339",
@@ -131,7 +131,7 @@ export default [
     },
     {
         title: "Stock XR Battery Box",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/960336/images/7333737_d4ad250b-0958-46b2-bd56-1c029dd59cf7_5620337b-ae73-4f4b-8aab-7ed0e5270e74/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-212101.webp",
         externalUrl: "https://www.printables.com/model/960336",
@@ -140,7 +140,7 @@ export default [
     },
     {
         title: "Stock XR Connector Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
         imageSrc: "https://media.printables.com/media/prints/960109/images/7332235_bb80b444-95db-4a85-bb93-aca4e9215a3d_e1cba53e-da5b-48a5-909c-fc7e1d0b7ee3/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-162458.webp",
         externalUrl: "https://www.printables.com/model/960109",
@@ -149,7 +149,7 @@ export default [
     },
     {
         title: "XLR Charger Plug Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/960104/images/7332212_7de0442a-40a1-4b68-ad13-c71be93fed95_99676bf0-d136-46d4-9679-3f1de84a9374/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-162051.webp",
         externalUrl: "https://www.printables.com/model/960104",
@@ -167,7 +167,7 @@ export default [
     },
     {
         title: "Stock Axle Block Covers",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://cdn.thingiverse.com/assets/ac/f9/d4/6a/6c/large_display_FGLB002_-_standard_mounting_block_cable_plate.png",
         externalUrl: "https://www.thingiverse.com/thing:5419699",
@@ -176,7 +176,7 @@ export default [
     },
     {
         title: "Flight Fins",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/960086/images/7332056_04ab3d42-9c0a-4bb4-b9d2-b758696e9962_08694c12-e680-4804-96f4-e9592767b9e6/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-160440.webp",
         externalUrl: "https://www.printables.com/model/960086",
@@ -185,7 +185,7 @@ export default [
     },
     {
         title: "Stock XR Bumpers",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Bumper"],
         imageSrc: "https://media.printables.com/media/prints/960081/images/7331999_f26e12e2-30c9-49a2-9bee-cdd10b4ce7de_9168edff-c37b-4df8-97bd-34dcdceeb191/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-155954.webp",
         externalUrl: "https://www.printables.com/model/960081",
@@ -212,7 +212,7 @@ export default [
     },
     {
         title: "PubParts WTF Rails to C&R or Stock Fender Adapters",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/661560/images/6855093_7f7ef72d-7827-4dfc-b894-e7da30a4b640_9368095b-0bf5-4da7-a257-f42a6ae29c50/thumbs/inside/1280x960/jpg/pic.webp",
         externalUrl: "https://www.printables.com/model/661560",
@@ -221,7 +221,7 @@ export default [
     },
     {
         title: "Simple Rail Guards",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Rail Attachment"],
         imageSrc: "https://media.printables.com/media/prints/649224/images/5226630_67670a7f-ade9-4f9e-ba5c-cdc8c5dfc601_d4820082-db4a-47f1-b0c5-1aaa7f7554e0/thumbs/inside/1280x960/png/make.webp",
         externalUrl: "https://www.printables.com/model/649224",
@@ -230,7 +230,7 @@ export default [
     },
     {
         title: "TFL Circle Cutout Rail Guards",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Rail Attachment"],
         imageSrc: "https://media.printables.com/media/prints/691922/images/5439182_046c1445-b3a0-4a70-b45d-fb813dfe3ece_6e933c0e-efcc-4144-bca3-95eae3c50a53/thumbs/inside/1280x960/jpg/img_5296.webp",
         externalUrl: "https://www.printables.com/model/691922",
@@ -239,7 +239,7 @@ export default [
     },
     {
         title: "FlowGlider Connector Cover",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
         imageSrc: "https://cdn.thingiverse.com/assets/1d/20/8e/bf/73/large_display_stronger003.jpg",
         externalUrl: "https://www.thingiverse.com/thing:4716667",
@@ -248,7 +248,7 @@ export default [
     },
     {
         title: "FlowGlider Connector Cover - Apple Airtag Slot",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
         imageSrc: "https://cdn.thingiverse.com/assets/d6/8a/33/51/2e/large_display_aatc_001.jpg",
         externalUrl: "https://www.thingiverse.com/thing:5417299",
@@ -257,7 +257,7 @@ export default [
     },
     {
         title: "FlowGlider Cable Clip",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://cdn.thingiverse.com/assets/ab/f7/74/b2/3c/large_display_2021-03-13_22.06.44.jpg",
         externalUrl: "https://www.thingiverse.com/thing:4847732",
@@ -282,7 +282,7 @@ export default [
     },
     {
         title: "XLR Charge Port Gasket",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Gasket"],
         imageSrc: "https://media.printables.com/media/prints/220062/images/2005926_dca126cf-c170-46bc-97ee-ffee304c980d/thumbs/inside/1280x960/jpg/6a66c33c-340a-41c7-ae86-ca46c86651d0.webp",
         externalUrl: "https://www.printables.com/model/220062",
@@ -291,7 +291,7 @@ export default [
     },
     {
         title: "Atlowshop Big Battery Box (TORque Box Lid Compatible)",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/987242/images/7522617_545606e3-b628-4e59-af1a-78c21db70ab7_a6e92503-62b8-479a-b4a2-284f0bd6f78c/thumbs/inside/1280x960/jpg/20240605_145529-scaled-e1718062700155.webp",
         externalUrl: "https://www.printables.com/model/987242",
@@ -300,7 +300,7 @@ export default [
     },
     {
         title: "Atlowshop \"Atlowglider\" Controller Box",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/987260/images/7522686_03eb27d6-71ae-4696-9c4e-6dbc29daca5e_a1d19ccd-5791-4cf0-8cb5-fe857f81c8b5/thumbs/inside/1280x960/png/screenshot-2024-08-26-145104.webp",
         externalUrl: "https://www.printables.com/model/987260",
@@ -309,7 +309,7 @@ export default [
     },
     {
         title: "PubParts FlowGlider Controller Box + Lid + Parts - Ubox 85v and More",
-        fabricationMethod: "3DP",
+        fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box", "Connector Cover", "Gasket"],
         imageSrc: "https://media.printables.com/media/prints/989094/images/7536202_d1c6bcb8-5dea-49ce-84c2-391efbaba0eb_82216453-6078-4cf8-8fec-ec7fd50e567c/thumbs/inside/1280x960/png/cover.webp",
         externalUrl: "https://www.printables.com/model/989094",

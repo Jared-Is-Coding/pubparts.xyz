@@ -60,7 +60,7 @@ export default () => {
             setCheckedTypeBoxes({...checkedTypeBoxes, [type]: true})
         }
         
-        const fabricationMethod = queryParams.get("fab") ?? queryParams.get("search")  ?? ""
+        const fabricationMethod = queryParams.get("fab") ?? queryParams.get("fabrication")  ?? ""
         if (fabricationMethod && Object.keys(fabricationMethodCheckboxes).includes(fabricationMethod)) {
             setCheckedFabricationMethodBoxes({...checkedFabricationMethodBoxes, [fabricationMethod]: true})
         }

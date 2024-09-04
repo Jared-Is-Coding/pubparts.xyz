@@ -5,8 +5,8 @@ import Footer from "../components/Footer"
 import MetaData from "../components/MetaData"
 import Navbar from "../components/Navbar"
 import ResourceCard from "../components/ResourceCard"
-import { ResourceListSearchbar } from "../components/ResourceListSearchbar"
-import resources from "../lists/resources"
+import ResourceListSearchbar from "../components/ResourceListSearchbar"
+import resources from "../util/resources"
 import "../scss/pages/resources.scss"
 
 export const Head: HeadFC = () => (

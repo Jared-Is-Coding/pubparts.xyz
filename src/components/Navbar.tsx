@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
-import { NewPartEmail, RemovedPartEmail, UpdatedPartEmail } from "../util/SiteVariables"
+import { NewPartEmail, RemovedPartEmail, UpdatedPartEmail } from "../util/siteVariables"
 
 type NavbarProps = {
     isHomepage?: boolean

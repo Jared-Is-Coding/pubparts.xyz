@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
+import { toTitleCase } from "../hooks/toTitleCase"
 
 export default (resource: ResourceData, index: number) => (
     <Col
@@ -8,15 +9,15 @@ export default (resource: ResourceData, index: number) => (
         lg={{span: 12, offset: 0}}
         className="searchableResource"
         key={`resource-card-${index}`}
-        resourcename={`${resource.title}`}
-        resourcetypes={`${resource.typeOfResource.join(",").replaceAll(" ", "")}`}
-        resourcedescription={`${resource.description ?? ""}`}>
-            <Card className={resource.typeOfResource.includes("Spreadsheet") ? "resource-spreadsheet" : "resource-website"}>
+        resourcetitle={resource.title}
+        resourcetypes={resource.typeOfResource.join(",")}
+        resourcedescription={resource.description ?? ""}>
+            <Card className={resource.typeOfResource?.map((r) => `resource-${r}`).join(" ")}>
                 <Card.Body>
                     {resource.typeOfResource?.length &&
                         <Stack className="display-over-top" direction="vertical" gap={1}>
-                            {resource.typeOfResource.map((part, pillIndex) => (
-                                <Badge key={`resource-card-${index}-pill-${pillIndex}`} pill bg="dark">{part}</Badge>
+                            {resource.typeOfResource.map((r, pillIndex) => (
+                                <Badge key={`resource-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(r)}</Badge>
                             ))}
                         </Stack>
                     }

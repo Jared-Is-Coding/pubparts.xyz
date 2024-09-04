@@ -77,5 +77,6 @@ type ResourceData = {
 }
 
 type ResourceType =
-    | "Spreadsheet"
-    | "Website"
+    | "spreadsheet"
+    | "website"
+    | "app"

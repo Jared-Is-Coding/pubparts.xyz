@@ -4,7 +4,7 @@ import { Button, Col, Container, Row } from "react-bootstrap"
 import Footer from "../components/Footer"
 import MetaData from "../components/MetaData"
 import Navbar from "../components/Navbar"
-import { NewPartEmail } from "../util/SiteVariables"
+import { NewPartEmail } from "../util/siteVariables"
 
 export const Head: HeadFC = () => (
     <>

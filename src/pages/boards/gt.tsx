@@ -7,7 +7,7 @@ import ItemCard from "../../components/ItemCard"
 import { ItemListSearchbar } from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
-import gtparts from "../../lists/parts/gtparts"
+import gtParts from "../../util/parts/gtParts"
 import "../../scss/pages/items.scss"
 
 export const Head: HeadFC = () => (
@@ -42,13 +42,13 @@ const IndexPage: React.FC<PageProps> = () => {
                     <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
 
                     <Row>
-                        {!gtparts.length &&
+                        {!gtParts.length &&
                             <Col xs={{span: 12}}>
                                 <p>No items.</p>
                             </Col>
                         }
-                        {!!gtparts.length &&
-                            gtparts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
+                        {!!gtParts.length &&
+                            gtParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
                         }
                     
                         <CopyrightCard />

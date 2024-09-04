@@ -1,44 +1,49 @@
-import React, { ChangeEvent, Component } from "react"
+import React, { ChangeEvent, useEffect, useRef, useState } from "react"
 import { Form, Stack } from "react-bootstrap"
+import { toTitleCase } from "../hooks/toTitleCase"
 
-export class ResourceListSearchbar extends Component {
-    state = {
-        searchText: "",
-        typeCheckboxesEnabled: ""
+export default () => {
+    // Manually created list
+    const resourceTypeCheckboxes = {
+        "app": false,
+        "spreadsheet": false,
+        "website": false
     }
 
-    setSearchText = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        if (!e) return
-        if (this.state.searchText === e.target.value) return
+    const resourceTypes = Object.keys(resourceTypeCheckboxes) as ResourceType[]
 
-        this.setState({
-            searchText: e.target.value,
-        }, this.doSearch)
-    }
+    // Set useStates
+    const didMount = useRef(false)
+    const [searchText, setSearchText] = useState("")
+    const [checkedBoxes, setCheckedBoxes] = useState(resourceTypeCheckboxes)
 
-    setTypeCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
-        if (!e) return
-
-        if (e.target.checked) {
-            this.setState({
-                typeCheckboxesEnabled: this.state.typeCheckboxesEnabled ? this.state.typeCheckboxesEnabled += `,${e.target.name}` : e.target.name
-            }, this.doSearch)
-        } else {
-            this.setState({
-                typeCheckboxesEnabled: this.state.typeCheckboxesEnabled.split(",").filter((i) => i !== e.target.name).join(",")
-            }, this.doSearch)
+    // Get query parameters on first run
+    if (!didMount.current) {
+        const queryParams = new URLSearchParams(window.location.search)
+        
+        const keyword = queryParams.get("keyword") ?? queryParams.get("search") ?? ""
+        if (keyword) {
+            setSearchText(decodeURIComponent(keyword))
         }
+        
+        const type = queryParams.get("type")
+        if (type && Object.keys(resourceTypeCheckboxes).includes(type)) {
+            setCheckedBoxes({...checkedBoxes, [type]: true})
+        }
+
+        // Don't re-run this
+        didMount.current = true
     }
 
-    doSearch = () => {
+    // Handle checkboxes
+    const handleCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
+        setCheckedBoxes({...checkedBoxes, [e.target.name]: e.target.checked})
+    }
+
+    // Update search output on change
+    useEffect(() => {
         // Get all resources (by class name)
         const resources = document.querySelectorAll(".searchableResource")
-
-        // Get search text, lower case
-        const searchTextLC = this.state.searchText.toLowerCase()
-
-        // Get filter checkboxes
-        const typeCheckboxesChecked = this.state.typeCheckboxesEnabled.toLowerCase()
 
         // Count the number of hidden resources, to check for display of "no results"
         let hiddenCount = 0
@@ -46,7 +51,7 @@ export class ResourceListSearchbar extends Component {
         // Start filtering resources
         resources.forEach((resource) => {
             // Get part information, lower case
-            const resourceTypes = resource.getAttribute("resourcetypes")?.toLowerCase()
+            const resourceTypes = resource.getAttribute("resourcetypes")?.split(",")
 
             // Resources may only display if there is
             //      1. No keyword text is provided and no resource type is selected
@@ -56,18 +61,14 @@ export class ResourceListSearchbar extends Component {
             if (
                 // Search text matches resource name
                 (
-                    this.state.searchText
-                    && !resource.getAttribute("resourcename")?.toLowerCase().includes(searchTextLC)
-                    && !resource.getAttribute("resourcedescription")?.toLowerCase().includes(searchTextLC)
+                    searchText
+                    && !resource.getAttribute("resourcetitle")?.toLowerCase().includes(searchText.toLowerCase())
+                    && !resource.getAttribute("resourcedescription")?.toLowerCase().includes(searchText.toLowerCase())
                 )
                 // Resource type matches checked items
                 || (
-                    typeCheckboxesChecked.length
-                    && (
-                        resourceTypes?.includes(",")
-                        ? !resourceTypes.split(",").some((type) => typeCheckboxesChecked.toLowerCase().includes(type))
-                        : !typeCheckboxesChecked.toLowerCase().includes(resourceTypes ?? "false")
-                    )
+                    Object.values(checkedBoxes).some((v) => !!v)
+                    && !resourceTypes?.some((r) => !!checkedBoxes[r as ResourceType])
                 )
             ) {
                 // Hide
@@ -92,53 +93,39 @@ export class ResourceListSearchbar extends Component {
             noResultsText.style.display = "none"
             if (resourceListHeader) resourceListHeader.style.display = "block"
         }
-    }
+    }, [searchText, checkedBoxes])
     
-    componentDidMount() {
-        // Get query parameters
-        const queryParams = new URLSearchParams(window.location.search)
-        const keyword = queryParams.get("keyword") ?? queryParams.get("search") ?? ""
+    return (
+        <>
+            <Form.Label as="h2">Search</Form.Label>
 
-        // Set base state if there's a search preset
-        if (keyword) {
-            this.setState({
-                searchText: decodeURIComponent(keyword)
-            }, this.doSearch)
-        }
-    }
+            <div className="searchArea">
+                <Stack direction="vertical" gap={2}>
+                    <div className="searchKeyword">
+                        <Form.Label htmlFor="inputSearch" as="h3">Keyword:</Form.Label>
+                        <Form.Control
+                            as="input"
+                            type="text"
+                            id="inputSearch"
+                            aria-describedby="inputSearchHelpBlock"
+                            value={searchText}
+                            placeholder="Search text to filter by..."
+                            onChange={(e) => setSearchText(e.target.value)}
+                        />
+                    </div>
 
-    render = () => {
-        return (
-            <>
-                <Form.Label as="h2">Search</Form.Label>
+                    <div className="searchTypeCheckBoxes">
+                        <Form.Label as="h3">Resource Type:</Form.Label>
 
-                <div className="searchArea">
-                    <Stack direction="vertical" gap={2}>
-                        <div className="searchKeyword">
-                            <Form.Label htmlFor="inputSearch" as="h3">Keyword:</Form.Label>
-                            <Form.Control
-                                as="input"
-                                type="text"
-                                id="inputSearch"
-                                aria-describedby="inputSearchHelpBlock"
-                                value={this.state.searchText}
-                                placeholder="Search text to filter by..."
-                                onChange={(e) => this.setSearchText(e)}
-                            />
-                        </div>
+                        {resourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
+                            <Form.Check key={`resourceType-${index}`} label={toTitleCase(r)} name={r} id={r} type="checkbox" checked={checkedBoxes[r]} onChange={handleCheckbox} inline />
+                        ))}
+                    </div>
+                </Stack>
 
-                        <div className="searchTypeCheckBoxes">
-                            <Form.Label as="h3">Resource Type:</Form.Label>
-                            <Form.Check label="Spreadsheet" name="spreadsheet" id="spreadsheet" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
-                            <Form.Check label="Website" name="website" id="website" type="checkbox" inline onChange={(e) => this.setTypeCheckbox(e)} />
-                        </div>
+                <hr />
+            </div>
+        </>
 
-                    </Stack>
-
-                    <hr />
-                </div>
-            </>
-
-        )
-    }
+    )
 }

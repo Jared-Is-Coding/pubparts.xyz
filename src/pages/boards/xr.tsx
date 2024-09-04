@@ -7,7 +7,7 @@ import ItemCard from "../../components/ItemCard"
 import { ItemListSearchbar } from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
-import xrparts from "../../lists/parts/xrparts"
+import xrParts from "../../util/parts/xrParts"
 import "../../scss/pages/items.scss"
 
 export const Head: HeadFC = () => (
@@ -42,13 +42,13 @@ const IndexPage: React.FC<PageProps> = () => {
                     <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
 
                     <Row>
-                        {!xrparts.length &&
+                        {!xrParts.length &&
                             <Col xs={{span: 12}}>
                                 <p>No items.</p>
                             </Col>
                         }
-                        {!!xrparts.length &&
-                            xrparts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
+                        {!!xrParts.length &&
+                            xrParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
                         }
 
                         <CopyrightCard />

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Card, Col } from "react-bootstrap"
-import { ImageRequestEmail } from "../util/SiteVariables"
+import { ImageRequestEmail } from "../util/siteVariables"
 
 export default () => (
     <Col

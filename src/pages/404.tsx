@@ -1,5 +1,5 @@
 import { HeadFC, Link, PageProps } from "gatsby"
-import * as React from "react"
+import React from "react"
 import { Container } from "react-bootstrap"
 import Footer from "../components/Footer"
 import MetaData from "../components/MetaData"

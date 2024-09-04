@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
 import { toTitleCase } from "../hooks/toTitleCase"
 

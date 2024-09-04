@@ -1,5 +1,5 @@
 import { type HeadFC, type PageProps } from "gatsby"
-import * as React from "react"
+import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import CopyrightCard from "../../components/CopyrightCard"
 import Footer from "../../components/Footer"

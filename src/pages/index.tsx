@@ -1,7 +1,8 @@
 import { type HeadFC, type PageProps } from "gatsby"
-import * as React from "react"
-import { Button, Col, Container, Row } from "react-bootstrap"
+import React from "react"
+import { Container } from "react-bootstrap"
 import Footer from "../components/Footer"
+import FrameTypesLinks from "../components/FrameTypesLinks"
 import MetaData from "../components/MetaData"
 import Navbar from "../components/Navbar"
 import { NewPartEmail } from "../util/siteVariables"
@@ -34,51 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     <p>Your <a href={`mailto:${NewPartEmail}`}>contributions</a> are welcome (and encouraged) to help make this a well-stocked library!</p>
                     <p>Here's a list of the current frame types I've started indexing:</p>
 
-                    <Row className="flex-center flex-row">
-                        <Col
-                            xs={{span: 6, offset: 0}}
-                            md={{span: 4, offset: 0}}
-                            lg={{span: 2, offset: 0}}
-                            className="flex-center flex-top">
-                            <Button className="full-width" href="/boards/floatwheel" variant="outline-info">Floatwheel</Button>
-                        </Col>
-                        <Col
-                            xs={{span: 6, offset: 0}}
-                            md={{span: 4, offset: 0}}
-                            lg={{span: 2, offset: 0}}
-                            className="flex-center flex-top">
-                            <Button className="full-width" href="/boards/gt" variant="outline-info">GT/GT-S</Button>
-                        </Col>
-                        <Col
-                            xs={{span: 6, offset: 0}}
-                            md={{span: 4, offset: 0}}
-                            lg={{span: 2, offset: 0}}
-                            className="flex-center flex-top">
-                            <Button className="full-width" href="/boards/pint" variant="outline-info">Pint/Pint X</Button>
-                        </Col>
-                        <Col
-                            xs={{span: 6, offset: 0}}
-                            md={{span: 4, offset: 0}}
-                            lg={{span: 2, offset: 0}}
-                            className="flex-center flex-top">
-                            <Button className="full-width" href="/boards/xr" variant="outline-info">XR/+</Button>
-                        </Col>
-                        <Col
-                            xs={{span: 6, offset: 0}}
-                            md={{span: 4, offset: 0}}
-                            lg={{span: 2, offset: 0}}
-                            className="flex-center flex-top">
-                            <Button className="full-width" href="/boards/misc" variant="outline-info">VESC Misc</Button>
-                        </Col>
-                    </Row>
-
-                    {/* Desktop View */}
-                    {/* <div className="d-none d-lg-inline">
-                    </div> */}
-
-                    {/* Mobile View */}
-                    {/* <div className="d-inline d-lg-none">
-                    </div> */}
+                    <FrameTypesLinks />
                 </Container>
             </main>
                 

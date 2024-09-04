@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { Card, Col } from "react-bootstrap"
 import { ImageRequestEmail } from "../util/siteVariables"
 

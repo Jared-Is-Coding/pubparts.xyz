@@ -1,13 +1,13 @@
 import { type HeadFC, type PageProps } from "gatsby"
-import * as React from "react"
+import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import Footer from "../components/Footer"
 import MetaData from "../components/MetaData"
 import Navbar from "../components/Navbar"
 import ResourceCard from "../components/ResourceCard"
 import ResourceListSearchbar from "../components/ResourceListSearchbar"
-import resources from "../util/resources"
 import "../scss/pages/resources.scss"
+import resources from "../util/resources"
 
 export const Head: HeadFC = () => (
     <>

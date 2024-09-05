@@ -1,6 +1,6 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import React from "react"
-import { Col, Container, Row } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 import Footer from "../components/Footer"
 import MetaData from "../components/MetaData"
 import Navbar from "../components/Navbar"
@@ -35,17 +35,15 @@ const IndexPage: React.FC<PageProps> = () => {
 
             <main className="page-resources">
                 <Container>
-                    <ResourceListSearchbar />
+                    {/* Search area */}
+                    <ResourceListSearchbar resourceList={resources} />
 
+                    {/* Search results headers */}
                     <h2 id="resourceListHeader" style={{display: "block"}}>Resources</h2>
                     <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
 
                     <Row>
-                        {!resources.length &&
-                            <Col xs={{span: 12}}>
-                                <p>No resources.</p>
-                            </Col>
-                        }
+                        {/* List resources */}
                         {!!resources.length &&
                             resources.sort((a, b) => a.title.localeCompare(b.title)).map(ResourceCard)
                         }

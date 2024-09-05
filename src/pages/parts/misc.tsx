@@ -1,6 +1,6 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import React from "react"
-import { Col, Container, Row } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 import CopyrightCard from "../../components/CopyrightCard"
 import Footer from "../../components/Footer"
 import ItemCard from "../../components/ItemCard"
@@ -36,16 +36,20 @@ const IndexPage: React.FC<PageProps> = () => {
 
             <main className="page-items">
                 <Container>
-                    <ItemListSearchbar />
+                    {/* Search area */}
+                    <ItemListSearchbar partList={miscParts} />
 
+                    {/* Search results headers */}
                     <h2 id="itemListHeader" style={{display: "block"}}>Items</h2>
                     <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
 
                     <Row>
+                        {/* List parts */}
                         {!!miscParts.length &&
                             miscParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
                         }
                         
+                        {/* Copyright card */}
                         <CopyrightCard />
                     </Row>
                 </Container>

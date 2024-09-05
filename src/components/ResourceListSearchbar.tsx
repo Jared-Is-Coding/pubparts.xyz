@@ -3,48 +3,60 @@ import { Form, Stack } from "react-bootstrap"
 import isBrowser from "../hooks/isBrowser"
 import { toTitleCase } from "../hooks/toTitleCase"
 
-export default () => {
+type ResourceListSearchbarProps = {
+    resourceList: ResourceData[]
+}
+
+export default ({resourceList}: ResourceListSearchbarProps) => {
     // Check for browser window
     if (!isBrowser()) return
 
-    // Manually created list
+    // Checkbox useState object lists
     const resourceTypeCheckboxes = {
         "App": false,
         "Spreadsheet": false,
         "Website": false
     }
 
-    const resourceTypes = Object.keys(resourceTypeCheckboxes) as ResourceType[]
+    // Arrays from resource lists
+    const uniqueResourceTypes = [...new Set(resourceList.map((r) => r.typeOfResource).flat())]
 
     // Set useStates
     const didMount = useRef(false)
     const [searchText, setSearchText] = useState("")
-    const [checkedBoxes, setCheckedBoxes] = useState(resourceTypeCheckboxes)
+    const [checkedTypeBoxes, setCheckedTypeBoxes] = useState(resourceTypeCheckboxes)
 
-    // Get query parameters on first run
+    //#region Query Parameter Pre-Filtering
+
     if (!didMount.current) {
         const queryParams = new URLSearchParams(window.location.search)
         
+        // Set searchbar text
         const keyword = queryParams.get("keyword") ?? queryParams.get("search") ?? ""
         if (keyword) {
             setSearchText(decodeURIComponent(keyword))
         }
         
+        // Set checkboxes as checked
         const type = queryParams.get("type")
         if (type && Object.keys(resourceTypeCheckboxes).includes(type)) {
-            setCheckedBoxes({...checkedBoxes, [type]: true})
+            setCheckedTypeBoxes({...checkedTypeBoxes, [type]: true})
         }
 
         // Don't re-run this
         didMount.current = true
     }
 
-    // Handle checkboxes
+    //#endregion
+    //#region Checkbox Handlers
+
     const handleCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
-        setCheckedBoxes({...checkedBoxes, [e.target.name]: e.target.checked})
+        setCheckedTypeBoxes({...checkedTypeBoxes, [e.target.name]: e.target.checked})
     }
 
-    // Update search output on change
+    //#endregion
+    //#region Search Updates
+
     useEffect(() => {
         // Get all resources (by class name)
         const resources = document.querySelectorAll(".searchableResource")
@@ -71,8 +83,8 @@ export default () => {
                 )
                 // Resource type does not match checked items
                 || (
-                    Object.values(checkedBoxes).some((v) => !!v)
-                    && !dataResourceTypes?.some((r) => !!checkedBoxes[r as ResourceType])
+                    Object.values(checkedTypeBoxes).some((v) => !!v)
+                    && !dataResourceTypes?.some((r) => !!checkedTypeBoxes[r as ResourceType])
                 )
             ) {
                 // Hide
@@ -99,9 +111,12 @@ export default () => {
         }
     }, [
         searchText,
-        checkedBoxes
+        checkedTypeBoxes
     ])
     
+    //#endregion
+    //#region Render
+
     return (
         <>
             <Form.Label as="h2">Search</Form.Label>
@@ -124,8 +139,8 @@ export default () => {
                     <div className="searchTypeCheckBoxes">
                         <Form.Label as="h3">Resource Type:</Form.Label>
 
-                        {resourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
-                            <Form.Check key={`resourceType-${index}`} label={toTitleCase(r)} name={r} id={r} type="checkbox" checked={checkedBoxes[r]} onChange={handleCheckbox} inline />
+                        {uniqueResourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
+                            <Form.Check key={`resourceType-${index}`} label={toTitleCase(r)} name={r} id={r} type="checkbox" checked={checkedTypeBoxes[r]} onChange={handleCheckbox} inline />
                         ))}
                     </div>
                 </Stack>
@@ -133,6 +148,7 @@ export default () => {
                 <hr />
             </div>
         </>
-
     )
+    
+    //#endregion
 }

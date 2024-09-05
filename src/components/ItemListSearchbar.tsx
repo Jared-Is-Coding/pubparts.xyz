@@ -3,11 +3,15 @@ import { Form, Stack } from "react-bootstrap"
 import isBrowser from "../hooks/isBrowser"
 import { toTitleCase } from "../hooks/toTitleCase"
 
-export default () => {
+type ItemListSearchbarProps = {
+    partList: ItemData[]
+}
+
+export default ({partList}: ItemListSearchbarProps) => {
     // Check for browser window
     if (!isBrowser()) return
 
-    // Manually created lists
+    // Checkbox useState object lists
     const partTypeCheckboxes = {
         "Axle Block": false,
         "Battery Box": false,
@@ -37,8 +41,9 @@ export default () => {
         "Prefabricated": false
     }
 
-    const partTypes = Object.keys(partTypeCheckboxes) as PartType[]
-    const fabricationMethods = Object.keys(fabricationMethodCheckboxes) as FabricationMethod[]
+    // Arrays from parts lists
+    const uniquePartTypes = [...new Set(partList.map((p) => p.typeOfPart).flat())]
+    const uniqueFabricationMethods = [...new Set(partList.map((p) => p.fabricationMethod).flat())]
 
     // Set useStates
     const didMount = useRef(false)
@@ -46,21 +51,25 @@ export default () => {
     const [checkedTypeBoxes, setCheckedTypeBoxes] = useState(partTypeCheckboxes)
     const [checkedFabricationMethodBoxes, setCheckedFabricationMethodBoxes] = useState(fabricationMethodCheckboxes)
 
-    // Get query parameters on first run
+    //#region Query Parameter Pre-Filtering
+
     if (!didMount.current) {
         const queryParams = new URLSearchParams(window.location.search)
         
+        // Set searchbar text
         const keyword = queryParams.get("keyword") ?? queryParams.get("search") ?? ""
         if (keyword) {
             setSearchText(decodeURIComponent(keyword))
         }
         
-        const type = queryParams.get("type") ?? ""
+        // Set checkboxes as checked
+        const type = queryParams.get("type") as PartType ?? null
         if (type && Object.keys(partTypeCheckboxes).includes(type)) {
             setCheckedTypeBoxes({...checkedTypeBoxes, [type]: true})
         }
         
-        const fabricationMethod = queryParams.get("fab") ?? queryParams.get("fabrication")  ?? ""
+        // Set checkboxes as checked
+        const fabricationMethod = queryParams.get("fab") as FabricationMethod ?? queryParams.get("fabrication")  ?? null
         if (fabricationMethod && Object.keys(fabricationMethodCheckboxes).includes(fabricationMethod)) {
             setCheckedFabricationMethodBoxes({...checkedFabricationMethodBoxes, [fabricationMethod]: true})
         }
@@ -69,17 +78,20 @@ export default () => {
         didMount.current = true
     }
 
-    // Handle type checkboxes
+    //#endregion
+    //#region Checkbox Handlers
+
     const handleTypeCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
         setCheckedTypeBoxes({...checkedTypeBoxes, [e.target.name]: e.target.checked})
     }
 
-    // Handle fabrication method checkboxes
     const handleFabricationMethodCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
         setCheckedFabricationMethodBoxes({...checkedFabricationMethodBoxes, [e.target.name]: e.target.checked})
     }
 
-    // Update search output on change
+    //#endregion
+    //#region Search Updates
+
     useEffect(() => {
         // Get all items (by class name)
         const items = document.querySelectorAll(".searchableItem")
@@ -90,14 +102,16 @@ export default () => {
         // Start filtering items
         items.forEach((item) => {
             // Get part information, lower case
-            const dataPartTypes = item.getAttribute("parttypes")?.split(",")
+            const dataPartTitle = item.getAttribute("parttitle")
+            const dataPartTypes = item.getAttribute("parttypes")?.split(",") as PartType[]
+            const dataFabricationMethod = item.getAttribute("partfabricationmethod") as FabricationMethod
 
             // Do not display item if...
             if (
                 // Part title does not include search text
                 (
                     searchText
-                    && !item.getAttribute("parttitle")?.toLowerCase().includes(searchText.toLowerCase())
+                    && !dataPartTitle?.toLowerCase().includes(searchText.toLowerCase())
                 )
                 // Part type does not match checked items
                 || (
@@ -107,7 +121,7 @@ export default () => {
                 // Part fabrication method does not match checked items
                 || (
                     Object.values(checkedFabricationMethodBoxes).some((v) => !!v)
-                    && !checkedFabricationMethodBoxes[item.getAttribute("partfabricationmethod") as FabricationMethod]
+                    && !checkedFabricationMethodBoxes[dataFabricationMethod]
                 )
             ) {
                 // Hide
@@ -138,6 +152,9 @@ export default () => {
         checkedFabricationMethodBoxes
     ])
 
+    //#endregion
+    //#region Render
+
     return (
         <>
             <Form.Label as="h2">Search</Form.Label>
@@ -160,7 +177,7 @@ export default () => {
                     <div className="searchTypeCheckBoxes">
                         <Form.Label as="h3">Part Type:</Form.Label>
 
-                        {partTypes.sort((a, b) => a.localeCompare(b)).map((t, index) => (
+                        {uniquePartTypes.sort((a, b) => a.localeCompare(b)).map((t, index) => (
                             <Form.Check key={`partType-${index}`} checked={checkedTypeBoxes[t]} onChange={handleTypeCheckbox} label={toTitleCase(t)} name={t} id={t} type="checkbox" inline />
                         ))}
                     </div>
@@ -168,7 +185,7 @@ export default () => {
                     <div className="searchFabricationCheckBoxes">
                         <Form.Label as="h3">Fabrication Method:</Form.Label>
 
-                        {fabricationMethods.sort((a, b) => a.localeCompare(b)).map((f, index) => (
+                        {uniqueFabricationMethods.sort((a, b) => a.localeCompare(b)).map((f, index) => (
                             <Form.Check key={`fabricationMethod-${index}`} checked={checkedFabricationMethodBoxes[f]} onChange={handleFabricationMethodCheckbox} label={f} name={f} id={f} type="checkbox" inline />
                         ))}
                     </div>
@@ -178,4 +195,6 @@ export default () => {
             </div>
         </>
     )
+    
+    //#endregion
 }

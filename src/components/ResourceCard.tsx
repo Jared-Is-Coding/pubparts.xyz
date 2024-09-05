@@ -30,9 +30,9 @@ export default (resource: ResourceData, index: number) => {
                         }
 
                         {/* Copy Link to this item button */}
-                        <Stack className="display-over-top-left" direction="vertical" gap={1}>
+                        {/* <Stack className="display-over-top-left" direction="vertical" gap={1}>
                             <CopyLinkBadge link={"//" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
-                        </Stack>
+                        </Stack> */}
 
                         {/* Resource information */}
                         {(resource.externalUrl || resource.appStoreLink || resource.playStoreLink) &&

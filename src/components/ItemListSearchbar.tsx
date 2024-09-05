@@ -1,7 +1,9 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react"
-import { Form, Stack } from "react-bootstrap"
+import { Button, Form, Stack } from "react-bootstrap"
+import { FaArrowRotateLeft } from "react-icons/fa6"
 import isBrowser from "../hooks/isBrowser"
 import { toTitleCase } from "../hooks/toTitleCase"
+import CopyLinkButton from "./CopyLinkButton"
 
 type ItemListSearchbarProps = {
     partList: ItemData[]
@@ -50,6 +52,13 @@ export default ({partList}: ItemListSearchbarProps) => {
     const [searchText, setSearchText] = useState("")
     const [checkedTypeBoxes, setCheckedTypeBoxes] = useState(partTypeCheckboxes)
     const [checkedFabricationMethodBoxes, setCheckedFabricationMethodBoxes] = useState(fabricationMethodCheckboxes)
+    const [showCopySearchButton, setShowCopySearchButton] = useState(false)
+
+    const clearSearch = () => {
+        setSearchText("")
+        setCheckedTypeBoxes(partTypeCheckboxes)
+        setCheckedFabricationMethodBoxes(fabricationMethodCheckboxes)
+    }
 
     //#region Query Parameter Pre-Filtering
 
@@ -63,15 +72,19 @@ export default ({partList}: ItemListSearchbarProps) => {
         }
         
         // Set checkboxes as checked
-        const type = queryParams.get("type") as PartType ?? null
-        if (type && Object.keys(partTypeCheckboxes).includes(type)) {
-            setCheckedTypeBoxes({...checkedTypeBoxes, [type]: true})
+        const type = (queryParams.get("type")?.split(",") ?? []) as PartType[]
+        if (type && type.every((t) => uniquePartTypes.includes(t))) {
+            const tempCheckedTypeBoxes = structuredClone(checkedTypeBoxes)
+            type.forEach((t) => tempCheckedTypeBoxes[t] = true)
+            setCheckedTypeBoxes(tempCheckedTypeBoxes)
         }
         
         // Set checkboxes as checked
-        const fabricationMethod = queryParams.get("fab") as FabricationMethod ?? queryParams.get("fabrication")  ?? null
-        if (fabricationMethod && Object.keys(fabricationMethodCheckboxes).includes(fabricationMethod)) {
-            setCheckedFabricationMethodBoxes({...checkedFabricationMethodBoxes, [fabricationMethod]: true})
+        const fabricationMethod = (queryParams.get("fab")?.split(",") ?? queryParams.get("fabrication")?.split(",") ?? []) as FabricationMethod[]
+        if (fabricationMethod && fabricationMethod.every((f) => uniqueFabricationMethods.includes(f))) {
+            const tempCheckedFabricationMethodBoxes = structuredClone(checkedFabricationMethodBoxes)
+            fabricationMethod.forEach((f) => tempCheckedFabricationMethodBoxes[f] = true)
+            setCheckedFabricationMethodBoxes(tempCheckedFabricationMethodBoxes)
         }
 
         // Don't re-run this
@@ -99,7 +112,8 @@ export default ({partList}: ItemListSearchbarProps) => {
         // Count the number of hidden items, to check for display of "no results"
         let hiddenCount = 0
 
-        // Start filtering items
+        //#region Filter Items
+
         items.forEach((item) => {
             // Get part information, lower case
             const dataPartTitle = item.getAttribute("parttitle")
@@ -132,8 +146,10 @@ export default ({partList}: ItemListSearchbarProps) => {
                 (item as HTMLElement).style.display = "initial";
             }
         })
+        
+        //#endregion
+        //#region Results Headers
 
-        // Get results headers
         const noResultsText = document.getElementById("noResultsText")
         const itemListHeader = document.getElementById("itemListHeader")
         if (!noResultsText || !itemListHeader) return
@@ -146,11 +162,18 @@ export default ({partList}: ItemListSearchbarProps) => {
             noResultsText.style.display = "none"
             itemListHeader.style.display = "block"
         }
-    }, [
-        searchText,
-        checkedTypeBoxes,
-        checkedFabricationMethodBoxes
-    ])
+
+        //#endregion
+        //#region Show Copy Button
+
+        if (searchText || Object.values(checkedTypeBoxes).some((v) => !!v) || Object.values(checkedFabricationMethodBoxes).some((v) => !!v)) {
+            setShowCopySearchButton(true)
+        } else {
+            setShowCopySearchButton(false)
+        }
+
+        //#endregion
+    })
 
     //#endregion
     //#region Render
@@ -178,7 +201,15 @@ export default ({partList}: ItemListSearchbarProps) => {
                         <Form.Label as="h3">Part Type:</Form.Label>
 
                         {uniquePartTypes.sort((a, b) => a.localeCompare(b)).map((t, index) => (
-                            <Form.Check key={`partType-${index}`} checked={checkedTypeBoxes[t]} onChange={handleTypeCheckbox} label={toTitleCase(t)} name={t} id={t} type="checkbox" inline />
+                            <Form.Check
+                                key={`partType-${index}`}
+                                checked={checkedTypeBoxes[t]}
+                                onChange={handleTypeCheckbox}
+                                label={toTitleCase(t)}
+                                name={t}
+                                id={t}
+                                type="checkbox"
+                                inline />
                         ))}
                     </div>
 
@@ -186,9 +217,33 @@ export default ({partList}: ItemListSearchbarProps) => {
                         <Form.Label as="h3">Fabrication Method:</Form.Label>
 
                         {uniqueFabricationMethods.sort((a, b) => a.localeCompare(b)).map((f, index) => (
-                            <Form.Check key={`fabricationMethod-${index}`} checked={checkedFabricationMethodBoxes[f]} onChange={handleFabricationMethodCheckbox} label={f} name={f} id={f} type="checkbox" inline />
+                            <Form.Check
+                                key={`fabricationMethod-${index}`}
+                                checked={checkedFabricationMethodBoxes[f]}
+                                onChange={handleFabricationMethodCheckbox}
+                                label={f}
+                                name={f}
+                                id={f}
+                                type="checkbox"
+                                inline />
                         ))}
                     </div>
+
+                    <Stack direction="horizontal" gap={2}>
+                        <Button
+                            type="button"
+                            size="sm"
+                            variant="outline-info"
+                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}}
+                            onClick={() => clearSearch()}>
+                            Clear Search <FaArrowRotateLeft />
+                        </Button>
+
+                        <CopyLinkButton
+                            text="Copy This Search"
+                            link={"http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&fab=${uniqueFabricationMethods.filter((f) => !!checkedFabricationMethodBoxes[f])}`}
+                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
+                    </Stack>
                 </Stack>
 
                 <hr />

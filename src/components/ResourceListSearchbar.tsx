@@ -1,7 +1,9 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react"
-import { Form, Stack } from "react-bootstrap"
+import { Button, Form, Stack } from "react-bootstrap"
+import { FaArrowRotateLeft } from "react-icons/fa6"
 import isBrowser from "../hooks/isBrowser"
 import { toTitleCase } from "../hooks/toTitleCase"
+import CopyLinkButton from "./CopyLinkButton"
 
 type ResourceListSearchbarProps = {
     resourceList: ResourceData[]
@@ -25,6 +27,12 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
     const didMount = useRef(false)
     const [searchText, setSearchText] = useState("")
     const [checkedTypeBoxes, setCheckedTypeBoxes] = useState(resourceTypeCheckboxes)
+    const [showCopySearchButton, setShowCopySearchButton] = useState(false)
+
+    const clearSearch = () => {
+        setSearchText("")
+        setCheckedTypeBoxes(resourceTypeCheckboxes)
+    }
 
     //#region Query Parameter Pre-Filtering
 
@@ -38,9 +46,11 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
         }
         
         // Set checkboxes as checked
-        const type = queryParams.get("type")
-        if (type && Object.keys(resourceTypeCheckboxes).includes(type)) {
-            setCheckedTypeBoxes({...checkedTypeBoxes, [type]: true})
+        const type = (queryParams.get("type")?.split(",") ?? []) as ResourceType[]
+        if (type && type.every((t) => uniqueResourceTypes.includes(t))) {
+            const tempCheckedTypeBoxes = structuredClone(checkedTypeBoxes)
+            type.forEach((t) => tempCheckedTypeBoxes[t] = true)
+            setCheckedTypeBoxes(tempCheckedTypeBoxes)
         }
 
         // Don't re-run this
@@ -64,16 +74,13 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
         // Count the number of hidden resources, to check for display of "no results"
         let hiddenCount = 0
 
-        // Start filtering resources
+        //#region Filter Items
+
         resources.forEach((resource) => {
             // Get part information, lower case
             const dataResourceTypes = resource.getAttribute("resourcetypes")?.split(",")
 
-            // Resources may only display if there is
-            //      1. No keyword text is provided and no resource type is selected
-            //      2. No keyword text is provided and the resource is of the selected resource type(s)
-            //      3. Keyword text is provided and no resource type is selected
-            //      4. Keyword text is provided and the resource is of the selected resource type(s)
+            // Do not display item if...
             if (
                 // Resource name does not include search text
                 (
@@ -96,7 +103,9 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
             }
         })
 
-        // Get results headers
+        //#endregion
+        //#region Results Headers
+
         const noResultsText = document.getElementById("noResultsText")
         const resourceListHeader = document.getElementById("resourceListHeader")
         if (!noResultsText || !resourceListHeader) return
@@ -109,10 +118,18 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
             noResultsText.style.display = "none"
             resourceListHeader.style.display = "block"
         }
-    }, [
-        searchText,
-        checkedTypeBoxes
-    ])
+
+        //#endregion
+        //#region Show Copy Button
+
+        if (searchText || Object.values(checkedTypeBoxes).some((v) => !!v)) {
+            setShowCopySearchButton(true)
+        } else {
+            setShowCopySearchButton(false)
+        }
+
+        //#endregion
+    })
     
     //#endregion
     //#region Render
@@ -140,9 +157,33 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                         <Form.Label as="h3">Resource Type:</Form.Label>
 
                         {uniqueResourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
-                            <Form.Check key={`resourceType-${index}`} label={toTitleCase(r)} name={r} id={r} type="checkbox" checked={checkedTypeBoxes[r]} onChange={handleCheckbox} inline />
+                            <Form.Check
+                                key={`resourceType-${index}`}
+                                checked={checkedTypeBoxes[r]}
+                                onChange={handleCheckbox}
+                                label={toTitleCase(r)}
+                                name={r}
+                                id={r}
+                                type="checkbox"
+                                inline />
                         ))}
                     </div>
+
+                    <Stack direction="horizontal" gap={2}>
+                        <Button
+                            type="button"
+                            size="sm"
+                            variant="outline-info"
+                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}}
+                            onClick={() => clearSearch()}>
+                            Clear Search <FaArrowRotateLeft />
+                        </Button>
+
+                        <CopyLinkButton
+                            text="Copy This Search"
+                            link={"http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&type=${uniqueResourceTypes.filter((t) => !!checkedTypeBoxes[t])}`}
+                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
+                    </Stack>
                 </Stack>
 
                 <hr />

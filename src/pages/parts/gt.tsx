@@ -15,7 +15,7 @@ export const Head: HeadFC = () => (
         <html lang="en" />
         <MetaData
             title="GT/GT-S Parts | PubParts.xyz"
-            description="Open source or otherwise aftermarket parts for the GT/GT-S frame platform" />
+            description="Open source or otherwise aftermarket parts for the GT/GT-S platform" />
     </>
 )
 
@@ -26,7 +26,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Navbar />
 
                 <h1 className="flex-center">
-                    GT/GT-S Frame Parts
+                    GT/GT-S Parts
                 </h1>
 
                 <p className="tagline flex-center">
@@ -42,11 +42,6 @@ const IndexPage: React.FC<PageProps> = () => {
                     <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
 
                     <Row>
-                        {!gtParts.length &&
-                            <Col xs={{span: 12}}>
-                                <p>No items.</p>
-                            </Col>
-                        }
                         {!!gtParts.length &&
                             gtParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
                         }

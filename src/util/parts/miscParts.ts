@@ -57,7 +57,7 @@ export default [
         title: "SF Connector Nut Tool",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Tool"],
-        imageSrc: "/images/boards/misc/sf-connector-nut-tool.png",
+        imageSrc: "/images/parts/misc/sf-connector-nut-tool.png",
         dropboxUrl: "https://www.dropbox.com/scl/fi/y3rn6rre8vtazm0lucccj/sf-connector-nut-tool.zip?rlkey=fp0btlcbx12t6o7yc3i3kl77g&st=pbv6wdso&dl=0",
         dropboxZipLastUpdated: "2024-08-27"
     },

@@ -27,12 +27,13 @@ export default ({isHomepage}: NavbarProps) => (
                 <Nav variant="underline" justify>
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/resources">Resources</Nav.Link>
-                    <NavDropdown title="Frame Types" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-frames-dropdown">
-                        <NavDropdown.Item href="/boards/floatwheel" target="_self">Floatwheel</NavDropdown.Item>
-                        <NavDropdown.Item href="/boards/gt" target="_self">GT/GT-S</NavDropdown.Item>
-                        <NavDropdown.Item href="/boards/pint" target="_self">Pint/Pint X</NavDropdown.Item>
-                        <NavDropdown.Item href="/boards/xr" target="_self">XR/+</NavDropdown.Item>
-                        <NavDropdown.Item href="/boards/misc" target="_self">VESC Misc Parts</NavDropdown.Item>
+                    <NavDropdown title="Parts" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-frames-dropdown">
+                        <NavDropdown.Item href="/parts/floatwheel" target="_self">Floatwheel</NavDropdown.Item>
+                        <NavDropdown.Item href="/parts/gt" target="_self">GT/GT-S</NavDropdown.Item>
+                        <NavDropdown.Item href="/parts/pint" target="_self">Pint/Pint X</NavDropdown.Item>
+                        <NavDropdown.Item href="/parts/xr" target="_self">XR/+</NavDropdown.Item>
+                        <NavDropdown.Item href="/parts/misc" target="_self">Miscellaneous Items</NavDropdown.Item>
+                        <NavDropdown.Item href="/parts/electronics" target="_self">VESC Electronics</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Contribute" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-contribute-dropdown">
                         <NavDropdown.Item href={`mailto:${NewPartEmail}`}>New Part</NavDropdown.Item>

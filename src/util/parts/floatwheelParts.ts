@@ -3,7 +3,7 @@ export default [
         title: "Full ADV Step File",
         fabricationMethod: "Other",
         typeOfPart: ["Miscellaneous"],
-        imageSrc: "/images/boards/floatwheel/full-adv-step.png",
+        imageSrc: "/images/parts/floatwheel/full-adv-step.png",
         externalUrl: "https://discord.com/channels/778267964239511644/780659726035058708/1150277813488853033",
         dropboxUrl: "https://www.dropbox.com/scl/fi/z02pyuy8f399gg5p2tui6/full-adv-step.zip?rlkey=xxt8e0kokh81yk7ubz2gy5cgl&st=fxiyrhha&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
@@ -12,7 +12,7 @@ export default [
         title: "Bearing Cover",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Bearing Cover"],
-        imageSrc: "/images/boards/floatwheel/bearing-cover-floatwheel.jpg",
+        imageSrc: "/images/parts/floatwheel/bearing-cover-floatwheel.jpg",
         externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit?gid=0#gid=0",
         dropboxUrl: "https://www.dropbox.com/scl/fi/x8laz3pw6ftx217j4kc3l/ADV_Bearing_Cover_V1.12.5_Final.zip?rlkey=r8cx7ggvs5txgyivy84mzzodx&st=22dfuzfb&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
@@ -39,7 +39,7 @@ export default [
         title: "Bearing Cover Case",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Bearing Cover"],
-        imageSrc: "/images/boards/floatwheel/bearing-cover-holder.png",
+        imageSrc: "/images/parts/floatwheel/bearing-cover-holder.png",
         externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit?gid=0#gid=0",
         dropboxUrl: "https://www.dropbox.com/scl/fi/pl5uqf62pohhjztexza47/bearing-cover-case.zip?rlkey=r3jky1ssq6qd7v3i5hwoe27v9&st=xhd0q4og&dl=0",
         dropboxZipLastUpdated: "2024-08-26"

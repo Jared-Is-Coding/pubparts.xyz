@@ -8,14 +8,14 @@ import ItemListSearchbar from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
 import "../../scss/pages/items.scss"
-import miscParts from "../../util/parts/miscParts"
+import xrParts from "../../util/parts/xrParts"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
         <MetaData
-            title="VESC Misc Parts | PubParts.xyz"
-            description="Open source or otherwise aftermarket parts for no particular board platform" />
+            title="XR/+ Parts | PubParts.xyz"
+            description="Open source or otherwise aftermarket parts for the XR/+ platform" />
     </>
 )
 
@@ -26,7 +26,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Navbar />
 
                 <h1 className="flex-center">
-                    VESC Miscellaneous Parts
+                    XR/+ Parts
                 </h1>
 
                 <p className="tagline flex-center">
@@ -42,15 +42,10 @@ const IndexPage: React.FC<PageProps> = () => {
                     <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
 
                     <Row>
-                        {!miscParts.length &&
-                            <Col xs={{span: 12}}>
-                                <p>No items.</p>
-                            </Col>
+                        {!!xrParts.length &&
+                            xrParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
                         }
-                        {!!miscParts.length &&
-                            miscParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
-                        }
-                        
+
                         <CopyrightCard />
                     </Row>
                 </Container>

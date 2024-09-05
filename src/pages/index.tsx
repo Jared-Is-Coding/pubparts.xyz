@@ -1,8 +1,8 @@
-import { type HeadFC, type PageProps } from "gatsby"
+import { Link, type HeadFC, type PageProps } from "gatsby"
 import React from "react"
 import { Container } from "react-bootstrap"
 import Footer from "../components/Footer"
-import FrameTypesLinks from "../components/FrameTypesLinks"
+import PartTypesLinks from "../components/PartTypesLinks"
 import MetaData from "../components/MetaData"
 import Navbar from "../components/Navbar"
 import { NewPartEmail } from "../util/siteVariables"
@@ -31,11 +31,11 @@ const IndexPage: React.FC<PageProps> = () => {
 
             <main>
                 <Container>
-                    <p>A collection of open source or otherwise aftermarket OneWheel parts.</p>
+                    <p>A collection of open source or otherwise aftermarket OneWheel parts, electronics, and resources.</p>
                     <p>Your <a href={`mailto:${NewPartEmail}`}>contributions</a> are welcome (and encouraged) to help make this a well-stocked library!</p>
-                    <p>Here's a list of the current frame types I've started indexing:</p>
+                    <p>Check out the collected <Link to="/resources">resources</Link>, or browse the lists of the parts:</p>
 
-                    <FrameTypesLinks />
+                    <PartTypesLinks />
                 </Container>
             </main>
                 

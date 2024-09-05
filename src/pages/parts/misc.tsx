@@ -8,14 +8,14 @@ import ItemListSearchbar from "../../components/ItemListSearchbar"
 import MetaData from "../../components/MetaData"
 import Navbar from "../../components/Navbar"
 import "../../scss/pages/items.scss"
-import floatwheelParts from "../../util/parts/floatwheelParts"
+import miscParts from "../../util/parts/miscParts"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
         <MetaData
-            title="Floatwheel Parts | PubParts.xyz"
-            description="Open source or otherwise aftermarket parts for the Floatwheel frame platform" />
+            title="Miscellaneous Items | PubParts.xyz"
+            description="Open source or otherwise aftermarket parts for no particular board platform" />
     </>
 )
 
@@ -26,7 +26,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Navbar />
 
                 <h1 className="flex-center">
-                    Floatwheel Frame Parts
+                    Miscellaneous Items
                 </h1>
 
                 <p className="tagline flex-center">
@@ -42,15 +42,10 @@ const IndexPage: React.FC<PageProps> = () => {
                     <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
 
                     <Row>
-                        {!floatwheelParts.length &&
-                            <Col xs={{span: 12}}>
-                                <p>No items.</p>
-                            </Col>
+                        {!!miscParts.length &&
+                            miscParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
                         }
-                        {!!floatwheelParts.length &&
-                            floatwheelParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
-                        }
-
+                        
                         <CopyrightCard />
                     </Row>
                 </Container>

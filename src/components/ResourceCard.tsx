@@ -31,7 +31,7 @@ export default (resource: ResourceData, index: number) => {
 
                         {/* Copy Link to this item button */}
                         {/* <Stack className="display-over-top-left" direction="vertical" gap={1}>
-                            <CopyLinkBadge link={"//" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
+                            <CopyLinkBadge link={"https://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
                         </Stack> */}
 
                         {/* Resource information */}

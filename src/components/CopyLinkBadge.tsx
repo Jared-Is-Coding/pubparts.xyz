@@ -11,7 +11,9 @@ export default ({link}: CopyLinkBadgeProps) => {
     const [displayLink, setDisplayLink] = useState("inline-block")
     const [displayCheck, setDisplayCheck] = useState("none")
 
-    const swapIcons = () => {
+    const copyLink = () => {
+        navigator.clipboard.writeText(link)
+
         setDisplayLink("none")
         setDisplayCheck("inline-block")
 
@@ -23,11 +25,8 @@ export default ({link}: CopyLinkBadgeProps) => {
     
     return (
         <>
-            <Badge pill bg="primary">
-                <FaLink style={{animation: "fadeIn 0.25s linear"}} display={displayLink} onClick={() => {
-                    navigator.clipboard.writeText(link)
-                    swapIcons()
-                }} />
+            <Badge pill bg="primary" onClick={() => copyLink()}>
+                <FaLink style={{animation: "fadeIn 0.25s linear"}} display={displayLink} />
                 <FaCheck style={{animation: "fadeOut 0.25s linear"}} display={displayCheck} />
             </Badge>
         </>

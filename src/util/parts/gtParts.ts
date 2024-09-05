@@ -3,7 +3,7 @@ export default [
         title: "PubParts Axle Block Covers",
         fabricationMethod: "CNC",
         typeOfPart: ["Axle Block"],
-        imageSrc: "https://media.printables.com/media/prints/958730/images/7335410_cf5e5944-b73c-4402-9941-3a71282c36e2_bc9af74d-ceb8-4690-8117-06c01196396c/thumbs/inside/1280x960/png/screenshot_5.webp",
+        imageSrc: "https://media.printables.com/media/prints/958730/images/7589966_c3faedef-a7af-4a3b-8059-42fb435eed79_c08e5041-4d18-4b26-bb11-9c8d9c5571e7/thumbs/inside/1280x960/jpg/gt-rail-piece.webp",
         externalUrl: "https://www.printables.com/model/958730",
         dropboxUrl: "https://www.dropbox.com/scl/fi/xiyrlv4vvn93mojf16n21/onewheel-gt-axle-block-covers-model_files.zip?rlkey=zatpvxuhvpvlbpbp3troqmddr&st=ev6gfh0t&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
@@ -151,5 +151,12 @@ export default [
         imageSrc: "https://vow.systems/cdn/shop/files/SLAM1.png?v=1721454698&width=1426",
         externalUrl: "https://vow.systems/products/gt-s-l-a-m-kit",
         price: "$189"
+    },
+    {
+        title: "PubParts WTF Rails to C&R or Stock Fender Adapters",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://media.printables.com/media/prints/967285/images/7590024_efa569ce-8482-452c-82fc-69a67e1da5c8_46a16e5d-9dd7-4b80-ba42-324d9f1cdc40/thumbs/inside/1280x960/jpg/spacer-2.webp",
+        externalUrl: "https://www.printables.com/model/967285"
     }
 ] as ItemData[]

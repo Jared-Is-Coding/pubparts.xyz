@@ -347,7 +347,7 @@ export default [
         externalUrl: "https://www.printables.com/model/993611"
     },
     {
-        title: "Floatboxx",
+        title: "Floatboxx Parts",
         fabricationMethod: "Prefabricated",
         typeOfPart: ["Controller Box", "Footpad", "Tool", "Miscellaneous", "Rails"],
         imageSrc: "https://primary.jwwb.nl/public/r/e/z/temp-cwzckgievmvjujmcqibl/floatboxxxlmcwithlidandfootpad.jpg",

@@ -12,7 +12,7 @@ export default ({link}: CopyLinkBadgeProps) => {
     const [displayCheck, setDisplayCheck] = useState("none")
 
     const copyLink = () => {
-        navigator.clipboard.writeText(link)
+        navigator.clipboard.writeText(encodeURI(link))
 
         setDisplayLink("none")
         setDisplayCheck("inline-block")

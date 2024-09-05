@@ -63,13 +63,13 @@ export default () => {
             //      3. Keyword text is provided and no resource type is selected
             //      4. Keyword text is provided and the resource is of the selected resource type(s)
             if (
-                // Search text matches resource name
+                // Resource name does not include search text
                 (
                     searchText
                     && !resource.getAttribute("resourcetitle")?.toLowerCase().includes(searchText.toLowerCase())
                     && !resource.getAttribute("resourcedescription")?.toLowerCase().includes(searchText.toLowerCase())
                 )
-                // Resource type matches checked items
+                // Resource type does not match checked items
                 || (
                     Object.values(checkedBoxes).some((v) => !!v)
                     && !dataResourceTypes?.some((r) => !!checkedBoxes[r as ResourceType])
@@ -87,15 +87,15 @@ export default () => {
         // Get results headers
         const noResultsText = document.getElementById("noResultsText")
         const resourceListHeader = document.getElementById("resourceListHeader")
-        if (!noResultsText) return
+        if (!noResultsText || !resourceListHeader) return
 
         // Display accordingly
         if (hiddenCount == resources.length) {
             noResultsText.style.display = "block"
-            if (resourceListHeader) resourceListHeader.style.display = "none"
+            resourceListHeader.style.display = "none"
         } else {
             noResultsText.style.display = "none"
-            if (resourceListHeader) resourceListHeader.style.display = "block"
+            resourceListHeader.style.display = "block"
         }
     }, [
         searchText,
@@ -112,7 +112,7 @@ export default () => {
                         <Form.Label htmlFor="inputSearch" as="h3">Keyword:</Form.Label>
                         <Form.Control
                             as="input"
-                            type="text"
+                            type="search"
                             id="inputSearch"
                             aria-describedby="inputSearchHelpBlock"
                             value={searchText}

@@ -1,6 +1,7 @@
 import React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
 import { toTitleCase } from "../hooks/toTitleCase"
+import CopyLinkBadge from "./CopyLinkBadge"
 
 export default (item: ItemData, index: number) => (
     <Col
@@ -13,14 +14,16 @@ export default (item: ItemData, index: number) => (
         parttypes={item.typeOfPart.join(",")}
         partfabricationmethod={item.fabricationMethod}>
             <Card>
+                {/* Part image */}
                 {!!item.imageSrc &&
                     <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
                         <Card.Img variant="top" src={item.imageSrc} />
                     </div>
                 }
 
+                {/* Part type badges */}
                 {item.typeOfPart?.length &&
-                    <Stack className="display-over-top" direction="vertical" gap={1}>
+                    <Stack className="display-over-top-right" direction="vertical" gap={1}>
                         {item.typeOfPart.map((p, pillIndex) => (
                             <Badge key={`item-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(p)}</Badge>
                         ))}
@@ -28,7 +31,13 @@ export default (item: ItemData, index: number) => (
                         <Badge pill bg="dark">{item.fabricationMethod}</Badge>
                     </Stack>
                 }
+
+                {/* Copy Link to this item button */}
+                <Stack className="display-over-top-left" direction="vertical" gap={1}>
+                    <CopyLinkBadge link={"//" + window.location.host + window.location.pathname + `?search=${item.title}`} />
+                </Stack>
                 
+                {/* Part information */}
                 <Card.Body>
                     <Card.Title as="h3">{item.title}</Card.Title>
 

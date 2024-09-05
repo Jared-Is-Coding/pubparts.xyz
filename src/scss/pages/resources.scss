@@ -6,11 +6,18 @@
         border-radius: $card-border-radius !important;
         margin-bottom: 20px;
 
-        .display-over-top {
+        .display-over-top-right {
             position: absolute;
+            align-items: flex-end;
             top: 5px;
             right: 5px;
-            align-items: flex-end;
+        }
+
+        .display-over-top-left {
+            position: absolute;
+            align-items: flex-start;
+            top: 5px;
+            left: 5px;
         }
 
         .card-title {

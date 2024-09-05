@@ -98,7 +98,7 @@ export default () => {
                 // Part title does not include search text
                 (
                     searchText
-                    && !item.getAttribute("parttitle")?.toLowerCase().includes(searchText)
+                    && !item.getAttribute("parttitle")?.toLowerCase().includes(searchText.toLowerCase())
                 )
                 // Part type does not match checked items
                 || (
@@ -123,19 +123,16 @@ export default () => {
         // Get results headers
         const noResultsText = document.getElementById("noResultsText")
         const itemListHeader = document.getElementById("itemListHeader")
-        if (!noResultsText) return
+        if (!noResultsText || !itemListHeader) return
 
         // Display accordingly
         if (hiddenCount == items.length) {
             noResultsText.style.display = "block"
-            if (itemListHeader) itemListHeader.style.display = "none"
+            itemListHeader.style.display = "none"
         } else {
             noResultsText.style.display = "none"
-            if (itemListHeader) itemListHeader.style.display = "block"
+            itemListHeader.style.display = "block"
         }
-
-        // * Testing
-        console.log(checkedFabricationMethodBoxes)
     }, [
         searchText,
         checkedTypeBoxes,
@@ -152,7 +149,7 @@ export default () => {
                         <Form.Label htmlFor="inputSearch" as="h3">Keyword:</Form.Label>
                         <Form.Control
                             as="input"
-                            type="text"
+                            type="search"
                             id="inputSearch"
                             aria-describedby="inputSearchHelpBlock"
                             value={searchText}

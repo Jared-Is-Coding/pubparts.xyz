@@ -1,5 +1,5 @@
 import type { GatsbyConfig } from "gatsby"
-import * as dotenv from "dotenv"
+import dotenv from "dotenv"
 
 dotenv.config()
 

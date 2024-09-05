@@ -1,6 +1,7 @@
 import React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
 import { toTitleCase } from "../hooks/toTitleCase"
+import CopyLinkBadge from "./CopyLinkBadge"
 
 export default (resource: ResourceData, index: number) => (
     <Col
@@ -14,14 +15,21 @@ export default (resource: ResourceData, index: number) => (
         resourcedescription={resource.description ?? ""}>
             <Card className={resource.typeOfResource?.map((r) => `resource-${r.toLowerCase()}`).join(" ")}>
                 <Card.Body>
+                    {/* Resource type badges */}
                     {resource.typeOfResource?.length &&
-                        <Stack className="display-over-top" direction="vertical" gap={1}>
+                        <Stack className="display-over-top-right" direction="vertical" gap={1}>
                             {resource.typeOfResource.map((r, pillIndex) => (
                                 <Badge key={`resource-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(r)}</Badge>
                             ))}
                         </Stack>
                     }
 
+                    {/* Copy Link to this item button */}
+                    <Stack className="display-over-top-left" direction="vertical" gap={1}>
+                        <CopyLinkBadge link={"//" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
+                    </Stack>
+
+                    {/* Resource information */}
                     {(resource.externalUrl || resource.appStoreLink || resource.playStoreLink) &&
                         <Card.Title as="h3">
                             {resource.externalUrl &&

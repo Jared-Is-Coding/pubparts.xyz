@@ -7,7 +7,6 @@ export default () => {
     // Check for browser window
     if (!isBrowser()) return
 
-
     // Manually created lists
     const partTypeCheckboxes = {
         "Axle Block": false,

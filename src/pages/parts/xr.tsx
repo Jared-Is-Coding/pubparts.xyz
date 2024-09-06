@@ -19,7 +19,7 @@ export const Head: HeadFC = () => (
     </>
 )
 
-const IndexPage: React.FC<PageProps> = () => {
+const Page: React.FC<PageProps> = () => {
     return (
         <>
             <header>
@@ -60,4 +60,4 @@ const IndexPage: React.FC<PageProps> = () => {
     )
 }
 
-export default IndexPage
+export default Page

@@ -30,7 +30,7 @@ export default ({isHomepage}: NavbarProps) => (
                     <NavDropdown title="Parts" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-frames-dropdown">
                         <NavDropdown.Item href="/parts/floatwheel" target="_self">Floatwheel</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/gt" target="_self">GT/GT-S</NavDropdown.Item>
-                        <NavDropdown.Item href="/parts/pint" target="_self">Pint/Pint X</NavDropdown.Item>
+                        <NavDropdown.Item href="/parts/pint" target="_self">Pint/X/S</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/xr" target="_self">XR/+</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/misc" target="_self">Miscellaneous Items</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/electronics" target="_self">VESC Electronics</NavDropdown.Item>

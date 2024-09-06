@@ -22,7 +22,7 @@ export default () => (
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/pint" variant="outline-info">Pint/Pint X</Button>
+            <Button className="full-width" href="/parts/pint" variant="outline-info">Pint/X/S</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}

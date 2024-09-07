@@ -321,7 +321,9 @@ export default [
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/606685/images/4822641_48f07d34-7133-44cc-b4d0-d3225912641b_e0037b62-c651-4ca8-804f-c5126c785537/thumbs/inside/1280x960/png/gland.webp",
-        externalUrl: "https://www.printables.com/model/606685"
+        externalUrl: "https://www.printables.com/model/606685",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/spv4lzy76k2ukp0autpo0/6-pin-molex-to-20mm-cable-gland-for-floatboxx-model_files.zip?rlkey=xeibyos7zjmysy2kd5fjqvspt&st=2wvum15e&dl=0",
+        dropboxZipLastUpdated: "2024-09-07"
     },
     {
         title: "WTF Rails (Extended) BTG Fender Delete",

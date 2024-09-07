@@ -158,5 +158,14 @@ export default [
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/967285/images/7590024_efa569ce-8482-452c-82fc-69a67e1da5c8_46a16e5d-9dd7-4b80-ba42-324d9f1cdc40/thumbs/inside/1280x960/jpg/spacer-2.webp",
         externalUrl: "https://www.printables.com/model/967285"
+    },
+    {
+        title: "Onewheel GT Rim Protector",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rim Saver"],
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000038998/design/2023-10-11_77b06f9b8fd45.png?x-oss-process=image/resize,w_1000/format,webp",
+        externalUrl: "https://makerworld.com/en/models/38998",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/bevszro4o8bifxmzryjdv/onewheel-gt-rim-saver.zip?rlkey=vmclvp1bc9m5wvywbl5q1v2wh&st=n3nejxdj&dl=0",
+        dropboxZipLastUpdated: "2024-09-07"
     }
 ] as ItemData[]

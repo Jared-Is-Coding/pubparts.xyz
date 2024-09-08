@@ -76,7 +76,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "PubBox Connector Cover",
+        title: "PubBox: Connector Cover",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
         imageSrc: "https://media.printables.com/media/prints/931764/images/7102548_83b61ead-d769-406c-a41d-b021f3d5367b_12574008-f4aa-40b5-a7b6-1758a9f41c8a/thumbs/inside/1280x960/png/img_0689.webp",
@@ -166,7 +166,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "Stock Axle Block Covers",
+        title: "Stock XR Axle Block Covers",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://cdn.thingiverse.com/assets/ac/f9/d4/6a/6c/large_display_FGLB002_-_standard_mounting_block_cable_plate.png",
@@ -175,7 +175,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "Flight Fins",
+        title: "XR Flight Fins",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/960086/images/7332056_04ab3d42-9c0a-4bb4-b9d2-b758696e9962_08694c12-e680-4804-96f4-e9592767b9e6/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-160440.webp",
@@ -211,7 +211,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "PubParts WTF Rails to C&R or Stock Fender Adapters",
+        title: "PubParts: WTF Rails to C&R or Stock Fender Adapters",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/661560/images/6855093_7f7ef72d-7827-4dfc-b894-e7da30a4b640_9368095b-0bf5-4da7-a257-f42a6ae29c50/thumbs/inside/1280x960/jpg/pic.webp",
@@ -220,7 +220,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "Simple Rail Guards",
+        title: "Simple XR Rail Guards",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Rail Attachment"],
         imageSrc: "https://media.printables.com/media/prints/649224/images/5226630_67670a7f-ade9-4f9e-ba5c-cdc8c5dfc601_d4820082-db4a-47f1-b0c5-1aaa7f7554e0/thumbs/inside/1280x960/png/make.webp",
@@ -258,7 +258,7 @@ export default [
     {
         title: "FlowGlider Cable Clip",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Controller Box"],
+        typeOfPart: ["Bracket"],
         imageSrc: "https://cdn.thingiverse.com/assets/ab/f7/74/b2/3c/large_display_2021-03-13_22.06.44.jpg",
         externalUrl: "https://www.thingiverse.com/thing:4847732",
         dropboxUrl: "https://www.dropbox.com/scl/fi/34ofrg0e4bj3d0zbk97r4/onewheel-xr-cable-clip-4847732.zip?rlkey=tnq779wxm2lis8g9gct37tnb1&st=82ae7yew&dl=0",
@@ -308,7 +308,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "PubParts FlowGlider Controller Box, Lid, Parts - Ubox 85v and More",
+        title: "PubParts: FlowGlider Controller Box, Lid, Parts - Ubox 85v and More",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box", "Connector Cover", "Gasket"],
         imageSrc: "https://media.printables.com/media/prints/989094/images/7536202_d1c6bcb8-5dea-49ce-84c2-391efbaba0eb_82216453-6078-4cf8-8fec-ec7fd50e567c/thumbs/inside/1280x960/png/cover.webp",
@@ -319,14 +319,14 @@ export default [
     {
         title: "6 Pin Molex to 20mm Cable Gland for Floatboxx",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Miscellaneous"],
+        typeOfPart: ["Adapter"],
         imageSrc: "https://media.printables.com/media/prints/606685/images/4822641_48f07d34-7133-44cc-b4d0-d3225912641b_e0037b62-c651-4ca8-804f-c5126c785537/thumbs/inside/1280x960/png/gland.webp",
         externalUrl: "https://www.printables.com/model/606685",
         dropboxUrl: "https://www.dropbox.com/scl/fi/spv4lzy76k2ukp0autpo0/6-pin-molex-to-20mm-cable-gland-for-floatboxx-model_files.zip?rlkey=xeibyos7zjmysy2kd5fjqvspt&st=2wvum15e&dl=0",
         dropboxZipLastUpdated: "2024-09-07"
     },
     {
-        title: "WTF Rails (Extended) BTG Fender Delete",
+        title: "XR WTF Rails (Extended) BTG Fender Delete",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/989723/images/7539781_d81696da-813e-4641-873e-54f2454ea9ca_584c6620-9d35-4ed1-8e4d-5edba78ffb8c/thumbs/inside/1280x960/jpeg/img_0925.webp",
@@ -335,7 +335,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-29"
     },
     {
-        title: "PubParts OW XR Frame Full Assembly",
+        title: "PubParts: OW XR Frame Full Assembly",
         fabricationMethod: "Other",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/991294/images/7550375_fbd5baaa-dc30-456a-af7b-b4a72c990696_9511c85e-c416-47d8-bea2-dd5be571d41e/thumbs/inside/1280x960/png/screenshot_1.webp",
@@ -357,7 +357,7 @@ export default [
         price: "$25-$250"
     },
     {
-        title: "Funwheel Controller Box Complete",
+        title: "Funwheel XR Controller Box Complete",
         fabricationMethod: "Prefabricated",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://www.fungineers.us/cdn/shop/files/Photoroom-20240601-170053_2_1426x.png?v=1721869640",
@@ -403,5 +403,68 @@ export default [
         imageSrc: "https://vow.systems/cdn/shop/files/Lids1.png?v=1720867495&width=1426",
         externalUrl: "https://vow.systems/products/xr-diy-bundle?variant=49474202763583",
         price: "69-$86"
+    },
+    {
+        title: "QuinnWheel: XR Varials Center Steez Bash Guards",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F5f4e10e1-6cb6-4e67-8924-72d1a437dcd2%2FCleanShot%25202023-05-02%2520at%252013.36.19%25402x.png&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/845686",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/msrydyfbrwfchev32dmd0/Onewheel-XR-Varials-Center-Steez-Bash-Guards.zip?rlkey=ur61au5m0uywnn6towci13ea7&st=z1eqtew3&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "QuinnWheel: XR FlightFins Kush Pad Adapter for FlightFender Refresh",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender", "Footpad"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F1458cf2c-b57c-45b3-a65f-e7abb61d078c%2FIMG_4835.jpeg&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/1072343",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/lxnf0ncqwqef1aol5w4h1/FlightFins-Kush-Pad-Adapter-for-XR-FlightFender-Refresh.zip?rlkey=dvtijdcpuvh5fetdc76zyci0z&st=cdjaxzy4&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "QuinnWheel: XR Cable Retention Clips for TFL Varials",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F8b8b620f-e419-4593-8a51-3fabc970c33a%2FIMG_4790.jpeg&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/1069914",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/7r0wwn7fq5yjuonykct1v/Onewheel-XR-Cable-Retention-Clips-for-TFL-Varials.zip?rlkey=ffcspap6zuwce1he1miopfg0b&st=7ns9szxe&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "QuinnWheel: FlowGlider Controller Box for 20mm Battery Cable Gland",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fthangs-thumbnails%2Fproduction%2F447985d7-6891-4020-9654-d27478ae595e%2FFlowglider_20mm_Cable_Gland_Remix_with_XLR_6-pin_Molex_Handle_Lights_Empty_Box.png&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/1004054",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/jt5ye9vy8rzyjtem8mo4e/Flowglider-20mm-Cable-Gland-Remix-for-VESC-XR-XLR-6-pin-Molex-Handle-LEDs-Empty-Box.zip?rlkey=uv56en04g0x9c6mqcqconfzqm&st=eegncjkf&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "QuinnWheel: XR Mini Fenders",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F9a78879d-4d25-419b-b3a8-61babec69a0c%2FIMG_5323.jpg&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/873344",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/n254ntum4jg9q36tb1yxv/XR-Mini-Fenders-v1.zip?rlkey=lso1qhu2tllaup6ccs3h954qi&st=kemmp33e&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "QuinnWheel: Molex Cable Gland Adapters",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Adapter"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F9a903622-dbb4-42a3-941d-acb8030f12b9%2FIMG_0777.png&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/992706",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/8rp0bpvr9rbpqv0ldovle/VESC-Onewheel-XR-Molex-Cable-Gland-Adapters.zip?rlkey=ab3dri1k6nd9ir9nq6trpglbj&st=2k60vn48&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "QuinnWheel: XR Fender Delete - Life Saver Compatible",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fthangs-thumbnails%2Fproduction%2F0011ffb3-58e6-4d40-b8cc-282cf7b6ca2b%2FXR_Fender_Delete_No_Handle.png&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/793459",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/4lk5jgjq9emainbuu1yga/Onewheel-XR-Fender-Delete-Life-Saver-Compatible.zip?rlkey=gpqreg9vdidc7hgo5jouqkt1w&st=ilhx6iem&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
     }
 ] as ItemData[]

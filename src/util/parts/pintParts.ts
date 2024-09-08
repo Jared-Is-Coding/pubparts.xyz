@@ -1,6 +1,6 @@
 export default [
     {
-        title: "PubParts WTF Rails (Standard) to Stock Fender Adapter",
+        title: "PubParts: WTF Rails (Standard) to Stock Fender Adapter",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/668887/images/5261871_d0e99459-37d6-4fbd-a28d-72cd83006514_2c154b38-29fd-40cf-8421-e9c7e3f79575/thumbs/inside/1280x960/jpg/make3.webp",
@@ -9,7 +9,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "PubParts GT40 Fender Plug Protector",
+        title: "PubParts: GT40 Fender Plug Protector",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/662651/images/5219377_4ae6bce8-5941-4590-a196-09ff4c225a08_9a8db6f7-426e-488b-96ef-49de39aae118/thumbs/inside/1280x960/jpg/make2.webp",
@@ -86,5 +86,32 @@ export default [
         externalUrl: "https://www.printables.com/model/813200",
         dropboxUrl: "https://www.dropbox.com/scl/fi/yz0i568b3spb2ovtg6vie/onewheel-pint-rail-model-model_files.zip?rlkey=hwwyw4wzo4v8im8g0n3td6yq8&st=bm6y3efz&dl=0",
         dropboxZipLastUpdated: "2024-08-27"
+    },
+    {
+        title: "QuinnWheel: FlipFrame Ubox 100v - Avaspark LED Edition",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bracket"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F2c8173ae-a97a-4030-a843-3c766697b8d4%2FPint%2520VESC%2520FlipFrame%25201.jpg&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/1033560",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/a823fzo155ovfiko78206/VESC-Onewheel-Pint-FlipFrame-Ubox-100v-Avaspark-LED-Edition.zip?rlkey=505cor2su1ewbas4bbk3tctpn&st=3qp69o2f&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "QuinnWheel: Pint Mini Fenders",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F7fc5529f-f887-4052-a49a-34fea0d9de1c%2FFusion%2520360%25402x.png&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/928948",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ytcxd045mwb5qavws8wod/Onewheel-Pint-Mini-Fenders.zip?rlkey=9kpk31htjrung0iezj8r9mg11&st=2mlk1707&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "QuinnWheel: Pint Rail Guards",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2Fc2178bc1-44b6-4dd2-ae0d-5d75869d29f7%2FCleanShot%25202023-03-19%2520at%252018.47.04.png&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/801688",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/eyu0hvuorqdqcyhw9na7p/Onewheel-Pint-Rail-Guards.zip?rlkey=ej3rnhmwtay96xeedpg61bowe&st=0fzsay7l&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
     }
 ] as ItemData[]

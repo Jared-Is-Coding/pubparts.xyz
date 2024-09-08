@@ -1,6 +1,6 @@
 export default [
     {
-        title: "PubParts Axle Block Covers",
+        title: "PubParts: Axle Block Covers",
         fabricationMethod: "CNC",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/958730/images/7589966_c3faedef-a7af-4a3b-8059-42fb435eed79_c08e5041-4d18-4b26-bb11-9c8d9c5571e7/thumbs/inside/1280x960/jpg/gt-rail-piece.webp",
@@ -153,7 +153,7 @@ export default [
         price: "$189"
     },
     {
-        title: "PubParts WTF Rails to C&R or Stock Fender Adapters",
+        title: "PubParts: WTF Rails to C&R or Stock Fender Adapters",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/967285/images/7590024_efa569ce-8482-452c-82fc-69a67e1da5c8_46a16e5d-9dd7-4b80-ba42-324d9f1cdc40/thumbs/inside/1280x960/jpg/spacer-2.webp",
@@ -163,7 +163,7 @@ export default [
         title: "Onewheel GT Rim Protector",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Rim Saver"],
-        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000038998/design/2023-10-11_77b06f9b8fd45.png?x-oss-process=image/resize,w_1000/format,webp",
+        imageSrc: "/images/parts/gt/onewheel-gt-rim-saver.jpg",
         externalUrl: "https://makerworld.com/en/models/38998",
         dropboxUrl: "https://www.dropbox.com/scl/fi/bevszro4o8bifxmzryjdv/onewheel-gt-rim-saver.zip?rlkey=vmclvp1bc9m5wvywbl5q1v2wh&st=n3nejxdj&dl=0",
         dropboxZipLastUpdated: "2024-09-07"

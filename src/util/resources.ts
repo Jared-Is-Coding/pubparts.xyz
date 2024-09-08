@@ -48,5 +48,11 @@ export default [
         appStoreLink: "https://apps.apple.com/us/app/id1605488891",
         playStoreLink: "https://play.google.com/store/apps/details?id=vedder.vesctool",
         description: "This is the mobile version of VESC Tool, which can be used to configure VESC-based hardware over BLE"
+    },
+    {
+        title: "Motor Crunch Troubleshooting Guide",
+        typeOfResource: ["Guide: Written"],
+        externalUrl: "https://pev.dev/t/motor-crunch-troubleshooting/228",
+        description: "Does your motor make crunchy/cogging sounds when braking hard or accelerating?"
     }
 ] as ResourceData[]

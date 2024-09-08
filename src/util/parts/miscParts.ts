@@ -96,10 +96,37 @@ export default [
         dropboxZipLastUpdated: "2024-09-02"
     },
     {
-        title: "Battery Assemblies for Fitment",
+        title: "QuinnWheel: Battery Assemblies for Fitment",
         fabricationMethod: "Other",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/994910/images/7573698_8dd278b0-b2be-4f9b-a9b3-c16abdaeed60_85158e69-6523-4577-9abe-b25964a56534/thumbs/inside/1280x960/png/screenshot-2024-09-02-220926.webp",
         externalUrl: "https://www.printables.com/model/994910"
+    },
+    {
+        title: "QuinnWheel: Magnetic Helmet Horns",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F33fbad8f-b8d9-4bfb-a890-2261ffd3f7cf%2FIMG_1838.JPG&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/938314",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/s8ned5y3cltq6zew6bvj2/Helmet-Horn-Small-v2.zip?rlkey=1fru3vqf2jd3sb57jun8oemew&st=eciz0q2i&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "QuinnWheel: Switchcraft Blank Plug",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Port Cover"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fthangs-thumbnails%2Fproduction%2F4e424947-463a-4472-bb32-99ab71c3f521%2Fbb8fadd6fcbca524a954bd4324781f18f894e70cd35eed7d37ddd6ac4b82104b%2FSwitchcraft_Blank_Plug.png&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/993558",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/pngaoiufrmrc7vp42nyjh/VESC-Onewheel-XR-Switchcraft-Blank-Plug.zip?rlkey=d095m1dvl2dzyc4zhrfe6nqhr&st=mfbj78ib&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "CannonCore Motor Plug Cap",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Port Cover"],
+        imageSrc: "https://media.printables.com/media/prints/933751/images/7125450_9b4abd4e-1882-488b-831e-11f6cb5c8422_21dc6271-7fea-47a3-8ce2-826cc0e88914/thumbs/inside/1280x960/png/plug_cap_2024-jul-05_04-56-05pm-000_customizedview25583995231.webp",
+        externalUrl: "https://www.printables.com/model/933751",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/m2u2w7xznjby0w6xaty6j/cannon-core-motor-plug-cap-model_files.zip?rlkey=4z2iafufoe5nsu96a5bvfxow8&st=5kcj10jz&dl=0",
+        dropboxZipLastUpdated: "2024-09-08"
     }
 ] as ItemData[]

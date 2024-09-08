@@ -13,15 +13,11 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
     // Check for browser window
     if (!isBrowser()) return
 
-    // Checkbox useState object lists
-    const resourceTypeCheckboxes = {
-        "App": false,
-        "Spreadsheet": false,
-        "Website": false
-    }
-
     // Arrays from resource lists
     const uniqueResourceTypes = [...new Set(resourceList.map((r) => r.typeOfResource).flat())]
+
+    // Checkbox useState object lists
+    const resourceTypeCheckboxes = Object.fromEntries(uniqueResourceTypes.map((p) => [p, false])) as { [P in ResourceType]: boolean }
 
     // Set useStates
     const didMount = useRef(false)

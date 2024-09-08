@@ -13,39 +13,13 @@ export default ({partList}: ItemListSearchbarProps) => {
     // Check for browser window
     if (!isBrowser()) return
 
-    // Checkbox useState object lists
-    const partTypeCheckboxes = {
-        "Axle Block": false,
-        "Battery Box": false,
-        "Bearing Cover": false,
-        "Bumper": false,
-        "Connector Cover": false,
-        "Controller Box": false,
-        "Fender": false,
-        "Footpad": false,
-        "Gasket": false,
-        "Miscellaneous": false,
-        "Motor": false,
-        "Motor Cover": false,
-        "Port Cover": false,
-        "Rail Attachment": false,
-        "Rails": false,
-        "Rim Saver": false,
-        "Stand": false,
-        "Tool": false,
-    }
-
-    const fabricationMethodCheckboxes = {
-        "3d Printed": false,
-        "CNC": false,
-        "Laser": false,
-        "Other": false,
-        "Prefabricated": false
-    }
-
     // Arrays from parts lists
     const uniquePartTypes = [...new Set(partList.map((p) => p.typeOfPart).flat())]
     const uniqueFabricationMethods = [...new Set(partList.map((p) => p.fabricationMethod).flat())]
+
+    // Checkbox useState object lists
+    const partTypeCheckboxes = Object.fromEntries(uniquePartTypes.map((p) => [p, false])) as { [P in PartType]: boolean }
+    const fabricationMethodCheckboxes = Object.fromEntries(uniqueFabricationMethods.map((p) => [p, false])) as { [P in FabricationMethod]: boolean }
 
     // Set useStates
     const didMount = useRef(false)

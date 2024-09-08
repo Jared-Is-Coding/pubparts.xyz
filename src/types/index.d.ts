@@ -34,9 +34,11 @@ type ItemData = {
 }
 
 type PartType =
+    | "Adapter"
     | "Axle Block"
     | "Battery Box"
     | "Bearing Cover"
+    | "Bracket"
     | "Bumper"
     | "Connector Cover"
     | "Controller Box"
@@ -88,6 +90,8 @@ type ResourceData = {
 }
 
 type ResourceType =
+    | "App"
+    | "Guide: Written"
+    | "Guide: Video"
     | "Spreadsheet"
     | "Website"
-    | "App"

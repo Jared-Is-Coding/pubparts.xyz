@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react"
-import { Button, Form, Stack } from "react-bootstrap"
+import { Button, ButtonGroup, Form, Stack, ToggleButton } from "react-bootstrap"
 import { FaArrowRotateLeft } from "react-icons/fa6"
 import isBrowser from "../hooks/isBrowser"
 import { toTitleCase } from "../hooks/toTitleCase"
@@ -101,11 +101,13 @@ export default ({partList}: ItemListSearchbarProps) => {
                     searchText
                     && !dataPartTitle?.toLowerCase().includes(searchText.toLowerCase())
                 )
+
                 // Part type does not match checked items
                 || (
                     Object.values(checkedTypeBoxes).some((v) => !!v)
                     && !dataPartTypes?.some((t) => !!checkedTypeBoxes[t as PartType])
                 )
+
                 // Part fabrication method does not match checked items
                 || (
                     Object.values(checkedFabricationMethodBoxes).some((v) => !!v)
@@ -117,7 +119,7 @@ export default ({partList}: ItemListSearchbarProps) => {
                 hiddenCount++
             } else {
                 // Show
-                (item as HTMLElement).style.display = "initial";
+                (item as HTMLElement).style.display = "block";
             }
         })
         
@@ -154,12 +156,17 @@ export default ({partList}: ItemListSearchbarProps) => {
 
     return (
         <>
-            <Form.Label as="h2">Search</Form.Label>
-
             <div className="searchArea">
-                <Stack direction="vertical" gap={2}>
+                <Form.Label as="h2">
+                    Search
+                </Form.Label>
+
+                <Stack direction="vertical" gap={3}>
                     <div className="searchKeyword">
-                        <Form.Label htmlFor="inputSearch" as="h3">Keyword:</Form.Label>
+                        <Form.Label htmlFor="inputSearch" as="h3">
+                            Keyword:
+                        </Form.Label>
+
                         <Form.Control
                             as="input"
                             type="search"
@@ -172,35 +179,47 @@ export default ({partList}: ItemListSearchbarProps) => {
                     </div>
 
                     <div className="searchTypeCheckBoxes">
-                        <Form.Label as="h3">Part Type:</Form.Label>
+                        <Form.Label as="h3">
+                            Part Type(s):
+                        </Form.Label>
 
-                        {uniquePartTypes.sort((a, b) => a.localeCompare(b)).map((t, index) => (
-                            <Form.Check
-                                key={`partType-${index}`}
-                                checked={checkedTypeBoxes[t]}
-                                onChange={handleTypeCheckbox}
-                                label={toTitleCase(t)}
-                                name={t}
-                                id={t}
-                                type="checkbox"
-                                inline />
-                        ))}
+                        <ButtonGroup size="sm">
+                            {uniquePartTypes.sort((a, b) => a.localeCompare(b)).map((t, index) => (
+                                <ToggleButton
+                                    key={`partType-${index}`}
+                                    checked={checkedTypeBoxes[t]}
+                                    onChange={handleTypeCheckbox}
+                                    name={t}
+                                    id={t}
+                                    type="checkbox"
+                                    value={1}
+                                    variant="outline-info">
+                                    {toTitleCase(t)}
+                                </ToggleButton>
+                            ))}
+                        </ButtonGroup>
                     </div>
 
                     <div className="searchFabricationCheckBoxes">
-                        <Form.Label as="h3">Fabrication Method:</Form.Label>
+                        <Form.Label as="h3">
+                            Fabrication Method(s):
+                        </Form.Label>
 
-                        {uniqueFabricationMethods.sort((a, b) => a.localeCompare(b)).map((f, index) => (
-                            <Form.Check
-                                key={`fabricationMethod-${index}`}
-                                checked={checkedFabricationMethodBoxes[f]}
-                                onChange={handleFabricationMethodCheckbox}
-                                label={f}
-                                name={f}
-                                id={f}
-                                type="checkbox"
-                                inline />
-                        ))}
+                        <ButtonGroup size="sm">
+                            {uniqueFabricationMethods.sort((a, b) => a.localeCompare(b)).map((f, index) => (
+                                <ToggleButton
+                                    key={`fabricationMethod-${index}`}
+                                    checked={checkedFabricationMethodBoxes[f]}
+                                    onChange={handleFabricationMethodCheckbox}
+                                    name={f}
+                                    id={f}
+                                    type="checkbox"
+                                    value={1}
+                                    variant="outline-info">
+                                    {f}
+                                </ToggleButton>
+                            ))}
+                        </ButtonGroup>
                     </div>
 
                     <Stack direction="horizontal" gap={2}>

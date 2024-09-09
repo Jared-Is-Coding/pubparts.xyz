@@ -27,10 +27,6 @@ const Page: React.FC<PageProps> = () => {
                 <h1 className="flex-center">
                     Useful Resources
                 </h1>
-
-                <p className="tagline flex-center">
-                    <br />
-                </p>
             </header>
 
             <main className="page-resources">

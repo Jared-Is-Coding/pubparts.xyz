@@ -1,6 +1,6 @@
 import React from "react"
 import { Card, Col } from "react-bootstrap"
-import { ImageRequestEmail } from "../util/siteVariables"
+import { DiscordInvite, DiscordThread, ImageRequestEmail } from "../util/siteVariables"
 
 export default () => (
     <Col
@@ -13,7 +13,8 @@ export default () => (
                 <Card.Body>
                     <Card.Text>
                         All images are copyright to their respective owners.
-                        <br />However, if you would like to claim an image, brand or logo and want it to be removed please <a href={`mailto:${ImageRequestEmail}`}>contact us</a>.
+                        <br />However, if you own an image, brand or logo and would like it to be removed please contact us:
+                        <br /><a href={DiscordInvite}>Discord server invite</a> and <a href={DiscordThread}>project thread link</a>
                     </Card.Text>
                 </Card.Body>
             </Card>

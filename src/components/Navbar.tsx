@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
-import { NewPartEmail, RemovedPartEmail, UpdatedPartEmail } from "../util/siteVariables"
+import { DiscordInvite, DiscordThread } from "../util/siteVariables"
 
 type NavbarProps = {
     isHomepage?: boolean
@@ -35,10 +35,9 @@ export default ({isHomepage}: NavbarProps) => (
                         <NavDropdown.Item href="/parts/misc" target="_self">Miscellaneous Items</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/electronics" target="_self">VESC Electronics</NavDropdown.Item>
                     </NavDropdown>
-                    <NavDropdown title="Contribute" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-contribute-dropdown">
-                        <NavDropdown.Item href={`mailto:${NewPartEmail}`}>New Part</NavDropdown.Item>
-                        <NavDropdown.Item href={`mailto:${UpdatedPartEmail}`}>Updated Part</NavDropdown.Item>
-                        <NavDropdown.Item href={`mailto:${RemovedPartEmail}`}>Removed Part</NavDropdown.Item>
+                    <NavDropdown title="Submit Changes" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-contribute-dropdown">
+                        <NavDropdown.Item href={DiscordInvite} target="_blank">1. Join Vescify Discord</NavDropdown.Item>
+                        <NavDropdown.Item href={DiscordThread} target="_blank">2. Post in Thread</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>

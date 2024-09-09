@@ -28,10 +28,6 @@ const Page: React.FC<PageProps> = () => {
                 <h1 className="flex-center">
                     Pint/X/S Parts
                 </h1>
-
-                <p className="tagline flex-center">
-                    <br />
-                </p>
             </header>
 
             <main className="page-items">

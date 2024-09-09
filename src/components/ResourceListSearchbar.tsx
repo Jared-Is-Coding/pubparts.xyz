@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react"
-import { Button, Form, Stack } from "react-bootstrap"
+import { Button, ButtonGroup, Form, Stack, ToggleButton } from "react-bootstrap"
 import { FaArrowRotateLeft } from "react-icons/fa6"
 import isBrowser from "../hooks/isBrowser"
 import { toTitleCase } from "../hooks/toTitleCase"
@@ -73,7 +73,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
         //#region Filter Items
 
         resources.forEach((resource) => {
-            // Get part information, lower case
+            // Get resource information, lower case
             const dataResourceTypes = resource.getAttribute("resourcetypes")?.split(",")
 
             // Do not display item if...
@@ -84,6 +84,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                     && !resource.getAttribute("resourcetitle")?.toLowerCase().includes(searchText.toLowerCase())
                     && !resource.getAttribute("resourcedescription")?.toLowerCase().includes(searchText.toLowerCase())
                 )
+                
                 // Resource type does not match checked items
                 || (
                     Object.values(checkedTypeBoxes).some((v) => !!v)
@@ -95,7 +96,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                 hiddenCount++
             } else {
                 // Show
-                (resource as HTMLElement).style.display = "initial";
+                (resource as HTMLElement).style.display = "block";
             }
         })
 
@@ -132,12 +133,17 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
 
     return (
         <>
-            <Form.Label as="h2">Search</Form.Label>
-
             <div className="searchArea">
-                <Stack direction="vertical" gap={2}>
+                <Form.Label as="h2">
+                    Search
+                </Form.Label>
+
+                <Stack direction="vertical" gap={3}>
                     <div className="searchKeyword">
-                        <Form.Label htmlFor="inputSearch" as="h3">Keyword:</Form.Label>
+                        <Form.Label htmlFor="inputSearch" as="h3">
+                            Keyword:
+                        </Form.Label>
+
                         <Form.Control
                             as="input"
                             type="search"
@@ -150,19 +156,25 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                     </div>
 
                     <div className="searchTypeCheckBoxes">
-                        <Form.Label as="h3">Resource Type:</Form.Label>
+                        <Form.Label as="h3">
+                            Resource Type(s):
+                        </Form.Label>
 
-                        {uniqueResourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
-                            <Form.Check
-                                key={`resourceType-${index}`}
-                                checked={checkedTypeBoxes[r]}
-                                onChange={handleCheckbox}
-                                label={toTitleCase(r)}
-                                name={r}
-                                id={r}
-                                type="checkbox"
-                                inline />
-                        ))}
+                        <ButtonGroup size="sm">
+                            {uniqueResourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
+                                <ToggleButton
+                                    key={`resourceType-${index}`}
+                                    checked={checkedTypeBoxes[r]}
+                                    onChange={handleCheckbox}
+                                    name={r}
+                                    id={r}
+                                    type="checkbox"
+                                    value={1}
+                                    variant="outline-info">
+                                    {toTitleCase(r)}
+                                </ToggleButton>
+                            ))}
+                        </ButtonGroup>
                     </div>
 
                     <Stack direction="horizontal" gap={2}>

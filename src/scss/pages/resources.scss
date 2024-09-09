@@ -1,6 +1,15 @@
 @import "../variables.scss";
 
 .page-resources {
+    .btn-group {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .btn {
+            border-radius: var(--bs-border-radius) !important;
+        }
+    }
+
     .card {
         background-color: $tertiary-color !important;
         border-radius: $card-border-radius !important;

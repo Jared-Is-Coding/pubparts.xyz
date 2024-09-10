@@ -1,0 +1,111 @@
+{
+    "name": "PubParts.xyz",
+    "short_name": "PubParts",
+    "description": "PubParts.xyz website",
+    "icons": [
+        {
+            "src": "/images/sizes/192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/sizes/512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "background_color": "#000000",
+    "display": "fullscreen",
+    "scope": "/",
+    "theme_color": "#0C2525",
+    "shortcuts": [
+        {
+            "name": "Floatwheel Parts",
+            "short_name": "Floatwheel",
+            "description": "Open Floatwheel parts list",
+            "url": "/parts/floatwheel/?source=pwa",
+            "icons": [
+                {
+                    "src": "/images/sizes/192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "GT/GT-S Parts",
+            "short_name": "GT/GT-S",
+            "description": "Open GT/GT-S parts list",
+            "url": "/parts/gt/?source=pwa",
+            "icons": [
+                {
+                    "src": "/images/sizes/192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Pint/X/S Parts",
+            "short_name": "Pint/X/S",
+            "description": "Open Pint/X/S parts list",
+            "url": "/parts/pint/?source=pwa",
+            "icons": [
+                {
+                    "src": "/images/sizes/192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "XR/+ Parts",
+            "short_name": "XR/+",
+            "description": "Open XR/+ parts list",
+            "url": "/parts/xr/?source=pwa",
+            "icons": [
+                {
+                    "src": "/images/sizes/192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Miscellaneous Parts",
+            "short_name": "Misc",
+            "description": "Open Miscellaneous parts list",
+            "url": "/parts/misc/?source=pwa",
+            "icons": [
+                {
+                    "src": "/images/sizes/192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "VESC Electronics Parts",
+            "short_name": "VESC Elec",
+            "description": "Open VESC Electronics parts list",
+            "url": "/parts/electronics/?source=pwa",
+            "icons": [
+                {
+                    "src": "/images/sizes/192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/images/screenshots/wide1.png",
+            "type": "image/jpg",
+            "sizes": "1920x1080",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/images/screenshots/narrow1.png",
+            "type": "image/jpg",
+            "sizes": "360x652",
+            "form_factor": "narrow"
+        }
+    ]
+  }

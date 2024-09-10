@@ -128,5 +128,23 @@ export default [
         externalUrl: "https://www.printables.com/model/933751",
         dropboxUrl: "https://www.dropbox.com/scl/fi/m2u2w7xznjby0w6xaty6j/cannon-core-motor-plug-cap-model_files.zip?rlkey=4z2iafufoe5nsu96a5bvfxow8&st=5kcj10jz&dl=0",
         dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "XT60 Locking Clip with release",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://cdn.thingiverse.com/assets/7f/eb/25/61/60/large_display_de2bc4dd-e55c-48cc-a460-a99945620796.png",
+        externalUrl: "https://www.thingiverse.com/thing:6451860",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/coyv59cz9d2o7dgobpdym/XT60-Locking-Clip-with-release-6451860.zip?rlkey=s20qa0bksu9oybyo7q05n2pnz&st=clx4jcj7&dl=0",
+        dropboxZipLastUpdated: "2024-09-10"
+    },
+    {
+        title: "Onewheel GT/XR/Pint Test Fixture",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Stand"],
+        imageSrc: "https://cdn.thingiverse.com/assets/4c/b2/19/ba/6e/large_display_f0715a02-7b56-433b-b44e-c9971caa5906.png",
+        externalUrl: "https://www.thingiverse.com/thing:6730767",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/2s4ot71wheykzgn8qpql8/Onewheel-GT_XR_Pint-Test-Fixture-6730767.zip?rlkey=qryma3bq3j5jmlaxybhackjki&st=0h808ewy&dl=0",
+        dropboxZipLastUpdated: "2024-09-10"
     }
 ] as ItemData[]

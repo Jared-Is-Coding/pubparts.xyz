@@ -113,5 +113,14 @@ export default [
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/801688",
         dropboxUrl: "https://www.dropbox.com/scl/fi/eyu0hvuorqdqcyhw9na7p/Onewheel-Pint-Rail-Guards.zip?rlkey=ej3rnhmwtay96xeedpg61bowe&st=0fzsay7l&dl=0",
         dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "Pint WTF Rail Guards",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://cdn.thingiverse.com/assets/b8/83/5c/eb/69/large_display_decaa6ff-f3f7-4ad1-8495-2e2f66896235.png",
+        externalUrl: "https://www.thingiverse.com/thing:5981449",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/lglk0kxek4lqlnbfe1f78/Pint-WTF-Rail-Guards-5981449.zip?rlkey=1vn0mga9o75cz1k38vr914g7a&st=611oakdj&dl=0",
+        dropboxZipLastUpdated: "2024-09-10"
     }
 ] as ItemData[]

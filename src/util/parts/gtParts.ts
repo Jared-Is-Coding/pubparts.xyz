@@ -160,12 +160,30 @@ export default [
         externalUrl: "https://www.printables.com/model/967285"
     },
     {
-        title: "Onewheel GT Rim Protector",
+        title: "GT Rim Protector",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Rim Saver"],
         imageSrc: "/images/parts/gt/onewheel-gt-rim-saver.jpg",
         externalUrl: "https://makerworld.com/en/models/38998",
         dropboxUrl: "https://www.dropbox.com/scl/fi/bevszro4o8bifxmzryjdv/onewheel-gt-rim-saver.zip?rlkey=vmclvp1bc9m5wvywbl5q1v2wh&st=n3nejxdj&dl=0",
         dropboxZipLastUpdated: "2024-09-07"
+    },
+    {
+        title: "GT WTF Rail Guards",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://cdn.thingiverse.com/assets/3d/16/b5/7d/b5/large_display_2de783b7-8514-4b56-a069-ebc31ac28262.png",
+        externalUrl: "https://www.thingiverse.com/thing:5980295",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/wzdibi6pq5le4arivs430/GT-WTF-Rail-Guards-5980295.zip?rlkey=0zr6ausejns8b3whoai55oyth&st=p0aeiv4n&dl=0",
+        dropboxZipLastUpdated: "2024-09-10"
+    },
+    {
+        title: "Motor Plug Holder for GT WTF Rails",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bracket"],
+        imageSrc: "https://cdn.thingiverse.com/assets/ae/db/70/0d/5d/large_display_d2c6af75-d5fd-425b-89de-b4b5391d984a.png",
+        externalUrl: "https://www.thingiverse.com/thing:6213496",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/nmht9481le24b16pbdiey/Motor-Plug-Holder-for-WTF-Rails-6213496.zip?rlkey=mfrcf4245z2pc2cv0wvx2fpz2&st=esvxpmuu&dl=0",
+        dropboxZipLastUpdated: "2024-09-10"
     }
 ] as ItemData[]

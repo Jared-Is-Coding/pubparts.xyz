@@ -466,5 +466,14 @@ export default [
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/793459",
         dropboxUrl: "https://www.dropbox.com/scl/fi/4lk5jgjq9emainbuu1yga/Onewheel-XR-Fender-Delete-Life-Saver-Compatible.zip?rlkey=gpqreg9vdidc7hgo5jouqkt1w&st=ilhx6iem&dl=0",
         dropboxZipLastUpdated: "2024-09-08"
+    },
+    {
+        title: "XR Drop Top Lift Kit",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://cdn.thingiverse.com/assets/71/e9/67/c0/ff/large_display_af81fb98-7b33-4cf8-a30b-67fd1916a492.png",
+        externalUrl: "https://www.thingiverse.com/thing:6451831",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ltn40qmd5drpc81gjdv8x/XR-Drop-Top-Lift-Kit-6451831.zip?rlkey=ryfgdc02bq4g8k8m0ojgl829w&st=8qjkalzm&dl=0",
+        dropboxZipLastUpdated: "2024-09-10"
     }
 ] as ItemData[]

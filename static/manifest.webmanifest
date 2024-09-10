@@ -2,6 +2,7 @@
     "name": "PubParts.xyz",
     "short_name": "PubParts",
     "description": "PubParts.xyz website",
+    "lang": "en",
     "icons": [
         {
             "src": "/images/sizes/192.png",

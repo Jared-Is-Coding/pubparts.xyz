@@ -1,6 +1,6 @@
 export default [
     {
-        title: "SuperFlux Motor Plates",
+        title: "PubWheel: SuperFlux Motor Plates",
         fabricationMethod: "CNC",
         typeOfPart: ["Motor Cover"],
         imageSrc: "https://media.printables.com/media/prints/675082/images/5328357_81abee0f-57ec-4351-a2d6-92976e695b98_76f4b5f0-5f66-44ac-86ab-cac4e7334214/thumbs/inside/1280x960/png/finned-hub-plate-v3-v4.webp",
@@ -9,7 +9,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "OneWheel Extended Stand",
+        title: "PubParts: OneWheel Extended Stand",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Stand"],
         imageSrc: "https://media.printables.com/media/prints/675193/images/5513095_26a9cd37-2f63-4af6-bf8c-e121ae53f8a3_dcd9dd8f-5c13-4f76-9abd-49c3b9b12dd7/thumbs/inside/1280x960/png/render.webp",
@@ -18,7 +18,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "OneWheel Sheet Metal Stand",
+        title: "Grimm: OneWheel Sheet Metal Stand",
         fabricationMethod: "Other",
         typeOfPart: ["Stand"],
         imageSrc: "https://media.printables.com/media/prints/893405/images/6838103_6d172e57-e922-4a98-891f-c2cb83f332e4_3a17524e-1122-442c-ae80-3d060683c12f/thumbs/inside/1280x960/png/screenshot-2024-05-27-064158.webp",
@@ -27,7 +27,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "GX16 Charge Port Cap",
+        title: "Matix: GX16 Charge Port Cap",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/966192/images/7374783_ac0656f4-82b4-4162-b35c-ae2f7eda7f96_5fd13502-461c-48fc-95e1-2b3d337d3f7f/thumbs/inside/1280x960/png/img_0819.webp",
@@ -36,7 +36,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "GX16-2 Tool",
+        title: "Lia: GX16-2 Tool",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Tool"],
         imageSrc: "https://media.printables.com/media/prints/853671/images/6565721_2bf68af0-4acd-4367-8de2-1bc68694d1cc_f7383e5d-a0db-4a78-8c29-8e8f81856436/thumbs/inside/1280x960/png/capture.webp",
@@ -45,7 +45,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "16mm Power Button Wrench (GX16)",
+        title: "Matix: 16mm Power Button Wrench (GX16)",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Tool"],
         imageSrc: "https://media.printables.com/media/prints/988177/images/7528993_f08ec8b3-cafc-4065-82ed-5d0371b607f7_6c3c8ba3-01ec-4f80-9d8b-4749004b1c18/thumbs/inside/1280x960/png/img_0913.webp",
@@ -62,7 +62,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "GX16-3 Charge Port Plug",
+        title: "Celeste: GX16-3 Charge Port Plug",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/927738/images/7075088_b93c2053-ebcc-44e6-907a-72b20eb8f1b4_c05558cd-7cc3-4025-901c-04b149a2dd5b/thumbs/inside/1280x960/png/screenshot-2024-06-29-193038.webp",
@@ -71,14 +71,14 @@ export default [
         dropboxZipLastUpdated: "2024-08-28"
     },
     {
-        title: "AFU and ChiBatterySystems Onewheel Charger Bumpers",
+        title: "Celeste: AFU and ChiBatterySystems Onewheel Charger Bumpers",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/585322/images/4668816_5569d34a-fff9-4d2f-84ad-72a342e5eadc/thumbs/inside/1280x960/jpg/img_8647.webp",
         externalUrl: "https://www.printables.com/model/585322"
     },
     {
-        title: "Bonk Bar and Block",
+        title: "Celeste: Bonk Bar and Block",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/845546/images/6507684_7e6b313e-498e-4617-82f4-19eaf02b13e2_36073cb2-0625-4185-a272-f4b46253805b/thumbs/inside/1280x960/jpg/img_2032.webp",
@@ -121,7 +121,7 @@ export default [
         dropboxZipLastUpdated: "2024-09-08"
     },
     {
-        title: "CannonCore Motor Plug Cap",
+        title: "AeyTWP: CannonCore Motor Plug Cap",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Port Cover"],
         imageSrc: "https://media.printables.com/media/prints/933751/images/7125450_9b4abd4e-1882-488b-831e-11f6cb5c8422_21dc6271-7fea-47a3-8ce2-826cc0e88914/thumbs/inside/1280x960/png/plug_cap_2024-jul-05_04-56-05pm-000_customizedview25583995231.webp",
@@ -130,7 +130,7 @@ export default [
         dropboxZipLastUpdated: "2024-09-08"
     },
     {
-        title: "XT60 Locking Clip with release",
+        title: "TFL: XT60 Locking Clip with release",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://cdn.thingiverse.com/assets/7f/eb/25/61/60/large_display_de2bc4dd-e55c-48cc-a460-a99945620796.png",
@@ -139,7 +139,7 @@ export default [
         dropboxZipLastUpdated: "2024-09-10"
     },
     {
-        title: "Onewheel GT/XR/Pint Test Fixture",
+        title: "TFL: Onewheel GT/XR/Pint Test Fixture",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Stand"],
         imageSrc: "https://cdn.thingiverse.com/assets/4c/b2/19/ba/6e/large_display_f0715a02-7b56-433b-b44e-c9971caa5906.png",

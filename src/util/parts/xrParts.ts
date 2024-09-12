@@ -40,7 +40,7 @@ export default [
         price: "~$80/pair from JLCPCB"
     },
     {
-        title: "CNC PubBox V1 - XR VESC Box, Lid",
+        title: "PubBox: CNC V1 - XR VESC Box, Lid",
         fabricationMethod: "CNC",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/586518/images/4972379_3be303b5-bb1c-46fd-826f-b16d964dfd93_e2a8e05b-4f0a-402d-ac37-e718008ccdf5/thumbs/inside/1280x960/png/pubbox1.webp",
@@ -49,7 +49,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "CNC PubBox V2 - XR VESC Box, Lid",
+        title: "PubBox: CNC V2 - XR VESC Box, Lid",
         fabricationMethod: "CNC",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/882071/images/6805730_d4772e6d-58e7-47c7-8696-a02077548a8f_2e2dd769-80d3-440b-9724-c4f895f93e90/thumbs/inside/1280x960/png/cnc-pubbox-v20-handle-v34-lfoc-2s2p.webp",
@@ -58,7 +58,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "3DP PubBox V1 - XR VESC Box, Lid",
+        title: "PubBox: 3DP V1 - XR VESC Box, Lid",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/670275/images/6065874_a6347037-184b-427e-b683-124167242c89_efe5dcf6-e025-4200-bf45-de189efffa9a/thumbs/inside/1280x960/png/3dp-home.webp",
@@ -67,7 +67,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "3DP PubBox for HyperCore Plug - XR VESC Box, Lid",
+        title: "Matix: 3DP PubBox for HyperCore Plug - XR VESC Box, Lid",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/798937/images/6186753_117208fa-c32c-408c-828b-d333ce282aa4_73035746-4467-4c9f-ab49-f681335691e5/thumbs/inside/1280x960/png/img_0416.webp",
@@ -85,7 +85,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "Rim Saver for 6in Hub",
+        title: "PubWheel: Rim Saver for 6in Hub",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Rim Saver"],
         imageSrc: "https://media.printables.com/media/prints/662104/images/5214682_631ba4a0-2218-4c14-9839-34426e5e4018_08a4158e-4fe0-44a9-9761-bd6018465d63/thumbs/inside/1280x960/png/rimsaver1.webp",
@@ -220,7 +220,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "Simple XR Rail Guards",
+        title: "PubParts: Simple XR Rail Guards",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Rail Attachment"],
         imageSrc: "https://media.printables.com/media/prints/649224/images/5226630_67670a7f-ade9-4f9e-ba5c-cdc8c5dfc601_d4820082-db4a-47f1-b0c5-1aaa7f7554e0/thumbs/inside/1280x960/png/make.webp",
@@ -238,7 +238,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "FlowGlider Connector Cover",
+        title: "FlowGlider: Connector Cover",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
         imageSrc: "https://cdn.thingiverse.com/assets/1d/20/8e/bf/73/large_display_stronger003.jpg",
@@ -247,7 +247,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
-        title: "FlowGlider Connector Cover - Apple Airtag Slot",
+        title: "FlowGlider: Connector Cover - Apple Airtag Slot",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
         imageSrc: "https://cdn.thingiverse.com/assets/d6/8a/33/51/2e/large_display_aatc_001.jpg",
@@ -256,7 +256,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "FlowGlider Cable Clip",
+        title: "FlowGlider: Cable Clip",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Bracket"],
         imageSrc: "https://cdn.thingiverse.com/assets/ab/f7/74/b2/3c/large_display_2021-03-13_22.06.44.jpg",
@@ -274,7 +274,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "Grip Tape DXF Outlines - Cobra, Kush Wide, Stock",
+        title: "Khaos: Grip Tape DXF Outlines - Cobra, Kush Wide, Stock",
         fabricationMethod: "Laser",
         typeOfPart: ["Footpad"],
         imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000579551/design/2024-08-09_bac8c3ea94466.jpg?x-oss-process=image/resize,w_1000/format,webp",
@@ -290,7 +290,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "Atlowshop Big Battery Box (TORque Box Lid Compatible)",
+        title: "Atlowshop: Big Battery Box (TORque Box Lid Compatible)",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/987242/images/7522617_545606e3-b628-4e59-af1a-78c21db70ab7_a6e92503-62b8-479a-b4a2-284f0bd6f78c/thumbs/inside/1280x960/jpg/20240605_145529-scaled-e1718062700155.webp",
@@ -299,7 +299,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-27"
     },
     {
-        title: "Atlowshop \"Atlowglider\" Controller Box",
+        title: "Atlowshop: \"Atlowglider\" Controller Box",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/987260/images/7522686_03eb27d6-71ae-4696-9c4e-6dbc29daca5e_a1d19ccd-5791-4cf0-8cb5-fe857f81c8b5/thumbs/inside/1280x960/png/screenshot-2024-08-26-145104.webp",
@@ -317,7 +317,7 @@ export default [
         dropboxZipLastUpdated: "2024-08-28"
     },
     {
-        title: "6 Pin Molex to 20mm Cable Gland for Floatboxx",
+        title: "Celeste: 6 Pin Molex to 20mm Cable Gland for Floatboxx",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Adapter"],
         imageSrc: "https://media.printables.com/media/prints/606685/images/4822641_48f07d34-7133-44cc-b4d0-d3225912641b_e0037b62-c651-4ca8-804f-c5126c785537/thumbs/inside/1280x960/png/gland.webp",
@@ -326,7 +326,7 @@ export default [
         dropboxZipLastUpdated: "2024-09-07"
     },
     {
-        title: "XR WTF Rails (Extended) BTG Fender Delete",
+        title: "Matix: XR WTF Rails (Extended) BTG Fender Delete",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/989723/images/7539781_d81696da-813e-4641-873e-54f2454ea9ca_584c6620-9d35-4ed1-8e4d-5edba78ffb8c/thumbs/inside/1280x960/jpeg/img_0925.webp",
@@ -342,7 +342,7 @@ export default [
         externalUrl: "https://www.printables.com/model/991294"
     },
     {
-        title: "Backer Plate Outline for VOW systems Mushies Footpads",
+        title: "PubParts: Backer Plate Outline for VOW systems Mushies Footpads",
         fabricationMethod: "CNC",
         typeOfPart: ["Footpad"],
         imageSrc: "https://media.printables.com/media/prints/993611/images/7565636_e24b8cb7-c1d7-44ce-a348-e7218a6c56b4_3f4277d8-cd44-420a-bbb2-3dfd28b8c317/thumbs/inside/1280x960/png/mushies.webp",
@@ -475,5 +475,14 @@ export default [
         externalUrl: "https://www.thingiverse.com/thing:6451831",
         dropboxUrl: "https://www.dropbox.com/scl/fi/ltn40qmd5drpc81gjdv8x/XR-Drop-Top-Lift-Kit-6451831.zip?rlkey=ryfgdc02bq4g8k8m0ojgl829w&st=8qjkalzm&dl=0",
         dropboxZipLastUpdated: "2024-09-10"
+    },
+    {
+        title: "XR WTF Rails (Extended) BTG Mini Fenders",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://media.printables.com/media/prints/1004369/images/7642019_ecdfeb11-95ce-4707-bff6-18b0669b6ba1_cb3cb004-bb26-466b-b815-75632d150443/thumbs/inside/1280x960/jpeg/img_2610.webp",
+        externalUrl: "https://www.printables.com/model/1004369",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/emrswmlqegndxahsjr5xx/XR-WTF-Rails-Extended-BTG-Mini-Fenders.zip?rlkey=1q0wl2n02o3873me42xm6ti9d&st=by1r2dol&dl=0",
+        dropboxZipLastUpdated: "2024-09-12"
     }
 ] as ItemData[]

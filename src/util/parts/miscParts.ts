@@ -71,6 +71,15 @@ export default [
         dropboxZipLastUpdated: "2024-08-28"
     },
     {
+        title: "Ducman: GX16-4 Charge Port Plug",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Port Cover"],
+        imageSrc: "https://media.printables.com/media/prints/932853/previews/thumbs/inside/1280x960/png/02eb834ab5a1315398468681ec7fd66eb7bb299f.webp",
+        externalUrl: "https://www.printables.com/model/932853",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/pesimyvdnrz53ibobvf0f/gx16-4-charge-port-plug.zip?rlkey=rhkghihkyn4xn6gjcuyprbr7y&st=kg365bzw&dl=0",
+        dropboxZipLastUpdated: "2024-09-18"
+    },
+    {
         title: "Celeste: AFU and ChiBatterySystems Onewheel Charger Bumpers",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],

@@ -59,6 +59,12 @@ export default [
         title: "Surfdado VESC Setup Guide",
         typeOfResource: ["Guide: Video"],
         externalUrl: "https://youtu.be/xaKGDummXeE",
-        description: "VESC Onewheel Setup A-Z"
+        description: "VESC Onewheel Setup A-Z for 6.2 firmware (latest)"
+    },
+    {
+        title: "TheBoardGarage VESC Setup Guide",
+        typeOfResource: ["Guide: Video"],
+        externalUrl: "https://www.youtube.com/watch?v=YeFLmPA049o",
+        description: "VESC Onewheel Setup for 6.2 firmware"
     }
 ] as ResourceData[]

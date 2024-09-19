@@ -71,6 +71,6 @@ export default [
         title: "HyperCore Stock to Fungineers Motor Connector Replacement Guide",
         typeOfResource: ["Guide: Written"],
         externalUrl: "https://pev.dev/t/1960",
-        description: "This guide will help you install a Fungineers motor cable in your Hypercore motor."
+        description: "This guide will help you install a Fungineers motor cable in your HyperCore motor."
     }
 ] as ResourceData[]

@@ -484,5 +484,12 @@ export default [
         externalUrl: "https://www.printables.com/model/1004369",
         dropboxUrl: "https://www.dropbox.com/scl/fi/emrswmlqegndxahsjr5xx/XR-WTF-Rails-Extended-BTG-Mini-Fenders.zip?rlkey=1q0wl2n02o3873me42xm6ti9d&st=by1r2dol&dl=0",
         dropboxZipLastUpdated: "2024-09-12"
+    },
+    {
+        title: "CNC/3DP PubPad (Footpad for Funwheel's and XR's)",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000581749/design/2024-08-10_9594886a03472.jpg?x-oss-process=image/resize,w_1000/format,webp",
+        externalUrl: "https://makerworld.com/en/models/581749"
     }
 ] as ItemData[]

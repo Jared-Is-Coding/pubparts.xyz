@@ -66,5 +66,11 @@ export default [
         typeOfResource: ["Guide: Video"],
         externalUrl: "https://www.youtube.com/watch?v=YeFLmPA049o",
         description: "VESC Onewheel Setup for 6.2 firmware"
+    },
+    {
+        title: "HyperCore Stock to Fungineers Motor Connector Replacement Guide",
+        typeOfResource: ["Guide: Written"],
+        externalUrl: "https://pev.dev/t/1960",
+        description: "This guide will help you install a Fungineers motor cable in your Hypercore motor."
     }
 ] as ResourceData[]

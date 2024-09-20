@@ -122,5 +122,14 @@ export default [
         externalUrl: "https://www.thingiverse.com/thing:5981449",
         dropboxUrl: "https://www.dropbox.com/scl/fi/lglk0kxek4lqlnbfe1f78/Pint-WTF-Rail-Guards-5981449.zip?rlkey=1vn0mga9o75cz1k38vr914g7a&st=611oakdj&dl=0",
         dropboxZipLastUpdated: "2024-09-10"
+    },
+    {
+        title: "Ranth: Dropped Pint Touch Fender",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender Delete"],
+        imageSrc: "https://media.printables.com/media/prints/218904/images/1995634_766770f4-330b-4c32-814b-0a297724adc0/thumbs/inside/1280x960/jpg/dsc_0059.webp",
+        externalUrl: "https://www.printables.com/model/218904",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/r0id61bok1ahh9mf1kicg/dropped-onewheel-pint-touch-fender-model_files.zip?rlkey=1vwyw5wwk1q9uz45phxibof5x&st=foahrx4m&dl=0",
+        dropboxZipLastUpdated: "2024-09-20"
     }
 ] as ItemData[]

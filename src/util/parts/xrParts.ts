@@ -493,7 +493,7 @@ export default [
         externalUrl: "https://makerworld.com/en/models/581749"
     },
     {
-        title: "Ranth: XR CNC/3DP PubPad Footholds",
+        title: "Ranth: Footholds for PubWheel  XR CNC/3DP PubPad Footpad",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad Attachment"],
         imageSrc: "https://media.printables.com/media/prints/1012011/images/7694729_a2c37003-fd28-4bf4-9e39-a4cf205086ed_18282522-a94b-44d5-908a-40bcab9b2ada/thumbs/inside/1280x960/jpg/img_1412.webp",
@@ -502,7 +502,7 @@ export default [
         dropboxZipLastUpdated: "2024-09-20"
     },
     {
-        title: "Ranth: XR CNC/3DP PubPad Mushy Footpad",
+        title: "Ranth: XR CNC/3DP PubPad Mushy Footpad Remix",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad"],
         imageSrc: "https://media.printables.com/media/prints/1011997/images/7692322_64e597d5-347b-4215-ab0a-95ac9f39a64a_5d14f770-e722-4f23-882d-99c9d0c9f9ec/thumbs/inside/1280x960/png/screenshot-2024-09-19-at-11422-am.webp",
@@ -511,12 +511,21 @@ export default [
         dropboxZipLastUpdated: "2024-09-20"
     },
     {
-        title: "Ranth: Fender Delete for XR CNC/3DP PubPad Footpad",
+        title: "Ranth: Fender Delete for PubWheel XR CNC/3DP PubPad Footpad",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender Delete"],
         imageSrc: "https://media.printables.com/media/prints/1012004/images/7694713_df425c28-599b-4ccd-b64f-42e39a760438_04da4f8c-8cac-4d43-985b-ca70584e562d/thumbs/inside/1280x960/jpg/img_1427.webp",
         externalUrl: "https://www.printables.com/model/1012004",
         dropboxUrl: "https://www.dropbox.com/scl/fi/4gx1f4tvjumn8fc6ps73x/moddelete-onewheel-xr-fender-delete-model_files.zip?rlkey=ce5jssuc6us33tc9ha1ecu5ii&st=d7z52zia&dl=0",
+        dropboxZipLastUpdated: "2024-09-20"
+    },
+    {
+        title: "Ranth: Bolt Plate for PubWheel XR CNC/3DP PubPad Footpad",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/1012010/images/7694761_7c2df0c4-e63f-44b7-a4b9-81fce67d4e44_cbcaad16-c47b-4977-9395-1637cf82518f/thumbs/inside/1280x960/jpg/img_1411.webp",
+        externalUrl: "https://www.printables.com/model/1012010",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/1x45zyaa3dfxr5mnjupx4/pubpad-bolt-plate-model_files.zip?rlkey=vsn5pxzggj9takj3bhhx3cbrk&st=n7s1mj4j&dl=0",
         dropboxZipLastUpdated: "2024-09-20"
     }
 ] as ItemData[]

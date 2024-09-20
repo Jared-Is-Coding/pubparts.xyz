@@ -328,7 +328,7 @@ export default [
     {
         title: "Matix: XR WTF Rails (Extended) BTG Fender Delete",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Fender"],
+        typeOfPart: ["Fender Delete"],
         imageSrc: "https://media.printables.com/media/prints/989723/images/7539781_d81696da-813e-4641-873e-54f2454ea9ca_584c6620-9d35-4ed1-8e4d-5edba78ffb8c/thumbs/inside/1280x960/jpeg/img_0925.webp",
         externalUrl: "https://www.printables.com/model/989723",
         dropboxUrl: "https://www.dropbox.com/scl/fi/8brcsu0scupthff9o6crf/btg-fender-delete-sd-extended-dubs-model_files.zip?rlkey=a0ejqmf32227f3lkwm19s2i74&st=sd8bnqsl&dl=0",
@@ -461,14 +461,14 @@ export default [
     {
         title: "QuinnWheel: XR Fender Delete - Life Saver Compatible",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Fender"],
+        typeOfPart: ["Fender Delete"],
         imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fthangs-thumbnails%2Fproduction%2F0011ffb3-58e6-4d40-b8cc-282cf7b6ca2b%2FXR_Fender_Delete_No_Handle.png&w=640&q=75",
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/793459",
         dropboxUrl: "https://www.dropbox.com/scl/fi/4lk5jgjq9emainbuu1yga/Onewheel-XR-Fender-Delete-Life-Saver-Compatible.zip?rlkey=gpqreg9vdidc7hgo5jouqkt1w&st=ilhx6iem&dl=0",
         dropboxZipLastUpdated: "2024-09-08"
     },
     {
-        title: "XR Drop Top Lift Kit",
+        title: "TFL: XR Drop Top Lift Kit",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://cdn.thingiverse.com/assets/71/e9/67/c0/ff/large_display_af81fb98-7b33-4cf8-a30b-67fd1916a492.png",
@@ -477,7 +477,7 @@ export default [
         dropboxZipLastUpdated: "2024-09-10"
     },
     {
-        title: "XR WTF Rails (Extended) BTG Mini Fenders",
+        title: "Matix: XR WTF Rails (Extended) BTG Mini Fenders",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/1004369/images/7642019_ecdfeb11-95ce-4707-bff6-18b0669b6ba1_cb3cb004-bb26-466b-b815-75632d150443/thumbs/inside/1280x960/jpeg/img_2610.webp",
@@ -486,10 +486,37 @@ export default [
         dropboxZipLastUpdated: "2024-09-12"
     },
     {
-        title: "CNC/3DP PubPad (Footpad for Funwheel's and XR's)",
+        title: "PubWheel: XR CNC/3DP PubPad Footpad",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad"],
         imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000581749/design/2024-08-10_9594886a03472.jpg?x-oss-process=image/resize,w_1000/format,webp",
         externalUrl: "https://makerworld.com/en/models/581749"
+    },
+    {
+        title: "Ranth: XR CNC/3DP PubPad Footholds",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/1012011/images/7694729_a2c37003-fd28-4bf4-9e39-a4cf205086ed_18282522-a94b-44d5-908a-40bcab9b2ada/thumbs/inside/1280x960/jpg/img_1412.webp",
+        externalUrl: "https://www.printables.com/model/1012011",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/th0et7rwy0z4z68rvq47k/basic-pubwheel-footholds-model_files.zip?rlkey=2d8oawcdu9h12lf9a8kvnwi2n&st=jscodkf3&dl=0",
+        dropboxZipLastUpdated: "2024-09-20"
+    },
+    {
+        title: "Ranth: XR CNC/3DP PubPad Mushy Footpad",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://media.printables.com/media/prints/1011997/images/7692322_64e597d5-347b-4215-ab0a-95ac9f39a64a_5d14f770-e722-4f23-882d-99c9d0c9f9ec/thumbs/inside/1280x960/png/screenshot-2024-09-19-at-11422-am.webp",
+        externalUrl: "https://www.printables.com/model/1011997",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/vzxdneksclt3i5y36bwph/pushy-an-xrfunwheel-footpad-model_files.zip?rlkey=r6p8oo44rup2jylbtm1kkt9uq&st=v043dpdr&dl=0",
+        dropboxZipLastUpdated: "2024-09-20"
+    },
+    {
+        title: "Ranth: Fender Delete for XR CNC/3DP PubPad Footpad",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender Delete"],
+        imageSrc: "https://media.printables.com/media/prints/1012004/images/7694713_df425c28-599b-4ccd-b64f-42e39a760438_04da4f8c-8cac-4d43-985b-ca70584e562d/thumbs/inside/1280x960/jpg/img_1427.webp",
+        externalUrl: "https://www.printables.com/model/1012004",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/4gx1f4tvjumn8fc6ps73x/moddelete-onewheel-xr-fender-delete-model_files.zip?rlkey=ce5jssuc6us33tc9ha1ecu5ii&st=d7z52zia&dl=0",
+        dropboxZipLastUpdated: "2024-09-20"
     }
 ] as ItemData[]

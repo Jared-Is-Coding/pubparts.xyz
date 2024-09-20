@@ -47,7 +47,7 @@ export default [
     {
         title: "Ducman: WTF Fender Delete",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Fender"],
+        typeOfPart: ["Fender Delete"],
         imageSrc: "https://media.printables.com/media/prints/773955/images/6016708_7d5c9f5e-d8cd-483d-b335-00eb0a4d3d4b_64b703bb-650f-4b37-a000-925ab263212f/thumbs/inside/1280x960/jpeg/img_6913.webp",
         externalUrl: "https://www.printables.com/model/773955",
         dropboxUrl: "https://www.dropbox.com/scl/fi/ymy6vw9zj3lv1zncj80ed/onewheel-pint-wtf-fender-delete-model_files.zip?rlkey=mpkbd390nmcc3zkxi73dmej7l&st=01p4mwx1&dl=0",

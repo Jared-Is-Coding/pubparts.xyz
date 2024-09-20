@@ -65,7 +65,7 @@ export default [
     {
         title: "HYPERFORMA Mini Fender + 12 mm + Mudguard + Delete Fenders",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Fender"],
+        typeOfPart: ["Fender", "Fender Delete"],
         imageSrc: "https://media.printables.com/media/prints/596132/images/4761368_e114ef6a-4643-45a2-b1a6-757b75b44f25_de762551-cbf9-403d-bd12-f7b0314be53d/thumbs/inside/1280x960/png/immagine-2023-09-29-232427.webp",
         externalUrl: "https://www.printables.com/model/596132",
         dropboxUrl: "https://www.dropbox.com/scl/fi/10e5osxtakmld36y3b1n0/hyperforma_floatwheel-adv-advpro-mini-fender-12-mm-mudguard-delete-fenders-model_files.zip?rlkey=eog4h7fja9fi05xge50z2xs5k&st=1u5z1vv1&dl=0",

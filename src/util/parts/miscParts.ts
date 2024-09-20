@@ -98,7 +98,7 @@ export default [
     {
         title: "Dragan Hooks v2",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Miscellaneous"],
+        typeOfPart: ["Footpad Attachment"],
         imageSrc: "https://cdn.thingiverse.com/assets/e9/9e/bb/cd/ef/large_display_TH01.jpg",
         externalUrl: "https://www.thingiverse.com/thing:5178142",
         dropboxUrl: "https://www.dropbox.com/scl/fi/a5jfaeh5dihjoktaq9uhs/Toe-Hook-for-Streetboard-Snakeboard-Longboard-5178142.zip?rlkey=qvy0kx88qpvyz48t5qtmi493m&st=aw7qqeaj&dl=0",

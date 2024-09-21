@@ -61,6 +61,7 @@ public
 # build files
 gatsby-types.d.ts
 *.js
+!.env.example
 
 # web js
 !static/js/script.js

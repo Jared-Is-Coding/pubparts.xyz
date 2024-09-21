@@ -1,9 +1,9 @@
 import { HeadFC, Link, PageProps } from "gatsby"
 import React from "react"
 import { Container } from "react-bootstrap"
-import Footer from "../components/Footer"
-import MetaData from "../components/MetaData"
-import Navbar from "../components/Navbar"
+import Footer from "../components/SiteFooter"
+import MetaData from "../components/SiteMetaData"
+import Navbar from "../components/SiteNavbar"
 
 export const Head: HeadFC = () => (
     <>

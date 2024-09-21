@@ -349,62 +349,6 @@ export default [
         externalUrl: "https://www.printables.com/model/993611"
     },
     {
-        title: "Floatboxx Parts",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Controller Box", "Footpad", "Tool", "Miscellaneous", "Rails"],
-        imageSrc: "https://primary.jwwb.nl/public/r/e/z/temp-cwzckgievmvjujmcqibl/floatboxxxlmcwithlidandfootpad.jpg",
-        externalUrl: "https://www.floatboxx.com/",
-        price: "$25-$250"
-    },
-    {
-        title: "Funwheel XR Controller Box Complete",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Controller Box"],
-        imageSrc: "https://www.fungineers.us/cdn/shop/files/Photoroom-20240601-170053_2_1426x.png?v=1721869640",
-        externalUrl: "https://www.fungineers.us/products/funwheel-controller-box",
-        price: "$600"
-    },
-    {
-        title: "VOW Systems: XR Controller Casing",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Controller Box"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Controller_Casing_7.png?v=1720866053&width=1426",
-        externalUrl: "https://vow.systems/products/xr-controller-casing",
-        price: "$206"
-    },
-    {
-        title: "VOW Systems: XR Battery Casing",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Battery Box"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Battery_Casing_3.png?v=1720865968&width=1426",
-        externalUrl: "https://vow.systems/products/xr-battery-casing",
-        price: "$206"
-    },
-    {
-        title: "VOW Systems: XR Sym Casing",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Battery Box", "Controller Box"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Sym_Casing_3_9e6194bc-c2fa-427c-9423-6564437464ee.png?v=1720866116&width=1426",
-        externalUrl: "https://vow.systems/products/xr-sym-casing",
-        price: "$206"
-    },
-    {
-        title: "VOW Systems: Prefabricated XR Mushies Footpad",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Footpad"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Mushies_1_0583de09-af43-43fc-8b27-7c86a71b9e6f.png?v=1720866091&width=1426",
-        externalUrl: "https://vow.systems/products/xr-mushies",
-        price: "$69-$172"
-    },
-    {
-        title: "VOW Systems: XR DIY Bundle",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Miscellaneous"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Lids1.png?v=1720867495&width=1426",
-        externalUrl: "https://vow.systems/products/xr-diy-bundle?variant=49474202763583",
-        price: "69-$86"
-    },
-    {
         title: "QuinnWheel: XR Varials Center Steez Bash Guards",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Rail Attachment"],

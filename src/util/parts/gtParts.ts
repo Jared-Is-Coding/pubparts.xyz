@@ -97,62 +97,6 @@ export default [
         dropboxZipLastUpdated: "2024-08-28"
     },
     {
-        title: "VOW Systems: GT Controller Casing",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Controller Box"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Controller_Casing_6.png?v=1720862498&width=1426",
-        externalUrl: "https://vow.systems/products/gt-battery-casing",
-        price: "$206"
-    },
-    {
-        title: "VOW Systems: Prefabricated GT Mushies Footpad",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Footpad"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Mushies_1.png?v=1720865822&width=1426",
-        externalUrl: "https://vow.systems/products/gt-mushies",
-        price: "$69-$172"
-    },
-    {
-        title: "VOW Systems: GT Sym Casing",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Controller Box", "Battery Box"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Sym_Casing_3.png?v=1720862526&width=1426",
-        externalUrl: "https://vow.systems/products/gt-sym-casing",
-        price: "$206"
-    },
-    {
-        title: "VOW Systems: GT Battery Casing",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Battery Box"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Battery_Casing_5.png?v=1720862442&width=1426",
-        externalUrl: "https://vow.systems/products/gt-battery-casing-1",
-        price: "$206"
-    },
-    {
-        title: "VOW Systems: GT Rail to XR Hub Adapters",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Axle Block"],
-        imageSrc: "https://vow.systems/cdn/shop/files/GT_Hubs_1.png?v=1720865935&width=1426",
-        externalUrl: "https://vow.systems/products/gt-cannoncore-adapters",
-        price: "$69"
-    },
-    {
-        title: "VOW Systems: GT DIY Bundle",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Miscellaneous"],
-        imageSrc: "https://vow.systems/cdn/shop/files/Lids1_7997c593-946b-4bb8-81ad-a3d538947591.png?v=1720867519&width=1426",
-        externalUrl: "https://vow.systems/products/gt-diy-casing-bundle",
-        price: "$52-$69"
-    },
-    {
-        title: "VOW Systems: GT S.L.A.M Kit",
-        fabricationMethod: "Prefabricated",
-        typeOfPart: ["Footpad"],
-        imageSrc: "https://vow.systems/cdn/shop/files/SLAM1.png?v=1721454698&width=1426",
-        externalUrl: "https://vow.systems/products/gt-s-l-a-m-kit",
-        price: "$189"
-    },
-    {
         title: "PubParts: WTF Rails to C&R or Stock Fender Adapters",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],

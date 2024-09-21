@@ -62,7 +62,6 @@ type FabricationMethod =
     | "CNC"
     | "Laser"
     | "Other"
-    | "Prefabricated"
 
 type ResourceData = {
     /**

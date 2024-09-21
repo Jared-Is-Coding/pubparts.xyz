@@ -1,11 +1,11 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import React from "react"
 import { Container, Row } from "react-bootstrap"
+import ResourceCard from "../components/ResourceCard"
+import ResourceListSearchbar from "../components/ResourceListSearchbar"
 import Footer from "../components/SiteFooter"
 import MetaData from "../components/SiteMetaData"
 import Navbar from "../components/SiteNavbar"
-import ResourceCard from "../components/ResourceCard"
-import ResourceListSearchbar from "../components/ResourceListSearchbar"
 import "../scss/pages/resources.scss"
 import resources from "../util/resources"
 

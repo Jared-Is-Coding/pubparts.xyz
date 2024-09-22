@@ -1,5 +1,5 @@
 import React from "react"
-import { useMetaData } from "../hooks/useMetaData"
+import useMetaData from "../hooks/useMetaData"
 import "../scss/styles.scss"
 
 type MetaDataProps = {

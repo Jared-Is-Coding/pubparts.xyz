@@ -1,6 +1,13 @@
 import React from "react"
 import { Button, Col, Row } from "react-bootstrap"
 
+/**
+ * Creates a {@link https://react-bootstrap.netlify.app/docs/layout/grid | React-Bootstrap Row}
+ * containing buttons for clicking to navigate the
+ * website parts lists.
+ * 
+ * @param NavbarProps - a {@link NavbarProps} object
+ */
 export default () => (
     <Row className="flex-center flex-row">
         <Col

@@ -1,7 +1,11 @@
 import React from "react"
 import { Card, Col } from "react-bootstrap"
-import { DiscordInvite, DiscordThread, ImageRequestEmail } from "../util/siteVariables"
+import { DiscordInvite, DiscordThread } from "../util/siteVariables"
 
+/**
+ * Creates a {@link https://react-bootstrap.netlify.app/docs/components/cards | React-Bootstrap Card}
+ * with copyright information
+ */
 export default () => (
     <Col
         xs={{span: 12}}

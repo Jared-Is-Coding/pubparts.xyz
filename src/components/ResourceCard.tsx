@@ -1,9 +1,17 @@
 import React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
 import isBrowser from "../hooks/isBrowser"
-import { toTitleCase } from "../hooks/toTitleCase"
-import CopyLinkBadge from "./CopyLinkBadge"
+import toTitleCase from "../hooks/toTitleCase"
 
+/**
+ * Creates a {@link https://react-bootstrap.netlify.app/docs/components/cards | React-Bootstrap Card}
+ * with item information from an {@link ResourceData}
+ * object array. Intended to be used in
+ * conjunction with the Array map function.
+ * 
+ * @param item - an {@link ResourceData} object
+ * @param index - a number from a map
+ */
 export default (resource: ResourceData, index: number) => {
     // Check for browser window
     if (!isBrowser()) return

@@ -6,6 +6,12 @@ type NavbarProps = {
     isHomepage?: boolean
 }
 
+/**
+ * Creates a {@link https://react-bootstrap.netlify.app/docs/components/navbar | React-Bootstrap Navbar}
+ * for use navigating at the top of a page.
+ * 
+ * @param NavbarProps - a {@link NavbarProps} object
+ */
 export default ({isHomepage}: NavbarProps) => (
     <Navbar fixed="top" expand="lg" data-bs-theme="dark">
         <Container>

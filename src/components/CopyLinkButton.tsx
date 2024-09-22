@@ -3,13 +3,22 @@ import { Button } from "react-bootstrap"
 import { FaCheck, FaLink } from "react-icons/fa6"
 import "../scss/animations.scss"
 
-type CopyLinkBadgeProps = {
+type CopyLinkButtonProps = {
     link: string
     text?: string
     style?: CSSProperties
 }
 
-export default ({link, text, style}: CopyLinkBadgeProps) => {
+/**
+ * Creates a {@link https://react-bootstrap.netlify.app/docs/components/buttons | React-Bootstrap Button}
+ * which allows clicking to copy the supplied URL,
+ * to the clipboard. Clicking also switches
+ * between FA icons to indicate the copy
+ * operation.
+ * 
+ * @param CopyLinkButtonProps - a {@link CopyLinkButtonProps} object
+ */
+export default ({link, text, style}: CopyLinkButtonProps) => {
     const [displayLink, setDisplayLink] = useState("inline-block")
     const [displayCheck, setDisplayCheck] = useState("none")
 

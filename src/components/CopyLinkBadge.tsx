@@ -7,6 +7,15 @@ type CopyLinkBadgeProps = {
     link: string
 }
 
+/**
+ * Creates a {@link https://react-bootstrap.netlify.app/docs/components/badge | React-Bootstrap Badge}
+ * which allows clicking to copy the supplied URL,
+ * to the clipboard. Clicking also switches
+ * between FA icons to indicate the copy
+ * operation.
+ * 
+ * @param CopyLinkBadgeProps - a {@link CopyLinkBadgeProps} object
+ */
 export default ({link}: CopyLinkBadgeProps) => {
     const [displayLink, setDisplayLink] = useState("inline-block")
     const [displayCheck, setDisplayCheck] = useState("none")

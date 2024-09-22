@@ -2,13 +2,20 @@ import React, { ChangeEvent, useEffect, useRef, useState } from "react"
 import { Button, ButtonGroup, Form, Stack, ToggleButton } from "react-bootstrap"
 import { FaArrowRotateLeft } from "react-icons/fa6"
 import isBrowser from "../hooks/isBrowser"
-import { toTitleCase } from "../hooks/toTitleCase"
+import toTitleCase from "../hooks/toTitleCase"
 import CopyLinkButton from "./CopyLinkButton"
 
 type ItemListSearchbarProps = {
     partList: ItemData[]
 }
 
+/**
+ * Creates a collection of elements for the
+ * purpose of filtering an items page under
+ * `src/pages/parts`
+ * 
+ * @param ItemListSearchbarProps - a {@link ItemListSearchbarProps} object
+ */
 export default ({partList}: ItemListSearchbarProps) => {
     // Check for browser window
     if (!isBrowser()) return

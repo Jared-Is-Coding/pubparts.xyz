@@ -26,7 +26,6 @@ export default ({isHomepage}: NavbarProps) => (
             <Navbar.Collapse id="site-navbar">
                 <Nav variant="underline" justify>
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/resources">Resources</Nav.Link>
                     <NavDropdown title="Parts" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-frames-dropdown">
                         <NavDropdown.Item href="/parts/floatwheel" target="_self">Floatwheel</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/gt" target="_self">GT/GT-S</NavDropdown.Item>
@@ -34,6 +33,13 @@ export default ({isHomepage}: NavbarProps) => (
                         <NavDropdown.Item href="/parts/xr" target="_self">XR/+</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/misc" target="_self">Miscellaneous Items</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/electronics" target="_self">VESC Electronics</NavDropdown.Item>
+                    </NavDropdown>
+                    <NavDropdown title="Resources" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-frames-dropdown">
+                        <NavDropdown.Item href="/resources/techinfo" target="_self">Technical Info</NavDropdown.Item>
+                        <NavDropdown.Item href="/resources/vendors" target="_self">Vendors</NavDropdown.Item>
+                        <NavDropdown.Item href="/resources/guides" target="_self">Guides</NavDropdown.Item>
+                        <NavDropdown.Item href="/resources/githubs" target="_self">Github Repositories</NavDropdown.Item>
+                        <NavDropdown.Item href="/resources/software" target="_self">Apps and Packages</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Submit Changes" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-contribute-dropdown">
                         <NavDropdown.Item href={DiscordInvite} target="_blank">1. Join Vescify Discord</NavDropdown.Item>

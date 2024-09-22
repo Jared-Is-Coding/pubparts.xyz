@@ -12,3 +12,6 @@ Want to contribute to this repository? Here's some steps to get set up.
 5. Start debugging via either:
     - `${workspaceRoot}/node_modules/.bin/gatsby develop`
     - In Visual Studio Code, you can run `Debug: Start Debugging`
+
+## Contributing
+Now that you've set up the development environment, be sure to check out the [contributing guidelines](https://github.com/Jared-Is-Coding/pubparts.xyz/blob/master/CONTRIBUTING.md).

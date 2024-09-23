@@ -4,7 +4,6 @@ import { Container } from "react-bootstrap"
 import Footer from "../../components/SiteFooter"
 import MetaData from "../../components/SiteMetaData"
 import Navbar from "../../components/SiteNavbar"
-import PartTypesLinks from "../../components/PartTypesLinks"
 
 export const Head: HeadFC = () => (
     <>
@@ -32,7 +31,6 @@ const Page: React.FC<PageProps> = () => {
                 <Container>
                     <p>What are you doing here?</p>
 
-                    <PartTypesLinks />
                 </Container>
             </main>
                 

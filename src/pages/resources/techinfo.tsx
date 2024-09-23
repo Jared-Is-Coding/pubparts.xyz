@@ -7,14 +7,14 @@ import Navbar from "../../components/SiteNavbar"
 import ResourceCard from "../../components/ResourceCard"
 import ResourceListSearchbar from "../../components/ResourceListSearchbar"
 import "../../scss/pages/resources.scss"
-import resources from "../../util/resources/techinfo"
+import techinfo from "../../util/resources/techinfo"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
         <MetaData
-            title="Resources | PubParts.xyz"
-            description="Various web resources for VESC builders" />
+            title="Technical Info | PubParts.xyz"
+            description="Various web resources for VESC enthusiasts" />
     </>
 )
 
@@ -32,7 +32,7 @@ const Page: React.FC<PageProps> = () => {
             <main className="page-resources">
                 <Container>
                     {/* Search area */}
-                    <ResourceListSearchbar resourceList={resources} />
+                    <ResourceListSearchbar resourceList={techinfo} />
 
                     {/* Search results headers */}
                     <h2 id="resourceListHeader" style={{display: "block"}}>Resources</h2>
@@ -40,8 +40,8 @@ const Page: React.FC<PageProps> = () => {
 
                     <Row>
                         {/* List resources */}
-                        {!!resources.length &&
-                            resources.sort((a, b) => a.title.localeCompare(b.title)).map(ResourceCard)
+                        {!!techinfo.length &&
+                            techinfo.sort((a, b) => a.title.localeCompare(b.title)).map(ResourceCard)
                         }
                     </Row>
                 </Container>

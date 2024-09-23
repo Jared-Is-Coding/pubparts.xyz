@@ -1,14 +1,14 @@
 import { HeadFC, Link, PageProps } from "gatsby"
 import React from "react"
 import { Container } from "react-bootstrap"
-import Footer from "../components/SiteFooter"
-import MetaData from "../components/SiteMetaData"
-import Navbar from "../components/SiteNavbar"
+import SiteFooter from "../components/SiteFooter"
+import SiteMetaData from "../components/SiteMetaData"
+import SiteNavbar from "../components/SiteNavbar"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData title="404 | PubParts.xyz" />
+        <SiteMetaData title="404 | PubParts.xyz" />
     </>
 )
 
@@ -16,7 +16,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
     return (
         <>
             <header>
-                <Navbar />
+                <SiteNavbar />
 
                 <h1 className="flex-center">
                     404
@@ -33,7 +33,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
                 </Container>
             </main>
 
-            <Footer />
+            <SiteFooter />
         </>
     )
 }

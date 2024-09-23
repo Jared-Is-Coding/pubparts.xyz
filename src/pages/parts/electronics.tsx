@@ -4,16 +4,16 @@ import { Container, Row } from "react-bootstrap"
 import CopyrightCard from "../../components/CopyrightCard"
 import ItemCard from "../../components/ItemCard"
 import ItemListSearchbar from "../../components/ItemListSearchbar"
-import Footer from "../../components/SiteFooter"
-import MetaData from "../../components/SiteMetaData"
-import Navbar from "../../components/SiteNavbar"
+import SiteFooter from "../../components/SiteFooter"
+import SiteMetaData from "../../components/SiteMetaData"
+import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/items.scss"
 import electronicsParts from "../../util/parts/electronicsParts"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData
+        <SiteMetaData
             title="VESC Electronics | PubParts.xyz"
             description="Open source or otherwise aftermarket electronics for no particular board platform" />
     </>
@@ -23,7 +23,7 @@ const Page: React.FC<PageProps> = () => {
     return (
         <>
             <header>
-                <Navbar />
+                <SiteNavbar />
 
                 <h1 className="flex-center">
                     VESC Electronics
@@ -51,7 +51,7 @@ const Page: React.FC<PageProps> = () => {
                 </Container>
             </main>
                 
-            <Footer />
+            <SiteFooter />
         </>
     )
 }

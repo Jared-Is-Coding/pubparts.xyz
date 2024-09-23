@@ -4,16 +4,16 @@ import { Container, Row } from "react-bootstrap"
 import CopyrightCard from "../../components/CopyrightCard"
 import ItemCard from "../../components/ItemCard"
 import ItemListSearchbar from "../../components/ItemListSearchbar"
-import Footer from "../../components/SiteFooter"
-import MetaData from "../../components/SiteMetaData"
-import Navbar from "../../components/SiteNavbar"
+import SiteFooter from "../../components/SiteFooter"
+import SiteMetaData from "../../components/SiteMetaData"
+import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/items.scss"
 import floatwheelParts from "../../util/parts/floatwheelParts"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <MetaData
+        <SiteMetaData
             title="Floatwheel Parts | PubParts.xyz"
             description="Open source or otherwise aftermarket parts for the Floatwheel platform" />
     </>
@@ -23,7 +23,7 @@ const Page: React.FC<PageProps> = () => {
     return (
         <>
             <header>
-                <Navbar />
+                <SiteNavbar />
 
                 <h1 className="flex-center">
                     Floatwheel Parts
@@ -51,7 +51,7 @@ const Page: React.FC<PageProps> = () => {
                 </Container>
             </main>
                 
-            <Footer />
+            <SiteFooter />
         </>
     )
 }

@@ -16,9 +16,9 @@ Table of Contents:
 
 ## Submitting Changes
 
-### Commit Messages
-- For commit titles, use Sentence case where applicable.
-- In commit descriptions, include a thoughtful description of the change(s) being introduced
+### Commits
+- Commit titles should be less than 72 characters and use `Sentence case` where applicable.
+- Commit descriptions should include a thoughtful description of the change(s) being introduced
 - For longer commit descriptions, break information into lists using a `-` at the beginning of newlines
 
 ### Pull Requests

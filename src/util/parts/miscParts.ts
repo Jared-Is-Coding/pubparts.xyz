@@ -87,6 +87,13 @@ export default [
         externalUrl: "https://www.printables.com/model/585322"
     },
     {
+        title: "QuinnWheel: AFU Charger Bumpers for VESC Onewheel",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F239c1300-3be6-4cd3-a754-af7025c2b55f%2FAFU%2520Chargers.jpg&w=640&q=75",
+        externalUrl: "https://thangs.com/designer/quinnwheel/3d-model/1144255"
+    },
+    {
         title: "Celeste: Bonk Bar and Block",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],

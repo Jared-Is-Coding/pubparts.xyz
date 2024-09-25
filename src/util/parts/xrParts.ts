@@ -94,6 +94,15 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
+        title: "Rim Saver for 6in Hub",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rim Saver"],
+        imageSrc: "https://media.printables.com/media/prints/275164/images/2445560_59503c8c-a601-4bd8-b6ea-1f135176764d/thumbs/inside/1280x960/jpg/rim-saver-main.webp",
+        externalUrl: "https://www.printables.com/model/275164",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/yg826r00at9fhl3bkggae/onewheel-xrpint-rim-saver-model_files.zip?rlkey=xdxo9spf2pvyop2qrnj5kh20n&st=x5oyqh07&dl=0",
+        dropboxZipLastUpdated: "2024-09-25"
+    },
+    {
         title: "Funwheel Controller Lid Fungineers",
         fabricationMethod: "CNC",
         typeOfPart: ["Controller Box"],
@@ -471,5 +480,14 @@ export default [
         externalUrl: "https://www.printables.com/model/1012010",
         dropboxUrl: "https://www.dropbox.com/scl/fi/1x45zyaa3dfxr5mnjupx4/pubpad-bolt-plate-model_files.zip?rlkey=vsn5pxzggj9takj3bhhx3cbrk&st=n7s1mj4j&dl=0",
         dropboxZipLastUpdated: "2024-09-20"
+    },
+    {
+        title: "Atlowshop: Big Speed battery box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://media.printables.com/media/prints/1016164/images/7720479_aeaf67a6-fc08-47c0-a0bf-a6f8a492ceed_2985bd1f-5cdc-4fb8-87e6-096967e0ffc1/thumbs/inside/1280x960/png/screenshot-2024-09-23-002306.webp",
+        externalUrl: "https://www.printables.com/model/1016164",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/umnphuz7z0jntggn0lfps/atlowshop-big-speed-battery-box-model_files.zip?rlkey=m7dgn1prrewk7e1f4x0nuyd0t&st=57dv5wpp&dl=0",
+        dropboxZipLastUpdated: "2024-09-25"
     }
 ] as ItemData[]

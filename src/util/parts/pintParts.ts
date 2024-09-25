@@ -124,6 +124,24 @@ export default [
         dropboxZipLastUpdated: "2024-09-10"
     },
     {
+        title: "PubWheel: Rim Saver for 6in Hub",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rim Saver"],
+        imageSrc: "https://media.printables.com/media/prints/662104/images/5214682_631ba4a0-2218-4c14-9839-34426e5e4018_08a4158e-4fe0-44a9-9761-bd6018465d63/thumbs/inside/1280x960/png/rimsaver1.webp",
+        externalUrl: "https://www.printables.com/model/662104",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/x9tghvrh8izzji7t96rms/cleaned-up-rimsaver-for-6-inch-onewheel-motor-step-file-provided-model_files.zip?rlkey=jxav0papoy2cultqwxi2nkzeo&st=9wwpx147&dl=0",
+        dropboxZipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "Rim Saver for 6in Hub",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rim Saver"],
+        imageSrc: "https://media.printables.com/media/prints/275164/images/2445560_59503c8c-a601-4bd8-b6ea-1f135176764d/thumbs/inside/1280x960/jpg/rim-saver-main.webp",
+        externalUrl: "https://www.printables.com/model/275164",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/yg826r00at9fhl3bkggae/onewheel-xrpint-rim-saver-model_files.zip?rlkey=xdxo9spf2pvyop2qrnj5kh20n&st=x5oyqh07&dl=0",
+        dropboxZipLastUpdated: "2024-09-25"
+    },
+    {
         title: "Ranth: Dropped Pint Touch Fender",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender Delete"],
@@ -131,5 +149,14 @@ export default [
         externalUrl: "https://www.printables.com/model/218904",
         dropboxUrl: "https://www.dropbox.com/scl/fi/r0id61bok1ahh9mf1kicg/dropped-onewheel-pint-touch-fender-model_files.zip?rlkey=1vwyw5wwk1q9uz45phxibof5x&st=foahrx4m&dl=0",
         dropboxZipLastUpdated: "2024-09-20"
+    },
+    {
+        title: "Backer Plate Outline for Pint Footpads",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://media.printables.com/media/prints/621158/images/4928059_c856f697-b75e-49a5-8037-5c1bf483723c_a2fd3de4-bf0f-44b5-8115-7fe368419472/thumbs/inside/1280x960/png/large_display_a1a2c8a9-b17e-44ef-8e62-1b6616835526_621158.webp",
+        externalUrl: "https://www.printables.com/model/621158",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/cuwi2t3ciozy824i8o6ih/pint-compatible-footpad-underside-plates-model_files.zip?rlkey=kae1ui3doiomkuhqu2bz7bget&st=fvx9l116&dl=0",
+        dropboxZipLastUpdated: "2024-09-25"
     }
 ] as ItemData[]

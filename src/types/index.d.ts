@@ -50,6 +50,7 @@ type PartType =
     | "Miscellaneous"
     | "Motor"
     | "Motor Cover"
+    | "Plug"
     | "Port Cover"
     | "Rail Attachment"
     | "Rails"

@@ -23,5 +23,14 @@ export default [
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/1025517/images/7792742_6fb7e054-7719-438b-8543-fbadc5d8abb9_e0b99a1c-108e-4fbf-a919-d6fd8386ecb8/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1025517"
+    },
+    {
+        title: "Kaiserplug / Flightplug V2.1",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Plug"],
+        imageSrc: "https://media.printables.com/media/prints/968939/images/7394284_272ce3da-3e45-40e0-b57a-f39452ebe499_d7ea22fa-d39f-41aa-a018-8b5c19d3b1e9/thumbs/inside/1280x960/png/plugs_closer_8409edf0-db54-4c90-9cf8-2d4494fd51a9.webp",
+        externalUrl: "https://www.printables.com/model/968939",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ihq0rnrngh5obt1h8xdiu/kaiserplug-flightplug-v21-model_files.zip?rlkey=nhhcgoplmn5v8b2zy2vtrd4qd&st=auqj3c67&dl=0",
+        dropboxZipLastUpdated: "2024-10-03"
     }
 ] as ItemData[]

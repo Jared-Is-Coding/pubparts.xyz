@@ -196,5 +196,23 @@ export default [
         externalUrl: "https://www.printables.com/model/908883",
         dropboxUrl: "https://www.dropbox.com/scl/fi/dtlcg38g6lrs2y5ts9fzl/easy-print-thick-floatwheel-bumper-model_files.zip?rlkey=g488jwqtp1q1uz7zi4gka5sfo&st=byegqe0b&dl=0",
         dropboxZipLastUpdated: "2024-08-26"
+    },
+    {
+        title: "Floatwheel BTG Mini Fenders",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://media.printables.com/media/prints/996404/images/7583704_aea3c590-a1b8-4381-aad0-4ec6330765dc_978db47c-cc1c-4bae-b0ba-9fef0ef9fe3b/thumbs/inside/1280x960/png/fusion360_p3loxgmmsp.webp",
+        externalUrl: "https://www.printables.com/model/996404",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/04o76zxwgezkqo3en45bq/floatwheel-btg-minifenders-model_files.zip?rlkey=b1axj36a7yed6clgn5j98yd7t&st=ym1ua5wr&dl=0",
+        dropboxZipLastUpdated: "2024-10-03"
+    },
+    {
+        title: "ADV Lush Wide Footpads",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://media.printables.com/media/prints/996387/images/7583662_fc2d58fb-cbb6-4abd-95cb-064649a704bc_87f0839a-3900-43b2-8ad8-5b0b3cd2c670/thumbs/inside/1280x960/png/fusion360_cbzvpozid5.webp",
+        externalUrl: "https://www.printables.com/model/996387",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/eqs6pb623t48gape1wgvb/adv-lush-wide-model_files.zip?rlkey=fhvl1syxw0e0dfh7rtsblvqn5&st=8kyyu45v&dl=0",
+        dropboxZipLastUpdated: "2024-10-03"
     }
 ] as ItemData[]

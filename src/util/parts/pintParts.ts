@@ -158,5 +158,14 @@ export default [
         externalUrl: "https://www.printables.com/model/621158",
         dropboxUrl: "https://www.dropbox.com/scl/fi/cuwi2t3ciozy824i8o6ih/pint-compatible-footpad-underside-plates-model_files.zip?rlkey=kae1ui3doiomkuhqu2bz7bget&st=fvx9l116&dl=0",
         dropboxZipLastUpdated: "2024-09-25"
+    },
+    {
+        title: "Matix: WTF Pint Rails @5°",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Rails"],
+        imageSrc: "https://media.printables.com/media/prints/1025987/images/7790316_b0791a65-c110-49eb-9044-351dabc2722d_ad52a344-d7a1-41e2-9af5-48b3a40f2d0b/thumbs/inside/1280x960/jpeg/img_2936.webp",
+        externalUrl: "https://www.printables.com/model/1025987",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/m6ur91lrnz60z3e9sn8ld/pint-5deg-pub-rails-cnc-model_files.zip?rlkey=x05mkazfcqazghddzfkl1p12v&st=0xeiuznl&dl=0",
+        dropboxZipLastUpdated: "2024-10-03"
     }
 ] as ItemData[]

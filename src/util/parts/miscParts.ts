@@ -162,5 +162,14 @@ export default [
         externalUrl: "https://www.thingiverse.com/thing:6730767",
         dropboxUrl: "https://www.dropbox.com/scl/fi/2s4ot71wheykzgn8qpql8/Onewheel-GT_XR_Pint-Test-Fixture-6730767.zip?rlkey=qryma3bq3j5jmlaxybhackjki&st=0h808ewy&dl=0",
         dropboxZipLastUpdated: "2024-09-10"
+    },
+    {
+        title: "Atlowshop: 23mm Low Profile Superflux Knurled Hand Wrench",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Tool"],
+        imageSrc: "https://media.printables.com/media/prints/1026617/images/7793883_11ae21b2-1790-4f84-b05f-e3b7f5ba64ce_f7a2a35f-645a-4c52-87ac-f15ee18b749f/thumbs/inside/1280x960/png/screenshot-2024-10-02-233303.webp",
+        externalUrl: "https://www.printables.com/model/1026617",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/zpyf0b3pm9f8dv9h7f4bh/23mm-low-profile-superflux-knurled-hand-wrench-model_files.zip?rlkey=z6u01fbw5wm5zs23rj8g048mu&st=7zzyfoyu&dl=0",
+        dropboxZipLastUpdated: "2024-10-03"
     }
 ] as ItemData[]

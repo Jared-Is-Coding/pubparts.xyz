@@ -58,6 +58,13 @@ export default [
         dropboxZipLastUpdated: "2024-08-26"
     },
     {
+        title: "UBox 85V Mount for PubWheel CNC V2 PubBox",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous", "Adapter"],
+        imageSrc: "https://media.printables.com/media/prints/1025517/images/7792742_6fb7e054-7719-438b-8543-fbadc5d8abb9_e0b99a1c-108e-4fbf-a919-d6fd8386ecb8/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1025517"
+    },
+    {
         title: "PubBox: 3DP V1 - XR VESC Box, Lid",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
@@ -214,7 +221,7 @@ export default [
         title: "PubHubs: XR Blocks Finned Axle Block Covers",
         fabricationMethod: "CNC",
         typeOfPart: ["Axle Block"],
-        imageSrc: "https://media.printables.com/media/prints/939143/images/7177680_2003f289-20f7-434e-a207-93eb2f088ee1_9a99df68-c4f1-400a-a885-ee7b8aa1fd01/thumbs/inside/1280x960/png/1.webp",
+        imageSrc: "https://media.printables.com/media/prints/939143/images/7546680_3a71409f-9c10-4b8c-8148-00e10d1f34cb_27329374-64cb-4d7d-abca-8d6667b2bfca/thumbs/inside/1280x960/jpg/xr_finned_1.webp",
         externalUrl: "https://www.printables.com/model/939143",
         dropboxUrl: "https://www.dropbox.com/scl/fi/f76fpurhbd2bmrmgojwya/onewheel-pubhubs-xr-blocks-finned-axle-block-covers-model_files.zip?rlkey=le6yphs2pssjhzcrfj8jfn4bv&st=x2m5cruv&dl=0",
         dropboxZipLastUpdated: "2024-08-26"

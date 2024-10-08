@@ -4,7 +4,7 @@ import { Button, Col, Row } from "react-bootstrap"
 /**
  * Creates a {@link https://react-bootstrap.netlify.app/docs/layout/grid | React-Bootstrap Row}
  * containing buttons for clicking to navigate the
- * website parts lists.
+ * website resources lists.
  * 
  * @param NavbarProps - a {@link NavbarProps} object
  */
@@ -15,42 +15,42 @@ export default () => (
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/floatwheel" variant="outline-info">Floatwheel</Button>
+            <Button className="full-width" href="/resources/applications" variant="outline-info">Applications</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/gt" variant="outline-info">GT/GT-S</Button>
+            <Button className="full-width" href="/resources/repositories" variant="outline-info">Code Repositories</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/pint" variant="outline-info">Pint/X/S</Button>
+            <Button className="full-width" href="/resources/guides" variant="outline-info">Guides</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/xr" variant="outline-info">XR/+</Button>
+            <Button className="full-width" href="/resources/spreadsheets" variant="outline-info">Spreadsheets</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/misc" variant="outline-info">Miscellaneous Items</Button>
+            <Button className="full-width" href="/resources/websites" variant="outline-info">Websites</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/electronics" variant="outline-info">VESC Electronics</Button>
+            <Button className="full-width" href="/resources/vendors" variant="outline-info">Vendors</Button>
         </Col>
     </Row>
 )

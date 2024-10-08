@@ -162,27 +162,29 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                         />
                     </div>
 
-                    <div className="searchTypeCheckBoxes">
-                        <Form.Label as="h3">
-                            Resource Type(s):
-                        </Form.Label>
+                    {uniqueResourceTypes.length > 1 &&
+                        <div className="searchTypeCheckBoxes">
+                            <Form.Label as="h3">
+                                Resource Type(s):
+                            </Form.Label>
 
-                        <ButtonGroup size="sm">
-                            {uniqueResourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
-                                <ToggleButton
-                                    key={`resourceType-${index}`}
-                                    checked={checkedTypeBoxes[r]}
-                                    onChange={handleCheckbox}
-                                    name={r}
-                                    id={r}
-                                    type="checkbox"
-                                    value={1}
-                                    variant="outline-info">
-                                    {toTitleCase(r)}
-                                </ToggleButton>
-                            ))}
-                        </ButtonGroup>
-                    </div>
+                            <ButtonGroup size="sm">
+                                {uniqueResourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
+                                    <ToggleButton
+                                        key={`resourceType-${index}`}
+                                        checked={checkedTypeBoxes[r]}
+                                        onChange={handleCheckbox}
+                                        name={r}
+                                        id={r}
+                                        type="checkbox"
+                                        value={1}
+                                        variant="outline-info">
+                                        {toTitleCase(r)}
+                                    </ToggleButton>
+                                ))}
+                            </ButtonGroup>
+                        </div>
+                    }
 
                     <Stack direction="horizontal" gap={2}>
                         <Button

@@ -1,7 +1,7 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import React from "react"
 import { Container } from "react-bootstrap"
-import PartTypesLinks from "../../components/PartTypesLinks"
+import ResourceTypesLinks from "../../components/ResourceTypesLinks"
 import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
@@ -9,7 +9,7 @@ import SiteNavbar from "../../components/SiteNavbar"
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
-        <SiteMetaData title="Parts | PubParts.xyz" />
+        <SiteMetaData title="Resources | PubParts.xyz" />
     </>
 )
 
@@ -30,9 +30,9 @@ const Page: React.FC<PageProps> = () => {
 
             <main>
                 <Container>
-                    <p>What board type are you looking for?</p>
+                    <p>What would you like to find?</p>
 
-                    <PartTypesLinks />
+                    <ResourceTypesLinks />
                 </Container>
             </main>
                 

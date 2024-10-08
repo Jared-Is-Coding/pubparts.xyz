@@ -185,49 +185,53 @@ export default ({partList}: ItemListSearchbarProps) => {
                         />
                     </div>
 
-                    <div className="searchTypeCheckBoxes">
-                        <Form.Label as="h3">
-                            Part Type(s):
-                        </Form.Label>
+                    {uniquePartTypes.length > 1 &&
+                        <div className="searchTypeCheckBoxes">
+                            <Form.Label as="h3">
+                                Part Type(s):
+                            </Form.Label>
 
-                        <ButtonGroup size="sm">
-                            {uniquePartTypes.sort((a, b) => a.localeCompare(b)).map((t, index) => (
-                                <ToggleButton
-                                    key={`partType-${index}`}
-                                    checked={checkedTypeBoxes[t]}
-                                    onChange={handleTypeCheckbox}
-                                    name={t}
-                                    id={t}
-                                    type="checkbox"
-                                    value={1}
-                                    variant="outline-info">
-                                    {toTitleCase(t)}
-                                </ToggleButton>
-                            ))}
-                        </ButtonGroup>
-                    </div>
+                            <ButtonGroup size="sm">
+                                {uniquePartTypes.sort((a, b) => a.localeCompare(b)).map((t, index) => (
+                                    <ToggleButton
+                                        key={`partType-${index}`}
+                                        checked={checkedTypeBoxes[t]}
+                                        onChange={handleTypeCheckbox}
+                                        name={t}
+                                        id={t}
+                                        type="checkbox"
+                                        value={1}
+                                        variant="outline-info">
+                                        {toTitleCase(t)}
+                                    </ToggleButton>
+                                ))}
+                            </ButtonGroup>
+                        </div>
+                    }
 
-                    <div className="searchFabricationCheckBoxes">
-                        <Form.Label as="h3">
-                            Fabrication Method(s):
-                        </Form.Label>
+                    {uniqueFabricationMethods.length > 1 &&
+                        <div className="searchFabricationCheckBoxes">
+                            <Form.Label as="h3">
+                                Fabrication Method(s):
+                            </Form.Label>
 
-                        <ButtonGroup size="sm">
-                            {uniqueFabricationMethods.sort((a, b) => a.localeCompare(b)).map((f, index) => (
-                                <ToggleButton
-                                    key={`fabricationMethod-${index}`}
-                                    checked={checkedFabricationMethodBoxes[f]}
-                                    onChange={handleFabricationMethodCheckbox}
-                                    name={f}
-                                    id={f}
-                                    type="checkbox"
-                                    value={1}
-                                    variant="outline-info">
-                                    {f}
-                                </ToggleButton>
-                            ))}
-                        </ButtonGroup>
-                    </div>
+                            <ButtonGroup size="sm">
+                                {uniqueFabricationMethods.sort((a, b) => a.localeCompare(b)).map((f, index) => (
+                                    <ToggleButton
+                                        key={`fabricationMethod-${index}`}
+                                        checked={checkedFabricationMethodBoxes[f]}
+                                        onChange={handleFabricationMethodCheckbox}
+                                        name={f}
+                                        id={f}
+                                        type="checkbox"
+                                        value={1}
+                                        variant="outline-info">
+                                        {f}
+                                    </ToggleButton>
+                                ))}
+                            </ButtonGroup>
+                        </div>
+                    }
 
                     <Stack direction="horizontal" gap={2}>
                         <Button

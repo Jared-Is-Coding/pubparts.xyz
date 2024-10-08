@@ -50,4 +50,8 @@
     .card.resource-app h3 {
         color: $alt2-link-color !important;
     }
+
+    .card-title .badge {
+        display: inline-flex;
+    }
 }

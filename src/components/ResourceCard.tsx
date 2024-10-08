@@ -2,6 +2,7 @@ import React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
 import isBrowser from "../hooks/isBrowser"
 import toTitleCase from "../hooks/toTitleCase"
+import CopyLinkBadge from "./CopyLinkBadge"
 
 /**
  * Creates a {@link https://react-bootstrap.netlify.app/docs/components/cards | React-Bootstrap Card}
@@ -38,26 +39,32 @@ export default (resource: ResourceData, index: number) => {
                         }
 
                         {/* Copy Link to this item button */}
-                        {/* <Stack className="display-over-top-left" direction="vertical" gap={1}>
-                            <CopyLinkBadge link={"https://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
-                        </Stack> */}
+                        <Stack className="display-over-top-left" direction="vertical" gap={1}>
+                            
+                        </Stack>
 
                         {/* Resource information */}
                         {(resource.externalUrl || resource.appStoreLink || resource.playStoreLink) &&
                             <Card.Title as="h3">
                                 {resource.externalUrl &&
-                                    <a href={resource.externalUrl} target="_blank">
-                                        {resource.title}
-                                    </a>
+                                    <>
+                                        <CopyLinkBadge link={"http://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
+                                        <> | </>
+                                        <a href={resource.externalUrl} target="_blank">
+                                            {resource.title}
+                                        </a>
+                                    </>
                                 }
                                 
                                 {!resource.externalUrl && (resource.appStoreLink || resource.playStoreLink) &&
                                     <>
+                                        <CopyLinkBadge link={"http://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
+                                        <> | </>
                                         {resource.title}
-                                        <> (</>
+                                        <> on the </>
                                         {resource.appStoreLink && <><a href={resource.appStoreLink} target="_blank">App Store</a></>}
-                                        {resource.playStoreLink && <> | <a href={resource.playStoreLink} target="_blank">Play Store</a></>}
-                                        <>)</>
+                                        {resource.playStoreLink && <> or <a href={resource.playStoreLink} target="_blank">Play Store</a></>}
+                                        <></>
                                     </>
                                 }
                             </Card.Title>

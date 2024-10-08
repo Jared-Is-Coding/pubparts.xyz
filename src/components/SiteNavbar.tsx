@@ -32,14 +32,21 @@ export default ({isHomepage}: NavbarProps) => (
             <Navbar.Collapse id="site-navbar">
                 <Nav variant="underline" justify>
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/resources">Resources</Nav.Link>
-                    <NavDropdown title="Parts" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-frames-dropdown">
+                    <NavDropdown title="Parts" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-parts-dropdown">
                         <NavDropdown.Item href="/parts/floatwheel" target="_self">Floatwheel</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/gt" target="_self">GT/GT-S</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/pint" target="_self">Pint/X/S</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/xr" target="_self">XR/+</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/misc" target="_self">Miscellaneous Items</NavDropdown.Item>
                         <NavDropdown.Item href="/parts/electronics" target="_self">VESC Electronics</NavDropdown.Item>
+                    </NavDropdown>
+                    <NavDropdown title="Resources" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-resources-dropdown">
+                        <NavDropdown.Item href="/resources/applications" target="_self">Applications</NavDropdown.Item>
+                        <NavDropdown.Item href="/resources/repositories" target="_self">Code Repositories</NavDropdown.Item>
+                        <NavDropdown.Item href="/resources/guides" target="_self">Guides</NavDropdown.Item>
+                        <NavDropdown.Item href="/resources/spreadsheets" target="_self">Spreadsheets</NavDropdown.Item>
+                        <NavDropdown.Item href="/resources/websites" target="_self">Websites</NavDropdown.Item>
+                        <NavDropdown.Item href="/resources/vendors" target="_self">Vendors</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Submit Changes" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-contribute-dropdown">
                         <NavDropdown.Item href={DiscordInvite} target="_blank">1. Join Vescify Discord</NavDropdown.Item>

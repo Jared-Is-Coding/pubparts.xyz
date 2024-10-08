@@ -1,20 +1,20 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import React from "react"
 import { Container, Row } from "react-bootstrap"
-import ResourceCard from "../components/ResourceCard"
-import ResourceListSearchbar from "../components/ResourceListSearchbar"
-import SiteFooter from "../components/SiteFooter"
-import SiteMetaData from "../components/SiteMetaData"
-import SiteNavbar from "../components/SiteNavbar"
-import "../scss/pages/resources.scss"
-import resources from "../util/resources"
+import ResourceCard from "../../components/ResourceCard"
+import ResourceListSearchbar from "../../components/ResourceListSearchbar"
+import SiteFooter from "../../components/SiteFooter"
+import SiteMetaData from "../../components/SiteMetaData"
+import SiteNavbar from "../../components/SiteNavbar"
+import "../../scss/pages/resources.scss"
+import applicationsResources from "../../util/resources/applicationsResources"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
         <SiteMetaData
-            title="Resources | PubParts.xyz"
-            description="Various web resources for VESC builders" />
+            title="Applications | Resources | PubParts.xyz"
+            description="Various resources for VESC builders" />
     </>
 )
 
@@ -25,14 +25,14 @@ const Page: React.FC<PageProps> = () => {
                 <SiteNavbar />
 
                 <h1 className="flex-center">
-                    Useful Resources
+                    Applications Resources
                 </h1>
             </header>
 
             <main className="page-resources">
                 <Container>
                     {/* Search area */}
-                    <ResourceListSearchbar resourceList={resources} />
+                    <ResourceListSearchbar resourceList={applicationsResources} />
 
                     {/* Search results headers */}
                     <h2 id="resourceListHeader" style={{display: "block"}}>Resources</h2>
@@ -40,8 +40,8 @@ const Page: React.FC<PageProps> = () => {
 
                     <Row>
                         {/* List resources */}
-                        {!!resources.length &&
-                            resources.sort((a, b) => a.title.localeCompare(b.title)).map(ResourceCard)
+                        {!!applicationsResources.length &&
+                            applicationsResources.sort((a, b) => a.title.localeCompare(b.title)).map(ResourceCard)
                         }
                     </Row>
                 </Container>

@@ -22,7 +22,9 @@ export default [
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/1025517/images/7792742_6fb7e054-7719-438b-8543-fbadc5d8abb9_e0b99a1c-108e-4fbf-a919-d6fd8386ecb8/thumbs/inside/1280x960/png/screenshot_1.webp",
-        externalUrl: "https://www.printables.com/model/1025517"
+        externalUrl: "https://www.printables.com/model/1025517",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/jw4n5gzsw9x760onsyz6v/ubox-85v-mount-for-pubwheel-cnc-pubbox-model_files.zip?rlkey=klv93bdmimfn6oy938e6ar6s5&st=ilybnjlx&dl=0",
+        dropboxZipLastUpdated: "2024-10-10"
     },
     {
         title: "Kaiserplug / Flightplug V2.1",
@@ -32,5 +34,14 @@ export default [
         externalUrl: "https://www.printables.com/model/968939",
         dropboxUrl: "https://www.dropbox.com/scl/fi/ihq0rnrngh5obt1h8xdiu/kaiserplug-flightplug-v21-model_files.zip?rlkey=nhhcgoplmn5v8b2zy2vtrd4qd&st=auqj3c67&dl=0",
         dropboxZipLastUpdated: "2024-10-03"
+    },
+    {
+        title: "PubParts: Ubox 85v 150a Single VESC Casing",
+        fabricationMethod: "Other",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/1035890/images/7858012_f998e7d5-eb5c-4ae5-a94b-ff4407e1d5a9_3b869212-64d8-40ff-8327-9b3d2656dbab/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1035890",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/c0whtbvxug3by5b17djm7/ubox-85v-150a-single-vesc-casing-model_files.zip?rlkey=jof8jgrv304qabhul246j0tki&st=vk3s79pn&dl=0",
+        dropboxZipLastUpdated: "2024-10-10"
     }
 ] as ItemData[]

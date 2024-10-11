@@ -167,5 +167,14 @@ export default [
         externalUrl: "https://www.printables.com/model/1025987",
         dropboxUrl: "https://www.dropbox.com/scl/fi/m6ur91lrnz60z3e9sn8ld/pint-5deg-pub-rails-cnc-model_files.zip?rlkey=x05mkazfcqazghddzfkl1p12v&st=0xeiuznl&dl=0",
         dropboxZipLastUpdated: "2024-10-03"
+    },
+    {
+        title: "Wide Pint Footpads",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://cdn.thingiverse.com/assets/2a/7b/11/70/cf/large_display_ff0c1d11-63dd-4220-a269-af4ea768a918.jpg",
+        externalUrl: "https://www.thingiverse.com/thing:5498181",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/hirq4w8lfkbtn2chljj2q/Pint-custom-sensor-pads-5498181.zip?rlkey=tcyh9u82edrwjdjk1b5mxw74h&st=ua2cs9rk&dl=0",
+        dropboxZipLastUpdated: "2024-10-09"
     }
 ] as ItemData[]

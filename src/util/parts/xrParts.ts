@@ -327,10 +327,10 @@ export default [
         title: "PubParts: FlowGlider Controller Box, Lid, Parts - Ubox 85v and More",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box", "Connector Cover", "Gasket"],
-        imageSrc: "https://media.printables.com/media/prints/989094/images/7536202_d1c6bcb8-5dea-49ce-84c2-391efbaba0eb_82216453-6078-4cf8-8fec-ec7fd50e567c/thumbs/inside/1280x960/png/cover.webp",
+        imageSrc: "https://media.printables.com/media/prints/989094/images/7861844_a36358df-d349-478b-9fa5-9da198f88a0f_1d299b98-77bf-4097-a736-b19141cd8f47/thumbs/inside/1280x960/png/sc.webp",
         externalUrl: "https://www.printables.com/model/989094",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/z4u536q829mstekjszpy8/pubparts-flowglider-controller-box-ubox85v-and-more-model_files.zip?rlkey=h3uujsyp2j0unejwhw31r1wnp&st=0r5dho3f&dl=0",
-        dropboxZipLastUpdated: "2024-08-28"
+        dropboxUrl: "https://www.dropbox.com/scl/fi/z4u536q829mstekjszpy8/pubparts-flowglider-controller-box-ubox85v-and-more-model_files.zip?rlkey=h3uujsyp2j0unejwhw31r1wnp&st=97h977fg&dl=0",
+        dropboxZipLastUpdated: "2024-10-11"
     },
     {
         title: "Celeste: 6 Pin Molex to 20mm Cable Gland for Floatboxx",

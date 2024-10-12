@@ -80,7 +80,7 @@ export default ({isHomepage}: NavbarProps) => {
                     onHide={() => setShowModal(false)}
                     scrollable={true}>
                     <Modal.Header>
-                        <Modal.Title>Search All Parts</Modal.Title>
+                        <Modal.Title>Sitewide Search</Modal.Title>
                     </Modal.Header>
 
                     <Modal.Body>

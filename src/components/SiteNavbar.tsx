@@ -1,6 +1,8 @@
 import React from "react"
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 import { DiscordInvite, DiscordThread } from "../util/siteVariables"
+import { SearchbarOnly } from "./ItemListSearchbar"
+import { allParts } from "../util/allParts"
 
 type NavbarProps = {
     isHomepage?: boolean
@@ -45,6 +47,7 @@ export default ({isHomepage}: NavbarProps) => (
                         <NavDropdown.Item href={DiscordInvite} target="_blank">1. Join Vescify Discord</NavDropdown.Item>
                         <NavDropdown.Item href={DiscordThread} target="_blank">2. Post in Thread</NavDropdown.Item>
                     </NavDropdown>
+                    <SearchbarOnly partList={allParts} />
                 </Nav>
             </Navbar.Collapse>
         </Container>

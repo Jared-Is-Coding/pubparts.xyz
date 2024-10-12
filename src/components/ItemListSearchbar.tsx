@@ -253,3 +253,42 @@ export default ({partList}: ItemListSearchbarProps) => {
     
     //#endregion
 }
+
+export const SearchbarOnly: React.FC<ItemListSearchbarProps> = ({ partList }) => {
+
+  // Check for browser window
+  if (!isBrowser()) return null;
+
+  const [searchText, setSearchText] = useState("");
+  const changePage = (url: string, searchText: string) => {
+    window.location.href = `${url}?search=${encodeURIComponent(searchText)}`;
+  };
+
+  const searchEnterPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault(); // Prevent form submission
+      changePage('/allParts', searchText)
+    }
+  };
+  
+    return (
+      <div className="searchArea">
+        <Stack direction="vertical" gap={3}>
+          <div className="searchKeyword">
+            <Form>
+              <Form.Control
+                as="input"
+                type="search"
+                id="inputSearch"
+                aria-describedby="inputSearchHelpBlock"
+                value={searchText}
+                placeholder="Search All Parts..."
+                onChange={(e) => setSearchText(e.target.value)}
+                onKeyDown={searchEnterPress}
+              />
+            </Form>
+          </div>
+        </Stack>
+      </div>
+    );
+  }

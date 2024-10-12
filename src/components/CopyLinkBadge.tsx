@@ -9,10 +9,10 @@ type CopyLinkBadgeProps = {
 
 /**
  * Creates a {@link https://react-bootstrap.netlify.app/docs/components/badge | React-Bootstrap Badge}
- * which allows clicking to copy the supplied URL,
- * to the clipboard. Clicking also switches
- * between FA icons to indicate the copy
- * operation.
+ * which allows clicking to copy the supplied
+ * URL, to the clipboard. Clicking also
+ * switches between FA icons to indicate the
+ * copy operation.
  * 
  * @param CopyLinkBadgeProps - a {@link CopyLinkBadgeProps} object
  */

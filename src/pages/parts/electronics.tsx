@@ -8,7 +8,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/items.scss"
-import electronicsParts from "../../util/parts/electronicsParts"
+import vescElectronicsParts from "../../util/parts/vescElectronicsParts"
 
 export const Head: HeadFC = () => (
     <>
@@ -33,7 +33,7 @@ const Page: React.FC<PageProps> = () => {
             <main className="page-items">
                 <Container>
                     {/* Search area */}
-                    <ItemListSearchbar partList={electronicsParts} />
+                    <ItemListSearchbar partList={vescElectronicsParts} />
 
                     {/* Search results headers */}
                     <h2 id="itemListHeader" style={{display: "block"}}>Items</h2>
@@ -41,8 +41,8 @@ const Page: React.FC<PageProps> = () => {
 
                     <Row>
                         {/* List parts */}
-                        {!!electronicsParts.length &&
-                            electronicsParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
+                        {!!vescElectronicsParts.length &&
+                            vescElectronicsParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
                         }
                         
                         {/* Copyright card */}

@@ -178,7 +178,6 @@ export default ({partList}: ItemListSearchbarProps) => {
                             as="input"
                             type="search"
                             id="inputSearch"
-                            aria-describedby="inputSearchHelpBlock"
                             value={searchText}
                             placeholder="Search text to filter by..."
                             onChange={(e) => setSearchText(e.target.value)}

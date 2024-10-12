@@ -13,6 +13,10 @@ a:not(.card-body a):not(a.alert-link):not(.btn) {
     color: $secondary-color !important;
 }
 
+.navbar-toggler {
+    color: white !important;
+}
+
 .card-body {
     .card-text {
         color: $secondary-color;
@@ -29,6 +33,14 @@ a:not(.card-body a):not(a.alert-link):not(.btn) {
     a:hover {
         background-color: $primary-color;
         transition: background-color 0.15s ease-in;
+    }
+}
+
+.modal-content {
+    background-color: $tertiary-color !important;
+
+    .modal-header .btn-close {
+        color: white !important
     }
 }
 

@@ -77,13 +77,13 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
         // Count the number of hidden resources, to check for display of "no results"
         let hiddenCount = 0
 
-        //#region Filter Items
+        //#region Filter Resources
 
         resources.forEach((resource) => {
             // Get resource information, lower case
             const dataResourceTypes = resource.getAttribute("resourcetypes")?.split(",")
 
-            // Do not display item if...
+            // Do not display resource if...
             if (
                 // Resource name does not include search text
                 (
@@ -92,7 +92,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                     && !resource.getAttribute("resourcedescription")?.toLowerCase().includes(searchText.toLowerCase())
                 )
                 
-                // Resource type does not match checked items
+                // Resource type does not match checked resources
                 || (
                     Object.values(checkedTypeBoxes).some((v) => !!v)
                     && !dataResourceTypes?.some((r) => !!checkedTypeBoxes[r as ResourceType])
@@ -155,7 +155,6 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                             as="input"
                             type="search"
                             id="inputSearch"
-                            aria-describedby="inputSearchHelpBlock"
                             value={searchText}
                             placeholder="Search text to filter by..."
                             onChange={(e) => setSearchText(e.target.value)}

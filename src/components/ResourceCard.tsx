@@ -6,9 +6,10 @@ import CopyLinkBadge from "./CopyLinkBadge"
 
 /**
  * Creates a {@link https://react-bootstrap.netlify.app/docs/components/cards | React-Bootstrap Card}
- * with item information from an {@link ResourceData}
- * object array. Intended to be used in
- * conjunction with the Array map function.
+ * with resource information from an
+ * {@link ResourceData} object array.
+ * Intended to be used in conjunction
+ * with the Array map function.
  * 
  * @param item - an {@link ResourceData} object
  * @param index - a number from a map
@@ -25,20 +26,18 @@ export default (resource: ResourceData, index: number) => {
             className="searchableResource"
             key={`resource-card-${index}`}
             resourcetitle={resource.title}
-            resourcetypes={resource.typeOfResource.join(",")}
+            resourcetypes={resource.typeOfResource}
             resourcedescription={resource.description ?? ""}>
-                <Card className={resource.typeOfResource?.map((r) => `resource-${r.toLowerCase()}`).join(" ")}>
+                <Card className={`resource-${resource.typeOfResource}`}>
                     <Card.Body>
                         {/* Resource type badges */}
                         {resource.typeOfResource?.length &&
                             <Stack className="display-over-top-right" direction="vertical" gap={1}>
-                                {resource.typeOfResource.map((r, pillIndex) => (
-                                    <Badge key={`resource-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(r)}</Badge>
-                                ))}
+                                <Badge key={`resource-card-${index}-pill`} pill bg="dark">{toTitleCase(resource.typeOfResource)}</Badge>
                             </Stack>
                         }
 
-                        {/* Copy Link to this item button */}
+                        {/* Copy Link to this resource button */}
                         <Stack className="display-over-top-left" direction="vertical" gap={1}>
                             
                         </Stack>

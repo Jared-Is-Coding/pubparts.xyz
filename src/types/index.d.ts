@@ -16,6 +16,10 @@ type ItemData = {
      */
     imageSrc: string
     /**
+     * Platform type
+     */
+    platform: PlatformType
+    /**
      * Item external URL
      */
     externalUrl?: string
@@ -64,6 +68,14 @@ type FabricationMethod =
     | "Laser"
     | "Other"
 
+type PlatformType = 
+    | "Floatwheel"
+    | "GT/GT-S"
+    | "Miscellaneous Items"
+    | "Pint/X/S"
+    | "VESC Electronics"
+    | "XR"
+
 type ResourceData = {
     /**
      * Resource title text
@@ -72,7 +84,7 @@ type ResourceData = {
     /**
      * Resource type
      */ 
-    typeOfResource: ResourceType[]
+    typeOfResource: ResourceType
     /**
      * Resource external URL
      */

@@ -7,7 +7,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/resources.scss"
-import repositoriesResources from "../../util/resources/repositoriesResources"
+import codeRepositoriesResources from "../../util/resources/codeRepositoriesResources"
 
 export const Head: HeadFC = () => (
     <>
@@ -32,7 +32,7 @@ const Page: React.FC<PageProps> = () => {
             <main className="page-resources">
                 <Container>
                     {/* Search area */}
-                    <ResourceListSearchbar resourceList={repositoriesResources} />
+                    <ResourceListSearchbar resourceList={codeRepositoriesResources} />
 
                     {/* Search results headers */}
                     <h2 id="resourceListHeader" style={{display: "block"}}>Resources</h2>
@@ -40,8 +40,8 @@ const Page: React.FC<PageProps> = () => {
 
                     <Row>
                         {/* List resources */}
-                        {!!repositoriesResources.length &&
-                            repositoriesResources.sort((a, b) => a.title.localeCompare(b.title)).map(ResourceCard)
+                        {!!codeRepositoriesResources.length &&
+                            codeRepositoriesResources.sort((a, b) => a.title.localeCompare(b.title)).map(ResourceCard)
                         }
                     </Row>
                 </Container>

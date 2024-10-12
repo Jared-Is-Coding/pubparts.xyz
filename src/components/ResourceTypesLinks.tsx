@@ -3,8 +3,8 @@ import { Button, Col, Row } from "react-bootstrap"
 
 /**
  * Creates a {@link https://react-bootstrap.netlify.app/docs/layout/grid | React-Bootstrap Row}
- * containing buttons for clicking to navigate the
- * website resources lists.
+ * containing buttons for clicking to navigate
+ * the website resources lists.
  * 
  * @param NavbarProps - a {@link NavbarProps} object
  */

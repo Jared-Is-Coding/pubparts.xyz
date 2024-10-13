@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image"
 import React, { useState } from "react"
 import { Button, Container, Modal, Nav, Navbar, NavDropdown, Stack } from "react-bootstrap"
 import { FaBars, FaMagnifyingGlass } from "react-icons/fa6"
@@ -23,10 +24,10 @@ export default ({isHomepage}: NavbarProps) => {
         <Navbar fixed="top" expand="lg" data-bs-theme="dark">
             <Container>
                 <Navbar.Brand href="/">
-                    <img
-                        src="/images/logo.png"
-                        width="55"
-                        height="55"
+                    <StaticImage
+                        src="../../static/images/logo.png"
+                        width={55}
+                        height={55}
                         className={(isHomepage ? "d-inline-block" : "d-xs-inline-block d-md-none") + " align-top"}
                         alt="PubParts.xyz logo"/>
                     <span className={(isHomepage ? "d-none" : "d-none d-md-inline-block")}>

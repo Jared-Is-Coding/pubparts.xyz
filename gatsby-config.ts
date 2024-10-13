@@ -15,8 +15,10 @@ const config: GatsbyConfig = {
     // Learn more at: https://gatsby.dev/graphql-typegen
     graphqlTypegen: true,
     plugins: [
-        "gatsby-plugin-sitemap",
+        "gatsby-plugin-image",
         "gatsby-plugin-sass",
+        "gatsby-plugin-sharp",
+        "gatsby-plugin-sitemap",
         "gatsby-plugin-robots-txt"
     ]
 }

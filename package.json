@@ -22,8 +22,10 @@
     },
     "dependencies": {
         "gatsby": "^5.13.5",
+        "gatsby-plugin-image": "^3.13.1",
         "gatsby-plugin-robots-txt": "^1.8.0",
         "gatsby-plugin-sass": "^6.13.1",
+        "gatsby-plugin-sharp": "^5.13.1",
         "gatsby-plugin-sitemap": "^6.13.1",
         "postcss": "^8.4.41",
         "react": "^18.3.1",

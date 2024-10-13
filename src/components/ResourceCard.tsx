@@ -37,11 +37,6 @@ export default (resource: ResourceData, index: number) => {
                             </Stack>
                         }
 
-                        {/* Copy Link to this resource button */}
-                        <Stack className="display-over-top-left" direction="vertical" gap={1}>
-                            
-                        </Stack>
-
                         {/* Resource information */}
                         {(resource.externalUrl || resource.appStoreLink || resource.playStoreLink) &&
                             <Card.Title as="h3">

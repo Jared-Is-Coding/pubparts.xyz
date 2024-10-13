@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-import isBrowser from "../hooks/isBrowser"
 
 /**
  * Creates a {@link https://react-bootstrap.netlify.app/docs/components/link | React-Bootstrap Link}
@@ -23,10 +22,11 @@ export default (item: ItemData | ResourceData, index: number) => {
         if ((item as ItemData).platform === "VESC Electronics") url = "/parts/electronics"
         if ((item as ItemData).platform === "XR") url = "/parts/xr"
         if ((item as ResourceData).typeOfResource === "App") url = "/resources/applications"
-        if ((item as ResourceData).typeOfResource === "Github Repository") url = "/resources/guides"
-        if ((item as ResourceData).typeOfResource === "Guide: Written") url = "/resources/repositories"
-        if ((item as ResourceData).typeOfResource === "Guide: Video") url = "/resources/spreadsheets"
-        if ((item as ResourceData).typeOfResource === "Spreadsheet") url = "/resources/vendors"
+        if ((item as ResourceData).typeOfResource === "Github Repository") url = "/resources/repositories"
+        if ((item as ResourceData).typeOfResource === "Guide: Written") url = "/resources/guides"
+        if ((item as ResourceData).typeOfResource === "Guide: Video") url = "/resources/guides"
+        if ((item as ResourceData).typeOfResource === "Spreadsheet") url = "/resources/spreadsheets"
+        if ((item as ResourceData).typeOfResource === "Vendor") url = "/resources/vendors"
         if ((item as ResourceData).typeOfResource === "Website") url = "/resources/websites"
 
         return url + `?search=${encodeURI(item.title)}`

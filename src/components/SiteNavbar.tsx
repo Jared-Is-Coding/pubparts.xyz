@@ -36,7 +36,7 @@ export default ({isHomepage}: NavbarProps) => {
 
                 <Stack direction="horizontal" gap={3}>
                     {/* Mobile Search Button */}
-                    <Nav.Link className="d-md-block d-lg-none navbar-toggler" onClick={() => setShowModal(true)}><FaMagnifyingGlass style={{height: "1rem", width: "1rem"}} /></Nav.Link>
+                    <Nav.Link className="d-md-block d-lg-none navbar-toggler" onClick={() => setShowModal(true)} aria-label="Sitewide search modal trigger"><FaMagnifyingGlass style={{height: "1rem", width: "1rem"}} /></Nav.Link>
                     {/* Mobile Navigation Toggle */}
                     <Navbar.Toggle label="Menu toggle" aria-controls="site-navbar"><FaBars style={{height: "1rem", width: "1rem"}} /></Navbar.Toggle>
                 </Stack>
@@ -66,7 +66,7 @@ export default ({isHomepage}: NavbarProps) => {
                             <NavDropdown.Item href={DiscordThread} target="_blank">2. Post in Thread</NavDropdown.Item>
                         </NavDropdown>
                         {/* Desktop Search Button */}
-                        <Nav.Link className="d-none d-lg-block" onClick={() => setShowModal(true)}><FaMagnifyingGlass /></Nav.Link>
+                        <Nav.Link className="d-none d-lg-block" onClick={() => setShowModal(true)} aria-label="Sitewide search modal trigger"><FaMagnifyingGlass /></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
 

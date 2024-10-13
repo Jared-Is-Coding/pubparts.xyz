@@ -109,4 +109,5 @@ type ResourceType =
     | "Guide: Written"
     | "Guide: Video"
     | "Spreadsheet"
+    | "Vendor"
     | "Website"

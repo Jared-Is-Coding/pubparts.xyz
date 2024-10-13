@@ -82,19 +82,17 @@ export default ({isHomepage}: NavbarProps) => {
                     <Modal.Header>
                         <Modal.Title>Sitewide Search</Modal.Title>
                     </Modal.Header>
-
+                    
                     <Modal.Body>
-                        <Container>
-                            {/* Search area */}
-                            <SearchModalSearchbar thingList={allPartsAndResources} />
+                        {/* Search area */}
+                        <SearchModalSearchbar />
 
-                            <Stack direction="vertical" gap={2}>
-                                {/* List parts */}
-                                {!!allPartsAndResources.length &&
-                                    allPartsAndResources.map(SearchModalCard)
-                                }
-                            </Stack>
-                        </Container>
+                        <Stack direction="vertical" gap={3}>
+                            {/* List parts */}
+                            {!!allPartsAndResources.length &&
+                                allPartsAndResources.map(SearchModalCard)
+                            }
+                        </Stack>
                     </Modal.Body>
                     
                     <Modal.Footer>

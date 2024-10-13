@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { Form, Stack } from "react-bootstrap"
-import isBrowser from "../hooks/isBrowser"
-
-type ResourceListSearchbarProps = {
-    thingList: (ItemData | ResourceData)[]
-}
 
 /**
  * Creates a collection of elements for the
@@ -13,7 +8,7 @@ type ResourceListSearchbarProps = {
  * 
  * @param ResourceListSearchbarProps - a {@link ResourceListSearchbarProps} object
  */
-export default ({thingList}: ResourceListSearchbarProps) => {
+export default () => {
     // Set useStates
     const [searchText, setSearchText] = useState("")
 
@@ -65,6 +60,7 @@ export default ({thingList}: ResourceListSearchbarProps) => {
                             id="modalInputSearch"
                             value={searchText}
                             placeholder="Search text to filter by..."
+                            autoFocus={true}
                             onChange={(e) => setSearchText(e.target.value)}
                         />
                     </div>

@@ -7,7 +7,7 @@ const config: GatsbyConfig = {
     siteMetadata: {
         title: "PubParts",
         description: "A collection of open source or otherwise aftermarket OneWheel parts.",
-        image: "/images/favicon.ico",
+        image: "/favicon.ico",
         siteUrl: process.env.SITE_URL
     },
     // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.

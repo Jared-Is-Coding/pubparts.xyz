@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react"
 import { Button, ButtonGroup, Form, Stack, ToggleButton } from "react-bootstrap"
 import { FaArrowRotateLeft } from "react-icons/fa6"
-import isBrowser from "../hooks/isBrowser"
+import windowIsDefined from "../hooks/windowIsDefined"
 import toTitleCase from "../hooks/toTitleCase"
 import CopyLinkButton from "./CopyLinkButton"
 
@@ -17,9 +17,6 @@ type ResourceListSearchbarProps = {
  * @param ResourceListSearchbarProps - a {@link ResourceListSearchbarProps} object
  */
 export default ({resourceList}: ResourceListSearchbarProps) => {
-    // Check for browser window
-    if (!isBrowser()) return
-
     // Arrays from resource lists
     const uniqueResourceTypes = [...new Set(resourceList.map((r) => r.typeOfResource).flat())]
 
@@ -39,7 +36,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
 
     //#region Query Parameter Pre-Filtering
 
-    if (!didMount.current) {
+    if (!didMount.current && windowIsDefined()) {
         const queryParams = new URLSearchParams(window.location.search)
         
         // Set searchbar text
@@ -197,7 +194,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
 
                         <CopyLinkButton
                             text="Copy This Search"
-                            link={"http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&type=${uniqueResourceTypes.filter((t) => !!checkedTypeBoxes[t])}`}
+                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&type=${uniqueResourceTypes.filter((t) => !!checkedTypeBoxes[t])}`}
                             style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
                     </Stack>
                 </Stack>

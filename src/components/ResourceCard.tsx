@@ -1,6 +1,6 @@
 import React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
-import isBrowser from "../hooks/isBrowser"
+import windowIsDefined from "../hooks/windowIsDefined"
 import toTitleCase from "../hooks/toTitleCase"
 import CopyLinkBadge from "./CopyLinkBadge"
 
@@ -15,9 +15,6 @@ import CopyLinkBadge from "./CopyLinkBadge"
  * @param index - a number from a map
  */
 export default (resource: ResourceData, index: number) => {
-    // Check for browser window
-    if (!isBrowser()) return
-
     return (
         <Col
             xs={{span: 12, offset: 0}}
@@ -42,7 +39,7 @@ export default (resource: ResourceData, index: number) => {
                             <Card.Title as="h3">
                                 {resource.externalUrl &&
                                     <>
-                                        <CopyLinkBadge link={"http://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
+                                        <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
                                         <> | </>
                                         <a href={resource.externalUrl} target="_blank">
                                             {resource.title}
@@ -52,7 +49,7 @@ export default (resource: ResourceData, index: number) => {
                                 
                                 {!resource.externalUrl && (resource.appStoreLink || resource.playStoreLink) &&
                                     <>
-                                        <CopyLinkBadge link={"http://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
+                                        <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
                                         <> | </>
                                         {resource.title}
                                         <> on the </>

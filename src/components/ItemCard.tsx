@@ -1,6 +1,6 @@
 import React from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
-import isBrowser from "../hooks/isBrowser"
+import windowIsDefined from "../hooks/windowIsDefined"
 import toTitleCase from "../hooks/toTitleCase"
 import CopyLinkBadge from "./CopyLinkBadge"
 
@@ -14,9 +14,6 @@ import CopyLinkBadge from "./CopyLinkBadge"
  * @param index - a number from a map
  */
 export default (item: ItemData, index: number) => {
-    // Check for browser window
-    if (!isBrowser()) return
-
     return (
         <Col
             xs={{span: 10, offset: 1}}
@@ -48,7 +45,7 @@ export default (item: ItemData, index: number) => {
 
                     {/* Copy Link to this item button */}
                     <Stack className="display-over-top-left" direction="vertical" gap={1}>
-                        <CopyLinkBadge link={"http://" + window.location.host + window.location.pathname + `?search=${item.title}`} />
+                        <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${item.title}`} />
                     </Stack>
                     
                     {/* Part information */}

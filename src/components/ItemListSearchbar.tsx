@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react"
 import { Button, ButtonGroup, Form, Stack, ToggleButton } from "react-bootstrap"
 import { FaArrowRotateLeft } from "react-icons/fa6"
-import isBrowser from "../hooks/isBrowser"
+import windowIsDefined from "../hooks/windowIsDefined"
 import toTitleCase from "../hooks/toTitleCase"
 import CopyLinkButton from "./CopyLinkButton"
 
@@ -17,9 +17,6 @@ type ItemListSearchbarProps = {
  * @param ItemListSearchbarProps - a {@link ItemListSearchbarProps} object
  */
 export default ({partList}: ItemListSearchbarProps) => {
-    // Check for browser window
-    if (!isBrowser()) return
-
     // Arrays from parts lists
     const uniquePartTypes = [...new Set(partList.map((p) => p.typeOfPart).flat())]
     const uniqueFabricationMethods = [...new Set(partList.map((p) => p.fabricationMethod).flat())]
@@ -43,7 +40,7 @@ export default ({partList}: ItemListSearchbarProps) => {
 
     //#region Query Parameter Pre-Filtering
 
-    if (!didMount.current) {
+    if (!didMount.current && windowIsDefined()) {
         const queryParams = new URLSearchParams(window.location.search)
         
         // Set searchbar text
@@ -244,7 +241,7 @@ export default ({partList}: ItemListSearchbarProps) => {
 
                         <CopyLinkButton
                             text="Copy This Search"
-                            link={"http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&fab=${uniqueFabricationMethods.filter((f) => !!checkedFabricationMethodBoxes[f])}`}
+                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&fab=${uniqueFabricationMethods.filter((f) => !!checkedFabricationMethodBoxes[f])}`}
                             style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
                     </Stack>
                 </Stack>

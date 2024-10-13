@@ -62,3 +62,8 @@ footer {
     margin-top: calc(20px + 1.2vh);
     margin-bottom: 2%;
 }
+
+.nav-link.active,
+.show > .nav-link {
+    font-weight: initial !important;
+}

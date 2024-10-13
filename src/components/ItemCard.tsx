@@ -31,7 +31,7 @@ export default (item: ItemData, index: number) => {
                     {/* Part image */}
                     {!!item.imageSrc &&
                         <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
-                            <Card.Img variant="top" src={item.imageSrc} />
+                            <Card.Img variant="top" alt={"Preview imagine of part, " + item.title} src={item.imageSrc} />
                         </div>
                     }
 

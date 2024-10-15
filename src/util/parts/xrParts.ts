@@ -132,7 +132,7 @@ export default [
         platform: "XR"
     },
     {
-        title: "Funwheel Easy Access Controller Box",
+        title: "Markoblaster: Funwheel Easy Access Controller Box",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/1040641/images/7890927_a10f3c3e-859b-4d0c-86bd-07f5898444b4_be53f9c1-4186-41d9-97dd-5616df380440/thumbs/inside/1280x960/png/screenshot-2024-10-15-at-80428-am.webp",

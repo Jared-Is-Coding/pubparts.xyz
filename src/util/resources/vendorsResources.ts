@@ -106,5 +106,11 @@ export default [
         typeOfResource: "Vendor",
         externalUrl: "https://onestopboardshop.com/",
         description: "\"Your family owned premier shop for all things OneWheel, e-skate and everything PEV\""
+    },
+    {
+        title: "AvaSpark",
+        typeOfResource: "Vendor",
+        externalUrl: "https://avaspark.com/",
+        description: "\"Unlock your board's potential!\""
     }
 ] as ResourceData[]

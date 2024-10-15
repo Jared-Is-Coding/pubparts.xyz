@@ -56,7 +56,8 @@ export default [
         imageSrc: "https://media.printables.com/media/prints/1040018/images/7886819_185d2ac1-bd23-4546-9d8d-e52e857d6a01_89017b63-40b4-4c39-88d5-e7d9bd15dc7a/thumbs/inside/1280x960/webp/img_2363.webp",
         externalUrl: "https://www.printables.com/model/1040018",
         dropboxUrl: "https://www.dropbox.com/scl/fi/y53bng4gs4niewi209lwv/ennoid-mk8-lid-mount-thor-mounting-pattern-layout-model_files.zip?rlkey=1pslksdq4881olg25onf1vfi8&st=exr5r1jy&dl=0",
-        dropboxZipLastUpdated: "2024-10-14"
+        dropboxZipLastUpdated: "2024-10-14",
+        platform: "VESC Electronics"
     },
     {
         title: "Markoblaster: Ubox100 Lite Lid Mount (Focer mounting pattern layout)",
@@ -65,7 +66,8 @@ export default [
         imageSrc: "https://media.printables.com/media/prints/1040034/images/7886942_e32a5f87-a581-4b00-b99d-40fc208caddb_0d3b343b-0c09-420b-95de-0a2f81870e71/thumbs/inside/1280x960/jpg/img_2357.webp",
         externalUrl: "https://www.printables.com/model/1040034",
         dropboxUrl: "https://www.dropbox.com/scl/fi/7oca4e1d758r791tbpk6x/ubox-100-lite-lid-mount-focer-mounting-hole-pattern-model_files.zip?rlkey=whgl0kzzmv3f4x6mh457szr26&st=oqtlv2th&dl=0",
-        dropboxZipLastUpdated: "2024-10-14"
+        dropboxZipLastUpdated: "2024-10-14",
+        platform: "VESC Electronics"
     },
     {
         title: "Markoblaster: Fungineers Lid Gasket - 1mm and 1.5mm",
@@ -74,6 +76,7 @@ export default [
         imageSrc: "https://media.printables.com/media/prints/1040026/images/7886899_e24c0d07-edff-4f08-8e46-ff2da2e71124_a32c212d-cc27-42a8-ba9f-be670f50a047/thumbs/inside/1280x960/webp/img_2371.webp",
         externalUrl: "https://www.printables.com/model/1040026",
         dropboxUrl: "https://www.dropbox.com/scl/fi/fmsfuduyk3u79kooqeiqy/fungineers-lid-gasket-1mm-and-15mm-model_files.zip?rlkey=yxc8vuijvg2u6p704l7zwqntd&st=7j4nyrwi&dl=0",
-        dropboxZipLastUpdated: "2024-10-14"
+        dropboxZipLastUpdated: "2024-10-14",
+        platform: "VESC Electronics"
     }
 ] as ItemData[]

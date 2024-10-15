@@ -132,6 +132,16 @@ export default [
         platform: "XR"
     },
     {
+        title: "Funwheel Easy Access Controller Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/1040641/images/7890927_a10f3c3e-859b-4d0c-86bd-07f5898444b4_be53f9c1-4186-41d9-97dd-5616df380440/thumbs/inside/1280x960/png/screenshot-2024-10-15-at-80428-am.webp",
+        externalUrl: "https://www.printables.com/model/1040641",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/0egux9sz482psb5hgdgg4/funwheel-easy-access-controller-box-gx16-button-and-footpad-cannon-core-motor-cable-xlr-charge-port-model_files.zip?rlkey=lw3d2cletvny8f9elt5ua8jnp&st=yvgsrbve&dl=0",
+        dropboxZipLastUpdated: "2024-08-26",
+        platform: "XR"
+    },
+    {
         title: "VOW Systems: DIY Mushies Footpad",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad"],
@@ -558,13 +568,25 @@ export default [
         fabricationMethod: "3d Printed",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://cdn.thingiverse.com/assets/91/16/68/22/d3/large_display_FGOW016_P001_-_casing.png",
-        externalUrl: "https://www.thingiverse.com/thing:5440317"
+        externalUrl: "https://www.thingiverse.com/thing:5440317",
+        platform: "XR"
     },
     {
         title: "Markoblaster: XR Battery Box + Bumper for 18s2p 21700 cells and Ennoid XLITE-32 (Uses stock lid)",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Battery Box", "Bumper"],
         imageSrc: "https://media.printables.com/media/prints/1040181/images/7887816_8416cbad-bd58-4b1a-a292-1d1e1ed2d75f_43f1828d-8a2d-4f91-8675-bae1c2e535aa/thumbs/inside/1280x960/webp/img_2263.webp",
-        externalUrl: "https://www.printables.com/model/1040181"
+        externalUrl: "https://www.printables.com/model/1040181",
+        platform: "XR"
+    },
+    {
+        title: "XR Float Plates",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bumper"],
+        imageSrc: "https://media.printables.com/media/prints/960102/images/7332177_f6713e53-037c-4b71-9742-7cab85b52105_489bcb8a-8f3f-4e45-9020-8c88ce2ce1aa/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-161821.webp",
+        externalUrl: "https://www.printables.com/model/960102",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/a4gahmsaqdcw6arl3xvpy/float-plates-onewheel-xr-model_files.zip?rlkey=3f5r507ody04ngb0bx7dtr2kc&st=y533o9mi&dl=0",
+        dropboxZipLastUpdated: "2024-10-15",
+        platform: "XR"
     }
 ] as ItemData[]

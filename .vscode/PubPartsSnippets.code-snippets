@@ -26,12 +26,13 @@
             ",",
             "{",
             "\ttitle: \"$1\",",
-            "\tfabricationMethod: \"3d Printed\",",
-            "\ttypeOfPart: [\"Miscellaneous\"],",
+            "\tfabricationMethod: \"$2\",",
+            "\ttypeOfPart: [\"$3\"],",
             "\timageSrc: \"\",",
             "\texternalUrl: \"\",",
             "\tdropboxUrl: \"\",",
-            "\tdropboxZipLastUpdated: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
+            "\tdropboxZipLastUpdated: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\",",
+            "\tplatform: \"$4\",",
             "}"
         ]
     },
@@ -46,7 +47,7 @@
             ",",
             "{",
             "\ttitle: \"$1\",",
-            "\ttypeOfResource: [\"Spreadsheet\"],",
+            "\ttypeOfResource: [\"$2\"],",
             "\texternalUrl: \"\",",
             "\tdescription: \"\"",
             "}"

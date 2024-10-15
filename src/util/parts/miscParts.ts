@@ -199,13 +199,15 @@ export default [
         imageSrc: "https://media.printables.com/media/prints/1040051/images/7887056_1fa1c710-1de9-445f-9a57-7735a59309e6_428da948-3409-4788-a88f-a815d109407a/thumbs/inside/1280x960/jpg/img_2358.webp",
         externalUrl: "https://www.printables.com/model/1040051",
         dropboxUrl: "https://www.dropbox.com/scl/fi/99opeofx52qdfyo0me760/gx-16-cable-boot-to-replace-metal-housing-footpad-connector-model_files.zip?rlkey=j6680cfg8d51if5b6vafj7d1u&st=ow30eiga&dl=0",
-        dropboxZipLastUpdated: "2024-10-14"
+        dropboxZipLastUpdated: "2024-10-14",
+        platform: "Miscellaneous Items"
     },
     {
         title: "Markoblaster: Battery Assemblies for Fitment (15s1p p45b, 15s2p p45b)",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Battery Assembly"],
         imageSrc: "https://media.printables.com/media/prints/1040064/images/7887158_a872d6dd-9026-4f1d-94cf-a25249ec9dd8_4c16020c-3236-41e8-8d3f-aae43f238d51/thumbs/inside/1280x960/png/screenshot-2024-10-14-at-25212-pm.webp",
-        externalUrl: "https://www.printables.com/model/1040064"
+        externalUrl: "https://www.printables.com/model/1040064",
+        platform: "Miscellaneous Items"
     }
 ] as ItemData[]

@@ -94,5 +94,17 @@ export default [
         typeOfResource: "Vendor",
         externalUrl: "https://zbattery.solutions/",
         description: "\"The best batteries in the game\""
+    },
+    {
+        title: "Stoked Stock",
+        typeOfResource: "Vendor",
+        externalUrl: "https://www.stokedstock.com/",
+        description: "Aftermarket parts and accessories for the OneWheels"
+    },
+    {
+        title: "One Stop Board Shop",
+        typeOfResource: "Vendor",
+        externalUrl: "https://onestopboardshop.com/",
+        description: "\"Your family owned premier shop for all things OneWheel, e-skate and everything PEV\""
     }
 ] as ResourceData[]

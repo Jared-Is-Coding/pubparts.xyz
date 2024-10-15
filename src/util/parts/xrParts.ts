@@ -192,7 +192,7 @@ export default [
         platform: "XR"
     },
     {
-        title: "Stock XR Battery Lid",
+        title: "Stock XR Battery Box Lid",
         fabricationMethod: "CNC",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/960093/images/7332097_e3e1137b-d626-4e20-9f62-bee6873dfeef_2ee94bcc-f082-404f-9551-cd8668dd52d9/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-161042.webp",
@@ -552,5 +552,19 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/umnphuz7z0jntggn0lfps/atlowshop-big-speed-battery-box-model_files.zip?rlkey=m7dgn1prrewk7e1f4x0nuyd0t&st=57dv5wpp&dl=0",
         dropboxZipLastUpdated: "2024-09-25",
         platform: "XR"
+    },
+    {
+        title: "FlowGlider: XR Battery Box for 19s2p 21700 cells and Ennoid XLITE-24 (Uses stock lid)",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://cdn.thingiverse.com/assets/91/16/68/22/d3/large_display_FGOW016_P001_-_casing.png",
+        externalUrl: "https://www.thingiverse.com/thing:5440317"
+    },
+    {
+        title: "Markoblaster: XR Battery Box + Bumper for 18s2p 21700 cells and Ennoid XLITE-32 (Uses stock lid)",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Battery Box", "Bumper"],
+        imageSrc: "https://media.printables.com/media/prints/1040181/images/7887816_8416cbad-bd58-4b1a-a292-1d1e1ed2d75f_43f1828d-8a2d-4f91-8675-bae1c2e535aa/thumbs/inside/1280x960/webp/img_2263.webp",
+        externalUrl: "https://www.printables.com/model/1040181"
     }
 ] as ItemData[]

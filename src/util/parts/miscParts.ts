@@ -125,9 +125,9 @@ export default [
         platform: "Miscellaneous Items"
     },
     {
-        title: "QuinnWheel: Battery Assemblies for Fitment",
+        title: "AtlowShop: Battery Assemblies for Fitment (24s2p p28a, 19s2p p45b, 18s2p p45b)",
         fabricationMethod: "Other",
-        typeOfPart: ["Miscellaneous"],
+        typeOfPart: ["Battery Assembly"],
         imageSrc: "https://media.printables.com/media/prints/994910/images/7573698_8dd278b0-b2be-4f9b-a9b3-c16abdaeed60_85158e69-6523-4577-9abe-b25964a56534/thumbs/inside/1280x960/png/screenshot-2024-09-02-220926.webp",
         externalUrl: "https://www.printables.com/model/994910",
         platform: "Miscellaneous Items"
@@ -191,5 +191,21 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/zpyf0b3pm9f8dv9h7f4bh/23mm-low-profile-superflux-knurled-hand-wrench-model_files.zip?rlkey=z6u01fbw5wm5zs23rj8g048mu&st=7zzyfoyu&dl=0",
         dropboxZipLastUpdated: "2024-10-03",
         platform: "Miscellaneous Items"
+    },
+    {
+        title: "Markoblaster: GX16 Shortened Cable Boot",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/1040051/images/7887056_1fa1c710-1de9-445f-9a57-7735a59309e6_428da948-3409-4788-a88f-a815d109407a/thumbs/inside/1280x960/jpg/img_2358.webp",
+        externalUrl: "https://www.printables.com/model/1040051",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/99opeofx52qdfyo0me760/gx-16-cable-boot-to-replace-metal-housing-footpad-connector-model_files.zip?rlkey=j6680cfg8d51if5b6vafj7d1u&st=ow30eiga&dl=0",
+        dropboxZipLastUpdated: "2024-10-14"
+    },
+    {
+        title: "Markoblaster: Battery Assemblies for Fitment (15s1p p45b, 15s2p p45b)",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Battery Assembly"],
+        imageSrc: "https://media.printables.com/media/prints/1040064/images/7887158_a872d6dd-9026-4f1d-94cf-a25249ec9dd8_4c16020c-3236-41e8-8d3f-aae43f238d51/thumbs/inside/1280x960/png/screenshot-2024-10-14-at-25212-pm.webp",
+        externalUrl: "https://www.printables.com/model/1040064"
     }
 ] as ItemData[]

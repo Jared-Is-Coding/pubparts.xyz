@@ -40,6 +40,7 @@ type ItemData = {
 type PartType =
     | "Adapter"
     | "Axle Block"
+    | "Battery Assembly"
     | "Battery Box"
     | "Bearing Cover"
     | "Bracket"

@@ -66,7 +66,7 @@ export default [
     {
         title: "UBox 85V Mount for PubWheel CNC V2 PubBox",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Miscellaneous", "Adapter"],
+        typeOfPart: ["Bracket", "Adapter"],
         imageSrc: "https://media.printables.com/media/prints/1025517/images/7792742_6fb7e054-7719-438b-8543-fbadc5d8abb9_e0b99a1c-108e-4fbf-a919-d6fd8386ecb8/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1025517",
         platform: "XR"

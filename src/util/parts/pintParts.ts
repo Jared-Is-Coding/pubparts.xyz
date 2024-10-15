@@ -190,7 +190,7 @@ export default [
     {
         title: "Wide Pint Footpads",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Miscellaneous"],
+        typeOfPart: ["Footpad"],
         imageSrc: "https://cdn.thingiverse.com/assets/2a/7b/11/70/cf/large_display_ff0c1d11-63dd-4220-a269-af4ea768a918.jpg",
         externalUrl: "https://www.thingiverse.com/thing:5498181",
         dropboxUrl: "https://www.dropbox.com/scl/fi/hirq4w8lfkbtn2chljj2q/Pint-custom-sensor-pads-5498181.zip?rlkey=tcyh9u82edrwjdjk1b5mxw74h&st=ua2cs9rk&dl=0",

@@ -1,6 +1,6 @@
 export default [
     {
-        title: "FloatFab.com",
+        title: "FloatFab",
         typeOfResource: "Website",
         externalUrl: "https://FloatFab.com",
         description: "VESC parts store, guide provider, repair shop, and more"

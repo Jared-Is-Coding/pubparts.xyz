@@ -25,7 +25,7 @@ const Page: React.FC<PageProps> = () => {
                 <SiteNavbar />
 
                 <h1 className="flex-center">
-                    Applications Resources
+                    Applications
                 </h1>
             </header>
 

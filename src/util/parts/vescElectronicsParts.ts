@@ -72,7 +72,7 @@ export default [
     {
         title: "Markoblaster: Fungineers Lid Gasket - 1mm and 1.5mm",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Gasket"],
+        typeOfPart: ["Gasket", "Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/1040026/images/7886899_e24c0d07-edff-4f08-8e46-ff2da2e71124_a32c212d-cc27-42a8-ba9f-be670f50a047/thumbs/inside/1280x960/webp/img_2371.webp",
         externalUrl: "https://www.printables.com/model/1040026",
         dropboxUrl: "https://www.dropbox.com/scl/fi/fmsfuduyk3u79kooqeiqy/fungineers-lid-gasket-1mm-and-15mm-model_files.zip?rlkey=yxc8vuijvg2u6p704l7zwqntd&st=7j4nyrwi&dl=0",

@@ -100,7 +100,7 @@ export default [
     {
         title: "Celeste: Stock Controller Box Gasket",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Gasket"],
+        typeOfPart: ["Gasket", "Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/919483/images/7018416_1b0e6aed-f664-435b-a98c-965818ff9e01_af6fb348-20d1-4f38-85d3-a96b1c6f4743/thumbs/inside/1280x960/jpeg/img_0609.webp",
         externalUrl: "https://www.printables.com/model/919483",
         dropboxUrl: "https://www.dropbox.com/scl/fi/6n3fasa6g0oam9srgi4qh/onewheel-gt-controller-box-gasket-model_files.zip?rlkey=sns2p0a6n5qdxkruqfo4jgzmm&st=xb6yjzx4&dl=0",
@@ -144,5 +144,25 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/nmht9481le24b16pbdiey/Motor-Plug-Holder-for-WTF-Rails-6213496.zip?rlkey=mfrcf4245z2pc2cv0wvx2fpz2&st=esvxpmuu&dl=0",
         dropboxZipLastUpdated: "2024-09-10",
         platform: "GT/GT-S"
+    },
+    {
+        title: "Mobomelter: OneWheel GT Battery Box Gasket",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Gasket", "Battery Box"],
+        imageSrc: "https://media.printables.com/media/prints/594940/images/4738781_13e34ebe-ec10-4796-be83-ec35c4e6f0f9_8f2f690c-44c6-4b50-b610-dd60b0b3733a/thumbs/inside/1280x960/jpg/381016742_10159806914463697_6056226237353723116_n.webp",
+        externalUrl: "https://www.printables.com/model/594940",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/4w4xdbolgxtks02864od9/onewheel-gt-battery-box-gasket-model_files.zip?rlkey=jn0semvv8ryqwphl8cz50mk4f&st=hrn8thwz&dl=0",
+        dropboxZipLastUpdated: "2024-10-15",
+        platform: "GT/GT-S",
+    },
+    {
+        title: "Onewheel GT CNC battery Box",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://cdn.thingiverse.com/assets/37/0e/d1/7d/e2/large_display_468d716f-3d70-4da5-9f2b-b05e48f1c6b8.jpeg",
+        externalUrl: "https://www.thingiverse.com/thing:6670833",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/nqf0l018a137igi2ukqi7/Onewheel-GT-CNC-battery-Box-6670833.zip?rlkey=mupx86rx21iqojn224e21x0qq&st=fqwxwgyx&dl=0",
+        dropboxZipLastUpdated: "2024-10-15",
+        platform: "GT/GT-S",
     }
 ] as ItemData[]

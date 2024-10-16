@@ -588,5 +588,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/a4gahmsaqdcw6arl3xvpy/float-plates-onewheel-xr-model_files.zip?rlkey=3f5r507ody04ngb0bx7dtr2kc&st=y533o9mi&dl=0",
         dropboxZipLastUpdated: "2024-10-15",
         platform: "XR"
+    },
+    {
+        title: "DIY Mushies Footpad, Textured Remix",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://media.printables.com/media/prints/999445/images/7605428_97b6f58b-2edd-4656-b715-79becc2770e8_ece0fa3d-d38d-4262-91ac-f0223bba1ba5/thumbs/inside/1280x960/jpeg/xr-footpad.webp",
+        externalUrl: "https://www.printables.com/model/999445",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/y8s3dvo0k1fskv2ny4dvr/onewheel-xr-textured-rear-footpad-model_files.zip?rlkey=g0r6xiue2pjfsi01oynkcw7iz&st=pyeqeuzj&dl=0",
+        dropboxZipLastUpdated: "2024-10-16",
+        platform: "XR",
     }
 ] as ItemData[]

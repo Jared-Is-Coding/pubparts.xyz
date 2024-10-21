@@ -78,5 +78,25 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/fmsfuduyk3u79kooqeiqy/fungineers-lid-gasket-1mm-and-15mm-model_files.zip?rlkey=yxc8vuijvg2u6p704l7zwqntd&st=7j4nyrwi&dl=0",
         dropboxZipLastUpdated: "2024-10-14",
         platform: "VESC Electronics"
+    },
+    {
+        title: "NexusBattery: Pint Motor Connector Breakout Board",
+        fabricationMethod: "PCB",
+        typeOfPart: ["Breakout Board"],
+        imageSrc: "/images/parts/electronics/nexusbattery-pint-motor-breakout.png",
+        externalUrl: "https://nexusbatterysolutions.com/products/diy-pint-motor-connector",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/6613lg6pn4j612kwrlh3s/Gerber_PCB-motor_PCB_Motor-Connector_Altium-1-.pcbdoc_2024-10-18.zip?rlkey=e2opnt7hct3sfx7m23h1cgwhq&st=pw4nvts6&dl=0",
+        dropboxZipLastUpdated: "2024-10-21",
+        platform: "VESC Electronics",
+    },
+    {
+        title: "NexusBattery: Pint and XR Battery Balance Breakout Board",
+        fabricationMethod: "PCB",
+        typeOfPart: ["Breakout Board"],
+        imageSrc: "/images/parts/electronics/nexusbattery-balance-breakout.png",
+        externalUrl: "https://nexusbatterysolutions.com/products/stock-pack-breakout-board",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/5i3fa785cdfu37dnmqfch/Pint_and_XR_battery_balance_breakout_board.zip?rlkey=k2nomaqsqma6z6a7lln5py0ie&st=yn3fihbt&dl=0",
+        dropboxZipLastUpdated: "2024-10-21",
+        platform: "VESC Electronics",
     }
 ] as ItemData[]

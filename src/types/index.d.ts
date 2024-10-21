@@ -44,6 +44,7 @@ type PartType =
     | "Battery Box"
     | "Bearing Cover"
     | "Bracket"
+    | "Breakout Board"
     | "Bumper"
     | "Connector Cover"
     | "Controller Box"
@@ -68,6 +69,7 @@ type FabricationMethod =
     | "CNC"
     | "Laser"
     | "Other"
+    | "PCB"
 
 type PlatformType = 
     | "Floatwheel"

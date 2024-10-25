@@ -33,7 +33,7 @@ export default [
         title: "PEV Dispensary",
         typeOfResource: "Vendor",
         externalUrl: "https://pevdispensary.com/",
-        description: ""
+        description: "#CleanGreenFun"
     },
     {
         title: "Atlowshop",

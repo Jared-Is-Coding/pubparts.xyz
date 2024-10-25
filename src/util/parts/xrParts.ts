@@ -598,5 +598,14 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/y8s3dvo0k1fskv2ny4dvr/onewheel-xr-textured-rear-footpad-model_files.zip?rlkey=g0r6xiue2pjfsi01oynkcw7iz&st=pyeqeuzj&dl=0",
         dropboxZipLastUpdated: "2024-10-16",
         platform: "XR",
+    },
+    {
+        title: "Viperbite: Shorty FlightFins v1 Fenders",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "/images/parts/xr/ff_shorty.jpg",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/c3kc656q960xiygmxp22h/ff_shorty.zip?rlkey=x12axgi6caegnzqjoltzymu3d&st=3uzadmwp&dl=0",
+        dropboxZipLastUpdated: "2024-10-25",
+        platform: "XR",
     }
 ] as ItemData[]

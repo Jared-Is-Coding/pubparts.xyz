@@ -32,7 +32,7 @@
             "\texternalUrl: \"\",",
             "\tdropboxUrl: \"\",",
             "\tdropboxZipLastUpdated: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\",",
-            "\tplatform: \"$4\",",
+            "\tplatform: \"$4\"",
             "}"
         ]
     },

@@ -597,7 +597,7 @@ export default [
         externalUrl: "https://www.printables.com/model/999445",
         dropboxUrl: "https://www.dropbox.com/scl/fi/y8s3dvo0k1fskv2ny4dvr/onewheel-xr-textured-rear-footpad-model_files.zip?rlkey=g0r6xiue2pjfsi01oynkcw7iz&st=pyeqeuzj&dl=0",
         dropboxZipLastUpdated: "2024-10-16",
-        platform: "XR",
+        platform: "XR"
     },
     {
         title: "Viperbite: Shorty FlightFins v1 Fenders",
@@ -606,6 +606,16 @@ export default [
         imageSrc: "/images/parts/xr/ff_shorty.jpg",
         dropboxUrl: "https://www.dropbox.com/scl/fi/c3kc656q960xiygmxp22h/ff_shorty.zip?rlkey=x12axgi6caegnzqjoltzymu3d&st=3uzadmwp&dl=0",
         dropboxZipLastUpdated: "2024-10-25",
-        platform: "XR",
+        platform: "XR"
+    },
+    {
+        title: "X8 Varials Rail Guards",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/1052370/images/7974384_77d3daac-f78b-49ba-a34a-bf2d812a7ca8_9e53cc9b-190a-4db6-a542-f260b56fafb0/thumbs/inside/1920x1440/webp/img_2403.webp",
+        externalUrl: "https://www.printables.com/model/1052370",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/rbe7mj1vpr42epxsmuew2/x8-varial-rail-guards-model_files.zip?rlkey=k02wrxp7yokzs0b4yw0xsdvis&st=7kins48a&dl=0",
+        dropboxZipLastUpdated: "2024-10-27",
+        platform: "XR"
     }
 ] as ItemData[]

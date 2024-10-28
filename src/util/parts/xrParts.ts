@@ -617,5 +617,25 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/rbe7mj1vpr42epxsmuew2/x8-varial-rail-guards-model_files.zip?rlkey=k02wrxp7yokzs0b4yw0xsdvis&st=7kins48a&dl=0",
         dropboxZipLastUpdated: "2024-10-27",
         platform: "XR"
+    },
+    {
+        title: "Simplified Fungineers Style Controller Box",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/1013816/images/7704810_916069a5-e670-4076-9d9e-69bdfe01ea7d_a1da1284-4bc6-44c7-95be-414e0298fc14/thumbs/inside/1280x960/png/1.webp",
+        externalUrl: "https://www.printables.com/model/1013816",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ek5kyl884gcpbre8wkhe9/my-own-approach-of-fungineers-funwheel-esque-controller-simplified-model_files.zip?rlkey=y6e4gabbxav808n4bv3scb76h&st=ygfz89f9&dl=0",
+        dropboxZipLastUpdated: "2024-10-28",
+        platform: "XR"
+    },
+    {
+        title: "Thunder Rails Style W-Rails",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Rails"],
+        imageSrc: "https://media.printables.com/media/prints/1013830/images/7704920_1dac1799-8183-46a0-bc72-83d258610ad1_780fe9d0-a132-4b54-a083-b530a6bae9b6/thumbs/inside/1280x960/png/thunderrails.webp",
+        externalUrl: "https://www.printables.com/model/1013830",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/y6u81xjotbu1n8unjkng9/my-own-approach-of-thunder-rails-with-just-one-height-model_files.zip?rlkey=gumsbqlaq67ajtmx715xnhebz&st=c1oc6tb8&dl=0",
+        dropboxZipLastUpdated: "2024-10-28",
+        platform: "XR"
     }
 ] as ItemData[]

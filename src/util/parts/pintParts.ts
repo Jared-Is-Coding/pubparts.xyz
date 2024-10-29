@@ -196,5 +196,14 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/hirq4w8lfkbtn2chljj2q/Pint-custom-sensor-pads-5498181.zip?rlkey=tcyh9u82edrwjdjk1b5mxw74h&st=ua2cs9rk&dl=0",
         dropboxZipLastUpdated: "2024-10-09",
         platform: "Pint/X/S"
+    },
+    {
+        title: "Pint Motor Retainer Clip",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Tool"],
+        imageSrc: "/images/parts/pint/pint-motor-retainer.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/e5h2ue95lgphhqx6s74me/Pint-Motor-Retainer-Clip.zip?rlkey=84804ahr9uvgpf4omiewbzohr&st=d0myl68a&dl=0",
+        dropboxZipLastUpdated: "2024-10-29",
+        platform: "Pint/X/S"
     }
 ] as ItemData[]

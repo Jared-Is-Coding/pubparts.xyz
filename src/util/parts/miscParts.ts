@@ -209,5 +209,14 @@ export default [
         imageSrc: "https://media.printables.com/media/prints/1040064/images/7887158_a872d6dd-9026-4f1d-94cf-a25249ec9dd8_4c16020c-3236-41e8-8d3f-aae43f238d51/thumbs/inside/1280x960/png/screenshot-2024-10-14-at-25212-pm.webp",
         externalUrl: "https://www.printables.com/model/1040064",
         platform: "Miscellaneous Items"
+    },
+    {
+        title: "Burris 11.5x7-6 and 12x8-6 Tire Models",
+        fabricationMethod: "Other",
+        typeOfPart: ["Tire"],
+        imageSrc: "/images/parts/misc/burris-tire.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/7q72ms2psbiud1g5fjaua/burris_tire.zip?rlkey=djr7o43g573sto3tu94xxo81h&st=n5b2zfrp&dl=0",
+        dropboxZipLastUpdated: "2024-10-29",
+        platform: "Miscellaneous Items"
     }
 ] as ItemData[]

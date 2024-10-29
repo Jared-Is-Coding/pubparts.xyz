@@ -230,13 +230,22 @@ export default [
         platform: "Floatwheel"
     },
     {
-        title: "ADV Lush Wide Footpads",
+        title: "ADV Lush Wide Footpads w/ Dragan Hooks (Resin-focused)",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Footpad"],
+        typeOfPart: ["Footpad", "Footpad Attachment"],
         imageSrc: "https://media.printables.com/media/prints/996387/images/7583662_fc2d58fb-cbb6-4abd-95cb-064649a704bc_87f0839a-3900-43b2-8ad8-5b0b3cd2c670/thumbs/inside/1280x960/png/fusion360_cbzvpozid5.webp",
         externalUrl: "https://www.printables.com/model/996387",
         dropboxUrl: "https://www.dropbox.com/scl/fi/eqs6pb623t48gape1wgvb/adv-lush-wide-model_files.zip?rlkey=fhvl1syxw0e0dfh7rtsblvqn5&st=8kyyu45v&dl=0",
         dropboxZipLastUpdated: "2024-10-03",
+        platform: "Floatwheel"
+    },
+    {
+        title: "ADV Lush Wide Footpads w/ Dragan Hooks (FDM-focused)",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad", "Footpad Attachment"],
+        imageSrc: "/images/parts/floatwheel/lush-wide.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/iv99ohadq2944h7yyjvxe/Lush-Wide-Files-FDM-Focused.zip?rlkey=42h6z269tjyvh4px659cky826&st=ce84ebke&dl=0",
+        dropboxZipLastUpdated: "2024-10-28",
         platform: "Floatwheel"
     }
 ] as ItemData[]

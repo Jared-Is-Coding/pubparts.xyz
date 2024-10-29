@@ -62,6 +62,7 @@ type PartType =
     | "Rails"
     | "Rim Saver"
     | "Stand"
+    | "Tire"
     | "Tool"
 
 type FabricationMethod =

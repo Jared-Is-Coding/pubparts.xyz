@@ -243,7 +243,7 @@ export default [
         title: "ADV Lush Wide Footpads w/ Dragan Hooks (FDM-focused)",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad", "Footpad Attachment"],
-        imageSrc: "/images/parts/floatwheel/lush-wide.png",
+        imageSrc: "/images/parts/floatwheel/lush-wide.jpg",
         dropboxUrl: "https://www.dropbox.com/scl/fi/iv99ohadq2944h7yyjvxe/Lush-Wide-Files-FDM-Focused.zip?rlkey=42h6z269tjyvh4px659cky826&st=ce84ebke&dl=0",
         dropboxZipLastUpdated: "2024-10-28",
         platform: "Floatwheel"

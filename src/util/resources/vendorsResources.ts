@@ -112,5 +112,11 @@ export default [
         typeOfResource: "Vendor",
         externalUrl: "https://avaspark.com/",
         description: "\"Unlock your board's potential!\""
+    },
+    {
+        title: "TheBoardGarage",
+        typeOfResource: "Vendor",
+        externalUrl: "https://theboardgarage.com/store/",
+        description: "Battery, parts, and custom VESC build shop."
     }
 ] as ResourceData[]

@@ -205,5 +205,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/e5h2ue95lgphhqx6s74me/Pint-Motor-Retainer-Clip.zip?rlkey=84804ahr9uvgpf4omiewbzohr&st=d0myl68a&dl=0",
         dropboxZipLastUpdated: "2024-10-29",
         platform: "Pint/X/S"
+    },
+    {
+        title: "Pint BMS Cover",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "/images/parts/pint/pint-bms-cover-model.png",
+        externalUrl: "https://www.printables.com/model/1057278",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/pqhsae1ttdx2kfm6egm9q/pint-bms-cover-model_files.zip?rlkey=0ii25hutvzom3ihe7fywfjunj&st=p3ubi5bf&dl=0",
+        dropboxZipLastUpdated: "2024-10-31",
+        platform: "Pint/X/S"
     }
 ] as ItemData[]

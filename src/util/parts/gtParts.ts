@@ -18,6 +18,7 @@ export default [
         externalUrl: "https://www.printables.com/model/891335",
         dropboxUrl: "https://www.dropbox.com/scl/fi/lg5cv8ydbvj50440ejpvi/onewheel-gt-sfxr-clamping-axle-block-model_files.zip?rlkey=2kblpqymeibknqqox4p2qq7f4&st=b98xp2dr&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
+        price: "~$130/pair from JLCPCB",
         platform: "GT/GT-S"
     },
     {

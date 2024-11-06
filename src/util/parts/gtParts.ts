@@ -7,6 +7,7 @@ export default [
         externalUrl: "https://www.printables.com/model/958730",
         dropboxUrl: "https://www.dropbox.com/scl/fi/xiyrlv4vvn93mojf16n21/onewheel-gt-axle-block-covers-model_files.zip?rlkey=zatpvxuhvpvlbpbp3troqmddr&st=ev6gfh0t&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
+        price: "~$36/pair from JLCPCB",
         platform: "GT/GT-S"
     },
     {

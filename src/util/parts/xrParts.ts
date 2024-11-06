@@ -61,6 +61,7 @@ export default [
         externalUrl: "https://www.printables.com/model/882071",
         dropboxUrl: "https://www.dropbox.com/scl/fi/2y6q3robhi087i234pq6g/cnc-pubbox-v2-xr-vesc-box-model_files.zip?rlkey=1svs6tvdrp6rv5shnbwyluq0b&st=fm399jym&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
+        price: "~$280 (box only) from JLCPCB",
         platform: "XR"
     },
     {
@@ -259,6 +260,7 @@ export default [
         externalUrl: "https://www.printables.com/model/939143",
         dropboxUrl: "https://www.dropbox.com/scl/fi/f76fpurhbd2bmrmgojwya/onewheel-pubhubs-xr-blocks-finned-axle-block-covers-model_files.zip?rlkey=le6yphs2pssjhzcrfj8jfn4bv&st=x2m5cruv&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
+        price: "~$30/pair from JLCPCB",
         platform: "XR"
     },
     {
@@ -636,6 +638,7 @@ export default [
         externalUrl: "https://www.printables.com/model/1013830",
         dropboxUrl: "https://www.dropbox.com/scl/fi/y6u81xjotbu1n8unjkng9/my-own-approach-of-thunder-rails-with-just-one-height-model_files.zip?rlkey=gumsbqlaq67ajtmx715xnhebz&st=c1oc6tb8&dl=0",
         dropboxZipLastUpdated: "2024-10-28",
+        price: "~$180/pair from JLCPCB",
         platform: "XR"
     }
 ] as ItemData[]

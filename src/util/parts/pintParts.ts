@@ -215,5 +215,25 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/pqhsae1ttdx2kfm6egm9q/pint-bms-cover-model_files.zip?rlkey=0ii25hutvzom3ihe7fywfjunj&st=p3ubi5bf&dl=0",
         dropboxZipLastUpdated: "2024-10-31",
         platform: "Pint/X/S"
+    },
+    {
+        title: "Matix: Pint Pub Pads",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://media.printables.com/media/prints/1064065/images/8052009_55a0a5d4-547c-4db5-b315-5dfe4af25860_736e218d-634a-42a1-9fbb-8bf51ad64e4c/thumbs/inside/1280x960/png/img_1201.webp",
+        externalUrl: "https://www.printables.com/model/1064065",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/p2kb71whikdko3dwlveym/pint-pub-pads-model_files.zip?rlkey=ien8sxy8a4g9oezzlyq1lzmtk&st=q4a73cm5&dl=0",
+        dropboxZipLastUpdated: "2024-11-07",
+        platform: "Pint/X/S"
+    },
+    {
+        title: "Matix: Pint Oversized Pub Pads",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://media.printables.com/media/prints/1064071/images/8052055_b6dd6d65-4eb3-48ef-9447-3091b4721f2a_6b3e5984-be25-494f-b0a1-749d917abc12/thumbs/inside/1280x960/png/img_1194.webp",
+        externalUrl: "https://www.printables.com/model/1064071",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/lkbakw0t5q9sdtx3bzyql/pint-oversized-pub-pads-model_files.zip?rlkey=dk7s5nfgo79nhdrq8hy9on0r9&st=9cwbpcbo&dl=0",
+        dropboxZipLastUpdated: "2024-11-07",
+        platform: "Pint/X/S"
     }
 ] as ItemData[]

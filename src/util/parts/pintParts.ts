@@ -235,5 +235,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/lkbakw0t5q9sdtx3bzyql/pint-oversized-pub-pads-model_files.zip?rlkey=dk7s5nfgo79nhdrq8hy9on0r9&st=9cwbpcbo&dl=0",
         dropboxZipLastUpdated: "2024-11-07",
         platform: "Pint/X/S"
+    },
+    {
+        title: "Matix: WTF Pint Rail Fender Delete",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender Delete"],
+        imageSrc: "https://media.printables.com/media/prints/1065519/images/8062148_f2285b8c-f127-4144-ab88-0a76472f4993_a1f37d08-8a62-42c3-ac4e-ce5069185eb8/thumbs/inside/1280x960/png/img_1194.webp",
+        externalUrl: "https://www.printables.com/model/1065519",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/fd0n7fwov67ojroe9hchr/pint-fender-delete-for-pubrails-model_files.zip?rlkey=cz1ka9a12z32bgigfql595wct&st=uack94e0&dl=0",
+        dropboxZipLastUpdated: "2024-11-07",
+        platform: "Pint/X/S"
     }
 ] as ItemData[]

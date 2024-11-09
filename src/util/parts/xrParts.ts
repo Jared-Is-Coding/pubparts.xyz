@@ -18,7 +18,7 @@ export default [
         externalUrl: "https://www.printables.com/model/838327",
         dropboxUrl: "https://www.dropbox.com/scl/fi/zso2uj240vctz1dzijwlz/pubhubs-sf-xr-clampys-model_files.zip?rlkey=8z0z5hiyruikabtryxgr1c9r3&st=j8xo3dqp&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        price: "~$80/pair from JLCPCB",
+        price: "~$145/pair from JLCPCB",
         platform: "XR"
     },
     {

@@ -245,5 +245,25 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/fd0n7fwov67ojroe9hchr/pint-fender-delete-for-pubrails-model_files.zip?rlkey=cz1ka9a12z32bgigfql595wct&st=uack94e0&dl=0",
         dropboxZipLastUpdated: "2024-11-07",
         platform: "Pint/X/S"
+    },
+    {
+        title: "Matix: Pint X Battery Box Billet Lid",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://media.printables.com/media/prints/1066072/images/8065990_9f3d6f6e-e2dc-49be-bc92-751a8def53d8_f01345d6-6ead-4c39-b1a7-bdc88e8a3ee9/thumbs/inside/1280x960/jpeg/img_2230.webp",
+        externalUrl: "https://www.printables.com/model/1066072",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/blduhljjex7hzmqc69ykn/billet-pintx-battery-box-lid-cnc-model_files.zip?rlkey=yi1m21610j0phzk3dk1tj2wuo&st=qiq7ojog&dl=0",
+        dropboxZipLastUpdated: "2024-11-08",
+        platform: "Pint/X/S"
+    },
+    {
+        title: "Matix: Pint X Battery Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://media.printables.com/media/prints/1065628/images/8063234_cd983b5e-81bd-4eae-8019-e34ab9891ae2_6043e5e1-0d0d-46ac-8fea-fa26c5549fb8/thumbs/inside/1280x960/jpeg/img_2683.webp",
+        externalUrl: "https://www.printables.com/model/1065628",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/lfb4bid7kdt9c7t4xvgcu/pintx-battery-box-model_files.zip?rlkey=q2dtzoxei2t3ecaegh63az63s&st=zkw26yg0&dl=0",
+        dropboxZipLastUpdated: "2024-11-08",
+        platform: "Pint/X/S"
     }
 ] as ItemData[]

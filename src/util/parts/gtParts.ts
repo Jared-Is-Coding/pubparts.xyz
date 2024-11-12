@@ -166,5 +166,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/nqf0l018a137igi2ukqi7/Onewheel-GT-CNC-battery-Box-6670833.zip?rlkey=mupx86rx21iqojn224e21x0qq&st=fqwxwgyx&dl=0",
         dropboxZipLastUpdated: "2024-10-15",
         platform: "GT/GT-S",
+    },
+    {
+        title: "SeanBrown: GT Short Fender Delete",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender Delete"],
+        imageSrc: "https://media.printables.com/media/prints/970957/images/7407736_8a5420dc-76ae-4f88-a22a-0e5b7f6a3baa_0139e4ff-2e2c-4908-aaac-be68bd0afa72/thumbs/inside/1280x960/jpg/20240802_155720.webp",
+        externalUrl: "https://www.printables.com/model/970957",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/xw9psp6vjv9e2tudd65fs/gt-fender-delete-short-model_files.zip?rlkey=dp9c3k2m0hszgbie7zuw633qe&st=6o8wgdlq&dl=0",
+        dropboxZipLastUpdated: "2024-11-12",
+        platform: "GT/GT-S"
     }
 ] as ItemData[]

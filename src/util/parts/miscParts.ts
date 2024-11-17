@@ -218,5 +218,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/7q72ms2psbiud1g5fjaua/burris_tire.zip?rlkey=djr7o43g573sto3tu94xxo81h&st=n5b2zfrp&dl=0",
         dropboxZipLastUpdated: "2024-10-29",
         platform: "Miscellaneous Items"
+    },
+    {
+        title: "3d Printed Gripples",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/598759/images/4771812_7f901f92-4361-45f4-8527-f2138176b0cc_2b4d4f70-7556-4a39-9213-6cec593be284/thumbs/inside/1280x960/jpg/pxl_20230930_171633812.webp",
+        externalUrl: "https://www.printables.com/model/598759",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/8y9sup2xbsc98hlq8hong/standard-gripples-for-onewheel-model_files.zip?rlkey=qw8jvfrcs5i4f4t7ukwu6y856&st=rp5mc7yj&dl=0",
+        dropboxZipLastUpdated: "2024-11-16",
+        platform: "Miscellaneous Items"
     }
 ] as ItemData[]

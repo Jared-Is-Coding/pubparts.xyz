@@ -640,5 +640,15 @@ export default [
         dropboxZipLastUpdated: "2024-10-28",
         price: "~$180/pair from JLCPCB",
         platform: "XR"
+    },
+    {
+        title: "X7 Style Rails",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Rails"],
+        imageSrc: "https://media.printables.com/media/prints/1080188/images/8168006_edaf24a5-fa03-45c5-9751-d70542169a68_3cba152b-7cb8-4bb6-87ca-c7ca084aeee3/thumbs/inside/1280x960/png/screenshot-2024-11-20-at-015245.webp",
+        externalUrl: "https://www.printables.com/model/1080188",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/3qzicjiomrq9td3rxa5g7/onewheel-xr-fungineers-x7-rails-model_files.zip?rlkey=u7ov552oko3hta2srwc9dnlix&st=74sgp0pz&dl=0",
+        dropboxZipLastUpdated: "2024-11-26",
+        platform: "XR"
     }
 ] as ItemData[]

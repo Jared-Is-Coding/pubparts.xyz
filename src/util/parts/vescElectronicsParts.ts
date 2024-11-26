@@ -98,5 +98,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/5i3fa785cdfu37dnmqfch/Pint_and_XR_battery_balance_breakout_board.zip?rlkey=k2nomaqsqma6z6a7lln5py0ie&st=yn3fihbt&dl=0",
         dropboxZipLastUpdated: "2024-10-21",
         platform: "VESC Electronics",
+    },
+    {
+        title: "Pickles: Hall Sensor Board",
+        fabricationMethod: "PCB",
+        typeOfPart: ["Hall Sensor"],
+        imageSrc: "https://github.com/PickleWorks-Design/Hall-Sensor-Board/raw/main/pickle_hall.png",
+        externalUrl: "https://github.com/PickleWorks-Design/Hall-Sensor-Board",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/irwm517n5vh4zp2q5eflc/Pickles-Hall-Sensor-Board-main.zip?rlkey=q47khahhka5alf9q5qaa7vkcy&st=pux0u1cs&dl=0",
+        dropboxZipLastUpdated: "2024-11-26",
+        platform: "VESC Electronics"
     }
 ] as ItemData[]

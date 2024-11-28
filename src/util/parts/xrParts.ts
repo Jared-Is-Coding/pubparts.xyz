@@ -143,6 +143,16 @@ export default [
         platform: "XR"
     },
     {
+        title: "Markoblaster: Funwheel EVEN EASIER Access Controller Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/1089228/images/8234280_078902a9-6310-4144-b351-896d267bfd73_7c2903c1-89ff-4dd8-98fe-13d86e783048/thumbs/inside/1600x1200/webp/img_2397.webp",
+        externalUrl: "https://www.printables.com/model/1089228",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/wlnsb9ewoh7fmyrzviymx/funwheel-even-easier-easy-access-controller-box-topbottom-access-lids-model_files.zip?rlkey=x488qzomf1keh9oul4m6c45mv&st=xyazon0d&dl=0",
+        dropboxZipLastUpdated: "2024-11-27",
+        platform: "XR"
+    },
+    {
         title: "VOW Systems: DIY Mushies Footpad",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad"],

@@ -65,6 +65,16 @@ export default [
         platform: "XR"
     },
     {
+        title: "PubParts: CNC PubBox V2 XR Vesc Box Unified Cable Cover",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Connector Cover"],
+        imageSrc: "https://media.printables.com/media/prints/1095537/images/8283017_c084102a-b3fd-4246-9636-7eaca59a2c7a_4c349d16-8017-4460-90d1-f90ee2b18a83/thumbs/inside/1280x960/png/screenshot_4.webp",
+        externalUrl: "https://www.printables.com/model/1095537",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/7il3git2fa2uguxmw7ifo/cnc-pubbox-v2-xr-vesc-box-unified-cable-cover-model_files.zip?rlkey=7sfn9c7grxciaqxyqa8p4uu4e&st=ydedheq9&dl=0",
+        dropboxZipLastUpdated: "2024-12-03",
+        platform: "XR"
+    },
+    {
         title: "UBox 85V Mount for PubWheel CNC V2 PubBox",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Bracket", "Adapter"],

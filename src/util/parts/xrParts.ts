@@ -54,6 +54,16 @@ export default [
         platform: "XR"
     },
     {
+        title: "PubParts: 3dp PubBox V1 (and others) XR Vesc Box Unified Cable Cover",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Connector Cover"],
+        imageSrc: "https://media.printables.com/media/prints/1097640/images/8297088_c5fdcef6-38ec-4873-8fcc-b3fd45e11799_4f0022b2-ff18-423a-bac1-840c3d3f88ea/thumbs/inside/1280x960/png/screenshot_2.webp",
+        externalUrl: "https://www.printables.com/model/1097640",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/xptr5k9j0xs8fmieg95xc/3dp-pubbox-v1-and-others-xr-vesc-box-unified-cable-cover-model_files.zip?rlkey=osj01h478r4eim5jlwprnclvz&st=5k3g894f&dl=0",
+        dropboxZipLastUpdated: "2024-12-04",
+        platform: "XR"
+    },
+    {
         title: "PubBox: CNC V2 - XR VESC Box, Lid",
         fabricationMethod: "CNC",
         typeOfPart: ["Controller Box"],
@@ -68,10 +78,10 @@ export default [
         title: "PubParts: CNC PubBox V2 XR Vesc Box Unified Cable Cover",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
-        imageSrc: "https://media.printables.com/media/prints/1095537/images/8283017_c084102a-b3fd-4246-9636-7eaca59a2c7a_4c349d16-8017-4460-90d1-f90ee2b18a83/thumbs/inside/1280x960/png/screenshot_4.webp",
+        imageSrc: "https://media.printables.com/media/prints/1095537/images/8287154_47f31a4d-7887-41fd-b7e6-13df9e12c7bc_c54be9b7-745a-4e52-8ed6-ec6689d68ba3/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1095537",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/7il3git2fa2uguxmw7ifo/cnc-pubbox-v2-xr-vesc-box-unified-cable-cover-model_files.zip?rlkey=7sfn9c7grxciaqxyqa8p4uu4e&st=ydedheq9&dl=0",
-        dropboxZipLastUpdated: "2024-12-03",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/7il3git2fa2uguxmw7ifo/cnc-pubbox-v2-xr-vesc-box-unified-cable-cover-model_files.zip?rlkey=7sfn9c7grxciaqxyqa8p4uu4e&st=zj58dsmi&dl=0",
+        dropboxZipLastUpdated: "2024-12-04",
         platform: "XR"
     },
     {

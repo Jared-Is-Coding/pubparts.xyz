@@ -228,5 +228,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/8y9sup2xbsc98hlq8hong/standard-gripples-for-onewheel-model_files.zip?rlkey=qw8jvfrcs5i4f4t7ukwu6y856&st=rp5mc7yj&dl=0",
         dropboxZipLastUpdated: "2024-11-16",
         platform: "Miscellaneous Items"
+    },
+    {
+        title: "Molex CPA Retainer Clip",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "/images/parts/misc/molex-cpa-retainer-clip.jpg",
+        externalUrl: "https://www.thingiverse.com/thing:4841615",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/u1bv3cx1lvr6ln22gxhl5/Molex-CPA-retainer-clip-4841615.zip?rlkey=b419uh311etqrsagucv8cb2ea&st=m10e5k4b&dl=0",
+        dropboxZipLastUpdated: "2024-12-24",
+        platform: "Miscellaneous Items"
     }
 ] as ItemData[]

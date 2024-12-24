@@ -155,17 +155,37 @@ export default [
         externalUrl: "https://www.printables.com/model/594940",
         dropboxUrl: "https://www.dropbox.com/scl/fi/4w4xdbolgxtks02864od9/onewheel-gt-battery-box-gasket-model_files.zip?rlkey=jn0semvv8ryqwphl8cz50mk4f&st=hrn8thwz&dl=0",
         dropboxZipLastUpdated: "2024-10-15",
-        platform: "GT/GT-S",
+        platform: "GT/GT-S"
     },
     {
         title: "Onewheel GT CNC battery Box",
         fabricationMethod: "CNC",
         typeOfPart: ["Battery Box"],
-        imageSrc: "https://cdn.thingiverse.com/assets/37/0e/d1/7d/e2/large_display_468d716f-3d70-4da5-9f2b-b05e48f1c6b8.jpeg",
-        externalUrl: "https://www.thingiverse.com/thing:6670833",
+        imageSrc: "https://media.printables.com/media/prints/919786/images/7480449_77f52c5c-8e96-4e93-a9c3-defba20f6bcd_8d1386fa-30f8-4b5f-a558-9d715cef7946/thumbs/inside/1280x960/jpeg/cnc-gt-battery-pack.webp",
+        externalUrl: "https://www.printables.com/model/919786",
         dropboxUrl: "https://www.dropbox.com/scl/fi/nqf0l018a137igi2ukqi7/Onewheel-GT-CNC-battery-Box-6670833.zip?rlkey=mupx86rx21iqojn224e21x0qq&st=fqwxwgyx&dl=0",
-        dropboxZipLastUpdated: "2024-10-15",
-        platform: "GT/GT-S",
+        dropboxZipLastUpdated: "2024-12-24",
+        platform: "GT/GT-S"
+    },
+    {
+        title: "Onewheel GT 3dp battery Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://media.printables.com/media/prints/900804/images/7031010_e5819620-e53d-42b1-a235-5f17ffda592f_41969e80-6cd9-474f-82fb-fa41c5da6109/thumbs/inside/1280x960/jpg/img_8808.webp",
+        externalUrl: "https://www.printables.com/model/900804",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/jhuppulsn1hwvzaxhirhc/battery-box-for-onewheel-gt-platform-model_files.zip?rlkey=nxjcl43ajql7jyqorks3zzhth&st=igqf0gpt&dl=0",
+        dropboxZipLastUpdated: "2024-12-24",
+        platform: "GT/GT-S"
+    },
+    {
+        title: "Onewheel GT CNC Controller Box",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/940354/images/7185856_04f115f3-83ee-4913-9edd-e9e53e17fdfc_c05bf32a-0d6c-4177-b67a-1dc6ea6814cd/thumbs/inside/1280x960/jpg/img_9033.webp",
+        externalUrl: "https://www.printables.com/model/940354",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/8zbkbs3o132tvgwa34mrj/gt-cnc-controller-box-box-model_files.zip?rlkey=76dxbzc59fq349mijnk55dzjk&st=14v22772&dl=0",
+        dropboxZipLastUpdated: "2024-12-24",
+        platform: "GT/GT-S"
     },
     {
         title: "SeanBrown: GT Short Fender Delete",

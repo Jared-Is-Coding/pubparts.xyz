@@ -158,7 +158,7 @@ export default [
         platform: "GT/GT-S"
     },
     {
-        title: "Onewheel GT CNC battery Box",
+        title: "Onewheel GT CNC Battery Box",
         fabricationMethod: "CNC",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/919786/images/7480449_77f52c5c-8e96-4e93-a9c3-defba20f6bcd_8d1386fa-30f8-4b5f-a558-9d715cef7946/thumbs/inside/1280x960/jpeg/cnc-gt-battery-pack.webp",
@@ -168,7 +168,7 @@ export default [
         platform: "GT/GT-S"
     },
     {
-        title: "Onewheel GT 3dp battery Box",
+        title: "Onewheel GT 3dp Battery Box",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Battery Box"],
         imageSrc: "https://media.printables.com/media/prints/900804/images/7031010_e5819620-e53d-42b1-a235-5f17ffda592f_41969e80-6cd9-474f-82fb-fa41c5da6109/thumbs/inside/1280x960/jpg/img_8808.webp",

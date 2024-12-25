@@ -257,7 +257,6 @@ export default [
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
         imageSrc: "https://media.printables.com/media/prints/960086/images/7332056_04ab3d42-9c0a-4bb4-b9d2-b758696e9962_08694c12-e680-4804-96f4-e9592767b9e6/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-160440.webp",
-        externalUrl: "https://www.printables.com/model/960086",
         dropboxUrl: "https://www.dropbox.com/scl/fi/pn7phvfgzgrohad6miqrl/flightfins-onewheel-xr-model_files.zip?rlkey=hjl0bwj28znjbctcg2opp6d6r&st=u76u4ih6&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
         platform: "XR"

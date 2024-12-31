@@ -50,6 +50,16 @@ export default [
         platform: "VESC Electronics"
     },
     {
+        title: "Tronic X12 Bare Board VESC",
+        fabricationMethod: "Other",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/797319/images/6173224_895eacce-1f6e-4e0c-8070-7152a5474745_eb558154-8993-443e-95a2-4460740f327b/thumbs/inside/1280x960/png/x12-buh.webp",
+        externalUrl: "https://www.printables.com/model/797319",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/s8omt65b4teyxn3bblgnn/x12-bareboard-vesc-model_files.zip?rlkey=01gmryhjh2aj3qctfwqyk07zw&st=07w4361c&dl=0",
+        dropboxZipLastUpdated: "2024-12-31",
+        platform: "VESC Electronics"
+    },
+    {
         title: "Markoblaster: Ennoid MK8 Lid Mount (Thor300 mounting pattern layout)",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Bracket", "Adapter"],

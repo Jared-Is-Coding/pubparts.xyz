@@ -118,5 +118,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/irwm517n5vh4zp2q5eflc/Pickles-Hall-Sensor-Board-main.zip?rlkey=q47khahhka5alf9q5qaa7vkcy&st=pux0u1cs&dl=0",
         dropboxZipLastUpdated: "2024-11-26",
         platform: "VESC Electronics"
+    },
+    {
+        title: "6 pin molex replacement housing for Floatboxx",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Plug"],
+        imageSrc: "https://media.printables.com/media/prints/915970/images/6995037_993ee99a-80a0-40e4-8bfa-1d0ccb6aabb8_14084667-d7b0-44ff-a398-4270d15b1c3e/thumbs/inside/1280x960/jpeg/img_6417.webp",
+        externalUrl: "https://www.printables.com/model/915970",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/dk4bva9oa6ci7qj5a3imt/6-pin-molex-replacement-housing-for-floatboxx-model_files.zip?rlkey=xb9d9d21b1jzar2u1qbi9f8ez&st=7lwhuina&dl=0",
+        dropboxZipLastUpdated: "2025-01-01",
+        platform: "VESC Electronics"
     }
 ] as ItemData[]

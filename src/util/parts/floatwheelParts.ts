@@ -247,5 +247,14 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/iv99ohadq2944h7yyjvxe/Lush-Wide-Files-FDM-Focused.zip?rlkey=42h6z269tjyvh4px659cky826&st=ce84ebke&dl=0",
         dropboxZipLastUpdated: "2024-10-28",
         platform: "Floatwheel"
+    },
+    {
+        title: "Floatwheel ADV Pro Rails",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Rails"],
+        imageSrc: "/images/parts/floatwheel/adv-pro-rails.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/hqammk4bny35cwe47ehny/Advpro-rails.zip?rlkey=nwbz670ipecnouehpsz1smbkh&st=ptxqmmou&dl=0",
+        dropboxZipLastUpdated: "2025-01-03",
+        platform: "Floatwheel"
     }
 ] as ItemData[]

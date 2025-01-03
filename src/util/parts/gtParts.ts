@@ -196,5 +196,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/xw9psp6vjv9e2tudd65fs/gt-fender-delete-short-model_files.zip?rlkey=dp9c3k2m0hszgbie7zuw633qe&st=6o8wgdlq&dl=0",
         dropboxZipLastUpdated: "2024-11-12",
         platform: "GT/GT-S"
+    },
+    {
+        title: "PubParts: CannonCore to GT Rail Axle Block",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Axle Block"],
+        imageSrc: "https://media.printables.com/media/prints/1130230/images/8528279_30adef95-b450-4f2c-944c-58e2e49cc4a3_06171f85-5170-44bc-98ca-d9a2ffaf5017/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1130230",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/wusabmfkwzeqplu8fer41/cannoncore-to-gt-rail-axle-block-model_files.zip?rlkey=e0t2frcjrkt7k09ra8avmo802&st=ban5miy0&dl=0",
+        dropboxZipLastUpdated: "2025-01-03",
+        platform: "GT/GT-S"
     }
 ] as ItemData[]

@@ -78,8 +78,8 @@ export default [
         title: "PubParts: CNC PubBox V2 XR Vesc Box Unified Cable Cover",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
-        imageSrc: "https://media.printables.com/media/prints/1095537/images/8287154_47f31a4d-7887-41fd-b7e6-13df9e12c7bc_c54be9b7-745a-4e52-8ed6-ec6689d68ba3/thumbs/inside/1280x960/png/screenshot_1.webp",
-        externalUrl: "https://www.printables.com/model/1095537",
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000963939/design/2025-01-07_910e3805598e.png?x-oss-process=image/resize,w_1920/format,webp",
+        externalUrl: "https://makerworld.com/en/models/963939",
         dropboxUrl: "https://www.dropbox.com/scl/fi/7il3git2fa2uguxmw7ifo/cnc-pubbox-v2-xr-vesc-box-unified-cable-cover-model_files.zip?rlkey=7sfn9c7grxciaqxyqa8p4uu4e&st=zj58dsmi&dl=0",
         dropboxZipLastUpdated: "2024-12-04",
         platform: "XR"

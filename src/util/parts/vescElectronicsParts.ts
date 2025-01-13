@@ -128,5 +128,13 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/dk4bva9oa6ci7qj5a3imt/6-pin-molex-replacement-housing-for-floatboxx-model_files.zip?rlkey=xb9d9d21b1jzar2u1qbi9f8ez&st=7lwhuina&dl=0",
         dropboxZipLastUpdated: "2025-01-01",
         platform: "VESC Electronics"
+    },
+    {
+        title: "Snowmote - Case for Pubmote Project",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Remote"],
+        imageSrc: "https://media.printables.com/media/prints/1143449/images/8628918_0c212240-6401-4eb7-ae18-ec3113435cda_23c52ba5-e42a-4993-bebc-cf92a415ef83/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1143449",
+        platform: "VESC Electronics"
     }
 ] as ItemData[]

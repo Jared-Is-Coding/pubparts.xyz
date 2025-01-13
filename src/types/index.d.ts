@@ -61,6 +61,7 @@ type PartType =
     | "Port Cover"
     | "Rail Attachment"
     | "Rails"
+    | "Remote"
     | "Rim Saver"
     | "Stand"
     | "Tire"

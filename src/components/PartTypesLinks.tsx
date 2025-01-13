@@ -43,6 +43,13 @@ export default () => (
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
+            <Button className="full-width" href="/parts/xrclassic" variant="outline-info">XR Classic</Button>
+        </Col>
+        <Col
+            xs={{span: 6, offset: 0}}
+            md={{span: 4, offset: 0}}
+            lg={{span: 3, offset: 0}}
+            className="flex-center flex-top">
             <Button className="full-width" href="/parts/misc" variant="outline-info">Miscellaneous Items</Button>
         </Col>
         <Col

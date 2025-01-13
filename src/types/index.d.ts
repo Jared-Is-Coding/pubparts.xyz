@@ -80,6 +80,7 @@ type PlatformType =
     | "Pint/X/S"
     | "VESC Electronics"
     | "XR"
+    | "XR Classic"
 
 type ResourceData = {
     /**

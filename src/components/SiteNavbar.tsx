@@ -51,6 +51,7 @@ export default ({isHomepage}: NavbarProps) => {
                             <NavDropdown.Item href="/parts/gt" target="_self">GT/GT-S</NavDropdown.Item>
                             <NavDropdown.Item href="/parts/pint" target="_self">Pint/X/S</NavDropdown.Item>
                             <NavDropdown.Item href="/parts/xr" target="_self">XR/+</NavDropdown.Item>
+                            <NavDropdown.Item href="/parts/xrclassic" target="_self">XR Classic</NavDropdown.Item>
                             <NavDropdown.Item href="/parts/misc" target="_self">Miscellaneous Items</NavDropdown.Item>
                             <NavDropdown.Item href="/parts/electronics" target="_self">VESC Electronics</NavDropdown.Item>
                         </NavDropdown>

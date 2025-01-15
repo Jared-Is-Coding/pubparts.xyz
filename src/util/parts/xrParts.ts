@@ -650,16 +650,6 @@ export default [
         platform: "XR"
     },
     {
-        title: "Simplified Fungineers Style Controller Box",
-        fabricationMethod: "CNC",
-        typeOfPart: ["Controller Box"],
-        imageSrc: "https://media.printables.com/media/prints/1013816/images/7704810_916069a5-e670-4076-9d9e-69bdfe01ea7d_a1da1284-4bc6-44c7-95be-414e0298fc14/thumbs/inside/1280x960/png/1.webp",
-        externalUrl: "https://www.printables.com/model/1013816",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/ek5kyl884gcpbre8wkhe9/my-own-approach-of-fungineers-funwheel-esque-controller-simplified-model_files.zip?rlkey=y6e4gabbxav808n4bv3scb76h&st=ygfz89f9&dl=0",
-        dropboxZipLastUpdated: "2024-10-28",
-        platform: "XR"
-    },
-    {
         title: "Thunder Rails Style W-Rails",
         fabricationMethod: "CNC",
         typeOfPart: ["Rails"],

@@ -673,7 +673,7 @@ export default [
     {
         title: "Defying: ENNOID MK8 Mount for CNC PubBox V2",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Adapter", ],
+        typeOfPart: ["Adapter", "Bracket"],
         imageSrc: "https://media.printables.com/media/prints/1131779/images/8538717_e2b1a1e8-231c-450c-a849-edefa638d471_86eeecf6-4a75-48cd-aa84-b6a6a5f137c0/thumbs/inside/1280x960/png/cleanshot-2025-01-02-at-1610442x.webp",
         externalUrl: "https://www.printables.com/model/1131779",
         dropboxUrl: "https://www.dropbox.com/scl/fi/7viyidfa1orfw6lgd9nlk/ennoid-mk8-to-cnc-pubbox-thor-mounting-pattern-model_files.zip?rlkey=nvwf93d1z0d4y3e2wiq1o4m4s&st=ykskzyex&dl=0",

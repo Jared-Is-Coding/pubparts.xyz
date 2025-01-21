@@ -1,6 +1,6 @@
 export default [
     {
-        title: "PubHubs: SuperFlux to XR Rails",
+        title: "PubWheel: PubHubs SuperFlux to XR Rails",
         fabricationMethod: "CNC",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/586255/images/4964504_0f8fbf2f-b3ef-44ef-8772-385c40e328fb_b19f6052-cc12-4a16-a812-f954cdec0a16/thumbs/inside/1280x960/png/pubhubsfxr.webp",
@@ -11,7 +11,7 @@ export default [
         platform: "XR"
     },
     {
-        title: "PubHubs: Clamping SuperFlux to XR Rails",
+        title: "PubWheel: PubHubs Clamping SuperFlux to XR Rails",
         fabricationMethod: "CNC",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/838327/images/6457046_40be565c-8fbf-4d66-933b-eff05fd599e3_3c44b72d-0718-4923-838f-b0dfc344cd77/thumbs/inside/1280x960/jpg/clamp.webp",
@@ -22,7 +22,7 @@ export default [
         platform: "XR"
     },
     {
-        title: "PubHubs: CannonCore to XR Rails",
+        title: "PubWheel: PubHubs CannonCore to XR Rails",
         fabricationMethod: "CNC",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/586242/images/4677933_4520e176-b44e-47cc-9eb7-18a89bd93207/thumbs/inside/1280x960/png/cc-to-xr-pubhub-no-rail.webp",
@@ -33,7 +33,7 @@ export default [
         platform: "XR"
     },
     {
-        title: "PubHubs: HyperCore to XR Rails",
+        title: "PubWheel: PubHubs HyperCore to XR Rails",
         fabricationMethod: "CNC",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/586260/images/4678089_c757787e-b678-47a4-9594-5ceb82f712a4/thumbs/inside/1280x960/png/pubhub1.webp",
@@ -44,7 +44,7 @@ export default [
         platform: "XR"
     },
     {
-        title: "PubBox: CNC V1 - XR VESC Box, Lid",
+        title: "PubWheel: CNC PubBox V1 - XR VESC Box, Lid",
         fabricationMethod: "CNC",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/586518/images/4972379_3be303b5-bb1c-46fd-826f-b16d964dfd93_e2a8e05b-4f0a-402d-ac37-e718008ccdf5/thumbs/inside/1280x960/png/pubbox1.webp",
@@ -64,7 +64,7 @@ export default [
         platform: "XR"
     },
     {
-        title: "PubBox: CNC V2 - XR VESC Box, Lid",
+        title: "PubWheel: CNC PubBox V2 - XR VESC Box, Lid",
         fabricationMethod: "CNC",
         typeOfPart: ["Controller Box"],
         imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000963939/design/2025-01-07_910e3805598e.png?x-oss-process=image/resize,w_1920/format,webp",
@@ -85,7 +85,7 @@ export default [
         platform: "XR"
     },
     {
-        title: "UBox 85V Mount for PubWheel CNC V2 PubBox",
+        title: "PubParts: UBox 85V Mount for PubWheel CNC V2 PubBox",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Bracket", "Adapter"],
         imageSrc: "https://media.printables.com/media/prints/1025517/images/7792742_6fb7e054-7719-438b-8543-fbadc5d8abb9_e0b99a1c-108e-4fbf-a919-d6fd8386ecb8/thumbs/inside/1280x960/png/screenshot_1.webp",
@@ -668,6 +668,16 @@ export default [
         externalUrl: "https://www.printables.com/model/1080188",
         dropboxUrl: "https://www.dropbox.com/scl/fi/3qzicjiomrq9td3rxa5g7/onewheel-xr-fungineers-x7-rails-model_files.zip?rlkey=u7ov552oko3hta2srwc9dnlix&st=74sgp0pz&dl=0",
         dropboxZipLastUpdated: "2024-11-26",
+        platform: "XR"
+    },
+    {
+        title: "Defying: ENNOID MK8 Mount for CNC PubBox V2",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Adapter", ],
+        imageSrc: "https://media.printables.com/media/prints/1131779/images/8538717_e2b1a1e8-231c-450c-a849-edefa638d471_86eeecf6-4a75-48cd-aa84-b6a6a5f137c0/thumbs/inside/1280x960/png/cleanshot-2025-01-02-at-1610442x.webp",
+        externalUrl: "https://www.printables.com/model/1131779",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/7viyidfa1orfw6lgd9nlk/ennoid-mk8-to-cnc-pubbox-thor-mounting-pattern-model_files.zip?rlkey=nvwf93d1z0d4y3e2wiq1o4m4s&st=ykskzyex&dl=0",
+        dropboxZipLastUpdated: "2025-01-21",
         platform: "XR"
     }
 ] as ItemData[]

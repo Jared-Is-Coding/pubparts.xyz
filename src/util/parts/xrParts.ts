@@ -295,11 +295,11 @@ export default [
     {
         title: "PubParts: WTF Rails to C&R or Stock Fender Adapters",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Fender"],
+        typeOfPart: ["Fender", "Adapter"],
         imageSrc: "https://media.printables.com/media/prints/661560/images/6855093_7f7ef72d-7827-4dfc-b894-e7da30a4b640_9368095b-0bf5-4da7-a257-f42a6ae29c50/thumbs/inside/1280x960/jpg/pic.webp",
         externalUrl: "https://www.printables.com/model/661560",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/kx6r27vtwvkfvb3rb219v/onewheel-xr-the-float-life-wtf-rails-to-cr-or-stock-fender-adapters-model_files.zip?rlkey=tl16ck76o3tvqqukan0gpx0qt&st=3zxecm2t&dl=0",
-        dropboxZipLastUpdated: "2024-08-26",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/83zyoppxrog1fqh36oks9/pubparts-onewheel-xr-the-float-life-wtf-rails-to-cr-or-stock-fender-adapters-model_files.zip?rlkey=quulvaedrg0vea1bp8izqktm0&st=qleytv30&dl=0",
+        dropboxZipLastUpdated: "2025-01-21",
         platform: "XR"
     },
     {

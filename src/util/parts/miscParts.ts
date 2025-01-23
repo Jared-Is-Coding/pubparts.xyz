@@ -238,5 +238,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/u1bv3cx1lvr6ln22gxhl5/Molex-CPA-retainer-clip-4841615.zip?rlkey=b419uh311etqrsagucv8cb2ea&st=m10e5k4b&dl=0",
         dropboxZipLastUpdated: "2024-12-24",
         platform: "Miscellaneous Items"
+    },
+    {
+        title: "3d Printed Gripples",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "https://cdn.thingiverse.com/assets/19/38/7b/6e/13/large_display_IMG_6447.jpg",
+        externalUrl: "https://www.thingiverse.com/thing:6845242",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/9ke8hbjbi2csbxb70bg2u/Onewheel-Pint_XR-Gripples-6845242.zip?rlkey=a3z4w3qdi0nrvuehdk2bpjmkx&st=t86oiyg0&dl=0",
+        dropboxZipLastUpdated: "2025-01-22",
+        platform: "Miscellaneous Items"
     }
 ] as ItemData[]

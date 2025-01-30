@@ -679,5 +679,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/7viyidfa1orfw6lgd9nlk/ennoid-mk8-to-cnc-pubbox-thor-mounting-pattern-model_files.zip?rlkey=nvwf93d1z0d4y3e2wiq1o4m4s&st=ykskzyex&dl=0",
         dropboxZipLastUpdated: "2025-01-21",
         platform: "XR"
+    },
+    {
+        title: "XR Bearing Seals",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bearing Cover"],
+        imageSrc: "https://cdn.thingiverse.com/assets/85/72/53/3d/47/large_display_Valve_side_id35_od47.5mm.png",
+        externalUrl: "https://www.thingiverse.com/thing:5354443",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/a7t5oizc9n9dlwloa2x4v/Onewheel-XR-bearing-seals-5354443.zip?rlkey=3le8axrqpfb9zlpntyozbi03f&st=5mcouo8s&dl=0",
+        dropboxZipLastUpdated: "2025-01-30",
+        platform: "XR"
     }
 ] as ItemData[]

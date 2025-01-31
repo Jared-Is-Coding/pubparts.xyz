@@ -689,5 +689,15 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/a7t5oizc9n9dlwloa2x4v/Onewheel-XR-bearing-seals-5354443.zip?rlkey=3le8axrqpfb9zlpntyozbi03f&st=5mcouo8s&dl=0",
         dropboxZipLastUpdated: "2025-01-30",
         platform: "XR"
+    },
+    {
+        title: "XR WTF Rail Badge",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://cdn.thingiverse.com/assets/0d/3b/f4/22/46/large_display_XR_WTF_Rail_Badge_VESC.png",
+        externalUrl: "https://www.thingiverse.com/thing:6932978",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/dr7zg6z0awfsebwav4jhc/XR-WTF-Rail-Badges-6932978.zip?rlkey=nzek5vp8r1qzvjttvg3m507d0&st=kxhfb84t&dl=0",
+        dropboxZipLastUpdated: "2025-01-31",
+        platform: "XR"
     }
 ] as ItemData[]

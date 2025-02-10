@@ -434,7 +434,7 @@ export default [
         title: "PubParts: OW XR Frame Full Assembly",
         fabricationMethod: "Other",
         typeOfPart: ["Miscellaneous"],
-        imageSrc: "https://media.printables.com/media/prints/991294/images/7550375_fbd5baaa-dc30-456a-af7b-b4a72c990696_9511c85e-c416-47d8-bea2-dd5be571d41e/thumbs/inside/1280x960/png/screenshot_1.webp",
+        imageSrc: "https://media.printables.com/media/prints/991294/images/8921259_77c1d424-af43-441b-aaef-a4f49efcac5f_2d572c82-7a64-4529-aa68-0a12c5eed655/thumbs/inside/1280x960/png/screenshot_2.webp",
         externalUrl: "https://www.printables.com/model/991294",
         platform: "XR"
     },

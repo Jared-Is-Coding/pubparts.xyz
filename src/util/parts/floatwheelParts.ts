@@ -256,5 +256,14 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/hqammk4bny35cwe47ehny/Advpro-rails.zip?rlkey=nwbz670ipecnouehpsz1smbkh&st=ptxqmmou&dl=0",
         dropboxZipLastUpdated: "2025-01-03",
         platform: "Floatwheel"
+    },
+    {
+        title: "Warzon3: Floatwheel Footpad PCB",
+        fabricationMethod: "PCB",
+        typeOfPart: ["Breakout Board"],
+        imageSrc: "/images/parts/floatwheel/floatwheel-footpad-pcb.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/045bfiqematzxlhd0a91f/Floatwheel-Footpad-PCB.zip?rlkey=fj0zekns2qoo3hnhbr91hhd01&st=guk2t5dc&dl=0",
+        dropboxZipLastUpdated: "2025-02-12",
+        platform: "Floatwheel"
     }
 ] as ItemData[]

@@ -205,5 +205,35 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/4bcsgkove29f73d45puip/raiden-7-vesc-zesc-model_files.zip?rlkey=8e9m8ww8hyy4u1sm752c8llms&st=rtam5qel&dl=0",
         dropboxZipLastUpdated: "2025-02-13",
         platform: "VESC Electronics"
+    },
+    {
+        title: "ENNOID MK8 Single VESC Casing + Bare Board",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://lh6.googleusercontent.com/UWBrDb2iDyOWOvs_6bb_QJtkxZQuNOYWr7iqxffC5Iih2twKjHtg0jBfjG9jN7pN6D86lo1Rhy2-3ATEdiWhvRhqAw_FQ0Dtj9M4w-ThP_LxDf5Ia2di4SfxeL-dVcIlSw=w1280",
+        externalUrl: "https://www.ennoid.me/esc/mk8-esc",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/sbdi8ax7p2fchfks4q3ep/VESC-150V-MK8.zip?rlkey=1b48tlwpd36b1eo35w5q3otv2&st=ncqbm1fy&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "ENNOID MK8-PRO Single VESC Casing + Bare Board",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://lh3.googleusercontent.com/8dMmmRi5HV48GoEpoQGybHFlnJNXZ9RtT-fUeviBEuJprMJMzPpEROlH2C4sZRY_h1jJZn8Uhj0jLuddU_gnSm3QkN_Lv0FsGh52CudqIZHszS1vQwpZoHbDDoKYuZs=w1280",
+        externalUrl: "https://www.ennoid.me/esc/mk8-pro-esc",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/xzw923ck7rfrxs26yipo9/VESC_MK8-PRO.zip?rlkey=9rtoor49ax3bqpgiv2mimsu7c&st=87wsa9fx&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "ENNOID XLITE-V4 (12, 24, 32) Bare Board VESC",
+        fabricationMethod: "Other",
+        typeOfPart: ["BMS"],
+        imageSrc: "https://lh3.googleusercontent.com/MExnppQnnoSQ1bHn5V8RAfMfHgtJ1uH-GED2_GkTYN78quM7Nb3CrAE9ad4hyZJDfbfqZaBKfU8_pW_XcvSgzBA=w16383",
+        externalUrl: "https://www.ennoid.me/bms/xlite-v4",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/tfkwa5dircs1alwd4za5x/xlite-v4_12_24_32.zip?rlkey=488g76erk7sr0h5idy40osv6u&st=st1kfk7j&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
+        platform: "VESC Electronics"
     }
 ] as ItemData[]

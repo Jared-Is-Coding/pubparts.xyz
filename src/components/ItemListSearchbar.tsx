@@ -198,7 +198,7 @@ export default ({partList}: ItemListSearchbarProps) => {
                                         type="checkbox"
                                         value={1}
                                         variant="outline-info">
-                                        {toTitleCase(t)}
+                                        {t}
                                     </ToggleButton>
                                 ))}
                             </ButtonGroup>

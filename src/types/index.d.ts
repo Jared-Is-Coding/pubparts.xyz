@@ -43,6 +43,7 @@ type PartType =
     | "Battery Assembly"
     | "Battery Box"
     | "Bearing Cover"
+    | "BMS"
     | "Bracket"
     | "Breakout Board"
     | "Bumper"

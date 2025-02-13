@@ -23,7 +23,7 @@ export default [
         title: "Fungineers: Thor300 ESC Slim Cover",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],
-        imageSrc: "/images/parts/ekle/thor300_slim_cover.png",
+        imageSrc: "/images/parts/electronics/thor300_slim_cover.png",
         dropboxUrl: "https://www.dropbox.com/scl/fi/qhumkeri495gxnel7lhuk/Thor300-Slim-Cover.zip?rlkey=1wgl6m50k0okrfhydoqclhpc7&st=a8ayrfmw&dl=0",
         dropboxZipLastUpdated: "2025-02-13",
         platform: "VESC Electronics"

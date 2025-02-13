@@ -10,13 +10,22 @@ export default [
         platform: "VESC Electronics"
     },
     {
-        title: "Ranth: Thor300 ESC Cover",
+        title: "Ranth: Thor300 ESC Full Cover",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/794974/images/6159196_019cadab-6f6b-42da-82ba-7853718095bc_3cec1a6d-799d-4bac-8cce-edef843592d5/thumbs/inside/1280x960/png/screenshot-2024-03-06-at-15714-pm.webp",
         externalUrl: "https://www.printables.com/model/794974",
         dropboxUrl: "https://www.dropbox.com/scl/fi/veuu2haaruy6omtnr8idm/thor-300-esc-cover-model_files.zip?rlkey=o2wtgb4r6nnsljmwuv30xuzsd&st=usxngo2m&dl=0",
         dropboxZipLastUpdated: "2024-09-20",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "Fungineers: Thor300 ESC Slim Cover",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "/images/parts/ekle/thor300_slim_cover.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/qhumkeri495gxnel7lhuk/Thor300-Slim-Cover.zip?rlkey=1wgl6m50k0okrfhydoqclhpc7&st=a8ayrfmw&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
         platform: "VESC Electronics"
     },
     {

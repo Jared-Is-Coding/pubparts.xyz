@@ -11,7 +11,7 @@ export default [
         platform: "XR"
     },
     {
-        title: "PubWheel: PubHubs Clamping SuperFlux to XR Rails",
+        title: "PubWheel: PubHubs Clamping SuperFlux/HyperCore to XR Rails",
         fabricationMethod: "CNC",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/838327/images/6457046_40be565c-8fbf-4d66-933b-eff05fd599e3_3c44b72d-0718-4923-838f-b0dfc344cd77/thumbs/inside/1280x960/jpg/clamp.webp",
@@ -19,6 +19,17 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/zso2uj240vctz1dzijwlz/pubhubs-sf-xr-clampys-model_files.zip?rlkey=8z0z5hiyruikabtryxgr1c9r3&st=j8xo3dqp&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
         price: "~$145/pair from JLCPCB",
+        platform: "XR"
+    },
+    {
+        title: "PubParts: Finned Clamping SuperFlux/HyperCore to XR Rails",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Axle Block"],
+        imageSrc: "https://media.printables.com/media/prints/1120000/images/8457376_dacfb099-31e0-4f89-a001-7135de39d34e_6cbdc152-b19f-4c59-ba95-79ad92ac2123/thumbs/inside/1280x960/png/screenshot_3.webp",
+        externalUrl: "https://www.printables.com/model/1120000",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/pcjvping08d6sa7we3hbd/superfluxhypercore-to-xr-rails-clamping-axle-blocks-model_files.zip?rlkey=8ogo0lh2vyvamq5t74nry8ytc&st=6ex0jrpi&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
+        price: "~$155/pair from JLCPCB",
         platform: "XR"
     },
     {

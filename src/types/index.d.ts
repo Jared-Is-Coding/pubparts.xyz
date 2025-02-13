@@ -48,6 +48,7 @@ type PartType =
     | "Bumper"
     | "Connector Cover"
     | "Controller Box"
+    | "Controller"
     | "Fender"
     | "Fender Delete"
     | "Footpad"

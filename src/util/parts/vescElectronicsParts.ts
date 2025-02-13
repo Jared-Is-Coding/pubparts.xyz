@@ -49,26 +49,6 @@ export default [
         platform: "VESC Electronics"
     },
     {
-        title: "PubParts: Ubox 85v 150a Single VESC Casing",
-        fabricationMethod: "Other",
-        typeOfPart: ["Miscellaneous"],
-        imageSrc: "https://media.printables.com/media/prints/1035890/images/7858012_f998e7d5-eb5c-4ae5-a94b-ff4407e1d5a9_3b869212-64d8-40ff-8327-9b3d2656dbab/thumbs/inside/1280x960/png/screenshot_1.webp",
-        externalUrl: "https://www.printables.com/model/1035890",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/c0whtbvxug3by5b17djm7/ubox-85v-150a-single-vesc-casing-model_files.zip?rlkey=jof8jgrv304qabhul246j0tki&st=vk3s79pn&dl=0",
-        dropboxZipLastUpdated: "2024-10-10",
-        platform: "VESC Electronics"
-    },
-    {
-        title: "Tronic X12 Bare Board VESC",
-        fabricationMethod: "Other",
-        typeOfPart: ["Miscellaneous"],
-        imageSrc: "https://media.printables.com/media/prints/797319/images/6173224_895eacce-1f6e-4e0c-8070-7152a5474745_eb558154-8993-443e-95a2-4460740f327b/thumbs/inside/1280x960/png/x12-buh.webp",
-        externalUrl: "https://www.printables.com/model/797319",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/s8omt65b4teyxn3bblgnn/x12-bareboard-vesc-model_files.zip?rlkey=01gmryhjh2aj3qctfwqyk07zw&st=07w4361c&dl=0",
-        dropboxZipLastUpdated: "2024-12-31",
-        platform: "VESC Electronics"
-    },
-    {
         title: "Markoblaster: Ennoid MK8 Lid Mount (Thor300 mounting pattern layout)",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Bracket", "Adapter"],
@@ -79,7 +59,7 @@ export default [
         platform: "VESC Electronics"
     },
     {
-        title: "Markoblaster: Ubox100 Lite Lid Mount (Focer mounting pattern layout)",
+        title: "Markoblaster: Ubox100 Lite Lid Mount (Foccer mounting pattern layout)",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Bracket", "Adapter"],
         imageSrc: "https://media.printables.com/media/prints/1040034/images/7886942_e32a5f87-a581-4b00-b99d-40fc208caddb_0d3b343b-0c09-420b-95de-0a2f81870e71/thumbs/inside/1280x960/jpg/img_2357.webp",
@@ -144,6 +124,86 @@ export default [
         typeOfPart: ["Remote"],
         imageSrc: "https://media.printables.com/media/prints/1143449/images/8628918_0c212240-6401-4eb7-ae18-ec3113435cda_23c52ba5-e42a-4993-bebc-cf92a415ef83/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1143449",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "Fungineers Thor400 Bare Board VESC",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://media.printables.com/media/prints/1171883/images/8823972_632b5bab-1049-41e3-9088-692d1d42a5de_e528b99f-b566-41ac-9fef-ae145baa5cdf/thumbs/inside/1280x960/png/sqnkfje1.webp",
+        externalUrl: "https://www.printables.com/model/1171883",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ndkbvyyda56eozh2lpgvw/thor-400-fungineers-vesc-model_files.zip?rlkey=zs28db085d3xhoc5v95qgjtgj&st=80phjwiq&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "Fungineers Thor300 Bare Board VESC",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://media.printables.com/media/prints/669389/images/5265251_c90b48ba-502f-497b-aee6-f9a3ebfc6bc2_bacc4a62-2990-4e3c-b569-cc02a3f8243f/thumbs/inside/1280x960/png/thor-300.webp",
+        externalUrl: "https://www.printables.com/model/669389",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/tcna3ezx8i9kahfy6q6wt/thor-300-fungineer-vesc-model_files.zip?rlkey=3jniqmcdjx2e8bgtfp2n527lh&st=1th1t6qn&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "Tronic X12 Bare Board VESC",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://media.printables.com/media/prints/797319/images/6173224_895eacce-1f6e-4e0c-8070-7152a5474745_eb558154-8993-443e-95a2-4460740f327b/thumbs/inside/1280x960/png/x12-buh.webp",
+        externalUrl: "https://www.printables.com/model/797319",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/s8omt65b4teyxn3bblgnn/x12-bareboard-vesc-model_files.zip?rlkey=01gmryhjh2aj3qctfwqyk07zw&st=07w4361c&dl=0",
+        dropboxZipLastUpdated: "2024-12-31",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "Tronic 250r Bare Board VESC",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://media.printables.com/media/prints/676550/images/5318141_59f8aaea-e8e2-4942-80a7-1c32e96db99c_dfef8170-cf42-49bf-bf30-7bbea3021687/thumbs/inside/1280x960/png/tronic-250r-board-v1.webp",
+        externalUrl: "https://www.printables.com/model/676550",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/t9ki8m4wc0z1uknn3b3uu/tronic-250r-vesc-model-model_files.zip?rlkey=f905dh81kl3xn4af1aih8kmq9&st=3apo3zho&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "LFoc Little Foccer Bare Board VESC",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://media.printables.com/media/prints/669395/images/5265264_526a801b-5f4f-44b1-9027-4482f2a68c56_d719d252-3047-4587-abce-09ab83d9330b/thumbs/inside/1280x960/png/lfoc.webp",
+        externalUrl: "https://www.printables.com/model/669395",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/iam4i4kbv5o09g9tg0fy4/lfoc-little-foccer-vesc-model-model_files.zip?rlkey=3x94zyfgj8bmdv461jdzn77p5&st=gjlcq5i6&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "PubParts: Ubox 85V 150A Single VESC Casing",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://media.printables.com/media/prints/1035890/images/7858012_f998e7d5-eb5c-4ae5-a94b-ff4407e1d5a9_3b869212-64d8-40ff-8327-9b3d2656dbab/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1035890",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/c0whtbvxug3by5b17djm7/ubox-85v-150a-single-vesc-casing-model_files.zip?rlkey=jof8jgrv304qabhul246j0tki&st=vk3s79pn&dl=0",
+        dropboxZipLastUpdated: "2024-10-10",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "Ubox 100V 100A Single VESC Casing",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://media.printables.com/media/prints/586887/images/4682657_c26216a1-1562-4ff4-b343-956232634644/thumbs/inside/1280x960/jpg/ubox100v-vesc.webp",
+        externalUrl: "https://www.printables.com/model/586887",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/6e743ua1nv1q0okqxrmoj/ubox-100v-vesc-model-model_files.zip?rlkey=1b4bq7ymzroqtrg1t9i99cwpv&st=rao26f4v&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "Raiden 7 Single VESC Casing",
+        fabricationMethod: "Other",
+        typeOfPart: ["Controller"],
+        imageSrc: "https://media.printables.com/media/prints/669392/images/5265257_eb4cff70-9674-42c6-b4d1-d32549486228_a1aa9166-4aaf-41ca-8291-3a5888d0a30c/thumbs/inside/1280x960/png/raiden-7.webp",
+        externalUrl: "https://www.printables.com/model/669392",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/4bcsgkove29f73d45puip/raiden-7-vesc-zesc-model_files.zip?rlkey=8e9m8ww8hyy4u1sm752c8llms&st=rtam5qel&dl=0",
+        dropboxZipLastUpdated: "2025-02-13",
         platform: "VESC Electronics"
     }
 ] as ItemData[]

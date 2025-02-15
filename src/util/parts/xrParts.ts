@@ -17,7 +17,7 @@ export default [
         imageSrc: "https://media.printables.com/media/prints/838327/images/6457046_40be565c-8fbf-4d66-933b-eff05fd599e3_3c44b72d-0718-4923-838f-b0dfc344cd77/thumbs/inside/1280x960/jpg/clamp.webp",
         externalUrl: "https://www.printables.com/model/838327",
         dropboxUrl: "https://www.dropbox.com/scl/fi/zso2uj240vctz1dzijwlz/pubhubs-sf-xr-clampys-model_files.zip?rlkey=8z0z5hiyruikabtryxgr1c9r3&st=j8xo3dqp&dl=0",
-        dropboxZipLastUpdated: "2024-08-26",
+        dropboxZipLastUpdated: "2025-02-15",
         price: "~$145/pair from JLCPCB",
         platform: "XR"
     },

@@ -50,7 +50,7 @@ export default [
         imageSrc: "https://media.printables.com/media/prints/586260/images/4678089_c757787e-b678-47a4-9594-5ceb82f712a4/thumbs/inside/1280x960/png/pubhub1.webp",
         externalUrl: "https://www.printables.com/model/586260",
         dropboxUrl: "https://www.dropbox.com/scl/fi/0trq50xxra5p6r8l5snls/pubhubs-modded-xr-blocks-model_files.zip?rlkey=az7mzdpuz5o4vw2lnvl4oc6fh&st=3fx5qjnw&dl=0",
-        dropboxZipLastUpdated: "2024-08-26",
+        dropboxZipLastUpdated: "2025-02-15",
         price: "~$80/pair from JLCPCB",
         platform: "XR"
     },

@@ -210,7 +210,7 @@ export default [
         title: "ENNOID MK8 Single VESC Casing + Bare Board",
         fabricationMethod: "Other",
         typeOfPart: ["Controller"],
-        imageSrc: "https://lh5.googleusercontent.com/KaT8wExdYFvmJ-fJQqRC8CVEVlKMCEVaaDy2QqC3d-IYBwylonHch_NHeENS4FtAFdZzMG2qRARfkMWm7mNPioPcwAYe3o-g9xd_MYuAkAjLsShOvfqobOTDEymZRcMhEQ=w1280",
+        imageSrc: "/images/parts/electronics/mk8.png",
         externalUrl: "https://www.ennoid.me/esc/mk8-esc",
         dropboxUrl: "https://www.dropbox.com/scl/fi/sbdi8ax7p2fchfks4q3ep/VESC-150V-MK8.zip?rlkey=1b48tlwpd36b1eo35w5q3otv2&st=ncqbm1fy&dl=0",
         dropboxZipLastUpdated: "2025-02-13",
@@ -220,7 +220,7 @@ export default [
         title: "ENNOID MK8-PRO Single VESC Casing + Bare Board",
         fabricationMethod: "Other",
         typeOfPart: ["Controller"],
-        imageSrc: "https://lh3.googleusercontent.com/SjNngx73Of_tji6i6mXjWlMu7Wtr9EQqRWLr4oOd8FThOM7CtIpTpj6w0pSKIjbCvmKytu6I8w75SBT27FZ_ATsKlkOpeVjpR-mvJM7_Xv78hSu-8Do71EEb35djJS0=w1280",
+        imageSrc: "/images/parts/electronics/mk8-pro.jpg",
         externalUrl: "https://www.ennoid.me/esc/mk8-pro-esc",
         dropboxUrl: "https://www.dropbox.com/scl/fi/xzw923ck7rfrxs26yipo9/VESC_MK8-PRO.zip?rlkey=9rtoor49ax3bqpgiv2mimsu7c&st=87wsa9fx&dl=0",
         dropboxZipLastUpdated: "2025-02-13",
@@ -230,10 +230,30 @@ export default [
         title: "ENNOID XLITE-V4 (12, 24, 32) Bare Board VESC",
         fabricationMethod: "Other",
         typeOfPart: ["BMS"],
-        imageSrc: "https://lh3.googleusercontent.com/MExnppQnnoSQ1bHn5V8RAfMfHgtJ1uH-GED2_GkTYN78quM7Nb3CrAE9ad4hyZJDfbfqZaBKfU8_pW_XcvSgzBA=w16383",
+        imageSrc: "/images/parts/electronics/xlite-v4.jpg",
         externalUrl: "https://www.ennoid.me/bms/xlite-v4",
         dropboxUrl: "https://www.dropbox.com/scl/fi/tfkwa5dircs1alwd4za5x/xlite-v4_12_24_32.zip?rlkey=488g76erk7sr0h5idy40osv6u&st=st1kfk7j&dl=0",
         dropboxZipLastUpdated: "2025-02-13",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "ENNOID XLITE Master Bare Board VESC",
+        fabricationMethod: "Other",
+        typeOfPart: ["BMS"],
+        imageSrc: "/images/parts/electronics/master-xlite.jpg",
+        externalUrl: "https://www.ennoid.me/bms/master-xlite",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/qzl6h20kaxu35r2qwg1ra/master-xlite.zip?rlkey=migha038cjh2qecfckx9zw1us&st=17bw7f6b&dl=0",
+        dropboxZipLastUpdated: "2025-02-17",
+        platform: "VESC Electronics"
+    },
+    {
+        title: "ENNOID XLITE Slave Bare Board VESC",
+        fabricationMethod: "Other",
+        typeOfPart: ["BMS"],
+        imageSrc: "/images/parts/electronics/slave-xlite.png",
+        externalUrl: "https://www.ennoid.me/bms/master-xlite",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/yfu6b7ceq2t9b4gqvuddh/slave-xlite.zip?rlkey=4qxj2u2q4vy04hhrxxsue48dz&st=2vydpqc9&dl=0",
+        dropboxZipLastUpdated: "2025-02-17",
         platform: "VESC Electronics"
     }
 ] as ItemData[]

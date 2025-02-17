@@ -184,26 +184,6 @@ export default [
         platform: "XR"
     },
     {
-        title: "VOW Systems: DIY Mushies Footpad",
-        fabricationMethod: "3d Printed",
-        typeOfPart: ["Footpad"],
-        imageSrc: "https://media.printables.com/media/prints/967377/images/7383151_42dd71a7-35fe-45a3-a832-7998116b5ae7_4dad2734-5063-4db7-8ce8-5cccc360069b/thumbs/inside/1280x960/png/screenshot-2024-08-07-at-212054.webp",
-        externalUrl: "https://www.printables.com/model/967377",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/sckm2nxwfyuwos3bv87xj/mushies-footpads-for-onewheel-xr-vow-systems-model_files.zip?rlkey=1abe8ubjepps1deeqtvsyklkw&st=9xhxv6jg&dl=0",
-        dropboxZipLastUpdated: "2024-08-26",
-        platform: "XR"
-    },
-    {
-        title: "VOW Systems: Extended Battery Box, Lid",
-        fabricationMethod: "3d Printed",
-        typeOfPart: ["Battery Box"],
-        imageSrc: "https://media.printables.com/media/prints/967352/images/7383039_4c6f3c2a-7702-4e44-9990-17a23e322e90_7d2edc3f-44de-4113-bec1-5e1cfb223ec3/thumbs/inside/1280x960/png/screenshot-2024-08-07-at-211107.webp",
-        externalUrl: "https://www.printables.com/model/967352",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/ohenjydrzcprammjjrl1y/extended-battery-box-onewheel-xr-vow-systems-model_files.zip?rlkey=qi6685dmf86vzf3fylsidmrbp&st=0evo63an&dl=0",
-        dropboxZipLastUpdated: "2024-08-26",
-        platform: "XR"
-    },
-    {
         title: "Stock XR/+ Fender",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Fender"],
@@ -709,6 +689,15 @@ export default [
         externalUrl: "https://www.thingiverse.com/thing:6932978",
         dropboxUrl: "https://www.dropbox.com/scl/fi/dr7zg6z0awfsebwav4jhc/XR-WTF-Rail-Badges-6932978.zip?rlkey=nzek5vp8r1qzvjttvg3m507d0&st=kxhfb84t&dl=0",
         dropboxZipLastUpdated: "2025-01-31",
+        platform: "XR"
+    },
+    {
+        title: "VOW Systems: XR Parts V1-V3",
+        fabricationMethod: "Other",
+        typeOfPart: ["Battery Box", "Controller Box", "Footpad", "Footpad Attachment"],
+        imageSrc: "https://vow.systems/cdn/shop/files/IMG_0395.jpg",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/9tcs1z6yyruisd942rn8j/VOW-XR-Parts.zip?rlkey=9mc0yo7jduos33z2sl1z6gex6&st=ntc0iy6f&dl=0",
+        dropboxZipLastUpdated: "2025-02-17",
         platform: "XR"
     }
 ] as ItemData[]

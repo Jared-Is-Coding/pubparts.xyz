@@ -206,5 +206,24 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/wusabmfkwzeqplu8fer41/cannoncore-to-gt-rail-axle-block-model_files.zip?rlkey=e0t2frcjrkt7k09ra8avmo802&st=ban5miy0&dl=0",
         dropboxZipLastUpdated: "2025-01-03",
         platform: "GT/GT-S"
+    },
+    {
+        title: "PubParts: Thor300 to GT Mount Plate",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Adapter", "Bracket"],
+        imageSrc: "https://media.printables.com/media/prints/1158551/images/8746746_af75137f-a303-4b41-b0ed-5690cc52a658_d4d32c86-9254-4d4f-a686-094f3781c189/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1158551",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/zc9fro9x21musf6fqtv6y/thor300-to-gt-mount-plate-model_files.zip?rlkey=k7yweorzbq0u1nqm85f7n4dmt&st=0x9lhsmk&dl=0",
+        dropboxZipLastUpdated: "2025-02-17",
+        platform: "GT/GT-S"
+    },
+    {
+        title: "VOW Systems: GT Parts V1-V3",
+        fabricationMethod: "Other",
+        typeOfPart: ["Battery Box", "Controller Box", "Footpad", "Footpad Attachment"],
+        imageSrc: "https://vow.systems/cdn/shop/files/IMG_20240109_080512046.jpg",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/smst2iie0xfn2cn39doz9/VOW-GT-Parts.zip?rlkey=60nthflxi6o522ys5nrjgwkof&st=aeoqd851&dl=0",
+        dropboxZipLastUpdated: "2025-02-17",
+        platform: "GT/GT-S"
     }
 ] as ItemData[]

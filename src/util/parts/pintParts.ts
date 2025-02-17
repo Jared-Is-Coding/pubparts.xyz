@@ -265,5 +265,14 @@ export default [
         dropboxUrl: "https://www.dropbox.com/scl/fi/lfb4bid7kdt9c7t4xvgcu/pintx-battery-box-model_files.zip?rlkey=q2dtzoxei2t3ecaegh63az63s&st=zkw26yg0&dl=0",
         dropboxZipLastUpdated: "2024-11-08",
         platform: "Pint/X/S"
+    },
+    {
+        title: "VOW Systems: Pint Parts",
+        fabricationMethod: "Other",
+        typeOfPart: ["Battery Box"],
+        imageSrc: "/images/parts/pint/vow_pint_parts.jpg",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ghpnwfugdpknh2r7lzrva/VOW-Pint-Parts.zip?rlkey=i14qcfbadpgp5w25uc3swok0f&st=5gmp61q3&dl=0",
+        dropboxZipLastUpdated: "2025-02-17",
+        platform: "Pint/X/S"
     }
 ] as ItemData[]

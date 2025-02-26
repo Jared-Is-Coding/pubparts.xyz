@@ -30,6 +30,7 @@ export default ({isHomepage}: NavbarProps) => {
                         height={55}
                         className={(isHomepage ? "d-inline-block" : "d-xs-inline-block d-md-none") + " align-top"}
                         alt="PubParts.xyz logo"/>
+
                     <span className={(isHomepage ? "d-none" : "d-none d-md-inline-block")}>
                         PubParts.xyz
                     </span>

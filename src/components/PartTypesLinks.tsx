@@ -15,49 +15,49 @@ export default () => (
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/floatwheel" variant="outline-info">Floatwheel</Button>
+            <Button className="full-width text-truncate" href="/parts/floatwheel" variant="outline-info">Floatwheel</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/gt" variant="outline-info">GT/GT-S</Button>
+            <Button className="full-width text-truncate" href="/parts/gt" variant="outline-info">GT/GT-S</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/pint" variant="outline-info">Pint/X/S</Button>
+            <Button className="full-width text-truncate" href="/parts/pint" variant="outline-info">Pint/X/S</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/xr" variant="outline-info">XR/+</Button>
+            <Button className="full-width text-truncate" href="/parts/xr" variant="outline-info">XR/+</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/xrclassic" variant="outline-info">XR Classic</Button>
+            <Button className="full-width text-truncate" href="/parts/xrclassic" variant="outline-info">XR Classic</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/misc" variant="outline-info">Miscellaneous Items</Button>
+            <Button className="full-width text-truncate" href="/parts/misc" variant="outline-info">Miscellaneous Items</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/parts/electronics" variant="outline-info">VESC Electronics</Button>
+            <Button className="full-width text-truncate" href="/parts/electronics" variant="outline-info">VESC Electronics</Button>
         </Col>
     </Row>
 )

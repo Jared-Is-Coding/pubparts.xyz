@@ -15,49 +15,49 @@ export default () => (
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/applications" variant="outline-info">Applications</Button>
+            <Button className="full-width text-truncate" href="/resources/applications" variant="outline-info">Applications</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/repositories" variant="outline-info">Code Repositories</Button>
+            <Button className="full-width text-truncate" href="/resources/repositories" variant="outline-info">Code Repositories</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/spreadsheets" variant="outline-info">Spreadsheets</Button>
+            <Button className="full-width text-truncate" href="/resources/spreadsheets" variant="outline-info">Spreadsheets</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/vendors" variant="outline-info">Vendors</Button>
+            <Button className="full-width text-truncate" href="/resources/vendors" variant="outline-info">Vendors</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/videoguides" variant="outline-info">Video Guides</Button>
+            <Button className="full-width text-truncate" href="/resources/videoguides" variant="outline-info">Video Guides</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/websites" variant="outline-info">Websites</Button>
+            <Button className="full-width text-truncate" href="/resources/websites" variant="outline-info">Websites</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/writtenguides" variant="outline-info">Written Guides</Button>
+            <Button className="full-width text-truncate" href="/resources/writtenguides" variant="outline-info">Written Guides</Button>
         </Col>
     </Row>
 )

@@ -59,10 +59,11 @@ export default ({isHomepage}: NavbarProps) => {
                         <NavDropdown title="Resources" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-resources-dropdown">
                             <NavDropdown.Item href="/resources/applications" target="_self">Applications</NavDropdown.Item>
                             <NavDropdown.Item href="/resources/repositories" target="_self">Code Repositories</NavDropdown.Item>
-                            <NavDropdown.Item href="/resources/guides" target="_self">Guides</NavDropdown.Item>
                             <NavDropdown.Item href="/resources/spreadsheets" target="_self">Spreadsheets</NavDropdown.Item>
-                            <NavDropdown.Item href="/resources/websites" target="_self">Websites</NavDropdown.Item>
                             <NavDropdown.Item href="/resources/vendors" target="_self">Vendors</NavDropdown.Item>
+                            <NavDropdown.Item href="/resources/videoguides" target="_self">Video Guides</NavDropdown.Item>
+                            <NavDropdown.Item href="/resources/websites" target="_self">Websites</NavDropdown.Item>
+                            <NavDropdown.Item href="/resources/writtenguides" target="_self">Written Guides</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Submit Changes" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-contribute-dropdown">
                             <NavDropdown.Item href={DiscordInvite} target="_blank">1. Join Vescify Discord</NavDropdown.Item>

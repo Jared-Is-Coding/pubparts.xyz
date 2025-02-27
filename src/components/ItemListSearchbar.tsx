@@ -2,7 +2,6 @@ import React, { ChangeEvent, useEffect, useRef, useState } from "react"
 import { Button, ButtonGroup, Form, Stack, ToggleButton } from "react-bootstrap"
 import { FaArrowRotateLeft } from "react-icons/fa6"
 import windowIsDefined from "../hooks/windowIsDefined"
-import toTitleCase from "../hooks/toTitleCase"
 import CopyLinkButton from "./CopyLinkButton"
 
 type ItemListSearchbarProps = {

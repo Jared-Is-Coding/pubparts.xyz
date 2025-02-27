@@ -115,8 +115,8 @@ type ResourceData = {
 type ResourceType =
     | "App"
     | "Github Repository"
-    | "Guide: Written"
-    | "Guide: Video"
+    | "Written Guide"
+    | "Video Guide"
     | "Spreadsheet"
     | "Vendor"
     | "Website"

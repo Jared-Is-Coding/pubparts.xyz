@@ -7,7 +7,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/resources.scss"
-import { guidesResources } from "../../util/allResources"
+import { videoGuidesResources } from "../../util/allResources"
 
 export const Head: HeadFC = () => (
     <>
@@ -32,7 +32,7 @@ const Page: React.FC<PageProps> = () => {
             <main className="page-resources">
                 <Container>
                     {/* Search area */}
-                    <ResourceListSearchbar resourceList={guidesResources} />
+                    <ResourceListSearchbar resourceList={videoGuidesResources} />
 
                     {/* Search results headers */}
                     <h2 id="resourceListHeader" style={{display: "block"}}>Resources</h2>
@@ -40,8 +40,8 @@ const Page: React.FC<PageProps> = () => {
 
                     <Row>
                         {/* List resources */}
-                        {!!guidesResources.length &&
-                            guidesResources.map(ResourceCard)
+                        {!!videoGuidesResources.length &&
+                            videoGuidesResources.map(ResourceCard)
                         }
                     </Row>
                 </Container>

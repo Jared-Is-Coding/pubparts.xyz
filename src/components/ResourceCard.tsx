@@ -28,9 +28,11 @@ export default (resource: ResourceData, index: number) => {
                 <Card className={`resource-${resource.typeOfResource}`}>
                     <Card.Body>
                         {/* Resource type badges */}
-                        {resource.typeOfResource?.length &&
+                        {resource.typeOfResource.length > 0 &&
                             <Stack className="display-over-top-right" direction="vertical" gap={1}>
-                                <Badge key={`resource-card-${index}-pill`} pill bg="dark">{toTitleCase(resource.typeOfResource)}</Badge>
+                                {resource.typeOfResource.map((r, pillIndex) => (
+                                    <Badge key={`resource-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(r)}</Badge>
+                                ))}
                             </Stack>
                         }
 

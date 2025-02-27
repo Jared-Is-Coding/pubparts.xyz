@@ -29,14 +29,21 @@ export default () => (
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/guides" variant="outline-info">Guides</Button>
+            <Button className="full-width" href="/resources/spreadsheets" variant="outline-info">Spreadsheets</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/spreadsheets" variant="outline-info">Spreadsheets</Button>
+            <Button className="full-width" href="/resources/vendors" variant="outline-info">Vendors</Button>
+        </Col>
+        <Col
+            xs={{span: 6, offset: 0}}
+            md={{span: 4, offset: 0}}
+            lg={{span: 3, offset: 0}}
+            className="flex-center flex-top">
+            <Button className="full-width" href="/resources/videoguides" variant="outline-info">Video Guides</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}
@@ -50,7 +57,7 @@ export default () => (
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width" href="/resources/vendors" variant="outline-info">Vendors</Button>
+            <Button className="full-width" href="/resources/writtenguides" variant="outline-info">Written Guides</Button>
         </Col>
     </Row>
 )

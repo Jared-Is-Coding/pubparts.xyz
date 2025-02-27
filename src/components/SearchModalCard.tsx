@@ -23,11 +23,11 @@ export default (item: ItemData | ResourceData, index: number) => {
         if ((item as ItemData).platform?.includes("XR")) url = "/parts/xr"
         if ((item as ResourceData).typeOfResource?.includes("App")) url = "/resources/applications"
         if ((item as ResourceData).typeOfResource?.includes("Github Repository")) url = "/resources/repositories"
-        if ((item as ResourceData).typeOfResource?.includes("Guide: Written")) url = "/resources/guides"
-        if ((item as ResourceData).typeOfResource?.includes("Guide: Video")) url = "/resources/guides"
         if ((item as ResourceData).typeOfResource?.includes("Spreadsheet")) url = "/resources/spreadsheets"
         if ((item as ResourceData).typeOfResource?.includes("Vendor")) url = "/resources/vendors"
+        if ((item as ResourceData).typeOfResource?.includes("Video Guide")) url = "/resources/videoguides"
         if ((item as ResourceData).typeOfResource?.includes("Website")) url = "/resources/websites"
+        if ((item as ResourceData).typeOfResource?.includes("Written Guide")) url = "/resources/writtenguides"
 
         return url + `?search=${encodeURI(item.title)}`
     }

@@ -45,55 +45,55 @@ const allResources = [
     },
     {
         title: "Motor Crunch Troubleshooting Guide",
-        typeOfResource: ["Guide: Written"],
+        typeOfResource: ["Written Guide"],
         externalUrl: "https://pev.dev/t/motor-crunch-troubleshooting/228",
         description: "Does your motor make crunchy/cogging sounds when braking hard or accelerating?"
     },
     {
         title: "Surfdado VESC Setup Guide",
-        typeOfResource: ["Guide: Video"],
+        typeOfResource: ["Video Guide"],
         externalUrl: "https://youtu.be/xaKGDummXeE",
         description: "VESC Onewheel Setup A-Z for 6.2 firmware (latest)"
     },
     {
         title: "TheBoardGarage VESC Setup Guide",
-        typeOfResource: ["Guide: Video"],
+        typeOfResource: ["Video Guide"],
         externalUrl: "https://www.youtube.com/watch?v=YeFLmPA049o",
         description: "VESC Onewheel Setup for 6.2 firmware"
     },
     {
         title: "HyperCore Stock to Fungineers Motor Connector Replacement Guide",
-        typeOfResource: ["Guide: Written"],
+        typeOfResource: ["Written Guide"],
         externalUrl: "https://pev.dev/t/1960",
         description: "This guide will help you install a Fungineers motor cable in your HyperCore motor."
     },
     {
         title: "TheBoardGarage Articles",
-        typeOfResource: ["Guide: Written"],
+        typeOfResource: ["Written Guide"],
         externalUrl: "https://theboardgarage.com/articles",
         description: "Collection of battery related guides and articles"
     },
     {
         title: "How to Create CSV Logs",
-        typeOfResource: ["Guide: Written"],
+        typeOfResource: ["Written Guide"],
         externalUrl: "https://pev.dev/t/how-to-create-csv-logs/436",
         description: "A guide to create CSV logs in VESC Tool App"
     },
     {
         title: "VESC Logs Tutorial",
-        typeOfResource: ["Guide: Written"],
+        typeOfResource: ["Written Guide"],
         externalUrl: "https://docs.google.com/document/d/1DZV0oKDQWWqWCkOSJJDLrGvE0EA0v4Gj1mitOXhpvyM/edit",
         description: "How to view VESC Logs"
     },
     {
         title: "How to VESC a GT",
-        typeOfResource: ["Guide: Video"],
+        typeOfResource: ["Video Guide"],
         externalUrl: "https://www.youtube.com/watch?v=BwStG5CRnPs&t",
         description: "Leon Chang's GT -> VESC Conversion Guide"
     },
     {
         title: "Soldering 101",
-        typeOfResource: ["Guide: Video"],
+        typeOfResource: ["Video Guide"],
         externalUrl: "https://www.youtube.com/watch?v=ez99VcGNFJc",
         description: "Leon Chang's Soldering Guide"
     },
@@ -264,7 +264,8 @@ const resource = (resourceType: ResourceType) => {
 export default allResources
 export const applicationsResources = resource("App")
 export const codeRepositoriesResources = resource("Github Repository")
-export const guidesResources = [resource("Guide: Video"), resource("Guide: Written")].flat().sort((a, b) => a.title.localeCompare(b.title))
 export const spreadsheetsResources = resource("Spreadsheet")
 export const vendorsResources = resource("Vendor")
+export const videoGuidesResources = resource("Video Guide")
 export const websitesResources = resource("Website")
+export const writtenGuidesResources = resource("Written Guide")

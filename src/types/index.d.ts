@@ -18,7 +18,7 @@ type ItemData = {
     /**
      * Platform type
      */
-    platform: PlatformType
+    platform: PlatformType[]
     /**
      * Item external URL
      */
@@ -93,7 +93,7 @@ type ResourceData = {
     /**
      * Resource type
      */ 
-    typeOfResource: ResourceType
+    typeOfResource: ResourceType[]
     /**
      * Resource external URL
      */

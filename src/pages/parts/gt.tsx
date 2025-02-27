@@ -8,7 +8,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/items.scss"
-import gtParts from "../../util/parts/gtParts"
+import { gtParts } from "../../util/allParts"
 
 export const Head: HeadFC = () => (
     <>
@@ -42,7 +42,7 @@ const Page: React.FC<PageProps> = () => {
                     <Row>
                         {/* List parts */}
                         {!!gtParts.length &&
-                            gtParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
+                            gtParts.map(ItemCard)
                         }
 
                         {/* Copyright card */}

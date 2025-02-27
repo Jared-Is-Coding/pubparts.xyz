@@ -8,7 +8,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/items.scss"
-import vescElectronicsParts from "../../util/parts/vescElectronicsParts"
+import { vescElectronicsParts } from "../../util/allParts"
 
 export const Head: HeadFC = () => (
     <>
@@ -42,7 +42,7 @@ const Page: React.FC<PageProps> = () => {
                     <Row>
                         {/* List parts */}
                         {!!vescElectronicsParts.length &&
-                            vescElectronicsParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
+                            vescElectronicsParts.map(ItemCard)
                         }
                         
                         {/* Copyright card */}

@@ -8,7 +8,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/items.scss"
-import floatwheelParts from "../../util/parts/floatwheelParts"
+import { floatwheelParts } from "../../util/allParts"
 
 export const Head: HeadFC = () => (
     <>
@@ -42,7 +42,7 @@ const Page: React.FC<PageProps> = () => {
                     <Row>
                         {/* List parts */}
                         {!!floatwheelParts.length &&
-                            floatwheelParts.sort((a, b) => a.title.localeCompare(b.title)).map(ItemCard)
+                            floatwheelParts.map(ItemCard)
                         }
 
                         {/* Copyright card */}

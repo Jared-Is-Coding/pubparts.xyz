@@ -1,5 +1,5 @@
-import allParts from "./parts/allParts"
-import allResources from "./resources/allResources"
+import allParts from "./allParts"
+import allResources from "./allResources"
 
 export default [...new Set([
     allParts,

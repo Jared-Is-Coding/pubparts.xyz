@@ -15,19 +15,19 @@ export default (item: ItemData | ResourceData, index: number) => {
     const linkTo = () => {
         let url = ""
 
-        if ((item as ItemData).platform === "Floatwheel") url = "/parts/floatwheel"
-        if ((item as ItemData).platform === "GT/GT-S") url = "/parts/gt"
-        if ((item as ItemData).platform === "Miscellaneous Items") url = "/parts/misc"
-        if ((item as ItemData).platform === "Pint/X/S") url = "/parts/pint"
-        if ((item as ItemData).platform === "VESC Electronics") url = "/parts/electronics"
-        if ((item as ItemData).platform === "XR") url = "/parts/xr"
-        if ((item as ResourceData).typeOfResource === "App") url = "/resources/applications"
-        if ((item as ResourceData).typeOfResource === "Github Repository") url = "/resources/repositories"
-        if ((item as ResourceData).typeOfResource === "Guide: Written") url = "/resources/guides"
-        if ((item as ResourceData).typeOfResource === "Guide: Video") url = "/resources/guides"
-        if ((item as ResourceData).typeOfResource === "Spreadsheet") url = "/resources/spreadsheets"
-        if ((item as ResourceData).typeOfResource === "Vendor") url = "/resources/vendors"
-        if ((item as ResourceData).typeOfResource === "Website") url = "/resources/websites"
+        if ((item as ItemData).platform?.includes("Floatwheel")) url = "/parts/floatwheel"
+        if ((item as ItemData).platform?.includes("GT/GT-S")) url = "/parts/gt"
+        if ((item as ItemData).platform?.includes("Miscellaneous Items")) url = "/parts/misc"
+        if ((item as ItemData).platform?.includes("Pint/X/S")) url = "/parts/pint"
+        if ((item as ItemData).platform?.includes("VESC Electronics")) url = "/parts/electronics"
+        if ((item as ItemData).platform?.includes("XR")) url = "/parts/xr"
+        if ((item as ResourceData).typeOfResource?.includes("App")) url = "/resources/applications"
+        if ((item as ResourceData).typeOfResource?.includes("Github Repository")) url = "/resources/repositories"
+        if ((item as ResourceData).typeOfResource?.includes("Guide: Written")) url = "/resources/guides"
+        if ((item as ResourceData).typeOfResource?.includes("Guide: Video")) url = "/resources/guides"
+        if ((item as ResourceData).typeOfResource?.includes("Spreadsheet")) url = "/resources/spreadsheets"
+        if ((item as ResourceData).typeOfResource?.includes("Vendor")) url = "/resources/vendors"
+        if ((item as ResourceData).typeOfResource?.includes("Website")) url = "/resources/websites"
 
         return url + `?search=${encodeURI(item.title)}`
     }

@@ -7,7 +7,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/resources.scss"
-import codeRepositoriesResources from "../../util/resources/codeRepositoriesResources"
+import { codeRepositoriesResources } from "../../util/allResources"
 
 export const Head: HeadFC = () => (
     <>
@@ -41,7 +41,7 @@ const Page: React.FC<PageProps> = () => {
                     <Row>
                         {/* List resources */}
                         {!!codeRepositoriesResources.length &&
-                            codeRepositoriesResources.sort((a, b) => a.title.localeCompare(b.title)).map(ResourceCard)
+                            codeRepositoriesResources.map(ResourceCard)
                         }
                     </Row>
                 </Container>

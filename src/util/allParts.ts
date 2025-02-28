@@ -1664,10 +1664,10 @@ const allParts = [
         platform: ["XR"]
     },
     {
-        title: "PubParts: Backer Plate Outline for VOW systems Mushies Footpads",
+        title: "PubParts: Backer Plate Outline for XR Footpads",
         fabricationMethod: "CNC",
         typeOfPart: ["Footpad"],
-        imageSrc: "https://media.printables.com/media/prints/993611/images/7590647_7be37147-58cf-4826-aa5f-6449d27ed279_9bd371ca-ac8e-4b3c-8a0c-ec9839ebad07/thumbs/inside/1280x960/png/screenshot_1.webp",
+        imageSrc: "https://media.printables.com/media/prints/993611/images/9092920_d19fd09d-5813-4cee-94cc-7db1807b218b_b9f7d77a-ff2c-4c15-8205-74a51dfdc7cd/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/993611",
         platform: ["XR"]
     },

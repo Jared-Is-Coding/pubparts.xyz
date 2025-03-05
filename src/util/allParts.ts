@@ -1933,6 +1933,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/9tcs1z6yyruisd942rn8j/VOW-XR-Parts.zip?rlkey=9mc0yo7jduos33z2sl1z6gex6&st=ntc0iy6f&dl=0",
         dropboxZipLastUpdated: "2025-02-17",
         platform: ["XR"]
+    },
+    {
+        title: "ENNOID MK8 Mount for GT Stock Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Adapter", "Bracket"],
+        imageSrc: "https://media.printables.com/media/prints/1217113/images/9132880_f480f251-2b54-4a2d-802d-dde3203df54e_e6cb8b77-5195-4817-8e43-784a7f653c9f/thumbs/inside/1280x960/png/screenshot-276.webp",
+        externalUrl: "https://www.printables.com/model/1217113",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/i90n1uodoisutrm2wr4ic/ennoid-mk8-gt-mount-model_files.zip?rlkey=a30z7qngtmxmubqtu9eywwabn&st=vrxe2ssp&dl=0",
+        dropboxZipLastUpdated: "2025-03-05",
+        platform: "GT"
     }
 ] as ItemData[]
 

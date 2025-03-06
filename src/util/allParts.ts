@@ -1942,7 +1942,36 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1217113",
         dropboxUrl: "https://www.dropbox.com/scl/fi/i90n1uodoisutrm2wr4ic/ennoid-mk8-gt-mount-model_files.zip?rlkey=a30z7qngtmxmubqtu9eywwabn&st=vrxe2ssp&dl=0",
         dropboxZipLastUpdated: "2025-03-05",
-        platform: "GT"
+        platform: ["GT"]
+    },
+    {
+        title: "Lia: Funwheel Box Cable Covers",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Connector Cover"],
+        imageSrc: "https://media.printables.com/media/prints/853568/images/6564951_64837e02-15da-4f80-b162-83994fa99695_67d1c3ef-4257-4be5-9989-2e80b63d60cd/thumbs/inside/1280x960/png/fungineers_metal_xr_controller_housing_2024-apr-22_03-22-34pm-000_customizedview702517981_png.webp",
+        externalUrl: "https://www.printables.com/model/853568",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/s5vnbx9yqtu3dpvy55yfj/funwheel-box-cable-covers-model_files.zip?rlkey=a4ochbvonpm75khvv3649yd7e&st=l13fw5lf&dl=0",
+        dropboxZipLastUpdated: "2025-03-06",
+        platform: ["XR"]
+    },
+    {
+        title: "Lia: Funwheel Controller Box Lid",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/1011498/images/7688546_165763b5-b7fa-41e6-91e8-1d9544ee5e6c_dd304e29-ff14-4213-b1e5-30048b034979/thumbs/inside/1280x960/webp/img_16439.webp",
+        externalUrl: "https://www.printables.com/model/1011498",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/hnkc9hganii7pdm8fvnpi/funwheel-controller-box-lid-model_files.zip?rlkey=idgaogzgicub4vje5p9tx12qk&st=mc0iaygr&dl=0",
+        dropboxZipLastUpdated: "2025-03-06",
+        platform: ["XR"]
+    },
+    {
+        title: "Ride Foundry: Funwheel Box Cable Covers",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "/images/parts/floatwheel/ridefoundry-cable-cover.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/5pac5yq3abmc28jzi57wl/ridefoundry-fungi-controller-cable-cover-model_files.zip?rlkey=xid3hmc75tjd0vn38zxbnm82p&st=2uhtl9gx&dl=0",
+        dropboxZipLastUpdated: "2025-03-06",
+        platform: ["XR"]
     }
 ] as ItemData[]
 

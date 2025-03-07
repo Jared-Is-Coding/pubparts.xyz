@@ -1406,6 +1406,16 @@ const allParts = [
         platform: ["XR"]
     },
     {
+        title: "Fungineers: Funwheel 3dp Controller Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "/images/parts/xr/funwheel-3dp-box.png",
+        externalUrl: "https://drive.google.com/drive/folders/1tt-JdUA9FjSbz-wXBuGcBrN0FfpshutI",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/jqzmrry2xsfabjbm4i81c/Funwheel-ST-easy-access-vesc-enclosure-20250307T160905Z-001.zip?rlkey=o0ellbw0yc5a7tqgrjs9xvdza&st=wkwael15&dl=0",
+        dropboxZipLastUpdated: "2025-03-07",
+        platform: ["XR"]
+    },
+    {
         title: "Markoblaster: Funwheel Easy Access Controller Box",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
@@ -1968,7 +1978,7 @@ const allParts = [
         title: "Ride Foundry: Funwheel Box Cable Covers",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
-        imageSrc: "/images/parts/floatwheel/ridefoundry-cable-cover.png",
+        imageSrc: "/images/parts/xr/ridefoundry-cable-cover.png",
         externalUrl: "https://www.printables.com/model/1218409",
         dropboxUrl: "https://www.dropbox.com/scl/fi/5pac5yq3abmc28jzi57wl/ridefoundry-fungi-controller-cable-cover-model_files.zip?rlkey=xid3hmc75tjd0vn38zxbnm82p&st=2uhtl9gx&dl=0",
         dropboxZipLastUpdated: "2025-03-06",

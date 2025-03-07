@@ -1969,6 +1969,7 @@ const allParts = [
         fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
         imageSrc: "/images/parts/floatwheel/ridefoundry-cable-cover.png",
+        externalUrl: "https://www.printables.com/model/1218409",
         dropboxUrl: "https://www.dropbox.com/scl/fi/5pac5yq3abmc28jzi57wl/ridefoundry-fungi-controller-cable-cover-model_files.zip?rlkey=xid3hmc75tjd0vn38zxbnm82p&st=2uhtl9gx&dl=0",
         dropboxZipLastUpdated: "2025-03-06",
         platform: ["XR"]

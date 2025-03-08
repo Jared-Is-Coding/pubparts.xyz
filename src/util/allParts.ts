@@ -1983,6 +1983,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/5pac5yq3abmc28jzi57wl/ridefoundry-fungi-controller-cable-cover-model_files.zip?rlkey=xid3hmc75tjd0vn38zxbnm82p&st=2uhtl9gx&dl=0",
         dropboxZipLastUpdated: "2025-03-06",
         platform: ["XR"]
+    },
+    {
+        title: "Cal: GX16 Charger Plug",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Port Cover"],
+        imageSrc: "https://media.printables.com/media/prints/1220714/images/9156519_7f7c6552-3f06-410d-9dd2-4c8b26f37bc1_ebfdadf4-eeac-4b9d-84f1-133d21bbe1e7/thumbs/inside/1280x960/png/img_0251.webp",
+        externalUrl: "https://www.printables.com/model/1220714",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/qduc5q1kaizs8pzo5f71y/gx-16-charger-plug-model_files.zip?rlkey=xvipkzxg09b1x7z33dipopp2w&st=rel58ig4&dl=0",
+        dropboxZipLastUpdated: "2025-03-07",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

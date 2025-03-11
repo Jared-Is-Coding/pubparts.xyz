@@ -36,7 +36,7 @@ export default () => (
             md={{span: 4, offset: 0}}
             lg={{span: 3, offset: 0}}
             className="flex-center flex-top">
-            <Button className="full-width text-truncate" href="/parts/xr" variant="outline-info">XR/+</Button>
+            <Button className="full-width text-truncate" href="/parts/xr" variant="outline-info">XR/Funwheel</Button>
         </Col>
         <Col
             xs={{span: 6, offset: 0}}

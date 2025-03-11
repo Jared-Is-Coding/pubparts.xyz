@@ -59,10 +59,22 @@
             ]
         },
         {
-            "name": "XR/+ Parts",
-            "short_name": "XR/+",
-            "description": "Open XR/+ parts list",
+            "name": "XR/Funwheel Parts",
+            "short_name": "XR/Funwheel",
+            "description": "Open XR/Funwheel parts list",
             "url": "/parts/xr/?source=pwa",
+            "icons": [
+                {
+                    "src": "/images/sizes/192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "XR Classic Parts",
+            "short_name": "XR Classic",
+            "description": "Open XR Classic parts list",
+            "url": "/parts/xrclassic/?source=pwa",
             "icons": [
                 {
                     "src": "/images/sizes/192.png",

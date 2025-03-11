@@ -14,8 +14,8 @@ export const Head: HeadFC = () => (
     <>
         <html lang="en" />
         <SiteMetaData
-            title="XR/+ Parts | PubParts.xyz"
-            description="Open source or otherwise aftermarket parts for the XR/+ platform" />
+            title="XR/Funwheel Parts | PubParts.xyz"
+            description="Open source or otherwise aftermarket parts for the XR/Funwheel platform" />
     </>
 )
 
@@ -26,7 +26,7 @@ const Page: React.FC<PageProps> = () => {
                 <SiteNavbar />
 
                 <h1 className="flex-center">
-                    XR/+ Parts
+                    XR/Funwheel Parts
                 </h1>
             </header>
 

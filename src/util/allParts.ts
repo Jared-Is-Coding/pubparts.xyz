@@ -1997,7 +1997,7 @@ const allParts = [
     {
         title: "Custom Gasket for Stock XR Controller",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Gasket", "Controller"],
+        typeOfPart: ["Gasket", "Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/1225055/images/9185648_d1890530-340c-4444-9dad-a1371d96a5cf_02f8313a-2327-4c88-9a98-e78e33d8232e/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1225055",
         dropboxUrl: "https://www.dropbox.com/scl/fi/u19f959ach0i94jcdgoog/custom-gasket-for-stock-xr-controller-model_files.zip?rlkey=mdkdzxsbie8pnr8r00pbqj8ns&st=iea70xdi&dl=0",

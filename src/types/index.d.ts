@@ -82,7 +82,7 @@ type PlatformType =
     | "Miscellaneous Items"
     | "Pint/X/S"
     | "VESC Electronics"
-    | "XR"
+    | "XR/Funwheel"
     | "XR Classic"
 
 type ResourceData = {

@@ -1258,7 +1258,7 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/vjcy5sb6rsfu92cxvg302/pubhubs-sf-to-xr-model_files.zip?rlkey=96x5w47vhjod6mk2dhkmi9aqd&st=cgpd7zas&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
         price: "~$80/pair from JLCPCB",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubWheel: PubHubs Clamping SuperFlux/HyperCore to XR Rails",
@@ -1269,7 +1269,7 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/zso2uj240vctz1dzijwlz/pubhubs-sf-xr-clampys-model_files.zip?rlkey=8z0z5hiyruikabtryxgr1c9r3&st=j8xo3dqp&dl=0",
         dropboxZipLastUpdated: "2025-02-15",
         price: "~$145/pair from JLCPCB",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubParts: Finned Clamping SuperFlux/HyperCore to XR Rails",
@@ -1280,7 +1280,7 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/pcjvping08d6sa7we3hbd/superfluxhypercore-to-xr-rails-clamping-axle-blocks-model_files.zip?rlkey=8ogo0lh2vyvamq5t74nry8ytc&st=6ex0jrpi&dl=0",
         dropboxZipLastUpdated: "2025-02-13",
         price: "~$155/pair from JLCPCB",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubWheel: PubHubs CannonCore to XR Rails",
@@ -1291,7 +1291,7 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/bax3vgwk9o9p3xjlceuyr/pubhubs-cc-to-xr-model_files.zip?rlkey=i831d1xz5wc0d399n8w9xgcmd&st=itrooetj&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
         price: "~$80/pair from JLCPCB",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubWheel: PubHubs HyperCore to XR Rails",
@@ -1302,7 +1302,7 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/0trq50xxra5p6r8l5snls/pubhubs-modded-xr-blocks-model_files.zip?rlkey=az7mzdpuz5o4vw2lnvl4oc6fh&st=3fx5qjnw&dl=0",
         dropboxZipLastUpdated: "2025-02-15",
         price: "~$80/pair from JLCPCB",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubWheel: CNC PubBox V1 - XR VESC Box, Lid",
@@ -1312,7 +1312,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/586518",
         dropboxUrl: "https://www.dropbox.com/scl/fi/4gfqr5nn2yve8tm4uy8ub/cnc-pubbox-v1-xr-vesc-box-model_files.zip?rlkey=qjhkmaju6bj82ovsbj2rs0bik&st=kwtl5lk3&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubParts: 3dp PubBox V1 (and others) XR Vesc Box Unified Cable Cover",
@@ -1322,7 +1322,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1097640",
         dropboxUrl: "https://www.dropbox.com/scl/fi/xptr5k9j0xs8fmieg95xc/3dp-pubbox-v1-and-others-xr-vesc-box-unified-cable-cover-model_files.zip?rlkey=osj01h478r4eim5jlwprnclvz&st=5k3g894f&dl=0",
         dropboxZipLastUpdated: "2024-12-04",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubWheel: CNC PubBox V2 - XR VESC Box, Lid",
@@ -1333,7 +1333,7 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/2y6q3robhi087i234pq6g/cnc-pubbox-v2-xr-vesc-box-model_files.zip?rlkey=1svs6tvdrp6rv5shnbwyluq0b&st=fm399jym&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
         price: "~$280 (box only) from JLCPCB",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubParts: CNC PubBox V2 XR Vesc Box Unified Cable Cover",
@@ -1343,7 +1343,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1095537",
         dropboxUrl: "https://www.dropbox.com/scl/fi/7il3git2fa2uguxmw7ifo/cnc-pubbox-v2-xr-vesc-box-unified-cable-cover-model_files.zip?rlkey=7sfn9c7grxciaqxyqa8p4uu4e&st=zj58dsmi&dl=0",
         dropboxZipLastUpdated: "2024-12-04",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubBox: 3DP V1 - XR VESC Box, Lid",
@@ -1353,7 +1353,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/670275",
         dropboxUrl: "https://www.dropbox.com/scl/fi/yyur6hi0vv3st1iz667nq/3dp-pubbox-for-vesc-xr-funwheel-model_files.zip?rlkey=qe314lfkdiwjuxfdh7uafvv8a&st=s9jiszyu&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Matix: 3DP PubBox for HyperCore Plug - XR VESC Box, Lid",
@@ -1363,7 +1363,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/798937",
         dropboxUrl: "https://www.dropbox.com/scl/fi/b372qqhmnktqm7tw3psh4/pubbox-hypercore-v2-model_files.zip?rlkey=8nhhg346vwqow5665fg2ckeqf&st=g8ltvgos&dl=0",
         dropboxZipLastUpdated: "2024-08-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubBox: Connector Cover",
@@ -1373,7 +1373,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/931764",
         dropboxUrl: "https://www.dropbox.com/scl/fi/668b4z3kdnkgtfk34j1ez/retrofit-pubbox-connector-cover-model_files.zip?rlkey=zr7vo4sao6ohe73w4vs4qpaoz&st=rvvmqpa3&dl=0",
         dropboxZipLastUpdated: "2024-08-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubWheel: Rim Saver for 6in Hub",
@@ -1383,7 +1383,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/662104",
         dropboxUrl: "https://www.dropbox.com/scl/fi/x9tghvrh8izzji7t96rms/cleaned-up-rimsaver-for-6-inch-onewheel-motor-step-file-provided-model_files.zip?rlkey=jxav0papoy2cultqwxi2nkzeo&st=9wwpx147&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR", "Pint/X/S"]
+        platform: ["XR/Funwheel", "Pint/X/S"]
     },
     {
         title: "Rim Saver for 6in Hub",
@@ -1393,7 +1393,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/275164",
         dropboxUrl: "https://www.dropbox.com/scl/fi/yg826r00at9fhl3bkggae/onewheel-xrpint-rim-saver-model_files.zip?rlkey=xdxo9spf2pvyop2qrnj5kh20n&st=x5oyqh07&dl=0",
         dropboxZipLastUpdated: "2024-09-25",
-        platform: ["XR", "Pint/X/S"]
+        platform: ["XR/Funwheel", "Pint/X/S"]
     },
     {
         title: "Funwheel Controller Lid Fungineers",
@@ -1403,7 +1403,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/968563",
         dropboxUrl: "https://www.dropbox.com/scl/fi/t8psuj22fdn5ara2ihza0/funwheel-controller-lid-fungineers-onewheel-xr-model_files.zip?rlkey=4rapuci78nft191ajirxr48of&st=ddmfndf7&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Fungineers: Funwheel 3dp Controller Box",
@@ -1413,7 +1413,7 @@ const allParts = [
         externalUrl: "https://drive.google.com/drive/folders/1tt-JdUA9FjSbz-wXBuGcBrN0FfpshutI",
         dropboxUrl: "https://www.dropbox.com/scl/fi/jqzmrry2xsfabjbm4i81c/Funwheel-ST-easy-access-vesc-enclosure-20250307T160905Z-001.zip?rlkey=o0ellbw0yc5a7tqgrjs9xvdza&st=wkwael15&dl=0",
         dropboxZipLastUpdated: "2025-03-07",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Markoblaster: Funwheel Easy Access Controller Box",
@@ -1423,7 +1423,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1040641",
         dropboxUrl: "https://www.dropbox.com/scl/fi/0egux9sz482psb5hgdgg4/funwheel-easy-access-controller-box-gx16-button-and-footpad-cannon-core-motor-cable-xlr-charge-port-model_files.zip?rlkey=lw3d2cletvny8f9elt5ua8jnp&st=yvgsrbve&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Markoblaster: Funwheel EVEN EASIER Access Controller Box",
@@ -1433,7 +1433,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1089228",
         dropboxUrl: "https://www.dropbox.com/scl/fi/wlnsb9ewoh7fmyrzviymx/funwheel-even-easier-easy-access-controller-box-topbottom-access-lids-model_files.zip?rlkey=x488qzomf1keh9oul4m6c45mv&st=xyazon0d&dl=0",
         dropboxZipLastUpdated: "2024-11-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Stock XR/Funwheel Fender",
@@ -1443,7 +1443,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/960339",
         dropboxUrl: "https://www.dropbox.com/scl/fi/go48ufe3ugrhpgeri8kxm/original-fender-onewheel-xr-and-plus-model_files.zip?rlkey=1f28ikzpkh6ckpo7yatp406oy&st=igdrbjq3&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Stock XR Battery Box",
@@ -1453,7 +1453,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/960336",
         dropboxUrl: "https://www.dropbox.com/scl/fi/1zs6dbiqfjtdlzre6kl7z/standard-battery-box-onewheel-xr-model_files.zip?rlkey=m8wq46ru36rb1jpyjwxcu4ddj&st=dbadtx7p&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Stock XR Connector Cover",
@@ -1463,7 +1463,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/960109",
         dropboxUrl: "https://www.dropbox.com/scl/fi/o8i6qf6wsfy67wrw8kj7d/connector-cover-onewheel-xr-model_files.zip?rlkey=7xwm439s5rni7aao8u38yjo28&st=mifjf0um&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "XLR Charger Plug Cover",
@@ -1473,7 +1473,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/960104",
         dropboxUrl: "https://www.dropbox.com/scl/fi/xhbgmpz5dltswndqwvqq7/xlr-charger-plug-onewheel-xr-model_files.zip?rlkey=s4y1twcql325spnad04eum46b&st=opo7fq0h&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Stock XR Battery Box Lid",
@@ -1483,7 +1483,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/960093",
         dropboxUrl: "https://www.dropbox.com/scl/fi/hv3sq22w1j7u5mbdgduf3/battery-lid-onewheel-xr-model_files.zip?rlkey=94a8mpz6rbjwmpmniryvzot4y&st=0zmb72nb&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Stock XR Axle Block Covers",
@@ -1493,7 +1493,7 @@ const allParts = [
         externalUrl: "https://www.thingiverse.com/thing:5419699",
         dropboxUrl: "https://www.dropbox.com/scl/fi/01f1v2gz5eqjqo5in12y1/apple-airtag-connector-cover-for-onewheel-5417299.zip?rlkey=b3zybckyogth5yl9hevj5co9o&st=ijgp0al1&dl=0",
         dropboxZipLastUpdated: "2024-08-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "XR Flight Fins",
@@ -1502,7 +1502,7 @@ const allParts = [
         imageSrc: "https://media.printables.com/media/prints/960086/images/7332056_04ab3d42-9c0a-4bb4-b9d2-b758696e9962_08694c12-e680-4804-96f4-e9592767b9e6/thumbs/inside/1280x960/png/screenshot-2024-07-31-at-160440.webp",
         dropboxUrl: "https://www.dropbox.com/scl/fi/pn7phvfgzgrohad6miqrl/flightfins-onewheel-xr-model_files.zip?rlkey=hjl0bwj28znjbctcg2opp6d6r&st=u76u4ih6&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Stock XR Bumpers",
@@ -1512,7 +1512,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/960081",
         dropboxUrl: "https://www.dropbox.com/scl/fi/bs77pf37wscajusehvgox/bumpers-onewheel-xr-model_files.zip?rlkey=hq05o3kyk2qj4ohbwlacxecu1&st=3oksox1f&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Stock XR Rails",
@@ -1522,7 +1522,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/957776",
         dropboxUrl: "https://www.dropbox.com/scl/fi/3w6sff2sekov2qcrisd2z/rails-onewheel-xr-model_files.zip?rlkey=5386furp3saowfmq9xi5t8hda&st=gv0qih6w&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubHubs: XR Blocks Finned Axle Block Covers",
@@ -1533,7 +1533,7 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/f76fpurhbd2bmrmgojwya/onewheel-pubhubs-xr-blocks-finned-axle-block-covers-model_files.zip?rlkey=le6yphs2pssjhzcrfj8jfn4bv&st=x2m5cruv&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
         price: "~$30/pair from JLCPCB",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubParts: WTF Rails to C&R or Stock Fender Adapters",
@@ -1543,7 +1543,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/661560",
         dropboxUrl: "https://www.dropbox.com/scl/fi/83zyoppxrog1fqh36oks9/pubparts-onewheel-xr-the-float-life-wtf-rails-to-cr-or-stock-fender-adapters-model_files.zip?rlkey=quulvaedrg0vea1bp8izqktm0&st=qleytv30&dl=0",
         dropboxZipLastUpdated: "2025-01-21",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubParts: Simple XR Rail Guards",
@@ -1553,7 +1553,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/649224",
         dropboxUrl: "https://www.dropbox.com/scl/fi/amgd2ged4bb2gtydwpg6d/onewheel-xr-rail-guards-model_files.zip?rlkey=q3lmfhteld29lf8415rorkeco&st=mm89bswr&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "TFL Circle Cutout Rail Guards",
@@ -1563,7 +1563,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/691922",
         dropboxUrl: "https://www.dropbox.com/scl/fi/fy65aelmopf5us3nejd1z/the-float-life-2023-onewheel-xr-wtf-bumper-model_files.zip?rlkey=97pvcm7vvvn2ioqlh5cs2dc1x&st=zh6ij4dx&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "FlowGlider: Connector Cover",
@@ -1573,7 +1573,7 @@ const allParts = [
         externalUrl: "https://www.thingiverse.com/thing:4716667",
         dropboxUrl: "https://www.dropbox.com/scl/fi/w9u8q1nfvmzg9othoy8je/flowglider-connector-cover.zip?rlkey=rds1z7zp9qz9wkgdwvxagufv0&st=u9twyfvg&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "FlowGlider: Connector Cover - Apple Airtag Slot",
@@ -1583,7 +1583,7 @@ const allParts = [
         externalUrl: "https://www.thingiverse.com/thing:5417299",
         dropboxUrl: "https://www.dropbox.com/scl/fi/01f1v2gz5eqjqo5in12y1/apple-airtag-connector-cover-for-onewheel-5417299.zip?rlkey=b3zybckyogth5yl9hevj5co9o&st=u65uvlhn&dl=0",
         dropboxZipLastUpdated: "2024-08-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "FlowGlider: Cable Clip",
@@ -1593,7 +1593,7 @@ const allParts = [
         externalUrl: "https://www.thingiverse.com/thing:4847732",
         dropboxUrl: "https://www.dropbox.com/scl/fi/34ofrg0e4bj3d0zbk97r4/onewheel-xr-cable-clip-4847732.zip?rlkey=tnq779wxm2lis8g9gct37tnb1&st=82ae7yew&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Grip Tape for Onewheel XR",
@@ -1603,7 +1603,7 @@ const allParts = [
         externalUrl: "https://www.thingiverse.com/thing:5343206",
         dropboxUrl: "https://www.dropbox.com/scl/fi/t0r5yvz1kaorc8ydkmmye/Onewheel-XR-Grip-Tape-5343206.zip?rlkey=fi2imxxbg2ui0hoxdxbzsj65c&st=plw5ft2x&dl=0",
         dropboxZipLastUpdated: "2024-08-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "XLR Charge Port Gasket",
@@ -1613,7 +1613,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/220062",
         dropboxUrl: "https://www.dropbox.com/scl/fi/lef6qi7lbeyo45nf0m73z/1wheel-xlr-charge-port-gasket-model_files.zip?rlkey=zwtnbar41wsmw02xtgs800j1l&st=ul5usbmf&dl=0",
         dropboxZipLastUpdated: "2024-08-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Atlowshop: Big Battery Box (TORque Box Lid Compatible)",
@@ -1623,7 +1623,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/987242",
         dropboxUrl: "https://www.dropbox.com/scl/fi/g177hgkfb7pxzo1ku08gy/atlowshop-big-battery-box-model_files.zip?rlkey=0cwfgn58cnk5zvy2ay03h09o7&st=peqpeb3w&dl=0",
         dropboxZipLastUpdated: "2024-08-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Atlowshop: \"Atlowglider\" Controller Box",
@@ -1633,7 +1633,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/987260",
         dropboxUrl: "https://www.dropbox.com/scl/fi/d9nq9d0w121hixhic13ps/atlowglider-model_files.zip?rlkey=gzkl6nbfyawmtsmvhjizfauds&st=io0ibtv4&dl=0",
         dropboxZipLastUpdated: "2024-08-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubParts: FlowGlider Controller Box, Lid, Parts - Ubox 85v and More",
@@ -1643,7 +1643,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/989094",
         dropboxUrl: "https://www.dropbox.com/scl/fi/z4u536q829mstekjszpy8/pubparts-flowglider-controller-box-ubox85v-and-more-model_files.zip?rlkey=h3uujsyp2j0unejwhw31r1wnp&st=97h977fg&dl=0",
         dropboxZipLastUpdated: "2024-10-11",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Celeste: 6 Pin Molex to 20mm Cable Gland for Floatboxx",
@@ -1653,7 +1653,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/606685",
         dropboxUrl: "https://www.dropbox.com/scl/fi/spv4lzy76k2ukp0autpo0/6-pin-molex-to-20mm-cable-gland-for-floatboxx-model_files.zip?rlkey=xeibyos7zjmysy2kd5fjqvspt&st=2wvum15e&dl=0",
         dropboxZipLastUpdated: "2024-09-07",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Matix: XR WTF Rails (Extended) BTG Fender Delete",
@@ -1663,7 +1663,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/989723",
         dropboxUrl: "https://www.dropbox.com/scl/fi/8brcsu0scupthff9o6crf/btg-fender-delete-sd-extended-dubs-model_files.zip?rlkey=a0ejqmf32227f3lkwm19s2i74&st=sd8bnqsl&dl=0",
         dropboxZipLastUpdated: "2024-08-29",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubParts: OW XR Frame Full Assembly",
@@ -1671,7 +1671,7 @@ const allParts = [
         typeOfPart: ["Miscellaneous"],
         imageSrc: "https://media.printables.com/media/prints/991294/images/8921259_77c1d424-af43-441b-aaef-a4f49efcac5f_2d572c82-7a64-4529-aa68-0a12c5eed655/thumbs/inside/1280x960/png/screenshot_2.webp",
         externalUrl: "https://www.printables.com/model/991294",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubParts: Backer Plate Outline for XR Footpads",
@@ -1679,7 +1679,7 @@ const allParts = [
         typeOfPart: ["Footpad"],
         imageSrc: "https://media.printables.com/media/prints/993611/images/9092920_d19fd09d-5813-4cee-94cc-7db1807b218b_b9f7d77a-ff2c-4c15-8205-74a51dfdc7cd/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/993611",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "QuinnWheel: XR Varials Center Steez Bash Guards",
@@ -1689,7 +1689,7 @@ const allParts = [
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/845686",
         dropboxUrl: "https://www.dropbox.com/scl/fi/msrydyfbrwfchev32dmd0/Onewheel-XR-Varials-Center-Steez-Bash-Guards.zip?rlkey=ur61au5m0uywnn6towci13ea7&st=z1eqtew3&dl=0",
         dropboxZipLastUpdated: "2024-09-08",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "QuinnWheel: XR FlightFins Kush Pad Adapter for FlightFender Refresh",
@@ -1699,7 +1699,7 @@ const allParts = [
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/1072343",
         dropboxUrl: "https://www.dropbox.com/scl/fi/lxnf0ncqwqef1aol5w4h1/FlightFins-Kush-Pad-Adapter-for-XR-FlightFender-Refresh.zip?rlkey=dvtijdcpuvh5fetdc76zyci0z&st=cdjaxzy4&dl=0",
         dropboxZipLastUpdated: "2024-09-08",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "QuinnWheel: XR Cable Retention Clips for TFL Varials",
@@ -1709,7 +1709,7 @@ const allParts = [
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/1069914",
         dropboxUrl: "https://www.dropbox.com/scl/fi/7r0wwn7fq5yjuonykct1v/Onewheel-XR-Cable-Retention-Clips-for-TFL-Varials.zip?rlkey=ffcspap6zuwce1he1miopfg0b&st=7ns9szxe&dl=0",
         dropboxZipLastUpdated: "2024-09-08",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "QuinnWheel: FlowGlider Controller Box for 20mm Battery Cable Gland",
@@ -1719,7 +1719,7 @@ const allParts = [
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/1004054",
         dropboxUrl: "https://www.dropbox.com/scl/fi/jt5ye9vy8rzyjtem8mo4e/Flowglider-20mm-Cable-Gland-Remix-for-VESC-XR-XLR-6-pin-Molex-Handle-LEDs-Empty-Box.zip?rlkey=uv56en04g0x9c6mqcqconfzqm&st=eegncjkf&dl=0",
         dropboxZipLastUpdated: "2024-09-08",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "QuinnWheel: XR Mini Fenders",
@@ -1729,7 +1729,7 @@ const allParts = [
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/873344",
         dropboxUrl: "https://www.dropbox.com/scl/fi/n254ntum4jg9q36tb1yxv/XR-Mini-Fenders-v1.zip?rlkey=lso1qhu2tllaup6ccs3h954qi&st=kemmp33e&dl=0",
         dropboxZipLastUpdated: "2024-09-08",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "QuinnWheel: Molex Cable Gland Adapters",
@@ -1739,7 +1739,7 @@ const allParts = [
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/992706",
         dropboxUrl: "https://www.dropbox.com/scl/fi/8rp0bpvr9rbpqv0ldovle/VESC-Onewheel-XR-Molex-Cable-Gland-Adapters.zip?rlkey=ab3dri1k6nd9ir9nq6trpglbj&st=2k60vn48&dl=0",
         dropboxZipLastUpdated: "2024-09-08",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "QuinnWheel: XR Fender Delete - Life Saver Compatible",
@@ -1749,7 +1749,7 @@ const allParts = [
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/793459",
         dropboxUrl: "https://www.dropbox.com/scl/fi/4lk5jgjq9emainbuu1yga/Onewheel-XR-Fender-Delete-Life-Saver-Compatible.zip?rlkey=gpqreg9vdidc7hgo5jouqkt1w&st=ilhx6iem&dl=0",
         dropboxZipLastUpdated: "2024-09-08",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "TFL: XR Drop Top Lift Kit",
@@ -1759,7 +1759,7 @@ const allParts = [
         externalUrl: "https://www.thingiverse.com/thing:6451831",
         dropboxUrl: "https://www.dropbox.com/scl/fi/ltn40qmd5drpc81gjdv8x/XR-Drop-Top-Lift-Kit-6451831.zip?rlkey=ryfgdc02bq4g8k8m0ojgl829w&st=8qjkalzm&dl=0",
         dropboxZipLastUpdated: "2024-09-10",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Matix: XR WTF Rails (Extended) BTG Mini Fenders",
@@ -1769,7 +1769,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1004369",
         dropboxUrl: "https://www.dropbox.com/scl/fi/emrswmlqegndxahsjr5xx/XR-WTF-Rails-Extended-BTG-Mini-Fenders.zip?rlkey=1q0wl2n02o3873me42xm6ti9d&st=by1r2dol&dl=0",
         dropboxZipLastUpdated: "2024-09-12",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "PubWheel: XR CNC/3DP PubPad Footpad",
@@ -1777,7 +1777,7 @@ const allParts = [
         typeOfPart: ["Footpad"],
         imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000581749/design/2024-08-10_9594886a03472.jpg?x-oss-process=image/resize,w_1000/format,webp",
         externalUrl: "https://makerworld.com/en/models/581749",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Ranth: Footholds for PubWheel  XR CNC/3DP PubPad Footpad",
@@ -1787,7 +1787,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1012011",
         dropboxUrl: "https://www.dropbox.com/scl/fi/th0et7rwy0z4z68rvq47k/basic-pubwheel-footholds-model_files.zip?rlkey=2d8oawcdu9h12lf9a8kvnwi2n&st=jscodkf3&dl=0",
         dropboxZipLastUpdated: "2024-09-20",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Ranth: XR CNC/3DP PubPad Mushy Footpad Remix",
@@ -1797,7 +1797,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1011997",
         dropboxUrl: "https://www.dropbox.com/scl/fi/vzxdneksclt3i5y36bwph/pushy-an-xrfunwheel-footpad-model_files.zip?rlkey=r6p8oo44rup2jylbtm1kkt9uq&st=v043dpdr&dl=0",
         dropboxZipLastUpdated: "2024-09-20",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Ranth: Fender Delete for PubWheel XR CNC/3DP PubPad Footpad",
@@ -1807,7 +1807,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1012004",
         dropboxUrl: "https://www.dropbox.com/scl/fi/4gx1f4tvjumn8fc6ps73x/moddelete-onewheel-xr-fender-delete-model_files.zip?rlkey=ce5jssuc6us33tc9ha1ecu5ii&st=d7z52zia&dl=0",
         dropboxZipLastUpdated: "2024-09-20",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Ranth: Bolt Plate for PubWheel XR CNC/3DP PubPad Footpad",
@@ -1817,7 +1817,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1012010",
         dropboxUrl: "https://www.dropbox.com/scl/fi/1x45zyaa3dfxr5mnjupx4/pubpad-bolt-plate-model_files.zip?rlkey=vsn5pxzggj9takj3bhhx3cbrk&st=n7s1mj4j&dl=0",
         dropboxZipLastUpdated: "2024-09-20",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Atlowshop: Big Speed battery box",
@@ -1827,7 +1827,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1016164",
         dropboxUrl: "https://www.dropbox.com/scl/fi/umnphuz7z0jntggn0lfps/atlowshop-big-speed-battery-box-model_files.zip?rlkey=m7dgn1prrewk7e1f4x0nuyd0t&st=57dv5wpp&dl=0",
         dropboxZipLastUpdated: "2024-09-25",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "FlowGlider: XR Battery Box for 19s2p 21700 cells and Ennoid XLITE-24 (Uses stock lid)",
@@ -1835,7 +1835,7 @@ const allParts = [
         typeOfPart: ["Battery Box"],
         imageSrc: "https://cdn.thingiverse.com/assets/91/16/68/22/d3/large_display_FGOW016_P001_-_casing.png",
         externalUrl: "https://www.thingiverse.com/thing:5440317",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Markoblaster: XR Battery Box + Bumper for 18s2p 21700 cells and Ennoid XLITE-32 (Uses stock lid)",
@@ -1843,7 +1843,7 @@ const allParts = [
         typeOfPart: ["Battery Box", "Bumper"],
         imageSrc: "https://media.printables.com/media/prints/1040181/images/7887816_8416cbad-bd58-4b1a-a292-1d1e1ed2d75f_43f1828d-8a2d-4f91-8675-bae1c2e535aa/thumbs/inside/1280x960/webp/img_2263.webp",
         externalUrl: "https://www.printables.com/model/1040181",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "XR Float Plates",
@@ -1853,7 +1853,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/960102",
         dropboxUrl: "https://www.dropbox.com/scl/fi/a4gahmsaqdcw6arl3xvpy/float-plates-onewheel-xr-model_files.zip?rlkey=3f5r507ody04ngb0bx7dtr2kc&st=y533o9mi&dl=0",
         dropboxZipLastUpdated: "2024-10-15",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "DIY Mushies Footpad, Textured Remix",
@@ -1863,7 +1863,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/999445",
         dropboxUrl: "https://www.dropbox.com/scl/fi/y8s3dvo0k1fskv2ny4dvr/onewheel-xr-textured-rear-footpad-model_files.zip?rlkey=g0r6xiue2pjfsi01oynkcw7iz&st=pyeqeuzj&dl=0",
         dropboxZipLastUpdated: "2024-10-16",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Viperbite: Shorty FlightFins v1 Fenders",
@@ -1872,7 +1872,7 @@ const allParts = [
         imageSrc: "/images/parts/xr/ff_shorty.jpg",
         dropboxUrl: "https://www.dropbox.com/scl/fi/c3kc656q960xiygmxp22h/ff_shorty.zip?rlkey=x12axgi6caegnzqjoltzymu3d&st=3uzadmwp&dl=0",
         dropboxZipLastUpdated: "2024-10-25",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "X8 Varials Rail Guards",
@@ -1882,7 +1882,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1052370",
         dropboxUrl: "https://www.dropbox.com/scl/fi/rbe7mj1vpr42epxsmuew2/x8-varial-rail-guards-model_files.zip?rlkey=k02wrxp7yokzs0b4yw0xsdvis&st=7kins48a&dl=0",
         dropboxZipLastUpdated: "2024-10-27",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Thunder Rails Style W-Rails",
@@ -1893,7 +1893,7 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/y6u81xjotbu1n8unjkng9/my-own-approach-of-thunder-rails-with-just-one-height-model_files.zip?rlkey=gumsbqlaq67ajtmx715xnhebz&st=c1oc6tb8&dl=0",
         dropboxZipLastUpdated: "2024-10-28",
         price: "~$180/pair from JLCPCB",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "X7 Style Rails",
@@ -1903,7 +1903,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1080188",
         dropboxUrl: "https://www.dropbox.com/scl/fi/3qzicjiomrq9td3rxa5g7/onewheel-xr-fungineers-x7-rails-model_files.zip?rlkey=u7ov552oko3hta2srwc9dnlix&st=74sgp0pz&dl=0",
         dropboxZipLastUpdated: "2024-11-26",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Defying: ENNOID MK8 Mount for CNC PubBox V2",
@@ -1913,7 +1913,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1131779",
         dropboxUrl: "https://www.dropbox.com/scl/fi/7viyidfa1orfw6lgd9nlk/ennoid-mk8-to-cnc-pubbox-thor-mounting-pattern-model_files.zip?rlkey=nvwf93d1z0d4y3e2wiq1o4m4s&st=ykskzyex&dl=0",
         dropboxZipLastUpdated: "2025-01-21",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "XR Bearing Seals",
@@ -1923,7 +1923,7 @@ const allParts = [
         externalUrl: "https://www.thingiverse.com/thing:5354443",
         dropboxUrl: "https://www.dropbox.com/scl/fi/a7t5oizc9n9dlwloa2x4v/Onewheel-XR-bearing-seals-5354443.zip?rlkey=3le8axrqpfb9zlpntyozbi03f&st=5mcouo8s&dl=0",
         dropboxZipLastUpdated: "2025-01-30",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "XR WTF Rail Badge",
@@ -1933,7 +1933,7 @@ const allParts = [
         externalUrl: "https://www.thingiverse.com/thing:6932978",
         dropboxUrl: "https://www.dropbox.com/scl/fi/dr7zg6z0awfsebwav4jhc/XR-WTF-Rail-Badges-6932978.zip?rlkey=nzek5vp8r1qzvjttvg3m507d0&st=kxhfb84t&dl=0",
         dropboxZipLastUpdated: "2025-01-31",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "VOW Systems: XR Parts V1-V3",
@@ -1942,7 +1942,7 @@ const allParts = [
         imageSrc: "https://vow.systems/cdn/shop/files/IMG_0395.jpg",
         dropboxUrl: "https://www.dropbox.com/scl/fi/9tcs1z6yyruisd942rn8j/VOW-XR-Parts.zip?rlkey=9mc0yo7jduos33z2sl1z6gex6&st=ntc0iy6f&dl=0",
         dropboxZipLastUpdated: "2025-02-17",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "ENNOID MK8 Mount for GT Stock Box",
@@ -1962,7 +1962,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/853568",
         dropboxUrl: "https://www.dropbox.com/scl/fi/s5vnbx9yqtu3dpvy55yfj/funwheel-box-cable-covers-model_files.zip?rlkey=a4ochbvonpm75khvv3649yd7e&st=l13fw5lf&dl=0",
         dropboxZipLastUpdated: "2025-03-06",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Lia: Funwheel Controller Box Lid",
@@ -1972,7 +1972,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1011498",
         dropboxUrl: "https://www.dropbox.com/scl/fi/hnkc9hganii7pdm8fvnpi/funwheel-controller-box-lid-model_files.zip?rlkey=idgaogzgicub4vje5p9tx12qk&st=mc0iaygr&dl=0",
         dropboxZipLastUpdated: "2025-03-06",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Ride Foundry: Funwheel Box Cable Covers",
@@ -1982,7 +1982,7 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1218409",
         dropboxUrl: "https://www.dropbox.com/scl/fi/5pac5yq3abmc28jzi57wl/ridefoundry-fungi-controller-cable-cover-model_files.zip?rlkey=xid3hmc75tjd0vn38zxbnm82p&st=2uhtl9gx&dl=0",
         dropboxZipLastUpdated: "2025-03-06",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
     },
     {
         title: "Cal: GX16 Charger Plug",
@@ -2002,7 +2002,47 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1225055",
         dropboxUrl: "https://www.dropbox.com/scl/fi/u19f959ach0i94jcdgoog/custom-gasket-for-stock-xr-controller-model_files.zip?rlkey=mdkdzxsbie8pnr8r00pbqj8ns&st=iea70xdi&dl=0",
         dropboxZipLastUpdated: "2025-03-11",
-        platform: ["XR"]
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Lia: Funwheel Status Bar Cutout Placement for Footpads",
+        fabricationMethod: "Other",
+        typeOfPart: ["Tool", "Footpad Attachment", "Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/1081286/images/8175155_a304c585-4962-4c07-a6d0-81634ec765cc_2a1d7a8d-d635-42d6-bc3b-26654a5b1147/thumbs/inside/1600x1200/png/funwheel-status-bar-cutout-placement-for-footpads-2.webp",
+        externalUrl: "https://www.printables.com/model/1081286",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/o43m4wg3jtu5enyxv50s5/funwheel-status-bar-cutout-placement-for-footpads-model_files.zip?rlkey=mpx4dy2yy8djaqh2zwg9v3rbs&st=pdb7p53f&dl=0",
+        dropboxZipLastUpdated: "2025-03-22",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Lia: Funwheel Stompies Flight Fender Adapter",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender", "Fender Delete"],
+        imageSrc: "https://media.printables.com/media/prints/1007501/images/7662350_299c6b2e-c6fb-4cf2-aa67-503227d8b7d9_9e5f33e7-7af0-4f5f-abf4-be7d4953c223/thumbs/inside/1600x1200/jpeg/img_9032.webp",
+        externalUrl: "https://www.printables.com/model/1007501",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/5nyayicltzpt8pnmcnlo0/funwheel-stompies-flight-fender-adapter-model_files.zip?rlkey=3vn7hk8ekg5udlwprx00budbz&st=6yjfahis&dl=0",
+        dropboxZipLastUpdated: "2025-03-22",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Lia: Funwheel Box Headlight Clamp",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bracket"],
+        imageSrc: "https://media.printables.com/media/prints/854004/images/6567570_28d9ef2d-706a-413e-bf55-980db2c92127_71a59aa5-54cc-46f8-a417-5522640a26d8/thumbs/inside/1600x1200/png/capture-1.webp",
+        externalUrl: "https://www.printables.com/model/854004",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/8t9znnd93j0669pxo28bw/funwheel-box-headlight-clamp-model_files.zip?rlkey=94hp86bat547ufg7gqmld4af8&st=xvla2qke&dl=0",
+        dropboxZipLastUpdated: "2025-03-22",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Remie: Funwheel injection molded footpad mini fender F+R",
+        fabricationMethod: "Other",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://media.printables.com/media/prints/1018863/images/7739305_db7b6eba-734e-4ac2-9841-980fa47ffa26_fa29a873-d25c-4dac-b5a4-beeb92721dde/thumbs/inside/1600x1200/png/fungineers-mini-fenders.webp",
+        externalUrl: "https://www.printables.com/model/1018863",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/02284yf4noh2etk1j88pr/funwheel-injection-molded-footpad-mini-fender-fr-model_files.zip?rlkey=2iy9fqk5b5bxvy7zvb2dsfasq&st=kqkdos6f&dl=0",
+        dropboxZipLastUpdated: "2025-03-22",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 
@@ -2018,5 +2058,5 @@ export const gtParts = platform("GT/GT-S")
 export const miscParts = platform("Miscellaneous Items")
 export const pintParts = platform("Pint/X/S")
 export const vescElectronicsParts = platform("VESC Electronics")
-export const xrParts = platform("XR")
+export const xrParts = platform("XR/Funwheel")
 export const xrClassicParts = platform("XR Classic")

@@ -1277,8 +1277,8 @@ const allParts = [
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/1120000/images/8457376_dacfb099-31e0-4f89-a001-7135de39d34e_6cbdc152-b19f-4c59-ba95-79ad92ac2123/thumbs/inside/1280x960/png/screenshot_3.webp",
         externalUrl: "https://www.printables.com/model/1120000",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/pcjvping08d6sa7we3hbd/superfluxhypercore-to-xr-rails-clamping-axle-blocks-model_files.zip?rlkey=8ogo0lh2vyvamq5t74nry8ytc&st=6ex0jrpi&dl=0",
-        dropboxZipLastUpdated: "2025-02-13",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ejp1e2t3rc272oa10kwzy/superfluxhypercore-to-xr-rails-clamping-axle-blocks-model_files.zip?rlkey=95onh8o9ygh964zc38or9yjx8&st=k97qq5qg&dl=0",
+        dropboxZipLastUpdated: "2025-03-23",
         price: "~$155/pair from JLCPCB",
         platform: ["XR/Funwheel"]
     },

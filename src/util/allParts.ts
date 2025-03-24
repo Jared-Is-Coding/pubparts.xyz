@@ -1929,7 +1929,7 @@ const allParts = [
         title: "XR WTF Rail Badge",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Rail Attachment"],
-        imageSrc: "https://cdn.thingiverse.com/assets/0d/3b/f4/22/46/large_display_XR_WTF_Rail_Badge_VESC.png",
+        imageSrc: "https://cdn.thingiverse.com/assets/11/e1/1e/5b/7d/large_display_GT_WTF_Rail_Badge_VESC.png",
         externalUrl: "https://www.thingiverse.com/thing:6932978",
         dropboxUrl: "https://www.dropbox.com/scl/fi/dr7zg6z0awfsebwav4jhc/XR-WTF-Rail-Badges-6932978.zip?rlkey=nzek5vp8r1qzvjttvg3m507d0&st=kxhfb84t&dl=0",
         dropboxZipLastUpdated: "2025-01-31",
@@ -2043,6 +2043,43 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/02284yf4noh2etk1j88pr/funwheel-injection-molded-footpad-mini-fender-fr-model_files.zip?rlkey=2iy9fqk5b5bxvy7zvb2dsfasq&st=kqkdos6f&dl=0",
         dropboxZipLastUpdated: "2025-03-22",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Fungineers: Rear Concave Footpad",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad"],
+        imageSrc: "/images/parts/xr/funwheel-3dp-rear-pad.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/1vhm0is8iimqq6yu6trmz/Funwheel_Footpad_Concave_Rear_RK_rev1-1.zip?rlkey=38ws3lbp2uwleqd7kb57kvb9j&st=uvw3ckd3&dl=0",
+        dropboxZipLastUpdated: "2025-03-24",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Fungineers: Thor400 Spacer",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bracket"],
+        imageSrc: "/images/parts/xr/thor400-spacer.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/xx0robxer0kmoqwyopmrk/Spacerv2-1-1.zip?rlkey=e23wak77qtlerszhqk4khgnfi&st=upf3yrz7&dl=0",
+        dropboxZipLastUpdated: "2025-03-24",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Fungineers: X7 Rail Protectors",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "/images/parts/xr/x7-rail-protectors.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/jovuft17tasaexq4r6gbq/Protector-x7-rails-R-Rev2.zip?rlkey=qv1rpsqhs671tt6ynap52fx1e&st=mudlwmd5&dl=0",
+        dropboxZipLastUpdated: "2025-03-24",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "FloatNLC: Rimmy OneWheel Rim Protection for 6\" and 6.5\" hubs",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rim Saver"],
+        imageSrc: "https://media.printables.com/media/prints/1207270/images/9067137_6e3cb25e-35e8-4ad5-8acd-cf325702863d_8bc31f64-1368-4943-9aa0-f7861103cae6/thumbs/inside/1280x960/jpg/1000003801.webp",
+        externalUrl: "https://www.printables.com/model/1207270",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/vbl66ojz68jrhmoq9iuib/floatnlc-rimmy-one-wheel-rim-protection-for-6-and-65-hubs-model_files-1.zip?rlkey=41s5zalhowpc65gcg7aakynca&st=jh4569t8&dl=0",
+        dropboxZipLastUpdated: "2025-03-24",
+        platform: ["Floatwheel","GT/GT-S","Pint/X/S","XR Classic","XR/Funwheel"]
     }
 ] as ItemData[]
 

@@ -1,4 +1,5 @@
 import React from "react"
+import GitHubHover from "./GitHubHover"
 import ZiNcHover from "./ZiNcHover"
 
 /**
@@ -6,6 +7,9 @@ import ZiNcHover from "./ZiNcHover"
  */
 export default () => (
     <footer>
-        <ZiNcHover />
+        <div className="floating-icon-container d-none d-md-inline-block">
+            <GitHubHover />
+            <ZiNcHover />
+        </div>
     </footer>
 )

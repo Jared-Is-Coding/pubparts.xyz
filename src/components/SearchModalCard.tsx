@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 
 /**
@@ -34,7 +33,10 @@ export default (item: ItemData | ResourceData, index: number) => {
     }
 
     return (
-        <div className="searchableThing" style={{display: "none"}}>
+        <div   
+            className="searchableThing"
+            style={{display: "none"}}
+            key={`search-modal-card-${index}`}>
             {item.title} <>(</>{
                 ((item as ItemData).platform ?? (item as ResourceData).typeOfResource)
                     .map<React.ReactNode>((i) => (

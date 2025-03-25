@@ -252,6 +252,12 @@ const allResources = [
         typeOfResource: ["Website"],
         externalUrl: "https://lachlanhurst.github.io/esc-log-video/",
         description: "Tool for generating data overlay videos from VESC log files"
+    },
+    {
+        title: "Float Accessories",
+        typeOfResource: ["Github Repository"],
+        externalUrl: "https://github.com/Relys/vesc_pkg/tree/float-accessories/float_accessories",
+        description: "A VESC Express package for controlling LEDs, BMS and Pubmote"
     }
 ] as ResourceData[]
 

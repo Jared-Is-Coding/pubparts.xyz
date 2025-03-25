@@ -145,17 +145,19 @@ main {
  * ------------------
  **/
 
-.zinc-hover {
+.floating-icon-container {
     position: fixed;
     right: 0;
     bottom: 0;
-    margin: 0 15px 15px 0;
-    padding-left: 15px;
     opacity: 20%;
     z-index: -1;
     user-select: none;
+
+    display: inline-flex;
+    flex-direction: column;
 }
 
-#zinc-hover-tooltip {
-    
+.floating-icon {
+    margin: 0 15px 5px 0;
+    padding-left: 5px;
 }

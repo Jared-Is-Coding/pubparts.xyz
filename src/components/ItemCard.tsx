@@ -24,55 +24,55 @@ export default (item: ItemData, index: number) => {
             parttitle={item.title}
             parttypes={item.typeOfPart.join(",")}
             partfabricationmethod={item.fabricationMethod}>
-                <Card>
-                    {/* Part image */}
-                    {!!item.imageSrc &&
-                        <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
-                            <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
-                        </div>
-                    }
+            <Card>
+                {/* Part image */}
+                {!!item.imageSrc &&
+                    <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
+                        <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
+                    </div>
+                }
 
-                    {/* Part type badges */}
-                    {item.typeOfPart?.length &&
-                        <Stack className="display-over-top-right" direction="vertical" gap={1}>
-                            {item.typeOfPart.map((p, pillIndex) => (
-                                <Badge key={`item-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(p)}</Badge>
-                            ))}
-                            
-                            <Badge pill bg="dark">{item.fabricationMethod}</Badge>
+                {/* Part type badges */}
+                {item.typeOfPart?.length &&
+                    <Stack className="display-over-top-right" direction="vertical" gap={1}>
+                        {item.typeOfPart.map((p, pillIndex) => (
+                            <Badge key={`item-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(p)}</Badge>
+                        ))}
+                        
+                        <Badge pill bg="dark">{item.fabricationMethod}</Badge>
+                    </Stack>
+                }
+
+                {/* Copy Link to this item button */}
+                <Stack className="display-over-top-left" direction="vertical" gap={1}>
+                    <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${item.title}`} />
+                </Stack>
+                
+                {/* Part information */}
+                <Card.Body>
+                    <Card.Title as="h3">{item.title}</Card.Title>
+
+                    {item.price &&
+                        <Card.Text>
+                            <i>Price: {item.price ?? "???"}</i>
+                        </Card.Text>
+                    } 
+
+                    {(item.externalUrl || item.dropboxUrl) &&
+                        <Stack direction="vertical" gap={1}>
+                            {item.externalUrl &&
+                                <Card.Link href={item.externalUrl} target="_blank">External Listing</Card.Link>
+                            }
+
+                            {item.dropboxUrl &&
+                                <Card.Link href={item.dropboxUrl}>ZIP Download{!!item.dropboxZipLastUpdated &&
+                                    <>{` (${item.dropboxZipLastUpdated})`}</>
+                                }</Card.Link>
+                            }
                         </Stack>
                     }
-
-                    {/* Copy Link to this item button */}
-                    <Stack className="display-over-top-left" direction="vertical" gap={1}>
-                        <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${item.title}`} />
-                    </Stack>
-                    
-                    {/* Part information */}
-                    <Card.Body>
-                        <Card.Title as="h3">{item.title}</Card.Title>
-
-                        {item.price &&
-                            <Card.Text>
-                                <i>Price: {item.price ?? "???"}</i>
-                            </Card.Text>
-                        } 
-
-                        {(item.externalUrl || item.dropboxUrl) &&
-                            <Stack direction="vertical" gap={1}>
-                                {item.externalUrl &&
-                                    <Card.Link href={item.externalUrl} target="_blank">External Listing</Card.Link>
-                                }
-
-                                {item.dropboxUrl &&
-                                    <Card.Link href={item.dropboxUrl}>ZIP Download{!!item.dropboxZipLastUpdated &&
-                                        <>{` (${item.dropboxZipLastUpdated})`}</>
-                                    }</Card.Link>
-                                }
-                            </Stack>
-                        }
-                    </Card.Body>
-                </Card>
+                </Card.Body>
+            </Card>
         </Col>
     )
 }

@@ -1346,16 +1346,6 @@ const allParts = [
         platform: ["XR/Funwheel"]
     },
     {
-        title: "PubBox: 3DP V1 - XR VESC Box, Lid",
-        fabricationMethod: "3d Printed",
-        typeOfPart: ["Controller Box"],
-        imageSrc: "https://media.printables.com/media/prints/670275/images/6065874_a6347037-184b-427e-b683-124167242c89_efe5dcf6-e025-4200-bf45-de189efffa9a/thumbs/inside/1280x960/png/3dp-home.webp",
-        externalUrl: "https://www.printables.com/model/670275",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/yyur6hi0vv3st1iz667nq/3dp-pubbox-for-vesc-xr-funwheel-model_files.zip?rlkey=qe314lfkdiwjuxfdh7uafvv8a&st=s9jiszyu&dl=0",
-        dropboxZipLastUpdated: "2024-08-26",
-        platform: ["XR/Funwheel"]
-    },
-    {
         title: "Matix: 3DP PubBox for HyperCore Plug - XR VESC Box, Lid",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Controller Box"],
@@ -2080,6 +2070,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/vbl66ojz68jrhmoq9iuib/floatnlc-rimmy-one-wheel-rim-protection-for-6-and-65-hubs-model_files-1.zip?rlkey=41s5zalhowpc65gcg7aakynca&st=jh4569t8&dl=0",
         dropboxZipLastUpdated: "2025-03-24",
         platform: ["Floatwheel","GT/GT-S","Pint/X/S","XR Classic","XR/Funwheel"]
+    },
+    {
+        title: "PubBox: 3DP V1.1 - XR VESC Box, Lid",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/ac339922-1a50-4bba-a45c-2024d2bc780d/images/9306864_5089e01c-a8a2-4781-b6e5-0badf51912fa_27b2d5e5-02b1-47d4-a8d4-0bdcb48db848/thumbs/inside/1280x960/png/img_1902.webp",
+        externalUrl: "https://www.printables.com/model/1241703",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/qsmhi6g11s4kl8jtx455k/proper-3dp-pub-box-model_files.zip?rlkey=w0ptdsdvg7u8qn8ed29vsyyzd&st=lht1f5tq&dl=0",
+        dropboxZipLastUpdated: "2025-03-25",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

@@ -1328,7 +1328,7 @@ const allParts = [
         title: "PubWheel: CNC PubBox V2 - XR VESC Box, Lid",
         fabricationMethod: "CNC",
         typeOfPart: ["Controller Box"],
-        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000963939/design/2025-01-07_910e3805598e.png?x-oss-process=image/resize,w_1920/format,webp",
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000963939/design/2025-01-07_56fb95bb82376.png?x-oss-process=image/resize,w_1000/format,webp",
         externalUrl: "https://makerworld.com/en/models/963939",
         dropboxUrl: "https://www.dropbox.com/scl/fi/2y6q3robhi087i234pq6g/cnc-pubbox-v2-xr-vesc-box-model_files.zip?rlkey=1svs6tvdrp6rv5shnbwyluq0b&st=fm399jym&dl=0",
         dropboxZipLastUpdated: "2024-08-26",

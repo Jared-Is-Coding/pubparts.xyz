@@ -2080,6 +2080,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/qsmhi6g11s4kl8jtx455k/proper-3dp-pub-box-model_files.zip?rlkey=w0ptdsdvg7u8qn8ed29vsyyzd&st=lht1f5tq&dl=0",
         dropboxZipLastUpdated: "2025-03-25",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "XR Molex to Superflux Connector Adapter",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Adapter"],
+        imageSrc: "https://media.printables.com/media/prints/ee0fb34c-b1ad-404a-90c0-477e68f73c13/images/9354338_82e67617-378e-46d1-9209-68e4e1f27f87_a1701fbe-91a9-4da6-90c5-288bb7652dc0/thumbs/inside/1280x960/png/screenshot-2025-01-31-061016.webp",
+        externalUrl: "https://www.printables.com/model/1246517",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/pi9irr09g1qot8swdf1uu/xr-molex-to-superflux-clamping-adapter-model_files.zip?rlkey=6u7k56y2cgdmr0qgrxmvkbgmw&st=yb9as6bk&dl=0",
+        dropboxZipLastUpdated: "2025-03-28",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

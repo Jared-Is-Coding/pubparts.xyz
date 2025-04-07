@@ -2050,7 +2050,7 @@ const allParts = [
         imageSrc: "/images/parts/xr/thor400-spacer.png",
         dropboxUrl: "https://www.dropbox.com/scl/fi/xx0robxer0kmoqwyopmrk/Spacerv2-1-1.zip?rlkey=e23wak77qtlerszhqk4khgnfi&st=upf3yrz7&dl=0",
         dropboxZipLastUpdated: "2025-03-24",
-        platform: ["XR/Funwheel"]
+        platform: ["VESC Electronics"]
     },
     {
         title: "Fungineers: X7 Rail Protectors",
@@ -2090,6 +2090,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/pi9irr09g1qot8swdf1uu/xr-molex-to-superflux-clamping-adapter-model_files.zip?rlkey=6u7k56y2cgdmr0qgrxmvkbgmw&st=yb9as6bk&dl=0",
         dropboxZipLastUpdated: "2025-03-28",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "PoPBoX: SuperFlux Stator Plate Holder",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/US9dcd1c039fe0a2/design/2025-04-04_961635cdbe3c.jpg?x-oss-process=image/resize,w_1000/format,webp",
+        externalUrl: "https://makerworld.com/en/models/1284303",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/z22vao3pdrqm65k44jscr/SuperFlux-Stator-Plate-Holder.zip?rlkey=qjq69us8s7iwgdcwibv91arbw&st=rmqb2d8e&dl=0",
+        dropboxZipLastUpdated: "2025-04-07",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

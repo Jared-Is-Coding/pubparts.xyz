@@ -2088,7 +2088,7 @@ const allParts = [
         imageSrc: "https://media.printables.com/media/prints/ee0fb34c-b1ad-404a-90c0-477e68f73c13/images/9354338_82e67617-378e-46d1-9209-68e4e1f27f87_a1701fbe-91a9-4da6-90c5-288bb7652dc0/thumbs/inside/1280x960/png/screenshot-2025-01-31-061016.webp",
         externalUrl: "https://www.printables.com/model/1246517",
         dropboxUrl: "https://www.dropbox.com/scl/fi/pi9irr09g1qot8swdf1uu/xr-molex-to-superflux-clamping-adapter-model_files.zip?rlkey=6u7k56y2cgdmr0qgrxmvkbgmw&st=yb9as6bk&dl=0",
-        dropboxZipLastUpdated: "2025-03-28",
+        dropboxZipLastUpdated: "2025-04-13",
         platform: ["XR/Funwheel"]
     },
     {
@@ -2100,6 +2100,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/z22vao3pdrqm65k44jscr/SuperFlux-Stator-Plate-Holder.zip?rlkey=qjq69us8s7iwgdcwibv91arbw&st=rmqb2d8e&dl=0",
         dropboxZipLastUpdated: "2025-04-07",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Icee: GT CNC Controller Box (Compatible with VOW Mushies)",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/809f994e-4d37-446b-886a-4f53df600021/images/9481914_1bf279c8-15d8-449f-8103-fd3b1b089237_31ff2405-7ad3-431b-b45e-2a8072534e22/thumbs/inside/1280x960/jpg/20250330_151237.webp",
+        externalUrl: "https://www.printables.com/model/1150304",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/zezyrp5aybqy9sjpz8qih/onewheel-gt-cnc-controller-box-compatible-with-vow-mushies-model_files.zip?rlkey=z7v668so5aefm8iqlir9x3oq2&st=lv8hess4&dl=0",
+        dropboxZipLastUpdated: "2025-04-13",
+        platform: ["GT/GT-S"]
     }
 ] as ItemData[]
 

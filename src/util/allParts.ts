@@ -380,7 +380,7 @@ const allParts = [
     {
         title: "PubParts: WTF Rails to C&R or Stock Fender Adapters",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Fender"],
+        typeOfPart: ["Fender", "Adapter"],
         imageSrc: "https://media.printables.com/media/prints/967285/images/7590024_efa569ce-8482-452c-82fc-69a67e1da5c8_46a16e5d-9dd7-4b80-ba42-324d9f1cdc40/thumbs/inside/1280x960/jpg/spacer-2.webp",
         externalUrl: "https://www.printables.com/model/967285",
         platform: ["GT/GT-S"]
@@ -747,7 +747,7 @@ const allParts = [
     {
         title: "PubParts: WTF Rails (Standard) to Stock Fender Adapter",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Fender"],
+        typeOfPart: ["Fender", "Adapter"],
         imageSrc: "https://media.printables.com/media/prints/668887/images/5261871_d0e99459-37d6-4fbd-a28d-72cd83006514_2c154b38-29fd-40cf-8421-e9c7e3f79575/thumbs/inside/1280x960/jpg/make3.webp",
         externalUrl: "https://www.printables.com/model/668887",
         dropboxUrl: "https://www.dropbox.com/scl/fi/prt5sxz8eozz53zmgc7zp/onewheel-pint-tfl-standard-wtf-rails-to-stock-fender-adapter-model_files.zip?rlkey=x6p7jq8ur28jn2nyq8iuuijj2&st=6pstzjiz&dl=0",
@@ -1117,6 +1117,8 @@ const allParts = [
         typeOfPart: ["Remote"],
         imageSrc: "https://media.printables.com/media/prints/1143449/images/8628918_0c212240-6401-4eb7-ae18-ec3113435cda_23c52ba5-e42a-4993-bebc-cf92a415ef83/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1143449",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/12j74yqepsnk0kgsyguyy/snowmote-case-for-pubmote-model_files.zip?rlkey=nia817zr5nzazguykcjr31pu1&st=v0bueqc6&dl=0",
+        dropboxZipLastUpdated: "2025-04-15",
         platform: ["VESC Electronics"]
     },
     {
@@ -2110,6 +2112,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/zezyrp5aybqy9sjpz8qih/onewheel-gt-cnc-controller-box-compatible-with-vow-mushies-model_files.zip?rlkey=z7v668so5aefm8iqlir9x3oq2&st=lv8hess4&dl=0",
         dropboxZipLastUpdated: "2025-04-13",
         platform: ["GT/GT-S"]
+    },
+    {
+        title: "ZiNc Leaf Blaster - Case for Pubmote",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Remote"],
+        imageSrc: "https://media.printables.com/media/prints/5e3a7045-1e99-49a5-b389-703d905137b7/images/9505961_f4cd6249-6c35-4c0e-adde-d3065eeca934_4e67c971-ec97-475d-835d-e0e55d4b3725/thumbs/inside/1280x960/png/screenshot_2.webp",
+        externalUrl: "https://www.printables.com/model/1265591",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/sn474ou730ur7rkfb94k6/zinc-leaf-blaster-case-for-pubmote-model_files.zip?rlkey=dwoviquo7fxti8p74yqxksa48&st=24qb17vp&dl=0",
+        dropboxZipLastUpdated: "2025-04-15",
+        platform: ["VESC Electronics"]
     }
 ] as ItemData[]
 

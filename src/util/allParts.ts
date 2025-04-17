@@ -2117,7 +2117,7 @@ const allParts = [
         title: "ZiNc Leaf Blaster - Case for Pubmote",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Remote"],
-        imageSrc: "https://media.printables.com/media/prints/5e3a7045-1e99-49a5-b389-703d905137b7/images/9505961_f4cd6249-6c35-4c0e-adde-d3065eeca934_4e67c971-ec97-475d-835d-e0e55d4b3725/thumbs/inside/1280x960/png/screenshot_2.webp",
+        imageSrc: "https://media.printables.com/media/prints/d129063d-c316-404f-8656-1f14e1150814/images/9523006_b6a7a7b5-c710-4fef-b3c5-b6a205608cd2_cb29b7ac-4e13-4bc3-a417-504cf29b1d47/thumbs/inside/1280x960/jpg/lb.webp",
         externalUrl: "https://www.printables.com/model/1265591",
         dropboxUrl: "https://www.dropbox.com/scl/fi/sn474ou730ur7rkfb94k6/zinc-leaf-blaster-case-for-pubmote-model_files.zip?rlkey=dwoviquo7fxti8p74yqxksa48&st=24qb17vp&dl=0",
         dropboxZipLastUpdated: "2025-04-15",

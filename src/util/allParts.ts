@@ -2122,6 +2122,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/sn474ou730ur7rkfb94k6/zinc-leaf-blaster-case-for-pubmote-model_files.zip?rlkey=dwoviquo7fxti8p74yqxksa48&st=24qb17vp&dl=0",
         dropboxZipLastUpdated: "2025-04-15",
         platform: ["VESC Electronics"]
+    },
+    {
+        title: "Onewheel XR Battery Mud Guard",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Connector Cover"],
+        imageSrc: "https://media.printables.com/media/prints/38cb1740-0a3f-4cfc-977e-e2e5356e4bb5/images/9522319_9670a77b-d078-445c-ac28-28351f342d3e_cd781d75-4983-4b5e-93ed-49d82c4955e8/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1267863",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/37v9w6psfqzjunodh99ir/mud-guard-v13.zip?rlkey=ej30iie3zzpoj8qmydkqpsvuz&st=qcpjgyvq&dl=0",
+        dropboxZipLastUpdated: "2025-04-17",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

@@ -1279,8 +1279,8 @@ const allParts = [
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/1120000/images/8457376_dacfb099-31e0-4f89-a001-7135de39d34e_6cbdc152-b19f-4c59-ba95-79ad92ac2123/thumbs/inside/1280x960/png/screenshot_3.webp",
         externalUrl: "https://www.printables.com/model/1120000",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/ejp1e2t3rc272oa10kwzy/superfluxhypercore-to-xr-rails-clamping-axle-blocks-model_files.zip?rlkey=95onh8o9ygh964zc38or9yjx8&st=k97qq5qg&dl=0",
-        dropboxZipLastUpdated: "2025-03-23",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ejp1e2t3rc272oa10kwzy/superfluxhypercore-to-xr-rails-clamping-axle-blocks-model_files.zip?rlkey=95onh8o9ygh964zc38or9yjx8&st=6xbicl5c&dl=0",
+        dropboxZipLastUpdated: "2025-04-25",
         price: "~$155/pair from JLCPCB",
         platform: ["XR/Funwheel"]
     },
@@ -1522,8 +1522,8 @@ const allParts = [
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/939143/images/7546680_3a71409f-9c10-4b8c-8148-00e10d1f34cb_27329374-64cb-4d7d-abca-8d6667b2bfca/thumbs/inside/1280x960/jpg/xr_finned_1.webp",
         externalUrl: "https://www.printables.com/model/939143",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/f76fpurhbd2bmrmgojwya/onewheel-pubhubs-xr-blocks-finned-axle-block-covers-model_files.zip?rlkey=le6yphs2pssjhzcrfj8jfn4bv&st=x2m5cruv&dl=0",
-        dropboxZipLastUpdated: "2024-08-26",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/bn8614gir1ean8bryft1z/onewheel-pubhubs-xr-blocks-finned-axle-block-covers-model_files.zip?rlkey=062b9be6meojn49tml0h2p135&st=9u7mtxye&dl=0",
+        dropboxZipLastUpdated: "2025-04-25",
         price: "~$30/pair from JLCPCB",
         platform: ["XR/Funwheel"]
     },

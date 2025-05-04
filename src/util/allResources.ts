@@ -258,6 +258,12 @@ const allResources = [
         typeOfResource: ["Github Repository"],
         externalUrl: "https://github.com/Relys/vesc_pkg/tree/float-accessories/float_accessories",
         description: "A VESC Express package for controlling LEDs, BMS and Pubmote"
+    },
+    {
+        title: "Carve Workshop",
+        typeOfResource: ["Vendor"],
+        externalUrl: "https://carveworkshop.com/",
+        description: "Find the right setup for your needs. Push your board to your limits. We can help you with any setup you request."
     }
 ] as ResourceData[]
 

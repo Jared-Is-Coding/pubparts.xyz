@@ -2132,6 +2132,25 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/jsu5yqu5f97ddd2f6dh8d/Mud-Guard-v16.zip?rlkey=wjbpi44qk5q61cgz1s9omdqg7&st=r229ml0b&dl=0",
         dropboxZipLastUpdated: "2025-04-17",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "ExcessRaccoon: Mini Onewheel Stand",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Stand"],
+        imageSrc: "https://media.printables.com/media/prints/ae7248db-c009-4e73-b77f-5cea9f1f04a9/images/9697680_01ed8da5-0127-4ba1-8a6f-30f71e47d244_a3ee711a-7e70-4f8a-9b69-124eb383f5fc/thumbs/inside/1280x960/jpg/pxl_20250507_005121827.webp",
+        externalUrl: "https://www.printables.com/model/1288326",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/y17s8ox03wlcfekk8acmk/mini-onewheel-stand-model_files.zip?rlkey=trgh0vtqrlxdiopaao7fwwnr8&st=e43jbdi2&dl=0",
+        dropboxZipLastUpdated: "2025-05-12",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Split ADV Lush Wide Footpads w/ Dragan Hooks (FDM-focused, for smaller printers)",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad", "Footpad Attachment"],
+        imageSrc: "/images/parts/floatwheel/split_adv_lushys.jpg",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/364edm6wf1rjwducwrv4a/adv-split-lushy-3dp.zip?rlkey=0f9rvhvypy4qocxgzghcdblbn&st=hjhxy8p4&dl=0",
+        dropboxZipLastUpdated: "2025-05-12",
+        platform: ["Floatwheel"]
     }
 ] as ItemData[]
 

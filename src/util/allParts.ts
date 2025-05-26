@@ -1746,7 +1746,7 @@ const allParts = [
     {
         title: "TFL: XR Drop Top Lift Kit",
         fabricationMethod: "3d Printed",
-        typeOfPart: ["Miscellaneous"],
+        typeOfPart: ["Fender"],
         imageSrc: "https://cdn.thingiverse.com/assets/71/e9/67/c0/ff/large_display_af81fb98-7b33-4cf8-a30b-67fd1916a492.png",
         externalUrl: "https://www.thingiverse.com/thing:6451831",
         dropboxUrl: "https://www.dropbox.com/scl/fi/ltn40qmd5drpc81gjdv8x/XR-Drop-Top-Lift-Kit-6451831.zip?rlkey=ryfgdc02bq4g8k8m0ojgl829w&st=8qjkalzm&dl=0",
@@ -2151,6 +2151,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/364edm6wf1rjwducwrv4a/adv-split-lushy-3dp.zip?rlkey=0f9rvhvypy4qocxgzghcdblbn&st=hjhxy8p4&dl=0",
         dropboxZipLastUpdated: "2025-05-12",
         platform: ["Floatwheel"]
+    },
+    {
+        title: "PubParts: XR Drop Top Lift Kit for WTF Extended",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://media.printables.com/media/prints/1138681/images/8592033_b41d47b4-21da-4210-be99-17695574065a_0ba8e6d0-4823-4ca8-b214-92c679c78860/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1138681",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/k3swli5jlchdkqt3rbm6g/xr-drop-top-lift-kit-for-wtf-extended-model_files.zip?rlkey=d2z03buudcpvh9f52o28ct13u&st=vjfwwhwi&dl=0",
+        dropboxZipLastUpdated: "2025-05-25",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

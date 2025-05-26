@@ -2161,6 +2161,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/k3swli5jlchdkqt3rbm6g/xr-drop-top-lift-kit-for-wtf-extended-model_files.zip?rlkey=d2z03buudcpvh9f52o28ct13u&st=vjfwwhwi&dl=0",
         dropboxZipLastUpdated: "2025-05-25",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Onewheel GT Drop Top Base For BTG",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://media.printables.com/media/prints/5b10fa4d-8542-4cce-a4b4-034ee8e9911e/images/9863862_83aebcb9-28a4-4808-8595-3712b7efc8da_b132bf85-1d43-4add-a7d2-3080055ae7a6/thumbs/inside/1600x1200/png/dzjqeo91.webp",
+        externalUrl: "https://www.printables.com/model/1307946",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/hfnr5nigjylmlxbuynagh/onewheel-gt-drop-top-base-for-btg-model_files.zip?rlkey=cljxvx105lmlx77t1zwvkjslw&st=jhdn7ger&dl=0",
+        dropboxZipLastUpdated: "2025-05-25",
+        platform: ["GT/GT-S"]
     }
 ] as ItemData[]
 

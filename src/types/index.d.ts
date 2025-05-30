@@ -56,6 +56,7 @@ type PartType =
     | "Footpad Attachment"
     | "Gasket"
     | "Hall Sensor"
+    | "LED"
     | "Miscellaneous"
     | "Motor"
     | "Motor Cover"

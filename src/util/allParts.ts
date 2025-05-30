@@ -2171,6 +2171,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/hfnr5nigjylmlxbuynagh/onewheel-gt-drop-top-base-for-btg-model_files.zip?rlkey=cljxvx105lmlx77t1zwvkjslw&st=jhdn7ger&dl=0",
         dropboxZipLastUpdated: "2025-05-25",
         platform: ["GT/GT-S"]
+    },
+    {
+        title: "AeyTWP: Heat Sink for JF H4 LED and Fungineers Front Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["LED"],
+        imageSrc: "https://media.printables.com/media/prints/d3545d5e-09aa-46a3-b6cf-acee883179d3/images/9883244_f88191ce-f090-47f6-a87c-2849d6e0afa0_5a6a34de-4d95-4583-bf18-2aeafc1e999a/thumbs/inside/1280x960/png/h4-pcb-heat-sink-v9-1.webp",
+        externalUrl: "https://www.printables.com/model/1309844",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/s0k552yd532rmgq70r8aq/heat-sink-for-jf-h4-led-and-fungineer-front-box-model_files.zip?rlkey=xbirzvznq03d1xb082uyicf7m&st=e0blvdbm&dl=0",
+        dropboxZipLastUpdated: "2025-05-30",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

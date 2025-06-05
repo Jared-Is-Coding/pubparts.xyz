@@ -2181,6 +2181,26 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/s0k552yd532rmgq70r8aq/heat-sink-for-jf-h4-led-and-fungineer-front-box-model_files.zip?rlkey=xbirzvznq03d1xb082uyicf7m&st=e0blvdbm&dl=0",
         dropboxZipLastUpdated: "2025-05-30",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Warzon3: XR Bang Bumpers",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bumper"],
+        imageSrc: "https://media.printables.com/media/prints/0209dcb6-46f7-4ff7-a635-0d6894dee735/images/9941168_cb5b7eab-0a49-43de-b5fc-9acdde66341e_cf100079-0e0f-4606-9fc3-9c09a9aa0751/thumbs/inside/1280x960/png/xr-bang-bumpers.webp",
+        externalUrl: "https://www.printables.com/model/1317587",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/xvnfszf72ndz5i91afzi8/xr-bang-bumpers-model_files.zip?rlkey=a0ak53oan4y5qox99oclm263e&st=3ie5lsyr&dl=0",
+        dropboxZipLastUpdated: "2025-06-05",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Nexinity: Superflux Motor Bearing Seals",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bearing Cover"],
+        imageSrc: "https://media.printables.com/media/prints/4c02e2cf-7df6-4f22-9db4-34207c53f5e9/images/9948213_226496e0-c8dc-4157-b367-e06948ed33bb_3e24c5f0-bc6f-48cf-b32c-c8f5c80c3bcd/thumbs/inside/1280x960/jpg/img_9176.webp",
+        externalUrl: "https://www.printables.com/model/1318548",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/xoqk29medcx20rju2qnne/superflux-motor-bearing-seals-model_files.zip?rlkey=dxq59yqrtiezri18isum9jbi5&st=o35dl3f6&dl=0",
+        dropboxZipLastUpdated: "2025-06-05",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

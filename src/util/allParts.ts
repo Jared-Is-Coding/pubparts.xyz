@@ -2201,6 +2201,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/xoqk29medcx20rju2qnne/superflux-motor-bearing-seals-model_files.zip?rlkey=dxq59yqrtiezri18isum9jbi5&st=o35dl3f6&dl=0",
         dropboxZipLastUpdated: "2025-06-05",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "ThePoro: XR Mini Fenders (DTF Compatible)",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender"],
+        imageSrc: "https://media.printables.com/media/prints/438988f2-b892-499d-adf7-3aff84db0b7f/images/9953562_1f6d4352-8a5f-4611-911a-c5e9e583680e_35b74bf5-1a55-4067-b349-e7f55f7f758f/thumbs/inside/1280x960/jpg/dsc_4928.webp",
+        externalUrl: "https://www.printables.com/model/1319249",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/liyuxicqdc3jgedyum6d5/onewheel-xr-mini-fenders-model_files.zip?rlkey=cwl1jyioxqoqzvlor5m8q3n5j&st=runj2ukk&dl=0",
+        dropboxZipLastUpdated: "2025-06-06",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

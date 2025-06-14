@@ -1898,6 +1898,16 @@ const allParts = [
         platform: ["XR/Funwheel"]
     },
     {
+        title: "X10 Style Rails",
+        fabricationMethod: "CNC",
+        typeOfPart: ["Rails"],
+        imageSrc: "https://media.printables.com/media/prints/1143770/images/8631086_5967b01a-bb6a-411a-a15f-b3e6379b082c_909b5b18-b716-4869-91db-ed9dae5fdc8c/thumbs/inside/1280x960/png/screenshot-2025-01-11-at-135333.webp",
+        externalUrl: "https://www.printables.com/model/1143770",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ucsqprsy4rgzc84iuxpal/onewheel-xr-fungineers-x10-rails-model_files.zip?rlkey=i3raxlh17mjp6oz9iy8ggsddh&st=kifbzbkq&dl=0",
+        dropboxZipLastUpdated: "2025-06-14",
+        platform: ["XR/Funwheel"]
+    },
+    {
         title: "Defying: ENNOID MK8 Mount for CNC PubBox V2",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Adapter", "Bracket"],
@@ -2198,8 +2208,8 @@ const allParts = [
         typeOfPart: ["Bearing Cover"],
         imageSrc: "https://media.printables.com/media/prints/4c02e2cf-7df6-4f22-9db4-34207c53f5e9/images/9948213_226496e0-c8dc-4157-b367-e06948ed33bb_3e24c5f0-bc6f-48cf-b32c-c8f5c80c3bcd/thumbs/inside/1280x960/jpg/img_9176.webp",
         externalUrl: "https://www.printables.com/model/1318548",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/xoqk29medcx20rju2qnne/superflux-motor-bearing-seals-model_files.zip?rlkey=dxq59yqrtiezri18isum9jbi5&st=o35dl3f6&dl=0",
-        dropboxZipLastUpdated: "2025-06-05",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/xoqk29medcx20rju2qnne/superflux-motor-bearing-seals-model_files.zip?rlkey=dxq59yqrtiezri18isum9jbi5&st=0rzffkjy&dl=0",
+        dropboxZipLastUpdated: "2025-06-14",
         platform: ["Miscellaneous Items"]
     },
     {
@@ -2210,6 +2220,16 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1319249",
         dropboxUrl: "https://www.dropbox.com/scl/fi/liyuxicqdc3jgedyum6d5/onewheel-xr-mini-fenders-model_files.zip?rlkey=cwl1jyioxqoqzvlor5m8q3n5j&st=runj2ukk&dl=0",
         dropboxZipLastUpdated: "2025-06-06",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "TylerTurdenPants: Floatboxx MXC V2 - LED Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bracket", "LED"],
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000001503239/design/2025-06-09_cf0bac25900b78.jpg?x-oss-process=image/resize,w_1000/format,webp",
+        externalUrl: "https://makerworld.com/en/models/1503239",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ukux4odwj5kzkwp83flez/Floatboxx-MXC-V2-LED-Box.zip?rlkey=ouiyg9hi6ep5vpspyn012u8u3&st=ccm03nw9&dl=0",
+        dropboxZipLastUpdated: "2025-06-14",
         platform: ["XR/Funwheel"]
     }
 ] as ItemData[]

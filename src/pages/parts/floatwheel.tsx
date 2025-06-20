@@ -8,7 +8,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/items.scss"
-import { floatwheelParts } from "../../util/allParts"
+import { floatwheelParts } from "../../util/parts"
 
 export const Head: HeadFC = () => (
     <>

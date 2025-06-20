@@ -8,7 +8,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/items.scss"
-import { xrParts } from "../../util/allParts"
+import { xrParts } from "../../util/parts"
 
 export const Head: HeadFC = () => (
     <>

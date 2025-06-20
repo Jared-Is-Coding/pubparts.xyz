@@ -1,0 +1,9 @@
+@import "./items.scss";
+
+.sort-button-stack {
+    float: right;
+
+    button {
+        line-height: inherit;
+    }
+}

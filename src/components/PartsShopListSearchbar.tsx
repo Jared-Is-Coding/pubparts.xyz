@@ -4,37 +4,41 @@ import { FaArrowRotateLeft } from "react-icons/fa6"
 import windowIsDefined from "../hooks/windowIsDefined"
 import CopyLinkButton from "./CopyLinkButton"
 
-type ItemListSearchbarProps = {
-    partList: ItemData[]
+type PartsShopListSearchbarProps = {
+    partList: PartsShopData[]
 }
 
 /**
  * Creates a collection of elements for the
  * purpose of filtering an items page under
- * `src/pages/parts`
+ * `src/pages/zts`
  * 
- * @param ItemListSearchbarProps - a {@link ItemListSearchbarProps} object
+ * @param PartsShopListSearchbarProps - a {@link PartsShopListSearchbarProps} object
  */
-export default ({partList}: ItemListSearchbarProps) => {
+export default ({partList}: PartsShopListSearchbarProps) => {
     // Arrays from parts lists
+    const uniquePlatformTypes = [...new Set(partList.map((p) => p.platform).flat())]
     const uniquePartTypes = [...new Set(partList.map((p) => p.typeOfPart).flat())]
-    const uniqueFabricationMethods = [...new Set(partList.map((p) => p.fabricationMethod).flat())]
+    const uniqueItemConditions = [...new Set(partList.map((p) => p.condition).flat())]
 
     // Checkbox useState object lists
-    const partTypeCheckboxes = Object.fromEntries(uniquePartTypes.map((p) => [p, false])) as { [P in PartType]: boolean }
-    const fabricationMethodCheckboxes = Object.fromEntries(uniqueFabricationMethods.map((p) => [p, false])) as { [P in FabricationMethod]: boolean }
+    const platformCheckboxes = Object.fromEntries(uniquePlatformTypes.map((p) => [p, false])) as { [P in PlatformType]: boolean }
+    const partTypeCheckboxes = Object.fromEntries(uniquePartTypes.map((p) => [p, false])) as { [P in PartShopType]: boolean }
+    const itemConditionCheckboxes = Object.fromEntries(uniqueItemConditions.map((p) => [p, false])) as { [P in ItemCondition]: boolean }
 
     // Set useStates
     const didMount = useRef(false)
     const [searchText, setSearchText] = useState("")
+    const [checkedPlatformBoxes, setCheckedPlatformBoxes] = useState(platformCheckboxes)
     const [checkedTypeBoxes, setCheckedTypeBoxes] = useState(partTypeCheckboxes)
-    const [checkedFabricationMethodBoxes, setCheckedFabricationMethodBoxes] = useState(fabricationMethodCheckboxes)
+    const [checkedItemConditionBoxes, setCheckedItemConditionBoxes] = useState(itemConditionCheckboxes)
     const [showCopySearchButton, setShowCopySearchButton] = useState(false)
 
     const clearSearch = () => {
         setSearchText("")
+        setCheckedPlatformBoxes(platformCheckboxes)
         setCheckedTypeBoxes(partTypeCheckboxes)
-        setCheckedFabricationMethodBoxes(fabricationMethodCheckboxes)
+        setCheckedItemConditionBoxes(itemConditionCheckboxes)
     }
 
     //#region Query Parameter Pre-Filtering
@@ -49,7 +53,15 @@ export default ({partList}: ItemListSearchbarProps) => {
         }
         
         // Set checkboxes as checked
-        const type = (queryParams.get("type")?.split(",") ?? []) as PartType[]
+        const platform = (queryParams.get("platform")?.split(",") ?? []) as PlatformType[]
+        if (platform && platform.every((t) => uniquePlatformTypes.includes(t))) {
+            const tempCheckedPlatformBoxes = structuredClone(checkedPlatformBoxes)
+            platform.forEach((t) => tempCheckedPlatformBoxes[t] = true)
+            setCheckedPlatformBoxes(tempCheckedPlatformBoxes)
+        }
+        
+        // Set checkboxes as checked
+        const type = (queryParams.get("type")?.split(",") ?? []) as PartShopType[]
         if (type && type.every((t) => uniquePartTypes.includes(t))) {
             const tempCheckedTypeBoxes = structuredClone(checkedTypeBoxes)
             type.forEach((t) => tempCheckedTypeBoxes[t] = true)
@@ -57,11 +69,11 @@ export default ({partList}: ItemListSearchbarProps) => {
         }
         
         // Set checkboxes as checked
-        const fabricationMethod = (queryParams.get("fab")?.split(",") ?? queryParams.get("fabrication")?.split(",") ?? []) as FabricationMethod[]
-        if (fabricationMethod && fabricationMethod.every((f) => uniqueFabricationMethods.includes(f))) {
-            const tempCheckedFabricationMethodBoxes = structuredClone(checkedFabricationMethodBoxes)
-            fabricationMethod.forEach((f) => tempCheckedFabricationMethodBoxes[f] = true)
-            setCheckedFabricationMethodBoxes(tempCheckedFabricationMethodBoxes)
+        const itemCondition = (queryParams.get("cond")?.split(",") ?? queryParams.get("condition")?.split(",") ?? []) as ItemCondition[]
+        if (itemCondition && itemCondition.every((f) => uniqueItemConditions.includes(f))) {
+            const tempCheckedItemConditionBoxes = structuredClone(checkedItemConditionBoxes)
+            itemCondition.forEach((f) => tempCheckedItemConditionBoxes[f] = true)
+            setCheckedItemConditionBoxes(tempCheckedItemConditionBoxes)
         }
 
         // Don't re-run this
@@ -71,12 +83,16 @@ export default ({partList}: ItemListSearchbarProps) => {
     //#endregion
     //#region Checkbox Handlers
 
+    const handlePlatformCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
+        setCheckedPlatformBoxes({...checkedPlatformBoxes, [e.target.name]: e.target.checked})
+    }
+
     const handleTypeCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
         setCheckedTypeBoxes({...checkedTypeBoxes, [e.target.name]: e.target.checked})
     }
 
-    const handleFabricationMethodCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
-        setCheckedFabricationMethodBoxes({...checkedFabricationMethodBoxes, [e.target.name]: e.target.checked})
+    const handleItemConditionCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
+        setCheckedItemConditionBoxes({...checkedItemConditionBoxes, [e.target.name]: e.target.checked})
     }
 
     //#endregion
@@ -94,8 +110,9 @@ export default ({partList}: ItemListSearchbarProps) => {
         items.forEach((item) => {
             // Get part information, lower case
             const dataPartTitle = item.getAttribute("parttitle")
-            const dataPartTypes = item.getAttribute("parttypes")?.split(",") as PartType[]
-            const dataFabricationMethod = item.getAttribute("partfabricationmethod") as FabricationMethod
+            const dataPlatform = item.getAttribute("platform")?.split(",") as PlatformType[]
+            const dataPartTypes = item.getAttribute("parttypes")?.split(",") as PartShopType[]
+            const dataItemCondition = item.getAttribute("partitemcondition") as ItemCondition
 
             // Do not display item if...
             if (
@@ -105,16 +122,22 @@ export default ({partList}: ItemListSearchbarProps) => {
                     && !dataPartTitle?.toLowerCase().includes(searchText.toLowerCase())
                 )
 
+                // Part platform does not match checked items
+                || (
+                    Object.values(checkedPlatformBoxes).some((v) => !!v)
+                    && !dataPlatform?.some((t) => !!checkedPlatformBoxes[t as PlatformType])
+                )
+
                 // Part type does not match checked items
                 || (
                     Object.values(checkedTypeBoxes).some((v) => !!v)
-                    && !dataPartTypes?.some((t) => !!checkedTypeBoxes[t as PartType])
+                    && !dataPartTypes?.some((t) => !!checkedTypeBoxes[t as PartShopType])
                 )
 
-                // Part fabrication method does not match checked items
+                // Part condition does not match checked items
                 || (
-                    Object.values(checkedFabricationMethodBoxes).some((v) => !!v)
-                    && !checkedFabricationMethodBoxes[dataFabricationMethod]
+                    Object.values(checkedItemConditionBoxes).some((v) => !!v)
+                    && !checkedItemConditionBoxes[dataItemCondition]
                 )
             ) {
                 // Hide
@@ -147,8 +170,9 @@ export default ({partList}: ItemListSearchbarProps) => {
 
         setShowCopySearchButton(!!(
             searchText
+            || Object.values(checkedPlatformBoxes).some((v) => !!v)
             || Object.values(checkedTypeBoxes).some((v) => !!v)
-            || Object.values(checkedFabricationMethodBoxes).some((v) => !!v)
+            || Object.values(checkedItemConditionBoxes).some((v) => !!v)
         ))
 
         //#endregion
@@ -180,6 +204,30 @@ export default ({partList}: ItemListSearchbarProps) => {
                         />
                     </div>
 
+                    {uniquePlatformTypes.length > 1 &&
+                        <div className="searchPlatformCheckBoxes">
+                            <Form.Label as="h3">
+                                Platform(s):
+                            </Form.Label>
+
+                            <ButtonGroup size="sm">
+                                {uniquePlatformTypes.sort((a, b) => a.localeCompare(b)).map((p, index) => (
+                                    <ToggleButton
+                                        key={`itemCondition-${index}`}
+                                        checked={checkedPlatformBoxes[p]}
+                                        onChange={handlePlatformCheckbox}
+                                        name={p}
+                                        id={p}
+                                        type="checkbox"
+                                        value={1}
+                                        variant="outline-info">
+                                        {p}
+                                    </ToggleButton>
+                                ))}
+                            </ButtonGroup>
+                        </div>
+                    }
+
                     {uniquePartTypes.length > 1 &&
                         <div className="searchTypeCheckBoxes">
                             <Form.Label as="h3">
@@ -204,24 +252,24 @@ export default ({partList}: ItemListSearchbarProps) => {
                         </div>
                     }
 
-                    {uniqueFabricationMethods.length > 1 &&
-                        <div className="searchFabricationCheckBoxes">
+                    {uniqueItemConditions.length > 1 &&
+                        <div className="searchConditionCheckBoxes">
                             <Form.Label as="h3">
-                                Fabrication Method(s):
+                                Item Condition(s):
                             </Form.Label>
 
                             <ButtonGroup size="sm">
-                                {uniqueFabricationMethods.sort((a, b) => a.localeCompare(b)).map((f, index) => (
+                                {uniqueItemConditions.sort((a, b) => a.localeCompare(b)).map((c, index) => (
                                     <ToggleButton
-                                        key={`fabricationMethod-${index}`}
-                                        checked={checkedFabricationMethodBoxes[f]}
-                                        onChange={handleFabricationMethodCheckbox}
-                                        name={f}
-                                        id={f}
+                                        key={`itemCondition-${index}`}
+                                        checked={checkedItemConditionBoxes[c]}
+                                        onChange={handleItemConditionCheckbox}
+                                        name={c}
+                                        id={c}
                                         type="checkbox"
                                         value={1}
                                         variant="outline-info">
-                                        {f}
+                                        {c}
                                     </ToggleButton>
                                 ))}
                             </ButtonGroup>
@@ -240,7 +288,7 @@ export default ({partList}: ItemListSearchbarProps) => {
 
                         <CopyLinkButton
                             text="Copy This Search"
-                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&fab=${uniqueFabricationMethods.filter((f) => !!checkedFabricationMethodBoxes[f])}`}
+                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&platform=${uniquePlatformTypes.filter((t) => !!checkedPlatformBoxes[t])}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&condition=${uniqueItemConditions.filter((f) => !!checkedItemConditionBoxes[f])}`}
                             style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
                     </Stack>
                 </Stack>

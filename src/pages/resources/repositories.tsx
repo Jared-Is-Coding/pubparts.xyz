@@ -7,7 +7,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/resources.scss"
-import { codeRepositoriesResources } from "../../util/allResources"
+import { codeRepositoriesResources } from "../../util/resources"
 
 export const Head: HeadFC = () => (
     <>

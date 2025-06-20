@@ -268,7 +268,7 @@ const allParts = [
         platform: ["Floatwheel"]
     },
     {
-        title: "PubParts: Axle Block Covers",
+        title: "PubParts: GT Axle Block Covers",
         fabricationMethod: "CNC",
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/958730/images/7589966_c3faedef-a7af-4a3b-8059-42fb435eed79_c08e5041-4d18-4b26-bb11-9c8d9c5571e7/thumbs/inside/1280x960/jpg/gt-rail-piece.webp",
@@ -2231,6 +2231,24 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/ukux4odwj5kzkwp83flez/Floatboxx-MXC-V2-LED-Box.zip?rlkey=ouiyg9hi6ep5vpspyn012u8u3&st=ccm03nw9&dl=0",
         dropboxZipLastUpdated: "2025-06-14",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "PubParts: GX-16 Charger Plug with Full Cover",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Port Cover"],
+        imageSrc: "https://media.printables.com/media/prints/52be0936-484e-40de-ac8c-e44554264c72/images/9228869_700c1c49-42b5-4e4a-8714-d22da7aecf92_3826ea3d-c58b-4687-9b3f-c4e9891a14a3/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1231223",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/5fipn437mniwwnojnxm0m/gx-16-charger-plug-w-full-cover-model_files.zip?rlkey=g7rpma0cutqln3aehxqg8dzz5&st=azeqvlju&dl=0",
+        dropboxZipLastUpdated: "2025-06-20",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Nexinity: GoPro Clip Mount for Kali Invader 2.0 Helmet",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Miscellaneous Items"],
+        imageSrc: "https://media.printables.com/media/prints/f6cb2e39-0d7c-435c-81eb-423a6dc82b2e/images/10029619_1effe235-74b0-42f4-920e-5e862c45b1d6_2dcc1745-7de1-4ace-9fab-4d1ed41aad6b/thumbs/inside/1280x960/jpg/img_9303.webp",
+        externalUrl: "https://www.printables.com/model/1329276",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 
@@ -2240,7 +2258,7 @@ const platform = (platformType: PlatformType) => {
         .sort((a, b) => a.title.localeCompare(b.title))
 }
 
-export default allParts
+export default allParts.sort((a, b) => a.title.localeCompare(b.title))
 export const floatwheelParts = platform("Floatwheel")
 export const gtParts = platform("GT/GT-S")
 export const miscParts = platform("Miscellaneous Items")

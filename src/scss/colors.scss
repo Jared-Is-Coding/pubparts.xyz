@@ -22,7 +22,7 @@ a:not(.card-body a):not(a.alert-link):not(.btn) {
         color: $secondary-color;
     }
 
-    a {
+    a:not(.btn) {
         color: $link-color !important;
     }
 }

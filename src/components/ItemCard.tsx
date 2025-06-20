@@ -26,11 +26,9 @@ export default (item: ItemData, index: number) => {
             partfabricationmethod={item.fabricationMethod}>
             <Card>
                 {/* Part image */}
-                {!!item.imageSrc &&
-                    <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
-                        <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
-                    </div>
-                }
+                <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
+                    <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
+                </div>
 
                 {/* Part type badges */}
                 {item.typeOfPart?.length &&
@@ -56,7 +54,7 @@ export default (item: ItemData, index: number) => {
                         <Card.Text>
                             <i>Price: {item.price ?? "???"}</i>
                         </Card.Text>
-                    } 
+                    }
 
                     {(item.externalUrl || item.dropboxUrl) &&
                         <Stack direction="vertical" gap={1}>

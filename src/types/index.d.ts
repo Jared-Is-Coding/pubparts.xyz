@@ -1,4 +1,4 @@
-type ItemData = {
+interface ItemData {
     /**
      * Item title text
      */
@@ -86,7 +86,7 @@ type PlatformType =
     | "XR/Funwheel"
     | "XR Classic"
 
-type ResourceData = {
+interface ResourceData {
     /**
      * Resource title text
      */
@@ -121,3 +121,54 @@ type ResourceType =
     | "Spreadsheet"
     | "Vendor"
     | "Website"
+
+interface PartsShopData {
+    /**
+     * Item title text
+     */
+    title: string
+    /**
+     * Item type
+     */ 
+    typeOfPart: PartShopType[]
+    /**
+     * Platform type
+     */
+    platform: PlatformType[]
+    /**
+     * How many of these are left
+     */
+    availableCount: number
+    /**
+     * Item price number
+     */ 
+    price: number
+    /**
+     * Item description text
+     */ 
+    condition: ItemCondition
+    /**
+     * Image source url
+     */
+    imageSrc?: string
+    /**
+     * Item description text
+     */ 
+    description?: string
+    /**
+     * Item external URL
+     */
+    externalUrl?: string
+}
+
+type PartShopType =
+    | PartType
+    | "Axle Block Attachment"
+    | "Bolt"
+    | "Charger"
+
+type ItemCondition =
+    | "New"
+    | "Like New"
+    | "Used"
+    | "For Parts"

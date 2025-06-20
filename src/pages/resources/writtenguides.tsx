@@ -7,7 +7,7 @@ import SiteFooter from "../../components/SiteFooter"
 import SiteMetaData from "../../components/SiteMetaData"
 import SiteNavbar from "../../components/SiteNavbar"
 import "../../scss/pages/resources.scss"
-import { writtenGuidesResources } from "../../util/allResources"
+import { writtenGuidesResources } from "../../util/resources"
 
 export const Head: HeadFC = () => (
     <>

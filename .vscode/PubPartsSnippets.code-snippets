@@ -52,5 +52,27 @@
             "\tdescription: \"\"",
             "}"
         ]
+    },
+
+    "New_Shop_Entry": {
+        "description": "New entry for parts shop list",
+        "prefix": [
+            "shop",
+            "newshop"
+        ],
+        "body": [
+            ",",
+            "{",
+            "\ttitle: \"$1\",",
+            "\ttypeOfPart: [\"$2\"],",
+            "\timageSrc: \"\",",
+            "\texternalUrl: \"\",",
+            "\tplatform: [\"$3\"],",
+            "\tavailableCount: $4,",
+            "\tdescription: \"$5\",",
+            "\tcondition: \"$6\",",
+            "\tprice: $7",
+            "}"
+        ]
     }
 }

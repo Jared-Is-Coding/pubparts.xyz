@@ -123,11 +123,10 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
         //#endregion
         //#region Show Copy Button
 
-        if (searchText || Object.values(checkedTypeBoxes).some((v) => !!v)) {
-            setShowCopySearchButton(true)
-        } else {
-            setShowCopySearchButton(false)
-        }
+        setShowCopySearchButton(!!(
+            searchText
+            || Object.values(checkedTypeBoxes).some((v) => !!v)
+        ))
 
         //#endregion
     })

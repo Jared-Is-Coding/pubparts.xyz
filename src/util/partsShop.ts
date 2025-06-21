@@ -24,6 +24,31 @@ const allPartsShopItems = [
                     </ul>
                 </li>
             </ul>
+            <p>This offering is only for the parts listed above and does not include hardware and printed pieces. If you're interested in those, I'm able to put together packs to include as requested, of the following:</p>
+            <ul>
+                <li>
+                    $15 - Printed Pack
+                    <ul>
+                        <li>1 x Right/Left Pubbox bumper spacers (the little tabs) in black TPU</li>
+                        <li>1 x Lid gasket in black TPU</li>
+                        <li>1 x <a href="https://www.printables.com/model/1095537" target="_blank">Unified cable cover</a> (motor splash guard) in black PETG</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    $35 - Hardware Pack
+                    <ul>
+                        <li>4 x 10-32 3/4" countersunk bolts for rail mounting</li>
+                        <li>34 x M3x8 countersunk bolts for lid and LED clips</li>
+                        <li>1 x GX16-4 charge port</li>
+                        <li>1 x 19x1 power button (12V LED, momentary or latching, black/silver case options, white/blue/red/green/yellow options)</li>
+                        <li>1 x 6 pin footpad switchcraft connector</li>
+                        <li>2 x 20mm glands</li>
+                        <li>1 x Goretex vent patch</li>
+                    </ul>
+                </li>
+            </ul>
         `,
         condition: "New",
         price: 200
@@ -246,16 +271,6 @@ const allPartsShopItems = [
         description: "",
         condition: "Used",
         price: 80
-    },
-    {
-        title: "Thor300 with a blown mosfet",
-        typeOfPart: ["Controller"],
-        imageSrc: "/images/shop/thor300.png",
-        platform: ["XR/Funwheel"],
-        availableCount: 1,
-        description: "",
-        condition: "For Parts",
-        price: 1
     },
     {
         title: "Pint Replacement Hub Bolts",

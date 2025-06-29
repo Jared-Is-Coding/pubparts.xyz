@@ -2249,6 +2249,36 @@ const allParts = [
         imageSrc: "https://media.printables.com/media/prints/f6cb2e39-0d7c-435c-81eb-423a6dc82b2e/images/10029619_1effe235-74b0-42f4-920e-5e862c45b1d6_2dcc1745-7de1-4ace-9fab-4d1ed41aad6b/thumbs/inside/1280x960/jpg/img_9303.webp",
         externalUrl: "https://www.printables.com/model/1329276",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "GlowKitty: Ennoid MK8 LCM (external antenna) Mounting Box",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bracket"],
+        imageSrc: "https://media.printables.com/media/prints/e2422659-e1e0-4e25-9e6e-4844e162a246/images/10111129_c914c7ad-30e4-4f6a-ab18-fa516af93f75_db25cfa2-bbcd-4cab-9b3e-b96ae0129d79/thumbs/inside/1280x960/jpeg/img_8289.webp",
+        externalUrl: "https://www.printables.com/model/1340152",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/e3e9tp4qz2e7eipr22tww/ennoid-mk8-lcm-external-antenna-mounting-box-model_files.zip?rlkey=23xrv3p52mdwyruvqv8khpy86&st=98be0l3e&dl=0",
+        dropboxZipLastUpdated: "2025-06-29",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "DavidPinAZ: Magnetic Charge parts for XR Vesc platforms",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Plug"],
+        imageSrc: "https://media.printables.com/media/prints/e531a5c8-8c04-43ba-9fdc-0a960ae457ff/images/10060839_63f5085c-7f2f-4708-8017-8157c3f5db4b_9f6caf50-a4cd-406b-bc20-34099ef6422f/thumbs/cover/320x240/jpeg/img_2272.webp",
+        externalUrl: "https://www.printables.com/model/1333576",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/uhit91pa47nczgzxybkfi/magnetic-charge-parts-for-xr-vesc-platforms-model_files.zip?rlkey=pfne5t0iwcdzzj5i3i3hf7ezf&st=ztz6gr2r&dl=0",
+        dropboxZipLastUpdated: "2025-06-29",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "DavidPinAZ: Air Scoops V2.1 for Onewheel/Vesc's",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/e35bb82c-80f8-4fb6-8f38-5a945446dc32/images/10123591_99111701-2d8a-4d28-adde-dee979c68c70_53ed1952-8266-4182-a5bf-a5f3ea0096d5/thumbs/inside/1280x960/jpeg/img_2288.webp",
+        externalUrl: "https://www.printables.com/model/1341700",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/467crc4zz88pehjdq61uf/air-scoops-v21-for-onewheelvescs-model_files.zip?rlkey=8emgyeuskii4e4r0trtfkochs&st=ejfn21zr&dl=0",
+        dropboxZipLastUpdated: "2025-06-29",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

@@ -1338,13 +1338,13 @@ const allParts = [
         platform: ["XR/Funwheel"]
     },
     {
-        title: "PubParts: CNC PubBox V2 XR Vesc Box Unified Cable Cover",
+        title: "PubParts: CNC PubBox V2.1 and V2.2 XR Controller Box Unified Cable Cover",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Connector Cover"],
-        imageSrc: "https://media.printables.com/media/prints/1095537/images/8287154_47f31a4d-7887-41fd-b7e6-13df9e12c7bc_c54be9b7-745a-4e52-8ed6-ec6689d68ba3/thumbs/inside/1280x960/png/screenshot_1.webp",
+        imageSrc: "https://media.printables.com/media/prints/3585aa8f-ce98-47e4-8284-4f783d71ee69/images/10137207_dc369661-dc45-4e51-8d91-bec264d91ffb_3e8b5c68-9bab-48dc-b9a7-74e19ec6bd1c/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1095537",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/7il3git2fa2uguxmw7ifo/cnc-pubbox-v2-xr-vesc-box-unified-cable-cover-model_files.zip?rlkey=7sfn9c7grxciaqxyqa8p4uu4e&st=zj58dsmi&dl=0",
-        dropboxZipLastUpdated: "2024-12-04",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/zf37sznoz8cogzxy9xi0c/cnc-pubbox-v21-and-v22-xr-controller-box-unified-cable-cover-model_files.zip?rlkey=qn4vl66219xew2xp7mmh9sved&st=510lol7e&dl=0",
+        dropboxZipLastUpdated: "2025-07-01",
         platform: ["XR/Funwheel"]
     },
     {

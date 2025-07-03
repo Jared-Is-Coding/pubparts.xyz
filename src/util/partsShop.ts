@@ -424,8 +424,8 @@ const allPartsShopItems = [
             <p>Paired with hooks originally designed by @seanbrowntown, this hook-wedge system offers mounted foot hooks with adjustable height, angle, and placement.</p>
             <p>Printed in TPU, these hooks are indestructible. They can be mounted to the footpad in a handful of ways, with more options available in the future:</p>
             <ul>
-                <li>Bottom Mount Wedge: Countersunk screw goes up through footpad and/or footpad backer into wedge, from bottom. Hook is then screwed into wedge from the top. This method allows removal of the footpad in order to remove the wedge.</li>
-                <li>Top Mount Wedge: Socket with washer goes down into footpad inserts, from top. Hook is then screw into wedge from the top. This method allows removal of the whole system without removal of the pad.</li>
+                <li>Bottom Mount Wedge: Countersunk screw goes up through footpad and/or footpad backer into wedge, from bottom. Hook is then screwed into wedge from the top. This method requires removal of the footpad in order to remove the wedge, but is very sturdy.</li>
+                <li>Top Mount Wedge: Socket with washer goes down into footpad inserts, from top. Hook is then screw into wedge from the top. This method allows removal of the whole system without removal of the pad, but requires very solid inserts on the pad to receive the screw.</li>
                 <li>Coming in the future (Let me know if you'd be interested): Top Mount Wedge with grooves to allow variable adjustment of the wedge placement after installation.</li>
             </ul>
         `,

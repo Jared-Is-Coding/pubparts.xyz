@@ -2100,7 +2100,7 @@ const allParts = [
         imageSrc: "https://media.printables.com/media/prints/ee0fb34c-b1ad-404a-90c0-477e68f73c13/images/9354338_82e67617-378e-46d1-9209-68e4e1f27f87_a1701fbe-91a9-4da6-90c5-288bb7652dc0/thumbs/inside/1280x960/png/screenshot-2025-01-31-061016.webp",
         externalUrl: "https://www.printables.com/model/1246517",
         dropboxUrl: "https://www.dropbox.com/scl/fi/pi9irr09g1qot8swdf1uu/xr-molex-to-superflux-clamping-adapter-model_files.zip?rlkey=6u7k56y2cgdmr0qgrxmvkbgmw&st=yb9as6bk&dl=0",
-        dropboxZipLastUpdated: "2025-04-13",
+        dropboxZipLastUpdated: "2025-07-04",
         platform: ["XR/Funwheel"]
     },
     {

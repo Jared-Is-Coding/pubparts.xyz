@@ -63,7 +63,7 @@ export default (item: ItemData, index: number) => {
                             }
 
                             {item.dropboxUrl &&
-                                <Card.Link href={item.dropboxUrl}>ZIP Download{!!item.dropboxZipLastUpdated &&
+                                <Card.Link href={item.dropboxUrl} target="_blank">ZIP Download{!!item.dropboxZipLastUpdated &&
                                     <>{` (${item.dropboxZipLastUpdated})`}</>
                                 }</Card.Link>
                             }

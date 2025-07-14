@@ -431,6 +431,19 @@ const allPartsShopItems = [
         `,
         condition: "New",
         price: 100
+    },
+    {
+        title: "1.43in AMOLED Display replacements, for WaveShare 1.43in AMOLED assemblies",
+        typeOfPart: ["Display"],
+        imageSrc: "/images/shop/amoled_display.png",
+        platform: ["VESC Electronics"],
+        availableCount: 6,
+        description: `
+            <p>These are DO0143FMST12 display panels (CO5300/FT3168) from DWO Limited. Their shipping is a flat rate $30, so these were ordered in bulk to save people on shipping. To order yourself would be $36/1, $21/2, $16/3, $14/4, $12/5.</p>
+            <p>Or, order them from me for $10 + shipping a piece.</p>
+        `,
+        condition: "New",
+        price: 10
     }
 ] as PartsShopData[]
 

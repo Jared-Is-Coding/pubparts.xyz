@@ -166,6 +166,7 @@ type PartShopType =
     | "Axle Block Attachment"
     | "Bolt"
     | "Charger"
+    | "Display"
 
 type ItemCondition =
     | "New"

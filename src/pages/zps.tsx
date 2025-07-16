@@ -32,7 +32,13 @@ const Page: React.FC<PageProps> = () => {
 
             <main className="page-items">
                 <Container>
-                    <p>This is a collection of parts I'm personally selling. If you're interested in something here, reach out to me on Discord at <code>iam_zinc</code> and just include a link to the listing (you can copy this by clicking the little link icon on the listed item). Buyer pays shipping unless otherwise noted.</p>
+                    <p>This is a collection of parts I'm personally selling - Buyer pays shipping unless otherwise noted. If you're interested in something here, reach out to me on Discord at <code>iam_zinc</code> and include:</p>
+                    <ul>
+                        <li>A link to the listing (you can copy this by clicking the little link icon on the listed item)</li>
+                        <li>How many of the listing you would like to buy</li>
+                        <li>A good shipping address, including your name</li>
+                        <li>A good PayPal or Venmo to request from</li>
+                    </ul>
 
                     {/* Search area */}
                     <PartsShopListSearchbar partList={allPartsShopItems} />

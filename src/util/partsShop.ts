@@ -444,6 +444,32 @@ const allPartsShopItems = [
         `,
         condition: "New",
         price: 10
+    },
+    {
+        title: "SF/XR Clamping Blocks (Finned)",
+        typeOfPart: ["Axle Block"],
+        imageSrc: "/images/shop/clamping_block.png",
+        platform: ["XR/Funwheel"],
+        availableCount: 24,
+        description: `
+            <p>What you'll get:</p>
+            <ul>
+                <li>2 | Hub bodies (anodized black)</li>
+                <li>2 | Hub clamps (anodized black)</li>
+                <li>4 | M5 x 35mm black socket cap screws for clamping them together</li>
+            </ul>
+
+            <p>What else you'll want:</p>
+            <ul>
+                <li>A ball end metric hex set</li>
+                <li>Axle bolts for mounting your motor</li>
+                <li>Rail bolts for mounting to your rail</li>
+            </ul
+
+            <p>These are made from <a target="_blank" href="https://www.printables.com/model/1120000">my remix of Auden's clamping blocks</a> and we've already run a couple batches of them. They're solid, I love the look of them, and they've worked great for hundreds of miles to secure my rails to the axle!</p>
+        `,
+        condition: "New",
+        price: 120
     }
 ] as PartsShopData[]
 

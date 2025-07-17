@@ -2279,6 +2279,46 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/467crc4zz88pehjdq61uf/air-scoops-v21-for-onewheelvescs-model_files.zip?rlkey=8emgyeuskii4e4r0trtfkochs&st=ejfn21zr&dl=0",
         dropboxZipLastUpdated: "2025-06-29",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Nexinity: Onewheel GrippySheet Gripples",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/c9167c5b-fc19-4d88-bf36-6065998ce5e6/images/10192211_6cbf9098-ec03-497e-aa6a-a9ebabcc7fef_6c54c6d2-7b27-4da8-a119-91912fd70c9d/thumbs/inside/1280x960/jpg/img_9592.webp",
+        externalUrl: "https://www.printables.com/model/1350400",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/kc1q49uounll3axlnzsho/onewheel-grippysheet-gripples-model_files.zip?rlkey=z2hoktql2431jhv5vetixrt8w&st=zhbz423e&dl=0",
+        dropboxZipLastUpdated: "2025-07-09",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Floatwheel ADV BTG Mudguard and Mini Fender for 12\" tires",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Fender", "Fender Delete", "Connector Cover"],
+        imageSrc: "https://media.printables.com/media/prints/a9028673-33af-4f47-a6f8-ccfd478ecfcc/images/10188048_d9f920db-8ea9-4323-bb4d-a0ca9ec1c985_28e6132f-a257-419e-952c-f22affdfaf3f/thumbs/inside/1280x960/png/adv_with_edits_2025-jul-09_01-55-55am-000_customizedview11480916927.webp",
+        externalUrl: "https://www.printables.com/model/1345564",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/lyle19t9cizfhn0gbm2ka/floatwheel-adv-btg-mudguard-and-mini-fender-for-12-tires-thundercat-model_files.zip?rlkey=0nu9bcijfjv1oug3xo4vkfaap&st=wxieqotq&dl=0",
+        dropboxZipLastUpdated: "2025-07-17",
+        platform: ["Floatwheel"]
+    },
+    {
+        title: "ENNOID Mk8 VESC Controller to Thor300 Sheet Plate Mount",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Adapter", "Bracket"],
+        imageSrc: "https://media.printables.com/media/prints/ef549394-5093-4833-8454-39fbf768162d/images/10251081_c3084a19-470e-441d-a698-a2466c572d37_c05ecacf-625b-4e87-b584-28771d6cd896/thumbs/inside/1280x960/png/screenshot_4.webp",
+        externalUrl: "https://www.printables.com/model/1357734",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/wxd1djlb9raunoksecq3k/ennoid-mk8-vesc-controller-to-thor300-sheet-plate-mount-model_files.zip?rlkey=erqmzziq3g650e3nfk1yv463j&st=o7hd2zsp&dl=0",
+        dropboxZipLastUpdated: "2025-07-17",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Juhcarro: ADV No Squeak Bearing Protectors",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Bearing Cover"],
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000001592691/design/2025-07-10_88aab6e14caf18.jpg?x-oss-process=image/resize,w_1000/format,webp",
+        externalUrl: "https://makerworld.com/en/models/1592691",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/9l2c6qf0eml5mtvyxmmpr/adv-no-squeak-bearing-cover.zip?rlkey=j1dsb7rmgonul1mmyi80mrual&st=9g77o9fe&dl=0",
+        dropboxZipLastUpdated: "2025-07-17",
+        platform: ["Floatwheel"]
     }
 ] as ItemData[]
 

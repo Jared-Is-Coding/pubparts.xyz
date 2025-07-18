@@ -51,13 +51,13 @@ const allParts = [
         platform: ["Floatwheel"]
     },
     {
-        title: "\"WINGLETS\" Extension for regular footpads (ADV PRO)",
+        title: "ADV1 and ADV2 \"WINGLETS\" Extension for regular footpads (ADV PRO and STD)",
         fabricationMethod: "3d Printed",
         typeOfPart: ["Footpad"],
-        imageSrc: "https://cdn.thingiverse.com/assets/e6/48/ec/fa/66/large_display_4a358e72-4dc1-4847-961e-301b2e186d0c.jpg",
+        imageSrc: "https://cdn.thingiverse.com/assets/1c/5d/49/15/1a/large_display_ADV2_Std_Top_Light.jpeg",
         externalUrl: "https://www.thingiverse.com/thing:6728108",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/f32u37tirfejynp26a81f/Floatwheel-_WINGLETS_-Extension-for-regular-footpads-ADV-PRO-only-6728108.zip?rlkey=7imtz6h8vo1ql4qmhmwmncoq1&st=sgggv4ma&dl=0",
-        dropboxZipLastUpdated: "2024-08-26",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/0d43tqz8731q6km5vf2ec/Floatwheel-ADV1_ADV2-_WINGLETS_-Extension-for-regular-footpads-UPDATE_-Pro-Std-Rail-Version-6728108.zip?rlkey=hq5j1gzvpjqj1hffjfyf14n54&st=z1b0e7og&dl=0",
+        dropboxZipLastUpdated: "2024-07-18",
         platform: ["Floatwheel"]
     },
     {
@@ -2139,8 +2139,8 @@ const allParts = [
         typeOfPart: ["Connector Cover"],
         imageSrc: "https://media.printables.com/media/prints/38cb1740-0a3f-4cfc-977e-e2e5356e4bb5/images/9522319_9670a77b-d078-445c-ac28-28351f342d3e_cd781d75-4983-4b5e-93ed-49d82c4955e8/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1267863",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/jsu5yqu5f97ddd2f6dh8d/Mud-Guard-v16.zip?rlkey=wjbpi44qk5q61cgz1s9omdqg7&st=r229ml0b&dl=0",
-        dropboxZipLastUpdated: "2025-04-17",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/vabb70tgopy5qeb1wxxw6/onewheel-xr-battery-mud-guard-model_files.zip?rlkey=2kvoerjc0lfx958ilx9z0xpp6&st=k63nt30y&dl=0",
+        dropboxZipLastUpdated: "2025-07-18",
         platform: ["XR/Funwheel"]
     },
     {

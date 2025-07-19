@@ -428,6 +428,11 @@ const allPartsShopItems = [
                 <li>Top Mount Wedge: Socket with washer goes down into footpad inserts, from top. Hook is then screw into wedge from the top. This method allows removal of the whole system without removal of the pad, but requires very solid inserts on the pad to receive the screw.</li>
                 <li>Coming in the future (Let me know if you'd be interested): Top Mount Wedge with grooves to allow variable adjustment of the wedge placement after installation.</li>
             </ul>
+            <p>In cases where not a full set of hooks and wedges is needed, or additional individual parts are requested, here are the individual parts costs for reference:</p>
+            <ul>
+                <li>$35 per hook</li>
+                <li>$15 per wedge (with hardware)</li>
+            </ul>
         `,
         condition: "New",
         price: 100

@@ -288,7 +288,7 @@ export default ({partList}: PartsShopListSearchbarProps) => {
 
                         <CopyLinkButton
                             text="Copy This Search"
-                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&platform=${uniquePlatformTypes.filter((t) => !!checkedPlatformBoxes[t])}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&condition=${uniqueItemConditions.filter((f) => !!checkedItemConditionBoxes[f])}`}
+                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(searchText)}` + `&platform=${uniquePlatformTypes.filter((t) => !!checkedPlatformBoxes[t])}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&condition=${uniqueItemConditions.filter((f) => !!checkedItemConditionBoxes[f])}`}
                             style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
                     </Stack>
                 </Stack>

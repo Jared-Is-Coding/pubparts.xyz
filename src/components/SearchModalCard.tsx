@@ -29,7 +29,7 @@ export default (item: ItemData | ResourceData, index: number) => {
         else if (d.includes("Website")) url = "/resources/websites"
         else if (d.includes("Written Guide")) url = "/resources/writtenguides"
 
-        return url + `?search=${encodeURI(item.title)}`
+        return url + `?search=${encodeURIComponent(item.title)}`
     }
 
     return (

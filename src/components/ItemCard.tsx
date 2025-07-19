@@ -43,7 +43,7 @@ export default (item: ItemData, index: number) => {
 
                 {/* Copy Link to this item button */}
                 <Stack className="display-over-top-left" direction="vertical" gap={1}>
-                    <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${item.title}`} />
+                    <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(item.title)}`} />
                 </Stack>
                 
                 {/* Part information */}

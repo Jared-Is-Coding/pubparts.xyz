@@ -41,7 +41,7 @@ export default (resource: ResourceData, index: number) => {
                         <Card.Title as="h3">
                             {resource.externalUrl &&
                                 <>
-                                    <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
+                                    <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(resource.title)}`} />
                                     <> | </>
                                     <a href={resource.externalUrl} target="_blank">
                                         {resource.title}
@@ -51,7 +51,7 @@ export default (resource: ResourceData, index: number) => {
                             
                             {!resource.externalUrl && (resource.appStoreLink || resource.playStoreLink) &&
                                 <>
-                                    <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${resource.title}`} />
+                                    <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(resource.title)}`} />
                                     <> | </>
                                     {resource.title}
                                     <> on the </>

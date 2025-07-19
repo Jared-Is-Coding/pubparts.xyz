@@ -193,7 +193,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
 
                         <CopyLinkButton
                             text="Copy This Search"
-                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&type=${uniqueResourceTypes.filter((t) => !!checkedTypeBoxes[t])}`}
+                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(searchText)}` + `&type=${uniqueResourceTypes.filter((t) => !!checkedTypeBoxes[t])}`}
                             style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
                     </Stack>
                 </Stack>

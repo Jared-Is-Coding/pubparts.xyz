@@ -240,7 +240,7 @@ export default ({partList}: ItemListSearchbarProps) => {
 
                         <CopyLinkButton
                             text="Copy This Search"
-                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${searchText}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&fab=${uniqueFabricationMethods.filter((f) => !!checkedFabricationMethodBoxes[f])}`}
+                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(searchText)}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&fab=${uniqueFabricationMethods.filter((f) => !!checkedFabricationMethodBoxes[f])}`}
                             style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
                     </Stack>
                 </Stack>

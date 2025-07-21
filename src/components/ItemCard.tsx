@@ -23,7 +23,7 @@ export default (item: ItemData, index: number) => {
             key={`item-card-${index}`}
             parttitle={item.title}
             parttypes={item.typeOfPart.join(",")}
-            partfabricationmethod={item.fabricationMethod}>
+            partfabricationmethods={item.fabricationMethod.join(",")}>
             <Card>
                 {/* Part image */}
                 <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
@@ -34,10 +34,12 @@ export default (item: ItemData, index: number) => {
                 {item.typeOfPart?.length &&
                     <Stack className="display-over-top-right" direction="vertical" gap={1}>
                         {item.typeOfPart.map((p, pillIndex) => (
-                            <Badge key={`item-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(p)}</Badge>
+                            <Badge key={`item-card-${index}-pill-t-${pillIndex}`} pill bg="dark">{toTitleCase(p)}</Badge>
                         ))}
-                        
-                        <Badge pill bg="dark">{item.fabricationMethod}</Badge>
+
+                        {item.fabricationMethod.map((f, pillIndex) => (
+                            <Badge key={`item-card-${index}-pill-f-${pillIndex}`} pill bg="dark">{f}</Badge>
+                        ))}
                     </Stack>
                 }
 

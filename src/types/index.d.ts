@@ -6,7 +6,7 @@ interface ItemData {
     /**
      * Item fabrication method
      */ 
-    fabricationMethod: FabricationMethod
+    fabricationMethod: FabricationMethod[]
     /**
      * Item type
      */ 

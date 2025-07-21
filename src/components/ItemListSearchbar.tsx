@@ -95,7 +95,7 @@ export default ({partList}: ItemListSearchbarProps) => {
             // Get part information, lower case
             const dataPartTitle = item.getAttribute("parttitle")
             const dataPartTypes = item.getAttribute("parttypes")?.split(",") as PartType[]
-            const dataFabricationMethod = item.getAttribute("partfabricationmethod") as FabricationMethod
+            const dataFabricationMethod = item.getAttribute("partfabricationmethods")?.split(",") as FabricationMethod[]
 
             // Do not display item if...
             if (
@@ -114,7 +114,7 @@ export default ({partList}: ItemListSearchbarProps) => {
                 // Part fabrication method does not match checked items
                 || (
                     Object.values(checkedFabricationMethodBoxes).some((v) => !!v)
-                    && !checkedFabricationMethodBoxes[dataFabricationMethod]
+                    && !dataFabricationMethod?.some((t) => !!checkedFabricationMethodBoxes[t as FabricationMethod])
                 )
             ) {
                 // Hide

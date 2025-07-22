@@ -54,17 +54,6 @@ const allPartsShopItems = [
         price: 200
     },
     {
-        title: "Finned Clamping SuperFlux/HyperCore to XR Rails",
-        typeOfPart: ["Axle Block Attachment"],
-        imageSrc: "/images/shop/sf_xr_clampies.png",
-        externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
-        platform: ["XR/Funwheel"],
-        availableCount: 15,
-        description: "",
-        condition: "New",
-        price: 120
-    },
-    {
         title: "20mm Goretex vent patches",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "/images/shop/goretex_patch.png",
@@ -454,6 +443,7 @@ const allPartsShopItems = [
         title: "SF/XR Clamping Blocks (Finned)",
         typeOfPart: ["Axle Block"],
         imageSrc: "/images/shop/clamping_block.png",
+        externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
         platform: ["XR/Funwheel"],
         availableCount: 20,
         description: `

@@ -6,7 +6,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/cnc_pubbox_v2.png",
         externalUrl: "/parts/xr?search=PubWheel:%20CNC%20PubBox%20V2%20-%20XR%20VESC%20Box,%20Lid",
         platform: ["XR/Funwheel"],
-        availableCount: 14,
+        availableCount: 10,
         description: `
             <p>All 6061 anodized black, and the window clear acrylic. Comes with</p>
             <ul>
@@ -455,7 +455,7 @@ const allPartsShopItems = [
         typeOfPart: ["Axle Block"],
         imageSrc: "/images/shop/clamping_block.png",
         platform: ["XR/Funwheel"],
-        availableCount: 22,
+        availableCount: 20,
         description: `
             <p>What you'll get:</p>
             <ul>

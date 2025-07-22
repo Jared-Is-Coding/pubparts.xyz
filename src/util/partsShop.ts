@@ -58,7 +58,7 @@ const allPartsShopItems = [
         typeOfPart: ["Miscellaneous"],
         imageSrc: "/images/shop/goretex_patch.png",
         platform: ["Miscellaneous Items"],
-        availableCount: 60,
+        availableCount: 49,
         condition: "New",
         price: 2
     },
@@ -132,7 +132,7 @@ const allPartsShopItems = [
         platform: ["XR/Funwheel"],
         availableCount: 1,
         description: "",
-        condition: "New",
+        condition: "Like New",
         price: 10
     },
     {

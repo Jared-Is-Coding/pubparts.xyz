@@ -320,16 +320,6 @@ const allPartsShopItems = [
         price: 50
     },
     {
-        title: "GT Controller (HW 6407, FW 6153, 600mi)",
-        typeOfPart: ["Controller"],
-        imageSrc: "/images/shop/gt_controller.png",
-        platform: ["GT/GT-S"],
-        availableCount: 1,
-        description: "",
-        condition: "Like New",
-        price: 150
-    },
-    {
         title: "Fungineers Superflux stock axle blocks (Pair)",
         typeOfPart: ["Axle Block"],
         imageSrc: "/images/shop/sf_ab.png",

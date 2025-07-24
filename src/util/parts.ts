@@ -2301,13 +2301,13 @@ const allParts = [
         platform: ["Floatwheel"]
     },
     {
-        title: "ENNOID MK8 and MK8 Pro VESC Controller to Thor300 Sheet Plate Mount",
+        title: "ENNOID Mk8 or Mk8 Pro VESC Controller to Thor300 Sheet Plate Mount",
         fabricationMethod: ["3d Printed", "CNC"],
         typeOfPart: ["Adapter", "Bracket"],
-        imageSrc: "https://media.printables.com/media/prints/ef549394-5093-4833-8454-39fbf768162d/images/10251081_c3084a19-470e-441d-a698-a2466c572d37_c05ecacf-625b-4e87-b584-28771d6cd896/thumbs/inside/1280x960/png/screenshot_4.webp",
+        imageSrc: "https://media.printables.com/media/prints/20ec83a2-d681-41d2-bcf7-8ee00419f3f3/images/10304248_1558e82e-4fbf-4249-b355-0576836cb42d_ade0cb3b-836e-4dd8-b868-ad8c2c3bfaa9/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1357734",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/wxd1djlb9raunoksecq3k/ennoid-mk8-vesc-controller-to-thor300-sheet-plate-mount-model_files.zip?rlkey=erqmzziq3g650e3nfk1yv463j&st=ys4f9zyy&dl=0",
-        dropboxZipLastUpdated: "2025-07-21",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/4amhwjxp1xldz3gnrhynw/ennoid-mk8-or-mk8-pro-vesc-controller-to-thor300-sheet-plate-mount-model_files.zip?rlkey=1e2d1holh22nxw5o60z762fi7&st=t4cqb0d0&dl=0",
+        dropboxZipLastUpdated: "2025-07-24",
         platform: ["Miscellaneous Items"]
     },
     {

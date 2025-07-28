@@ -2319,6 +2319,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/9l2c6qf0eml5mtvyxmmpr/adv-no-squeak-bearing-cover.zip?rlkey=j1dsb7rmgonul1mmyi80mrual&st=9g77o9fe&dl=0",
         dropboxZipLastUpdated: "2025-07-17",
         platform: ["Floatwheel"]
+    },
+    {
+        title: "Adjustable VESC Onewheel Stand",
+        fabricationMethod: "3d Printed",
+        typeOfPart: ["Stand"],
+        imageSrc: "https://media.printables.com/media/prints/42c139d5-4702-47be-999b-040889975bfc/images/10334938_c9b45367-7933-4182-bf6c-3a7db0655380_53986e41-6043-40f8-89d1-44abbd024f4e/thumbs/inside/1280x960/png/screenshot_2.webp",
+        externalUrl: "https://www.printables.com/model/1368740",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/z2vj4tkadioy5r1361g3l/adjustable-vesc-onewheel-stand-model_files.zip?rlkey=y8ua4oi8gy3si1ssebqq73tqz&st=s21im7qg&dl=0",
+        dropboxZipLastUpdated: "2025-07-28",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

@@ -6,7 +6,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/cnc_pubbox_v2.png",
         externalUrl: "/parts/xr?search=PubWheel:%20CNC%20PubBox%20V2%20-%20XR%20VESC%20Box,%20Lid",
         platform: ["XR/Funwheel"],
-        availableCount: 10,
+        availableCount: 9,
         description: `
             <p>All 6061 anodized black, and the window clear acrylic. Comes with</p>
             <ul>
@@ -435,7 +435,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/clamping_block.png",
         externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
         platform: ["XR/Funwheel"],
-        availableCount: 20,
+        availableCount: 18,
         description: `
             <p>What you'll get:</p>
             <ul>

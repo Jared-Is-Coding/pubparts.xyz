@@ -2322,7 +2322,7 @@ const allParts = [
     },
     {
         title: "Adjustable VESC Onewheel Stand",
-        fabricationMethod: "3d Printed",
+        fabricationMethod: ["3d Printed"],
         typeOfPart: ["Stand"],
         imageSrc: "https://media.printables.com/media/prints/42c139d5-4702-47be-999b-040889975bfc/images/10334938_c9b45367-7933-4182-bf6c-3a7db0655380_53986e41-6043-40f8-89d1-44abbd024f4e/thumbs/inside/1280x960/png/screenshot_2.webp",
         externalUrl: "https://www.printables.com/model/1368740",

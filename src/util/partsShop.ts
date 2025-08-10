@@ -6,7 +6,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/cnc_pubbox_v2.png",
         externalUrl: "/parts/xr?search=PubWheel:%20CNC%20PubBox%20V2%20-%20XR%20VESC%20Box,%20Lid",
         platform: ["XR/Funwheel"],
-        availableCount: 3,
+        availableCount: 1,
         description: `
             <p>All 6061 anodized black, and the window clear acrylic. Comes with</p>
             <ul>

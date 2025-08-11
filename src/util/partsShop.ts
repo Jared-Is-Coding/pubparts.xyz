@@ -58,7 +58,7 @@ const allPartsShopItems = [
         typeOfPart: ["Miscellaneous"],
         imageSrc: "/images/shop/goretex_patch.png",
         platform: ["Miscellaneous Items"],
-        availableCount: 49,
+        availableCount: 39,
         condition: "New",
         price: 2
     },
@@ -372,26 +372,6 @@ const allPartsShopItems = [
         description: "Just a printed stand",
         condition: "Like New",
         price: 15
-    },
-    {
-        title: "XR Footpad Backer for FRONT (3mm, Diamond Pattern)",
-        typeOfPart: ["Footpad Attachment"],
-        imageSrc: "/images/shop/fp_b_f.png",
-        externalUrl: "/parts/xr?search=PubParts:%20Backer%20Plate%20Outline%20for%20XR%20Footpads",
-        platform: ["XR/Funwheel"],
-        availableCount: 1,
-        condition: "New",
-        price: 30
-    },
-    {
-        title: "XR Footpad Backer for REAR (3mm)",
-        typeOfPart: ["Footpad Attachment"],
-        imageSrc: "/images/shop/fp_b_r2.png",
-        externalUrl: "/parts/xr?search=PubParts:%20Backer%20Plate%20Outline%20for%20XR%20Footpads",
-        platform: ["XR/Funwheel"],
-        availableCount: 1,
-        condition: "New",
-        price: 30
     },
     {
         title: "Z-Hooks: Wedge and Foot Hook w/ Hardware (Front+Rear Set)",

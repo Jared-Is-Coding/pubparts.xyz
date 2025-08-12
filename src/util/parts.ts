@@ -2329,6 +2329,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/z2vj4tkadioy5r1361g3l/adjustable-vesc-onewheel-stand-model_files.zip?rlkey=y8ua4oi8gy3si1ssebqq73tqz&st=s21im7qg&dl=0",
         dropboxZipLastUpdated: "2025-07-28",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Lia: Pint (and Pint-X) Lower Controller Housing",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/998406/images/7596921_202cfb00-8e5e-449d-8f56-94894f17ffd0_1f131834-87e5-4103-8be9-e64fa35bef45/thumbs/inside/1280x960/jpg/1000x1000-img-7572.webp",
+        externalUrl: "https://www.printables.com/model/998406",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/jz5jwwfy2qmrt6l0c597g/onewheel-pintx-lower-controller-housing-model_files.zip?rlkey=g9rjreo97yrtwos82xtxrnv8y&st=eghmgwch&dl=0",
+        dropboxZipLastUpdated: "2025-08-11",
+        platform: ["Pint/X/S"]
     }
 ] as ItemData[]
 

@@ -2339,6 +2339,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/jz5jwwfy2qmrt6l0c597g/onewheel-pintx-lower-controller-housing-model_files.zip?rlkey=g9rjreo97yrtwos82xtxrnv8y&st=eghmgwch&dl=0",
         dropboxZipLastUpdated: "2025-08-11",
         platform: ["Pint/X/S"]
+    },
+    {
+        title: "Floatwheel ADV BTG Fender (FlightFins Compatible)",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender"],
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/USbe2d7c9d60faf2/design/2025-08-17_d68da30d22d768.jpg?x-oss-process=image/resize,w_1000/format,webp",
+        externalUrl: "https://makerworld.com/en/models/1708763",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/3k31mfyhqtwrrylds005l/Floatwheel-ADV-BTG-Fender-FlightFins-Compatible.zip?rlkey=yyb9bj1aeq6fps1724z1tjtvd&st=gu8jsgew&dl=0",
+        dropboxZipLastUpdated: "2025-08-18",
+        platform: ["Floatwheel"]
     }
 ] as ItemData[]
 

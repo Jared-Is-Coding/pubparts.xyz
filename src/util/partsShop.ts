@@ -1,12 +1,12 @@
 
 const allPartsShopItems = [
     {
-        title: "CNC PubBox V2.2",
+        title: "CNC PubBox V2.2 (Restock soon)",
         typeOfPart: ["Controller Box"],
         imageSrc: "/images/shop/cnc_pubbox_v2.png",
         externalUrl: "/parts/xr?search=PubWheel:%20CNC%20PubBox%20V2%20-%20XR%20VESC%20Box,%20Lid",
         platform: ["XR/Funwheel"],
-        availableCount: 1,
+        availableCount: 0,
         description: `
             <p>All 6061 anodized black, and the window clear acrylic. Comes with</p>
             <ul>

@@ -2349,6 +2349,78 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/3k31mfyhqtwrrylds005l/Floatwheel-ADV-BTG-Fender-FlightFins-Compatible.zip?rlkey=yyb9bj1aeq6fps1724z1tjtvd&st=gu8jsgew&dl=0",
         dropboxZipLastUpdated: "2025-08-18",
         platform: ["Floatwheel"]
+    },
+    {
+        title: "SS - Sensor Project",
+        fabricationMethod: ["PCB"],
+        typeOfPart: ["Breakout Board"],
+        imageSrc: "/images/parts/misc/sensor_project.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/j5lyvrkpqif6xt3699via/SS-sensor_project.zip?rlkey=j1ks1vb0hj3906mkifyq2emnp&st=wh6v5awl&dl=0",
+        dropboxZipLastUpdated: "2025-08-23",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "SS - GT Bumper Scans",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bumper"],
+        imageSrc: "/images/parts/gt/gt_bumper_scans.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/nrekn5yixtbjlbauee9m1/GT-Bumper-Scans.zip?rlkey=jhj1s3o7zkll4351qp4rhnfv1&st=znhq5eon&dl=0",
+        dropboxZipLastUpdated: "2025-08-23",
+        platform: ["GT/GT-S"]
+    },
+    {
+        title: "SS - Slip and Slide GT Pad",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad"],
+        imageSrc: "/images/parts/gt/slip_and_slide.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/3zousylft9ezrpc2aors4/SS-Slip-And-Slide-GT-Pad.zip?rlkey=vztt4qqxoxb6a5ql0x0k5mulq&st=xac0jhu4&dl=0",
+        dropboxZipLastUpdated: "2025-08-23",
+        platform: ["GT/GT-S"]
+    },
+    {
+        title: "SS - GT Battery Box with Lid",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Battery Box"],
+        imageSrc: "/images/parts/gt/gt_battery_box.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/4k8aeddvcpq3us25zpy3n/SS-GT-Battery-Box-with-Lid.zip?rlkey=vgznci6qhld18w3ki4y8pq0lp&st=dn3n9d97&dl=0",
+        dropboxZipLastUpdated: "2025-08-23",
+        platform: ["GT/GT-S"]
+    },
+    {
+        title: "SS - GT Rails",
+        fabricationMethod: ["CNC"],
+        typeOfPart: ["Rails"],
+        imageSrc: "/images/parts/gt/gt_rails.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/6y1t0jflm6dpczgw0m0dx/SS-GT-Rails.zip?rlkey=xbi0qfy9l1e18z5dwgl46pd2h&st=w3aw71a5&dl=0",
+        dropboxZipLastUpdated: "2025-08-23",
+        platform: ["GT/GT-S"]
+    },
+    {
+        title: "SS - Ugly Front GT Controller Box",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Controller Box"],
+        imageSrc: "/images/parts/gt/ugly_front_gt_controller_box.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/if7eln8s5mk5o8e0bl20m/SS-Ugly-Front-GT-Controller-Box.zip?rlkey=e8lyg9jtbt98xg8kj5s114lz0&st=0xt8xx33&dl=0",
+        dropboxZipLastUpdated: "2025-08-23",
+        platform: ["GT/GT-S"]
+    },
+    {
+        title: "SS - Sidecar GT Rails",
+        fabricationMethod: ["CNC"],
+        typeOfPart: ["Rails", "Rail Attachment"],
+        imageSrc: "/images/parts/gt/sidecar_gt_rail.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/mn4uakbjruiewynzcx5sw/SS-Sidecar-GT-Rail.zip?rlkey=1in96hwwj2sgwb6twp4xaebzz&st=i5sji84x&dl=0",
+        dropboxZipLastUpdated: "2025-08-23",
+        platform: ["GT/GT-S"]
+    },
+    {
+        title: "SS - Simple GT Rails",
+        fabricationMethod: ["CNC"],
+        typeOfPart: ["Rails", "Rail Attachment"],
+        imageSrc: "/images/parts/gt/simple_gt_rails.png",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/0yv8j1wu0iuucliyd2qtf/SS-Simple-GT-Rails.zip?rlkey=b1bz9syt8fopvo9wpx52y47b3&st=v1d8kc9d&dl=0",
+        dropboxZipLastUpdated: "2025-08-23",
+        platform: ["GT/GT-S"]
     }
 ] as ItemData[]
 

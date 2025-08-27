@@ -2421,6 +2421,116 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/0yv8j1wu0iuucliyd2qtf/SS-Simple-GT-Rails.zip?rlkey=b1bz9syt8fopvo9wpx52y47b3&st=v1d8kc9d&dl=0",
         dropboxZipLastUpdated: "2025-08-23",
         platform: ["GT/GT-S"]
+    },
+    {
+        title: "Onewheel HyperCore Axle Plug and Insertion Tool",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Tool", "Port Cover"],
+        imageSrc: "https://media.printables.com/media/prints/098fa5dd-7463-493c-a404-9839c2b139c4/images/10390534_cef5682c-fd5a-42d9-b842-22eea6fd43b6_c5eb0f28-8385-45d9-a5e6-1bd4b3ee2e8a/thumbs/inside/1280x960/jpg/pxl_20250513_111320800.webp",
+        externalUrl: "https://www.printables.com/model/1376323",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/773a6qc547h6edmkv5z9u/onewheel-hypercore-axle-plug-and-insertion-tool-model_files.zip?rlkey=zfhg6ye9x37r6ubp264bwh56w&st=pbd1nbcm&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "BKB Voyager v2 Receiver Enclosure",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://cdn.thingiverse.com/assets/ed/77/b4/2b/5f/large_display_bkbv2bottom.png",
+        externalUrl: "https://www.thingiverse.com/thing:6787606",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/u2pyfes1kl741k9p6k71w/BKB-Voyager-v2-Receiver-Enclosure-6787606.zip?rlkey=9sodpgulssgefkb5ryz8p2bsn&st=epjj506y&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "BKB Remote Housing",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Remote"],
+        imageSrc: "/images/parts/misc/bkb_housing.png",
+        externalUrl: "https://thangs.com/designer/infusionluke/3d-model/1016556",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/mghi16roox806qb6j11my/BKB-Remote-Housing.zip?rlkey=nzkeluw7ma6sjtgeubnefcgim&st=6unl0we7&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Luke: Onewheel Pint Fender Delete",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender Delete"],
+        imageSrc: "https://media.printables.com/media/prints/537954/images/4334270_5db837bb-de54-402e-883d-6e086e6726a4/thumbs/inside/1280x960/png/vystrizek.webp",
+        externalUrl: "https://www.printables.com/model/537954",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/qi6pmvwgyhn0wngpc1ds3/onewheel-pint-fender-delete-model_files.zip?rlkey=l4b0x2nct8b7c5jnd08am185i&st=kjjrrhzh&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["Pint/X/S"]
+    },
+    {
+        title: "Luke: Onewheel +XR Rear Skidplate Thinner Version",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bumper"],
+        imageSrc: "https://media.printables.com/media/prints/554186/images/4447938_a037d09e-9acf-4436-abf2-416c2851e5ae/thumbs/inside/1280x960/jpg/img_20230815_172633.webp",
+        externalUrl: "https://www.printables.com/model/554186",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/3riu8k9eu3oyew0r57orr/onewheel-xr-rear-skidplate-thinner-version-model_files.zip?rlkey=o01yyrpcuazyfbbzmebnhxjv1&st=nx5401g0&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Luke: Onewheel +XR Front Skidplate",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bumper"],
+        imageSrc: "https://media.printables.com/media/prints/537125/images/4328775_4195e2ed-ba76-4b1f-ace1-8b3c15c83a17/thumbs/inside/1280x960/png/ow-xr-front-skid-plate.webp",
+        externalUrl: "https://www.printables.com/model/537125",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/1t8t3asyw2iojv3ib96k4/onewheel-xr-front-skidplate-model_files.zip?rlkey=xev4iwiv1ojugf3cdrswbb5pu&st=iocz51db&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Luke: Onewheel +XR Griptape",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bumper"],
+        imageSrc: "https://media.printables.com/media/prints/537114/images/4328719_6d967e89-289c-4f33-9457-3c7f6f373b25/thumbs/inside/1280x960/jpg/img_20230509_112300.webp",
+        externalUrl: "https://www.printables.com/model/537114",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/7ea1gl5sn207vud7oire3/onewheel-xr-griptape-model_files.zip?rlkey=8facea11lf17nmdxz8z73wz8g&st=htkm65nn&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Luke: Onewheel Pint Segmented Magnetic Fender",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender"],
+        imageSrc: "https://media.printables.com/media/prints/537108/images/4328689_9d2ea516-1af1-404b-bee4-2d49c724905e/thumbs/inside/1280x960/jpg/screenshot_2023-07-27-10-28-38-857_cominstagramandroid.webp",
+        externalUrl: "https://www.printables.com/model/537108",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/22gp72gksfs9cai6wg81r/onewheel-pint-segmented-magnetic-fender-ow-pint-segmentovy-magneticky-blatnik-model_files.zip?rlkey=cuw0dsclx6dmgun6yiuoofksi&st=62guvqyb&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["Pint/X/S"]
+    },
+    {
+        title: "Luke: Onewheel +XR Rear Skidplate",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bumper"],
+        imageSrc: "https://media.printables.com/media/prints/160521/images/1495869_94517ee2-fa8a-4e94-9962-4bc0a8167b87/thumbs/inside/1280x960/jpg/1648921497083.webp",
+        externalUrl: "https://www.printables.com/model/160521",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/sq2zwtzgzh691nv7zjgj0/onewheel-xr-rear-skid-plate-model_files.zip?rlkey=oqrxquc1bivy895gegibzpljr&st=yhbjud39&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Luke: Onewheel +XR Charger Mount",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bracket"],
+        imageSrc: "https://media.printables.com/media/prints/160474/images/1495184_94e5c0d6-668a-49c6-aec8-26b984782820/thumbs/inside/1280x960/jpg/xr.webp",
+        externalUrl: "https://www.printables.com/model/160474",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/qke5b51eumuxxak7676f7/onewheel-xr-charger-mount-model_files.zip?rlkey=3dsh6f6pt1n1z2bn60fuq6sdb&st=eqw0cug1&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["XR/Funwheel", "Miscellaneous Items"]
+    },
+    {
+        title: "Luke: Onewheel Pint Charger Mount",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bracket"],
+        imageSrc: "https://media.printables.com/media/prints/160467/images/1495174_3b6f40b9-7e20-41a9-af25-9317469eb75b/thumbs/inside/1280x960/jpg/pint.webp",
+        externalUrl: "https://www.printables.com/model/160467",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/j24s8mho07v6l5300o0rt/onewheel-pint-charger-mount-model_files.zip?rlkey=2rx0st3rw4x11ycum2qv2907v&st=1827dvax&dl=0",
+        dropboxZipLastUpdated: "2025-08-27",
+        platform: ["Pint/X/S", "Miscellaneous Items"]
     }
 ] as ItemData[]
 

@@ -2531,6 +2531,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/j24s8mho07v6l5300o0rt/onewheel-pint-charger-mount-model_files.zip?rlkey=2rx0st3rw4x11ycum2qv2907v&st=1827dvax&dl=0",
         dropboxZipLastUpdated: "2025-08-27",
         platform: ["Pint/X/S", "Miscellaneous Items"]
+    },
+    {
+        title: "Icee: GT WTF Rails Accurate Model",
+        fabricationMethod: ["Other"],
+        typeOfPart: ["Rails"],
+        imageSrc: "https://media.printables.com/media/prints/b702b3fc-6cef-49db-8e4b-8723c84028b2/images/10545539_de11685e-cabf-4d1c-966c-ac3bb81db36f_ae19de9a-f600-44c1-9442-57fe01b3e5f8/thumbs/inside/1280x960/png/picture-of-rails.webp",
+        externalUrl: "https://www.printables.com/model/1397041",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/qgga3oisrd0ava0qkc5ot/onewheel-gt-wtf-rails-accurate-model-model_files.zip?rlkey=wji7f3c3vjp2sacpitgz3e2ke&st=1ygnq4y4&dl=0",
+        dropboxZipLastUpdated: "2025-08-28",
+        platform: ["GT/GT-S"]
     }
 ] as ItemData[]
 

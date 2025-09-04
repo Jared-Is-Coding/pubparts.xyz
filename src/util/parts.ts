@@ -2541,6 +2541,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/qgga3oisrd0ava0qkc5ot/onewheel-gt-wtf-rails-accurate-model-model_files.zip?rlkey=wji7f3c3vjp2sacpitgz3e2ke&st=1ygnq4y4&dl=0",
         dropboxZipLastUpdated: "2025-08-28",
         platform: ["GT/GT-S"]
+    },
+    {
+        title: "Loafette: Ubox 100V PubBox Plate",
+        fabricationMethod: ["3d Printed", "CNC"],
+        typeOfPart: ["Adapter", "Bracket"],
+        imageSrc: "https://media.printables.com/media/prints/08ca0b7c-3859-4c89-8c57-774f6912e6b1/images/10520211_278a7124-fc48-45d7-9c30-21d45bf2c81a_a38a4c60-e85c-4cb9-9e02-84bf8e32d17c/thumbs/inside/1280x960/png/screenshot-2025-08-23-215903.webp",
+        externalUrl: "https://www.printables.com/model/1393446",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/t00dic3bu7bwt72h10n5x/ubox-100v-pubbox-plate-model_files.zip?rlkey=xjbtlwgbuzp5vso6ogzfh5hrv&st=x9dhf99e&dl=0",
+        dropboxZipLastUpdated: "2025-09-04",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

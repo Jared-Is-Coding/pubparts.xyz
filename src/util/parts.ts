@@ -2550,7 +2550,17 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1393446",
         dropboxUrl: "https://www.dropbox.com/scl/fi/t00dic3bu7bwt72h10n5x/ubox-100v-pubbox-plate-model_files.zip?rlkey=xjbtlwgbuzp5vso6ogzfh5hrv&st=x9dhf99e&dl=0",
         dropboxZipLastUpdated: "2025-09-04",
-        platform: ["Miscellaneous Items"]
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Steven Kelso: Ubox 100V Lite CNC PubBox Mount",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Adapter", "Bracket"],
+        imageSrc: "https://media.printables.com/media/prints/8f7a0b3e-3609-4492-9cb4-900bfd2d2ef1/images/10613042_2336f4ff-b628-4794-9ce2-8636409ef040_ec6f052e-880a-469f-b981-32a006b904ff/thumbs/inside/1280x960/png/screenshot-2025-09-05-123405.webp",
+        externalUrl: "https://www.printables.com/model/1406240",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/yanbzhxelvbb1so8dmq6m/ubox-100v-lite-pubbox-mount-model_files.zip?rlkey=zeqnq4s7tvv482ciwal5aoutu&st=s14yaq5k&dl=0",
+        dropboxZipLastUpdated: "2025-09-05",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

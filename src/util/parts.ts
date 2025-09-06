@@ -2561,6 +2561,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/yanbzhxelvbb1so8dmq6m/ubox-100v-lite-pubbox-mount-model_files.zip?rlkey=zeqnq4s7tvv482ciwal5aoutu&st=s14yaq5k&dl=0",
         dropboxZipLastUpdated: "2025-09-05",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Matix: Stoked Stock SSBMS Cover",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["BMS", "Connector Cover"],
+        imageSrc: "https://media.printables.com/media/prints/2eabbe87-7faa-477c-98ec-a7174c268f8c/images/10615620_1f54b6df-daa3-4572-89ac-eebaced330c4_bde63139-a099-4711-9eb0-bb1b1808403c/thumbs/inside/1280x960/jpeg/img_7260.webp",
+        externalUrl: "https://www.printables.com/model/1406465",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/glqrxe0ttjn0jx4s6j3eb/stoked-stock-bms-cover-model_files.zip?rlkey=l1kavan2vdhlfwizjf8zp5wni&st=x7c0owbu&dl=0",
+        dropboxZipLastUpdated: "2025-09-06",
+        platform: ["VESC Electronics"]
     }
 ] as ItemData[]
 

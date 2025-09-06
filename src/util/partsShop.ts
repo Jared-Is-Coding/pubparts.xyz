@@ -167,14 +167,14 @@ const allPartsShopItems = [
         price: 10
     },
     {
-        title: "XR 4212 BMS with blown IC",
+        title: "XR 4212 BMS with error 16",
         typeOfPart: ["BMS"],
         imageSrc: "/images/shop/xr_bms.png",
         platform: ["XR/Funwheel"],
         availableCount: 1,
-        description: "",
+        description: "Unknown root cause of the issue - Selling for parts",
         condition: "For Parts",
-        price: 10
+        price: 20
     },
     {
         title: "XR Stock Rear LED Strip",
@@ -182,7 +182,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/xr_leds.png",
         externalUrl: "https://onewheel.com/products/xr-battery-side-led-pcb",
         platform: ["XR/Funwheel"],
-        availableCount: 1,
+        availableCount: 2,
         description: "",
         condition: "Like New",
         price: 15
@@ -193,7 +193,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/xr_leds.png",
         externalUrl: "https://onewheel.com/products/xr-controller-side-led-pcb",
         platform: ["XR/Funwheel"],
-        availableCount: 1,
+        availableCount: 2,
         description: "",
         condition: "Like New",
         price: 15
@@ -252,12 +252,22 @@ const allPartsShopItems = [
         price: 35
     },
     {
-        title: "XR Controller (HW 4212, FW 4165, 1115mi)",
+        title: "XR Controller (HW 4212, FW 4165)",
         typeOfPart: ["Controller"],
         imageSrc: "/images/shop/xr_controller.png",
         platform: ["XR/Funwheel"],
         availableCount: 1,
-        description: "",
+        description: "1115mi, and this controller was pulled from a functional board",
+        condition: "Used",
+        price: 80
+    },
+    {
+        title: "XR Controller (HW 4212, FW 4155+)",
+        typeOfPart: ["Controller"],
+        imageSrc: "/images/shop/xr_controller2.png",
+        platform: ["XR/Funwheel"],
+        availableCount: 1,
+        description: "Unknown mileage, but this controller was pulled from a functional board",
         condition: "Used",
         price: 80
     },

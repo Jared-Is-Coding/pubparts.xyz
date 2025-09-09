@@ -444,7 +444,7 @@ const allPartsShopItems = [
             <p>These are made from <a target="_blank" href="https://www.printables.com/model/1120000">my remix of Auden's clamping blocks</a> and we've already run a couple batches of them. They're solid, I love the look of them, and they've worked great for hundreds of miles to secure my rails to the axle!</p>
         `,
         condition: "New",
-        price: 120
+        price: 105
     }
 ] as PartsShopData[]
 

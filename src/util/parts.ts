@@ -2571,6 +2571,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/glqrxe0ttjn0jx4s6j3eb/stoked-stock-bms-cover-model_files.zip?rlkey=l1kavan2vdhlfwizjf8zp5wni&st=x7c0owbu&dl=0",
         dropboxZipLastUpdated: "2025-09-06",
         platform: ["VESC Electronics"]
+    },
+    {
+        title: "Pubparts: Fungineers Superflux Motor Model",
+        fabricationMethod: ["Other"],
+        typeOfPart: ["Motor"],
+        imageSrc: "https://media.printables.com/media/prints/3eaf2a18-6bcf-45ed-a7f1-f3140d979831/images/10645249_d93828ec-bfce-4149-b5e4-4673cd085931_cd8e6e4b-5838-4b60-be2b-8f1573c48ae0/thumbs/inside/1280x960/png/screenshot_9.webp",
+        externalUrl: "https://www.printables.com/model/1410720",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ra6a6xml5132uz4b9qf1k/fungineers-superflux-motor-model-model_files.zip?rlkey=fgr8phtl7oc1c2idqlgngk431&st=waqu10cw&dl=0",
+        dropboxZipLastUpdated: "2025-09-10",
+        platform: ["VESC Electronics", "Miscellaneous Items"]
     }
 ] as ItemData[]
 

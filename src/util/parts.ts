@@ -1112,7 +1112,7 @@ const allParts = [
         platform: ["VESC Electronics"]
     },
     {
-        title: "Snowmote - Case for Pubmote Project",
+        title: "Snowmote - Case for Cowmote-Based Pubmote",
         fabricationMethod: ["3d Printed"],
         typeOfPart: ["Remote"],
         imageSrc: "https://media.printables.com/media/prints/1143449/images/8628918_0c212240-6401-4eb7-ae18-ec3113435cda_23c52ba5-e42a-4993-bebc-cf92a415ef83/thumbs/inside/1280x960/png/screenshot_1.webp",
@@ -2581,6 +2581,26 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/ra6a6xml5132uz4b9qf1k/fungineers-superflux-motor-model-model_files.zip?rlkey=fgr8phtl7oc1c2idqlgngk431&st=waqu10cw&dl=0",
         dropboxZipLastUpdated: "2025-09-10",
         platform: ["VESC Electronics", "Miscellaneous Items"]
+    },
+    {
+        title: "Pubparts: Floatwheel Cannoncore Motor Model",
+        fabricationMethod: ["Other"],
+        typeOfPart: ["Motor"],
+        imageSrc: "https://media.printables.com/media/prints/d238bf36-7a90-4976-b884-7b0abfe21165/images/10645399_e1720bb2-ed57-4305-be26-bd13f2715c7d_6449df6b-b370-4a2f-9b57-0c01dc1a837c/thumbs/inside/1280x960/png/screenshot_4.webp",
+        externalUrl: "https://www.printables.com/model/1410742",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/7ogt64ijfr7srrht2cypg/floatwheel-cannoncore-motor-model-model_files.zip?rlkey=q3m4te217gcj3lvv853asycm4&st=cdpxzvfu&dl=0",
+        dropboxZipLastUpdated: "2025-09-10",
+        platform: ["VESC Electronics", "Miscellaneous Items"]
+    },
+    {
+        title: "Snowmote 2 - Case for Pubmote",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Remote"],
+        imageSrc: "https://media.printables.com/media/prints/38253d2c-4c08-45e8-a333-b51330a9c2d9/images/10645370_d29652ad-b7ca-4f8d-9245-ac44617118a7_9c6c5638-d073-40a6-88c7-93a129cb3a72/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1410737",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/sw5a0wu3cscux6evpdph7/snowmote-2-case-for-pubmote-model_files.zip?rlkey=iowf76nzpmqkxwfgr4mrubt9r&st=7jsln84a&dl=0",
+        dropboxZipLastUpdated: "2025-09-10",
+        platform: ["VESC Electronics"]
     }
 ] as ItemData[]
 

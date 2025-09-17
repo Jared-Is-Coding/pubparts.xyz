@@ -592,6 +592,14 @@ const allParts = [
         platform: ["Miscellaneous Items"]
     },
     {
+        title: "Celeste: AFU and ChiBatterySystems Onewheel Charger Extra Protective Bumpers",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/85b4bf8e-c1f5-4af9-a132-2de659c9b068/images/10683757_a1a22ed4-ef82-4e18-87d2-cf26c7355ac7_c69dbd50-42fb-47b6-a477-e68eda242f5f/thumbs/inside/1280x960/jpg/img_0408.webp",
+        externalUrl: "https://www.printables.com/model/1415768",
+        platform: ["Miscellaneous Items"]
+    },
+    {
         title: "QuinnWheel: AFU Charger Bumpers for VESC Onewheel",
         fabricationMethod: ["3d Printed"],
         typeOfPart: ["Miscellaneous"],
@@ -2601,6 +2609,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/sw5a0wu3cscux6evpdph7/snowmote-2-case-for-pubmote-model_files.zip?rlkey=iowf76nzpmqkxwfgr4mrubt9r&st=7jsln84a&dl=0",
         dropboxZipLastUpdated: "2025-09-10",
         platform: ["VESC Electronics"]
+    },
+    {
+        title: "Steven Kelso: Ghetto Wide XR Footpad",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://media.printables.com/media/prints/c222531e-2bbc-4960-9f79-eb28a7d8ad72/images/10683597_cb46f3fd-cd74-43e3-97b4-9372a06965fb_617cea5b-8990-41f0-aca3-bdbc89cb40af/thumbs/inside/1280x960/jpg/pxl_20241126_173443627.webp",
+        externalUrl: "https://www.printables.com/model/1415749",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/m5twg2q2hq3ks2g597bsw/ghetto-wide-xr-footpad-model_files.zip?rlkey=v21rcqo492mzj5izwkqqiu9a8&st=zhhqhkrn&dl=0",
+        dropboxZipLastUpdated: "2025-09-17",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

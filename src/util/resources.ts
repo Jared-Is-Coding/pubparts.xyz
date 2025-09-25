@@ -206,12 +206,6 @@ const allResources = [
         description: "\"The best batteries in the game\""
     },
     {
-        title: "Stoked Stock",
-        typeOfResource: ["Vendor"],
-        externalUrl: "https://www.stokedstock.com/",
-        description: "Aftermarket parts and accessories for the OneWheels"
-    },
-    {
         title: "One Stop Board Shop",
         typeOfResource: ["Vendor"],
         externalUrl: "https://onestopboardshop.com/",
@@ -264,6 +258,12 @@ const allResources = [
         typeOfResource: ["Vendor"],
         externalUrl: "https://carveworkshop.com/",
         description: "Find the right setup for your needs. Push your board to your limits. We can help you with any setup you request."
+    },
+    {
+        title: "Nexinity's Racing Development LLC",
+        typeOfResource: ["Vendor"],
+        externalUrl: "https://nexsracingdev.com/",
+        description: "Top notch products and services to level up your riding and keep you at the top of your game. Level Up Here!"
     }
 ] as ResourceData[]
 

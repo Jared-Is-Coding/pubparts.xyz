@@ -439,12 +439,77 @@ const allPartsShopItems = [
                 <li>A ball end metric hex set</li>
                 <li>Axle bolts for mounting your motor</li>
                 <li>Rail bolts for mounting to your rail</li>
-            </ul
+            </ul>
 
             <p>These are made from <a target="_blank" href="https://www.printables.com/model/1120000">my remix of Auden's clamping blocks</a> and we've already run a couple batches of them. They're solid, I love the look of them, and they've worked great for hundreds of miles to secure my rails to the axle!</p>
         `,
         condition: "New",
         price: 105
+    },
+    {
+        title: "Leaf Blaster Pubmote (Full Build)",
+        typeOfPart: ["Remote"],
+        imageSrc: "https://github.com/contactsimonwilson/PubRemote/raw/master/docs/builds/leaf-blaster-assembly.png",
+        externalUrl: "https://github.com/contactsimonwilson/PubRemote/blob/master/docs/builds/leaf-blaster.md",
+        platform: ["VESC Electronics"],
+        availableCount: -1,
+        description: "Fully build Pubmote based on the Leaf Blaster design.",
+        condition: "New",
+        price: 120
+    },
+    {
+        title: "Leaf Blaster Pubmote (Parts Kit)",
+        typeOfPart: ["Remote"],
+        imageSrc: "https://github.com/contactsimonwilson/PubRemote/raw/master/docs/builds/leaf-blaster-assembly.png",
+        externalUrl: "https://github.com/contactsimonwilson/PubRemote/blob/master/docs/builds/leaf-blaster.md",
+        platform: ["VESC Electronics"],
+        availableCount: -1,
+        description: `
+            <p>Parts kit for Pubmote based on the Leaf Blaster design. What you'll get:</p>
+            <ul>
+                <li>1 | ZiNc Leaf Blaster remix case by ZiNc (with heat set inserts, screws)</li>
+                <li>1 | WaveShare ESP32-S3 1.43in Amoled Display</li>
+                <li>1 | PS5 joystick</li>
+                <li>1 | 1500mAh Lipo battery</li>
+                <li>6 | 1.25mm JST connectors</li>
+                <li>1 | 20k Ohm resistor</li>
+                <li>1 | Buzzer</li>
+            </ul>
+        `,
+        condition: "New",
+        price: 70
+    },
+    {
+        title: "Snowmote 2 Pubmote (Full Build)",
+        typeOfPart: ["Remote"],
+        imageSrc: "https://github.com/contactsimonwilson/PubRemote/raw/master/docs/builds/snowmote2-assembly.png",
+        externalUrl: "https://github.com/contactsimonwilson/PubRemote/blob/master/docs/builds/snowmote2.md",
+        platform: ["VESC Electronics"],
+        availableCount: -1,
+        description: "Fully build Pubmote based on the Snowmote 2 design.",
+        condition: "New",
+        price: 120
+    },
+    {
+        title: "Snowmote 2 Pubmote (Parts Kit)",
+        typeOfPart: ["Remote"],
+        imageSrc: "https://github.com/contactsimonwilson/PubRemote/raw/master/docs/builds/snowmote2-assembly.png",
+        externalUrl: "https://github.com/contactsimonwilson/PubRemote/blob/master/docs/builds/snowmote2.md",
+        platform: ["VESC Electronics"],
+        availableCount: -1,
+        description: `
+            <p>Parts kit for Pubmote based on the Snowmote 2 design. What you'll get:</p>
+            <ul>
+                <li>1 | SnowMote 2 case by ZiNc (with screws)</li>
+                <li>1 | WaveShare ESP32-S3 1.43in Amoled Display</li>
+                <li>1 | PS5 joystick</li>
+                <li>1 | 1500mAh Lipo battery</li>
+                <li>4 | 1.25mm JST connectors</li>
+                <li>1 | 20k Ohm resistor</li>
+            </ul>
+        `,
+        condition: "New",
+        price: 70
     }
 ] as PartsShopData[]
 

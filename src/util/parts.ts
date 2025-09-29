@@ -2619,6 +2619,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/m5twg2q2hq3ks2g597bsw/ghetto-wide-xr-footpad-model_files.zip?rlkey=v21rcqo492mzj5izwkqqiu9a8&st=zhhqhkrn&dl=0",
         dropboxZipLastUpdated: "2025-09-17",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Fungineers Stompies Front Footpad Model",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad"],
+        imageSrc: "https://media.printables.com/media/prints/78a47795-8136-4c1a-b2f6-3117d278a888/images/10776884_0fe1c789-7b30-4dd1-b68e-6968fcf51a6f_b461ebe6-3e45-48d5-8f4f-14f4cdd475b4/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1428869",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/wvmeye7owxlzuvp4o7lym/fungineers-stompies-front-footpad-model-model_files.zip?rlkey=dmtxnb3aezogmwzw07h4hv47t&st=2q8srqto&dl=0",
+        dropboxZipLastUpdated: "2025-09-29",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

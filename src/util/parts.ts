@@ -352,7 +352,7 @@ const allParts = [
     {
         title: "Khaos: Grip Tape DXF Outlines",
         fabricationMethod: ["Laser"],
-        typeOfPart: ["Footpad"],
+        typeOfPart: ["Footpad Attachment"],
         imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000579551/design/2024-08-09_bac8c3ea94466.jpg?x-oss-process=image/resize,w_1000/format,webp",
         externalUrl: "https://makerworld.com/en/models/579551",
         platform: ["GT/GT-S", "XR", "Pint/X/S", "XR Classic"]
@@ -1598,7 +1598,7 @@ const allParts = [
     {
         title: "Grip Tape for Onewheel XR",
         fabricationMethod: ["Laser"],
-        typeOfPart: ["Footpad"],
+        typeOfPart: ["Footpad Attachment"],
         imageSrc: "https://cdn.thingiverse.com/assets/47/73/33/36/b8/large_display_grip.jpg",
         externalUrl: "https://www.thingiverse.com/thing:5343206",
         dropboxUrl: "https://www.dropbox.com/scl/fi/t0r5yvz1kaorc8ydkmmye/Onewheel-XR-Grip-Tape-5343206.zip?rlkey=fi2imxxbg2ui0hoxdxbzsj65c&st=plw5ft2x&dl=0",
@@ -2627,6 +2627,16 @@ const allParts = [
         imageSrc: "https://media.printables.com/media/prints/78a47795-8136-4c1a-b2f6-3117d278a888/images/10776884_0fe1c789-7b30-4dd1-b68e-6968fcf51a6f_b461ebe6-3e45-48d5-8f4f-14f4cdd475b4/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1428869",
         dropboxUrl: "https://www.dropbox.com/scl/fi/wvmeye7owxlzuvp4o7lym/fungineers-stompies-front-footpad-model-model_files.zip?rlkey=dmtxnb3aezogmwzw07h4hv47t&st=2q8srqto&dl=0",
+        dropboxZipLastUpdated: "2025-09-29",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Acheronfail: PubGrip for Fungineers Stompies footpads",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/03b90c84-d987-4c51-9d25-2b9d4fa655e9/images/10781272_a8070cdf-4878-44af-b4bc-6564bdad59da_2f304b9d-c972-4ae1-9aea-826783a65e25/thumbs/inside/1280x960/jpg/img_8098.webp",
+        externalUrl: "https://www.printables.com/model/1429521",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/cv6jixg557r6t0j6n4ky9/pubgrip-for-fungineers-stompies-footpads-model_files.zip?rlkey=bkkf52g34d4imyud8hl068anv&st=vunrr7y7&dl=0",
         dropboxZipLastUpdated: "2025-09-29",
         platform: ["XR/Funwheel"]
     }

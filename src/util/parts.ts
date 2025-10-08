@@ -2639,6 +2639,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/cv6jixg557r6t0j6n4ky9/pubgrip-for-fungineers-stompies-footpads-model_files.zip?rlkey=bkkf52g34d4imyud8hl068anv&st=vunrr7y7&dl=0",
         dropboxZipLastUpdated: "2025-09-29",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Matix: MB V1 XR Controller Enclosure",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/3538c486-11aa-45a5-8087-82a188dd4458/images/10838717_066dd0c6-b357-4eb1-8c7c-d3b8388c2304_21f8d6ec-bd38-4bc6-80c0-5eb6190aa9d0/thumbs/inside/1280x960/jpeg/img_7292.webp",
+        externalUrl: "https://www.printables.com/model/1434485",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/wgd640y3rc26usnqux6pr/mb-v1-xr-controller-enclosure-model_files.zip?rlkey=br4we5ccrmrv1ql2qg2ww6y3s&st=mj4jc07w&dl=0",
+        dropboxZipLastUpdated: "2025-10-08",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

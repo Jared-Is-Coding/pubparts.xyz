@@ -469,12 +469,14 @@ const allPartsShopItems = [
             <ul>
                 <li>1 | ZiNc Leaf Blaster remix case by ZiNc (with heat set inserts, screws)</li>
                 <li>1 | WaveShare ESP32-S3 1.43in Amoled Display</li>
-                <li>1 | PS5 joystick</li>
-                <li>1 | 1500mAh Lipo battery</li>
+                <li>1 | PS5 joystick + cap</li>
+                <li>1 | 1500mAh Lipo battery + JST connector for splicing</li>
                 <li>6 | 1.25mm JST connectors</li>
                 <li>1 | 20k Ohm resistor</li>
                 <li>1 | Buzzer</li>
+                <li>1 | Black lanyard</li>
             </ul>
+            <p>You'll need to do your own soldering, source heat shrink, source wire, and flash firmware to the display - this kit covers the hardware pieces otherwise.</p>
         `,
         condition: "New",
         price: 70
@@ -502,11 +504,13 @@ const allPartsShopItems = [
             <ul>
                 <li>1 | SnowMote 2 case by ZiNc (with screws)</li>
                 <li>1 | WaveShare ESP32-S3 1.43in Amoled Display</li>
-                <li>1 | PS5 joystick</li>
-                <li>1 | 1500mAh Lipo battery</li>
+                <li>1 | PS5 joystick + cap</li>
+                <li>1 | 1500mAh Lipo battery + JST connector for splicing</li>
                 <li>4 | 1.25mm JST connectors</li>
                 <li>1 | 20k Ohm resistor</li>
+                <li>1 | Black lanyard</li>
             </ul>
+            <p>You'll need to do your own soldering, source heat shrink, source wire, and flash firmware to the display - this kit covers the hardware pieces otherwise.</p>
         `,
         condition: "New",
         price: 70

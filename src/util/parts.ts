@@ -2646,7 +2646,27 @@ const allParts = [
         typeOfPart: ["Controller Box"],
         imageSrc: "https://media.printables.com/media/prints/3538c486-11aa-45a5-8087-82a188dd4458/images/10838717_066dd0c6-b357-4eb1-8c7c-d3b8388c2304_21f8d6ec-bd38-4bc6-80c0-5eb6190aa9d0/thumbs/inside/1280x960/jpeg/img_7292.webp",
         externalUrl: "https://www.printables.com/model/1434485",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/wgd640y3rc26usnqux6pr/mb-v1-xr-controller-enclosure-model_files.zip?rlkey=br4we5ccrmrv1ql2qg2ww6y3s&st=mj4jc07w&dl=0",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/wgd640y3rc26usnqux6pr/mb-v1-xr-controller-enclosure-model_files.zip?rlkey=br4we5ccrmrv1ql2qg2ww6y3s&st=20hym3c8&dl=0",
+        dropboxZipLastUpdated: "2025-10-08",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Matix: MB V1 Battery Enclosure",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://media.printables.com/media/prints/7a9ffc54-1622-447f-8254-a2145a7367f8/images/10849721_bbd31bb9-c06b-4138-849c-198bdf3af26c_22d38970-edca-4ce1-82ee-72711b8b36ca/thumbs/inside/1280x960/jpeg/img_7290.webp",
+        externalUrl: "https://www.printables.com/model/1437189",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/q919c3rp26n8ry85c6i5j/mb-v1-battery-enclosure-model_files.zip?rlkey=66dxby8t3g4apfplpik2nbx83&st=07cktxta&dl=0",
+        dropboxZipLastUpdated: "2025-10-08",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Matix: MB XR 12x8 Extended Harness Retainers",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/4eaf39ef-20b3-4f8c-999e-c5826fd7b0f4/images/10850723_365ac753-9e75-43bb-b4c5-b7d01e9a2bcc_96e17b67-3d62-47f1-a07f-437f2534c8d5/thumbs/inside/1280x960/png/img_2475.webp",
+        externalUrl: "https://www.printables.com/model/1438853",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/k1w4hl2wy7s5enn5g0ydv/mb-xr-12x8-extended-harness-retainers-model_files.zip?rlkey=blgitk5dyly6wpfrj62mvxa61&st=sn1hg8ts&dl=0",
         dropboxZipLastUpdated: "2025-10-08",
         platform: ["XR/Funwheel"]
     }

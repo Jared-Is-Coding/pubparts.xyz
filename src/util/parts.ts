@@ -2669,6 +2669,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/k1w4hl2wy7s5enn5g0ydv/mb-xr-12x8-extended-harness-retainers-model_files.zip?rlkey=blgitk5dyly6wpfrj62mvxa61&st=sn1hg8ts&dl=0",
         dropboxZipLastUpdated: "2025-10-08",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Warzon3: Flightpack Torque Box lids",
+        fabricationMethod: ["CNC"],
+        typeOfPart: ["Battery Box"],
+        imageSrc: "https://flightpack.eu/cdn/shop/files/rn-image_picker_lib_temp_09053445-18f4-4d1c-bd1e-fc88b61548f6.jpg?v=1752190002&width=713",
+        externalUrl: "https://www.printables.com/model/1438970",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/0w3x4m30n8l2jy2ygy8vn/flightpack-torquebox-lids-model_files.zip?rlkey=4vhxq7zjqm2nlw53brufbpgsh&st=9rewp4v9&dl=0",
+        dropboxZipLastUpdated: "2025-10-09",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

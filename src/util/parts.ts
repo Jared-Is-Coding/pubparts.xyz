@@ -2679,6 +2679,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/0w3x4m30n8l2jy2ygy8vn/flightpack-torquebox-lids-model_files.zip?rlkey=4vhxq7zjqm2nlw53brufbpgsh&st=9rewp4v9&dl=0",
         dropboxZipLastUpdated: "2025-10-09",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "StokedStock Sensor Shapes",
+        fabricationMethod: ["Other"],
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/72f73e1d-cbd2-435b-adc0-8221fb9cd322/images/10863346_bf64e107-c069-4fdd-9cb8-409a5351483e_0ea50ad7-8500-4828-ab8c-46f07e32bec0/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1440734",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/tcj1lcnxwakb4nje81pxc/stokedstock-sensor-shapes-model_files.zip?rlkey=2c1gg3mef4p600tbamoq8l0mv&st=ckd9deei&dl=0",
+        dropboxZipLastUpdated: "2025-10-10",
+        platform: ["VESC Electronics", "Miscellaneous Items"]
     }
 ] as ItemData[]
 

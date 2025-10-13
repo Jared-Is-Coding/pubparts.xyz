@@ -706,11 +706,13 @@ const allParts = [
         platform: ["Miscellaneous Items"]
     },
     {
-        title: "Markoblaster: Battery Assemblies for Fitment (15s1p p45b, 15s2p p45b)",
+        title: "Markoblaster: Cell Holder Assembly (15s1p p45b, 15s2p p45b, 30s1p p45b)",
         fabricationMethod: ["3d Printed"],
         typeOfPart: ["Battery Assembly"],
         imageSrc: "https://media.printables.com/media/prints/1040064/images/7887158_a872d6dd-9026-4f1d-94cf-a25249ec9dd8_4c16020c-3236-41e8-8d3f-aae43f238d51/thumbs/inside/1280x960/png/screenshot-2024-10-14-at-25212-pm.webp",
         externalUrl: "https://www.printables.com/model/1040064",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/wt97y1mx84rynr377bx15/30s1p-pack-2x-15s1p-for-p45b-model_files.zip?rlkey=pkjeurasssnmqeqsu16ow9bw8&st=i9y8swtt&dl=0",
+        dropboxZipLastUpdated: "2025-10-12",
         platform: ["Miscellaneous Items"]
     },
     {

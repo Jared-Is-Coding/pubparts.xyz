@@ -2691,6 +2691,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/tcj1lcnxwakb4nje81pxc/stokedstock-sensor-shapes-model_files.zip?rlkey=2c1gg3mef4p600tbamoq8l0mv&st=ckd9deei&dl=0",
         dropboxZipLastUpdated: "2025-10-10",
         platform: ["VESC Electronics", "Miscellaneous Items"]
+    },
+    {
+        title: "rmkilc: Axle Blocks for XR to Superflux with MagHandle option",
+        fabricationMethod: ["CNC"],
+        typeOfPart: ["Axle Block"],
+        imageSrc: "https://media.printables.com/media/prints/8c15b910-978e-4184-92a8-9955f332970d/images/10881890_bc5afe4b-5c5f-40a0-a112-1e97c3281cb8_88cbf474-4f43-483b-8ed5-ae3c360d6ca8/thumbs/inside/1280x960/jpg/pxl_20251012_010433791.webp",
+        externalUrl: "https://www.printables.com/model/1415595",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ijin3g2e5dkfpf6q7j0a7/xr-superflux-axle-blocks-model_files.zip?rlkey=yz3kj552lkcdzx2sxl26hdhp8&st=birxflie&dl=0",
+        dropboxZipLastUpdated: "2025-10-13",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

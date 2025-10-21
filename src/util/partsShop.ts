@@ -390,7 +390,7 @@ const allPartsShopItems = [
         platform: ["Miscellaneous Items"],
         availableCount: -1,
         description: `
-            <p>Paired with hooks originally designed by @seanbrowntown, this hook-wedge system offers mounted foot hooks with adjustable height, angle, and placement.</p>
+            <p>Paired with hooks modified from original designs by @seanbrowntown, this hook-wedge system offers mounted foot hooks with adjustable height, angle, and placement.</p>
             <p>Printed in TPU, these hooks are indestructible. They can be mounted to the footpad in a handful of ways, with more options available in the future:</p>
             <ul>
                 <li>Bottom Mount Wedge: Countersunk screw goes up through footpad and/or footpad backer into wedge, from bottom. Hook is then screwed into wedge from the top. This method requires removal of the footpad in order to remove the wedge, but is very sturdy.</li>
@@ -400,11 +400,11 @@ const allPartsShopItems = [
             <p>In cases where not a full set of hooks and wedges is needed, or additional individual parts are requested, here are the individual parts costs for reference:</p>
             <ul>
                 <li>$35 per hook</li>
-                <li>$15 per wedge (with hardware)</li>
+                <li>$25 per wedge (with hardware)</li>
             </ul>
         `,
         condition: "New",
-        price: 100
+        price: 120
     },
     {
         title: "1.43in AMOLED Display replacements, for WaveShare 1.43in AMOLED assemblies",

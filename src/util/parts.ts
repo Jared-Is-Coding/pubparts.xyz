@@ -2701,6 +2701,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/ijin3g2e5dkfpf6q7j0a7/xr-superflux-axle-blocks-model_files.zip?rlkey=yz3kj552lkcdzx2sxl26hdhp8&st=birxflie&dl=0",
         dropboxZipLastUpdated: "2025-10-13",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "TFL: Drop Top for Extended Rails",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender"],
+        imageSrc: "/images/parts/xr/dtfe.jpg",
+        externalUrl: "https://www.thingiverse.com/thing:7177548",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ufliwoodwpflfmcr30fuv/Drop-Top-for-Extended-Rails-7177548.zip?rlkey=sch7y8t3agriuotmef3prxss3&st=w9oqfu74&dl=0",
+        dropboxZipLastUpdated: "2025-10-22",
+        platform: ["XR/Funwheel", "GT/GT-S"]
     }
 ] as ItemData[]
 

@@ -1280,18 +1280,26 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/838327",
         dropboxUrl: "https://www.dropbox.com/scl/fi/zso2uj240vctz1dzijwlz/pubhubs-sf-xr-clampys-model_files.zip?rlkey=8z0z5hiyruikabtryxgr1c9r3&st=j8xo3dqp&dl=0",
         dropboxZipLastUpdated: "2025-02-15",
-        price: "~$145/pair from JLCPCB",
         platform: ["XR/Funwheel"]
     },
     {
-        title: "PubParts: Finned Clamping SuperFlux/HyperCore to XR Rails",
+        title: "PubParts: (SuperFlux or HyperCore) to XR Rails Clamping Axle Blocks",
         fabricationMethod: ["CNC"],
         typeOfPart: ["Axle Block"],
         imageSrc: "https://media.printables.com/media/prints/1120000/images/8457376_dacfb099-31e0-4f89-a001-7135de39d34e_6cbdc152-b19f-4c59-ba95-79ad92ac2123/thumbs/inside/1280x960/png/screenshot_3.webp",
         externalUrl: "https://www.printables.com/model/1120000",
         dropboxUrl: "https://www.dropbox.com/scl/fi/ejp1e2t3rc272oa10kwzy/superfluxhypercore-to-xr-rails-clamping-axle-blocks-model_files.zip?rlkey=95onh8o9ygh964zc38or9yjx8&st=6xbicl5c&dl=0",
-        dropboxZipLastUpdated: "2025-04-25",
-        price: "~$155/pair from JLCPCB",
+        dropboxZipLastUpdated: "2025-10-27",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "PubParts: (SuperFlux or HyperCore) with Big Tire (11.5\"/12\") to XR Rails Clamping Axle Blocks",
+        fabricationMethod: ["CNC"],
+        typeOfPart: ["Axle Block"],
+        imageSrc: "https://media.printables.com/media/prints/0ecf491a-887a-4e7d-8d67-c69a638fcfce/images/11014396_983de831-2304-4e9a-adfe-ef6b3c057732_51f4af19-b73d-4cbb-9b6b-58fd1fe4f01b/thumbs/inside/1280x960/png/screenshot_2.webp",
+        externalUrl: "https://www.printables.com/model/1457263",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/1ua1jconh9pg1f2dro0zb/superflux-or-hypercore-with-big-tire-11512-to-xr-rails-clamping-axle-blocks-model_files.zip?rlkey=0h47thbkfbcer0dqkwxbi6msl&st=9rgt9j79&dl=0",
+        dropboxZipLastUpdated: "2025-10-27",
         platform: ["XR/Funwheel"]
     },
     {
@@ -1302,7 +1310,6 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/586242",
         dropboxUrl: "https://www.dropbox.com/scl/fi/bax3vgwk9o9p3xjlceuyr/pubhubs-cc-to-xr-model_files.zip?rlkey=i831d1xz5wc0d399n8w9xgcmd&st=itrooetj&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        price: "~$80/pair from JLCPCB",
         platform: ["XR/Funwheel"]
     },
     {
@@ -1313,7 +1320,6 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/586260",
         dropboxUrl: "https://www.dropbox.com/scl/fi/0trq50xxra5p6r8l5snls/pubhubs-modded-xr-blocks-model_files.zip?rlkey=az7mzdpuz5o4vw2lnvl4oc6fh&st=3fx5qjnw&dl=0",
         dropboxZipLastUpdated: "2025-02-15",
-        price: "~$80/pair from JLCPCB",
         platform: ["XR/Funwheel"]
     },
     {

@@ -1,20 +1,17 @@
 
 const allPartsShopItems = [
     {
-        title: "CNC PubBox V2.2 (Restock soon)",
+        title: "Black anodized CNC PubBox V2.2 with lid (raw lid, needs countersinking), window, and optional parts packs",
         typeOfPart: ["Controller Box"],
-        imageSrc: "/images/shop/cnc_pubbox_v2.png",
+        imageSrc: "/images/shop/cnc_pubbox_v2_second.png",
         externalUrl: "/parts/xr?search=PubWheel:%20CNC%20PubBox%20V2%20-%20XR%20VESC%20Box,%20Lid",
         platform: ["XR/Funwheel"],
-        availableCount: 0,
+        availableCount: 8,
         description: `
-            <p>All 6061 anodized black, and the window clear acrylic. Comes with</p>
+            <p>All parts:</p>
             <ul>
-                <li>Acrylic window</li>
-                <li>6061 lid without logo (just pictured clear to see the box)</li>
-                <li>6061 heat sink modified to simplify and round off the corners</li>
                 <li>
-                    6061 pubbox with the change logs:
+                    6061 anodized black pubbox with the change logs:
                     <ul>
                         <li>Breather hole -> Increase diameter to 20.5mm</li>
                         <li>Controller mounts -> Add JF6 mounts</li>
@@ -23,6 +20,8 @@ const allPartsShopItems = [
                         <li>Handle -> Raise handle exterior accordingly</li>
                     </ul>
                 </li>
+                <li>6061 raw alu lid without logo and without countersinks (just pictured clear to see the box)</li>
+                <li>Acrylic window</li>
             </ul>
             <p>This offering is only for the parts listed above and does not include hardware and printed pieces. If you're interested in those, I'm able to put together packs to include as requested, of the following:</p>
             <ul>
@@ -51,7 +50,7 @@ const allPartsShopItems = [
             </ul>
         `,
         condition: "New",
-        price: 200
+        price: 180
     },
     {
         title: "20mm Goretex vent patches",

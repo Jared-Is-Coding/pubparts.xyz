@@ -6,7 +6,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/cnc_pubbox_v2_second.png",
         externalUrl: "/parts/xr?search=PubWheel:%20CNC%20PubBox%20V2%20-%20XR%20VESC%20Box,%20Lid",
         platform: ["XR/Funwheel"],
-        availableCount: 8,
+        availableCount: 4,
         description: `
             <p>All parts:</p>
             <ul>

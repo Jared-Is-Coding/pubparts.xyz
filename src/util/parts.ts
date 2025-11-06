@@ -2717,6 +2717,26 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/ufliwoodwpflfmcr30fuv/Drop-Top-for-Extended-Rails-7177548.zip?rlkey=sch7y8t3agriuotmef3prxss3&st=w9oqfu74&dl=0",
         dropboxZipLastUpdated: "2025-10-22",
         platform: ["XR/Funwheel", "GT/GT-S"]
+    },
+    {
+        title: "Nexinity: Onewheel GT Charging Port Cover and Holding Clip",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Port Cover"],
+        imageSrc: "https://media.printables.com/media/prints/e7d0bc87-f2ea-4668-8a55-bfb3825b0bee/images/11076622_1fff622c-9417-44d1-bce2-9f53d9d61f39_a6254497-9303-450d-b7c1-6edd7866227f/thumbs/inside/1280x960/png/holding.webp",
+        externalUrl: "https://www.printables.com/model/1469386",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/bm2dube8dzq1b9w132sr7/onewheel-gt-charging-port-cover-and-holding-clip-model_files.zip?rlkey=6wo7q4nqfcfob43szcnpc9q6u&st=k62eizdq&dl=0",
+        dropboxZipLastUpdated: "2025-11-06",
+        platform: ["GT/GT-S"]
+    },
+    {
+        title: "GlowKitty: Onewheel Varials Harness Cable Protection/Retention Plate",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Connector Cover"],
+        imageSrc: "https://media.printables.com/media/prints/f7fc5344-7152-42a9-a110-9155b8969975/images/11096812_33f727d1-5cca-4c63-a3f4-723dd974a9a6_c91243ba-3dc4-4d00-8e4f-f6d650e73e51/thumbs/inside/1280x960/jpeg/e6b2e97c-210d-48ce-b9e1-2f89d0805784_1_105_c.webp",
+        externalUrl: "https://www.printables.com/model/1472216",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/rfn2fkco0asqav2s4k0aa/onewheel-varials-harness-cable-protectionretention-plate-model_files.zip?rlkey=dgt2xzhequj78asx5o98ozts6&st=1c5i3bba&dl=0",
+        dropboxZipLastUpdated: "2025-11-06",
+        platform: ["XR/Funwheel", "XR Classic"]
     }
 ] as ItemData[]
 

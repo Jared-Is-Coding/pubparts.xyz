@@ -220,15 +220,6 @@ const allPartsShopItems = [
         price: 30
     },
     {
-        title: "Tire, FM Vega slick (~400mi on it)",
-        typeOfPart: ["Tire"],
-        platform: ["XR/Funwheel"],
-        availableCount: 1,
-        description: "",
-        condition: "Used",
-        price: 25
-    },
-    {
         title: "Stock XR charger",
         typeOfPart: ["Charger"],
         imageSrc: "/images/shop/xr_charger.png",

@@ -57,7 +57,7 @@ const allPartsShopItems = [
         typeOfPart: ["Miscellaneous"],
         imageSrc: "/images/shop/goretex_patch.png",
         platform: ["Miscellaneous Items"],
-        availableCount: 39,
+        availableCount: 18,
         condition: "New",
         price: 2
     },

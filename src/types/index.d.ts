@@ -164,9 +164,11 @@ interface PartsShopData {
 type PartShopType =
     | PartType
     | "Axle Block Attachment"
+    | "Battery"
     | "Bolt"
     | "Charger"
     | "Display"
+    | "Sensor"
 
 type ItemCondition =
     | "New"

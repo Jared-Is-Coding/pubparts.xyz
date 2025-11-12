@@ -6,7 +6,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/cnc_pubbox_v2_second.png",
         externalUrl: "/parts/xr?search=PubWheel:%20CNC%20PubBox%20V2%20-%20XR%20VESC%20Box,%20Lid",
         platform: ["XR/Funwheel"],
-        availableCount: 4,
+        availableCount: 3,
         description: `
             <p>All parts:</p>
             <ul>
@@ -401,7 +401,7 @@ const allPartsShopItems = [
         typeOfPart: ["Display"],
         imageSrc: "/images/shop/amoled_display.png",
         platform: ["VESC Electronics"],
-        availableCount: 6,
+        availableCount: 3,
         description: `
             <p>These are DO0143FMST12 display panels (CO5300/FT3168) from DWO Limited. Their shipping is a flat rate $30, so these were ordered in bulk to save people on shipping. To order yourself would be $36/1, $21/2, $16/3, $14/4, $12/5.</p>
             <p>Or, order them from me for $10 + shipping a piece.</p>
@@ -410,7 +410,7 @@ const allPartsShopItems = [
         price: 10
     },
     {
-        title: "SF/XR Clamping Blocks (Finned)",
+        title: "SF/HC Clamping Blocks (Finned)",
         typeOfPart: ["Axle Block"],
         imageSrc: "/images/shop/clamping_block.png",
         externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
@@ -439,8 +439,8 @@ const allPartsShopItems = [
     {
         title: "Leaf Blaster Pubmote (Full Build)",
         typeOfPart: ["Remote"],
-        imageSrc: "https://github.com/contactsimonwilson/PubRemote/raw/master/docs/builds/leaf-blaster-assembly.png",
-        externalUrl: "https://github.com/contactsimonwilson/PubRemote/blob/master/docs/builds/leaf-blaster.md",
+        imageSrc: "https://github.com/techfoundrynz/Pubmote/raw/master/docs/builds/leaf-blaster-assembly.png",
+        externalUrl: "https://github.com/techfoundrynz/Pubmote/blob/master/docs/builds/leaf-blaster.md",
         platform: ["VESC Electronics"],
         availableCount: -1,
         description: "Fully build Pubmote based on the Leaf Blaster design.",
@@ -450,8 +450,8 @@ const allPartsShopItems = [
     {
         title: "Leaf Blaster Pubmote (Parts Kit)",
         typeOfPart: ["Remote"],
-        imageSrc: "https://github.com/contactsimonwilson/PubRemote/raw/master/docs/builds/leaf-blaster-assembly.png",
-        externalUrl: "https://github.com/contactsimonwilson/PubRemote/blob/master/docs/builds/leaf-blaster.md",
+        imageSrc: "https://github.com/techfoundrynz/Pubmote/raw/master/docs/builds/leaf-blaster-assembly.png",
+        externalUrl: "https://github.com/techfoundrynz/Pubmote/blob/master/docs/builds/leaf-blaster.md",
         platform: ["VESC Electronics"],
         availableCount: -1,
         description: `
@@ -474,8 +474,8 @@ const allPartsShopItems = [
     {
         title: "Snowmote 2 Pubmote (Full Build)",
         typeOfPart: ["Remote"],
-        imageSrc: "https://github.com/contactsimonwilson/PubRemote/raw/master/docs/builds/snowmote2-assembly.png",
-        externalUrl: "https://github.com/contactsimonwilson/PubRemote/blob/master/docs/builds/snowmote2.md",
+        imageSrc: "https://github.com/techfoundrynz/Pubmote/raw/master/docs/builds/snowmote2-assembly.jpg",
+        externalUrl: "https://github.com/techfoundrynz/Pubmote/blob/master/docs/builds/snowmote2.md",
         platform: ["VESC Electronics"],
         availableCount: -1,
         description: "Fully build Pubmote based on the Snowmote 2 design.",
@@ -485,8 +485,8 @@ const allPartsShopItems = [
     {
         title: "Snowmote 2 Pubmote (Parts Kit)",
         typeOfPart: ["Remote"],
-        imageSrc: "https://github.com/contactsimonwilson/PubRemote/raw/master/docs/builds/snowmote2-assembly.png",
-        externalUrl: "https://github.com/contactsimonwilson/PubRemote/blob/master/docs/builds/snowmote2.md",
+        imageSrc: "https://github.com/techfoundrynz/Pubmote/raw/master/docs/builds/snowmote2-assembly.jpg",
+        externalUrl: "https://github.com/techfoundrynz/Pubmote/blob/master/docs/builds/snowmote2.md",
         platform: ["VESC Electronics"],
         availableCount: -1,
         description: `
@@ -504,6 +504,36 @@ const allPartsShopItems = [
         `,
         condition: "New",
         price: 70
+    },
+    {
+        title: "StokedStock V5 Sensor",
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "/images/shop/v5_sensor.png",
+        platform: ["VESC Electronics"],
+        availableCount: 1,
+        description: "StokedStock V5 cuttable footpad sensor",
+        condition: "New",
+        price: 50
+    },
+    {
+        title: "StokedStock V3 Sensor",
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "/images/shop/v3_sensor.png",
+        platform: ["VESC Electronics"],
+        availableCount: 2,
+        description: "StokedStock V3 footpad sensor",
+        condition: "New",
+        price: 30
+    },
+    {
+        title: "StokedStock V2 Sensor",
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "/images/shop/v2_sensor.png",
+        platform: ["VESC Electronics"],
+        availableCount: 1,
+        description: "StokedStock V2 footpad sensor",
+        condition: "New",
+        price: 30
     }
 ] as PartsShopData[]
 

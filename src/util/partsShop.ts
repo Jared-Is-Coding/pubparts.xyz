@@ -262,16 +262,6 @@ const allPartsShopItems = [
         price: 80
     },
     {
-        title: "Pint Replacement Hub Bolts",
-        typeOfPart: ["Bolt"],
-        imageSrc: "/images/shop/pint_screws.png",
-        platform: ["Pint/X/S"],
-        availableCount: 1,
-        description: "Full set of 4 replacement hub bolts",
-        condition: "New",
-        price: 5
-    },
-    {
         title: "Pint Stock Rear Footpad",
         typeOfPart: ["Footpad"],
         imageSrc: "/images/shop/pint_fp.png",

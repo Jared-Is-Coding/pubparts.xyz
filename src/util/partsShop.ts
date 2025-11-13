@@ -524,6 +524,26 @@ const allPartsShopItems = [
         description: "StokedStock V2 footpad sensor",
         condition: "New",
         price: 30
+    },
+    {
+        title: "CBXR Battery (~1100mi)",
+        typeOfPart: ["Battery"],
+        imageSrc: "/images/shop/cbxr.png",
+        platform: ["VESC Electronics"],
+        availableCount: 1,
+        description: "Used CBXR 15s3p battery with ~1100mi. Well taken care of, still plenty of life.",
+        condition: "Used",
+        price: 400
+    },
+    {
+        title: "Stock XR Battery Harness",
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "/images/shop/xr_harness.png",
+        platform: ["VESC Electronics"],
+        availableCount: 1,
+        description: "Stock XR battery harness with most of the battery box ends chopped up or otherwise removed. Good for parts or splicing up for your own builds.",
+        condition: "Used",
+        price: 25
     }
 ] as PartsShopData[]
 

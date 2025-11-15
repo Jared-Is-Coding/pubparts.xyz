@@ -2737,6 +2737,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/rfn2fkco0asqav2s4k0aa/onewheel-varials-harness-cable-protectionretention-plate-model_files.zip?rlkey=dgt2xzhequj78asx5o98ozts6&st=1c5i3bba&dl=0",
         dropboxZipLastUpdated: "2025-11-06",
         platform: ["XR/Funwheel", "XR Classic"]
+    },
+    {
+        title: "Lunko: Port Gap Fillers + Better Bumper Spacers for CNC PubBox V2",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Port Cover", "Miscellaneous", "Controller Box"],
+        imageSrc: "https://media.printables.com/media/prints/e2a287c9-9777-49ca-86ec-5db43a6e7926/images/11166548_3122c906-90f8-436c-98e5-640a454e883b_0eb03966-5b15-4710-8963-ffa849050f07/thumbs/inside/1280x960/jpg/20251114_210615.webp",
+        externalUrl: "https://www.printables.com/model/1481876",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/gt5m6jcnxu2pshozghuve/tpu-only-port-gap-fillers-better-bumper-spacers-for-cnc-pubbox-v2-model_files.zip?rlkey=gfxdw53lqxi66x1y1br4lgze6&st=9nine57g&dl=0",
+        dropboxZipLastUpdated: "2025-11-14",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

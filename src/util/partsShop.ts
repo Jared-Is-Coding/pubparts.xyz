@@ -57,7 +57,7 @@ const allPartsShopItems = [
         typeOfPart: ["Miscellaneous"],
         imageSrc: "/images/shop/goretex_patch.png",
         platform: ["Miscellaneous Items"],
-        availableCount: 18,
+        availableCount: 17,
         condition: "New",
         price: 2
     },
@@ -79,17 +79,6 @@ const allPartsShopItems = [
         platform: ["XR/Funwheel"],
         availableCount: 2,
         description: "Plain old stock XR rear bumpers",
-        condition: "Used",
-        price: 5
-    },
-    {
-        title: "Used front XR bumpers",
-        typeOfPart: ["Bumper"],
-        imageSrc: "/images/shop/xr_bumper_f.png",
-        externalUrl: "https://onewheel.com/products/c-bump",
-        platform: ["XR/Funwheel"],
-        availableCount: 1,
-        description: "Plain old stock XR front bumper",
         condition: "Used",
         price: 5
     },

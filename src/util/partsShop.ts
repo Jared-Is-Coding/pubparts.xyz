@@ -510,7 +510,7 @@ const allPartsShopItems = [
         typeOfPart: ["Footpad Attachment"],
         imageSrc: "/images/shop/v3_sensor.png",
         platform: ["VESC Electronics"],
-        availableCount: 2,
+        availableCount: 1,
         description: "StokedStock V3 footpad sensor",
         condition: "New",
         price: 30

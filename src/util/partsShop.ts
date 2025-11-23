@@ -304,7 +304,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/sf_ab.png",
         externalUrl: "https://fungineers.us/products/adapters",
         platform: ["XR/Funwheel"],
-        availableCount: 1,
+        availableCount: 2,
         condition: "New",
         price: 25
     },

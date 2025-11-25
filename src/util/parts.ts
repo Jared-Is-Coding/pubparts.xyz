@@ -2219,13 +2219,13 @@ const allParts = [
         platform: ["XR/Funwheel"]
     },
     {
-        title: "Nexinity: Superflux Motor Bearing Seals",
+        title: "PubParts: SuperFlux MK3 Bearing Seals - Simple Print",
         fabricationMethod: ["3d Printed"],
         typeOfPart: ["Bearing Cover"],
-        imageSrc: "https://media.printables.com/media/prints/4c02e2cf-7df6-4f22-9db4-34207c53f5e9/images/9948213_226496e0-c8dc-4157-b367-e06948ed33bb_3e24c5f0-bc6f-48cf-b32c-c8f5c80c3bcd/thumbs/inside/1280x960/jpg/img_9176.webp",
-        externalUrl: "https://www.printables.com/model/1318548",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/xoqk29medcx20rju2qnne/superflux-motor-bearing-seals-model_files.zip?rlkey=dxq59yqrtiezri18isum9jbi5&st=0rzffkjy&dl=0",
-        dropboxZipLastUpdated: "2025-06-14",
+        imageSrc: "https://media.printables.com/media/prints/721f784b-9862-480d-bbd7-f13e9c0e2663/images/11252846_eb386bb3-29a4-4d33-a347-91b0c9dc0748_50d4b63f-8c5e-48ba-a89d-3844cf8b40e6/thumbs/inside/1280x960/jpg/1.webp",
+        externalUrl: "https://www.printables.com/model/1493269",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/he0i3r2n0z75myzvu7o3o/superflux-mk3-bearing-seals-simple-print-model_files.zip?rlkey=zhhi2ctrjjxakidrj5frdembb&st=9c13ksx2&dl=0",
+        dropboxZipLastUpdated: "2025-11-25",
         platform: ["Miscellaneous Items"]
     },
     {
@@ -2747,6 +2747,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/gt5m6jcnxu2pshozghuve/tpu-only-port-gap-fillers-better-bumper-spacers-for-cnc-pubbox-v2-model_files.zip?rlkey=gfxdw53lqxi66x1y1br4lgze6&st=9nine57g&dl=0",
         dropboxZipLastUpdated: "2025-11-14",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Onewheel GT Tethered Plug",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Port Cover"],
+        imageSrc: "https://cdn.thingiverse.com/assets/93/ef/82/ab/bd/large_display_305aa4d7-2662-4948-9200-96005cbf2075.png",
+        externalUrl: "https://www.thingiverse.com/thing:6263781",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/dpxjz0k1yx11sptdv68r0/Onewheel-GT-Tethered-Plug-6263781.zip?rlkey=93h7fls872zuwa0eaehyfyjef&st=x3790zrc&dl=0",
+        dropboxZipLastUpdated: "2025-11-25",
+        platform: ["GT/GT-S"]
     }
 ] as ItemData[]
 

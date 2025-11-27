@@ -2757,6 +2757,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/dpxjz0k1yx11sptdv68r0/Onewheel-GT-Tethered-Plug-6263781.zip?rlkey=93h7fls872zuwa0eaehyfyjef&st=x3790zrc&dl=0",
         dropboxZipLastUpdated: "2025-11-25",
         platform: ["GT/GT-S"]
+    },
+    {
+        title: "Viperbite: V3 Sensor cover with pressure dots",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/5082f195-5aae-4fe8-bda6-394b47e72a04/images/11263198_3df68038-db2d-4268-8c36-e08bcb121c4c_3facffcc-6f20-4e06-8d28-733e1fda5a94/thumbs/inside/1280x960/jpg/dsc_5635.webp",
+        externalUrl: "https://www.printables.com/model/1494706",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/96ojeypnp4ap5kzre1ho6/v3-sensor-cover-with-pressure-dots-model_files.zip?rlkey=gajewzuupc96fjhw1aumcc0n9&st=1jy9osug&dl=0",
+        dropboxZipLastUpdated: "2025-11-27",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

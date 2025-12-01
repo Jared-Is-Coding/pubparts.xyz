@@ -2767,6 +2767,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/96ojeypnp4ap5kzre1ho6/v3-sensor-cover-with-pressure-dots-model_files.zip?rlkey=gajewzuupc96fjhw1aumcc0n9&st=1jy9osug&dl=0",
         dropboxZipLastUpdated: "2025-11-27",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "GT Motor Harness/Plug Retainer",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/518265/images/4194585_7a3ff6cd-f721-4ea5-aa63-a9ba33e77025/thumbs/inside/1280x960/jpg/featured_preview_59394e8b-aa24-42a5-b2c5-e657b31289dc.webp",
+        externalUrl: "https://www.printables.com/model/518265",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/k1n71uk5rxh80jq0rrnih/onewheel-gt-motor-harnessplug-retainer-model_files.zip?rlkey=mupnidzj1qfv1k93clgvarylk&st=1vw9iesq&dl=0",
+        dropboxZipLastUpdated: "2025-12-01",
+        platform: ["GT/GT-S"]
     }
 ] as ItemData[]
 

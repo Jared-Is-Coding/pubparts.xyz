@@ -2777,6 +2777,26 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/k1n71uk5rxh80jq0rrnih/onewheel-gt-motor-harnessplug-retainer-model_files.zip?rlkey=mupnidzj1qfv1k93clgvarylk&st=1vw9iesq&dl=0",
         dropboxZipLastUpdated: "2025-12-01",
         platform: ["GT/GT-S"]
+    },
+    {
+        title: "Onewheel Stator Saver Tool",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://cdn.thingiverse.com/assets/9b/4f/7e/d5/02/large_display_stator_locator_axle_interface.png",
+        externalUrl: "https://www.thingiverse.com/thing:6851061",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/hkf2cxwd0ojsfskq8dtv1/Stator-Locator-by-LIVEWIRE-TOOLING-6851061.zip?rlkey=sj1vuqos6oyovufvyjsgvhwa3&st=74hdobbu&dl=0",
+        dropboxZipLastUpdated: "2025-12-03",
+        platform: ["Miscellaneous Items", "XR/Funwheel"]
+    },
+    {
+        title: "Pubwheel: TRONIC X12 VESC Mounting Mosfet Spacer",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bracket"],
+        imageSrc: "https://makerworld.bblmw.com/makerworld/model/DSM00000000543493/design/2024-07-16_8f7d60d97d25c.jpg?x-oss-process=image/resize,w_1000/format,webp",
+        externalUrl: "https://makerworld.com/en/models/543493",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/ievw1hfw53h34pvxluij0/TRONIC-X12-VESC-Mounting-Mosfet-Spacer.zip?rlkey=40zae8h6znskbnizlt0px24y1&st=hs4i1s4u&dl=0",
+        dropboxZipLastUpdated: "2025-12-03",
+        platform: ["VESC Electronics"]
     }
 ] as ItemData[]
 

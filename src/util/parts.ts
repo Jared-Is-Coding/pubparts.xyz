@@ -2797,6 +2797,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/ievw1hfw53h34pvxluij0/TRONIC-X12-VESC-Mounting-Mosfet-Spacer.zip?rlkey=40zae8h6znskbnizlt0px24y1&st=hs4i1s4u&dl=0",
         dropboxZipLastUpdated: "2025-12-03",
         platform: ["VESC Electronics"]
+    },
+    {
+        title: "PubParts: Onewheel XR Harness Rail Retainers",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/269e22d6-daa9-4207-b229-10cd8a1b3e26/images/11333101_66cfe958-be19-437c-b3ec-bdaeeabc96c9_5e4786d8-9c54-4cbd-992f-6693fcae2e66/thumbs/inside/1280x960/png/screenshot_1.webp",
+        externalUrl: "https://www.printables.com/model/1504152",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/3q75vkd99hxm45p7y0f9a/onewheel-xr-harness-rail-retainers-model_files.zip?rlkey=81diwpwh8588yykpuzwhroekq&st=47vjkl98&dl=0",
+        dropboxZipLastUpdated: "2025-12-04",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

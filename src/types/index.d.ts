@@ -159,6 +159,10 @@ interface PartsShopData {
      * Item external URL
      */
     externalUrl?: string
+    /**
+     * Present this item at the top of the shop listings
+     */
+    featured?: boolean
 }
 
 type PartShopType =
@@ -167,6 +171,7 @@ type PartShopType =
     | "Battery"
     | "Bolt"
     | "Charger"
+    | "Complete Board"
     | "Display"
     | "Sensor"
 

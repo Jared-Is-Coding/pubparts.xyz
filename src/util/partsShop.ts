@@ -6,7 +6,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/cnc_pubbox_v2_second.png",
         externalUrl: "/parts/xr?search=PubWheel:%20CNC%20PubBox%20V2%20-%20XR%20VESC%20Box,%20Lid",
         platform: ["XR/Funwheel"],
-        availableCount: 3,
+        availableCount: 1,
         description: `
             <p>All parts:</p>
             <ul>
@@ -83,14 +83,14 @@ const allPartsShopItems = [
         price: 5
     },
     {
-        title: "150mm x 12mm x 1.5mm aluminum LED backer plate",
+        title: "149mm x 12mm x 1.5mm aluminum LED backer plate",
         typeOfPart: ["LED"],
         imageSrc: "/images/shop/led_plate.png",
         platform: ["XR/Funwheel"],
         availableCount: -1,
         description: "Helpful to mount loose LED strips to for use in the box",
         condition: "New",
-        price: 5
+        price: 10
     },
     {
         title: "Stock XR connector cover",
@@ -342,17 +342,6 @@ const allPartsShopItems = [
         price: 15
     },
     {
-        title: "Pint/XR Extended Stand",
-        typeOfPart: ["Stand"],
-        imageSrc: "https://media.printables.com/media/prints/675193/images/5307332_dfb11e9f-7a67-4a34-8876-e8885097bb35_2e1e4578-5070-4401-b9e1-b937c19c8806/thumbs/inside/1280x960/png/make.webp",
-        externalUrl: "https://www.printables.com/model/675193",
-        platform: ["Miscellaneous Items"],
-        availableCount: 1,
-        description: "Just a printed stand",
-        condition: "Like New",
-        price: 15
-    },
-    {
         title: "Z-Hooks: Wedge and Foot Hook w/ Hardware (Front+Rear Set)",
         typeOfPart: ["Footpad Attachment"],
         imageSrc: "/images/shop/hooks.png",
@@ -373,7 +362,8 @@ const allPartsShopItems = [
             </ul>
         `,
         condition: "New",
-        price: 120
+        price: 120,
+        featured: true
     },
     {
         title: "1.43in AMOLED Display replacements, for WaveShare 1.43in AMOLED assemblies",
@@ -394,7 +384,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/clamping_block.png",
         externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
         platform: ["XR/Funwheel"],
-        availableCount: 17,
+        availableCount: 15,
         description: `
             <p>What you'll get:</p>
             <ul>
@@ -495,16 +485,6 @@ const allPartsShopItems = [
         price: 50
     },
     {
-        title: "StokedStock V3 Sensor",
-        typeOfPart: ["Footpad Attachment"],
-        imageSrc: "/images/shop/v3_sensor.png",
-        platform: ["VESC Electronics"],
-        availableCount: 1,
-        description: "StokedStock V3 footpad sensor",
-        condition: "New",
-        price: 30
-    },
-    {
         title: "StokedStock V2 Sensor",
         typeOfPart: ["Footpad Attachment"],
         imageSrc: "/images/shop/v2_sensor.png",
@@ -536,4 +516,10 @@ const allPartsShopItems = [
     }
 ] as PartsShopData[]
 
-export default allPartsShopItems.sort((a, b) => a.title.localeCompare(b.title))
+export default allPartsShopItems.sort((a, b) => {
+    if (a.featured !== b.featured) {
+        return a.featured ? -1 : 1
+    } else {
+        return a.title.localeCompare(b.title)
+    }
+})

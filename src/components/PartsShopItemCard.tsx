@@ -40,6 +40,10 @@ export default (item: PartsShopData, index: number) => {
                 {/* Part type badges */}
                 {item.typeOfPart?.length &&
                     <Stack className="display-over-top-right" direction="vertical" gap={1}>
+                        {item.featured &&
+                            <Badge key={`item-card-${index}-pill-featured`} pill bg="dark">Featured Item</Badge>
+                        }
+                        
                         <Badge pill bg="dark">{item.platform}</Badge>
                         <Badge pill bg="dark">{item.condition}</Badge>
                         

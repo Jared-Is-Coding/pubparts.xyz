@@ -2340,7 +2340,7 @@ const allParts = [
         title: "Adjustable VESC Onewheel Stand",
         fabricationMethod: ["3d Printed"],
         typeOfPart: ["Stand"],
-        imageSrc: "https://media.printables.com/media/prints/42c139d5-4702-47be-999b-040889975bfc/images/10334938_c9b45367-7933-4182-bf6c-3a7db0655380_53986e41-6043-40f8-89d1-44abbd024f4e/thumbs/inside/1280x960/png/screenshot_2.webp",
+        imageSrc: "https://media.printables.com/media/prints/64e27b9f-0695-4f9c-bc07-316486b79f7d/images/11360704_3c502047-a12e-40d1-b088-68cf63a7dbf3_8ea2047a-013b-4bd2-835f-1a56fda84e05/thumbs/inside/1280x960/png/screenshot_4.webp",
         externalUrl: "https://www.printables.com/model/1368740",
         dropboxUrl: "https://www.dropbox.com/scl/fi/z2vj4tkadioy5r1361g3l/adjustable-vesc-onewheel-stand-model_files.zip?rlkey=y8ua4oi8gy3si1ssebqq73tqz&st=s21im7qg&dl=0",
         dropboxZipLastUpdated: "2025-07-28",

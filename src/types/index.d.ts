@@ -31,10 +31,6 @@ interface ItemData {
      * Item ZIP direct download last updated
      */
     dropboxZipLastUpdated?: string
-    /**
-     * Item price text
-     */ 
-    price?: string
 }
 
 type PartType =
@@ -150,7 +146,7 @@ interface PartsShopData {
     /**
      * Image source url
      */
-    imageSrc?: string
+    imageSrc?: string | string[]
     /**
      * Item description text
      */ 

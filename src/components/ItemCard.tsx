@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
-import windowIsDefined from "../hooks/windowIsDefined"
 import toTitleCase from "../hooks/toTitleCase"
+import windowIsDefined from "../hooks/windowIsDefined"
 import CopyLinkBadge from "./CopyLinkBadge"
+import Lightbox from "./Lightbox"
 
 /**
  * Creates a {@link https://react-bootstrap.netlify.app/docs/components/cards | React-Bootstrap Card}
@@ -14,6 +15,8 @@ import CopyLinkBadge from "./CopyLinkBadge"
  * @param index - a number from a map
  */
 export default (item: ItemData, index: number) => {
+    const [lightboxToggler, setLightboxToggler] = useState(false)
+
     return (
         <Col
             xs={{span: 10, offset: 1}}
@@ -26,9 +29,17 @@ export default (item: ItemData, index: number) => {
             partfabricationmethods={item.fabricationMethod.join(",")}>
             <Card>
                 {/* Part image */}
-                <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
-                    <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? item.imageSrc.at(0) : item.imageSrc}')` : ""}}>
+                    {item.imageSrc &&
+                        <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
+                    }
                 </div>
+                
+                {/* Part image lightbox */}
+                {/* https://fslightbox.com/react */}
+                {item.imageSrc &&
+                    <Lightbox src={item.imageSrc} toggler={lightboxToggler} />
+                }
 
                 {/* Part type badges */}
                 {item.typeOfPart?.length &&
@@ -51,12 +62,6 @@ export default (item: ItemData, index: number) => {
                 {/* Part information */}
                 <Card.Body>
                     <Card.Title as="h3">{item.title}</Card.Title>
-
-                    {item.price &&
-                        <Card.Text>
-                            <i>Price: {item.price ?? "???"}</i>
-                        </Card.Text>
-                    }
 
                     {(item.externalUrl || item.dropboxUrl) &&
                         <Stack direction="vertical" gap={1}>

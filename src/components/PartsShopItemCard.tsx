@@ -3,6 +3,7 @@ import { Badge, Button, Card, Col, Modal, Row, Stack } from "react-bootstrap"
 import toTitleCase from "../hooks/toTitleCase"
 import windowIsDefined from "../hooks/windowIsDefined"
 import CopyLinkBadge from "./CopyLinkBadge"
+import Lightbox from "./Lightbox"
 
 function createMarkup(dirty: string) {
   return { __html: dirty };
@@ -19,6 +20,7 @@ function createMarkup(dirty: string) {
  */
 export default (item: PartsShopData, index: number) => {
     const [showModal, setShowModal] = useState(false)
+	const [lightboxToggler, setLightboxToggler] = useState(false)
 
     return (
         <Col
@@ -33,9 +35,17 @@ export default (item: PartsShopData, index: number) => {
             partitemcondition={item.condition}>
             <Card>
                 {/* Part image */}
-                <div className="card-img-holder" style={{backgroundImage: `url('${item.imageSrc}')`}}>
-                    <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? item.imageSrc.at(0) : item.imageSrc}')` : ""}}>
+                    {item.imageSrc &&
+                        <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
+                    }
                 </div>
+
+                {/* Part image lightbox */}
+                {/* https://fslightbox.com/react */}
+                {item.imageSrc &&
+                    <Lightbox src={item.imageSrc} toggler={lightboxToggler} />
+                }
 
                 {/* Part type badges */}
                 {item.typeOfPart?.length &&
@@ -74,13 +84,13 @@ export default (item: PartsShopData, index: number) => {
                         <Row className="flex-center full-width">
                             {item.description &&
                                 <Col xs={{span: 6}}>
-                                    <Button variant="outline-info" onClick={() => setShowModal(true)} aria-label="Part description modal trigger">Part Description</Button>
+                                    <Button variant="outline-info" onClick={() => setShowModal(true)} aria-label="Item description modal trigger">Item Description</Button>
                                 </Col>
                             }
 
                             {item.externalUrl &&
                                 <Col xs={{span: 6}}>
-                                    <Button variant="outline-info" href={item.externalUrl} target="_blank">External Listing</Button>
+                                    <Button variant="outline-info" href={item.externalUrl} target="_blank">External Reference</Button>
                                 </Col>
                             }
                         </Row>
@@ -91,10 +101,10 @@ export default (item: PartsShopData, index: number) => {
                             show={showModal}
                             variant="outline-info"
                             size="lg"
-                            fullscreen="md-down"
                             centered={true}
                             onHide={() => setShowModal(false)}
-                            scrollable={true}>
+                            scrollable={true}
+                            fullscreen="md-down">
                             <Modal.Header>
                                 <Modal.Title>{item.title}</Modal.Title>
                             </Modal.Header>

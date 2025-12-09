@@ -275,7 +275,6 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/958730",
         dropboxUrl: "https://www.dropbox.com/scl/fi/xiyrlv4vvn93mojf16n21/onewheel-gt-axle-block-covers-model_files.zip?rlkey=zatpvxuhvpvlbpbp3troqmddr&st=ev6gfh0t&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        price: "~$36/pair from JLCPCB",
         platform: ["GT/GT-S"]
     },
     {
@@ -286,7 +285,6 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/891335",
         dropboxUrl: "https://www.dropbox.com/scl/fi/lg5cv8ydbvj50440ejpvi/onewheel-gt-sfxr-clamping-axle-block-model_files.zip?rlkey=2kblpqymeibknqqox4p2qq7f4&st=b98xp2dr&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        price: "~$130/pair from JLCPCB",
         platform: ["GT/GT-S"]
     },
     {
@@ -1269,7 +1267,6 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/586255",
         dropboxUrl: "https://www.dropbox.com/scl/fi/vjcy5sb6rsfu92cxvg302/pubhubs-sf-to-xr-model_files.zip?rlkey=96x5w47vhjod6mk2dhkmi9aqd&st=cgpd7zas&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        price: "~$80/pair from JLCPCB",
         platform: ["XR/Funwheel"]
     },
     {
@@ -1350,7 +1347,6 @@ const allParts = [
         externalUrl: "https://makerworld.com/en/models/963939",
         dropboxUrl: "https://www.dropbox.com/scl/fi/2y6q3robhi087i234pq6g/cnc-pubbox-v2-xr-vesc-box-model_files.zip?rlkey=1svs6tvdrp6rv5shnbwyluq0b&st=fm399jym&dl=0",
         dropboxZipLastUpdated: "2024-08-26",
-        price: "~$280 (box only) from JLCPCB",
         platform: ["XR/Funwheel"]
     },
     {
@@ -1540,7 +1536,6 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/939143",
         dropboxUrl: "https://www.dropbox.com/scl/fi/bn8614gir1ean8bryft1z/onewheel-pubhubs-xr-blocks-finned-axle-block-covers-model_files.zip?rlkey=062b9be6meojn49tml0h2p135&st=9u7mtxye&dl=0",
         dropboxZipLastUpdated: "2025-04-25",
-        price: "~$30/pair from JLCPCB",
         platform: ["XR/Funwheel"]
     },
     {
@@ -1900,7 +1895,6 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1013830",
         dropboxUrl: "https://www.dropbox.com/scl/fi/y6u81xjotbu1n8unjkng9/my-own-approach-of-thunder-rails-with-just-one-height-model_files.zip?rlkey=gumsbqlaq67ajtmx715xnhebz&st=c1oc6tb8&dl=0",
         dropboxZipLastUpdated: "2024-10-28",
-        price: "~$180/pair from JLCPCB",
         platform: ["XR/Funwheel"]
     },
     {

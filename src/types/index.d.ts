@@ -47,6 +47,7 @@ type PartType =
     | "Controller Box"
     | "Controller"
     | "Fender"
+    | "Fender Attachment"
     | "Fender Delete"
     | "Footpad"
     | "Footpad Attachment"

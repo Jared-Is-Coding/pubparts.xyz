@@ -378,7 +378,7 @@ const allParts = [
     {
         title: "PubParts: WTF Rails to C&R or Stock Fender Adapters",
         fabricationMethod: ["3d Printed"],
-        typeOfPart: ["Fender", "Adapter"],
+        typeOfPart: ["Fender Attachment", "Adapter"],
         imageSrc: "https://media.printables.com/media/prints/967285/images/7590024_efa569ce-8482-452c-82fc-69a67e1da5c8_46a16e5d-9dd7-4b80-ba42-324d9f1cdc40/thumbs/inside/1280x960/jpg/spacer-2.webp",
         externalUrl: "https://www.printables.com/model/967285",
         platform: ["GT/GT-S"]
@@ -755,7 +755,7 @@ const allParts = [
     {
         title: "PubParts: WTF Rails (Standard) to Stock Fender Adapter",
         fabricationMethod: ["3d Printed"],
-        typeOfPart: ["Fender", "Adapter"],
+        typeOfPart: ["Fender Attachment", "Adapter"],
         imageSrc: "https://media.printables.com/media/prints/668887/images/5261871_d0e99459-37d6-4fbd-a28d-72cd83006514_2c154b38-29fd-40cf-8421-e9c7e3f79575/thumbs/inside/1280x960/jpg/make3.webp",
         externalUrl: "https://www.printables.com/model/668887",
         dropboxUrl: "https://www.dropbox.com/scl/fi/prt5sxz8eozz53zmgc7zp/onewheel-pint-tfl-standard-wtf-rails-to-stock-fender-adapter-model_files.zip?rlkey=x6p7jq8ur28jn2nyq8iuuijj2&st=6pstzjiz&dl=0",
@@ -1541,7 +1541,7 @@ const allParts = [
     {
         title: "PubParts: WTF Rails to C&R or Stock Fender Adapters",
         fabricationMethod: ["3d Printed"],
-        typeOfPart: ["Fender", "Adapter"],
+        typeOfPart: ["Fender Attachment", "Adapter"],
         imageSrc: "https://media.printables.com/media/prints/661560/images/6855093_7f7ef72d-7827-4dfc-b894-e7da30a4b640_9368095b-0bf5-4da7-a257-f42a6ae29c50/thumbs/inside/1280x960/jpg/pic.webp",
         externalUrl: "https://www.printables.com/model/661560",
         dropboxUrl: "https://www.dropbox.com/scl/fi/83zyoppxrog1fqh36oks9/pubparts-onewheel-xr-the-float-life-wtf-rails-to-cr-or-stock-fender-adapters-model_files.zip?rlkey=quulvaedrg0vea1bp8izqktm0&st=qleytv30&dl=0",
@@ -1697,7 +1697,7 @@ const allParts = [
     {
         title: "QuinnWheel: XR FlightFins Kush Pad Adapter for FlightFender Refresh",
         fabricationMethod: ["3d Printed"],
-        typeOfPart: ["Fender", "Footpad"],
+        typeOfPart: ["Fender Attachment", "Footpad"],
         imageSrc: "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F1458cf2c-b57c-45b3-a65f-e7abb61d078c%2FIMG_4835.jpeg&w=640&q=75",
         externalUrl: "https://thangs.com/designer/quinn_wheel/3d-model/1072343",
         dropboxUrl: "https://www.dropbox.com/scl/fi/lxnf0ncqwqef1aol5w4h1/FlightFins-Kush-Pad-Adapter-for-XR-FlightFender-Refresh.zip?rlkey=dvtijdcpuvh5fetdc76zyci0z&st=cdjaxzy4&dl=0",
@@ -2029,7 +2029,7 @@ const allParts = [
     {
         title: "Lia: Funwheel Stompies Flight Fender Adapter",
         fabricationMethod: ["3d Printed"],
-        typeOfPart: ["Fender", "Fender Delete"],
+        typeOfPart: ["Fender Attachment", "Fender Delete"],
         imageSrc: "https://media.printables.com/media/prints/1007501/images/7662350_299c6b2e-c6fb-4cf2-aa67-503227d8b7d9_9e5f33e7-7af0-4f5f-abf4-be7d4953c223/thumbs/inside/1600x1200/jpeg/img_9032.webp",
         externalUrl: "https://www.printables.com/model/1007501",
         dropboxUrl: "https://www.dropbox.com/scl/fi/5nyayicltzpt8pnmcnlo0/funwheel-stompies-flight-fender-adapter-model_files.zip?rlkey=3vn7hk8ekg5udlwprx00budbz&st=6yjfahis&dl=0",
@@ -2800,6 +2800,19 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1504152",
         dropboxUrl: "https://www.dropbox.com/scl/fi/3q75vkd99hxm45p7y0f9a/onewheel-xr-harness-rail-retainers-model_files.zip?rlkey=81diwpwh8588yykpuzwhroekq&st=47vjkl98&dl=0",
         dropboxZipLastUpdated: "2025-12-04",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Funwheel X7 Cable Retainers",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/9ef905c8-8406-40fb-a9eb-d228fdebd761/images/11400118_897c78e1-ef18-46bb-8524-d775fbc8f6f3_4846f42e-3de8-4ec4-89cf-96b6a6b4c9a9/thumbs/inside/1280x960/jpg/img_6777.webp",
+            "https://media.printables.com/media/prints/1be0d3d7-f529-4dd2-8544-2936fc25dfe8/images/11400150_67fe2791-bbfc-4ae8-a104-bb9d937f6659_6f569575-5424-4b33-b905-930b9154605b/thumbs/inside/1280x960/jpg/img_6778.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1513332",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/6fl62qhpun08s9hpuiha4/funwheel-x7-front-cable-retainer-model_files.zip?rlkey=i0333loz747v3kdy1dv8pkuws&st=3uzuuiw6&dl=0",
+        dropboxZipLastUpdated: "2025-12-14",
         platform: ["XR/Funwheel"]
     }
 ] as ItemData[]

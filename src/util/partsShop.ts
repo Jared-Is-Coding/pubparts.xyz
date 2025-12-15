@@ -344,7 +344,13 @@ const allPartsShopItems = [
     {
         title: "Z-Hooks: Wedge and Foot Hook w/ Hardware (Front+Rear Set)",
         typeOfPart: ["Footpad Attachment"],
-        imageSrc: "/images/shop/hooks.png",
+        imageSrc: [
+            "/images/shop/hooks.png",
+            "/images/shop/hooks2.png",
+            "/images/shop/hooks3.png",
+            "/images/shop/hooks4.png",
+            "/images/shop/hooks5.png"
+        ],
         platform: ["Miscellaneous Items"],
         availableCount: -1,
         description: `
@@ -381,7 +387,13 @@ const allPartsShopItems = [
     {
         title: "SF/HC Clamping Blocks (Finned)",
         typeOfPart: ["Axle Block"],
-        imageSrc: "/images/shop/clamping_block.png",
+        imageSrc: [
+            "/images/shop/clamping_block.png",
+            "https://media.printables.com/media/prints/1120000/images/8604014_d459304f-508f-4306-a2aa-7b45fe7a4e47_ad6c7b4e-6e59-45e2-88fb-622ff914f7d4/thumbs/inside/1280x960/png/screenshot_3.webp",
+            "https://media.printables.com/media/prints/1120000/images/8791134_d57a2fad-fd68-47ff-a2b3-d778312d505c_3d7440ea-366a-47ef-93ba-2526a2288ea9/thumbs/inside/1280x960/png/screenshot_1.webp",
+            "https://media.printables.com/media/prints/1120000/images/8457376_dacfb099-31e0-4f89-a001-7135de39d34e_6cbdc152-b19f-4c59-ba95-79ad92ac2123/thumbs/inside/1280x960/png/screenshot_3.webp"
+
+        ],
         externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
         platform: ["XR/Funwheel"],
         availableCount: 15,
@@ -403,7 +415,8 @@ const allPartsShopItems = [
             <p>These are made from <a target="_blank" href="https://www.printables.com/model/1120000">my remix of Auden's clamping blocks</a> and we've already run a couple batches of them. They're solid, I love the look of them, and they've worked great for hundreds of miles to secure my rails to the axle!</p>
         `,
         condition: "New",
-        price: 105
+        price: 105,
+        featured: true
     },
     {
         title: "Leaf Blaster Pubmote (Full Build)",

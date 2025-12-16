@@ -2814,6 +2814,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/6fl62qhpun08s9hpuiha4/funwheel-x7-front-cable-retainer-model_files.zip?rlkey=i0333loz747v3kdy1dv8pkuws&st=3uzuuiw6&dl=0",
         dropboxZipLastUpdated: "2025-12-14",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Surfdado: GT Light Bar Holder",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bracket"],
+        imageSrc: "https://cdn.thingiverse.com/assets/8f/ea/1c/f3/be/large_display_GT_light_bar_holder.png",
+        externalUrl: "https://www.thingiverse.com/thing:7070056",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/oxvi02i6ev41bh2tbl1l0/Onewheel-GT-Light-Bar-Holder-7070056.zip?rlkey=p7cs5b0sv85iz12hkhqm0knmp&st=pivoyhgq&dl=0",
+        dropboxZipLastUpdated: "2025-12-16",
+        platform: ["GT/GT-S"]
     }
 ] as ItemData[]
 

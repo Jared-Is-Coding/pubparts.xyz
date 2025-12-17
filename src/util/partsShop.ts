@@ -349,26 +349,29 @@ const allPartsShopItems = [
             "/images/shop/hooks2.png",
             "/images/shop/hooks3.png",
             "/images/shop/hooks4.png",
-            "/images/shop/hooks5.png"
+            "/images/shop/hooks5.png",
+            "/images/shop/hooks6.png"
         ],
         platform: ["Miscellaneous Items"],
         availableCount: -1,
         description: `
             <p>Paired with hooks modified from original designs by @seanbrowntown, this hook-wedge system offers mounted foot hooks with adjustable height, angle, and placement.</p>
+            <p>Designed to work around common sensor shapes, these hooks can be mounted on most footpads with common sensors applied without causing any activation issues.</p>
             <p>Printed in TPU, these hooks are indestructible. They can be mounted to the footpad in a handful of ways, with more options available in the future:</p>
             <ul>
                 <li>Bottom Mount Wedge: Countersunk screw goes up through footpad and/or footpad backer into wedge, from bottom. Hook is then screwed into wedge from the top. This method requires removal of the footpad in order to remove the wedge, but is very sturdy.</li>
                 <li>Top Mount Wedge: Socket with washer goes down into footpad inserts, from top. Hook is then screw into wedge from the top. This method allows removal of the whole system without removal of the pad, but requires very solid inserts on the pad to receive the screw.</li>
+                <li>Mixed Mount Wedge (For Stompies, and others): Countersunk screw goes up through footpad and/or footpad backer into wedge, from bottom, for all but the front, outer hole. Hook is then screw into wedge from the top. The remaining hole may be fixed using either a screw from the bottom up into a nut, or a screw down from the top into the bumper.</li>
                 <li>Coming in the future (Let me know if you'd be interested): Top Mount Wedge with grooves to allow variable adjustment of the wedge placement after installation.</li>
             </ul>
             <p>In cases where not a full set of hooks and wedges is needed, or additional individual parts are requested, here are the individual parts costs for reference:</p>
             <ul>
                 <li>$35 per hook</li>
-                <li>$25 per wedge (with hardware)</li>
+                <li>$30 per wedge (with hardware)</li>
             </ul>
         `,
         condition: "New",
-        price: 120,
+        price: 130,
         featured: true
     },
     {

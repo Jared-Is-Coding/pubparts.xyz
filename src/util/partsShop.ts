@@ -369,6 +369,7 @@ const allPartsShopItems = [
                 <li>$35 per hook</li>
                 <li>$30 per wedge (with hardware)</li>
             </ul>
+            <p>If you would like to replace the foam on the hooks, here is a <a target="_blank" href="/files/shop/hooks_flattened_image.zip">printable cutout guide</a></p>
         `,
         condition: "New",
         price: 130,

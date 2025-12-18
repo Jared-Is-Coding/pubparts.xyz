@@ -2824,6 +2824,17 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/oxvi02i6ev41bh2tbl1l0/Onewheel-GT-Light-Bar-Holder-7070056.zip?rlkey=p7cs5b0sv85iz12hkhqm0knmp&st=pivoyhgq&dl=0",
         dropboxZipLastUpdated: "2025-12-16",
         platform: ["GT/GT-S"]
+    },
+    {
+        title: "GT Low Boy Flared PubGrip",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: [
+            "https://makerworld.bblmw.com/makerworld/model/USf65680a5561687/design/2025-12-16_78c5762b09bd98.jpeg?x-oss-process=image/format,webp",
+            "https://makerworld.bblmw.com/makerworld/model/USf65680a5561687/design/2025-12-16_a7da05d844865.jpeg?x-oss-process=image/format,webp"
+        ],
+        externalUrl: "https://makerworld.com/en/models/2125148",
+        platform: ["GT/GT-S"]
     }
 ] as ItemData[]
 

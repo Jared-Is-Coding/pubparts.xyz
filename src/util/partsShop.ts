@@ -57,7 +57,7 @@ const allPartsShopItems = [
         typeOfPart: ["Miscellaneous"],
         imageSrc: "/images/shop/goretex_patch.png",
         platform: ["Miscellaneous Items"],
-        availableCount: 17,
+        availableCount: 15,
         condition: "New",
         price: 2
     },
@@ -279,26 +279,6 @@ const allPartsShopItems = [
         price: 35
     },
     {
-        title: "GT BMS (HW 6407, 600mi)",
-        typeOfPart: ["BMS"],
-        imageSrc: "/images/shop/gt_bms.png",
-        platform: ["GT/GT-S"],
-        availableCount: 1,
-        description: "",
-        condition: "Like New",
-        price: 95
-    },
-    {
-        title: "GT-V power PCB with bad capacitor",
-        typeOfPart: ["Controller"],
-        imageSrc: "/images/shop/gtv_controller.png",
-        platform: ["GT/GT-S"],
-        availableCount: 1,
-        description: "This is the power PCB from a GT-V kit. It's got a cap busted off but is otherwise in perfect shape",
-        condition: "For Parts",
-        price: 50
-    },
-    {
         title: "Fungineers Superflux stock axle blocks (Pair)",
         typeOfPart: ["Axle Block"],
         imageSrc: "/images/shop/sf_ab.png",
@@ -490,26 +470,6 @@ const allPartsShopItems = [
         `,
         condition: "New",
         price: 70
-    },
-    {
-        title: "StokedStock V5 Sensor",
-        typeOfPart: ["Footpad Attachment"],
-        imageSrc: "/images/shop/v5_sensor.png",
-        platform: ["VESC Electronics"],
-        availableCount: 1,
-        description: "StokedStock V5 cuttable footpad sensor",
-        condition: "New",
-        price: 50
-    },
-    {
-        title: "StokedStock V2 Sensor",
-        typeOfPart: ["Footpad Attachment"],
-        imageSrc: "/images/shop/v2_sensor.png",
-        platform: ["VESC Electronics"],
-        availableCount: 1,
-        description: "StokedStock V2 footpad sensor",
-        condition: "New",
-        price: 30
     },
     {
         title: "CBXR Battery (~1100mi)",

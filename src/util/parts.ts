@@ -2835,6 +2835,33 @@ const allParts = [
         ],
         externalUrl: "https://makerworld.com/en/models/2125148",
         platform: ["GT/GT-S"]
+    },
+    {
+        title: "Onewheel GT/GTS DTF WTF S&D BTG Risers",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender Attachment", "Adapter"],
+        imageSrc: [
+            "https://cdn.thingiverse.com/assets/23/86/a5/75/42/large_display_IMG_6979.jpeg",
+            "https://cdn.thingiverse.com/assets/05/ef/8f/07/68/large_display_IMG_6982.jpeg"
+        ],
+        externalUrl: "https://www.thingiverse.com/thing:7233024",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/sb72lklap3ijfpc9sw09h/onewheel-xrc-axle-blocks-for-xr-standard-motors-model_files.zip?rlkey=f6221jycgxg33deyeov2r3zg1&st=9jult2iu&dl=0",
+        dropboxZipLastUpdated: "2026-01-04",
+        platform: ["GT/GT-S"]
+    },
+    {
+        title: "Grimm: Onewheel XRC Axle Blocks for XR Standard Motors",
+        fabricationMethod: ["CNC"],
+        typeOfPart: ["Axle Block"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/c8de6073-52e0-4251-bbff-390b18a81e03/images/11624235_0d3a2be8-34f6-49a1-928c-2b925e72d331_3c6a0a32-5d7d-4f95-97ca-76951e1c311c/thumbs/inside/1280x960/jpg/pxl_20250501_003834498.webp",
+            "https://media.printables.com/media/prints/b6fdf5f3-7a56-46b8-9f14-f877ee98f932/images/11624238_b64f59db-444b-497f-ae33-b5e1a2008f95_7782f07c-1b2d-4c76-9223-03747b50c0e8/thumbs/inside/1280x960/jpg/pxl_20250501_003855188.webp",
+            "https://media.printables.com/media/prints/dc3a6d31-86da-4a98-977c-96f6bdeaf046/images/11624237_2be69ac1-de6f-45f7-935d-6b234703d5c6_2aee9bd7-2ad2-4c6f-840e-2518506bbbc4/thumbs/inside/1280x960/png/blocks-xr-axle-xrc.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1541806",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/sb72lklap3ijfpc9sw09h/onewheel-xrc-axle-blocks-for-xr-standard-motors-model_files.zip?rlkey=f6221jycgxg33deyeov2r3zg1&st=v4duzrv3&dl=0",
+        dropboxZipLastUpdated: "2026-01-04",
+        platform: ["XR Classic"]
     }
 ] as ItemData[]
 

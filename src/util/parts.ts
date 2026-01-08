@@ -2862,6 +2862,35 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/sb72lklap3ijfpc9sw09h/onewheel-xrc-axle-blocks-for-xr-standard-motors-model_files.zip?rlkey=f6221jycgxg33deyeov2r3zg1&st=v4duzrv3&dl=0",
         dropboxZipLastUpdated: "2026-01-04",
         platform: ["XR Classic"]
+    },
+    {
+        title: "Nexinity: Atlowshop VEXR Big Torque Battery Box 10/32 Nylock Holders for Footholds",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/cfcc847a-cc4f-4cb0-9801-af4a2725a9aa/images/11665442_d766d2cf-cfed-4025-80ae-9c345c6eab02_5c43f8ba-53b6-4cd9-9437-507dd32eec6e/thumbs/inside/1280x960/png/screenshot-2026-01-07-180115.webp",
+            "https://media.printables.com/media/prints/32d0b158-8e6f-491c-a856-afec05692c3a/images/10821396_ad960ca2-dd58-4db9-8768-979d431b0a5d_79664718-32c3-436a-9764-04f201695d83/thumbs/inside/1280x960/jpg/3.webp",
+            "https://media.printables.com/media/prints/8ba18da7-e032-44c4-b0f1-33404f67c880/images/10821395_d1ccf95d-95a8-4f30-96da-c8b0061f927e_2cca221f-a7d9-4fdc-95eb-80c27edb179b/thumbs/inside/1280x960/jpg/2.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1434952",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/57vc4ycww07u7hebz4j7r/atlowshop-vexr-big-torque-battery-box-1032-nylock-holders-for-footholds-model_files.zip?rlkey=ys2l9dmz60lgl52o1xoowxaf7&st=eiecah3l&dl=0",
+        dropboxZipLastUpdated: "2026-01-07",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Nexinity: Fungineers BlackBox 10/32 Nylock Holders for Footholds",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/ec246bfa-28b2-4342-96b9-1172b3ad0eda/images/11665416_564c6b91-9e54-4b17-83e0-1fa6e70d38e1_6a015a68-542e-426e-8a7b-0033498f52a5/thumbs/inside/1280x960/png/screenshot-2026-01-07-175800.webp",
+            "https://media.printables.com/media/prints/97abe15b-3ec3-40fd-a88e-b22761525426/images/11665417_95388ece-39b2-475d-a9bc-4550a2661150_f5b530f3-8f94-49de-bee4-745fc375bbff/thumbs/inside/1280x960/png/image.webp",
+            "https://media.printables.com/media/prints/3fe041ba-c503-4c34-b894-a04d4b5ba9c3/images/11665418_e6e43f40-eb1a-4687-a796-bdec09cf4d06_a5503d75-ed43-4c44-8e51-97f2c8c016cb/thumbs/inside/1280x960/jpg/img_1598.webp",
+            "https://media.printables.com/media/prints/2b4828d2-4ca0-4c03-b673-1084f18d3c2c/images/11665419_103be302-3fdd-4b2d-a659-42323b436ea1_2b44a4ad-8b5a-4fae-829d-0a591a75cc8c/thumbs/inside/1280x960/jpg/img_1591.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1547165",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/z45et86tgo0yvd07cogtu/fungineers-blackbox-1032-nylock-holders-for-footholds-model_files.zip?rlkey=34xemeohf6ls2a2f1smj9vf8e&st=pjaqyjs0&dl=0",
+        dropboxZipLastUpdated: "2026-01-07",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

@@ -2683,13 +2683,13 @@ const allParts = [
         platform: ["XR/Funwheel"]
     },
     {
-        title: "StokedStock Sensor Shapes",
+        title: "VESC Sensor Shapes",
         fabricationMethod: ["Other"],
         typeOfPart: ["Footpad Attachment"],
         imageSrc: "https://media.printables.com/media/prints/72f73e1d-cbd2-435b-adc0-8221fb9cd322/images/10863346_bf64e107-c069-4fdd-9cb8-409a5351483e_0ea50ad7-8500-4828-ab8c-46f07e32bec0/thumbs/inside/1280x960/png/screenshot_1.webp",
         externalUrl: "https://www.printables.com/model/1440734",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/tcj1lcnxwakb4nje81pxc/stokedstock-sensor-shapes-model_files.zip?rlkey=2c1gg3mef4p600tbamoq8l0mv&st=ckd9deei&dl=0",
-        dropboxZipLastUpdated: "2025-10-10",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/bcp8s14cc2c5mqkzh9l44/vesc-sensor-shapes-model_files.zip?rlkey=qvyieq7w5lzhlg9ip8g3tzq3y&st=ve717zo8&dl=0",
+        dropboxZipLastUpdated: "2026-01-09",
         platform: ["VESC Electronics", "Miscellaneous Items"]
     },
     {

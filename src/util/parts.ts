@@ -2882,14 +2882,15 @@ const allParts = [
         fabricationMethod: ["3d Printed"],
         typeOfPart: ["Footpad Attachment"],
         imageSrc: [
-            "https://media.printables.com/media/prints/ec246bfa-28b2-4342-96b9-1172b3ad0eda/images/11665416_564c6b91-9e54-4b17-83e0-1fa6e70d38e1_6a015a68-542e-426e-8a7b-0033498f52a5/thumbs/inside/1280x960/png/screenshot-2026-01-07-175800.webp",
-            "https://media.printables.com/media/prints/97abe15b-3ec3-40fd-a88e-b22761525426/images/11665417_95388ece-39b2-475d-a9bc-4550a2661150_f5b530f3-8f94-49de-bee4-745fc375bbff/thumbs/inside/1280x960/png/image.webp",
-            "https://media.printables.com/media/prints/3fe041ba-c503-4c34-b894-a04d4b5ba9c3/images/11665418_e6e43f40-eb1a-4687-a796-bdec09cf4d06_a5503d75-ed43-4c44-8e51-97f2c8c016cb/thumbs/inside/1280x960/jpg/img_1598.webp",
-            "https://media.printables.com/media/prints/2b4828d2-4ca0-4c03-b673-1084f18d3c2c/images/11665419_103be302-3fdd-4b2d-a659-42323b436ea1_2b44a4ad-8b5a-4fae-829d-0a591a75cc8c/thumbs/inside/1280x960/jpg/img_1591.webp"
+            "https://media.printables.com/media/prints/a0521536-6c51-4252-b537-382569ae7279/images/11705029_d2aceddf-4373-4a62-b2ff-9a362a5722d4_5c520aab-50fb-4f99-a2f8-b119e640e200/thumbs/inside/1280x960/png/screenshot-2026-01-11-150401.webp",
+            "https://media.printables.com/media/prints/6b99d5db-ad99-44b8-b0cc-058b8f76457a/images/11705027_8a55784a-934f-4379-9134-d77349f8d70d_50f475aa-9cbb-4bb1-967a-6671f84b15f0/thumbs/inside/1280x960/png/screenshot-2026-01-11-150333.webp",
+            "https://media.printables.com/media/prints/7d05e387-1408-47cc-a05d-58ee60a232fb/images/11705028_173adfde-9556-4ca7-8043-e264923e9026_85e5b5bc-652f-4ffd-ab46-8ce61a6bc8dc/thumbs/inside/1280x960/png/screenshot-2026-01-11-150711.webp",
+            "https://media.printables.com/media/prints/2b4828d2-4ca0-4c03-b673-1084f18d3c2c/images/11665419_103be302-3fdd-4b2d-a659-42323b436ea1_2b44a4ad-8b5a-4fae-829d-0a591a75cc8c/thumbs/inside/1280x960/jpg/img_1591.webp",
+            "https://media.printables.com/media/prints/32b20135-0b3e-492e-b2d9-4ebfd1498732/images/11705073_cb20d635-841c-4a8b-b996-8f4f3003192a_f8b04bf4-0d9c-40e4-b3b4-07da023754e8/thumbs/inside/1280x960/jpg/img_1643.webp"
         ],
         externalUrl: "https://www.printables.com/model/1547165",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/z45et86tgo0yvd07cogtu/fungineers-blackbox-1032-nylock-holders-for-footholds-model_files.zip?rlkey=34xemeohf6ls2a2f1smj9vf8e&st=pjaqyjs0&dl=0",
-        dropboxZipLastUpdated: "2026-01-07",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/z45et86tgo0yvd07cogtu/fungineers-blackbox-1032-nylock-holders-for-footholds-model_files.zip?rlkey=34xemeohf6ls2a2f1smj9vf8e&st=on8w2nz7&dl=0",
+        dropboxZipLastUpdated: "2026-01-11",
         platform: ["XR/Funwheel"]
     }
 ] as ItemData[]

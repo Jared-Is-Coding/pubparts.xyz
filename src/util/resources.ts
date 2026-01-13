@@ -191,7 +191,7 @@ const allResources = [
         title: "Indy Speed Control",
         typeOfResource: ["Vendor"],
         externalUrl: "https://indyspeedcontrol.com/",
-        description: "\"Provider of high-performance lithium-ion batteries for electric vehicles\""
+        description: "\"Provider of batteries, sensors, and other parts for electric vehicles\""
     },
     {
         title: "Vow Systems",
@@ -264,6 +264,18 @@ const allResources = [
         typeOfResource: ["Vendor"],
         externalUrl: "https://nexsracingdev.com/",
         description: "Top notch products and services to level up your riding and keep you at the top of your game. Level Up Here!"
+    },
+    {
+        title: "GrippySheet Studio",
+        typeOfResource: ["Website"],
+        externalUrl: "https://studio.grippysheet.com/",
+        description: "3d printed footpad grip creation studio, created by Siwoz"
+    },
+    {
+        title: "Pubmote Firmware Tool",
+        typeOfResource: ["Website"],
+        externalUrl: "https://pubmote.com/",
+        description: "Pubmote firmware flashing and configuration tool, for managing your Pubmote devices"
     }
 ] as ResourceData[]
 

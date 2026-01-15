@@ -2892,6 +2892,16 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/z45et86tgo0yvd07cogtu/fungineers-blackbox-1032-nylock-holders-for-footholds-model_files.zip?rlkey=34xemeohf6ls2a2f1smj9vf8e&st=on8w2nz7&dl=0",
         dropboxZipLastUpdated: "2026-01-11",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Edin: Onewheel XR Half Fender",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender"],
+        imageSrc: "https://media.printables.com/media/prints/8813002a-40ad-4662-9db2-efcbeb78ffb5/images/11737582_37c16bf2-889c-4fa5-a734-f1b988b72008_b2da073c-d15b-4f86-83e5-bad8310702a0/thumbs/inside/1280x960/jpg/img_20260115_195748.webp",
+        externalUrl: "https://www.printables.com/model/1557253",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/3gyjk23s1z397i4n3qewk/onewheel-xr-half-fender-model_files.zip?rlkey=64kswusmsz2lrfxmkg6xay3zd&st=r8somdpl&dl=0",
+        dropboxZipLastUpdated: "2026-01-15",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

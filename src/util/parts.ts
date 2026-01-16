@@ -2902,6 +2902,20 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/3gyjk23s1z397i4n3qewk/onewheel-xr-half-fender-model_files.zip?rlkey=64kswusmsz2lrfxmkg6xay3zd&st=r8somdpl&dl=0",
         dropboxZipLastUpdated: "2026-01-15",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Pubparts: Fungineers X10 Rails to TFL Drop Top Fender Top Piece Adapter",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender", "Adapter"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/21cba51f-adb1-4edc-b062-6fdfd4cd936d/images/11745700_36331182-9d20-4043-bd10-c6c25c852dca_e6a6db26-a33f-4a6f-baff-ce59fbc8201c/thumbs/inside/1280x960/jpg/20260115_152706.webp",
+            "https://media.printables.com/media/prints/ba34eac1-c25e-4630-bf9c-69530ef5a83e/images/11745699_a86e9ae7-b390-4dc0-b047-9bc683326fe4_5aa1a016-ad3e-4471-9e05-8b693fa1d7d3/thumbs/inside/1280x960/jpg/20260115_171356.webp",
+            "https://media.printables.com/media/prints/b2fcfd5a-10ab-4f98-b444-0b3679d56410/images/11745698_fea9a1aa-db74-4132-b69c-9b546b4aca47_ffe46d97-1b56-4dde-816b-8f6738106860/thumbs/inside/1280x960/jpg/20260115_154322.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1558459",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/k5atplnewhduwtzm0795a/fungineers-x10-rails-to-tfl-drop-top-fender-top-piece-adapter-model_files.zip?rlkey=ba4zl6592vlftlp69kemdkdge&st=ixj2jv56&dl=0",
+        dropboxZipLastUpdated: "2026-01-16",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

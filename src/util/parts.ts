@@ -1783,7 +1783,7 @@ const allParts = [
         platform: ["XR/Funwheel"]
     },
     {
-        title: "Ranth: Footholds for PubWheel  XR CNC/3DP PubPad Footpad",
+        title: "Ranth: Footholds for PubWheel XR CNC/3DP PubPad Footpad",
         fabricationMethod: ["3d Printed"],
         typeOfPart: ["Footpad Attachment"],
         imageSrc: "https://media.printables.com/media/prints/1012011/images/7694729_a2c37003-fd28-4bf4-9e39-a4cf205086ed_18282522-a94b-44d5-908a-40bcab9b2ada/thumbs/inside/1280x960/jpg/img_1412.webp",
@@ -2915,6 +2915,60 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1558459",
         dropboxUrl: "https://www.dropbox.com/scl/fi/k5atplnewhduwtzm0795a/fungineers-x10-rails-to-tfl-drop-top-fender-top-piece-adapter-model_files.zip?rlkey=ba4zl6592vlftlp69kemdkdge&st=ixj2jv56&dl=0",
         dropboxZipLastUpdated: "2026-01-16",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Interference: Reinforced Footholds for PubWheel XR CNC/3DP PubPad Footpad",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/caa26de1-92de-4c99-8e80-42d7c6257a3a/images/11600451_bca61d1d-841a-4db7-a113-f92dac68be19_c546db13-00b5-48bf-8824-1afd2db9163c/thumbs/inside/1280x960/png/schermafbeelding-2026-01-02-194624.webp",
+            "https://media.printables.com/media/prints/e2fff0d8-d3a8-4cef-9303-d7d0b82fd3b8/images/11600461_11460e1b-0344-4adb-ae55-281a9d569fec_562ccd4f-780f-4af5-b1e1-4655e0ac9255/thumbs/inside/1280x960/png/schermafbeelding-2026-01-02-194703.webp",
+            "https://media.printables.com/media/prints/2fdbf221-fce8-473e-8a3c-56ad628c2fef/images/11600213_1df810ee-799f-47fb-8605-8aad70377fcf_a532731e-0bf7-490e-97e9-1c4663b46a6c/thumbs/inside/1280x960/jpg/img_0222.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1546618",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/b4mdgn3aeb41aigc2bnpa/reinforced-pubpad-hooks-model_files.zip?rlkey=sn7x85r9os9zqtsyzzoffzfgt&st=y18wm5ya&dl=0",
+        dropboxZipLastUpdated: "2026-01-20",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Interference: Funwheel X7 Fender Delete",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender Delete"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/24b2ac48-f695-43a4-a6a6-9b2bd1a6c633/images/11774655_430c3f66-1f75-44e5-b681-ffc80b10bae4_0343c2a8-1d6c-4654-9976-f49bb6b2b7ac/thumbs/inside/1280x960/jpeg/whatsapp-image-2026-01-19-at-115915.webp",
+            "https://media.printables.com/media/prints/2fdbf221-fce8-473e-8a3c-56ad628c2fef/images/11600213_1df810ee-799f-47fb-8605-8aad70377fcf_a532731e-0bf7-490e-97e9-1c4663b46a6c/thumbs/inside/1280x960/jpg/img_0222.webp",
+            "https://media.printables.com/media/prints/690150fa-8b6b-4892-b92f-efbb4d22f310/images/11774032_24f7cde1-69c3-4b67-850f-e7e030eaed08_9d17601d-fea2-42fb-a926-71d24b7f5a32/thumbs/inside/1280x960/png/schermafbeelding-2026-01-19-120852.webp",
+            "https://media.printables.com/media/prints/baa1191a-58a2-4214-8bc2-529b8b54625b/images/11774048_4f3c7447-14b1-4b51-b0a1-f01197f86463_8e4acaa6-5de8-42e5-af4a-095f92a8b754/thumbs/inside/1280x960/png/schermafbeelding-2026-01-19-121021.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1562516",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/pad499j3snmy5gm2u8dvf/funwheel-x7-fender-delete-model_files.zip?rlkey=br12xjrg518wv2877vjwhgv6f&st=63chei4h&dl=0",
+        dropboxZipLastUpdated: "2026-01-20",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Interference: Funwheel X7 Railguards/Protectors",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Rail Attachment"],
+        imageSrc: "https://media.printables.com/media/prints/dc81e3df-dbca-417e-99f9-0ffa83805535/images/11661123_7d4b26fc-4c42-4ea3-9085-90752abc4eac_e74638bc-4ec4-427a-91b2-5220ae15fe76/thumbs/inside/1280x960/webp/2.webp",
+        externalUrl: "https://www.printables.com/model/1546576",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/qtjru985hgqghw40yolfi/funwheel-x7-railguardsprotectors-model_files.zip?rlkey=478vrgv56fref39j9vdfpvjzl&st=7by3je7q&dl=0",
+        dropboxZipLastUpdated: "2026-01-20",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Interference: Funwheel X7 Droptop Fender",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/69062353-2d56-42ed-86f6-5ad79a666125/images/11661330_48e6e636-5a58-460c-bb41-a2079bfea126_cf1497ff-fdc6-45da-b75a-5bc346ac3fec/thumbs/inside/1280x960/webp/1.webp",
+            "https://media.printables.com/media/prints/5f82eebf-15c1-483e-ab44-d6ec62d51d30/images/11661331_b68410f3-caea-48c1-8bd4-cde4b1c12b49_1595baf7-ac5b-426b-bbe2-4d9b9df4eb7b/thumbs/inside/1280x960/webp/4.webp",
+            "https://media.printables.com/media/prints/6dc408da-e423-42ec-89b3-00c2f6411cf4/images/11661342_e6b5fe4a-0cbd-4d91-adcc-bd5b91e14d26_c522bd13-afe1-4254-9fae-70774eca8dc5/thumbs/inside/1280x960/webp/5.webp",
+            "https://media.printables.com/media/prints/0c55c980-10e2-479b-bfa1-8656e91debe4/images/11661333_307db700-40a8-4921-a4f7-8145434602e2_17dc943b-1d69-4b9d-83e2-a2790fd145d9/thumbs/inside/1280x960/png/schermafbeelding-2025-12-02-235507.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1546618",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/fhnhqrf3r0ccjxtor4g8j/droptop-fender-funwheel-x7-model_files.zip?rlkey=zkm7vwpjbs9dkb9qtfhk3ti8q&st=recgarxh&dl=0",
+        dropboxZipLastUpdated: "2026-01-20",
         platform: ["XR/Funwheel"]
     }
 ] as ItemData[]

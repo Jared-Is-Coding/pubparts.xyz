@@ -2913,8 +2913,23 @@ const allParts = [
             "https://media.printables.com/media/prints/b2fcfd5a-10ab-4f98-b444-0b3679d56410/images/11745698_fea9a1aa-db74-4132-b69c-9b546b4aca47_ffe46d97-1b56-4dde-816b-8f6738106860/thumbs/inside/1280x960/jpg/20260115_154322.webp"
         ],
         externalUrl: "https://www.printables.com/model/1558459",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/k5atplnewhduwtzm0795a/fungineers-x10-rails-to-tfl-drop-top-fender-top-piece-adapter-model_files.zip?rlkey=ba4zl6592vlftlp69kemdkdge&st=ixj2jv56&dl=0",
-        dropboxZipLastUpdated: "2026-01-16",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/k5atplnewhduwtzm0795a/fungineers-x10-rails-to-tfl-drop-top-fender-top-piece-adapter-model_files.zip?rlkey=ba4zl6592vlftlp69kemdkdge&st=2os4ui4w&dl=0",
+        dropboxZipLastUpdated: "2026-01-24",
+        platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Pubparts: Fungineers X7 Rails to TFL Drop Top Fender Top Piece Adapter",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender", "Adapter"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/66290384-5b15-4205-8105-f9030002d854/images/11817989_4d7864e3-03f1-4d6f-8e35-575800a80485_98af2a05-ddbf-4d22-8118-271f1c2dc0dd/thumbs/inside/1280x960/jpg/2.webp",
+            "https://media.printables.com/media/prints/6ecd4739-292e-4577-a6bc-c68089751da9/images/11817988_759d080e-3905-45f3-a856-8f3f20414dd4_149b817f-3ded-404a-a32f-60da8bb6d0d8/thumbs/inside/1280x960/jpg/1.webp",
+            "https://media.printables.com/media/prints/75aab2dd-9276-466b-9abe-18c64cc6e174/images/11812777_b994fef6-2847-406a-8520-19b528c7f65c_41e1e071-5018-4b16-a737-3bb566ccb09f/thumbs/inside/1280x960/png/screenshot_1.webp",
+            "https://media.printables.com/media/prints/1eb7e201-7f88-4523-8499-5444a2082891/images/11812785_e60f8834-ad5a-437d-8804-27f02a5f3fa2_79e7f646-1737-4f7c-8710-fbb6de851bd9/thumbs/inside/1280x960/png/screenshot_2.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1567714",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/u94ae9waag61f5941qxce/fungineers-x7-rails-to-tfl-drop-top-fender-top-piece-adapter-model_files.zip?rlkey=ii8y16kdn0s9eqnkzr6eze5ty&st=1e3yfb6u&dl=0",
+        dropboxZipLastUpdated: "2026-01-24",
         platform: ["XR/Funwheel"]
     },
     {

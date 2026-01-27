@@ -336,7 +336,7 @@ const allPartsShopItems = [
         platform: ["Miscellaneous Items"],
         availableCount: -1,
         description: `
-            <p>This hook-and-wedge system offers mounted foot hooks, perfectly angled to lock in your ride, paired with a carefully crafted wedge to work with most popular sensors.</p>
+            <p>ed with hooks modified from original designs by @seanbrowntown, this hook-and-wedge system offers mounted foot hooks paired with carefully crafted wedges - They work with most popular sensors and perfectly angle the hooks to lock in your ride.</p>
             <p>For information, resources, and guidance see the <a href="/zps/zhooks">Z-Hook information page</a></p>
         `,
         condition: "New",

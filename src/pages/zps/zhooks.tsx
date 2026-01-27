@@ -77,7 +77,7 @@ const Page: React.FC<PageProps> = () => {
                             <p>
                                 <ul>
                                     <li>
-                                        <a target="_blank" href="https://www.dropbox.com/scl/fi/6kml4yc77ubg22uhqeg82/hooks_flattened_image.zip?rlkey=dfheg4gb4t2m5j4u7wp32fzr1&st=6jrvsez2&dl=0">Printed screw hole placement guide for wedges</a>
+                                        <a target="_blank" href="https://www.dropbox.com/scl/fi/h4ogm66scm2e0gt4n0fnm/wedges_flattened_image.zip?rlkey=avggggr6f00hf0synag1gk15q&st=an59jt15&dl=0">Printed screw hole placement guide for wedges</a>
                                     </li>
                                     <li>
                                         <a target="_blank" href="https://www.dropbox.com/scl/fi/6kml4yc77ubg22uhqeg82/hooks_flattened_image.zip?rlkey=dfheg4gb4t2m5j4u7wp32fzr1&st=6jrvsez2&dl=0">Printed cutout guide for foam padding</a>

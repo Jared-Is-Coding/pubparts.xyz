@@ -1,20 +1,18 @@
 import { type HeadFC, type PageProps } from "gatsby"
-import React, { useEffect, useState } from "react"
-import { Button, Container, Row, Stack } from "react-bootstrap"
-import { FaArrowDown, FaArrowUp } from "react-icons/fa6"
-import PartsShopItemCard from "../components/PartsShopItemCard"
-import PartsShopListSearchbar from "../components/PartsShopListSearchbar"
-import SiteFooter from "../components/SiteFooter"
-import SiteMetaData from "../components/SiteMetaData"
-import SiteNavbar from "../components/SiteNavbar"
-import "../scss/pages/shop.scss"
-import allPartsShopItems from "../util/partsShop"
+import React from "react"
+import { Container, Row } from "react-bootstrap"
+import PartsShopItemCard from "../../components/PartsShopItemCard"
+import PartsShopListSearchbar from "../../components/PartsShopListSearchbar"
+import SiteFooter from "../../components/SiteFooter"
+import SiteMetaData from "../../components/SiteMetaData"
+import "../../scss/pages/shop.scss"
+import allPartsShopItems from "../../util/partsShop"
 
 export const Head: HeadFC = () => (
     <>
         <html lang="en" />
         <SiteMetaData
-            title="ZiNc's Parts Shop | PubParts.xyz"
+            title="Catalog | ZiNc's Parts Shop on PubParts.xyz"
             description="Welcome to my shop" />
     </>
 )
@@ -22,15 +20,11 @@ export const Head: HeadFC = () => (
 const Page: React.FC<PageProps> = () => {
     return (
         <>
-            <header>
-                <SiteNavbar />
-
+            <main className="page-items">
                 <h1 className="flex-center">
                     ZiNc's Parts Shop
                 </h1>
-            </header>
 
-            <main className="page-items">
                 <Container>
                     <p>This is a collection of parts I'm personally selling - Buyer pays shipping unless otherwise noted. If you're interested in something here, reach out to me on Discord at <code>iam_zinc</code> and include:</p>
                     <ul>

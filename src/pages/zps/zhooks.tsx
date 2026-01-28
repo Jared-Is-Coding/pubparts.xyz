@@ -45,7 +45,7 @@ const Page: React.FC<PageProps> = () => {
                         <Col xs={12} md={6}>
                             <Card>
                                 {/* Part image */}
-                                <div className="card-img-holder" onClick={() => setPreviewLightboxToggler(!previewLightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? item.imageSrc.at(0) : item.imageSrc}')` : ""}}>
+                                <div className="card-img-holder" onClick={() => setPreviewLightboxToggler(!previewLightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : ""}}>
                                     {item.imageSrc &&
                                         <span role="img" aria-label={"Preview imagine of step i"}></span>
                                     }
@@ -54,7 +54,7 @@ const Page: React.FC<PageProps> = () => {
                                 {/* Part image lightbox */}
                                 {/* https://fslightbox.com/react */}
                                 {item.imageSrc &&
-                                    <Lightbox src={item.imageSrc} toggler={previewLightboxToggler} />
+                                    <Lightbox src={[item.imageSrc].flat().map((i) => `/.netlify/images?url=${i}`)} toggler={previewLightboxToggler} />
                                 }
                             </Card>
                         </Col>
@@ -66,15 +66,13 @@ const Page: React.FC<PageProps> = () => {
                             <p>Printed in TPU, these hooks are indestructible.</p>
 
                             <h2>Parts</h2>
-                            <p>
-                                <ul>
-                                    <li>2 x Hooks</li>
-                                    <li>2 x Wedges</li>
-                                    <li>2 x Foam cutouts for padding the hook</li>
-                                    <li>7 x M5x25mm countersunk screws</li>
-                                    <li>7 x M6x20mm flat head screws</li>
-                                </ul>
-                            </p>
+                            <ul>
+                                <li>2 x Hooks</li>
+                                <li>2 x Wedges</li>
+                                <li>2 x Foam cutouts for padding the hook</li>
+                                <li>7 x M5x25mm countersunk screws</li>
+                                <li>7 x M6x20mm flat head screws</li>
+                            </ul>
 
                             <h2>Cost</h2>
                             <p>The full set of Z-Hooks (2 hooks, 2 wedges, and all necessary hardware) is $130.</p>
@@ -85,16 +83,14 @@ const Page: React.FC<PageProps> = () => {
                             </ul>
                             
                             <h2>Resources</h2>
-                            <p>
-                                <ul>
-                                    <li>
-                                        <a target="_blank" href="https://www.dropbox.com/scl/fi/h4ogm66scm2e0gt4n0fnm/wedges_flattened_image.zip?rlkey=avggggr6f00hf0synag1gk15q&st=an59jt15&dl=0">Printed screw hole placement guide for wedges</a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://www.dropbox.com/scl/fi/6kml4yc77ubg22uhqeg82/hooks_flattened_image.zip?rlkey=dfheg4gb4t2m5j4u7wp32fzr1&st=6jrvsez2&dl=0">Printed cutout guide for foam padding</a>
-                                    </li>
-                                </ul>
-                            </p>
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://www.dropbox.com/scl/fi/h4ogm66scm2e0gt4n0fnm/wedges_flattened_image.zip?rlkey=avggggr6f00hf0synag1gk15q&st=an59jt15&dl=0">Printed screw hole placement guide for wedges</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.dropbox.com/scl/fi/6kml4yc77ubg22uhqeg82/hooks_flattened_image.zip?rlkey=dfheg4gb4t2m5j4u7wp32fzr1&st=6jrvsez2&dl=0">Printed cutout guide for foam padding</a>
+                                </li>
+                            </ul>
                         </Col>
 
                         <Col xs={12} md={12}>
@@ -104,7 +100,7 @@ const Page: React.FC<PageProps> = () => {
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep0LightboxToggler(!step0LightboxToggler)} style={{backgroundImage: `url('/images/shop/zhooks/step0.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep0LightboxToggler(!step0LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step0.jpg')`}}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 0"}></span>
                                             }
@@ -125,13 +121,13 @@ const Page: React.FC<PageProps> = () => {
                                         </Card.Body>
                                     </Card>
                                     
-                                    <Lightbox src={["/images/shop/zhooks/step0.jpg"]} toggler={step0LightboxToggler} />
+                                    <Lightbox src={["/.netlify/images?url=/images/shop/zhooks/step0.jpg"]} toggler={step0LightboxToggler} />
                                 </Col>
 
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep1LightboxToggler(!step1LightboxToggler)} style={{backgroundImage: `url('/images/shop/zhooks/step1.2.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep1LightboxToggler(!step1LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step1.2.jpg')`}}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 1"}></span>
                                             }
@@ -153,13 +149,13 @@ const Page: React.FC<PageProps> = () => {
                                         </Card.Body>
                                     </Card>
                                     
-                                    <Lightbox src={["/images/shop/zhooks/step1.2.jpg", "/images/shop/zhooks/step1.1.jpg"]} toggler={step1LightboxToggler} />
+                                    <Lightbox src={["/.netlify/images?url=/images/shop/zhooks/step1.2.jpg", "/.netlify/images?url=/images/shop/zhooks/step1.1.jpg"]} toggler={step1LightboxToggler} />
                                 </Col>
 
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep1LightboxToggler(!step1LightboxToggler)} style={{backgroundImage: `url('/images/shop/zhooks/step1.2.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep1LightboxToggler(!step1LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step1.2.jpg')`}}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 1"}></span>
                                             }
@@ -181,13 +177,13 @@ const Page: React.FC<PageProps> = () => {
                                         </Card.Body>
                                     </Card>
                                     
-                                    <Lightbox src={["/images/shop/zhooks/step1.2.jpg", "/images/shop/zhooks/step1.1.jpg"]} toggler={step1LightboxToggler} />
+                                    <Lightbox src={["/.netlify/images?url=/images/shop/zhooks/step1.2.jpg", "/.netlify/images?url=/images/shop/zhooks/step1.1.jpg"]} toggler={step1LightboxToggler} />
                                 </Col>
 
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep2LightboxToggler(!step2LightboxToggler)} style={{backgroundImage: `url('/images/shop/zhooks/step2.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep2LightboxToggler(!step2LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step2.jpg')`}}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 2"}></span>
                                             }
@@ -202,13 +198,13 @@ const Page: React.FC<PageProps> = () => {
                                         </Card.Body>
                                     </Card>
 
-                                    <Lightbox src={["/images/shop/zhooks/step2.jpg"]} toggler={step2LightboxToggler} />
+                                    <Lightbox src={["/.netlify/images?url=/images/shop/zhooks/step2.jpg"]} toggler={step2LightboxToggler} />
                                 </Col>
 
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep3LightboxToggler(!step3LightboxToggler)} style={{backgroundImage: `url('/images/shop/zhooks/step3.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep3LightboxToggler(!step3LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step3.jpg')`}}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 3"}></span>
                                             }
@@ -223,13 +219,13 @@ const Page: React.FC<PageProps> = () => {
                                         </Card.Body>
                                     </Card>
 
-                                    <Lightbox src={["/images/shop/zhooks/step3.jpg"]} toggler={step3LightboxToggler} />
+                                    <Lightbox src={["/.netlify/images?url=/images/shop/zhooks/step3.jpg"]} toggler={step3LightboxToggler} />
                                 </Col>
 
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep4LightboxToggler(!step4LightboxToggler)} style={{backgroundImage: `url('/images/shop/zhooks/step4.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep4LightboxToggler(!step4LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step4.jpg')`}}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 4"}></span>
                                             }
@@ -244,13 +240,13 @@ const Page: React.FC<PageProps> = () => {
                                         </Card.Body>
                                     </Card>
 
-                                    <Lightbox src={["/images/shop/zhooks/step4.jpg"]} toggler={step4LightboxToggler} />
+                                    <Lightbox src={["/.netlify/images?url=/images/shop/zhooks/step4.jpg"]} toggler={step4LightboxToggler} />
                                 </Col>
 
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep5LightboxToggler(!step5LightboxToggler)} style={{backgroundImage: `url('/images/shop/zhooks/step5.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep5LightboxToggler(!step5LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step5.jpg')`}}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 5"}></span>
                                             }
@@ -265,7 +261,7 @@ const Page: React.FC<PageProps> = () => {
                                         </Card.Body>
                                     </Card>
 
-                                    <Lightbox src={["/images/shop/zhooks/step5.jpg"]} toggler={step5LightboxToggler} />
+                                    <Lightbox src={["/.netlify/images?url=/images/shop/zhooks/step5.jpg"]} toggler={step5LightboxToggler} />
                                 </Col>
                             </Row>
                         </Col>

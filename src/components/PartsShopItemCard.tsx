@@ -35,7 +35,7 @@ export default (item: PartsShopData, index: number) => {
             partitemcondition={item.condition}>
             <Card>
                 {/* Part image */}
-                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? item.imageSrc.at(0) : item.imageSrc}')` : ""}}>
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : ""}}>
                     {item.imageSrc &&
                         <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
                     }
@@ -44,7 +44,7 @@ export default (item: PartsShopData, index: number) => {
                 {/* Part image lightbox */}
                 {/* https://fslightbox.com/react */}
                 {item.imageSrc &&
-                    <Lightbox src={item.imageSrc} toggler={lightboxToggler} />
+                    <Lightbox src={[item.imageSrc].flat().map((i) => `/.netlify/images?url=${i}`)} toggler={lightboxToggler} />
                 }
 
                 {/* Part type badges */}

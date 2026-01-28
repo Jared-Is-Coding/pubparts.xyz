@@ -1,26 +1,37 @@
 
 const allPartsShopItems = [
     {
-        title: "Black anodized CNC PubBox V2.2 with lid (raw lid, needs countersinking), window, and optional parts packs",
+        title: "Black anodized CNC PubBox V3.0 with lid, window, and optional parts packs",
         typeOfPart: ["Controller Box"],
-        imageSrc: "/images/shop/cnc_pubbox_v2_second.png",
-        externalUrl: "/parts/xr?search=PubWheel:%20CNC%20PubBox%20V2%20-%20XR%20VESC%20Box,%20Lid",
+        imageSrc: [
+            "/images/shop/cnc_pubbox_v3_1.jpg",
+            "/images/shop/cnc_pubbox_v3_2.jpg",
+            "/images/shop/cnc_pubbox_v3_3.jpg",
+            "/images/shop/cnc_pubbox_v3_4.jpg",
+            "/images/shop/cnc_pubbox_v3_5.jpg",
+            "/images/shop/cnc_pubbox_v3_6.jpg",
+            "/images/shop/cnc_pubbox_v3_7.jpg",
+            "/images/shop/cnc_pubbox_v3_8.jpg",
+            "/images/shop/cnc_pubbox_v3_9.jpg",
+            "/images/shop/cnc_pubbox_v3_10.jpg"
+        ],
         platform: ["XR/Funwheel"],
-        availableCount: 1,
+        availableCount: 13,
         description: `
             <p>All parts:</p>
             <ul>
                 <li>
                     6061 anodized black pubbox with the change logs:
                     <ul>
-                        <li>Breather hole -> Increase diameter to 20.5mm</li>
-                        <li>Controller mounts -> Add JF6 mounts</li>
-                        <li>Accessory mounts -> Add corner mounts</li>
-                        <li>Handle -> Raise handle interior to match gasket seal height</li>
-                        <li>Handle -> Raise handle exterior accordingly</li>
+                        <li>Angled footpad and battery harness mount points, to help with pushing the battery harness into the rail and to allow more clearance for the footpad connector</li>
+                        <li>Threaded battery harness hole, M20. No more inner nut needed, just thread it in.</li>
+                        <li>Now, the box has full contact with the rails at both screw points. No more tab spacers needed for the bumpers (which also means bumpers with these tabs will need them removed).</li>
+                        <li>23% less lid screws!</li>
+                        <li>Built-in mount threaded screw mounts for: Thor300/Thor400/JF6/Mk8/Mk8 Pro/Lfoc/Tronic X12</li>
+                        <li>Adapters and plates are available for: Ubox 85v...and more</li>
                     </ul>
                 </li>
-                <li>6061 raw alu lid without logo and without countersinks (just pictured clear to see the box)</li>
+                <li>6061 anodized black lid</li>
                 <li>Acrylic window</li>
             </ul>
             <p>This offering is only for the parts listed above and does not include hardware and printed pieces. If you're interested in those, I'm able to put together packs to include as requested, of the following:</p>
@@ -28,36 +39,37 @@ const allPartsShopItems = [
                 <li>
                     $15 - Printed Pack
                     <ul>
-                        <li>1 x Right/Left Pubbox bumper spacers (the little tabs) in black TPU</li>
                         <li>1 x Lid gasket in black TPU</li>
-                        <li>1 x <a href="https://www.printables.com/model/1095537" target="_blank">Unified cable cover</a> (motor splash guard) in black PETG</li>
+                        <li>1 x Unified cable cover (connector splash guard) in black PETG</li>
                     </ul>
                 </li>
             </ul>
             <ul>
                 <li>
-                    $35 - Hardware Pack
+                    $40 - Hardware Pack
                     <ul>
                         <li>4 x 10-32 3/4" countersunk bolts for rail mounting</li>
-                        <li>34 x M3x8 countersunk bolts for lid and LED clips</li>
+                        <li>24 x M3x8 countersunk bolts for lid</li>
                         <li>1 x GX16-4 charge port</li>
-                        <li>1 x 19x1 power button (12V LED, momentary or latching, black/silver case options, white/blue/red/green/yellow options)</li>
+                        <li>1 x 19x1 power button with 12V White LED</li>
                         <li>1 x 6 pin footpad switchcraft connector</li>
                         <li>2 x 20mm glands</li>
                         <li>1 x Goretex vent patch</li>
                     </ul>
                 </li>
             </ul>
+            <p>For a box set with both parts packs, that's $280 total + shipping.</p>
         `,
         condition: "New",
-        price: 180
+        price: 225,
+        featured: true
     },
     {
         title: "20mm Goretex vent patches",
         typeOfPart: ["Miscellaneous"],
         imageSrc: "/images/shop/goretex_patch.png",
         platform: ["Miscellaneous Items"],
-        availableCount: 15,
+        availableCount: 57,
         condition: "New",
         price: 2
     },
@@ -325,12 +337,12 @@ const allPartsShopItems = [
         title: "Z-Hooks: Wedge and Foot Hook w/ Hardware (Front+Rear Set)",
         typeOfPart: ["Footpad Attachment"],
         imageSrc: [
-            "/images/shop/hooks.png",
-            "/images/shop/hooks2.png",
-            "/images/shop/hooks3.png",
-            "/images/shop/hooks4.png",
-            "/images/shop/hooks5.png",
-            "/images/shop/hooks6.png"
+            "/images/shop/zhooks/hooks.png",
+            "/images/shop/zhooks/hooks2.png",
+            "/images/shop/zhooks/hooks3.png",
+            "/images/shop/zhooks/hooks4.png",
+            "/images/shop/zhooks/hooks5.png",
+            "/images/shop/zhooks/hooks6.png"
         ],
         externalUrl: "/zps/zhooks",
         platform: ["Miscellaneous Items"],

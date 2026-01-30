@@ -16,7 +16,7 @@ const allPartsShopItems = [
             "/images/shop/cnc_pubbox_v3_10.jpg"
         ],
         platform: ["XR/Funwheel"],
-        availableCount: 13,
+        availableCount: 12,
         description: `
             <p>All parts:</p>
             <ul>

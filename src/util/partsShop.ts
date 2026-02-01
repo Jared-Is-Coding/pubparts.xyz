@@ -380,7 +380,7 @@ const allPartsShopItems = [
         ],
         externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
         platform: ["XR/Funwheel"],
-        availableCount: 15,
+        availableCount: 14,
         description: `
             <p>What you'll get:</p>
             <ul>

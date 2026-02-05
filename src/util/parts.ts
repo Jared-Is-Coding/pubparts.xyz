@@ -2985,6 +2985,21 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/fhnhqrf3r0ccjxtor4g8j/droptop-fender-funwheel-x7-model_files.zip?rlkey=zkm7vwpjbs9dkb9qtfhk3ti8q&st=recgarxh&dl=0",
         dropboxZipLastUpdated: "2026-01-20",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Interference: XR Tough Pad (PubPad remix)",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/d8c192ad-e80e-4c75-a5cc-829952d13d08/images/11925298_d323ad51-4a0c-4976-b3ef-a5967afa2927_0d3e03e9-1edd-49f3-9d3e-16c9dc686966/thumbs/inside/1280x960/png/studio-setup-03.webp",
+            "https://media.printables.com/media/prints/72bccdbb-e3a2-4b2c-948b-3ae46c5fa393/images/11925313_bb5497dd-c488-4c22-b585-b53ed85a1bd7_f601157f-2d2e-4daf-8906-4209b70d4dc2/thumbs/inside/1280x960/jpg/img_0525.webp",
+            "https://media.printables.com/media/prints/033ec1e9-16bc-4e4e-963e-d210dee57919/images/11925314_edb5fb84-1e04-43a4-a15b-a7c1d6904aad_d6ca1a9f-9375-475d-888b-c4ade300232d/thumbs/inside/1280x960/jpg/90fe6d66-c32c-4137-93f7-5b1a084583da.webp",
+            "https://media.printables.com/media/prints/c8b433bb-0f75-4756-b00a-c39241e89d1b/images/11925315_c39d15ca-798f-46a0-9d18-628ae99d2856_47093b42-86b2-4749-b81e-b99cf376adea/thumbs/inside/1280x960/png/schermafbeelding-2026-02-03-234823.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1583968",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/5tsopsm3grrgzk2p277xp/tough-pad-model_files.zip?rlkey=qkuhxi7319d9ardks0hmj1b9f&st=0l3gaaje&dl=0",
+        dropboxZipLastUpdated: "2026-02-04",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

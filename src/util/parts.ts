@@ -3000,6 +3000,18 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/5tsopsm3grrgzk2p277xp/tough-pad-model_files.zip?rlkey=qkuhxi7319d9ardks0hmj1b9f&st=0l3gaaje&dl=0",
         dropboxZipLastUpdated: "2026-02-04",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "PubParts: CNC PubBox V3.0 for VESC XR/Funwheel",
+        fabricationMethod: ["CNC", "3d Printed"],
+        typeOfPart: ["Controller Box"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/c80e598c-73c0-4215-a296-e3da72261a70/images/11949937_a5092842-2cbb-4ba0-828c-40606511ad34_1f85f35e-b16b-4873-8ea4-d7419ccb93e6/thumbs/inside/1280x960/png/screenshot_2.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1587652",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/tbm53lxw54exdbstzgyyi/cnc-pubbox-v30-for-vesc-xrfunwheel-model_files.zip?rlkey=c6k2jspq4jwas1zyq7rokhjyi&st=5qm4xabz&dl=0",
+        dropboxZipLastUpdated: "2026-02-06",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

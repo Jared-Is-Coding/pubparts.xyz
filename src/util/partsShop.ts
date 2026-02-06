@@ -15,8 +15,9 @@ const allPartsShopItems = [
             "/images/shop/cnc_pubbox_v3_9.jpg",
             "/images/shop/cnc_pubbox_v3_10.jpg"
         ],
+        externalUrl: "/parts/xr?search=CNC%20PubBox%20V3.0",
         platform: ["XR/Funwheel"],
-        availableCount: 12,
+        availableCount: 10,
         description: `
             <p>All parts:</p>
             <ul>

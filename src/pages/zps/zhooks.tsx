@@ -216,6 +216,9 @@ const Page: React.FC<PageProps> = () => {
                                             <Card.Text>
                                                 Tightly fasten the wedge to the footpad using your M5 screws, going up from the bottom of the footpad into the wedge.
                                             </Card.Text>
+                                            <Card.Text>
+                                                On the front wedge, for the screw near to the side, you may optionally send a screw down from the top of the wedge all the way down into the bumper. This will require a significantly longer M5 cap/flat head screw. Otherwise, go up through the footpad into the included M5 nut.
+                                            </Card.Text>
                                         </Card.Body>
                                     </Card>
 

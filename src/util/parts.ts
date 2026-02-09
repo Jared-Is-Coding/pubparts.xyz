@@ -616,7 +616,7 @@ const allParts = [
         platform: ["Miscellaneous Items"]
     },
     {
-        title: "Dragan Hooks v2",
+        title: "Toe Hook for Streetboard, Snakeboard, Longboard",
         fabricationMethod: ["3d Printed"],
         typeOfPart: ["Footpad Attachment"],
         imageSrc: "https://cdn.thingiverse.com/assets/e9/9e/bb/cd/ef/large_display_TH01.jpg",
@@ -3012,6 +3012,21 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/tbm53lxw54exdbstzgyyi/cnc-pubbox-v30-for-vesc-xrfunwheel-model_files.zip?rlkey=c6k2jspq4jwas1zyq7rokhjyi&st=5qm4xabz&dl=0",
         dropboxZipLastUpdated: "2026-02-06",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Pubparts: Z-Hooks (Foothooks and Wedges)",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/06ad7a9b-2a22-41b9-9eb1-9f39d92a8cbb/images/11989701_ddd28b04-e999-44b3-8448-8e3bc614110d_ac1a987c-59df-4c36-8a94-bb0f5db57626/thumbs/inside/1280x960/png/hooks5.webp",
+            "https://media.printables.com/media/prints/14006fbe-598e-4bc2-b2be-d5ec42a921e6/images/11989703_052162a2-408a-493c-a93f-7c9701628b94_7059c11b-3fd6-48a8-95a4-9185ea8a36c9/thumbs/inside/1280x960/png/hooks3.webp",
+            "https://media.printables.com/media/prints/27bbfc4f-1e08-4ac4-90dc-6cad1ce5b0da/images/11989704_922db170-c09b-4032-b132-b187817482d1_f197dbfd-a71d-4288-b883-581ceb3c6a52/thumbs/inside/1280x960/png/hooks4.webp",
+            "https://media.printables.com/media/prints/6b18b98b-f0f9-4058-9771-9b5e47796422/images/11989705_c8573817-0f1f-4cd6-9a5f-58c08bc91669_79f6191f-670f-4b3d-86c6-f8526332e27d/thumbs/inside/1280x960/png/hooks.webp",
+            "https://media.printables.com/media/prints/fcab2ea5-95ab-4aba-a1db-44293302dc04/images/11989706_d04bd5e3-c2a9-4831-bfc0-773231d40d4b_93884621-65eb-401f-98c0-befcd68b8b36/thumbs/inside/1280x960/png/hooks2.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1593307",
+        dropboxZipLastUpdated: "2026-02-09",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

@@ -23,11 +23,11 @@ const allPartsAndResources = [...new Set([
  * 
  * @param NavbarProps - a {@link NavbarProps} object
  */
-export default ({isHomepage}: NavbarProps) => {
+export default ({ isHomepage }: NavbarProps) => {
     const [showModal, setShowModal] = useState(false)
 
     return (
-        <Navbar fixed="top" expand="lg" data-bs-theme="dark">
+        <Navbar fixed="bottom" expand="lg">
             <Container>
                 <Navbar.Brand href="/">
                     <StaticImage
@@ -35,7 +35,7 @@ export default ({isHomepage}: NavbarProps) => {
                         width={55}
                         height={55}
                         className={(isHomepage ? "d-inline-block" : "d-xs-inline-block d-md-none") + " align-top"}
-                        alt="PubParts.xyz logo"/>
+                        alt="PubParts.xyz logo" />
 
                     <span className={(isHomepage ? "d-none" : "d-none d-md-inline-block")}>
                         PubParts.xyz
@@ -44,9 +44,9 @@ export default ({isHomepage}: NavbarProps) => {
 
                 <Stack direction="horizontal" gap={3}>
                     {/* Mobile Search Button */}
-                    <Nav.Link className="d-md-block d-lg-none navbar-toggler" onClick={() => setShowModal(true)} aria-label="Sitewide search modal trigger"><FaMagnifyingGlass style={{height: "1rem", width: "1rem"}} /></Nav.Link>
+                    <Nav.Link className="d-md-block d-lg-none navbar-toggler" onClick={() => setShowModal(true)} aria-label="Sitewide search modal trigger"><FaMagnifyingGlass style={{ height: "1rem", width: "1rem" }} /></Nav.Link>
                     {/* Mobile Navigation Toggle */}
-                    <Navbar.Toggle label="Menu toggle" aria-controls="site-navbar"><FaBars style={{height: "1rem", width: "1rem"}} /></Navbar.Toggle>
+                    <Navbar.Toggle label="Menu toggle" aria-controls="site-navbar"><FaBars style={{ height: "1rem", width: "1rem" }} /></Navbar.Toggle>
                 </Stack>
 
                 {/* Navbar */}
@@ -92,7 +92,7 @@ export default ({isHomepage}: NavbarProps) => {
                     <Modal.Header>
                         <Modal.Title>Sitewide Search</Modal.Title>
                     </Modal.Header>
-                    
+
                     <Modal.Body>
                         {/* Search area */}
                         <SearchModalSearchbar />
@@ -104,7 +104,7 @@ export default ({isHomepage}: NavbarProps) => {
                             }
                         </Stack>
                     </Modal.Body>
-                    
+
                     <Modal.Footer>
                         <Button variant="outline-info" onClick={() => setShowModal(false)}>
                             Close

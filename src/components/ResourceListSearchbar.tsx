@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react"
-import { Button, ButtonGroup, Form, Stack, ToggleButton } from "react-bootstrap"
+import { Button, ButtonGroup, Card, Form, Stack, ToggleButton } from "react-bootstrap"
 import { FaArrowRotateLeft } from "react-icons/fa6"
 import windowIsDefined from "../hooks/windowIsDefined"
 import toTitleCase from "../hooks/toTitleCase"
@@ -16,7 +16,7 @@ type ResourceListSearchbarProps = {
  * 
  * @param ResourceListSearchbarProps - a {@link ResourceListSearchbarProps} object
  */
-export default ({resourceList}: ResourceListSearchbarProps) => {
+export default ({ resourceList }: ResourceListSearchbarProps) => {
     // Arrays from resource lists
     const uniqueResourceTypes = [...new Set(resourceList.map((r) => r.typeOfResource).flat())]
 
@@ -38,13 +38,13 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
 
     if (!didMount.current && windowIsDefined()) {
         const queryParams = new URLSearchParams(window.location.search)
-        
+
         // Set searchbar text
         const keyword = queryParams.get("keyword") ?? queryParams.get("search") ?? ""
         if (keyword) {
             setSearchText(decodeURIComponent(keyword))
         }
-        
+
         // Set checkboxes as checked
         const type = (queryParams.get("type")?.split(",") ?? []) as ResourceType[]
         if (type && type.every((t) => uniqueResourceTypes.includes(t))) {
@@ -61,7 +61,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
     //#region Checkbox Handlers
 
     const handleCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
-        setCheckedTypeBoxes({...checkedTypeBoxes, [e.target.name]: e.target.checked})
+        setCheckedTypeBoxes({ ...checkedTypeBoxes, [e.target.name]: e.target.checked })
     }
 
     //#endregion
@@ -88,7 +88,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                     && !resource.getAttribute("resourcetitle")?.toLowerCase().includes(searchText.toLowerCase())
                     && !resource.getAttribute("resourcedescription")?.toLowerCase().includes(searchText.toLowerCase())
                 )
-                
+
                 // Resource type does not match checked resources
                 || (
                     Object.values(checkedTypeBoxes).some((v) => !!v)
@@ -130,78 +130,75 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
 
         //#endregion
     })
-    
+
     //#endregion
     //#region Render
 
     return (
         <>
-            <div className="searchArea">
-                <Form.Label as="h2">
-                    Search
-                </Form.Label>
-
-                <Stack direction="vertical" gap={3}>
-                    <div className="searchKeyword">
-                        <Form.Label htmlFor="inputSearch" as="h3">
-                            Keyword:
-                        </Form.Label>
-
-                        <Form.Control
-                            as="input"
-                            type="search"
-                            id="inputSearch"
-                            value={searchText}
-                            placeholder="Search text to filter by..."
-                            onChange={(e) => setSearchText(e.target.value)}
-                        />
-                    </div>
-
-                    {uniqueResourceTypes.length > 1 &&
-                        <div className="searchTypeCheckBoxes">
-                            <Form.Label as="h3">
-                                Resource Type(s):
+            <Card className="searchArea mb-4">
+                <Card.Header>Search & Filters</Card.Header>
+                <Card.Body>
+                    <Stack direction="vertical" gap={3}>
+                        <div className="searchKeyword">
+                            <Form.Label htmlFor="inputSearch" className="fw-bold">
+                                Keyword:
                             </Form.Label>
 
-                            <ButtonGroup size="sm">
-                                {uniqueResourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
-                                    <ToggleButton
-                                        key={`resourceType-${index}`}
-                                        checked={checkedTypeBoxes[r]}
-                                        onChange={handleCheckbox}
-                                        name={r}
-                                        id={r}
-                                        type="checkbox"
-                                        value={1}
-                                        variant="outline-info">
-                                        {toTitleCase(r)}
-                                    </ToggleButton>
-                                ))}
-                            </ButtonGroup>
+                            <Form.Control
+                                as="input"
+                                type="search"
+                                id="inputSearch"
+                                value={searchText}
+                                placeholder="Search text to filter by..."
+                                onChange={(e) => setSearchText(e.target.value)}
+                            />
                         </div>
-                    }
 
-                    <Stack direction="horizontal" gap={2}>
-                        <Button
-                            type="button"
-                            size="sm"
-                            variant="outline-info"
-                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}}
-                            onClick={() => clearSearch()}>
-                            Clear Search <FaArrowRotateLeft />
-                        </Button>
+                        {uniqueResourceTypes.length > 1 &&
+                            <div className="searchTypeCheckBoxes">
+                                <Form.Label className="fw-bold d-block">
+                                    Resource Type(s):
+                                </Form.Label>
 
-                        <CopyLinkButton
-                            text="Copy This Search"
-                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(searchText)}` + `&type=${uniqueResourceTypes.filter((t) => !!checkedTypeBoxes[t])}`}
-                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
+                                <ButtonGroup size="sm">
+                                    {uniqueResourceTypes.sort((a, b) => a.localeCompare(b)).map((r, index) => (
+                                        <ToggleButton
+                                            key={`resourceType-${index}`}
+                                            checked={checkedTypeBoxes[r]}
+                                            onChange={handleCheckbox}
+                                            name={r}
+                                            id={r}
+                                            type="checkbox"
+                                            value={1}
+                                            variant="outline-info">
+                                            {toTitleCase(r)}
+                                        </ToggleButton>
+                                    ))}
+                                </ButtonGroup>
+                            </div>
+                        }
+
+                        <Stack direction="horizontal" gap={2}>
+                            <Button
+                                type="button"
+                                size="sm"
+                                variant="outline-info"
+                                style={{ display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content" }}
+                                onClick={() => clearSearch()}>
+                                Clear Search <FaArrowRotateLeft />
+                            </Button>
+
+                            <CopyLinkButton
+                                text="Copy This Search"
+                                link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(searchText)}` + `&type=${uniqueResourceTypes.filter((t) => !!checkedTypeBoxes[t])}`}
+                                style={{ display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content" }} />
+                        </Stack>
                     </Stack>
-                </Stack>
-
-                <hr />
-            </div>
+                </Card.Body>
+            </Card>
         </>
     )
-    
+
     //#endregion
 }

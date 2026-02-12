@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react"
-import { Button, ButtonGroup, Form, Stack, ToggleButton } from "react-bootstrap"
+import { Button, ButtonGroup, Card, Form, Stack, ToggleButton } from "react-bootstrap"
 import { FaArrowRotateLeft } from "react-icons/fa6"
 import windowIsDefined from "../hooks/windowIsDefined"
 import CopyLinkButton from "./CopyLinkButton"
@@ -15,7 +15,7 @@ type PartsShopListSearchbarProps = {
  * 
  * @param PartsShopListSearchbarProps - a {@link PartsShopListSearchbarProps} object
  */
-export default ({partList}: PartsShopListSearchbarProps) => {
+export default ({ partList }: PartsShopListSearchbarProps) => {
     // Arrays from parts lists
     const uniquePlatformTypes = [...new Set(partList.map((p) => p.platform).flat())]
     const uniquePartTypes = [...new Set(partList.map((p) => p.typeOfPart).flat())]
@@ -45,13 +45,13 @@ export default ({partList}: PartsShopListSearchbarProps) => {
 
     if (!didMount.current && windowIsDefined()) {
         const queryParams = new URLSearchParams(window.location.search)
-        
+
         // Set searchbar text
         const keyword = queryParams.get("keyword") ?? queryParams.get("search") ?? ""
         if (keyword) {
             setSearchText(decodeURIComponent(keyword))
         }
-        
+
         // Set checkboxes as checked
         const platform = (queryParams.get("platform")?.split(",") ?? []) as PlatformType[]
         if (platform && platform.every((t) => uniquePlatformTypes.includes(t))) {
@@ -59,7 +59,7 @@ export default ({partList}: PartsShopListSearchbarProps) => {
             platform.forEach((t) => tempCheckedPlatformBoxes[t] = true)
             setCheckedPlatformBoxes(tempCheckedPlatformBoxes)
         }
-        
+
         // Set checkboxes as checked
         const type = (queryParams.get("type")?.split(",") ?? []) as PartShopType[]
         if (type && type.every((t) => uniquePartTypes.includes(t))) {
@@ -67,7 +67,7 @@ export default ({partList}: PartsShopListSearchbarProps) => {
             type.forEach((t) => tempCheckedTypeBoxes[t] = true)
             setCheckedTypeBoxes(tempCheckedTypeBoxes)
         }
-        
+
         // Set checkboxes as checked
         const itemCondition = (queryParams.get("cond")?.split(",") ?? queryParams.get("condition")?.split(",") ?? []) as ItemCondition[]
         if (itemCondition && itemCondition.every((f) => uniqueItemConditions.includes(f))) {
@@ -84,15 +84,15 @@ export default ({partList}: PartsShopListSearchbarProps) => {
     //#region Checkbox Handlers
 
     const handlePlatformCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
-        setCheckedPlatformBoxes({...checkedPlatformBoxes, [e.target.name]: e.target.checked})
+        setCheckedPlatformBoxes({ ...checkedPlatformBoxes, [e.target.name]: e.target.checked })
     }
 
     const handleTypeCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
-        setCheckedTypeBoxes({...checkedTypeBoxes, [e.target.name]: e.target.checked})
+        setCheckedTypeBoxes({ ...checkedTypeBoxes, [e.target.name]: e.target.checked })
     }
 
     const handleItemConditionCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
-        setCheckedItemConditionBoxes({...checkedItemConditionBoxes, [e.target.name]: e.target.checked})
+        setCheckedItemConditionBoxes({ ...checkedItemConditionBoxes, [e.target.name]: e.target.checked })
     }
 
     //#endregion
@@ -148,7 +148,7 @@ export default ({partList}: PartsShopListSearchbarProps) => {
                 (item as HTMLElement).style.display = "block";
             }
         })
-        
+
         //#endregion
         //#region Results Headers
 
@@ -183,120 +183,117 @@ export default ({partList}: PartsShopListSearchbarProps) => {
 
     return (
         <>
-            <div className="searchArea">
-                <Form.Label as="h2">
-                    Search
-                </Form.Label>
-
-                <Stack direction="vertical" gap={3}>
-                    <div className="searchKeyword">
-                        <Form.Label htmlFor="inputSearch" as="h3">
-                            Keyword:
-                        </Form.Label>
-
-                        <Form.Control
-                            as="input"
-                            type="search"
-                            id="inputSearch"
-                            value={searchText}
-                            placeholder="Search text to filter by..."
-                            onChange={(e) => setSearchText(e.target.value)}
-                        />
-                    </div>
-
-                    {uniquePlatformTypes.length > 1 &&
-                        <div className="searchPlatformCheckBoxes">
-                            <Form.Label as="h3">
-                                Platform(s):
+            <Card className="searchArea mb-4">
+                <Card.Header>Search & Filters</Card.Header>
+                <Card.Body>
+                    <Stack direction="vertical" gap={3}>
+                        <div className="searchKeyword">
+                            <Form.Label htmlFor="inputSearch" className="fw-bold">
+                                Keyword:
                             </Form.Label>
 
-                            <ButtonGroup size="sm">
-                                {uniquePlatformTypes.sort((a, b) => a.localeCompare(b)).map((p, index) => (
-                                    <ToggleButton
-                                        key={`itemCondition-${index}`}
-                                        checked={checkedPlatformBoxes[p]}
-                                        onChange={handlePlatformCheckbox}
-                                        name={p}
-                                        id={p}
-                                        type="checkbox"
-                                        value={1}
-                                        variant="outline-info">
-                                        {p}
-                                    </ToggleButton>
-                                ))}
-                            </ButtonGroup>
+                            <Form.Control
+                                as="input"
+                                type="search"
+                                id="inputSearch"
+                                value={searchText}
+                                placeholder="Search text to filter by..."
+                                onChange={(e) => setSearchText(e.target.value)}
+                            />
                         </div>
-                    }
 
-                    {uniquePartTypes.length > 1 &&
-                        <div className="searchTypeCheckBoxes">
-                            <Form.Label as="h3">
-                                Part Type(s):
-                            </Form.Label>
+                        {uniquePlatformTypes.length > 1 &&
+                            <div className="searchPlatformCheckBoxes">
+                                <Form.Label className="fw-bold d-block">
+                                    Platform(s):
+                                </Form.Label>
 
-                            <ButtonGroup size="sm">
-                                {uniquePartTypes.sort((a, b) => a.localeCompare(b)).map((t, index) => (
-                                    <ToggleButton
-                                        key={`partType-${index}`}
-                                        checked={checkedTypeBoxes[t]}
-                                        onChange={handleTypeCheckbox}
-                                        name={t}
-                                        id={t}
-                                        type="checkbox"
-                                        value={1}
-                                        variant="outline-info">
-                                        {t}
-                                    </ToggleButton>
-                                ))}
-                            </ButtonGroup>
-                        </div>
-                    }
+                                <ButtonGroup size="sm">
+                                    {uniquePlatformTypes.sort((a, b) => a.localeCompare(b)).map((p, index) => (
+                                        <ToggleButton
+                                            key={`itemCondition-${index}`}
+                                            checked={checkedPlatformBoxes[p]}
+                                            onChange={handlePlatformCheckbox}
+                                            name={p}
+                                            id={p}
+                                            type="checkbox"
+                                            value={1}
+                                            variant="outline-info">
+                                            {p}
+                                        </ToggleButton>
+                                    ))}
+                                </ButtonGroup>
+                            </div>
+                        }
 
-                    {uniqueItemConditions.length > 1 &&
-                        <div className="searchConditionCheckBoxes">
-                            <Form.Label as="h3">
-                                Item Condition(s):
-                            </Form.Label>
+                        {uniquePartTypes.length > 1 &&
+                            <div className="searchTypeCheckBoxes">
+                                <Form.Label className="fw-bold d-block">
+                                    Part Type(s):
+                                </Form.Label>
 
-                            <ButtonGroup size="sm">
-                                {uniqueItemConditions.sort((a, b) => a.localeCompare(b)).map((c, index) => (
-                                    <ToggleButton
-                                        key={`itemCondition-${index}`}
-                                        checked={checkedItemConditionBoxes[c]}
-                                        onChange={handleItemConditionCheckbox}
-                                        name={c}
-                                        id={c}
-                                        type="checkbox"
-                                        value={1}
-                                        variant="outline-info">
-                                        {c}
-                                    </ToggleButton>
-                                ))}
-                            </ButtonGroup>
-                        </div>
-                    }
+                                <ButtonGroup size="sm">
+                                    {uniquePartTypes.sort((a, b) => a.localeCompare(b)).map((t, index) => (
+                                        <ToggleButton
+                                            key={`partType-${index}`}
+                                            checked={checkedTypeBoxes[t]}
+                                            onChange={handleTypeCheckbox}
+                                            name={t}
+                                            id={t}
+                                            type="checkbox"
+                                            value={1}
+                                            variant="outline-info">
+                                            {t}
+                                        </ToggleButton>
+                                    ))}
+                                </ButtonGroup>
+                            </div>
+                        }
 
-                    <Stack direction="horizontal" gap={2}>
-                        <Button
-                            type="button"
-                            size="sm"
-                            variant="outline-info"
-                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}}
-                            onClick={() => clearSearch()}>
-                            Clear Search <FaArrowRotateLeft />
-                        </Button>
+                        {uniqueItemConditions.length > 1 &&
+                            <div className="searchConditionCheckBoxes">
+                                <Form.Label className="fw-bold d-block">
+                                    Item Condition(s):
+                                </Form.Label>
 
-                        <CopyLinkButton
-                            text="Copy This Search"
-                            link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(searchText)}` + `&platform=${uniquePlatformTypes.filter((t) => !!checkedPlatformBoxes[t])}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&condition=${uniqueItemConditions.filter((f) => !!checkedItemConditionBoxes[f])}`}
-                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
+                                <ButtonGroup size="sm">
+                                    {uniqueItemConditions.sort((a, b) => a.localeCompare(b)).map((c, index) => (
+                                        <ToggleButton
+                                            key={`itemCondition-${index}`}
+                                            checked={checkedItemConditionBoxes[c]}
+                                            onChange={handleItemConditionCheckbox}
+                                            name={c}
+                                            id={c}
+                                            type="checkbox"
+                                            value={1}
+                                            variant="outline-info">
+                                            {c}
+                                        </ToggleButton>
+                                    ))}
+                                </ButtonGroup>
+                            </div>
+                        }
+
+                        <Stack direction="horizontal" gap={2}>
+                            <Button
+                                type="button"
+                                size="sm"
+                                variant="outline-info"
+                                style={{ display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content" }}
+                                onClick={() => clearSearch()}>
+                                Clear Search <FaArrowRotateLeft />
+                            </Button>
+
+                            <CopyLinkButton
+                                text="Copy This Search"
+                                link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(searchText)}` + `&platform=${uniquePlatformTypes.filter((t) => !!checkedPlatformBoxes[t])}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&condition=${uniqueItemConditions.filter((f) => !!checkedItemConditionBoxes[f])}`}
+                                style={{ display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content" }} />
+                        </Stack>
                     </Stack>
-                </Stack>
-
-                <hr />
-            </div>
+                </Card.Body>
+            </Card>
         </>
     )
-    
+
     //#endregion
 }

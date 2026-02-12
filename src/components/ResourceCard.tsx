@@ -17,15 +17,18 @@ import CopyLinkBadge from "./CopyLinkBadge"
 export default (resource: ResourceData, index: number) => {
     return (
         <Col
-            xs={{span: 12, offset: 0}}
-            md={{span: 12, offset: 0}}
-            lg={{span: 12, offset: 0}}
+            xs={{ span: 12, offset: 0 }}
+            md={{ span: 12, offset: 0 }}
+            lg={{ span: 12, offset: 0 }}
             className="searchableResource"
             key={`resource-card-${index}`}
             resourcetitle={resource.title}
             resourcetypes={resource.typeOfResource}
             resourcedescription={resource.description ?? ""}>
             <Card className={`resource-${resource.typeOfResource}`}>
+                <Card.Header>
+                    {resource.title}
+                </Card.Header>
                 <Card.Body>
                     {/* Resource type badges */}
                     {resource.typeOfResource.length > 0 &&
@@ -38,31 +41,29 @@ export default (resource: ResourceData, index: number) => {
 
                     {/* Resource information */}
                     {(resource.externalUrl || resource.appStoreLink || resource.playStoreLink) &&
-                        <Card.Title as="h3">
+                        <div className="mb-2">
                             {resource.externalUrl &&
                                 <>
                                     <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(resource.title)}`} />
                                     <> | </>
                                     <a href={resource.externalUrl} target="_blank">
-                                        {resource.title}
+                                        Visit Resource
                                     </a>
                                 </>
                             }
-                            
+
                             {!resource.externalUrl && (resource.appStoreLink || resource.playStoreLink) &&
                                 <>
                                     <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(resource.title)}`} />
                                     <> | </>
-                                    {resource.title}
-                                    <> on the </>
-                                    {resource.appStoreLink && <><a href={resource.appStoreLink} target="_blank">App Store</a></>}
-                                    {resource.playStoreLink && <> or <a href={resource.playStoreLink} target="_blank">Play Store</a></>}
-                                    <></>
+                                    Available on:
+                                    {resource.appStoreLink && <><a href={resource.appStoreLink} target="_blank" className="ms-1">App Store</a></>}
+                                    {resource.playStoreLink && <><span className="mx-1">or</span><a href={resource.playStoreLink} target="_blank">Play Store</a></>}
                                 </>
                             }
-                        </Card.Title>
+                        </div>
                     }
-                    
+
                     {resource.description &&
                         <Card.Text>
                             {resource.description}

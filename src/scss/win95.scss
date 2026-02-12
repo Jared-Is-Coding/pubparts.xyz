@@ -1,0 +1,401 @@
+/**
+ * Windows 95 Theme for PubParts.xyz
+ */
+
+$win-grey: #c0c0c0;
+$win-white: #ffffff;
+$win-dark-grey: #808080;
+$win-black: #000000;
+$win-blue: #000080;
+$win-blue-light: #1084d0;
+$win-teal: #008080;
+$win-magenta: #800080;
+
+@mixin win-outset {
+    border-top: 1px solid $win-white;
+    border-left: 1px solid $win-white;
+    border-bottom: 1px solid $win-dark-grey;
+    border-right: 1px solid $win-dark-grey;
+    box-shadow: inset -1px -1px 0 0 $win-black, 1px 1px 0 0 $win-white;
+}
+
+@mixin win-button-outset {
+    border-top: 1px solid $win-white;
+    border-left: 1px solid $win-white;
+    border-bottom: 1px solid $win-dark-grey;
+    border-right: 1px solid $win-dark-grey;
+    box-shadow: inset -1px -1px 0 0 $win-black;
+}
+
+@mixin win-inset {
+    border-top: 1px solid $win-dark-grey;
+    border-left: 1px solid $win-dark-grey;
+    border-bottom: 1px solid $win-white;
+    border-right: 1px solid $win-white;
+}
+
+@mixin win-inset-deep {
+    border-top: 1px solid $win-dark-grey;
+    border-left: 1px solid $win-dark-grey;
+    border-bottom: 1px solid $win-white;
+    border-right: 1px solid $win-white;
+    box-shadow: inset 1px 1px 0 0 $win-black;
+}
+
+body {
+    background-color: $win-teal !important;
+    background-image: none !important;
+    color: $win-black !important;
+    font-family: "MS Sans Serif", Tahoma, Geneva, sans-serif !important;
+    font-size: 11pt !important;
+    padding-top: 20px !important;
+    padding-bottom: 60px !important;
+    overflow-x: hidden;
+}
+
+header {
+    margin-bottom: 20px;
+
+    h1 {
+        background: linear-gradient(90deg, $win-blue, $win-blue-light);
+        color: $win-white !important;
+        padding: 3px 10px;
+        margin: 0;
+        @include win-button-outset;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        box-shadow: inset -1px -1px 0 0 $win-black;
+
+        &::after {
+            content: "";
+            flex-grow: 1;
+        }
+
+        /* Window Buttons Fake */
+        &::before {
+            content: "□";
+            order: 10;
+            @include win-button-outset;
+            background: $win-grey;
+            color: $win-black;
+            width: 16px;
+            height: 14px;
+            line-height: 12px;
+            text-align: center;
+            font-size: 10px;
+            margin-left: 2px;
+        }
+    }
+}
+
+.navbar {
+    background-color: $win-grey !important;
+    border-top: 1px solid $win-white !important;
+    border-bottom: none !important;
+    padding: 2px 0 !important;
+    position: fixed;
+    bottom: 0;
+    top: auto !important;
+    z-index: 1000;
+    height: 40px;
+}
+
+.navbar-brand {
+    @include win-button-outset;
+    padding: 2px 10px !important;
+    margin-right: 10px !important;
+    background: $win-grey !important;
+    font-weight: bold;
+    color: $win-black !important;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+
+    &:active {
+        @include win-inset-deep;
+    }
+
+    &::before {
+        content: "Start";
+        margin-left: 5px;
+        order: 2;
+    }
+
+    img {
+        width: 20px !important;
+        height: 20px !important;
+        margin-right: 2px;
+        order: 1;
+    }
+
+    span {
+        display: none !important;
+    }
+}
+
+.nav-link {
+    color: $win-black !important;
+    @include win-button-outset;
+    margin: 2px 4px;
+    padding: 2px 8px !important;
+    background-color: $win-grey;
+    font-size: 0.9rem;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+        background-color: $win-grey;
+    }
+
+    &.active,
+    &:active {
+        @include win-inset-deep;
+        background-color: #dfdfdf !important;
+    }
+}
+
+.dropdown-menu {
+    background-color: $win-grey !important;
+    border: 1px solid $win-black !important;
+    box-shadow: 2px 2px 0 0 $win-black !important;
+    border-radius: 0 !important;
+    padding: 2px !important;
+    bottom: 100% !important;
+    top: auto !important;
+    margin-bottom: 5px !important;
+
+    .dropdown-item {
+        color: $win-black !important;
+        font-size: 0.9rem;
+        padding: 4px 20px !important;
+
+        &:hover {
+            background-color: $win-blue !important;
+            color: $win-white !important;
+        }
+
+        &::first-letter {
+            text-decoration: underline;
+        }
+    }
+}
+
+.card {
+    background-color: $win-grey !important;
+    border-radius: 0 !important;
+    border: none !important;
+    @include win-outset;
+    margin-bottom: 20px;
+
+    .card-header {
+        background: linear-gradient(90deg, $win-blue, $win-blue-light) !important;
+        color: $win-white !important;
+        padding: 3px 5px !important;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0 !important;
+        font-size: 0.9rem;
+
+        &::after {
+            content: "×";
+            @include win-button-outset;
+            background: $win-grey;
+            color: $win-black;
+            width: 16px;
+            height: 14px;
+            line-height: 12px;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    .card-body {
+        padding: 8px !important;
+        color: $win-black !important;
+        @include win-inset;
+        margin: 4px;
+        background-color: $win-grey;
+
+        .card-text {
+            color: $win-black !important;
+        }
+
+        a {
+            color: $win-blue !important;
+            text-decoration: underline;
+        }
+    }
+}
+
+.btn {
+    @include win-button-outset;
+    border-radius: 0 !important;
+    background-color: $win-grey !important;
+    color: $win-black !important;
+    font-weight: normal !important;
+    padding: 2px 12px !important;
+    font-size: 0.9rem;
+
+    &:hover {
+        background-color: $win-grey !important;
+        color: $win-black !important;
+    }
+
+    &:active {
+        @include win-inset-deep;
+        padding: 3px 11px 1px 13px !important;
+    }
+}
+
+/* Desktop Icon Style */
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none !important;
+
+    .icon-image {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 5px;
+        background-color: transparent;
+    }
+
+    .icon-label {
+        color: $win-white;
+        font-size: 0.8rem;
+        padding: 2px 4px;
+        word-break: break-word;
+
+        &:hover {
+            background-color: $win-blue;
+        }
+    }
+}
+
+.modal-content {
+    background-color: $win-grey !important;
+    border-radius: 0 !important;
+    @include win-outset;
+    border: none !important;
+
+    .modal-header {
+        background: linear-gradient(90deg, $win-blue, $win-blue-light) !important;
+        color: $win-white !important;
+        border-bottom: none !important;
+        padding: 3px 5px !important;
+
+        .btn-close {
+            background-color: $win-grey !important;
+            @include win-button-outset;
+            opacity: 1 !important;
+            padding: 0 !important;
+            width: 16px;
+            height: 14px;
+            margin: 0 !important;
+            position: relative;
+
+            &::before {
+                content: "×";
+                color: $win-black;
+                font-weight: bold;
+                line-height: 10px;
+                position: absolute;
+                top: 0;
+                left: 3px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .modal-title {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .modal-body {
+        padding: 10px !important;
+        color: $win-black !important;
+        @include win-inset;
+        margin: 10px;
+        background-color: $win-grey;
+
+        input {
+            @include win-inset-deep;
+            background-color: $win-white !important;
+            color: $win-black !important;
+            padding: 5px !important;
+            border-radius: 0 !important;
+            border: none !important;
+            width: 100%;
+        }
+    }
+
+    .modal-footer {
+        border-top: none !important;
+        padding: 5px 10px 10px !important;
+    }
+}
+
+h2 {
+    color: $win-white !important;
+    text-shadow: 1px 1px $win-black;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+hr {
+    border-top: 1px solid $win-dark-grey;
+    border-bottom: 1px solid $win-white;
+    opacity: 1;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: $win-grey;
+    border-top: 1px solid $win-dark-grey;
+    padding: 10px !important;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: $win-black !important;
+    @include win-inset;
+    box-shadow: 1px 1px 0 0 $win-white;
+}
+
+.tagline {
+    background-color: transparent !important;
+    color: $win-white !important;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    background-color: $win-grey;
+}
+
+::-webkit-scrollbar-thumb {
+    @include win-button-outset;
+    background-color: $win-grey;
+}
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(45deg, $win-grey 25%, transparent 25%),
+        linear-gradient(-45deg, $win-grey 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, $win-grey 75%),
+        linear-gradient(-45deg, transparent 75%, $win-grey 75%);
+    background-size: 2px 2px;
+    background-color: #dfdfdf;
+}

@@ -76,3 +76,6 @@ yarn-error.log
 
 # Local Netlify folder
 .netlify
+
+# Cloudflare Workers secrets
+.dev.vars

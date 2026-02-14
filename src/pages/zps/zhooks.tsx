@@ -75,7 +75,7 @@ const Page: React.FC<PageProps> = () => {
                             </ul>
 
                             <h2>Cost</h2>
-                            <p>The full set of Z-Hooks (2 hooks, 2 wedges, and all necessary hardware) from me is $130.</p>
+                            <p>The full set of Z-Hooks (2 hooks, 2 wedges, and all necessary hardware) is $130.</p>
                             <p>In cases where not a full set of hooks and wedges is needed, or additional individual parts are requested, here are the individual parts costs for reference:</p>
                             <ul>
                                 <li>$35 per hook</li>
@@ -89,9 +89,6 @@ const Page: React.FC<PageProps> = () => {
                                 </li>
                                 <li>
                                     <a target="_blank" href="https://www.dropbox.com/scl/fi/6kml4yc77ubg22uhqeg82/hooks_flattened_image.zip?rlkey=dfheg4gb4t2m5j4u7wp32fzr1&st=6jrvsez2&dl=0">Printed cutout guide for foam padding</a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.printables.com/model/1593307">All 3d printed parts</a>
                                 </li>
                             </ul>
                         </Col>

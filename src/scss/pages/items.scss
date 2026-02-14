@@ -7,6 +7,7 @@
         gap: 1.5rem;
         margin-left: 0;
         margin-right: 0;
+        align-items: stretch; // Ensure all grid items stretch to match height
 
         // Reset Bootstrap Col default behaviors
         >.col,
@@ -16,11 +17,13 @@
             flex: none !important;
             padding: 0 !important;
             margin: 0 !important;
+            display: flex; // Ensure child card fills the height
         }
 
         // Ensure the copyright card spans all columns
         > :has(.full-width) {
             grid-column: 1 / -1;
+            display: block;
         }
     }
 
@@ -40,6 +43,7 @@
         display: flex !important;
         flex-direction: column !important;
         height: 100% !important;
+        width: 100%;
         overflow: hidden !important;
         position: relative; // For absolute badges
 
@@ -61,18 +65,20 @@
 
         .card-img-holder {
             width: 100%;
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 16 / 9;
             height: auto !important;
-            background-color: rgba(0, 0, 0, 0.1); // Placeholder color
+            background-color: #111 !important; // Dark background per request
             border-radius: $card-border-radius $card-border-radius 0 0;
             overflow: hidden;
             transition: all 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.2);
             cursor: pointer;
+            flex-shrink: 0; // Prevent image area from shrinking
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                display: block; // Remove any inline spacing
             }
         }
 

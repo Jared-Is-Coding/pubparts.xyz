@@ -40,8 +40,8 @@ export default (item: PartsShopData, index: number) => {
                         <img
                             src={
                                 Array.isArray(item.imageSrc)
-                                    ? (item.imageSrc[0]?.startsWith("http") || item.imageSrc[0]?.startsWith("//") ? item.imageSrc[0] : `/.netlify/images?url=${item.imageSrc[0]}`)
-                                    : (item.imageSrc.startsWith("http") || item.imageSrc.startsWith("//") ? item.imageSrc : `/.netlify/images?url=${item.imageSrc}`)
+                                    ? item.imageSrc[0]
+                                    : item.imageSrc
                             }
                             alt={"Preview image of part, " + item.title}
                             loading="lazy"
@@ -53,7 +53,7 @@ export default (item: PartsShopData, index: number) => {
                 {/* https://fslightbox.com/react */}
                 {item.imageSrc &&
                     <Lightbox
-                        src={[item.imageSrc].flat().map((i) => i.startsWith("http") || i.startsWith("//") ? i : `/.netlify/images?url=${i}`)}
+                        src={[item.imageSrc].flat()}
                         toggler={lightboxToggler}
                     />
                 }

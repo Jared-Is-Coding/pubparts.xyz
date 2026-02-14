@@ -19,25 +19,22 @@ export default (item: ItemData, index: number) => {
 
     return (
         <Col
-            xs={{ span: 10, offset: 1 }}
-            md={{ span: 6, offset: 0 }}
-            lg={{ span: 4, offset: 0 }}
+            xs={{span: 10, offset: 1}}
+            md={{span: 6, offset: 0}}
+            lg={{span: 4, offset: 0}}
             className="flex-center flex-top searchableItem"
             key={`item-card-${index}`}
             parttitle={item.title}
             parttypes={item.typeOfPart.join(",")}
             partfabricationmethods={item.fabricationMethod.join(",")}>
             <Card>
-                <Card.Header>
-                    {item.title}
-                </Card.Header>
                 {/* Part image */}
-                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{ backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : "" }}>
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : ""}}>
                     {item.imageSrc &&
                         <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
                     }
                 </div>
-
+                
                 {/* Part image lightbox */}
                 {/* https://fslightbox.com/react */}
                 {item.imageSrc &&
@@ -61,9 +58,10 @@ export default (item: ItemData, index: number) => {
                 <Stack className="display-over-top-left" direction="vertical" gap={1}>
                     <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(item.title)}`} />
                 </Stack>
-
+                
                 {/* Part information */}
                 <Card.Body>
+                    <Card.Title as="h3">{item.title}</Card.Title>
 
                     {(item.externalUrl || item.dropboxUrl) &&
                         <Stack direction="vertical" gap={1}>

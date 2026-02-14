@@ -1,39 +1,63 @@
 import React from "react"
-import { FaFileLines } from "react-icons/fa6"
+import { Button, Col, Row } from "react-bootstrap"
 
 /**
- * Creates a collection of Windows 95 style desktop icons
- * for navigating website resources lists.
+ * Creates a {@link https://react-bootstrap.netlify.app/docs/layout/grid | React-Bootstrap Row}
+ * containing buttons for clicking to navigate
+ * the website resources lists.
+ * 
+ * @param NavbarProps - a {@link NavbarProps} object
  */
 export default () => (
-    <div className="flex-row flex-wrap">
-        <a href="/resources/applications" className="desktop-icon">
-            <FaFileLines className="icon-image" style={{ color: '#ffffff' }} size={32} />
-            <span className="icon-label">Applications</span>
-        </a>
-        <a href="/resources/repositories" className="desktop-icon">
-            <FaFileLines className="icon-image" style={{ color: '#ffffff' }} size={32} />
-            <span className="icon-label">Code Repos</span>
-        </a>
-        <a href="/resources/spreadsheets" className="desktop-icon">
-            <FaFileLines className="icon-image" style={{ color: '#ffffff' }} size={32} />
-            <span className="icon-label">Spreadsheets</span>
-        </a>
-        <a href="/resources/vendors" className="desktop-icon">
-            <FaFileLines className="icon-image" style={{ color: '#ffffff' }} size={32} />
-            <span className="icon-label">Vendors</span>
-        </a>
-        <a href="/resources/videoguides" className="desktop-icon">
-            <FaFileLines className="icon-image" style={{ color: '#ffffff' }} size={32} />
-            <span className="icon-label">Video Guides</span>
-        </a>
-        <a href="/resources/websites" className="desktop-icon">
-            <FaFileLines className="icon-image" style={{ color: '#ffffff' }} size={32} />
-            <span className="icon-label">Websites</span>
-        </a>
-        <a href="/resources/writtenguides" className="desktop-icon">
-            <FaFileLines className="icon-image" style={{ color: '#ffffff' }} size={32} />
-            <span className="icon-label">Written Guides</span>
-        </a>
-    </div>
+    <Row className="flex-row">
+        <Col
+            xs={{span: 6, offset: 0}}
+            md={{span: 4, offset: 0}}
+            lg={{span: 3, offset: 0}}
+            className="flex-center flex-top">
+            <Button className="full-width text-truncate" href="/resources/applications" variant="outline-info">Applications</Button>
+        </Col>
+        <Col
+            xs={{span: 6, offset: 0}}
+            md={{span: 4, offset: 0}}
+            lg={{span: 3, offset: 0}}
+            className="flex-center flex-top">
+            <Button className="full-width text-truncate" href="/resources/repositories" variant="outline-info">Code Repositories</Button>
+        </Col>
+        <Col
+            xs={{span: 6, offset: 0}}
+            md={{span: 4, offset: 0}}
+            lg={{span: 3, offset: 0}}
+            className="flex-center flex-top">
+            <Button className="full-width text-truncate" href="/resources/spreadsheets" variant="outline-info">Spreadsheets</Button>
+        </Col>
+        <Col
+            xs={{span: 6, offset: 0}}
+            md={{span: 4, offset: 0}}
+            lg={{span: 3, offset: 0}}
+            className="flex-center flex-top">
+            <Button className="full-width text-truncate" href="/resources/vendors" variant="outline-info">Vendors</Button>
+        </Col>
+        <Col
+            xs={{span: 6, offset: 0}}
+            md={{span: 4, offset: 0}}
+            lg={{span: 3, offset: 0}}
+            className="flex-center flex-top">
+            <Button className="full-width text-truncate" href="/resources/videoguides" variant="outline-info">Video Guides</Button>
+        </Col>
+        <Col
+            xs={{span: 6, offset: 0}}
+            md={{span: 4, offset: 0}}
+            lg={{span: 3, offset: 0}}
+            className="flex-center flex-top">
+            <Button className="full-width text-truncate" href="/resources/websites" variant="outline-info">Websites</Button>
+        </Col>
+        <Col
+            xs={{span: 6, offset: 0}}
+            md={{span: 4, offset: 0}}
+            lg={{span: 3, offset: 0}}
+            className="flex-center flex-top">
+            <Button className="full-width text-truncate" href="/resources/writtenguides" variant="outline-info">Written Guides</Button>
+        </Col>
+    </Row>
 )

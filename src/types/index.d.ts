@@ -5,16 +5,16 @@ interface ItemData {
     title: string
     /**
      * Item fabrication method
-     */
+     */ 
     fabricationMethod: FabricationMethod[]
     /**
      * Item type
-     */
+     */ 
     typeOfPart: PartType[]
     /**
      * Image source url
      */
-    imageSrc: string | string[]
+    imageSrc: string
     /**
      * Platform type
      */
@@ -74,7 +74,7 @@ type FabricationMethod =
     | "Other"
     | "PCB"
 
-type PlatformType =
+type PlatformType = 
     | "Floatwheel"
     | "GT/GT-S"
     | "Miscellaneous Items"
@@ -90,7 +90,7 @@ interface ResourceData {
     title: string
     /**
      * Resource type
-     */
+     */ 
     typeOfResource: ResourceType[]
     /**
      * Resource external URL
@@ -126,7 +126,7 @@ interface PartsShopData {
     title: string
     /**
      * Item type
-     */
+     */ 
     typeOfPart: PartShopType[]
     /**
      * Platform type
@@ -138,11 +138,11 @@ interface PartsShopData {
     availableCount: number
     /**
      * Item price number
-     */
+     */ 
     price: number
     /**
      * Item description text
-     */
+     */ 
     condition: ItemCondition
     /**
      * Image source url
@@ -150,7 +150,7 @@ interface PartsShopData {
     imageSrc?: string | string[]
     /**
      * Item description text
-     */
+     */ 
     description?: string
     /**
      * Item external URL

@@ -6,7 +6,7 @@ import CopyLinkBadge from "./CopyLinkBadge"
 import Lightbox from "./Lightbox"
 
 function createMarkup(dirty: string) {
-  return { __html: dirty };
+    return { __html: dirty };
 }
 
 /**
@@ -20,13 +20,13 @@ function createMarkup(dirty: string) {
  */
 export default (item: PartsShopData, index: number) => {
     const [showModal, setShowModal] = useState(false)
-	const [lightboxToggler, setLightboxToggler] = useState(false)
+    const [lightboxToggler, setLightboxToggler] = useState(false)
 
     return (
         <Col
-            xs={{span: 10, offset: 1}}
-            md={{span: 6, offset: 0}}
-            lg={{span: 6, offset: 0}}
+            xs={{ span: 10, offset: 1 }}
+            md={{ span: 6, offset: 0 }}
+            lg={{ span: 6, offset: 0 }}
             className="flex-top searchableItem"
             key={`item-card-${index}`}
             parttitle={item.title}
@@ -35,16 +35,28 @@ export default (item: PartsShopData, index: number) => {
             partitemcondition={item.condition}>
             <Card>
                 {/* Part image */}
-                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : ""}}>
-                    {item.imageSrc &&
-                        <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
-                    }
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)}>
+                    {item.imageSrc ? (
+                        <img
+                            src={
+                                Array.isArray(item.imageSrc)
+                                    ? (item.imageSrc[0]?.startsWith("http") || item.imageSrc[0]?.startsWith("//") ? item.imageSrc[0] : `/.netlify/images?url=${item.imageSrc[0]}`)
+                                    : (item.imageSrc.startsWith("http") || item.imageSrc.startsWith("//") ? item.imageSrc : `/.netlify/images?url=${item.imageSrc}`)
+                            }
+                            alt={"Preview image of part, " + item.title}
+                            loading="lazy"
+                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                        />
+                    ) : null}
                 </div>
 
                 {/* Part image lightbox */}
                 {/* https://fslightbox.com/react */}
                 {item.imageSrc &&
-                    <Lightbox src={[item.imageSrc].flat().map((i) => `/.netlify/images?url=${i}`)} toggler={lightboxToggler} />
+                    <Lightbox
+                        src={[item.imageSrc].flat().map((i) => i.startsWith("http") || i.startsWith("//") ? i : `/.netlify/images?url=${i}`)}
+                        toggler={lightboxToggler}
+                    />
                 }
 
                 {/* Part type badges */}
@@ -53,10 +65,10 @@ export default (item: PartsShopData, index: number) => {
                         {item.featured &&
                             <Badge key={`item-card-${index}-pill-featured`} pill bg="dark">Featured Item</Badge>
                         }
-                        
+
                         <Badge pill bg="dark">{item.platform}</Badge>
                         <Badge pill bg="dark">{item.condition}</Badge>
-                        
+
                         {item.typeOfPart.map((p, pillIndex) => (
                             <Badge key={`item-card-${index}-pill-${pillIndex}`} pill bg="dark">{toTitleCase(p)}</Badge>
                         ))}
@@ -67,7 +79,7 @@ export default (item: PartsShopData, index: number) => {
                 <Stack className="display-over-top-left" direction="vertical" gap={1}>
                     <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(item.title)}`} />
                 </Stack>
-                
+
                 {/* Part information */}
                 <Card.Body>
                     <Card.Title as="h3" className="flex-center">{item.title}</Card.Title>
@@ -83,13 +95,13 @@ export default (item: PartsShopData, index: number) => {
                     {(item.externalUrl || item.description) &&
                         <Row className="flex-center full-width">
                             {item.description &&
-                                <Col xs={{span: 6}}>
+                                <Col xs={{ span: 6 }}>
                                     <Button variant="outline-info" onClick={() => setShowModal(true)} aria-label="Item description modal trigger">Item Description</Button>
                                 </Col>
                             }
 
                             {item.externalUrl &&
-                                <Col xs={{span: 6}}>
+                                <Col xs={{ span: 6 }}>
                                     <Button variant="outline-info" href={item.externalUrl} target="_blank">External Reference</Button>
                                 </Col>
                             }
@@ -108,9 +120,9 @@ export default (item: PartsShopData, index: number) => {
                             <Modal.Header>
                                 <Modal.Title>{item.title}</Modal.Title>
                             </Modal.Header>
-                            
+
                             <Modal.Body dangerouslySetInnerHTML={createMarkup(item.description)} />
-                            
+
                             <Modal.Footer>
                                 <Button variant="outline-info" onClick={() => setShowModal(false)}>
                                     Close

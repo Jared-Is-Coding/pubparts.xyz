@@ -19,9 +19,9 @@ export default (item: ItemData, index: number) => {
 
     return (
         <Col
-            xs={{span: 10, offset: 1}}
-            md={{span: 6, offset: 0}}
-            lg={{span: 4, offset: 0}}
+            xs={{ span: 10, offset: 1 }}
+            md={{ span: 6, offset: 0 }}
+            lg={{ span: 4, offset: 0 }}
             className="flex-center flex-top searchableItem"
             key={`item-card-${index}`}
             parttitle={item.title}
@@ -29,16 +29,28 @@ export default (item: ItemData, index: number) => {
             partfabricationmethods={item.fabricationMethod.join(",")}>
             <Card>
                 {/* Part image */}
-                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : ""}}>
-                    {item.imageSrc &&
-                        <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
-                    }
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)}>
+                    {item.imageSrc ? (
+                        <img
+                            src={
+                                Array.isArray(item.imageSrc)
+                                    ? (item.imageSrc[0]?.startsWith("http") || item.imageSrc[0]?.startsWith("//") ? item.imageSrc[0] : `/.netlify/images?url=${item.imageSrc[0]}`)
+                                    : (item.imageSrc.startsWith("http") || item.imageSrc.startsWith("//") ? item.imageSrc : `/.netlify/images?url=${item.imageSrc}`)
+                            }
+                            alt={"Preview image of part, " + item.title}
+                            loading="lazy"
+                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                        />
+                    ) : null}
                 </div>
-                
+
                 {/* Part image lightbox */}
                 {/* https://fslightbox.com/react */}
                 {item.imageSrc &&
-                    <Lightbox src={[item.imageSrc].flat().map((i) => `/.netlify/images?url=${i}`)} toggler={lightboxToggler} />
+                    <Lightbox
+                        src={[item.imageSrc].flat().map((i) => i.startsWith("http") || i.startsWith("//") ? i : `/.netlify/images?url=${i}`)}
+                        toggler={lightboxToggler}
+                    />
                 }
 
                 {/* Part type badges */}
@@ -58,7 +70,7 @@ export default (item: ItemData, index: number) => {
                 <Stack className="display-over-top-left" direction="vertical" gap={1}>
                     <CopyLinkBadge link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(item.title)}`} />
                 </Stack>
-                
+
                 {/* Part information */}
                 <Card.Body>
                     <Card.Title as="h3">{item.title}</Card.Title>

@@ -1,3 +1,4 @@
+require("dotenv").config();
 import type { GatsbyConfig } from "gatsby"
 import dotenv from "dotenv"
 
@@ -8,7 +9,7 @@ const config: GatsbyConfig = {
         title: "PubParts",
         description: "A collection of open source or otherwise aftermarket OneWheel parts.",
         image: "/favicon.ico",
-        siteUrl: process.env.SITE_URL
+        siteUrl: process.env.SITE_URL || `https://esk8cad.com`,
     },
     // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
     // If you use VSCode you can also use the GraphQL plugin

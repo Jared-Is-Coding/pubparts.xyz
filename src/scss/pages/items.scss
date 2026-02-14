@@ -1,6 +1,29 @@
 @import "../variables.scss";
 
 .page-items {
+    .container>.row {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+
+        // Reset Bootstrap Col default behaviors
+        >.col,
+        >[class*="col-"] {
+            width: 100% !important;
+            max-width: none !important;
+            flex: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        // Ensure the copyright card spans all columns
+        > :has(.full-width) {
+            grid-column: 1 / -1;
+        }
+    }
+
     .btn-group {
         flex-wrap: wrap;
         gap: 0.5rem;
@@ -13,13 +36,19 @@
     .card {
         background-color: $tertiary-color !important;
         border-radius: $card-border-radius !important;
-        margin-bottom: 20px;
+        margin-bottom: 0px !important; // Grid gap handles this
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        position: relative; // For absolute badges
 
         .display-over-top-right {
             position: absolute;
             align-items: flex-end;
             top: 5px;
             right: 5px;
+            z-index: 10;
         }
 
         .display-over-top-left {
@@ -27,17 +56,24 @@
             align-items: flex-start;
             top: 5px;
             left: 5px;
+            z-index: 10;
         }
 
         .card-img-holder {
             width: 100%;
-            height: 400px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 12px 12px 5px 5px;
+            aspect-ratio: 4 / 3;
+            height: auto !important;
+            background-color: rgba(0, 0, 0, 0.1); // Placeholder color
+            border-radius: $card-border-radius $card-border-radius 0 0;
             overflow: hidden;
             transition: all 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
         .card-img-holder:hover {
@@ -46,10 +82,30 @@
 
         .card-title {
             color: $secondary-color;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+
+            // Truncate long titles to 2 lines
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 3rem; // Ensures consistency even with 1-line titles
         }
 
         .card-body {
-            min-height: 3em;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 1.25rem;
+
+            .vstack,
+            .row {
+                margin-top: auto; // Aligns buttons/links to bottom
+            }
         }
 
         .vstack .card-link {

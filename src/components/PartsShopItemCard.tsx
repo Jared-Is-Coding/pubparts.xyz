@@ -45,7 +45,6 @@ export default (item: PartsShopData, index: number) => {
                             }
                             alt={"Preview image of part, " + item.title}
                             loading="lazy"
-                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
                         />
                     ) : null}
                 </div>

@@ -3013,6 +3013,23 @@ const allParts = [
         dropboxZipLastUpdated: "2026-02-06",
         platform: ["XR/Funwheel"]
     }
+, 
+{
+  "title": "Zipper Slider Replacement - V3 by MisterJ | Download free STL model | Printables.com",
+  "fabricationMethod": [
+    "3d Printed"
+  ],
+  "typeOfPart": [
+    "Handle"
+  ],
+  "imageSrc": "https://media.printables.com/media/prints/ca48113c-e3fd-48f5-b6f2-2a9e52d9a7c7/images/11833259_555f0af8-bd03-4967-a1ed-a5b8580b3739_54ac0c54-96fc-48fc-a056-2fa0f5fa382b/thumbs/cover/1200x630/jpg/zipper_v3_cover_43.jpg",
+  "externalUrl": "https://www.printables.com/model/1570671-zipper-slider-replacement-v3",
+  "dropboxUrl": "https://www.dropbox.com/scl/fi/9ke8hbjbi2csbxb70bg2u/Onewheel-Pint_XR-Gripples-6845242.zip?dl=0&e=1&file_subpath=%2FOnewheel+Pint_XR+Gripples+-+6845242%2Ffiles&rlkey=a3z4w3qdi0nrvuehdk2bpjmkx&st=t86oiyg0",
+  "dropboxZipLastUpdated": "2026-02-15",
+  "platform": [
+    "Miscellaneous Items"
+  ]
+}
 ] as ItemData[]
 
 const platform = (platformType: PlatformType) => {

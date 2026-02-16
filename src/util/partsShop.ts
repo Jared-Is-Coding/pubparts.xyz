@@ -17,7 +17,7 @@ const allPartsShopItems = [
         ],
         externalUrl: "/parts/xr?search=CNC%20PubBox%20V3.0",
         platform: ["XR/Funwheel"],
-        availableCount: 10,
+        availableCount: 11,
         description: `
             <p>All parts:</p>
             <ul>
@@ -487,6 +487,46 @@ const allPartsShopItems = [
         description: "Stock XR battery harness with most of the battery box ends chopped up or otherwise removed. Good for parts or splicing up for your own builds.",
         condition: "Used",
         price: 25
+    },
+    {
+        title: "C&R Air Pad for XR, Purple",
+        typeOfPart: ["Footpad"],
+        imageSrc: [
+            "/images/shop/airpad1.png",
+            "/images/shop/airpad2.png"
+        ],
+        platform: ["XR/Funwheel"],
+        availableCount: 1,
+        condition: "Used",
+        price: 50
+    },
+    {
+        title: "Thor300 with bad IMU",
+        typeOfPart: ["Controller"],
+        imageSrc: [
+            "/images/shop/thor300imu.png"
+        ],
+        externalUrl: "https://fungineers.us/products/thor-300-funwheel-controller-esc",
+        platform: ["VESC Electronics"],
+        availableCount: 1,
+        description: "Thor300 with a known bad IMU. Otherwise, turns on and operates normally. No other known issues.",
+        condition: "For Parts",
+        price: 100
+    },
+    {
+        title: "Thor400 with blown IC",
+        typeOfPart: ["Controller"],
+        imageSrc: [
+            "/images/shop/thor400ic1.png",
+            "/images/shop/thor400ic2.png",
+            "/images/shop/thor400ic3.png"
+        ],
+        externalUrl: "",
+        platform: ["VESC Electronics"],
+        availableCount: 1,
+        description: "Thor400 with a blown IC. Has never been installed in a board - This IC blew on first boot, with nothing connected but power and a button. No other known issues.",
+        condition: "For Parts",
+        price: 200
     }
 ] as PartsShopData[]
 

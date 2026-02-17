@@ -8,9 +8,9 @@ import { DiscordInvite, DiscordThread } from "../util/siteVariables"
  */
 export default () => (
     <Col
-        xs={{span: 12}}
-        md={{span: 12}}
-        lg={{span: 12}}
+        xs={{ span: 12 }}
+        md={{ span: 12 }}
+        lg={{ span: 12 }}
         key={`item-card-copyright`}>
         <div className="flex-center flex-top">
             <Card className="full-width">

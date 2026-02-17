@@ -24,9 +24,9 @@ export default (item: PartsShopData, index: number) => {
 
     return (
         <Col
-            xs={{span: 10, offset: 1}}
-            md={{span: 6, offset: 0}}
-            lg={{span: 6, offset: 0}}
+            xs={{ span: 10, offset: 1 }}
+            md={{ span: 6, offset: 0 }}
+            lg={{ span: 6, offset: 0 }}
             className="flex-top searchableItem"
             key={`item-card-${index}`}
             parttitle={item.title}
@@ -35,7 +35,7 @@ export default (item: PartsShopData, index: number) => {
             partitemcondition={item.condition}>
             <Card>
                 {/* Part image */}
-                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : ""}}>
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{ backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : "" }}>
                     {item.imageSrc &&
                         <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
                     }
@@ -83,13 +83,13 @@ export default (item: PartsShopData, index: number) => {
                     {(item.externalUrl || item.description) &&
                         <Row className="flex-center full-width">
                             {item.description &&
-                                <Col xs={{span: 6}}>
+                                <Col xs={{ span: 6 }}>
                                     <Button variant="outline-info" onClick={() => setShowModal(true)} aria-label="Item description modal trigger">Item Description</Button>
                                 </Col>
                             }
 
                             {item.externalUrl &&
-                                <Col xs={{span: 6}}>
+                                <Col xs={{ span: 6 }}>
                                     <Button variant="outline-info" href={item.externalUrl} target="_blank">External Reference</Button>
                                 </Col>
                             }

@@ -51,8 +51,8 @@ const Page: React.FC<PageProps> = () => {
 
                         <Col xs={12}>
                             {/* Search results headers */}
-                            <h2 id="itemListHeader" style={{display: "block"}}>Items</h2>
-                            <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
+                            <h2 id="itemListHeader" style={{ display: "block" }}>Items</h2>
+                            <h2 id="noResultsText" style={{ display: "none", minHeight: "200px" }}>No results.</h2>
 
                             <Row>
                                 {/* List parts */}

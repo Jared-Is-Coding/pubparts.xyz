@@ -186,7 +186,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                             type="button"
                             size="sm"
                             variant="outline-info"
-                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}}
+                            style={{ display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content" }}
                             onClick={() => clearSearch()}>
                             Clear Search <FaArrowRotateLeft />
                         </Button>
@@ -194,7 +194,7 @@ export default ({resourceList}: ResourceListSearchbarProps) => {
                         <CopyLinkButton
                             text="Copy This Search"
                             link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(searchText)}` + `&type=${uniqueResourceTypes.filter((t) => !!checkedTypeBoxes[t])}`}
-                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
+                            style={{ display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content" }} />
                     </Stack>
                 </Stack>
 

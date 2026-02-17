@@ -35,8 +35,8 @@ const Page: React.FC<PageProps> = () => {
                     <ResourceListSearchbar resourceList={codeRepositoriesResources} />
 
                     {/* Search results headers */}
-                    <h2 id="resourceListHeader" style={{display: "block"}}>Resources</h2>
-                    <h2 id="noResultsText" style={{display: "none", minHeight: "200px"}}>No results.</h2>
+                    <h2 id="resourceListHeader" style={{ display: "block" }}>Resources</h2>
+                    <h2 id="noResultsText" style={{ display: "none", minHeight: "200px" }}>No results.</h2>
 
                     <Row>
                         {/* List resources */}

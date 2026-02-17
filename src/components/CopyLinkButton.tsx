@@ -37,8 +37,8 @@ export default ({link, text, style}: CopyLinkButtonProps) => {
     return (
         <Button variant="outline-info" style={style} type="button" size="sm" onClick={() => copyLink()}>
             {text + " "}
-            <FaLink style={{animation: "fadeIn 0.25s linear"}} display={displayLink} />
-            <FaCheck style={{animation: "fadeOut 0.25s linear"}} display={displayCheck} />
+            <FaLink style={{ animation: "fadeIn 0.25s linear" }} display={displayLink} />
+            <FaCheck style={{ animation: "fadeOut 0.25s linear" }} display={displayCheck} />
         </Button>
     )
 }

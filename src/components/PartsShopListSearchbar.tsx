@@ -281,7 +281,7 @@ export default ({partList}: PartsShopListSearchbarProps) => {
                             type="button"
                             size="sm"
                             variant="outline-info"
-                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}}
+                            style={{ display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content" }}
                             onClick={() => clearSearch()}>
                             Clear Search <FaArrowRotateLeft />
                         </Button>
@@ -289,7 +289,7 @@ export default ({partList}: PartsShopListSearchbarProps) => {
                         <CopyLinkButton
                             text="Copy This Search"
                             link={!windowIsDefined() ? "#" : "http://" + window.location.host + window.location.pathname + `?search=${encodeURIComponent(searchText)}` + `&platform=${uniquePlatformTypes.filter((t) => !!checkedPlatformBoxes[t])}` + `&type=${uniquePartTypes.filter((t) => !!checkedTypeBoxes[t])}` + `&condition=${uniqueItemConditions.filter((f) => !!checkedItemConditionBoxes[f])}`}
-                            style={{display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content"}} />
+                            style={{ display: showCopySearchButton ? "initial" : "none", maxWidth: "max-content" }} />
                     </Stack>
                 </Stack>
 

@@ -25,7 +25,7 @@ export default ({ title, description, image }: MetaDataProps) => {
 
             {/* Site description */}
             <meta name="description" content={description || defaultDescription} />
-            <meta name="keywords" content="public, parts, pubparts, pubwheel, onewheel, pev, aftermarket"/>
+            <meta name="keywords" content="public, parts, pubparts, pubwheel, onewheel, pev, aftermarket" />
             
             {/* Site properties */}
             <meta property="og:type" content="website" />

@@ -33,9 +33,9 @@ export default (item: ItemData | ResourceData, index: number) => {
     }
 
     return (
-        <div   
+        <div
             className="searchableThing"
-            style={{display: "none"}}
+            style={{ display: "none" }}
             key={`search-modal-card-${index}`}>
             {item.title} <>(</>{
                 ((item as ItemData).platform ?? (item as ResourceData).typeOfResource)
@@ -47,7 +47,7 @@ export default (item: ItemData | ResourceData, index: number) => {
                             {i}
                         </a>
                     ))
-                    .reduce((p , c) => [p, " | ", c])
+                    .reduce((p, c) => [p, " | ", c])
             }<>)</>
         </div>
     )

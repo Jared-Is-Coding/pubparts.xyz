@@ -45,7 +45,7 @@ const Page: React.FC<PageProps> = () => {
                         <Col xs={12} md={6}>
                             <Card>
                                 {/* Part image */}
-                                <div className="card-img-holder" onClick={() => setPreviewLightboxToggler(!previewLightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : ""}}>
+                                <div className="card-img-holder" onClick={() => setPreviewLightboxToggler(!previewLightboxToggler)} style={{ backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : "" }}>
                                     {item.imageSrc &&
                                         <span role="img" aria-label={"Preview imagine of step i"}></span>
                                     }
@@ -103,7 +103,7 @@ const Page: React.FC<PageProps> = () => {
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep0LightboxToggler(!step0LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step0.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep0LightboxToggler(!step0LightboxToggler)} style={{ backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step0.jpg')` }}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 0"}></span>
                                             }
@@ -130,7 +130,7 @@ const Page: React.FC<PageProps> = () => {
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep1LightboxToggler(!step1LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step1.2.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep1LightboxToggler(!step1LightboxToggler)} style={{ backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step1.2.jpg')` }}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 1"}></span>
                                             }
@@ -158,7 +158,7 @@ const Page: React.FC<PageProps> = () => {
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep1LightboxToggler(!step1LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step1.2.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep1LightboxToggler(!step1LightboxToggler)} style={{ backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step1.2.jpg')` }}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 1"}></span>
                                             }
@@ -186,7 +186,7 @@ const Page: React.FC<PageProps> = () => {
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep2LightboxToggler(!step2LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step2.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep2LightboxToggler(!step2LightboxToggler)} style={{ backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step2.jpg')` }}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 2"}></span>
                                             }
@@ -207,7 +207,7 @@ const Page: React.FC<PageProps> = () => {
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep3LightboxToggler(!step3LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step3.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep3LightboxToggler(!step3LightboxToggler)} style={{ backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step3.jpg')` }}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 3"}></span>
                                             }
@@ -231,7 +231,7 @@ const Page: React.FC<PageProps> = () => {
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep4LightboxToggler(!step4LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step4.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep4LightboxToggler(!step4LightboxToggler)} style={{ backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step4.jpg')` }}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 4"}></span>
                                             }
@@ -252,7 +252,7 @@ const Page: React.FC<PageProps> = () => {
                                 <Col xs={12} md={4}>
                                     <Card>
                                         {/* Part image */}
-                                        <div className="card-img-holder" onClick={() => setStep5LightboxToggler(!step5LightboxToggler)} style={{backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step5.jpg')`}}>
+                                        <div className="card-img-holder" onClick={() => setStep5LightboxToggler(!step5LightboxToggler)} style={{ backgroundImage: `url('/.netlify/images?url=/images/shop/zhooks/step5.jpg')` }}>
                                             {item.imageSrc &&
                                                 <span role="img" aria-label={"Preview imagine of step 5"}></span>
                                             }

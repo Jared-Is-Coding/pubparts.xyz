@@ -17,9 +17,9 @@ import CopyLinkBadge from "./CopyLinkBadge"
 export default (resource: ResourceData, index: number) => {
     return (
         <Col
-            xs={{span: 12, offset: 0}}
-            md={{span: 12, offset: 0}}
-            lg={{span: 12, offset: 0}}
+            xs={{ span: 12, offset: 0 }}
+            md={{ span: 12, offset: 0 }}
+            lg={{ span: 12, offset: 0 }}
             className="searchableResource"
             key={`resource-card-${index}`}
             resourcetitle={resource.title}

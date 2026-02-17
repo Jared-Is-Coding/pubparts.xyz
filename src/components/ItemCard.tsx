@@ -19,9 +19,9 @@ export default (item: ItemData, index: number) => {
 
     return (
         <Col
-            xs={{span: 10, offset: 1}}
-            md={{span: 6, offset: 0}}
-            lg={{span: 4, offset: 0}}
+            xs={{ span: 10, offset: 1 }}
+            md={{ span: 6, offset: 0 }}
+            lg={{ span: 4, offset: 0 }}
             className="flex-center flex-top searchableItem"
             key={`item-card-${index}`}
             parttitle={item.title}
@@ -29,7 +29,7 @@ export default (item: ItemData, index: number) => {
             partfabricationmethods={item.fabricationMethod.join(",")}>
             <Card>
                 {/* Part image */}
-                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : ""}}>
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{ backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : "" }}>
                     {item.imageSrc &&
                         <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
                     }

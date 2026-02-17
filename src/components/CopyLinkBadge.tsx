@@ -35,8 +35,8 @@ export default ({link}: CopyLinkBadgeProps) => {
     return (
         <>
             <Badge pill bg="primary" onClick={() => copyLink()}>
-                <FaLink style={{animation: "fadeIn 0.25s linear"}} display={displayLink} />
-                <FaCheck style={{animation: "fadeOut 0.25s linear"}} display={displayCheck} />
+                <FaLink style={{ animation: "fadeIn 0.25s linear" }} display={displayLink} />
+                <FaCheck style={{ animation: "fadeOut 0.25s linear" }} display={displayCheck} />
             </Badge>
         </>
     )

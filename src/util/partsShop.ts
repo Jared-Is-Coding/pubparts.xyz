@@ -222,17 +222,6 @@ const allPartsShopItems = [
         price: 30
     },
     {
-        title: "Stock XR charger",
-        typeOfPart: ["Charger"],
-        imageSrc: "/images/shop/xr_charger.png",
-        externalUrl: "https://onewheel.com/products/xr-home-charger",
-        platform: ["XR/Funwheel"],
-        availableCount: 1,
-        description: "",
-        condition: "Like New",
-        price: 35
-    },
-    {
         title: "Finned Pubhubs Axle Block Covers (Pair)",
         typeOfPart: ["Axle Block"],
         imageSrc: "/images/shop/xr_ab_covers.png",

@@ -100,7 +100,7 @@ const allPartsShopItems = [
         typeOfPart: ["LED"],
         imageSrc: "/images/shop/led_plate.png",
         platform: ["XR/Funwheel"],
-        availableCount: -1,
+        availableCount: 1,
         description: "Helpful to mount loose LED strips to for use in the box",
         condition: "New",
         price: 10
@@ -279,16 +279,6 @@ const allPartsShopItems = [
         description: "Axle block covers for the Onewheel GT frame. Stock fit. These have some sweet cooling fins!",
         condition: "New",
         price: 35
-    },
-    {
-        title: "Fungineers Superflux stock axle blocks (Pair)",
-        typeOfPart: ["Axle Block"],
-        imageSrc: "/images/shop/sf_ab.png",
-        externalUrl: "https://fungineers.us/products/adapters",
-        platform: ["XR/Funwheel"],
-        availableCount: 2,
-        condition: "New",
-        price: 25
     },
     {
         title: "Onewheel XR Battery Mud Guard",

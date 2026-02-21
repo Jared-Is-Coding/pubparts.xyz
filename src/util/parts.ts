@@ -3027,6 +3027,16 @@ const allParts = [
         externalUrl: "https://www.printables.com/model/1593307",
         dropboxZipLastUpdated: "2026-02-09",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Warzon3: Ennoid LCM riser 4.5mm",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/2fa44914-9d1a-41a2-a868-794d43e3b0ed/images/12113629_ec83a3af-c3fb-40f2-ad7b-ce9e62944816_9e5c9c27-b186-4ffe-8b60-125b99d19b12/thumbs/inside/1280x960/jpg/rn_image_picker_lib_temp_77b5c9ce-c565-4a49-b7ce-8d4994d1d8c7.webp",
+        externalUrl: "https://www.printables.com/model/1610233",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/sj8pim307ev88rqp718pf/ennoid-lcm-riser-45mm-model_files.zip?rlkey=fdea7bq74wj9dhzv62tofbbdv&st=lbt3olwj&dl=0",
+        dropboxZipLastUpdated: "2026-02-21",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

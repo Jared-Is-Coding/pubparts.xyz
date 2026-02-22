@@ -70,7 +70,7 @@ const allPartsShopItems = [
         typeOfPart: ["Miscellaneous"],
         imageSrc: "/images/shop/goretex_patch.png",
         platform: ["Miscellaneous Items"],
-        availableCount: 57,
+        availableCount: 55,
         condition: "New",
         price: 2
     },
@@ -111,7 +111,7 @@ const allPartsShopItems = [
         imageSrc: "/images/shop/xr_cover_stock.png",
         externalUrl: "https://onewheel.com/products/xr-cable-cover",
         platform: ["XR/Funwheel"],
-        availableCount: 2,
+        availableCount: 1,
         condition: "Like New",
         price: 10
     },
@@ -356,7 +356,7 @@ const allPartsShopItems = [
         ],
         externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
         platform: ["XR/Funwheel"],
-        availableCount: 10,
+        availableCount: 9,
         description: `
             <p>What you'll get:</p>
             <ul>

@@ -184,7 +184,7 @@ const allResources = [
     {
         title: "Jet Fleet",
         typeOfResource: ["Vendor"],
-        externalUrl: "https://www.jetfleet.store/",
+        externalUrl: "https://jetfleetstore.com/",
         description: "\"Customized controllers for various personal electric vehicles (PEVs)\""
     },
     {

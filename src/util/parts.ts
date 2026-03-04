@@ -3010,7 +3010,7 @@ const allParts = [
         ],
         externalUrl: "https://www.printables.com/model/1587652",
         dropboxUrl: "https://www.dropbox.com/scl/fi/tbm53lxw54exdbstzgyyi/cnc-pubbox-v30-for-vesc-xrfunwheel-model_files.zip?rlkey=c6k2jspq4jwas1zyq7rokhjyi&st=5qm4xabz&dl=0",
-        dropboxZipLastUpdated: "2026-02-06",
+        dropboxZipLastUpdated: "2026-03-04",
         platform: ["XR/Funwheel"]
     },
     {

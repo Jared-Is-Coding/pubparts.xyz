@@ -3066,6 +3066,21 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/wkmy7fwrgfx05km26fc17/ennoid-lcm-mount-for-fungineers-cast-box-model_files.zip?rlkey=capa256g5wi0todni49sd0xrt&st=3jtsb4z6&dl=0",
         dropboxZipLastUpdated: "2026-03-12",
         platform: ["XR/Funwheel", "Miscellaneous Items"]
+    },
+    {
+        title: "Interference: Funwheel X7 - Mudguards (Front)",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Connector Cover"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/4ea01491-f8c4-4453-8414-44586cfc23df/images/12292004_a4a367d1-7c8e-4ba7-86e3-8cdfe8e1ec58_14fc4516-401b-4337-a3eb-37bcb0dab65b/thumbs/inside/1280x960/jpeg/whatsapp-image-2026-03-12-at-155112.webp",
+            "https://media.printables.com/media/prints/48720d44-4520-4e9a-99c3-1d4467aceedc/images/12292002_900a3ea6-abc5-4304-81c6-6489a34a115e_51a3c0a3-071e-4691-b0b1-4f9951e4bea7/thumbs/inside/1280x960/jpeg/whatsapp-image-2026-03-12-at-155112-1.webp",
+            "https://media.printables.com/media/prints/d7f7788c-f07b-4a74-9a45-56f6f74dc88d/images/12293023_b283ad79-5c9f-47f6-aa7c-82793cddd890_7f694870-08f2-4b53-a2d8-24b23a57f55f/thumbs/inside/1280x960/jpeg/whatsapp-image-2026-03-12-at-180825.webp",
+            "https://media.printables.com/media/prints/d28adf26-6485-4b9d-9c3f-eada086defdf/images/12292003_cc3ec5cf-b48e-4051-9765-30bc257c58c5_4490be06-1582-4772-9804-66889926c32e/thumbs/inside/1280x960/jpeg/whatsapp-image-2026-03-12-at-155112-2.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1635050",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/tpzu0r8vsfiwm9zh6u2lr/funwheel-x7-mudguards-front-model_files.zip?rlkey=adwj3f11xgu4rbgupcs2hzczt&st=asp3uwk6&dl=0",
+        dropboxZipLastUpdated: "2026-03-12",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

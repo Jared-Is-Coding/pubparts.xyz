@@ -3081,6 +3081,30 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/tpzu0r8vsfiwm9zh6u2lr/funwheel-x7-mudguards-front-model_files.zip?rlkey=adwj3f11xgu4rbgupcs2hzczt&st=asp3uwk6&dl=0",
         dropboxZipLastUpdated: "2026-03-12",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Pubparts: Slickies Dragan V2 Wedge Mounts",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad Attachment"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/d1111c44-d475-49bc-ab9f-35a91b1f6032/images/12294737_14019b42-5a0d-4a67-8136-ec7d11694cf6_2f1a20ed-0504-448f-9085-8f0efed7fae2/thumbs/inside/1280x960/jpg/3.webp",
+            "https://media.printables.com/media/prints/fbcadda5-a8f6-4ef3-809d-d2fdd6a70993/images/12108731_74923b9a-f479-4bde-b6a1-49bb0166e712_f7a02547-4f02-45a9-b9cb-705c0adb7471/thumbs/inside/1280x960/png/screenshot_1.webp",
+            "https://media.printables.com/media/prints/d7b95cb1-08be-4aaf-915d-085ece4d9017/images/11989846_1e43c32c-d6f8-43b8-bda8-4bb356fb2788_9e122b03-6f65-47b7-a65c-59b0d8c47dbf/thumbs/inside/1280x960/png/screenshot_1.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1593323",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/5n4jr1045zagopabnmnvu/slickies-dragan-v2-wedge-mounts-model_files.zip?rlkey=p0e5dnqdd3x6wmmjyq8ynkc0m&st=4efjz4h5&dl=0",
+        dropboxZipLastUpdated: "2026-03-12",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "BKB Voyager V1 Remote Shell and PCB Models",
+        fabricationMethod: ["3d Printed", "Other"],
+        typeOfPart: ["Remote"],
+        imageSrc: "https://media.printables.com/media/prints/634575/images/5021928_d8e928af-003a-4661-87bb-791c78c6d44f_8273c618-1622-4c43-8108-2331ed630421/thumbs/inside/1280x960/jpg/bkb-voyager-pic.webp",
+        externalUrl: "https://www.printables.com/model/634575",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/l5lidt31dfv8abcxen9l5/bkb-voyager-v1-remote-pcb-model_files.zip?rlkey=vv0nz2ticv1z532gfccsxluhj&st=r2bt47wx&dl=0",
+        dropboxZipLastUpdated: "2026-03-12",
+        platform: ["VESC Electronics"]
     }
 ] as ItemData[]
 

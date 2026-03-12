@@ -3037,6 +3037,35 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/sj8pim307ev88rqp718pf/ennoid-lcm-riser-45mm-model_files.zip?rlkey=fdea7bq74wj9dhzv62tofbbdv&st=lbt3olwj&dl=0",
         dropboxZipLastUpdated: "2026-02-21",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "GlowKitty: GX16 Universal Charge Port Plug or VESC Onewheel Funwheel",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Port Cover"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/6bb47ac1-f73f-4f21-a114-347ef1f47d3e/images/12284123_f19f34f3-0242-43a1-9052-2f3841f5bb1a_4771b24d-34a5-4a31-af5f-c87174de8a6d/thumbs/inside/1280x960/jpg/img_4154.webp",
+            "https://media.printables.com/media/prints/73226661-7969-4575-bbad-dd3adec1a2ec/images/12284122_54af6712-f6df-4140-ba57-9823fa00c1f2_0d17e548-f2b2-4a8f-82d2-ec6c2136e566/thumbs/inside/1280x960/jpg/img_4156.webp",
+            "https://media.printables.com/media/prints/3fbe86e7-d6ef-4273-852d-58f66fb7b897/images/12284204_73a02b54-840d-45ca-8911-7dabe65c0c51_4ea7d6e6-2855-49a9-aa5f-068f6b5ee5fc/thumbs/inside/1280x960/png/charge-port-plug-top.webp",
+            "https://media.printables.com/media/prints/ed873223-7653-45fc-9173-3128dc6d36fb/images/12284201_56f4f100-f9ca-4665-964d-c70f256386de_d71a83d9-4eae-4fa7-8fd3-1f8d1c62d46c/thumbs/inside/1280x960/png/port-plug-top.webp",
+            "https://media.printables.com/media/prints/6f0b28e7-50f4-4eac-83e3-406c237f6927/images/12284115_96cd5d23-6884-428d-a212-62c4fa7df3bb_00114dd6-078c-4212-8fe9-832883ebdcaa/thumbs/inside/1280x960/jpg/img_4196.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1634064",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/mbgeqwv4l36w0f78ysvu5/gx16-universal-chage-port-plug-or-vesc-onewheel-funwheel-model_files.zip?rlkey=2mqz49hauuucfxg9xtgagrau0&st=yr6i9b4v&dl=0",
+        dropboxZipLastUpdated: "2026-03-12",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "GlowKitty: Ennoid LCM mount for Fungineers cast box",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Adapter", "Bracket"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/02468796-76ab-42cd-ac4a-5275b78f5727/images/12284285_cdda1b35-00de-4603-aec7-cb29964d6bf5_4ebe89da-b06b-4325-bfb0-db8300139d46/thumbs/inside/1280x960/png/lcm-mount-minimal.webp",
+            "https://media.printables.com/media/prints/91a6830e-ae7e-4ae2-88f5-d6fb5b832069/images/12284292_0e64bca9-ee0c-477b-ace5-7ad38f10e448_382c384e-e202-41f8-b9ac-a51f04aadd54/thumbs/inside/1280x960/jpg/img_3978.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1634073",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/wkmy7fwrgfx05km26fc17/ennoid-lcm-mount-for-fungineers-cast-box-model_files.zip?rlkey=capa256g5wi0todni49sd0xrt&st=3jtsb4z6&dl=0",
+        dropboxZipLastUpdated: "2026-03-12",
+        platform: ["XR/Funwheel", "Miscellaneous Items"]
     }
 ] as ItemData[]
 

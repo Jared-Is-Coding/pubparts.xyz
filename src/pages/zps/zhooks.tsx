@@ -220,7 +220,10 @@ const Page: React.FC<PageProps> = () => {
                                                 Tightly fasten the wedge to the footpad using your M5 screws, going up from the bottom of the footpad into the wedge.
                                             </Card.Text>
                                             <Card.Text>
-                                                On the front wedge, for the screw near to the side, you may optionally send a screw down from the top of the wedge all the way down into the bumper. This will require a significantly longer M5 cap/flat head screw. Otherwise, go up through the footpad into the included M5 nut.
+                                                For Stompies footpads, depending on where the screw comes in the bottom of the footpad you may need a slightly shorter screw to tightly fasten the wedge (M5x20 should work in most cases).
+                                            </Card.Text>
+                                            <Card.Text>
+                                                On the front wedge, for the screw near to the side, you may optionally send a screw down from the top of the wedge all the way down into the bumper. This will require a significantly longer M5 cap/flat head screw. Otherwise, go up through the footpad into the included M5 nut with an M5x25 or M5x30 as necessary.
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>

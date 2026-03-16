@@ -3119,6 +3119,19 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/7m2yu7ukcz87qggj2hluf/New-xt60-connector-clip-4695054.zip?rlkey=pq5lyk0t5kcnglor4owge0g7w&st=2h4dx28f&dl=0",
         dropboxZipLastUpdated: "2026-03-16",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Interference: Bolt Organizer - X7 Specific",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/3701a6b8-67f9-41e1-9443-e607f33d3b66/images/12299128_0443f5da-ffdb-40be-977c-c66af25a25fa_a13c675c-6e57-4d15-bfc7-93f88a55f4d6/thumbs/inside/1280x960/jpeg/whatsapp-image-2026-03-13-at-141247.webp",
+            "https://media.printables.com/media/prints/43c56c88-ba97-43a0-8adf-4aaceeeecd2b/images/12299155_8da7dc44-7b75-4607-8b03-5b2d73de5a0f_a0dfc1fa-570e-4b64-abf1-724502e0cee4/thumbs/inside/1280x960/png/x7_series_diagram_final_1.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1636186",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/l8abr2apwfwipw1ggbm60/bolt-organiser-x7-specific-model_files.zip?rlkey=rhbokap3jz5emexf6n003f9n4&st=gdah8b7y&dl=0",
+        dropboxZipLastUpdated: "2026-03-16",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

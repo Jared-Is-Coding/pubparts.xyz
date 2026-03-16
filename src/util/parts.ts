@@ -3105,6 +3105,20 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/l5lidt31dfv8abcxen9l5/bkb-voyager-v1-remote-pcb-model_files.zip?rlkey=vv0nz2ticv1z532gfccsxluhj&st=r2bt47wx&dl=0",
         dropboxZipLastUpdated: "2026-03-12",
         platform: ["VESC Electronics"]
+    },
+    {
+        title: "New xt60 connector clip",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Bracket"],
+        imageSrc: [
+            "https://cdn.thingiverse.com/assets/26/28/84/fb/d2/large_display_IMG_20201223_101520.jpg",
+            "https://cdn.thingiverse.com/assets/f6/f6/48/9e/cc/large_display_IMG_20201223_101550.jpg",
+            "https://cdn.thingiverse.com/assets/51/42/8b/02/df/large_display_xt60_clip.png"
+        ],
+        externalUrl: "https://www.thingiverse.com/thing:4695054",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/7m2yu7ukcz87qggj2hluf/New-xt60-connector-clip-4695054.zip?rlkey=pq5lyk0t5kcnglor4owge0g7w&st=2h4dx28f&dl=0",
+        dropboxZipLastUpdated: "2026-03-16",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

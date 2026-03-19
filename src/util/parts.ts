@@ -3132,6 +3132,21 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/l8abr2apwfwipw1ggbm60/bolt-organiser-x7-specific-model_files.zip?rlkey=rhbokap3jz5emexf6n003f9n4&st=gdah8b7y&dl=0",
         dropboxZipLastUpdated: "2026-03-16",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Dreadpool: X7LR WheelRoller",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Footpad Attachment", "Miscellaneous"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/c90bc808-9be4-4d1d-8336-89ef20ab7dc9/images/12101476_8800e70b-00f3-4a28-ab42-ff2528d5d6c6_62049fd9-bdc8-4ddf-822f-aedbb1541f24/thumbs/inside/1280x960/jpg/pxl_20260220_000439295.webp",
+            "https://media.printables.com/media/prints/c90bc808-9be4-4d1d-8336-89ef20ab7dc9/images/12101476_8800e70b-00f3-4a28-ab42-ff2528d5d6c6_2ce372f0-8af1-4571-8e01-f02cdebfcd0e/thumbs/inside/1280x960/jpg/pxl_20260220_000442393.webp",
+            "https://media.printables.com/media/prints/c90bc808-9be4-4d1d-8336-89ef20ab7dc9/images/12101476_8800e70b-00f3-4a28-ab42-ff2528d5d6c6_f352fc4b-af0a-4774-8755-71f69ef835b9/thumbs/inside/1280x960/jpg/pxl_20260220_000501437.webp",
+            "https://media.printables.com/media/prints/c90bc808-9be4-4d1d-8336-89ef20ab7dc9/images/12101476_8800e70b-00f3-4a28-ab42-ff2528d5d6c6_aa717858-39c7-4d00-981d-bc594aed6142/thumbs/inside/1280x960/jpg/pxl_20260220_000451679.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1503357",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/5tpm3m2zn1yleh5exvkb8/x7lr-wheelroller-remix-of-morelykerts-wheelstand-20-updated-model_files.zip?rlkey=vdnzshpjigurtj8n1m29artiw&st=w1lv5p8i&dl=0",
+        dropboxZipLastUpdated: "2026-03-19",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

@@ -3171,6 +3171,21 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/4g018gq4itnuvntj6zapc/switchcraft-cap-short-for-vesc-model_files.zip?rlkey=dyxecuqjdhn26djvt0xol77bc&st=nzjxv9ru&dl=0",
         dropboxZipLastUpdated: "2026-03-26",
         platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "PubParts: MatixBuilt XR Rails to TFL XL Drop Top Fender Top Piece Adapter",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Fender", "Adapter"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/2072772d-0469-4c88-9a01-01f055599989/images/12417565_d38a8507-76c6-41d0-be90-de9033e7c370_71511dd9-c77b-491e-bde5-a50f4c3771cb/thumbs/inside/1280x960/jpg/1.webp",
+            "https://media.printables.com/media/prints/01cbdace-4be1-4b90-9801-f98cd36da174/images/12417564_84340191-ccb2-413f-a8cf-cc1f73bd1999_4e22b807-2141-44f0-8280-73e738e8a7ad/thumbs/inside/1280x960/jpg/2.webp",
+            "https://media.printables.com/media/prints/a1cfcd1b-55ce-4eb5-818f-7de62e413743/images/12417563_b3e91fa3-60d3-46fa-9b82-fba3fa863ac2_76c80d0d-02a8-4517-af88-054eaf71559a/thumbs/inside/1280x960/jpg/3.webp",
+            "https://media.printables.com/media/prints/2486184a-6ba3-40fa-9b18-02e25d4f77b3/images/12417566_9f7ae508-70ed-40ea-871c-721d7eb70ac6_18aade12-9492-499f-a8d2-abe1dae18cd2/thumbs/inside/1280x960/jpg/4.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1652362",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/35mi2xyenrua6dtha9il2/matixbuilt-xr-rails-to-tfl-xl-drop-top-fender-top-piece-adapter-model_files.zip?rlkey=rxn3916pg2vq1udzd4tkd8q04&st=nfp2hbzf&dl=0",
+        dropboxZipLastUpdated: "2026-03-27",
+        platform: ["XR/Funwheel"]
     }
 ] as ItemData[]
 

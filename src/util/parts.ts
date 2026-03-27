@@ -3147,6 +3147,30 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/5tpm3m2zn1yleh5exvkb8/x7lr-wheelroller-remix-of-morelykerts-wheelstand-20-updated-model_files.zip?rlkey=vdnzshpjigurtj8n1m29artiw&st=w1lv5p8i&dl=0",
         dropboxZipLastUpdated: "2026-03-19",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Nexinity: PIDZOOM HW170W Charger Bumpers",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/5f59428e-2050-46ed-915d-3495576d2249/images/12397578_7d1b2fe5-e74a-4228-a1db-d794daac498c_0cad2b32-3acc-4ee8-bb0e-df9b81150d2c/thumbs/inside/1280x960/jpg/img_2423.webp",
+            "https://media.printables.com/media/prints/c4cfd146-87db-494d-87be-42bf984e0c1c/images/12397579_a8f10e47-6d73-497e-95be-2e54d64984bb_f557c7df-dd2a-441c-9ec5-5b167496ffd8/thumbs/inside/1280x960/jpg/img_2424.webp",
+            "https://media.printables.com/media/prints/4596a41f-1ce4-4edc-a10d-6efcb362c482/images/12397580_8bc4881c-ad3f-4e7d-b314-55b0566b40eb_0304a074-429f-457c-98da-8e0703fad9fc/thumbs/inside/1280x960/jpg/img_2425.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1649404",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/aoamykh2notd458gue0pr/pidzoom-hw170w-charger-bumpers-model_files.zip?rlkey=j4lm3vfktzel1t4jge9wfwosj&st=bmmtka7s&dl=0",
+        dropboxZipLastUpdated: "2026-03-26",
+        platform: ["Miscellaneous Items"]
+    },
+    {
+        title: "Mrmilbe: Short Switchcraft Cap for VESC",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: "https://media.printables.com/media/prints/545c522c-bdbc-4072-b9ff-a8610b9726ae/images/12397515_c137c0af-27cb-4bf5-850e-5164ade48802_f5d1f9bf-5da3-4393-9d5a-68d14f6416e5/thumbs/inside/1280x960/png/switchcraft.webp",
+        externalUrl: "https://www.printables.com/model/1649391",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/4g018gq4itnuvntj6zapc/switchcraft-cap-short-for-vesc-model_files.zip?rlkey=dyxecuqjdhn26djvt0xol77bc&st=nzjxv9ru&dl=0",
+        dropboxZipLastUpdated: "2026-03-26",
+        platform: ["Miscellaneous Items"]
     }
 ] as ItemData[]
 

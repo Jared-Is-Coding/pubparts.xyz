@@ -17,7 +17,7 @@ const allPartsShopItems = [
         ],
         externalUrl: "/parts/xr?search=CNC%20PubBox%20V3.0",
         platform: ["XR/Funwheel"],
-        availableCount: 11,
+        availableCount: 3,
         description: `
             <p>All parts:</p>
             <ul>
@@ -60,6 +60,92 @@ const allPartsShopItems = [
                 </li>
             </ul>
             <p>For a box set with both parts packs, that's $280 total + shipping.</p>
+        `,
+        condition: "New",
+        price: 225,
+        featured: true
+    },
+    {
+        title: "Discounted BLUE anodized CNC PubBox V2.2 [**slightly oversized GX16 hole - defect**] with lid that will need countersinking, window, and optional parts packs",
+        typeOfPart: ["Controller Box"],
+        imageSrc: ["/images/shop/orphan_pubbox.png"],
+        platform: ["XR/Funwheel"],
+        availableCount: 1,
+        description: `
+            <p>All parts:</p>
+            <ul>
+                <li>6061 anodized BLUE PubBox V2.2 [**slightly oversized GX16 hole - defect**]</li>
+                <li>6061 lid, without countersunk holes</li>
+                <li>Acrylic window</li>
+            </ul>
+            <p>This offering is only for the parts listed above and does not include hardware and printed pieces. If you're interested in those, I'm able to put together packs to include as requested, of the following:</p>
+            <ul>
+                <li>
+                    $15 - Printed Pack
+                    <ul>
+                        <li>1 x Lid gasket in black TPU</li>
+                        <li>1 x Unified cable cover (connector splash guard) in black PETG</li>
+                        <li>1 x Set of TPU rail spacers</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    $40 - Hardware Pack
+                    <ul>
+                        <li>4 x 10-32 3/4" countersunk bolts for rail mounting</li>
+                        <li>24 x M3x8 countersunk bolts for lid</li>
+                        <li>1 x GX16-4 charge port</li>
+                        <li>1 x 19x1 power button with 12V White LED</li>
+                        <li>1 x 6 pin footpad switchcraft connector</li>
+                        <li>2 x 20mm glands</li>
+                        <li>1 x Goretex vent patch</li>
+                    </ul>
+                </li>
+            </ul>
+        `,
+        condition: "New",
+        price: 175,
+        featured: true
+    },
+    {
+        title: "BLUE anodized CNC PubBox V2.2 with lid, window, and optional parts packs",
+        typeOfPart: ["Controller Box"],
+        imageSrc: ["/images/shop/orphan_pubbox.png"],
+        platform: ["XR/Funwheel"],
+        availableCount: 1,
+        description: `
+            <p>All parts:</p>
+            <ul>
+                <li>6061 anodized blue Pubbox V2.2</li>
+                <li>6061 lid with countersunk holes</li>
+                <li>Acrylic window</li>
+            </ul>
+            <p>This offering is only for the parts listed above and does not include hardware and printed pieces. If you're interested in those, I'm able to put together packs to include as requested, of the following:</p>
+            <ul>
+                <li>
+                    $15 - Printed Pack
+                    <ul>
+                        <li>1 x Lid gasket in black TPU</li>
+                        <li>1 x Unified cable cover (connector splash guard) in black PETG</li>
+                        <li>1 x Set of TPU rail spacers</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    $40 - Hardware Pack
+                    <ul>
+                        <li>4 x 10-32 3/4" countersunk bolts for rail mounting</li>
+                        <li>24 x M3x8 countersunk bolts for lid</li>
+                        <li>1 x GX16-4 charge port</li>
+                        <li>1 x 19x1 power button with 12V White LED</li>
+                        <li>1 x 6 pin footpad switchcraft connector</li>
+                        <li>2 x 20mm glands</li>
+                        <li>1 x Goretex vent patch</li>
+                    </ul>
+                </li>
+            </ul>
         `,
         condition: "New",
         price: 225,
@@ -356,7 +442,7 @@ const allPartsShopItems = [
         ],
         externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
         platform: ["XR/Funwheel"],
-        availableCount: 9,
+        availableCount: 6,
         description: `
             <p>What you'll get:</p>
             <ul>

@@ -61,6 +61,7 @@ export default ({isHomepage}: NavbarProps) => {
                             <NavDropdown.Item href="/parts/xrclassic" target="_self">XR Classic</NavDropdown.Item>
                             <NavDropdown.Item href="/parts/misc" target="_self">Miscellaneous Items</NavDropdown.Item>
                             <NavDropdown.Item href="/parts/electronics" target="_self">VESC Electronics</NavDropdown.Item>
+                            <NavDropdown.Item href="/zps" target="_self">ZiNc's Parts Shop</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Resources" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-resources-dropdown">
                             <NavDropdown.Item href="/resources/applications" target="_self">Applications</NavDropdown.Item>

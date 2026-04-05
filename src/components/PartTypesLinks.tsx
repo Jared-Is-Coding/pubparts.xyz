@@ -14,7 +14,8 @@ export default () => {
         { href: "/parts/xr", label: "XR/Funwheel" },
         { href: "/parts/xrclassic", label: "XR Classic" },
         { href: "/parts/misc", label: "Miscellaneous Items" },
-        { href: "/parts/electronics", label: "VESC Electronics" }
+        { href: "/parts/electronics", label: "VESC Electronics" },
+        { href: "/zps", label: "ZiNc's Parts Shop" }
     ]
 
     return (

@@ -17,7 +17,7 @@ const allPartsShopItems = [
         ],
         externalUrl: "/parts/xr?search=CNC%20PubBox%20V3.0",
         platform: ["XR/Funwheel"],
-        availableCount: 3,
+        availableCount: 1,
         description: `
             <p>All parts:</p>
             <ul>
@@ -442,7 +442,7 @@ const allPartsShopItems = [
         ],
         externalUrl: "/parts/xr?search=PubParts:%20Finned%20Clamping%20SuperFlux/HyperCore%20to%20XR%20Rails",
         platform: ["XR/Funwheel"],
-        availableCount: 6,
+        availableCount: 3,
         description: `
             <p>What you'll get:</p>
             <ul>

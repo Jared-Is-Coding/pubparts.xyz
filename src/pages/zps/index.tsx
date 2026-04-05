@@ -8,6 +8,7 @@ import SiteMetaData from "../../components/SiteMetaData"
 import "../../scss/pages/shop.scss"
 import allPartsShopItems from "../../util/partsShop"
 import { FaArrowLeft } from "react-icons/fa6"
+import SiteNavbar from "../../components/SiteNavbar"
 
 export const Head: HeadFC = () => (
     <>
@@ -21,19 +22,17 @@ export const Head: HeadFC = () => (
 const Page: React.FC<PageProps> = () => {
     return (
         <>
-            <main className="page-items">
+            <header>
+                <SiteNavbar />
+
                 <h1 className="flex-center">
                     ZiNc's Parts Shop
                 </h1>
-
+            </header>
+        
+            <main className="page-items">
                 <Container>
                     <Row>
-                        <Col xs={12}>
-                            <p className="full-width">
-                                <Button className="full-width" href="/" variant="outline-info" type="button" size="sm"><FaArrowLeft /> Back to Pubparts</Button>
-                            </p>
-                        </Col>
-
                         <Col xs={12}>
                             <p>This is a collection of parts I'm personally selling - Buyer pays shipping unless otherwise noted. If you're interested in something here, reach out to me on Discord at <code>iam_zinc</code> and include:</p>
                             <ul>

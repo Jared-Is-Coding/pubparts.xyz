@@ -24,11 +24,14 @@
         // "useDefineForClassFields": true,                  /* Emit ECMAScript-standard-compliant class fields. */
     
         /* Modules */
-        "module": "esnext",                                  /* Specify what module code is generated. */
+        "module": "nodenext",                               /* Use Node's modern module emit mode for compatibility with node-style resolution. */
         // "rootDir": "./",                                  /* Specify the root folder within your source files. */
-        "moduleResolution": "node",                          /* Specify how TypeScript looks up a file from a given module specifier. */
-        // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
-        // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
+        "moduleResolution": "nodenext",                     /* Use modern Node resolution without deprecated node10 behavior. */
+        "paths": {
+            "@scss/*": ["./src/scss/*"],
+            "@components/*": ["./src/components/*"],
+            "@util/*": ["./src/util/*"]
+        },                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
         // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
         // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
         // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */

@@ -1,14 +1,14 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import React from "react"
 import { Container, Row } from "react-bootstrap"
-import CopyrightCard from "../../components/CopyrightCard"
-import ItemCard from "../../components/ItemCard"
-import ItemListSearchbar from "../../components/ItemListSearchbar"
-import SiteFooter from "../../components/SiteFooter"
-import SiteMetaData from "../../components/SiteMetaData"
-import SiteNavbar from "../../components/SiteNavbar"
-import "../../scss/pages/items.scss"
-import { floatwheelParts } from "../../util/parts"
+import CopyrightCard from "@components/CopyrightCard"
+import ItemCard from "@components/ItemCard"
+import ItemListSearchbar from "@components/ItemListSearchbar"
+import SiteFooter from "@components/SiteFooter"
+import SiteMetaData from "@components/SiteMetaData"
+import SiteNavbar from "@components/SiteNavbar"
+import "@scss/pages/items.scss"
+import { floatwheelParts } from "@util/parts"
 
 export const Head: HeadFC = () => (
     <>

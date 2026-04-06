@@ -1,4 +1,5 @@
-import type { CreatePagesArgs } from "gatsby"
+import path from "path"
+import type { CreatePagesArgs, CreateWebpackConfigArgs } from "gatsby"
 
 exports.createPages = ({ actions }: CreatePagesArgs) => {
     const { createRedirect } = actions
@@ -21,4 +22,16 @@ exports.createPages = ({ actions }: CreatePagesArgs) => {
             redirectInBrowser: true
         })
     }
+}
+
+exports.onCreateWebpackConfig = ({ actions }: CreateWebpackConfigArgs) => {
+    actions.setWebpackConfig({
+        resolve: {
+            alias: {
+                "@scss": path.resolve(__dirname, "src/scss"),
+                "@components": path.resolve(__dirname, "src/components"),
+                "@util": path.resolve(__dirname, "src/util")
+            }
+        }
+    })
 }

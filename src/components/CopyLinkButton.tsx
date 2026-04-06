@@ -1,7 +1,7 @@
 import React, { CSSProperties, useState } from "react"
 import { Button } from "react-bootstrap"
 import { FaCheck, FaLink } from "react-icons/fa6"
-import "../scss/animations.scss"
+import "@scss/animations.scss"
 
 type CopyLinkButtonProps = {
     link: string

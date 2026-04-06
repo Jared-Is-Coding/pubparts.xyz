@@ -455,7 +455,7 @@ const allPartsShopItems = [
             <ul>
                 <li>A ball end metric hex set</li>
                 <li>Axle bolts for mounting your motor</li>
-                <li>Rail bolts for mounting to your rail</li>
+                <li>Rail bolts for mounting to your rail - These should be 3/4" 5/16-18 bolts</li>
             </ul>
 
             <p>These are made from <a target="_blank" href="https://www.printables.com/model/1120000">my remix of Auden's clamping blocks</a> and we've already run a couple batches of them. They're solid, I love the look of them, and they've worked great for hundreds of miles to secure my rails to the axle!</p>

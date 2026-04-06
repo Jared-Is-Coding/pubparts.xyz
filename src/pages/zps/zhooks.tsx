@@ -2,11 +2,11 @@ import { type HeadFC, type PageProps } from "gatsby"
 import React, { useState } from "react"
 import { Button, Card, Col, Container, Row } from "react-bootstrap"
 import { FaArrowLeft } from "react-icons/fa6"
-import Lightbox from "../../components/Lightbox"
-import SiteFooter from "../../components/SiteFooter"
-import SiteMetaData from "../../components/SiteMetaData"
-import "../../scss/pages/shop.scss"
-import allPartsShopItems from "../../util/partsShop"
+import Lightbox from "@components/Lightbox"
+import SiteFooter from "@components/SiteFooter"
+import SiteMetaData from "@components/SiteMetaData"
+import "@scss/pages/shop.scss"
+import allPartsShopItems from "@util/partsShop"
 
 export const Head: HeadFC = () => (
     <>

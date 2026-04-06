@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Badge } from "react-bootstrap"
 import { FaCheck, FaLink } from "react-icons/fa6"
-import "../scss/animations.scss"
+import "@scss/animations.scss"
 
 type CopyLinkBadgeProps = {
     link: string

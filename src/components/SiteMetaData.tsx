@@ -1,6 +1,6 @@
 import React from "react"
 import useMetaData from "../hooks/useMetaData"
-import "../scss/styles.scss"
+import "@scss/styles.scss"
 
 type MetaDataProps = {
     title?: string

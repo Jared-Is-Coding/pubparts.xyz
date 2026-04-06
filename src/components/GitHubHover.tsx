@@ -1,7 +1,7 @@
 import React from "react"
 import { OverlayTrigger, Tooltip } from "react-bootstrap"
 import { FaGithub } from "react-icons/fa6"
-import { GithubRepository } from "../util/siteVariables"
+import { GithubRepository } from "@util/siteVariables"
 
 /**
  * Creates a floating icon

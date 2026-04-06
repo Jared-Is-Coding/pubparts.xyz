@@ -2,11 +2,11 @@ import { StaticImage } from "gatsby-plugin-image"
 import React, { useState } from "react"
 import { Button, Container, Modal, Nav, Navbar, NavDropdown, Stack } from "react-bootstrap"
 import { FaBars, FaMagnifyingGlass } from "react-icons/fa6"
-import { DiscordInvite, DiscordThread } from "../util/siteVariables"
+import { DiscordInvite, DiscordThread } from "@util/siteVariables"
 import SearchModalCard from "./SearchModalCard"
 import SearchModalSearchbar from "./SearchModalSearchbar"
-import allParts from "../util/parts"
-import allResources from "../util/resources"
+import allParts from "@util/parts"
+import allResources from "@util/resources"
 
 type NavbarProps = {
     isHomepage?: boolean

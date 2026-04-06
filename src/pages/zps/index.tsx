@@ -1,14 +1,13 @@
 import { type HeadFC, type PageProps } from "gatsby"
 import React from "react"
-import { Button, Col, Container, Row } from "react-bootstrap"
-import PartsShopItemCard from "../../components/PartsShopItemCard"
-import PartsShopListSearchbar from "../../components/PartsShopListSearchbar"
-import SiteFooter from "../../components/SiteFooter"
-import SiteMetaData from "../../components/SiteMetaData"
-import "../../scss/pages/shop.scss"
-import allPartsShopItems from "../../util/partsShop"
-import { FaArrowLeft } from "react-icons/fa6"
-import SiteNavbar from "../../components/SiteNavbar"
+import { Col, Container, Row } from "react-bootstrap"
+import PartsShopItemCard from "@components/PartsShopItemCard"
+import PartsShopListSearchbar from "@components/PartsShopListSearchbar"
+import SiteFooter from "@components/SiteFooter"
+import SiteMetaData from "@components/SiteMetaData"
+import SiteNavbar from "@components/SiteNavbar"
+import "@scss/pages/shop.scss"
+import allPartsShopItems from "@util/partsShop"
 
 export const Head: HeadFC = () => (
     <>

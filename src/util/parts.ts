@@ -2673,13 +2673,13 @@ const allParts = [
         platform: ["XR/Funwheel"]
     },
     {
-        title: "Warzon3: Flightpack Torque Box lids",
+        title: "Warzon3: Flightpack Lids",
         fabricationMethod: ["CNC"],
         typeOfPart: ["Battery Box"],
         imageSrc: "https://flightpack.eu/cdn/shop/files/rn-image_picker_lib_temp_09053445-18f4-4d1c-bd1e-fc88b61548f6.jpg?v=1752190002&width=713",
         externalUrl: "https://www.printables.com/model/1438970",
-        dropboxUrl: "https://www.dropbox.com/scl/fi/0w3x4m30n8l2jy2ygy8vn/flightpack-torquebox-lids-model_files.zip?rlkey=4vhxq7zjqm2nlw53brufbpgsh&st=9rewp4v9&dl=0",
-        dropboxZipLastUpdated: "2025-10-09",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/nqmkyq3vfsaiuc3owpbfc/flightpack-lids-model_files.zip?rlkey=7d6i4rz3zz003juynu02uz8kp&st=4v3vjzbe&dl=0",
+        dropboxZipLastUpdated: "2026-04-09",
         platform: ["XR/Funwheel"]
     },
     {

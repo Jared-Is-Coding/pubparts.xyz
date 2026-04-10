@@ -3186,6 +3186,49 @@ const allParts = [
         dropboxUrl: "https://www.dropbox.com/scl/fi/35mi2xyenrua6dtha9il2/matixbuilt-xr-rails-to-tfl-xl-drop-top-fender-top-piece-adapter-model_files.zip?rlkey=rxn3916pg2vq1udzd4tkd8q04&st=nfp2hbzf&dl=0",
         dropboxZipLastUpdated: "2026-03-27",
         platform: ["XR/Funwheel"]
+    },
+    {
+        title: "Nyeuzx: Falcon II Parts",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/751f44c1-dcf0-4f0b-abfe-49698e834bfb/images/12597898_b19879ec-186b-43cc-9441-3a132a3e9b8d_35c2ce61-3993-45ef-92c0-0bb5072c44f7/thumbs/inside/1280x960/png/bracket-3.webp",
+            "https://media.printables.com/media/prints/a43c1b26-5507-4be8-9457-a8f69e8039ee/images/12588535_50f432de-9748-4e61-b594-750cf595d003_5d78125b-7d94-40f3-a856-8154f3993c73/thumbs/inside/1280x960/png/insert.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1676694",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/smwafycaja018mf1sdviw/falcon-ii-parts-model_files.zip?rlkey=aiijxx0nw1tb29npkf28aexi9&st=wcp11rl0&dl=0",
+        dropboxZipLastUpdated: "2026-04-10",
+        platform: ["Miscellaneous Items", "XR/Funwheel", "GT/GT-S"]
+    },
+    {
+        title: "Ducman: 20S1P Spacers for PintX/S",
+        fabricationMethod: ["3d Printed"],
+        typeOfPart: ["Miscellaneous", "Battery Box", "Battery Assembly"],
+        imageSrc: [
+            "https://makerworld.bblmw.com/makerworld/model/USa7ade3caaaa2a8/design/2026-01-02_dbe7a889ba97b8.jpeg?x-oss-process=image/resize,w_1000/format,webp",
+            "https://makerworld.bblmw.com/makerworld/model/USa7ade3caaaa2a8/design/2026-01-02_30ddf80aa5aa6.jpeg?x-oss-process=image/resize,w_1000/format,webp",
+            "https://makerworld.bblmw.com/makerworld/model/USa7ade3caaaa2a8/design/2026-01-02_66fbff09216ce.jpeg?x-oss-process=image/resize,w_1000/format,webp",
+            "https://makerworld.bblmw.com/makerworld/model/USa7ade3caaaa2a8/design/2026-01-02_4cacffc5ad1e7.jpeg?x-oss-process=image/resize,w_1000/format,webp",
+            "https://makerworld.bblmw.com/makerworld/model/USa7ade3caaaa2a8/design/2026-01-02_97cd20cc6706d8.jpeg?x-oss-process=image/resize,w_1000/format,webp"
+        ],
+        externalUrl: "https://makerworld.com/en/models/2191601",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/4hzsrw2vsuded7bjog3m6/20S1P-Spacers-for-PintX_S.zip?rlkey=bcxdkxomu5xprhyhl0ns5suf1&st=b8h0qol2&dl=0",
+        dropboxZipLastUpdated: "2026-04-10",
+        platform: ["Pint/X/S"]
+    },
+    {
+        title: "Zat: VOW GT V3 Sym Box Lid with Ennoid MK8/MK8 Pro Mount",
+        fabricationMethod: ["CNC"],
+        typeOfPart: ["Battery Box", "Controller Box"],
+        imageSrc: [
+            "https://media.printables.com/media/prints/07a1642d-52c3-4b69-b374-e1d3b7c50ad1/images/12602927_0413e359-f375-4be9-a7f5-91d434b514db_826b4a2a-694d-4ccf-be33-9cdb3a6d4d71/thumbs/inside/1280x960/jpg/img_7813.webp",
+            "https://media.printables.com/media/prints/b5e351bf-116c-48d4-af41-6a34c97f3e71/images/12602928_82db470e-b670-49fe-9d28-926c5713e97e_132a9427-9e66-46da-be67-e0a63bd16733/thumbs/inside/1280x960/jpg/img_7812.webp",
+            "https://media.printables.com/media/prints/6dacbce7-1681-4bba-8a36-e04ceb82815f/images/12602947_a5a8a29f-77ec-41f0-a65c-299b72417a75_3fdacd93-6524-4ab3-994c-743f717140b5/thumbs/inside/1280x960/png/image.webp"
+        ],
+        externalUrl: "https://www.printables.com/model/1678803",
+        dropboxUrl: "https://www.dropbox.com/scl/fi/6ftg1ekemfy6f791rntfk/vow-gt-v3-sym-box-lid-with-mk8-pro-mount-model_files.zip?rlkey=6ubaz4yuwjldhh3967znve7cs&st=zxqo67jl&dl=0",
+        dropboxZipLastUpdated: "2026-04-10",
+        platform: ["GT/GT-S"]
     }
 ] as ItemData[]
 

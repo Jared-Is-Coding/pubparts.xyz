@@ -1,7 +1,9 @@
 import type { GatsbyConfig } from "gatsby"
+import netlifyAdapter from "gatsby-adapter-netlify"
 import "dotenv/config"
 
 const config: GatsbyConfig = {
+    adapter: netlifyAdapter(),
     siteMetadata: {
         title: "PubParts",
         description: "A collection of open source or otherwise aftermarket OneWheel parts.",

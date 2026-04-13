@@ -7,7 +7,7 @@ import SiteFooter from "@components/SiteFooter"
 import SiteMetaData from "@components/SiteMetaData"
 import SiteNavbar from "@components/SiteNavbar"
 import "@scss/pages/shop.scss"
-import allPartsShopItems from "@util/partsShop"
+import allPartsShopItems from "@util/partsShopSynced"
 
 export const Head: HeadFC = () => (
     <>

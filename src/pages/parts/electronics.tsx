@@ -8,7 +8,7 @@ import SiteFooter from "@components/SiteFooter"
 import SiteMetaData from "@components/SiteMetaData"
 import SiteNavbar from "@components/SiteNavbar"
 import "@scss/pages/items.scss"
-import { vescElectronicsParts } from "@util/parts"
+import { vescElectronicsParts } from "@util/partsSynced"
 
 export const Head: HeadFC = () => (
     <>

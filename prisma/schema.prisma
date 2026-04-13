@@ -1,0 +1,194 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Platform {
+  id                Int                    @id @default(autoincrement())
+  name              String                 @unique
+  catalogLinks      PartsCatalogPlatform[]
+  shopItemLinks     ShopItemPlatform[]
+
+  @@map("platforms")
+}
+
+model PartType {
+  id            Int               @id @default(autoincrement())
+  name          String            @unique
+  catalogLinks  PartsCatalogType[]
+  shopItemLinks ShopItemType[]
+
+  @@map("part_types")
+}
+
+model ResourceTypeLookup {
+  id            Int                   @id @default(autoincrement())
+  name          String                @unique
+  resourceLinks ResourceTypeRelation[]
+
+  @@map("resource_types")
+}
+
+model FabricationMethod {
+  id           Int                           @id @default(autoincrement())
+  name         String                        @unique
+  catalogLinks PartsCatalogFabricationMethod[]
+
+  @@map("fabrication_methods")
+}
+
+model PartsCatalog {
+  id                          Int                           @id @default(autoincrement())
+  title                       String
+  imageSrc                    String                        @map("image_src")
+  externalUrl                 String?                       @map("external_url")
+  dropboxUrl                  String?                       @map("dropbox_url")
+  dropboxZipLastUpdated       DateTime?                     @map("dropbox_zip_last_updated") @db.Date
+  createdAt                   DateTime                      @default(now()) @map("created_at")
+  updatedAt                   DateTime                      @updatedAt @map("updated_at")
+  images                      PartsCatalogImage[]
+  platforms                   PartsCatalogPlatform[]
+  partTypes                   PartsCatalogType[]
+  fabricationMethods          PartsCatalogFabricationMethod[]
+
+  @@map("parts_catalog")
+}
+
+model PartsCatalogImage {
+  id        Int          @id @default(autoincrement())
+  partId    Int          @map("part_id")
+  imageSrc  String       @map("image_src")
+  sortOrder Int          @default(0) @map("sort_order")
+  part      PartsCatalog @relation(fields: [partId], references: [id], onDelete: Cascade)
+
+  @@unique([partId, imageSrc])
+  @@index([partId, sortOrder])
+  @@map("parts_catalog_images")
+}
+
+model PartsCatalogPlatform {
+  partId     Int          @map("part_id")
+  platformId Int          @map("platform_id")
+  part       PartsCatalog @relation(fields: [partId], references: [id], onDelete: Cascade)
+  platform   Platform     @relation(fields: [platformId], references: [id], onDelete: Restrict)
+
+  @@id([partId, platformId])
+  @@map("parts_catalog_platforms")
+}
+
+model PartsCatalogType {
+  partId     Int          @map("part_id")
+  partTypeId Int          @map("part_type_id")
+  part       PartsCatalog @relation(fields: [partId], references: [id], onDelete: Cascade)
+  partType   PartType     @relation(fields: [partTypeId], references: [id], onDelete: Restrict)
+
+  @@id([partId, partTypeId])
+  @@map("parts_catalog_types")
+}
+
+model PartsCatalogFabricationMethod {
+  partId               Int               @map("part_id")
+  fabricationMethodId  Int               @map("fabrication_method_id")
+  part                 PartsCatalog      @relation(fields: [partId], references: [id], onDelete: Cascade)
+  fabricationMethod    FabricationMethod @relation(fields: [fabricationMethodId], references: [id], onDelete: Restrict)
+
+  @@id([partId, fabricationMethodId])
+  @@map("parts_catalog_fabrication_methods")
+}
+
+model ShopItem {
+  id              Int                @id @default(autoincrement())
+  title           String
+  availableCount  Int                @map("available_count")
+  price           Decimal            @db.Decimal(10, 2)
+  itemCondition   ItemCondition      @map("item_condition")
+  descriptionHtml String?            @map("description_html")
+  externalUrl     String?            @map("external_url")
+  featured        Boolean            @default(false)
+  createdAt       DateTime           @default(now()) @map("created_at")
+  updatedAt       DateTime           @updatedAt @map("updated_at")
+  images          ShopItemImage[]
+  platforms       ShopItemPlatform[]
+  partTypes       ShopItemType[]
+
+  @@map("shop_items")
+}
+
+model ShopItemImage {
+  id         Int      @id @default(autoincrement())
+  shopItemId Int      @map("shop_item_id")
+  imageSrc   String   @map("image_src")
+  sortOrder  Int      @default(0) @map("sort_order")
+  shopItem   ShopItem @relation(fields: [shopItemId], references: [id], onDelete: Cascade)
+
+  @@unique([shopItemId, imageSrc])
+  @@index([shopItemId, sortOrder])
+  @@map("shop_item_images")
+}
+
+model ShopItemPlatform {
+  shopItemId Int      @map("shop_item_id")
+  platformId Int      @map("platform_id")
+  shopItem   ShopItem @relation(fields: [shopItemId], references: [id], onDelete: Cascade)
+  platform   Platform @relation(fields: [platformId], references: [id], onDelete: Restrict)
+
+  @@id([shopItemId, platformId])
+  @@map("shop_item_platforms")
+}
+
+model ShopItemType {
+  shopItemId Int      @map("shop_item_id")
+  partTypeId Int      @map("part_type_id")
+  shopItem   ShopItem @relation(fields: [shopItemId], references: [id], onDelete: Cascade)
+  partType   PartType @relation(fields: [partTypeId], references: [id], onDelete: Restrict)
+
+  @@id([shopItemId, partTypeId])
+  @@map("shop_item_types")
+}
+
+model Resource {
+  id            Int                    @id @default(autoincrement())
+  title         String
+  externalUrl   String?                @map("external_url")
+  appStoreLink  String?                @map("app_store_link")
+  playStoreLink String?                @map("play_store_link")
+  description   String?
+  createdAt     DateTime               @default(now()) @map("created_at")
+  updatedAt     DateTime               @updatedAt @map("updated_at")
+  resourceTypes ResourceTypeRelation[]
+
+  @@map("resources")
+}
+
+model ResourceTypeRelation {
+  resourceId     Int                @map("resource_id")
+  resourceTypeId Int                @map("resource_type_id")
+  resource       Resource           @relation(fields: [resourceId], references: [id], onDelete: Cascade)
+  resourceType   ResourceTypeLookup @relation(fields: [resourceTypeId], references: [id], onDelete: Restrict)
+
+  @@id([resourceId, resourceTypeId])
+  @@map("resource_resource_types")
+}
+
+model SyncState {
+  id                  Int       @id @default(1)
+  lastCatalogSyncAt   DateTime? @map("last_catalog_sync_at")
+  lastInventorySyncAt DateTime? @map("last_inventory_sync_at")
+  lastSyncReason      String?   @map("last_sync_reason")
+  updatedAt           DateTime  @updatedAt @map("updated_at")
+
+  @@map("sync_state")
+}
+
+enum ItemCondition {
+  New      @map("New")
+  LikeNew  @map("Like New")
+  Used     @map("Used")
+  ForParts @map("For Parts")
+
+  @@map("item_condition")
+}

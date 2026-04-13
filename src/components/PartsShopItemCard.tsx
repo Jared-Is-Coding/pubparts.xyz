@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Badge, Button, Card, Col, Modal, Row, Stack } from "react-bootstrap"
 import toTitleCase from "../hooks/toTitleCase"
+import { getImageUrls, getPrimaryImageUrl } from "../util/images"
 import windowIsDefined from "../hooks/windowIsDefined"
 import CopyLinkBadge from "./CopyLinkBadge"
 import Lightbox from "./Lightbox"
@@ -21,6 +22,8 @@ function createMarkup(dirty: string) {
 export default (item: PartsShopData, index: number) => {
     const [showModal, setShowModal] = useState(false)
 	const [lightboxToggler, setLightboxToggler] = useState(false)
+    const previewImageUrl = getPrimaryImageUrl(item.imageSrc)
+    const lightboxImageUrls = item.imageSrc ? getImageUrls(item.imageSrc) : []
 
     return (
         <Col
@@ -35,7 +38,7 @@ export default (item: PartsShopData, index: number) => {
             partitemcondition={item.condition}>
             <Card>
                 {/* Part image */}
-                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{ backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : "" }}>
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{ backgroundImage: previewImageUrl ? `url('${previewImageUrl}')` : "" }}>
                     {item.imageSrc &&
                         <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
                     }
@@ -44,7 +47,7 @@ export default (item: PartsShopData, index: number) => {
                 {/* Part image lightbox */}
                 {/* https://fslightbox.com/react */}
                 {item.imageSrc &&
-                    <Lightbox src={[item.imageSrc].flat().map((i) => `/.netlify/images?url=${i}`)} toggler={lightboxToggler} />
+                    <Lightbox src={lightboxImageUrls} toggler={lightboxToggler} />
                 }
 
                 {/* Part type badges */}

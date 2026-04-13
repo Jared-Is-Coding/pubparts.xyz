@@ -19,7 +19,7 @@ interface ItemData {
     /**
      * Image source url
      */
-    imageSrc: string
+    imageSrc: string | string[]
     /**
      * Platform type
      */

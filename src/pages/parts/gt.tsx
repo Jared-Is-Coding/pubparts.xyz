@@ -8,7 +8,7 @@ import SiteFooter from "@components/SiteFooter"
 import SiteMetaData from "@components/SiteMetaData"
 import SiteNavbar from "@components/SiteNavbar"
 import "@scss/pages/items.scss"
-import { gtParts } from "@util/parts"
+import { gtParts } from "@util/partsSynced"
 
 export const Head: HeadFC = () => (
     <>

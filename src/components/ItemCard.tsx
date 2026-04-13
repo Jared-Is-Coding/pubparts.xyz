@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Badge, Card, Col, Stack } from "react-bootstrap"
 import toTitleCase from "../hooks/toTitleCase"
+import { getImageUrls, getPrimaryImageUrl } from "../util/images"
 import windowIsDefined from "../hooks/windowIsDefined"
 import CopyLinkBadge from "./CopyLinkBadge"
 import Lightbox from "./Lightbox"
@@ -16,6 +17,8 @@ import Lightbox from "./Lightbox"
  */
 export default (item: ItemData, index: number) => {
     const [lightboxToggler, setLightboxToggler] = useState(false)
+    const previewImageUrl = getPrimaryImageUrl(item.imageSrc)
+    const lightboxImageUrls = getImageUrls(item.imageSrc)
 
     return (
         <Col
@@ -29,7 +32,7 @@ export default (item: ItemData, index: number) => {
             partfabricationmethods={item.fabricationMethod.join(",")}>
             <Card>
                 {/* Part image */}
-                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{ backgroundImage: item.imageSrc ? `url('${Array.isArray(item.imageSrc) ? `/.netlify/images?url=${item.imageSrc.at(0)}` : `/.netlify/images?url=${item.imageSrc}`}')` : "" }}>
+                <div className="card-img-holder" onClick={() => setLightboxToggler(!lightboxToggler)} style={{ backgroundImage: previewImageUrl ? `url('${previewImageUrl}')` : "" }}>
                     {item.imageSrc &&
                         <span role="img" aria-label={"Preview imagine of part, " + item.title}></span>
                     }
@@ -38,7 +41,7 @@ export default (item: ItemData, index: number) => {
                 {/* Part image lightbox */}
                 {/* https://fslightbox.com/react */}
                 {item.imageSrc &&
-                    <Lightbox src={[item.imageSrc].flat().map((i) => `/.netlify/images?url=${i}`)} toggler={lightboxToggler} />
+                    <Lightbox src={lightboxImageUrls} toggler={lightboxToggler} />
                 }
 
                 {/* Part type badges */}

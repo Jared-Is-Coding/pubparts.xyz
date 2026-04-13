@@ -5,8 +5,8 @@ import { FaBars, FaMagnifyingGlass } from "react-icons/fa6"
 import { DiscordInvite, DiscordThread } from "@util/siteVariables"
 import SearchModalCard from "./SearchModalCard"
 import SearchModalSearchbar from "./SearchModalSearchbar"
-import allParts from "@util/parts"
-import allResources from "@util/resources"
+import allParts from "@util/partsSynced"
+import allResources from "@util/resourcesSynced"
 
 type NavbarProps = {
     isHomepage?: boolean

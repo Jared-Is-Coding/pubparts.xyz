@@ -7,7 +7,7 @@ import SiteFooter from "@components/SiteFooter"
 import SiteMetaData from "@components/SiteMetaData"
 import SiteNavbar from "@components/SiteNavbar"
 import "@scss/pages/resources.scss"
-import { videoGuidesResources } from "@util/resources"
+import { videoGuidesResources } from "@util/resourcesSynced"
 
 export const Head: HeadFC = () => (
     <>

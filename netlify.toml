@@ -1,5 +1,5 @@
 [build]
-  command = "npm run db:sync && gatsby build"
+  command = "npm run db:generate && npm run db:sync && gatsby build"
   publish = "public"
 
 [images]

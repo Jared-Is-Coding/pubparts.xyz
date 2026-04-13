@@ -275,6 +275,32 @@ const Page: React.FC<PageProps> = (pageProps) => {
     const [status, setStatus] = useState("")
     const [warning, setWarning] = useState("")
     const [error, setError] = useState("")
+    const [buildSyncBusy, setBuildSyncBusy] = useState(false)
+    const [buildSyncStatus, setBuildSyncStatus] = useState("")
+    const [buildSyncError, setBuildSyncError] = useState("")
+        // Handler for manual build hook trigger
+        const handleSyncWithProduction = async () => {
+            setBuildSyncBusy(true)
+            setBuildSyncStatus("")
+            setBuildSyncError("")
+            try {
+                const response = await fetch("/api/admin-db", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ action: "triggerBuildHook", reason: "manual-admin-sync" })
+                })
+                const data = await response.json()
+                if (data.buildTrigger?.ok) {
+                    setBuildSyncStatus("Production rebuild triggered.")
+                } else {
+                    setBuildSyncError(data.buildTrigger?.message || "Failed to trigger production build.")
+                }
+            } catch (err) {
+                setBuildSyncError(err instanceof Error ? err.message : "Failed to trigger production build.")
+            } finally {
+                setBuildSyncBusy(false)
+            }
+        }
     const [deleteTarget, setDeleteTarget] = useState<DeleteTarget>(null)
 
     const selectedPart = useMemo(() => parts.find((item) => item.id === selectedPartId), [parts, selectedPartId])
@@ -454,33 +480,43 @@ const Page: React.FC<PageProps> = (pageProps) => {
 
     return (
         <>
+            <header>
             <SiteNavbar />
+                <h1 className="flex-center">
+                    Database Admin (Dev-Only)
+                </h1>
+
+                <p className="tagline flex-center">
+                    <br />
+                </p>
+            </header>
 
             <main className="page-items" style={{ paddingBottom: "6rem" }}>
                 <Container>
-                    <h1>Database Admin (Dev-Only)</h1>
 
                     {status && <Alert variant="success">{status}</Alert>}
                     {warning && <Alert variant="warning">{warning}</Alert>}
                     {error && <Alert variant="danger">{error}</Alert>}
+                    {buildSyncStatus && <Alert variant="success">{buildSyncStatus}</Alert>}
+                    {buildSyncError && <Alert variant="danger">{buildSyncError}</Alert>}
 
                     <Stack direction="horizontal" gap={2} className="mb-3">
-                        <Button variant="dark" disabled={busy} onClick={() => void loadAll()}>
+                        <Button variant="dark" className="text-nowrap" disabled={busy} onClick={() => void loadAll()}>
                             Reload All
                         </Button>
-                        <Badge bg="primary" className="px-3 py-2 fs-6 text-nowrap">
-                            Parts: {parts.length}
-                        </Badge>
-                        <Badge bg="success" className="px-3 py-2 fs-6 text-nowrap">
-                            Resources: {resources.length}
-                        </Badge>
-                        <Badge bg="dark" className="px-3 py-2 fs-6 text-nowrap">
-                            Shop: {shopItems.length}
-                        </Badge>
+                        <Button
+                            variant="outline-primary"
+                            disabled={buildSyncBusy}
+                            onClick={handleSyncWithProduction}
+                            title="Trigger a production rebuild to sync the latest DB changes to the live site."
+                            className="text-nowrap"
+                        >
+                            {buildSyncBusy ? "Syncing..." : "Sync with Production"}
+                        </Button>
                     </Stack>
 
                     <Tabs activeKey={tabKey} onSelect={(key) => setTabKey(key ?? "parts")} className="mb-3">
-                        <Tab eventKey="parts" title="Parts">
+                        <Tab eventKey="parts" title={`Parts (${parts.length})`}>
                             <Row>
                                 <Col md={4}>
                                     <Stack gap={2}>
@@ -688,7 +724,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
                             </Row>
                         </Tab>
 
-                        <Tab eventKey="resources" title="Resources">
+                        <Tab eventKey="resources" title={`Resources (${resources.length})`}>
                             <Row>
                                 <Col md={4}>
                                     <Stack gap={2}>
@@ -837,7 +873,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
                             </Row>
                         </Tab>
 
-                        <Tab eventKey="shop" title="Shop Items">
+                        <Tab eventKey="shop" title={`Shop Items (${shopItems.length})`}>
                             <Row>
                                 <Col md={4}>
                                     <Stack gap={2}>

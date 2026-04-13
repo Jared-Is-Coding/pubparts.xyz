@@ -467,14 +467,22 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
         return
     }
 
-    let body: AdminPostBody
+    let body: any
     try {
-        body = (typeof req.body === "string" ? JSON.parse(req.body) : req.body) as AdminPostBody
+        body = (typeof req.body === "string" ? JSON.parse(req.body) : req.body)
     } catch {
         res.status(400).json({ error: "Invalid JSON body." })
         return
     }
 
+    // Explicit build trigger action
+    if (body?.action === "triggerBuildHook") {
+        const buildTrigger = await triggerProductionBuild(body.reason || "manual-admin-trigger")
+        res.status(200).json({ buildTrigger })
+        return
+    }
+
+    // Normal DB mutations
     if (!body?.entity || !body?.action) {
         res.status(400).json({ error: "Missing entity or action." })
         return
@@ -633,11 +641,9 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
 
     const syncReason = `admin-db-${body.entity}-${body.action}`
     await syncPartsFromDatabase({ reason: syncReason })
-    const buildTrigger = await triggerProductionBuild(syncReason)
 
     res.status(200).json({
         ok: true,
-        buildTrigger,
         ...(await fetchAllData())
     })
 }

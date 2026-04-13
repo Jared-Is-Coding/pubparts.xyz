@@ -91,6 +91,11 @@ type AdminApiData = {
     parts: AdminPart[]
     resources: AdminResource[]
     shopItems: AdminShopItem[]
+    buildTrigger?: {
+        attempted: boolean
+        ok: boolean
+        message: string
+    }
 }
 
 type DeleteTarget = {
@@ -268,6 +273,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
     const [shopDraft, setShopDraft] = useState<AdminShopDraft>(emptyShopDraft())
     const [busy, setBusy] = useState(false)
     const [status, setStatus] = useState("")
+    const [warning, setWarning] = useState("")
     const [error, setError] = useState("")
     const [deleteTarget, setDeleteTarget] = useState<DeleteTarget>(null)
 
@@ -331,6 +337,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 
     const loadAll = async (): Promise<void> => {
         setBusy(true)
+        setWarning("")
         setError("")
 
         try {
@@ -348,6 +355,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
     const mutate = async (body: object, successMessage: string): Promise<void> => {
         setBusy(true)
         setStatus("")
+        setWarning("")
         setError("")
 
         try {
@@ -362,7 +370,13 @@ const Page: React.FC<PageProps> = (pageProps) => {
             setParts(data.parts)
             setResources(data.resources)
             setShopItems(data.shopItems)
-            setStatus(successMessage)
+            if (data.buildTrigger?.attempted && !data.buildTrigger.ok) {
+                setStatus(successMessage)
+                setWarning(`Saved, but production deploy was not triggered: ${data.buildTrigger.message}`)
+            } else {
+                const buildMessage = data.buildTrigger?.attempted ? ` ${data.buildTrigger.message}` : ""
+                setStatus(`${successMessage}${buildMessage}`)
+            }
         } catch (mutateError) {
             setError(mutateError instanceof Error ? mutateError.message : "Request failed.")
         } finally {
@@ -447,6 +461,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
                     <h1>Database Admin (Dev-Only)</h1>
 
                     {status && <Alert variant="success">{status}</Alert>}
+                    {warning && <Alert variant="warning">{warning}</Alert>}
                     {error && <Alert variant="danger">{error}</Alert>}
 
                     <Stack direction="horizontal" gap={2} className="mb-3">

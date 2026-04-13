@@ -120,6 +120,12 @@ type AdminPostBody =
     | { entity: "shop"; action: "update"; item: AdminShopPayload }
     | { entity: "shop"; action: "delete"; id: number }
 
+type BuildTriggerResult = {
+    attempted: boolean
+    ok: boolean
+    message: string
+}
+
 const prisma = new PrismaClient(
     databaseUrl
         ? {
@@ -161,6 +167,50 @@ function normalizeImageList(value?: string | string[]): string[] {
 
     const list = Array.isArray(value) ? value : [value]
     return list.map((entry) => entry.trim()).filter(Boolean)
+}
+
+async function triggerProductionBuild(reason: string): Promise<BuildTriggerResult> {
+    const hookUrl = process.env.NETLIFY_BUILD_HOOK_URL?.trim()
+
+    if (!hookUrl) {
+        return {
+            attempted: false,
+            ok: false,
+            message: "Production build hook not configured."
+        }
+    }
+
+    try {
+        const response = await fetch(hookUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                triggerTitle: `Admin update: ${reason}`
+            })
+        })
+
+        if (!response.ok) {
+            return {
+                attempted: true,
+                ok: false,
+                message: `Build hook failed with status ${response.status}.`
+            }
+        }
+
+        return {
+            attempted: true,
+            ok: true,
+            message: "Production rebuild triggered."
+        }
+    } catch (error) {
+        return {
+            attempted: true,
+            ok: false,
+            message: error instanceof Error ? `Build hook request failed: ${error.message}` : "Build hook request failed."
+        }
+    }
 }
 
 function toConditionLabel(value: PrismaItemCondition): ItemCondition {
@@ -581,6 +631,13 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
         })
     }
 
-    await syncPartsFromDatabase({ reason: `admin-db-${body.entity}-${body.action}` })
-    res.status(200).json({ ok: true, ...(await fetchAllData()) })
+    const syncReason = `admin-db-${body.entity}-${body.action}`
+    await syncPartsFromDatabase({ reason: syncReason })
+    const buildTrigger = await triggerProductionBuild(syncReason)
+
+    res.status(200).json({
+        ok: true,
+        buildTrigger,
+        ...(await fetchAllData())
+    })
 }

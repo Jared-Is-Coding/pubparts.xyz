@@ -36,8 +36,18 @@ It uses the dev-only API endpoint:
 `/api/admin-db`
 
 Parts are synced via:
-1. Scheduled sync every 15 minutes.
-2. Immediate sync trigger when inventory is updated from a admin panel.
+1. Build-time sync during deploy (`npm run db:sync`).
+2. Immediate sync trigger when inventory is updated from an admin panel.
+
+### Production Refresh After Admin Saves
+
+Production pages are built from snapshot files during `gatsby build`, so DB changes do not appear on the live site until a new deploy runs.
+
+To trigger that deploy automatically after a successful admin save in development, set this env var:
+
+`NETLIFY_BUILD_HOOK_URL=<your-netlify-build-hook-url>`
+
+When configured, each successful admin mutation will call the Netlify build hook so production refreshes from the latest DB snapshot on the next deploy.
 
 ## Contributing
 Now that you've set up the development environment, be sure to check out the [contributing guidelines](https://github.com/Jared-Is-Coding/pubparts.xyz/blob/master/CONTRIBUTING.md).

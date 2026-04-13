@@ -24,9 +24,8 @@
         "typecheck": "tsc --noEmit",
         "db:generate": "prisma generate",
         "db:push": "npm run db:generate && prisma db push",
-        "db:sync": "tsx scripts/partsSyncRunner.ts --once",
-        "db:sync:runner": "tsx scripts/partsSyncRunner.ts",
-        "db:sync:inventory": "tsx scripts/partsSyncRunner.ts --once --reason=inventory-admin-save",
+        "db:sync": "tsx scripts/partsSyncRunner.ts",
+        "db:sync:inventory": "tsx scripts/partsSyncRunner.ts --reason=inventory-admin-save",
         "db:bootstrap": "npm run db:generate && tsx scripts/importPartsToPostgres.ts"
     },
     "dependencies": {

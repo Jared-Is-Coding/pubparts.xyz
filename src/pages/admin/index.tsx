@@ -4,6 +4,7 @@ import { Alert, Badge, Button, Col, Container, Form, Modal, Row, Stack, Tab, Tab
 import SiteFooter from "@components/SiteFooter"
 import SiteMetaData from "@components/SiteMetaData"
 import SiteNavbar from "@components/SiteNavbar"
+import NotFoundPage from "../404"
 
 type AdminPart = ItemData & { id: number }
 type AdminResource = ResourceData & { id: number }
@@ -250,7 +251,7 @@ async function requestAdminApi(init?: RequestInit): Promise<AdminApiData> {
     throw lastError ?? new Error("Admin API endpoint could not be reached.")
 }
 
-const Page: React.FC<PageProps> = () => {
+const Page: React.FC<PageProps> = (pageProps) => {
     const isDevelopment = process.env.NODE_ENV === "development"
     const [tabKey, setTabKey] = useState<string>("parts")
     const [partFilter, setPartFilter] = useState("")
@@ -433,7 +434,7 @@ const Page: React.FC<PageProps> = () => {
 
     if (!isDevelopment) {
         return (
-            <div style={{ display: "none" }} />
+            <NotFoundPage {...pageProps} />
         )
     }
 

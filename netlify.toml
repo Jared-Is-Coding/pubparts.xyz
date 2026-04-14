@@ -1,9 +1,13 @@
 [build]
-  command = "npm run db:generate && npm run db:sync && gatsby build"
+  command = "npm run db:generate && npm run db:sync && npm run build"
   publish = "public"
+
+[build.environment]
+  NODE_VERSION = "22"
 
 [images]
   remote_images = ["https://media.printables.com/media/prints/.*", "https://cdn.thingiverse.com/assets/.*", "https://thangs.com/_next/image.*", "https://makerworld.bblmw.com/makerworld/model/.*", "https://flightpack.eu/cdn/.*", "https://vow.systems/cdn/.*", "https://github.com/techfoundrynz/Pubmote/.*", "https://github.com/PickleWorks-Design/Hall-Sensor-Board/.*"]
 
 [dev]
+  command = "npm run develop"
   targetPort = 8000

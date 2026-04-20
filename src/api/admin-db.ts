@@ -120,6 +120,16 @@ type AdminPostBody =
     | { entity: "shop"; action: "update"; item: AdminShopPayload }
     | { entity: "shop"; action: "delete"; id: number }
 
+function normalizeAvailableCount(value: unknown): number {
+    const parsed = Number(value)
+    if (!Number.isFinite(parsed)) {
+        return 0
+    }
+
+    // -1 means infinite stock; 0 means out of stock.
+    return Math.max(-1, Math.trunc(parsed))
+}
+
 type BuildTriggerResult = {
     attempted: boolean
     ok: boolean
@@ -601,7 +611,7 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
                 const created = await tx.shopItem.create({
                     data: {
                         title: item.title,
-                        availableCount: Math.max(0, Number(item.availableCount) || 0),
+                        availableCount: normalizeAvailableCount(item.availableCount),
                         price: new Prisma.Decimal(Number(item.price) || 0),
                         itemCondition: toPrismaCondition(item.condition),
                         descriptionHtml: item.description ?? null,
@@ -623,7 +633,7 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
                 where: { id: item.id },
                 data: {
                     title: item.title,
-                    availableCount: Math.max(0, Number(item.availableCount) || 0),
+                    availableCount: normalizeAvailableCount(item.availableCount),
                     price: new Prisma.Decimal(Number(item.price) || 0),
                     itemCondition: toPrismaCondition(item.condition),
                     descriptionHtml: item.description ?? null,

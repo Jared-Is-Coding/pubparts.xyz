@@ -89,6 +89,7 @@ const Page: React.FC<PageProps> = () => {
                             <p>If you'd like to place an order, reach out to me on Discord at <code>iam_zinc</code> and include:</p>
                             <ul>
                                 <li>How many of what parts you would like to buy, or how many complete sets</li>
+                                <li>Which foot you ride forward with</li>
                                 <li>A good shipping address, including your name</li>
                                 <li>A good PayPal or Venmo to request from</li>
                             </ul>

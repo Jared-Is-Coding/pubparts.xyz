@@ -40,6 +40,7 @@ const Page: React.FC<PageProps> = () => {
                                 <li>A good shipping address, including your name</li>
                                 <li>A good PayPal or Venmo to request from</li>
                             </ul>
+                            <p>I'll get back to you with a timeline. Once they're ready to go and boxed up, I'll request the final cost with shipping and provide tracking.</p>
                         </Col>
 
                         <Col xs={12}>

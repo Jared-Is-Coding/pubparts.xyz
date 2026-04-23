@@ -84,6 +84,15 @@ const Page: React.FC<PageProps> = () => {
                                 <li>$35 per hook</li>
                                 <li>$35 per wedge (with hardware)</li>
                             </ul>
+
+                            <h2>Ordering</h2>
+                            <p>If you'd like to place an order, reach out to me on Discord at <code>iam_zinc</code> and include:</p>
+                            <ul>
+                                <li>How many of what parts you would like to buy, or how many complete sets</li>
+                                <li>A good shipping address, including your name</li>
+                                <li>A good PayPal or Venmo to request from</li>
+                            </ul>
+                            <p>I'll get back to you with a timeline. Once they're ready to go and boxed up, I'll request the final cost with shipping and provide tracking.</p>
                             
                             <h2>Resources</h2>
                             <ul>

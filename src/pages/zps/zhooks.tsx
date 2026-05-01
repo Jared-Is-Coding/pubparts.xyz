@@ -63,12 +63,12 @@ const Page: React.FC<PageProps> = () => {
                         </Col>
 
                         <Col xs={12} md={6}>
-                            <h2>Description</h2>
+                            <h2 id="description">Description</h2>
                             <p>Paired with hooks modified from original designs by @seanbrowntown, this hook-and-wedge system offers mounted foot hooks paired with carefully crafted wedges - They work with most popular sensors and perfectly angle the hooks to lock in your ride.</p>
                             <p>Designed to work around common sensor shapes, these hooks can be mounted on most footpads with common sensors applied without causing any activation issues.</p>
                             <p>Printed in TPU, these hooks are indestructible.</p>
 
-                            <h2>Parts</h2>
+                            <h2 id="parts">Parts</h2>
                             <ul>
                                 <li>2 x Hooks</li>
                                 <li>2 x Wedges</li>
@@ -77,7 +77,7 @@ const Page: React.FC<PageProps> = () => {
                                 <li>7 x M6x20mm flat head screws</li>
                             </ul>
 
-                            <h2>Cost</h2>
+                            <h2 id="cost">Cost</h2>
                             <p>The full set of Z-Hooks (2 hooks, 2 wedges, and all necessary hardware) from me is $130.</p>
                             <p>In cases where not a full set of hooks and wedges is needed, or additional individual parts are requested, here are the individual parts costs for reference:</p>
                             <ul>
@@ -85,7 +85,7 @@ const Page: React.FC<PageProps> = () => {
                                 <li>$35 per wedge (with hardware)</li>
                             </ul>
 
-                            <h2>Ordering</h2>
+                            <h2 id="ordering">Ordering</h2>
                             <p>If you'd like to place an order, reach out to me on Discord at <code>iam_zinc</code> and include:</p>
                             <ul>
                                 <li>How many of what parts you would like to buy, or how many complete sets</li>
@@ -95,7 +95,7 @@ const Page: React.FC<PageProps> = () => {
                             </ul>
                             <p>I'll get back to you with a timeline. Once they're ready to go and boxed up, I'll request the final cost with shipping and provide tracking.</p>
                             
-                            <h2>Resources</h2>
+                            <h2 id="resources">Resources</h2>
                             <ul>
                                 <li>
                                     <a target="_blank" href="https://www.dropbox.com/scl/fi/h4ogm66scm2e0gt4n0fnm/wedges_flattened_image.zip?rlkey=avggggr6f00hf0synag1gk15q&st=an59jt15&dl=0">Printed screw hole placement guide for wedges</a>
@@ -110,7 +110,7 @@ const Page: React.FC<PageProps> = () => {
                         </Col>
 
                         <Col xs={12} md={12}>
-                            <h2>Installation</h2>
+                            <h2 id="installation">Installation</h2>
 
                             <Row>
                                 <Col xs={12} md={4}>

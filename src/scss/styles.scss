@@ -1,6 +1,6 @@
-@import "./variables.scss";
-@import "./fonts.scss";
-@import "./colors.scss";
+@use "./variables" as *;
+@use "./fonts" as *;
+@use "./colors" as *;
 
 /**
  * ------------------

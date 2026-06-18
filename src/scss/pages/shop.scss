@@ -1,4 +1,4 @@
-@import "./items.scss";
+@use "./items" as *;
 
 .sort-button-stack {
     float: right;

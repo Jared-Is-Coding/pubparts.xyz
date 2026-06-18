@@ -13,7 +13,7 @@
         "url": "https://github.com/Jared-Is-Coding/pubparts.xyz/issues"
     },
     "scripts": {
-        "check:node": "node -e \"const major=Number(process.versions.node.split('.')[0]); if (major < 20 || major > 22) { console.error('Unsupported Node.js version ' + process.versions.node + '. Use Node 20.x or 22.x for Gatsby LMDB compatibility.'); process.exit(1); }\"",
+        "check:node": "node -e \"const major=Number(process.versions.node.split('.')[0]); if (major < 20 || major > 24) { console.error('Unsupported Node.js version ' + process.versions.node + '. Use Node 20.x, 22.x, or 24.x for Gatsby compatibility.'); process.exit(1); }\"",
         "predevelop": "npm run check:node",
         "develop": "gatsby develop",
         "start": "gatsby develop",
@@ -31,13 +31,13 @@
     "dependencies": {
         "@prisma/client": "^6.19.3",
         "fslightbox-react": "^2.0.0",
-        "gatsby": "^5.13.5",
+        "gatsby": "^5.16.1",
         "gatsby-adapter-netlify": "^1.4.0",
-        "gatsby-plugin-image": "^3.13.1",
+        "gatsby-plugin-image": "^3.16.0",
         "gatsby-plugin-robots-txt": "^1.8.0",
-        "gatsby-plugin-sass": "^6.13.1",
-        "gatsby-plugin-sharp": "^5.13.1",
-        "gatsby-plugin-sitemap": "^6.13.1",
+        "gatsby-plugin-sass": "^6.16.0",
+        "gatsby-plugin-sharp": "^5.16.0",
+        "gatsby-plugin-sitemap": "^6.16.0",
         "gatsby-source-filesystem": "^5.16.0",
         "react": "^18.3.1",
         "react-bootstrap": "^2.10.4",
@@ -47,7 +47,7 @@
     },
     "devDependencies": {
         "@types/fslightbox-react": "^1.8.0",
-        "@types/node": "^20.11.19",
+        "@types/node": "^24.0.0",
         "@types/react": "^18.2.55",
         "@types/react-dom": "^18.2.19",
         "prisma": "^6.19.3",
@@ -55,10 +55,10 @@
         "typescript": "^5.3.3"
     },
     "overrides": {
-        "@parcel/watcher": "~2.1.0",
+        "@parcel/watcher": "^2.5.0",
         "msgpackr": "^1.11.2"
     },
     "engines": {
-        "node": ">=22.0.0 <23.0.0"
+        "node": ">=24.0.0 <25.0.0"
     }
 }

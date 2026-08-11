@@ -5,7 +5,7 @@ PubParts.xyz is a website to display a collection of open source or otherwise af
 ## Code Development Environment Setup
 Want to contribute to this repository? Here's some steps to get set up.
 
-1. Install NodeJS version 20.x
+1. Install NodeJS version 24.x
 2. Clone this repository
 3. Navigate to the local clone directory and run `npm install` to install dependencies
 4. In the repository root, create a `.env` file containing the contents of the `.env.example` file
@@ -15,7 +15,7 @@ Want to contribute to this repository? Here's some steps to get set up.
 
 ### Database Setup with Prisma.
 
-Generate Prisma client and apply the schema to your Postgres DB:
+Generate Prisma client and apply the schema to a Postgres DB:
 
 ```bash
 npm run db:push

@@ -1,0 +1,143 @@
+@use "../variables" as *;
+
+.page-propose {
+    color: $secondary-color;
+
+    .card {
+        background-color: $tertiary-color !important;
+        border: 1px solid rgba(159, 255, 255, 0.25) !important;
+        border-radius: $card-border-radius !important;
+        color: $secondary-color !important;
+        margin-bottom: 20px;
+
+        &.card-tile {
+            cursor: pointer;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+            &:hover, &:focus-visible {
+                transform: translateY(-4px);
+                border-color: $link-color !important;
+                box-shadow: 0 8px 24px rgba(12, 37, 37, 0.7);
+            }
+        }
+
+        .card-header {
+            background-color: rgba(0, 0, 0, 0.3) !important;
+            border-bottom: 1px solid rgba(159, 255, 255, 0.2) !important;
+            color: $secondary-color;
+        }
+
+        .card-title {
+            color: $link-color;
+            font-weight: 700;
+        }
+
+        .card-subtitle {
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: 0.75px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .card-text, p {
+            color: $secondary-color !important;
+            line-height: 1.6;
+        }
+    }
+
+    .tile-icon-holder {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(159, 255, 255, 0.12);
+        border: 1px solid rgba(159, 255, 255, 0.3);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $link-color;
+    }
+
+    .tile-action-footer {
+        padding-top: 12px;
+        border-top: 1px solid rgba(159, 255, 255, 0.15);
+        color: $link-color;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Form Elements */
+    .form-label {
+        color: $secondary-color;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+    }
+
+    .form-text {
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    .form-control, .form-select {
+        background-color: #0b1e1e !important;
+        border: 1px solid rgba(159, 255, 255, 0.3) !important;
+        color: $secondary-color !important;
+        border-radius: 6px;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.45) !important;
+        }
+
+        &:focus {
+            background-color: #0e2727 !important;
+            border-color: $link-color !important;
+            color: $secondary-color !important;
+            box-shadow: 0 0 0 0.25rem rgba(159, 255, 255, 0.2) !important;
+        }
+    }
+
+    .form-check-label {
+        color: $secondary-color;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .form-check-input {
+        background-color: #0b1e1e;
+        border: 1px solid rgba(159, 255, 255, 0.4);
+
+        &:checked {
+            background-color: #0d8282;
+            border-color: $link-color;
+        }
+
+        &:focus {
+            border-color: $link-color;
+            box-shadow: 0 0 0 0.25rem rgba(159, 255, 255, 0.2);
+        }
+    }
+
+    .parts-type-box {
+        background-color: #081818;
+        border: 1px solid rgba(159, 255, 255, 0.25);
+        border-radius: 8px;
+        padding: 1rem;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+    .image-preview-row {
+        background-color: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(159, 255, 255, 0.2);
+        border-radius: 6px;
+        padding: 0.5rem 0.75rem;
+    }
+
+    a {
+        color: $link-color !important;
+
+        &:hover {
+            color: #ffffff !important;
+        }
+    }
+}

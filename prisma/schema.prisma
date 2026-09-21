@@ -184,6 +184,34 @@ model SyncState {
   @@map("sync_state")
 }
 
+model PartPending {
+  id                 Int      @id @default(autoincrement())
+  title              String
+  externalUrl        String   @map("external_url")
+  imageUrls          String[] @map("image_urls")
+  fabricationMethods String[] @map("fabrication_methods")
+  platformTypes      String[] @map("platform_types")
+  partTypes          String[] @map("part_types")
+  createdAt          DateTime @default(now()) @map("created_at")
+  updatedAt          DateTime @updatedAt @map("updated_at")
+
+  @@map("parts_pending")
+}
+
+model ResourcePending {
+  id            Int      @id @default(autoincrement())
+  title         String
+  resourceTypes String[] @map("resource_types")
+  externalUrl   String   @map("external_url")
+  appStoreLink  String?  @map("app_store_link")
+  playStoreLink String?  @map("play_store_link")
+  description   String
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  @@map("resources_pending")
+}
+
 enum ItemCondition {
   New      @map("New")
   LikeNew  @map("Like New")

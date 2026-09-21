@@ -2,7 +2,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import React, { useState } from "react"
 import { Button, Container, Modal, Nav, Navbar, NavDropdown, Stack } from "react-bootstrap"
 import { FaBars, FaMagnifyingGlass } from "react-icons/fa6"
-import { DiscordInvite, DiscordThread } from "@util/siteVariables"
 import SearchModalCard from "./SearchModalCard"
 import SearchModalSearchbar from "./SearchModalSearchbar"
 import allParts from "@util/partsSynced"
@@ -72,10 +71,7 @@ export default ({isHomepage}: NavbarProps) => {
                             <NavDropdown.Item href="/resources/websites" target="_self">Websites</NavDropdown.Item>
                             <NavDropdown.Item href="/resources/writtenguides" target="_self">Written Guides</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Submit Changes" renderMenuOnMount={true} focusFirstItemOnShow="keyboard" id="nav-contribute-dropdown">
-                            <NavDropdown.Item href={DiscordInvite} target="_blank">1. Join Vescify Discord</NavDropdown.Item>
-                            <NavDropdown.Item href={DiscordThread} target="_blank">2. Post in Thread</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link href="/propose">Submit Changes</Nav.Link>
                         {/* Desktop Search Button */}
                         <Nav.Link className="d-none d-lg-block" onClick={() => setShowModal(true)} aria-label="Sitewide search modal trigger"><FaMagnifyingGlass /></Nav.Link>
                     </Nav>

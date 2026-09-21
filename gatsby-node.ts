@@ -43,7 +43,7 @@ exports.createPages = ({ actions }: CreatePagesArgs) => {
     }
 }
 
-exports.onCreateWebpackConfig = ({ actions }: CreateWebpackConfigArgs) => {
+exports.onCreateWebpackConfig = ({ actions, plugins }: CreateWebpackConfigArgs) => {
     actions.setWebpackConfig({
         resolve: {
             alias: {
@@ -51,7 +51,12 @@ exports.onCreateWebpackConfig = ({ actions }: CreateWebpackConfigArgs) => {
                 "@components": path.resolve(__dirname, "src/components"),
                 "@util": path.resolve(__dirname, "src/util")
             }
-        }
+        },
+        plugins: [
+            plugins.define({
+                "process.env.TURNSTILE_SITE_KEY": JSON.stringify(process.env.TURNSTILE_SITE_KEY || "")
+            })
+        ]
     })
 }
 

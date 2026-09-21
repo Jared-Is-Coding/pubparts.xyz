@@ -110,15 +110,19 @@ type AdminShopPayload = {
 }
 
 type AdminPostBody =
-    | { entity: "parts"; action: "create"; item: AdminPartPayload }
+    | { entity: "parts"; action: "create"; item: AdminPartPayload; resolvedPendingId?: number }
     | { entity: "parts"; action: "update"; item: AdminPartPayload }
     | { entity: "parts"; action: "delete"; id: number }
-    | { entity: "resources"; action: "create"; item: AdminResourcePayload }
+    | { entity: "resources"; action: "create"; item: AdminResourcePayload; resolvedPendingId?: number }
     | { entity: "resources"; action: "update"; item: AdminResourcePayload }
     | { entity: "resources"; action: "delete"; id: number }
     | { entity: "shop"; action: "create"; item: AdminShopPayload }
     | { entity: "shop"; action: "update"; item: AdminShopPayload }
     | { entity: "shop"; action: "delete"; id: number }
+    | { entity: "pending-parts"; action: "delete"; id: number }
+    | { entity: "pending-resources"; action: "delete"; id: number }
+    | { entity: "part-types"; action: "create"; name: string }
+    | { entity: "resource-types"; action: "create"; name: string }
 
 function normalizeAvailableCount(value: unknown): number {
     const parsed = Number(value)
@@ -384,12 +388,59 @@ async function hydrateResourceRelations(tx: Prisma.TransactionClient, resourceId
     }
 }
 
+let tablesEnsured = false
+async function ensurePendingTables(): Promise<void> {
+    if (tablesEnsured) {
+        return
+    }
+
+    try {
+        await prisma.$executeRawUnsafe(`
+            CREATE TABLE IF NOT EXISTS "parts_pending" (
+                "id" SERIAL PRIMARY KEY,
+                "title" TEXT NOT NULL,
+                "external_url" TEXT NOT NULL,
+                "image_urls" TEXT[] NOT NULL DEFAULT '{}',
+                "fabrication_methods" TEXT[] NOT NULL DEFAULT '{}',
+                "platform_types" TEXT[] NOT NULL DEFAULT '{}',
+                "part_types" TEXT[] NOT NULL DEFAULT '{}',
+                "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                "updated_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP
+            );
+        `)
+
+        await prisma.$executeRawUnsafe(`
+            CREATE TABLE IF NOT EXISTS "resources_pending" (
+                "id" SERIAL PRIMARY KEY,
+                "title" TEXT NOT NULL,
+                "resource_types" TEXT[] NOT NULL DEFAULT '{}',
+                "external_url" TEXT NOT NULL,
+                "app_store_link" TEXT,
+                "play_store_link" TEXT,
+                "description" TEXT NOT NULL,
+                "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                "updated_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP
+            );
+        `)
+
+        tablesEnsured = true
+    } catch (err) {
+        console.warn("Could not ensure pending tables via DDL:", err)
+    }
+}
+
 async function fetchAllData(): Promise<{
     parts: Array<ItemData & { id: number }>
     resources: Array<ResourceData & { id: number }>
     shopItems: Array<PartsShopData & { id: number }>
+    pendingParts: PartPendingData[]
+    pendingResources: ResourcePendingData[]
+    partTypes: string[]
+    resourceTypes: string[]
 }> {
-    const [partsRows, resourceRows, shopRows] = await Promise.all([
+    await ensurePendingTables()
+
+    const [partsRows, resourceRows, shopRows, pendingPartRows, pendingResourceRows, partTypeRows, resourceTypeRows] = await Promise.all([
         prisma.partsCatalog.findMany({
             include: {
                 images: { orderBy: { sortOrder: "asc" } },
@@ -410,7 +461,21 @@ async function fetchAllData(): Promise<{
                 partTypes: { include: { partType: true } }
             },
             orderBy: { title: "asc" }
-        })
+        }),
+        (prisma as any).partPending.findMany({
+            orderBy: { createdAt: "desc" }
+        }).catch(() => []),
+        (prisma as any).resourcePending.findMany({
+            orderBy: { createdAt: "desc" }
+        }).catch(() => []),
+        prisma.partType.findMany({
+            select: { name: true },
+            orderBy: { name: "asc" }
+        }).catch(() => []),
+        prisma.resourceTypeLookup.findMany({
+            select: { name: true },
+            orderBy: { name: "asc" }
+        }).catch(() => [])
     ])
 
     const parts = partsRows.map((part) => {
@@ -459,7 +524,39 @@ async function fetchAllData(): Promise<{
         }
     })
 
-    return { parts, resources, shopItems }
+    const pendingParts: PartPendingData[] = (pendingPartRows as any[]).map((row) => ({
+        id: row.id,
+        title: row.title,
+        externalUrl: row.externalUrl,
+        imageUrls: row.imageUrls ?? [],
+        fabricationMethods: row.fabricationMethods ?? [],
+        platformTypes: row.platformTypes ?? [],
+        partTypes: row.partTypes ?? [],
+        createdAt: row.createdAt instanceof Date ? row.createdAt.toISOString() : String(row.createdAt),
+        updatedAt: row.updatedAt instanceof Date ? row.updatedAt.toISOString() : String(row.updatedAt)
+    }))
+
+    const pendingResources: ResourcePendingData[] = (pendingResourceRows as any[]).map((row) => ({
+        id: row.id,
+        title: row.title,
+        resourceTypes: row.resourceTypes ?? [],
+        externalUrl: row.externalUrl,
+        appStoreLink: row.appStoreLink ?? undefined,
+        playStoreLink: row.playStoreLink ?? undefined,
+        description: row.description,
+        createdAt: row.createdAt instanceof Date ? row.createdAt.toISOString() : String(row.createdAt),
+        updatedAt: row.updatedAt instanceof Date ? row.updatedAt.toISOString() : String(row.updatedAt)
+    }))
+
+    return {
+        parts,
+        resources,
+        shopItems,
+        pendingParts,
+        pendingResources,
+        partTypes: (partTypeRows as any[]).map((row) => row.name),
+        resourceTypes: (resourceTypeRows as any[]).map((row) => row.name)
+    }
 }
 
 export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFunctionResponse): Promise<void> {
@@ -510,6 +607,24 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
         if (body.entity === "shop") {
             await prisma.shopItem.delete({ where: { id: body.id } })
         }
+
+        if (body.entity === "pending-parts") {
+            await (prisma as any).partPending.delete({ where: { id: body.id } })
+            res.status(200).json({
+                ok: true,
+                ...(await fetchAllData())
+            })
+            return
+        }
+
+        if (body.entity === "pending-resources") {
+            await (prisma as any).resourcePending.delete({ where: { id: body.id } })
+            res.status(200).json({
+                ok: true,
+                ...(await fetchAllData())
+            })
+            return
+        }
     } else if (body.entity === "parts") {
         const item = body.item
         const imageList = normalizeImageList(item.imageSrc)
@@ -532,6 +647,14 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
                 })
 
                 await hydratePartRelations(tx, created.id, item)
+
+                if (body.resolvedPendingId) {
+                    try {
+                        await (tx as any).partPending.delete({ where: { id: body.resolvedPendingId } })
+                    } catch {
+                        // Ignore if already deleted
+                    }
+                }
                 return
             }
 
@@ -576,6 +699,14 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
                 })
 
                 await hydrateResourceRelations(tx, created.id, item)
+
+                if (body.resolvedPendingId) {
+                    try {
+                        await (tx as any).resourcePending.delete({ where: { id: body.resolvedPendingId } })
+                    } catch {
+                        // Ignore if already deleted
+                    }
+                }
                 return
             }
 
@@ -647,6 +778,46 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
             maxWait: 20_000,
             timeout: 120_000
         })
+    } else if (body.entity === "part-types") {
+        if (body.action === "create") {
+            const name = typeof body.name === "string" ? body.name.trim() : ""
+            if (!name) {
+                res.status(400).json({ error: "Part type name is required." })
+                return
+            }
+
+            await prisma.partType.upsert({
+                where: { name },
+                update: {},
+                create: { name }
+            })
+
+            res.status(200).json({
+                ok: true,
+                ...(await fetchAllData())
+            })
+            return
+        }
+    } else if (body.entity === "resource-types") {
+        if (body.action === "create") {
+            const name = typeof body.name === "string" ? body.name.trim() : ""
+            if (!name) {
+                res.status(400).json({ error: "Resource type name is required." })
+                return
+            }
+
+            await prisma.resourceTypeLookup.upsert({
+                where: { name },
+                update: {},
+                create: { name }
+            })
+
+            res.status(200).json({
+                ok: true,
+                ...(await fetchAllData())
+            })
+            return
+        }
     }
 
     const syncReason = `admin-db-${body.entity}-${body.action}`

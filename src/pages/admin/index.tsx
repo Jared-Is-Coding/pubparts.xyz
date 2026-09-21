@@ -8,6 +8,7 @@ import {
 	Alert,
 	Badge,
 	Button,
+	Card,
 	Col,
 	Container,
 	Form,
@@ -131,6 +132,10 @@ type AdminApiData = {
 	parts: AdminPart[]
 	resources: AdminResource[]
 	shopItems: AdminShopItem[]
+	pendingParts?: PartPendingData[]
+	pendingResources?: ResourcePendingData[]
+	partTypes?: string[]
+	resourceTypes?: string[]
 	buildTrigger?: {
 		attempted: boolean
 		ok: boolean
@@ -139,7 +144,7 @@ type AdminApiData = {
 }
 
 type DeleteTarget = {
-	entity: "parts" | "resources" | "shop"
+	entity: "parts" | "resources" | "shop" | "pending-parts" | "pending-resources"
 	id: number
 	title: string
 } | null
@@ -588,6 +593,16 @@ const Page: React.FC<PageProps> = (pageProps) => {
 			setBuildSyncBusy(false)
 		}
 	}
+	const [pendingParts, setPendingParts] = useState<PartPendingData[]>([])
+	const [pendingResources, setPendingResources] = useState<ResourcePendingData[]>([])
+	const [allPartTypes, setAllPartTypes] = useState<string[]>(PART_TYPES)
+	const [allResourceTypes, setAllResourceTypes] = useState<string[]>(RESOURCE_TYPES)
+	const [selectedPendingPartId, setSelectedPendingPartId] = useState<number | undefined>(undefined)
+	const [selectedPendingResourceId, setSelectedPendingResourceId] = useState<number | undefined>(undefined)
+	const [pendingPartFilter, setPendingPartFilter] = useState("")
+	const [pendingResourceFilter, setPendingResourceFilter] = useState("")
+	const [pendingPartToResolveOnSave, setPendingPartToResolveOnSave] = useState<number | undefined>(undefined)
+	const [pendingResourceToResolveOnSave, setPendingResourceToResolveOnSave] = useState<number | undefined>(undefined)
 	const [deleteTarget, setDeleteTarget] = useState<DeleteTarget>(null)
 
 	const selectedPart = useMemo(() => parts.find((item) => item.id === selectedPartId), [parts, selectedPartId])
@@ -598,6 +613,14 @@ const Page: React.FC<PageProps> = (pageProps) => {
 	const selectedShop = useMemo(
 		() => shopItems.find((item) => item.id === selectedShopId),
 		[shopItems, selectedShopId],
+	)
+	const selectedPendingPart = useMemo(
+		() => pendingParts.find((item) => item.id === selectedPendingPartId),
+		[pendingParts, selectedPendingPartId],
+	)
+	const selectedPendingResource = useMemo(
+		() => pendingResources.find((item) => item.id === selectedPendingResourceId),
+		[pendingResources, selectedPendingResourceId],
 	)
 	const filteredParts = useMemo(() => {
 		const query = partFilter.trim().toLowerCase()
@@ -632,6 +655,28 @@ const Page: React.FC<PageProps> = (pageProps) => {
 			return item.title.toLowerCase().includes(query) || String(item.id).includes(query)
 		})
 	}, [shopItems, shopFilter])
+	const filteredPendingParts = useMemo(() => {
+		const query = pendingPartFilter.trim().toLowerCase()
+
+		if (!query) {
+			return pendingParts
+		}
+
+		return pendingParts.filter((item) => {
+			return item.title.toLowerCase().includes(query) || String(item.id).includes(query)
+		})
+	}, [pendingParts, pendingPartFilter])
+	const filteredPendingResources = useMemo(() => {
+		const query = pendingResourceFilter.trim().toLowerCase()
+
+		if (!query) {
+			return pendingResources
+		}
+
+		return pendingResources.filter((item) => {
+			return item.title.toLowerCase().includes(query) || String(item.id).includes(query)
+		})
+	}, [pendingResources, pendingResourceFilter])
 
 	const toggleArrayValue = <T extends string>(current: T[], value: T): T[] => {
 		return current.includes(value) ? current.filter((item) => item !== value) : [...current, value]
@@ -664,6 +709,14 @@ const Page: React.FC<PageProps> = (pageProps) => {
 			setParts(data.parts)
 			setResources(data.resources)
 			setShopItems(data.shopItems)
+			setPendingParts(data.pendingParts ?? [])
+			setPendingResources(data.pendingResources ?? [])
+			if (data.partTypes?.length) {
+				setAllPartTypes(Array.from(new Set([...PART_TYPES, ...data.partTypes])))
+			}
+			if (data.resourceTypes?.length) {
+				setAllResourceTypes(Array.from(new Set([...RESOURCE_TYPES, ...data.resourceTypes])))
+			}
 		} catch (loadError) {
 			setError(loadError instanceof Error ? loadError.message : "Failed to load data.")
 		} finally {
@@ -689,6 +742,14 @@ const Page: React.FC<PageProps> = (pageProps) => {
 			setParts(data.parts)
 			setResources(data.resources)
 			setShopItems(data.shopItems)
+			setPendingParts(data.pendingParts ?? [])
+			setPendingResources(data.pendingResources ?? [])
+			if (data.partTypes?.length) {
+				setAllPartTypes(Array.from(new Set([...PART_TYPES, ...data.partTypes])))
+			}
+			if (data.resourceTypes?.length) {
+				setAllResourceTypes(Array.from(new Set([...RESOURCE_TYPES, ...data.resourceTypes])))
+			}
 			if (data.buildTrigger?.attempted && !data.buildTrigger.ok) {
 				setStatus(successMessage)
 				setWarning(`Saved, but production deploy was not triggered: ${data.buildTrigger.message}`)
@@ -701,6 +762,20 @@ const Page: React.FC<PageProps> = (pageProps) => {
 		} finally {
 			setBusy(false)
 		}
+	}
+
+	const handleAcceptSuggestedPartType = async (name: string): Promise<void> => {
+		await mutate(
+			{ entity: "part-types", action: "create", name },
+			`Part type "${name}" accepted and added to database.`,
+		)
+	}
+
+	const handleAcceptSuggestedResourceType = async (name: string): Promise<void> => {
+		await mutate(
+			{ entity: "resource-types", action: "create", name },
+			`Resource type "${name}" accepted and added to database.`,
+		)
 	}
 
 	const confirmDelete = (): void => {
@@ -725,9 +800,60 @@ const Page: React.FC<PageProps> = (pageProps) => {
 			return
 		}
 
+		if (entity === "pending-parts") {
+			void mutate({ entity: "pending-parts", action: "delete", id }, "Pending part submission denied and deleted.")
+			setSelectedPendingPartId(undefined)
+			return
+		}
+
+		if (entity === "pending-resources") {
+			void mutate({ entity: "pending-resources", action: "delete", id }, "Pending resource submission denied and deleted.")
+			setSelectedPendingResourceId(undefined)
+			return
+		}
+
 		void mutate({ entity: "shop", action: "delete", id }, "Shop item deleted.")
 		setSelectedShopId(undefined)
 		setShopDraft(emptyShopDraft())
+	}
+
+	const handleAcceptPendingPart = (item: PartPendingData): void => {
+		const imageList = item.imageUrls.length ? item.imageUrls : [""]
+		setPartDraft({
+			id: undefined,
+			title: item.title,
+			imageSrcList: imageList,
+			fabricationMethod: item.fabricationMethods,
+			typeOfPart: item.partTypes,
+			platform: item.platformTypes,
+			externalUrl: item.externalUrl || "",
+			dropboxUrl: "",
+			dropboxZipLastUpdated: "",
+		})
+		setSelectedPartId(undefined)
+		setPendingPartToResolveOnSave(item.id)
+		setTabKey("parts")
+		setStatus(`Accepting pending part "${item.title}". Pre-filled into a new part draft. Review or add Dropbox details, then click "Create Part" to save.`)
+		setError("")
+		setWarning("")
+	}
+
+	const handleAcceptPendingResource = (item: ResourcePendingData): void => {
+		setResourceDraft({
+			id: undefined,
+			title: item.title,
+			typeOfResource: item.resourceTypes,
+			externalUrl: item.externalUrl || "",
+			appStoreLink: item.appStoreLink || "",
+			playStoreLink: item.playStoreLink || "",
+			description: item.description || "",
+		})
+		setSelectedResourceId(undefined)
+		setPendingResourceToResolveOnSave(item.id)
+		setTabKey("resources")
+		setStatus(`Accepting pending resource "${item.title}". Pre-filled into a new resource draft. Review, then click "Create Resource" to save.`)
+		setError("")
+		setWarning("")
 	}
 
 	useEffect(() => {
@@ -873,6 +999,26 @@ const Page: React.FC<PageProps> = (pageProps) => {
 								</Col>
 
 								<Col md={8}>
+									{pendingPartToResolveOnSave && (
+										<Alert
+											variant="info"
+											className="d-flex justify-content-between align-items-center mb-3">
+											<div>
+												<strong>Accepting Pending Part (#{pendingPartToResolveOnSave}):</strong>{" "}
+												Data prefilled into draft. Add Dropbox link/date, review fields, and
+												click &quot;Create Part&quot; to save to catalog and remove pending entry.
+											</div>
+											<Button
+												variant="outline-secondary"
+												size="sm"
+												onClick={() => {
+													setPendingPartToResolveOnSave(undefined)
+													setPartDraft(emptyPartDraft())
+												}}>
+												Cancel Acceptance
+											</Button>
+										</Alert>
+									)}
 									<Form>
 										<Form.Group className="mb-3">
 											<Form.Label>Title</Form.Label>
@@ -1020,7 +1166,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 										<Form.Group className="mb-3">
 											<Form.Label>Part Types</Form.Label>
 											<div>
-												{PART_TYPES.map((value) => (
+												{Array.from(new Set([...allPartTypes, ...partDraft.typeOfPart])).map((value) => (
 													<Form.Check
 														key={value}
 														inline
@@ -1059,14 +1205,28 @@ const Page: React.FC<PageProps> = (pageProps) => {
 															partDraft.dropboxZipLastUpdated.trim() || undefined,
 													}
 
+													const isAccepting =
+														!partDraft.id && pendingPartToResolveOnSave !== undefined
+
 													void mutate(
 														{
 															entity: "parts",
 															action: partDraft.id ? "update" : "create",
 															item: payload,
+															resolvedPendingId: isAccepting
+																? pendingPartToResolveOnSave
+																: undefined,
 														},
-														partDraft.id ? "Part updated." : "Part created.",
+														partDraft.id
+															? "Part updated."
+															: isAccepting
+																? "Part created and pending submission accepted/removed."
+																: "Part created.",
 													)
+
+													if (isAccepting) {
+														setPendingPartToResolveOnSave(undefined)
+													}
 												}}>
 												{partDraft.id ? "Save Changes" : "Create Part"}
 											</Button>
@@ -1089,6 +1249,197 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											</Button>
 										</Stack>
 									</Form>
+								</Col>
+							</Row>
+						</Tab>
+
+						<Tab eventKey="pending-parts" title={`Pending Parts (${pendingParts.length})`}>
+							<Row>
+								<Col md={4}>
+									<Stack gap={2}>
+										<Form.Control
+											type="text"
+											placeholder="Filter pending parts by id or title"
+											value={pendingPartFilter}
+											onChange={(event) => setPendingPartFilter(event.target.value)}
+										/>
+
+										<div style={{ maxHeight: "60vh", overflowY: "auto" }}>
+											<ul style={{ listStyle: "none", paddingLeft: 0 }}>
+												{filteredPendingParts.map((item) => (
+													<li key={item.id} style={{ marginBottom: "0.5rem" }}>
+														<Button
+															className="w-100 text-start d-flex justify-content-between align-items-center"
+															variant={
+																selectedPendingPartId === item.id ? "info" : "outline-info"
+															}
+															disabled={busy}
+															onClick={() => setSelectedPendingPartId(item.id)}>
+															<span className="text-truncate">{item.title}</span>
+															<Badge bg="secondary">
+																#{item.id}
+															</Badge>
+														</Button>
+													</li>
+												))}
+
+												{!filteredPendingParts.length && (
+													<li>
+														<Alert variant="light" className="mb-0">
+															{pendingParts.length
+																? "No pending parts match the filter."
+																: "No pending parts to review."}
+														</Alert>
+													</li>
+												)}
+											</ul>
+										</div>
+									</Stack>
+								</Col>
+
+								<Col md={8}>
+									{selectedPendingPart ? (
+										<Card className="bg-dark text-light border-secondary p-4">
+											<div className="d-flex justify-content-between align-items-center mb-3 border-bottom border-secondary pb-2 flex-wrap gap-2">
+												<div>
+													<h3 className="h5 text-info mb-0">{selectedPendingPart.title}</h3>
+													<p className="mb-0 text-info">
+														Submitted: {new Date(selectedPendingPart.createdAt).toLocaleString()}
+													</p>
+												</div>
+												<Stack direction="horizontal" gap={2}>
+													<Button
+														variant="success"
+														disabled={busy}
+														onClick={() => handleAcceptPendingPart(selectedPendingPart)}>
+														Accept Submission
+													</Button>
+													<Button
+														variant="outline-danger"
+														disabled={busy}
+														onClick={() => {
+															setDeleteTarget({
+																entity: "pending-parts",
+																id: selectedPendingPart.id,
+																title: selectedPendingPart.title,
+															})
+														}}>
+														Deny Submission
+													</Button>
+												</Stack>
+											</div>
+
+											<div className="mb-3">
+												<p className="fw-semibold mb-1">
+													External URL
+												</p>
+												<div>
+													<a
+														href={selectedPendingPart.externalUrl}
+														target="_blank"
+														rel="noreferrer"
+														className="text-info text-break">
+														{selectedPendingPart.externalUrl}
+													</a>
+												</div>
+											</div>
+
+											<div className="mb-3">
+												<p className="fw-semibold mb-1">
+													Image URL(s)
+												</p>
+												<Stack gap={2} className="mt-1">
+													{selectedPendingPart.imageUrls.map((img, idx) => (
+														<div
+															key={idx}
+															className="d-flex align-items-center gap-3 p-2 rounded bg-black bg-opacity-25 border border-secondary-subtle">
+															<img
+																src={img}
+																alt=""
+																style={{
+																	width: "48px",
+																	height: "48px",
+																	objectFit: "cover",
+																	borderRadius: "4px",
+																}}
+																onError={(e) => {
+																	;(e.target as HTMLElement).style.display = "none"
+																}}
+															/>
+															<a
+																href={img}
+																target="_blank"
+																rel="noreferrer"
+																className="text-info text-break">
+																{img}
+															</a>
+														</div>
+													))}
+												</Stack>
+											</div>
+
+											<Row className="mb-3">
+												<Col sm={6}>
+													<p className="fw-semibold mb-1">
+														Fabrication Methods
+													</p>
+													<div className="d-flex flex-wrap gap-1 mt-1">
+														{selectedPendingPart.fabricationMethods.map((m) => (
+															<Badge bg="secondary" key={m}>
+																{m}
+															</Badge>
+														))}
+													</div>
+												</Col>
+												<Col sm={6}>
+													<p className="fw-semibold mb-1">
+														Platforms
+													</p>
+													<div className="d-flex flex-wrap gap-1 mt-1">
+														{selectedPendingPart.platformTypes.map((p) => (
+															<Badge bg="primary" key={p}>
+																{p}
+															</Badge>
+														))}
+													</div>
+												</Col>
+											</Row>
+
+											<div className="mb-3">
+												<p className="fw-semibold mb-1">
+													Part Types
+												</p>
+												<div className="d-flex flex-wrap gap-2 mt-1 align-items-center">
+													{selectedPendingPart.partTypes.map((t) => {
+														const isKnown = allPartTypes.includes(t)
+														return (
+															<div key={t} className="d-inline-flex align-items-center gap-1">
+																<Badge bg={isKnown ? "info" : "warning"} text="dark">
+																	{t}
+																	{!isKnown && " (Suggested / New)"}
+																</Badge>
+																{!isKnown && (
+																	<Button
+																		size="sm"
+																		variant="outline-warning"
+																		className="py-0 px-2"
+																		style={{ fontSize: "0.75rem" }}
+																		disabled={busy}
+																		onClick={() => void handleAcceptSuggestedPartType(t)}>
+																		Add to Database
+																	</Button>
+																)}
+															</div>
+														)
+													})}
+												</div>
+											</div>
+										</Card>
+									) : (
+										<Alert variant="secondary" className="text-center py-5">
+											Select a pending part submission from the list on the left to review, accept, or deny.
+										</Alert>
+									)}
 								</Col>
 							</Row>
 						</Tab>
@@ -1165,6 +1516,25 @@ const Page: React.FC<PageProps> = (pageProps) => {
 								</Col>
 
 								<Col md={8}>
+									{pendingResourceToResolveOnSave && (
+										<Alert
+											variant="info"
+											className="d-flex justify-content-between align-items-center mb-3">
+											<div>
+												<strong>Accepting Pending Resource (#{pendingResourceToResolveOnSave}):</strong>{" "}
+												Data prefilled into draft. Review fields and click &quot;Create Resource&quot; to save to catalog and remove pending entry.
+											</div>
+											<Button
+												variant="outline-secondary"
+												size="sm"
+												onClick={() => {
+													setPendingResourceToResolveOnSave(undefined)
+													setResourceDraft(emptyResourceDraft())
+												}}>
+												Cancel Acceptance
+											</Button>
+										</Alert>
+									)}
 									<Form>
 										<Form.Group className="mb-3">
 											<Form.Label>Title</Form.Label>
@@ -1182,7 +1552,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 										<Form.Group className="mb-3">
 											<Form.Label>Resource Types</Form.Label>
 											<div>
-												{RESOURCE_TYPES.map((value) => (
+												{Array.from(new Set([...allResourceTypes, ...resourceDraft.typeOfResource])).map((value) => (
 													<Form.Check
 														key={value}
 														inline
@@ -1277,14 +1647,29 @@ const Page: React.FC<PageProps> = (pageProps) => {
 														description: resourceDraft.description.trim() || undefined,
 													}
 
+													const isAccepting =
+														!resourceDraft.id &&
+														pendingResourceToResolveOnSave !== undefined
+
 													void mutate(
 														{
 															entity: "resources",
 															action: resourceDraft.id ? "update" : "create",
 															item: payload,
+															resolvedPendingId: isAccepting
+																? pendingResourceToResolveOnSave
+																: undefined,
 														},
-														resourceDraft.id ? "Resource updated." : "Resource created.",
+														resourceDraft.id
+															? "Resource updated."
+															: isAccepting
+																? "Resource created and pending submission accepted/removed."
+																: "Resource created.",
 													)
+
+													if (isAccepting) {
+														setPendingResourceToResolveOnSave(undefined)
+													}
 												}}>
 												{resourceDraft.id ? "Save Changes" : "Create Resource"}
 											</Button>
@@ -1307,6 +1692,189 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											</Button>
 										</Stack>
 									</Form>
+								</Col>
+							</Row>
+						</Tab>
+
+						<Tab eventKey="pending-resources" title={`Pending Resources (${pendingResources.length})`}>
+							<Row>
+								<Col md={4}>
+									<Stack gap={2}>
+										<Form.Control
+											type="text"
+											placeholder="Filter pending resources by id or title"
+											value={pendingResourceFilter}
+											onChange={(event) => setPendingResourceFilter(event.target.value)}
+										/>
+
+										<div style={{ maxHeight: "60vh", overflowY: "auto" }}>
+											<ul style={{ listStyle: "none", paddingLeft: 0 }}>
+												{filteredPendingResources.map((item) => (
+													<li key={item.id} style={{ marginBottom: "0.5rem" }}>
+														<Button
+															className="w-100 text-start d-flex justify-content-between align-items-center"
+															variant={
+																selectedPendingResourceId === item.id
+																	? "info"
+																	: "outline-info"
+															}
+															disabled={busy}
+															onClick={() => setSelectedPendingResourceId(item.id)}>
+															<span className="text-truncate">{item.title}</span>
+															<Badge bg="secondary">
+																#{item.id}
+															</Badge>
+														</Button>
+													</li>
+												))}
+
+												{!filteredPendingResources.length && (
+													<li>
+														<Alert variant="light" className="mb-0">
+															{pendingResources.length
+																? "No pending resources match the filter."
+																: "No pending resources to review."}
+														</Alert>
+													</li>
+												)}
+											</ul>
+										</div>
+									</Stack>
+								</Col>
+
+								<Col md={8}>
+									{selectedPendingResource ? (
+										<Card className="bg-dark text-light border-secondary p-4">
+											<div className="d-flex justify-content-between align-items-center mb-3 border-bottom border-secondary pb-2 flex-wrap gap-2">
+												<div>
+													<h3 className="h5 text-info mb-0">{selectedPendingResource.title}</h3>
+													<p className="mb-0 text-info">
+														Submitted: {new Date(selectedPendingResource.createdAt).toLocaleString()}
+													</p>
+												</div>
+												<Stack direction="horizontal" gap={2}>
+													<Button
+														variant="success"
+														disabled={busy}
+														onClick={() =>
+															handleAcceptPendingResource(selectedPendingResource)
+														}>
+														Accept Submission
+													</Button>
+													<Button
+														variant="outline-danger"
+														disabled={busy}
+														onClick={() => {
+															setDeleteTarget({
+																entity: "pending-resources",
+																id: selectedPendingResource.id,
+																title: selectedPendingResource.title,
+															})
+														}}>
+														Deny Submission
+													</Button>
+												</Stack>
+											</div>
+
+											<div className="mb-3">
+												<p className="fw-semibold mb-1">
+													Resource Types
+												</p>
+												<div className="d-flex flex-wrap gap-2 mt-1 align-items-center">
+													{selectedPendingResource.resourceTypes.map((t) => {
+														const isKnown = allResourceTypes.includes(t)
+														return (
+															<div key={t} className="d-inline-flex align-items-center gap-1">
+																<Badge bg={isKnown ? "info" : "warning"} text="dark">
+																	{t}
+																	{!isKnown && " (Suggested / New)"}
+																</Badge>
+																{!isKnown && (
+																	<Button
+																		size="sm"
+																		variant="outline-warning"
+																		className="py-0 px-2"
+																		style={{ fontSize: "0.75rem" }}
+																		disabled={busy}
+																		onClick={() => void handleAcceptSuggestedResourceType(t)}>
+																		Add to Database
+																	</Button>
+																)}
+															</div>
+														)
+													})}
+												</div>
+											</div>
+
+											<div className="mb-3">
+												<p className="fw-semibold mb-1">
+													External URL
+												</p>
+												<div>
+													<a
+														href={selectedPendingResource.externalUrl}
+														target="_blank"
+														rel="noreferrer"
+														className="text-info text-break">
+														{selectedPendingResource.externalUrl}
+													</a>
+												</div>
+											</div>
+
+											{(selectedPendingResource.appStoreLink ||
+												selectedPendingResource.playStoreLink) && (
+												<Row className="mb-3">
+													{selectedPendingResource.appStoreLink && (
+														<Col sm={6}>
+															<p className="fw-semibold mb-1">
+																App Store Link
+															</p>
+															<div>
+																<a
+																	href={selectedPendingResource.appStoreLink}
+																	target="_blank"
+																	rel="noreferrer"
+																	className="text-info text-break">
+																	{selectedPendingResource.appStoreLink}
+																</a>
+															</div>
+														</Col>
+													)}
+													{selectedPendingResource.playStoreLink && (
+														<Col sm={6}>
+															<p className="fw-semibold mb-1">
+																Play Store Link
+															</p>
+															<div>
+																<a
+																	href={selectedPendingResource.playStoreLink}
+																	target="_blank"
+																	rel="noreferrer"
+																	className="text-info text-break">
+																	{selectedPendingResource.playStoreLink}
+																</a>
+															</div>
+														</Col>
+													)}
+												</Row>
+											)}
+
+											<div className="mb-3">
+												<p className="fw-semibold mb-1">
+													Description
+												</p>
+												<div
+													className="p-3 rounded bg-black bg-opacity-25 border border-secondary-subtle"
+													style={{ whiteSpace: "pre-wrap" }}>
+													{selectedPendingResource.description}
+												</div>
+											</div>
+										</Card>
+									) : (
+										<Alert variant="secondary" className="text-center py-5">
+											Select a pending resource submission from the list on the left to review, accept, or deny.
+										</Alert>
+									)}
 								</Col>
 							</Row>
 						</Tab>

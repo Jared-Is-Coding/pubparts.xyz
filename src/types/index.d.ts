@@ -71,6 +71,7 @@ type PartType =
     | "Stand"
     | "Tire"
     | "Tool"
+    | (string & {})
 
 type FabricationMethod =
     | "3d Printed"
@@ -123,6 +124,7 @@ type ResourceType =
     | "Spreadsheet"
     | "Vendor"
     | "Website"
+    | (string & {})
 
 interface PartsShopData {
     /**
@@ -182,3 +184,27 @@ type ItemCondition =
     | "Like New"
     | "Used"
     | "For Parts"
+
+interface PartPendingData {
+    id: number
+    title: string
+    externalUrl: string
+    imageUrls: string[]
+    fabricationMethods: FabricationMethod[]
+    platformTypes: PlatformType[]
+    partTypes: PartType[]
+    createdAt: string
+    updatedAt: string
+}
+
+interface ResourcePendingData {
+    id: number
+    title: string
+    resourceTypes: ResourceType[]
+    externalUrl: string
+    appStoreLink?: string
+    playStoreLink?: string
+    description: string
+    createdAt: string
+    updatedAt: string
+}

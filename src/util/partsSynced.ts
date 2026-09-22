@@ -3,7 +3,7 @@ import allPartsSnapshot from "../data/synced/partsCatalogSnapshot"
 const sortedParts = [...allPartsSnapshot].sort((a, b) => a.title.localeCompare(b.title))
 
 const platform = (platformName: PlatformType): ItemData[] => {
-    return sortedParts.filter((part) => part.platform.includes(platformName))
+	return sortedParts.filter((part) => part.platform.includes(platformName))
 }
 
 export default sortedParts

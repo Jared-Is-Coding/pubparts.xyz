@@ -3,9 +3,9 @@ import allResourcesSnapshot from "../data/synced/resourcesSnapshot"
 const allResources = allResourcesSnapshot
 
 const resource = (resourceType: ResourceType) => {
-    return allResources
-        .filter((entry) => entry.typeOfResource.includes(resourceType))
-        .sort((a, b) => a.title.localeCompare(b.title))
+	return allResources
+		.filter((entry) => entry.typeOfResource.includes(resourceType))
+		.sort((a, b) => a.title.localeCompare(b.title))
 }
 
 export default allResources

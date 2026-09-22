@@ -10,66 +10,77 @@ import "@scss/pages/shop.scss"
 import allPartsShopItems from "@util/partsShopSynced"
 
 export const Head: HeadFC = () => (
-    <>
-        <html lang="en" />
-        <SiteMetaData
-            title="Catalog | ZiNc's Parts Shop on PubParts.xyz"
-            description="Welcome to my shop" />
-    </>
+	<>
+		<html lang="en" />
+		<SiteMetaData title="Catalog | ZiNc's Parts Shop on PubParts.xyz" description="Welcome to my shop" />
+	</>
 )
 
 const Page: React.FC<PageProps> = () => {
-    return (
-        <>
-            <header>
-                <SiteNavbar />
+	return (
+		<>
+			<header>
+				<SiteNavbar />
 
-                <h1 className="flex-center">
-                    ZiNc's Parts Shop
-                </h1>
-            </header>
-        
-            <main className="page-items">
-                <Container>
-                    <Row>
-                        <Col xs={12}>
-                            <p>Welcome to my parts shop! This is a collection of parts I'm personally selling - Buyer pays shipping unless otherwise noted. If you're interested in something here, reach out to me on Discord at <code>iam_zinc</code> and include:</p>
-                            <ul>
-                                <li>A link to the listing (you can copy this by clicking the little link icon on the listed item)</li>
-                                <li>How many of the listing you would like to buy</li>
-                                <li>A good shipping address, including your name</li>
-                                <li>A good PayPal or Venmo to request from</li>
-                            </ul>
-                            <p>I'll get back to you with a timeline. Once they're ready to go and boxed up, I'll request the final cost with shipping and provide tracking.</p>
-                            <p>If you're interested in a part that is listed elsewhere on pubparts but not present in this shop page, feel free to reach out to me regardless; I may be able to help with printing/manufacturing if you ask!</p>
-                        </Col>
+				<h1 className="flex-center">ZiNc's Parts Shop</h1>
+			</header>
 
-                        <Col xs={12}>
-                            {/* Search area */}
-                            <PartsShopListSearchbar partList={allPartsShopItems} />
-                        </Col>
+			<main className="page-items">
+				<Container>
+					<Row>
+						<Col xs={12}>
+							<p>
+								Welcome to my parts shop! This is a collection of parts I'm personally selling - Buyer
+								pays shipping unless otherwise noted. If you're interested in something here, reach out
+								to me on Discord at <code>iam_zinc</code> and include:
+							</p>
+							<ul>
+								<li>
+									A link to the listing (you can copy this by clicking the little link icon on the
+									listed item)
+								</li>
+								<li>How many of the listing you would like to buy</li>
+								<li>A good shipping address, including your name</li>
+								<li>A good PayPal or Venmo to request from</li>
+							</ul>
+							<p>
+								I'll get back to you with a timeline. Once they're ready to go and boxed up, I'll
+								request the final cost with shipping and provide tracking.
+							</p>
+							<p>
+								If you're interested in a part that is listed elsewhere on pubparts but not present in
+								this shop page, feel free to reach out to me regardless; I may be able to help with
+								printing/manufacturing if you ask!
+							</p>
+						</Col>
 
-                        <Col xs={12}>
-                            {/* Search results headers */}
-                            <h2 id="itemListHeader" style={{ display: "block" }}>Items</h2>
-                            <h2 id="noResultsText" style={{ display: "none", minHeight: "200px" }}>No results.</h2>
+						<Col xs={12}>
+							{/* Search area */}
+							<PartsShopListSearchbar partList={allPartsShopItems} />
+						</Col>
 
-                            <Row>
-                                {/* List parts */}
-                                {!!allPartsShopItems.length &&
-                                    allPartsShopItems
-                                        .filter((p) => p.availableCount != 0)
-                                        .map(PartsShopItemCard)
-                                }
-                            </Row>
-                        </Col>
-                    </Row>
-                </Container>
-            </main>
-                
-            <SiteFooter />
-        </>
-    )
+						<Col xs={12}>
+							{/* Search results headers */}
+							<h2 id="itemListHeader" style={{ display: "block" }}>
+								Items
+							</h2>
+							<h2 id="noResultsText" style={{ display: "none", minHeight: "200px" }}>
+								No results.
+							</h2>
+
+							<Row>
+								{/* List parts */}
+								{!!allPartsShopItems.length &&
+									allPartsShopItems.filter((p) => p.availableCount != 0).map(PartsShopItemCard)}
+							</Row>
+						</Col>
+					</Row>
+				</Container>
+			</main>
+
+			<SiteFooter />
+		</>
+	)
 }
 
 export default Page

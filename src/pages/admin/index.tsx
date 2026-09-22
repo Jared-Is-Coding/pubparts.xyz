@@ -288,6 +288,11 @@ async function requestAdminApi(init?: RequestInit): Promise<AdminApiData> {
 				parts: payload.parts,
 				resources: payload.resources,
 				shopItems: payload.shopItems,
+				pendingParts: payload.pendingParts ?? [],
+				pendingResources: payload.pendingResources ?? [],
+				partTypes: payload.partTypes ?? [],
+				resourceTypes: payload.resourceTypes ?? [],
+				buildTrigger: payload.buildTrigger,
 			}
 		} catch (error) {
 			lastError = error instanceof Error ? error : new Error("Unknown API error")
@@ -801,13 +806,19 @@ const Page: React.FC<PageProps> = (pageProps) => {
 		}
 
 		if (entity === "pending-parts") {
-			void mutate({ entity: "pending-parts", action: "delete", id }, "Pending part submission denied and deleted.")
+			void mutate(
+				{ entity: "pending-parts", action: "delete", id },
+				"Pending part submission denied and deleted.",
+			)
 			setSelectedPendingPartId(undefined)
 			return
 		}
 
 		if (entity === "pending-resources") {
-			void mutate({ entity: "pending-resources", action: "delete", id }, "Pending resource submission denied and deleted.")
+			void mutate(
+				{ entity: "pending-resources", action: "delete", id },
+				"Pending resource submission denied and deleted.",
+			)
 			setSelectedPendingResourceId(undefined)
 			return
 		}
@@ -833,7 +844,9 @@ const Page: React.FC<PageProps> = (pageProps) => {
 		setSelectedPartId(undefined)
 		setPendingPartToResolveOnSave(item.id)
 		setTabKey("parts")
-		setStatus(`Accepting pending part "${item.title}". Pre-filled into a new part draft. Review or add Dropbox details, then click "Create Part" to save.`)
+		setStatus(
+			`Accepting pending part "${item.title}". Pre-filled into a new part draft. Review or add Dropbox details, then click "Create Part" to save.`,
+		)
 		setError("")
 		setWarning("")
 	}
@@ -851,7 +864,9 @@ const Page: React.FC<PageProps> = (pageProps) => {
 		setSelectedResourceId(undefined)
 		setPendingResourceToResolveOnSave(item.id)
 		setTabKey("resources")
-		setStatus(`Accepting pending resource "${item.title}". Pre-filled into a new resource draft. Review, then click "Create Resource" to save.`)
+		setStatus(
+			`Accepting pending resource "${item.title}". Pre-filled into a new resource draft. Review, then click "Create Resource" to save.`,
+		)
 		setError("")
 		setWarning("")
 	}
@@ -1006,7 +1021,8 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											<div>
 												<strong>Accepting Pending Part (#{pendingPartToResolveOnSave}):</strong>{" "}
 												Data prefilled into draft. Add Dropbox link/date, review fields, and
-												click &quot;Create Part&quot; to save to catalog and remove pending entry.
+												click &quot;Create Part&quot; to save to catalog and remove pending
+												entry.
 											</div>
 											<Button
 												variant="outline-secondary"
@@ -1166,24 +1182,26 @@ const Page: React.FC<PageProps> = (pageProps) => {
 										<Form.Group className="mb-3">
 											<Form.Label>Part Types</Form.Label>
 											<div>
-												{Array.from(new Set([...allPartTypes, ...partDraft.typeOfPart])).map((value) => (
-													<Form.Check
-														key={value}
-														inline
-														type="checkbox"
-														label={value}
-														checked={partDraft.typeOfPart.includes(value)}
-														onChange={() =>
-															setPartDraft({
-																...partDraft,
-																typeOfPart: toggleArrayValue(
-																	partDraft.typeOfPart,
-																	value,
-																),
-															})
-														}
-													/>
-												))}
+												{Array.from(new Set([...allPartTypes, ...partDraft.typeOfPart])).map(
+													(value) => (
+														<Form.Check
+															key={value}
+															inline
+															type="checkbox"
+															label={value}
+															checked={partDraft.typeOfPart.includes(value)}
+															onChange={() =>
+																setPartDraft({
+																	...partDraft,
+																	typeOfPart: toggleArrayValue(
+																		partDraft.typeOfPart,
+																		value,
+																	),
+																})
+															}
+														/>
+													),
+												)}
 											</div>
 										</Form.Group>
 
@@ -1271,14 +1289,14 @@ const Page: React.FC<PageProps> = (pageProps) => {
 														<Button
 															className="w-100 text-start d-flex justify-content-between align-items-center"
 															variant={
-																selectedPendingPartId === item.id ? "info" : "outline-info"
+																selectedPendingPartId === item.id
+																	? "info"
+																	: "outline-info"
 															}
 															disabled={busy}
 															onClick={() => setSelectedPendingPartId(item.id)}>
 															<span className="text-truncate">{item.title}</span>
-															<Badge bg="secondary">
-																#{item.id}
-															</Badge>
+															<Badge bg="secondary">#{item.id}</Badge>
 														</Button>
 													</li>
 												))}
@@ -1304,7 +1322,8 @@ const Page: React.FC<PageProps> = (pageProps) => {
 												<div>
 													<h3 className="h5 text-info mb-0">{selectedPendingPart.title}</h3>
 													<p className="mb-0 text-info">
-														Submitted: {new Date(selectedPendingPart.createdAt).toLocaleString()}
+														Submitted:{" "}
+														{new Date(selectedPendingPart.createdAt).toLocaleString()}
 													</p>
 												</div>
 												<Stack direction="horizontal" gap={2}>
@@ -1330,9 +1349,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											</div>
 
 											<div className="mb-3">
-												<p className="fw-semibold mb-1">
-													External URL
-												</p>
+												<p className="fw-semibold mb-1">External URL</p>
 												<div>
 													<a
 														href={selectedPendingPart.externalUrl}
@@ -1345,9 +1362,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											</div>
 
 											<div className="mb-3">
-												<p className="fw-semibold mb-1">
-													Image URL(s)
-												</p>
+												<p className="fw-semibold mb-1">Image URL(s)</p>
 												<Stack gap={2} className="mt-1">
 													{selectedPendingPart.imageUrls.map((img, idx) => (
 														<div
@@ -1380,9 +1395,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 
 											<Row className="mb-3">
 												<Col sm={6}>
-													<p className="fw-semibold mb-1">
-														Fabrication Methods
-													</p>
+													<p className="fw-semibold mb-1">Fabrication Methods</p>
 													<div className="d-flex flex-wrap gap-1 mt-1">
 														{selectedPendingPart.fabricationMethods.map((m) => (
 															<Badge bg="secondary" key={m}>
@@ -1392,9 +1405,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 													</div>
 												</Col>
 												<Col sm={6}>
-													<p className="fw-semibold mb-1">
-														Platforms
-													</p>
+													<p className="fw-semibold mb-1">Platforms</p>
 													<div className="d-flex flex-wrap gap-1 mt-1">
 														{selectedPendingPart.platformTypes.map((p) => (
 															<Badge bg="primary" key={p}>
@@ -1406,14 +1417,14 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											</Row>
 
 											<div className="mb-3">
-												<p className="fw-semibold mb-1">
-													Part Types
-												</p>
+												<p className="fw-semibold mb-1">Part Types</p>
 												<div className="d-flex flex-wrap gap-2 mt-1 align-items-center">
 													{selectedPendingPart.partTypes.map((t) => {
 														const isKnown = allPartTypes.includes(t)
 														return (
-															<div key={t} className="d-inline-flex align-items-center gap-1">
+															<div
+																key={t}
+																className="d-inline-flex align-items-center gap-1">
 																<Badge bg={isKnown ? "info" : "warning"} text="dark">
 																	{t}
 																	{!isKnown && " (Suggested / New)"}
@@ -1425,7 +1436,9 @@ const Page: React.FC<PageProps> = (pageProps) => {
 																		className="py-0 px-2"
 																		style={{ fontSize: "0.75rem" }}
 																		disabled={busy}
-																		onClick={() => void handleAcceptSuggestedPartType(t)}>
+																		onClick={() =>
+																			void handleAcceptSuggestedPartType(t)
+																		}>
 																		Add to Database
 																	</Button>
 																)}
@@ -1437,7 +1450,8 @@ const Page: React.FC<PageProps> = (pageProps) => {
 										</Card>
 									) : (
 										<Alert variant="secondary" className="text-center py-5">
-											Select a pending part submission from the list on the left to review, accept, or deny.
+											Select a pending part submission from the list on the left to review,
+											accept, or deny.
 										</Alert>
 									)}
 								</Col>
@@ -1521,8 +1535,11 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											variant="info"
 											className="d-flex justify-content-between align-items-center mb-3">
 											<div>
-												<strong>Accepting Pending Resource (#{pendingResourceToResolveOnSave}):</strong>{" "}
-												Data prefilled into draft. Review fields and click &quot;Create Resource&quot; to save to catalog and remove pending entry.
+												<strong>
+													Accepting Pending Resource (#{pendingResourceToResolveOnSave}):
+												</strong>{" "}
+												Data prefilled into draft. Review fields and click &quot;Create
+												Resource&quot; to save to catalog and remove pending entry.
 											</div>
 											<Button
 												variant="outline-secondary"
@@ -1552,7 +1569,9 @@ const Page: React.FC<PageProps> = (pageProps) => {
 										<Form.Group className="mb-3">
 											<Form.Label>Resource Types</Form.Label>
 											<div>
-												{Array.from(new Set([...allResourceTypes, ...resourceDraft.typeOfResource])).map((value) => (
+												{Array.from(
+													new Set([...allResourceTypes, ...resourceDraft.typeOfResource]),
+												).map((value) => (
 													<Form.Check
 														key={value}
 														inline
@@ -1721,9 +1740,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 															disabled={busy}
 															onClick={() => setSelectedPendingResourceId(item.id)}>
 															<span className="text-truncate">{item.title}</span>
-															<Badge bg="secondary">
-																#{item.id}
-															</Badge>
+															<Badge bg="secondary">#{item.id}</Badge>
 														</Button>
 													</li>
 												))}
@@ -1747,9 +1764,12 @@ const Page: React.FC<PageProps> = (pageProps) => {
 										<Card className="bg-dark text-light border-secondary p-4">
 											<div className="d-flex justify-content-between align-items-center mb-3 border-bottom border-secondary pb-2 flex-wrap gap-2">
 												<div>
-													<h3 className="h5 text-info mb-0">{selectedPendingResource.title}</h3>
+													<h3 className="h5 text-info mb-0">
+														{selectedPendingResource.title}
+													</h3>
 													<p className="mb-0 text-info">
-														Submitted: {new Date(selectedPendingResource.createdAt).toLocaleString()}
+														Submitted:{" "}
+														{new Date(selectedPendingResource.createdAt).toLocaleString()}
 													</p>
 												</div>
 												<Stack direction="horizontal" gap={2}>
@@ -1777,14 +1797,14 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											</div>
 
 											<div className="mb-3">
-												<p className="fw-semibold mb-1">
-													Resource Types
-												</p>
+												<p className="fw-semibold mb-1">Resource Types</p>
 												<div className="d-flex flex-wrap gap-2 mt-1 align-items-center">
 													{selectedPendingResource.resourceTypes.map((t) => {
 														const isKnown = allResourceTypes.includes(t)
 														return (
-															<div key={t} className="d-inline-flex align-items-center gap-1">
+															<div
+																key={t}
+																className="d-inline-flex align-items-center gap-1">
 																<Badge bg={isKnown ? "info" : "warning"} text="dark">
 																	{t}
 																	{!isKnown && " (Suggested / New)"}
@@ -1796,7 +1816,9 @@ const Page: React.FC<PageProps> = (pageProps) => {
 																		className="py-0 px-2"
 																		style={{ fontSize: "0.75rem" }}
 																		disabled={busy}
-																		onClick={() => void handleAcceptSuggestedResourceType(t)}>
+																		onClick={() =>
+																			void handleAcceptSuggestedResourceType(t)
+																		}>
 																		Add to Database
 																	</Button>
 																)}
@@ -1807,9 +1829,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											</div>
 
 											<div className="mb-3">
-												<p className="fw-semibold mb-1">
-													External URL
-												</p>
+												<p className="fw-semibold mb-1">External URL</p>
 												<div>
 													<a
 														href={selectedPendingResource.externalUrl}
@@ -1826,9 +1846,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 												<Row className="mb-3">
 													{selectedPendingResource.appStoreLink && (
 														<Col sm={6}>
-															<p className="fw-semibold mb-1">
-																App Store Link
-															</p>
+															<p className="fw-semibold mb-1">App Store Link</p>
 															<div>
 																<a
 																	href={selectedPendingResource.appStoreLink}
@@ -1842,9 +1860,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 													)}
 													{selectedPendingResource.playStoreLink && (
 														<Col sm={6}>
-															<p className="fw-semibold mb-1">
-																Play Store Link
-															</p>
+															<p className="fw-semibold mb-1">Play Store Link</p>
 															<div>
 																<a
 																	href={selectedPendingResource.playStoreLink}
@@ -1860,9 +1876,7 @@ const Page: React.FC<PageProps> = (pageProps) => {
 											)}
 
 											<div className="mb-3">
-												<p className="fw-semibold mb-1">
-													Description
-												</p>
+												<p className="fw-semibold mb-1">Description</p>
 												<div
 													className="p-3 rounded bg-black bg-opacity-25 border border-secondary-subtle"
 													style={{ whiteSpace: "pre-wrap" }}>
@@ -1872,7 +1886,8 @@ const Page: React.FC<PageProps> = (pageProps) => {
 										</Card>
 									) : (
 										<Alert variant="secondary" className="text-center py-5">
-											Select a pending resource submission from the list on the left to review, accept, or deny.
+											Select a pending resource submission from the list on the left to review,
+											accept, or deny.
 										</Alert>
 									)}
 								</Col>

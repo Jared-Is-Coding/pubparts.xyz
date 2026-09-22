@@ -413,34 +413,12 @@ const ProposePage: React.FC<PageProps> = () => {
 															<Card.Title as="h3" className="mb-0">
 																New Part
 															</Card.Title>
-															<p className="card-subtitle mt-1 mb-0">
-																Hardware &amp; Accessories
-															</p>
 														</div>
 													</div>
 
 													<p className="card-text mb-3">
-														Submit a 3D-printable or machined component, bumper, footpad,
-														fender, rail attachment, or DIY enclosure.
+														Submit a manufacturable, open-source component.
 													</p>
-
-													<div className="mb-4 d-flex flex-wrap gap-1">
-														<Badge pill bg="dark">
-															3D Print / STEP
-														</Badge>
-														<Badge pill bg="dark">
-															MakerWorld
-														</Badge>
-														<Badge pill bg="dark">
-															Printables
-														</Badge>
-														<Badge pill bg="dark">
-															Thingiverse
-														</Badge>
-														<Badge pill bg="dark">
-															Thangs
-														</Badge>
-													</div>
 												</Card.Body>
 
 												<div className="tile-action-footer">
@@ -467,34 +445,13 @@ const ProposePage: React.FC<PageProps> = () => {
 															<Card.Title as="h3" className="mb-0">
 																New Resource
 															</Card.Title>
-															<p className="card-subtitle mt-1 mb-0">
-																Guides &amp; Tools
-															</p>
 														</div>
 													</div>
 
 													<p className="card-text mb-3">
-														Share an application, code repository, build guide, battery
-														spreadsheet, or trusted vendor with the community.
+														Submit an application, code repository, guide, spreadsheet,
+														website, or trusted vendor with the community.
 													</p>
-
-													<div className="mb-4 d-flex flex-wrap gap-1">
-														<Badge pill bg="dark">
-															Applications
-														</Badge>
-														<Badge pill bg="dark">
-															Repositories
-														</Badge>
-														<Badge pill bg="dark">
-															Spreadsheets
-														</Badge>
-														<Badge pill bg="dark">
-															Guides
-														</Badge>
-														<Badge pill bg="dark">
-															Vendors
-														</Badge>
-													</div>
 												</Card.Body>
 
 												<div className="tile-action-footer">

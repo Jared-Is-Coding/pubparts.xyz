@@ -11,49 +11,50 @@ import "@scss/pages/items.scss"
 import { xrParts } from "@util/partsSynced"
 
 export const Head: HeadFC = () => (
-    <>
-        <html lang="en" />
-        <SiteMetaData
-            title="XR/Funwheel Parts | PubParts.xyz"
-            description="Open source or otherwise aftermarket parts for the XR/Funwheel platform" />
-    </>
+	<>
+		<html lang="en" />
+		<SiteMetaData
+			title="XR/Funwheel Parts | PubParts.xyz"
+			description="Open source or otherwise aftermarket parts for the XR/Funwheel platform"
+		/>
+	</>
 )
 
 const Page: React.FC<PageProps> = () => {
-    return (
-        <>
-            <header>
-                <SiteNavbar />
+	return (
+		<>
+			<header>
+				<SiteNavbar />
 
-                <h1 className="flex-center">
-                    XR/Funwheel Parts
-                </h1>
-            </header>
+				<h1 className="flex-center">XR/Funwheel Parts</h1>
+			</header>
 
-            <main className="page-items">
-                <Container>
-                    {/* Search area */}
-                    <ItemListSearchbar partList={xrParts} />
+			<main className="page-items">
+				<Container>
+					{/* Search area */}
+					<ItemListSearchbar partList={xrParts} />
 
-                    {/* Search results headers */}
-                    <h2 id="itemListHeader" style={{ display: "block" }}>Items</h2>
-                    <h2 id="noResultsText" style={{ display: "none", minHeight: "200px" }}>No results.</h2>
+					{/* Search results headers */}
+					<h2 id="itemListHeader" style={{ display: "block" }}>
+						Items
+					</h2>
+					<h2 id="noResultsText" style={{ display: "none", minHeight: "200px" }}>
+						No results.
+					</h2>
 
-                    <Row>
-                        {/* List parts */}
-                        {!!xrParts.length &&
-                            xrParts.map(ItemCard)
-                        }
+					<Row>
+						{/* List parts */}
+						{!!xrParts.length && xrParts.map(ItemCard)}
 
-                        {/* Copyright card */}
-                        <CopyrightCard />
-                    </Row>
-                </Container>
-            </main>
-                
-            <SiteFooter />
-        </>
-    )
+						{/* Copyright card */}
+						<CopyrightCard />
+					</Row>
+				</Container>
+			</main>
+
+			<SiteFooter />
+		</>
+	)
 }
 
 export default Page

@@ -1,19 +1,19 @@
-import { type HeadFC, type PageProps } from "gatsby"
-import React from "react"
-import { Container, Row } from "react-bootstrap"
 import ResourceCard from "@components/ResourceCard"
 import ResourceListSearchbar from "@components/ResourceListSearchbar"
 import SiteFooter from "@components/SiteFooter"
 import SiteMetaData from "@components/SiteMetaData"
 import SiteNavbar from "@components/SiteNavbar"
 import "@scss/pages/resources.scss"
-import { spreadsheetsResources } from "@util/resourcesSynced"
+import { collectionsResources } from "@util/resourcesSynced"
+import { type HeadFC, type PageProps } from "gatsby"
+import React from "react"
+import { Container, Row } from "react-bootstrap"
 
 export const Head: HeadFC = () => (
 	<>
 		<html lang="en" />
 		<SiteMetaData
-			title="Spreadsheets | Resources | PubParts.xyz"
+			title="Collections and Lists | Resources | PubParts.xyz"
 			description="Various resources for VESC builders"
 		/>
 	</>
@@ -25,13 +25,13 @@ const Page: React.FC<PageProps> = () => {
 			<header>
 				<SiteNavbar />
 
-				<h1 className="flex-center">Spreadsheets</h1>
+				<h1 className="flex-center">Collections and Lists</h1>
 			</header>
 
 			<main className="page-resources">
 				<Container>
 					{/* Search area */}
-					<ResourceListSearchbar resourceList={spreadsheetsResources} />
+					<ResourceListSearchbar resourceList={collectionsResources} />
 
 					{/* Search results headers */}
 					<h2 id="resourceListHeader" style={{ display: "block" }}>
@@ -43,7 +43,7 @@ const Page: React.FC<PageProps> = () => {
 
 					<Row>
 						{/* List resources */}
-						{!!spreadsheetsResources.length && spreadsheetsResources.map(ResourceCard)}
+						{!!collectionsResources.length && collectionsResources.map(ResourceCard)}
 					</Row>
 				</Container>
 			</main>

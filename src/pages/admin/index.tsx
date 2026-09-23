@@ -117,11 +117,10 @@ const PART_SHOP_TYPES: PartShopType[] = [
 	"Sensor",
 ]
 const RESOURCE_TYPES: ResourceType[] = [
-	"App",
+	"Collections and Lists",
 	"Github Repository",
-	"Written Guide",
-	"Video Guide",
-	"Spreadsheet",
+	"Guides",
+	"Tools",
 	"Vendor",
 	"Website",
 ]

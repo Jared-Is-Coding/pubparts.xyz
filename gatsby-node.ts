@@ -11,13 +11,12 @@ import allParts, {
 	xrParts,
 } from "./src/util/partsSynced"
 import allResources, {
-	applicationsResources,
-	codeRepositoriesResources,
-	spreadsheetsResources,
+	githubRepositoriesResources,
+	collectionsResources,
+	guidesResources,
+	toolsResources,
 	vendorsResources,
-	videoGuidesResources,
 	websitesResources,
-	writtenGuidesResources,
 } from "./src/util/resourcesSynced"
 
 exports.createPages = ({ actions }: CreatePagesArgs) => {
@@ -30,6 +29,10 @@ exports.createPages = ({ actions }: CreatePagesArgs) => {
 		{ from: "/boards/xr", to: "/parts/xr", permanent: true },
 		{ from: "/boards/misc", to: "/parts/misc", permanent: true },
 		{ from: "/boards", to: "/parts", permanent: true },
+		{ from: "/resources/applications", to: "/resources/tools", permanent: true },
+		{ from: "/resources/spreadsheets", to: "/resources/collections", permanent: true },
+		{ from: "/resources/videoguides", to: "/resources/guides", permanent: true },
+		{ from: "/resources/writtenguides", to: "/resources/guides", permanent: true },
 	]
 
 	for (const thisRedirect of redirects) {
@@ -70,13 +73,16 @@ const jsonEndpoints: Array<[string, unknown]> = [
 	["parts/xr.json", xrParts],
 	["parts/xrclassic.json", xrClassicParts],
 	["resources.json", allResources],
-	["resources/applications.json", applicationsResources],
-	["resources/repositories.json", codeRepositoriesResources],
-	["resources/spreadsheets.json", spreadsheetsResources],
+	["resources/tools.json", toolsResources],
+	["resources/repositories.json", githubRepositoriesResources],
+	["resources/collections.json", collectionsResources],
 	["resources/vendors.json", vendorsResources],
-	["resources/videoguides.json", videoGuidesResources],
+	["resources/guides.json", guidesResources],
 	["resources/websites.json", websitesResources],
-	["resources/writtenguides.json", writtenGuidesResources],
+	["resources/applications.json", toolsResources],
+	["resources/spreadsheets.json", collectionsResources],
+	["resources/videoguides.json", guidesResources],
+	["resources/writtenguides.json", guidesResources],
 ]
 
 exports.onCreateDevServer = ({ app }: CreateDevServerArgs) => {

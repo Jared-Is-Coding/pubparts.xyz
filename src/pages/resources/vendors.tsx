@@ -1,6 +1,3 @@
-import { type HeadFC, type PageProps } from "gatsby"
-import React from "react"
-import { Container, Row } from "react-bootstrap"
 import ResourceCard from "@components/ResourceCard"
 import ResourceListSearchbar from "@components/ResourceListSearchbar"
 import SiteFooter from "@components/SiteFooter"
@@ -8,6 +5,9 @@ import SiteMetaData from "@components/SiteMetaData"
 import SiteNavbar from "@components/SiteNavbar"
 import "@scss/pages/resources.scss"
 import { vendorsResources } from "@util/resourcesSynced"
+import { type HeadFC, type PageProps } from "gatsby"
+import React from "react"
+import { Container, Row } from "react-bootstrap"
 
 export const Head: HeadFC = () => (
 	<>
@@ -22,7 +22,7 @@ const Page: React.FC<PageProps> = () => {
 			<header>
 				<SiteNavbar />
 
-				<h1 className="flex-center">Aftermarket Vendors</h1>
+				<h1 className="flex-center">Vendors</h1>
 			</header>
 
 			<main className="page-resources">

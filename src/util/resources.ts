@@ -1,7 +1,7 @@
 const allResources = [
 	{
 		title: "Floaty",
-		typeOfResource: ["App"],
+		typeOfResource: ["Tools"],
 		appStoreLink: "https://apps.apple.com/us/app/id1671681675",
 		playStoreLink: "https://play.google.com/store/apps/details?id=com.floaty.floatyapp",
 		description:
@@ -9,7 +9,7 @@ const allResources = [
 	},
 	{
 		title: "VESC Tool",
-		typeOfResource: ["App"],
+		typeOfResource: ["Tools"],
 		appStoreLink: "https://apps.apple.com/us/app/id1605488891",
 		playStoreLink: "https://play.google.com/store/apps/details?id=vedder.vesctool",
 		description:
@@ -17,14 +17,14 @@ const allResources = [
 	},
 	{
 		title: "Float Control: VESC Companion",
-		typeOfResource: ["App"],
+		typeOfResource: ["Tools"],
 		appStoreLink: "https://apps.apple.com/us/app/id1590924299",
 		description:
 			"Connect to your VESC®-based esk8 skateboard builds via Bluetooth to monitor statistics such as voltage, amps, speed and many more.",
 	},
 	{
 		title: "Float Hub: VESC Setup Assistant",
-		typeOfResource: ["App"],
+		typeOfResource: ["Tools"],
 		playStoreLink: "https://play.google.com/store/apps/details?id=com.thefloatlife.FloatHub",
 		description: "Float Hub is your solution to an easy and streamlined setup process for your VESC®-based board.",
 	},
@@ -48,67 +48,67 @@ const allResources = [
 	},
 	{
 		title: "Motor Crunch Troubleshooting Guide",
-		typeOfResource: ["Written Guide"],
+		typeOfResource: ["Guides"],
 		externalUrl: "https://pev.dev/t/motor-crunch-troubleshooting/228",
 		description: "Does your motor make crunchy/cogging sounds when braking hard or accelerating?",
 	},
 	{
 		title: "Surfdado VESC Setup Guide",
-		typeOfResource: ["Video Guide"],
+		typeOfResource: ["Guides"],
 		externalUrl: "https://youtu.be/xaKGDummXeE",
 		description: "VESC Onewheel Setup A-Z for 6.2 firmware (latest)",
 	},
 	{
 		title: "TheBoardGarage VESC Setup Guide",
-		typeOfResource: ["Video Guide"],
+		typeOfResource: ["Guides"],
 		externalUrl: "https://www.youtube.com/watch?v=YeFLmPA049o",
 		description: "VESC Onewheel Setup for 6.2 firmware",
 	},
 	{
 		title: "HyperCore Stock to Fungineers Motor Connector Replacement Guide",
-		typeOfResource: ["Written Guide"],
+		typeOfResource: ["Guides"],
 		externalUrl: "https://pev.dev/t/1960",
 		description: "This guide will help you install a Fungineers motor cable in your HyperCore motor.",
 	},
 	{
 		title: "TheBoardGarage Articles",
-		typeOfResource: ["Written Guide"],
+		typeOfResource: ["Guides"],
 		externalUrl: "https://theboardgarage.com/articles",
 		description: "Collection of battery related guides and articles",
 	},
 	{
 		title: "How to Create CSV Logs",
-		typeOfResource: ["Written Guide"],
+		typeOfResource: ["Guides"],
 		externalUrl: "https://pev.dev/t/how-to-create-csv-logs/436",
 		description: "A guide to create CSV logs in VESC Tool App",
 	},
 	{
 		title: "VESC Logs Tutorial",
-		typeOfResource: ["Written Guide"],
+		typeOfResource: ["Guides"],
 		externalUrl: "https://docs.google.com/document/d/1DZV0oKDQWWqWCkOSJJDLrGvE0EA0v4Gj1mitOXhpvyM/edit",
 		description: "How to view VESC Logs",
 	},
 	{
 		title: "How to VESC a GT",
-		typeOfResource: ["Video Guide"],
+		typeOfResource: ["Guides"],
 		externalUrl: "https://www.youtube.com/watch?v=BwStG5CRnPs&t",
 		description: "Leon Chang's GT -> VESC Conversion Guide",
 	},
 	{
 		title: "Soldering 101",
-		typeOfResource: ["Video Guide"],
+		typeOfResource: ["Guides"],
 		externalUrl: "https://www.youtube.com/watch?v=ez99VcGNFJc",
 		description: "Leon Chang's Soldering Guide",
 	},
 	{
 		title: "All Things VESC Battery Comparison",
-		typeOfResource: ["Spreadsheet"],
+		typeOfResource: ["Collections and Lists"],
 		externalUrl: "https://docs.google.com/spreadsheets/d/1EPqBROovzQ03iRKpK6Xfy0T7oEG6ZpiBP0-BecQBbUA/edit",
 		description: "Battery pack data comparison tool for various controllers and battery configurations",
 	},
 	{
 		title: "ADV 3d Printed List",
-		typeOfResource: ["Spreadsheet"],
+		typeOfResource: ["Collections and Lists"],
 		externalUrl: "https://docs.google.com/spreadsheets/d/1mq-P3KeisLS-J33Qv6TXYyChz70qhU_axgL4iG-yIJk/edit",
 		description: "3d parts and accessories for the Floatwheel ADV platform",
 	},
@@ -293,10 +293,9 @@ const resource = (resourceType: ResourceType) => {
 }
 
 export default allResources
-export const applicationsResources = resource("App")
-export const codeRepositoriesResources = resource("Github Repository")
-export const spreadsheetsResources = resource("Spreadsheet")
+export const githubRepositoriesResources = resource("Github Repository")
+export const collectionsResources = resource("Collections and Lists")
+export const guidesResources = resource("Guides")
+export const toolsResources = resource("Tools")
 export const vendorsResources = resource("Vendor")
-export const videoGuidesResources = resource("Video Guide")
 export const websitesResources = resource("Website")
-export const writtenGuidesResources = resource("Written Guide")

@@ -8,13 +8,12 @@ import { Button, Col, Row } from "react-bootstrap"
  */
 export default () => {
 	const resources = [
-		{ href: "/resources/applications", label: "Applications" },
-		{ href: "/resources/repositories", label: "Code Repositories" },
-		{ href: "/resources/spreadsheets", label: "Spreadsheets" },
+		{ href: "/resources/collections", label: "Collections and Lists" },
+		{ href: "/resources/repositories", label: "Github Repositories" },
+		{ href: "/resources/guides", label: "Guides" },
+		{ href: "/resources/tools", label: "Tools" },
 		{ href: "/resources/vendors", label: "Vendors" },
-		{ href: "/resources/videoguides", label: "Video Guides" },
 		{ href: "/resources/websites", label: "Websites" },
-		{ href: "/resources/writtenguides", label: "Written Guides" },
 	]
 
 	return (

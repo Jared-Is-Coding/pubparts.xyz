@@ -1,210 +1,200 @@
 declare module "*.scss" {
-    const classes: Record<string, string>
-    export default classes
+	const classes: Record<string, string>
+	export default classes
 }
 
 interface ItemData {
-    /**
-     * Item title text
-     */
-    title: string
-    /**
-     * Item fabrication method
-     */ 
-    fabricationMethod: FabricationMethod[]
-    /**
-     * Item type
-     */ 
-    typeOfPart: PartType[]
-    /**
-     * Image source url
-     */
-    imageSrc: string | string[]
-    /**
-     * Platform type
-     */
-    platform: PlatformType[]
-    /**
-     * Item external URL
-     */
-    externalUrl?: string
-    /**
-     * Item ZIP direct download URL
-     */
-    dropboxUrl?: string
-    /**
-     * Item ZIP direct download last updated
-     */
-    dropboxZipLastUpdated?: string
+	/**
+	 * Item title text
+	 */
+	title: string
+	/**
+	 * Item fabrication method
+	 */
+	fabricationMethod: FabricationMethod[]
+	/**
+	 * Item type
+	 */
+	typeOfPart: PartType[]
+	/**
+	 * Image source url
+	 */
+	imageSrc: string | string[]
+	/**
+	 * Platform type
+	 */
+	platform: PlatformType[]
+	/**
+	 * Item external URL
+	 */
+	externalUrl?: string
+	/**
+	 * Item ZIP direct download URL
+	 */
+	dropboxUrl?: string
+	/**
+	 * Item ZIP direct download last updated
+	 */
+	dropboxZipLastUpdated?: string
 }
 
 type PartType =
-    | "Adapter"
-    | "Axle Block"
-    | "Battery Assembly"
-    | "Battery Box"
-    | "Bearing Cover"
-    | "BMS"
-    | "Bracket"
-    | "Breakout Board"
-    | "Bumper"
-    | "Connector Cover"
-    | "Controller Box"
-    | "Controller"
-    | "Fender"
-    | "Fender Attachment"
-    | "Fender Delete"
-    | "Footpad"
-    | "Footpad Attachment"
-    | "Gasket"
-    | "Hall Sensor"
-    | "LED"
-    | "Miscellaneous"
-    | "Motor"
-    | "Motor Cover"
-    | "Plug"
-    | "Port Cover"
-    | "Rail Attachment"
-    | "Rails"
-    | "Remote"
-    | "Rim Saver"
-    | "Stand"
-    | "Tire"
-    | "Tool"
-    | (string & {})
+	| "Adapter"
+	| "Axle Block"
+	| "Battery Assembly"
+	| "Battery Box"
+	| "Bearing Cover"
+	| "BMS"
+	| "Bracket"
+	| "Breakout Board"
+	| "Bumper"
+	| "Connector Cover"
+	| "Controller Box"
+	| "Controller"
+	| "Fender"
+	| "Fender Attachment"
+	| "Fender Delete"
+	| "Footpad"
+	| "Footpad Attachment"
+	| "Gasket"
+	| "Hall Sensor"
+	| "LED"
+	| "Miscellaneous"
+	| "Motor"
+	| "Motor Cover"
+	| "Plug"
+	| "Port Cover"
+	| "Rail Attachment"
+	| "Rails"
+	| "Remote"
+	| "Rim Saver"
+	| "Stand"
+	| "Tire"
+	| "Tool"
+	| (string & {})
 
-type FabricationMethod =
-    | "3d Printed"
-    | "CNC"
-    | "Laser"
-    | "Other"
-    | "PCB"
+type FabricationMethod = "3d Printed" | "CNC" | "Laser" | "Other" | "PCB"
 
-type PlatformType = 
-    | "Floatwheel"
-    | "GT/GT-S"
-    | "Miscellaneous Items"
-    | "Pint/X/S"
-    | "VESC Electronics"
-    | "XR/Funwheel"
-    | "XR Classic"
+type PlatformType =
+	| "Floatwheel"
+	| "GT/GT-S"
+	| "Miscellaneous Items"
+	| "Pint/X/S"
+	| "VESC Electronics"
+	| "XR/Funwheel"
+	| "XR Classic"
 
 interface ResourceData {
-    /**
-     * Resource title text
-     */
-    title: string
-    /**
-     * Resource type
-     */ 
-    typeOfResource: ResourceType[]
-    /**
-     * Resource external URL
-     */
-    externalUrl?: string
-    /**
-     * Apple App Store link
-     */
-    appStoreLink?: string
-    /**
-     * Google Play Store link
-     */
-    playStoreLink?: string
-    /**
-     * Resource description text
-     */
-    description?: string
+	/**
+	 * Resource title text
+	 */
+	title: string
+	/**
+	 * Resource type
+	 */
+	typeOfResource: ResourceType[]
+	/**
+	 * Resource external URL
+	 */
+	externalUrl?: string
+	/**
+	 * Apple App Store link
+	 */
+	appStoreLink?: string
+	/**
+	 * Google Play Store link
+	 */
+	playStoreLink?: string
+	/**
+	 * Resource description text
+	 */
+	description?: string
 }
 
 type ResourceType =
-    | "App"
-    | "Github Repository"
-    | "Written Guide"
-    | "Video Guide"
-    | "Spreadsheet"
-    | "Vendor"
-    | "Website"
-    | (string & {})
+	| "Collections and Lists"
+	| "Github Repository"
+	| "Guides"
+	| "Tools"
+	| "Vendor"
+	| "Website"
+	| (string & {})
 
 interface PartsShopData {
-    /**
-     * Item title text
-     */
-    title: string
-    /**
-     * Item type
-     */ 
-    typeOfPart: PartShopType[]
-    /**
-     * Platform type
-     */
-    platform: PlatformType[]
-    /**
-     * How many of these are left
-     */
-    availableCount: number
-    /**
-     * Item price number
-     */ 
-    price: number
-    /**
-     * Item description text
-     */ 
-    condition: ItemCondition
-    /**
-     * Image source url
-     */
-    imageSrc?: string | string[]
-    /**
-     * Item description text
-     */ 
-    description?: string
-    /**
-     * Item external URL
-     */
-    externalUrl?: string
-    /**
-     * Present this item at the top of the shop listings
-     */
-    featured?: boolean
+	/**
+	 * Item title text
+	 */
+	title: string
+	/**
+	 * Item type
+	 */
+	typeOfPart: PartShopType[]
+	/**
+	 * Platform type
+	 */
+	platform: PlatformType[]
+	/**
+	 * How many of these are left
+	 */
+	availableCount: number
+	/**
+	 * Item price number
+	 */
+	price: number
+	/**
+	 * Item description text
+	 */
+	condition: ItemCondition
+	/**
+	 * Image source url
+	 */
+	imageSrc?: string | string[]
+	/**
+	 * Item description text
+	 */
+	description?: string
+	/**
+	 * Item external URL
+	 */
+	externalUrl?: string
+	/**
+	 * Present this item at the top of the shop listings
+	 */
+	featured?: boolean
 }
 
 type PartShopType =
-    | PartType
-    | "Axle Block Attachment"
-    | "Battery"
-    | "Bolt"
-    | "Charger"
-    | "Complete Board"
-    | "Display"
-    | "Sensor"
+	| PartType
+	| "Axle Block Attachment"
+	| "Battery"
+	| "Bolt"
+	| "Charger"
+	| "Complete Board"
+	| "Display"
+	| "Sensor"
 
-type ItemCondition =
-    | "New"
-    | "Like New"
-    | "Used"
-    | "For Parts"
+type ItemCondition = "New" | "Like New" | "Used" | "For Parts"
 
 interface PartPendingData {
-    id: number
-    title: string
-    externalUrl: string
-    imageUrls: string[]
-    fabricationMethods: FabricationMethod[]
-    platformTypes: PlatformType[]
-    partTypes: PartType[]
-    createdAt: string
-    updatedAt: string
+	id: number
+	title: string
+	externalUrl: string
+	imageUrls: string[]
+	fabricationMethods: FabricationMethod[]
+	platformTypes: PlatformType[]
+	partTypes: PartType[]
+	createdAt: string
+	updatedAt: string
 }
 
 interface ResourcePendingData {
-    id: number
-    title: string
-    resourceTypes: ResourceType[]
-    externalUrl: string
-    appStoreLink?: string
-    playStoreLink?: string
-    description: string
-    createdAt: string
-    updatedAt: string
+	id: number
+	title: string
+	resourceTypes: ResourceType[]
+	externalUrl: string
+	appStoreLink?: string
+	playStoreLink?: string
+	description: string
+	createdAt: string
+	updatedAt: string
 }

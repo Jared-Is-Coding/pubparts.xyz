@@ -1,5 +1,19 @@
-import React, { useEffect, useState } from "react"
+import SiteFooter from "@components/SiteFooter"
+import SiteMetaData from "@components/SiteMetaData"
+import SiteNavbar from "@components/SiteNavbar"
+import TurnstileWidget from "@components/TurnstileWidget"
+import "@scss/pages/propose.scss"
+import {
+	FABRICATION_METHODS,
+	isAllowedImageUrl,
+	isAllowedPartUrl,
+	PART_TYPES,
+	PLATFORMS,
+	RESOURCE_TYPES,
+} from "@util/catalogConstants"
+import { DiscordInvite, DiscordThread } from "@util/siteVariables"
 import type { HeadFC, PageProps } from "gatsby"
+import React, { useEffect, useState } from "react"
 import { Alert, Badge, Button, Card, Col, Container, Form, Row, Spinner, Stack } from "react-bootstrap"
 import {
 	FaArrowLeft,
@@ -11,21 +25,6 @@ import {
 	FaPlus,
 	FaTrash,
 } from "react-icons/fa6"
-import SiteNavbar from "@components/SiteNavbar"
-import SiteFooter from "@components/SiteFooter"
-import SiteMetaData from "@components/SiteMetaData"
-import TurnstileWidget from "@components/TurnstileWidget"
-import {
-	ALLOWED_DOMAINS,
-	FABRICATION_METHODS,
-	isAllowedImageUrl,
-	isAllowedPartUrl,
-	PART_TYPES,
-	PLATFORMS,
-	RESOURCE_TYPES,
-} from "@util/catalogConstants"
-import { DiscordInvite, DiscordThread } from "@util/siteVariables"
-import "@scss/pages/propose.scss"
 
 export const Head: HeadFC = () => (
 	<>
@@ -449,7 +448,7 @@ const ProposePage: React.FC<PageProps> = () => {
 													</div>
 
 													<p className="card-text mb-3">
-														Submit an application, code repository, guide, spreadsheet,
+														Submit an application, github repository, guide, spreadsheet,
 														website, or trusted vendor with the community.
 													</p>
 												</Card.Body>

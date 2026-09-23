@@ -9,10 +9,9 @@ const resource = (resourceType: ResourceType) => {
 }
 
 export default allResources
-export const applicationsResources = resource("App")
-export const codeRepositoriesResources = resource("Github Repository")
-export const spreadsheetsResources = resource("Spreadsheet")
+export const collectionsResources = resource("Collections and Lists")
+export const githubRepositoriesResources = resource("Github Repository")
+export const guidesResources = resource("Guides")
+export const toolsResources = resource("Tools")
 export const vendorsResources = resource("Vendor")
-export const videoGuidesResources = resource("Video Guide")
 export const websitesResources = resource("Website")
-export const writtenGuidesResources = resource("Written Guide")

@@ -1,21 +1,18 @@
-import { type HeadFC, type PageProps } from "gatsby"
-import React from "react"
-import { Container, Row } from "react-bootstrap"
 import ResourceCard from "@components/ResourceCard"
 import ResourceListSearchbar from "@components/ResourceListSearchbar"
 import SiteFooter from "@components/SiteFooter"
 import SiteMetaData from "@components/SiteMetaData"
 import SiteNavbar from "@components/SiteNavbar"
 import "@scss/pages/resources.scss"
-import { writtenGuidesResources } from "@util/resourcesSynced"
+import { toolsResources } from "@util/resourcesSynced"
+import { type HeadFC, type PageProps } from "gatsby"
+import React from "react"
+import { Container, Row } from "react-bootstrap"
 
 export const Head: HeadFC = () => (
 	<>
 		<html lang="en" />
-		<SiteMetaData
-			title="Written Guides | Resources | PubParts.xyz"
-			description="Various resources for VESC builders"
-		/>
+		<SiteMetaData title="Tools | Resources | PubParts.xyz" description="Various resources for VESC builders" />
 	</>
 )
 
@@ -25,13 +22,13 @@ const Page: React.FC<PageProps> = () => {
 			<header>
 				<SiteNavbar />
 
-				<h1 className="flex-center">Guides</h1>
+				<h1 className="flex-center">Tools</h1>
 			</header>
 
 			<main className="page-resources">
 				<Container>
 					{/* Search area */}
-					<ResourceListSearchbar resourceList={writtenGuidesResources} />
+					<ResourceListSearchbar resourceList={toolsResources} />
 
 					{/* Search results headers */}
 					<h2 id="resourceListHeader" style={{ display: "block" }}>
@@ -43,7 +40,7 @@ const Page: React.FC<PageProps> = () => {
 
 					<Row>
 						{/* List resources */}
-						{!!writtenGuidesResources.length && writtenGuidesResources.map(ResourceCard)}
+						{!!toolsResources.length && toolsResources.map(ResourceCard)}
 					</Row>
 				</Container>
 			</main>

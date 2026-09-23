@@ -21,13 +21,12 @@ export default (item: ItemData | ResourceData, index: number) => {
 		else if (d.includes("VESC Electronics")) url = "/parts/electronics"
 		else if (d.includes("XR Classic")) url = "/parts/xrclassic"
 		else if (d.includes("XR")) url = "/parts/xr"
-		else if (d.includes("App")) url = "/resources/applications"
+		else if (d.includes("Tools") || d.includes("App")) url = "/resources/tools"
 		else if (d.includes("Github Repository")) url = "/resources/repositories"
-		else if (d.includes("Spreadsheet")) url = "/resources/spreadsheets"
+		else if (d.includes("Collections and Lists") || d.includes("Spreadsheet")) url = "/resources/collections"
 		else if (d.includes("Vendor")) url = "/resources/vendors"
-		else if (d.includes("Video Guide")) url = "/resources/videoguides"
+		else if (d.includes("Guide")) url = "/resources/guides"
 		else if (d.includes("Website")) url = "/resources/websites"
-		else if (d.includes("Written Guide")) url = "/resources/writtenguides"
 
 		return url + `?search=${encodeURIComponent(item.title)}`
 	}

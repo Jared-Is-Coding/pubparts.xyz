@@ -74,7 +74,7 @@ const emptyResourceDraft = (): ResourceDraft => ({
 	description: "",
 })
 
-const API_PROPOSE_PATHS = ["/api/propose", "/.netlify/functions/__api/propose"]
+const API_PROPOSE_PATHS = ["/api/propose", "/.netlify/functions/propose-js", "/.netlify/functions/propose"]
 
 const ProposePage: React.FC<PageProps> = () => {
 	const [selectedKind, setSelectedKind] = useState<SubmissionKind>(null)

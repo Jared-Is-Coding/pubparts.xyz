@@ -125,7 +125,7 @@ const RESOURCE_TYPES: ResourceType[] = [
 	"Website",
 ]
 const ITEM_CONDITIONS: ItemCondition[] = ["New", "Like New", "Used", "For Parts"]
-const API_PATHS = ["/api/admin-db", "/.netlify/functions/__api/admin-db"]
+const API_PATHS = ["/api/admin-db", "/.netlify/functions/admin-db-js", "/.netlify/functions/admin-db"]
 
 type AdminApiData = {
 	parts: AdminPart[]

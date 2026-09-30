@@ -1,8 +1,31 @@
 import type { GatsbyFunctionRequest, GatsbyFunctionResponse } from "gatsby"
 import { ItemCondition as PrismaItemCondition, Prisma, PrismaClient } from "@prisma/client"
+import http from "node:http"
 import { existsSync, readFileSync } from "node:fs"
 import { dirname, join, parse } from "node:path"
 import { syncPartsFromDatabase } from "../../scripts/partsSyncCore"
+
+// Safeguard against unhandled TypeError: Cannot read properties of undefined (reading 'removeListener')
+// in Node 24 runtime when serverless adapters mock IncomingMessage on a plain Stream.Readable without a socket.
+const originalIncomingMessageDestroy = (http.IncomingMessage.prototype as any)?._destroy
+if (typeof originalIncomingMessageDestroy === "function") {
+	;(http.IncomingMessage.prototype as any)._destroy = function (this: any, err: any, cb: any) {
+		if (!this.socket) {
+			this.socket = {
+				removeListener: () => {},
+				destroyed: true,
+			}
+		}
+
+		try {
+			return originalIncomingMessageDestroy.call(this, err, cb)
+		} catch {
+			if (typeof cb === "function") {
+				cb()
+			}
+		}
+	}
+}
 
 function loadSingleEnvFile(filePath: string): void {
 	const content = readFileSync(filePath, "utf8")
@@ -584,6 +607,16 @@ async function fetchAllData(): Promise<{
 }
 
 export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFunctionResponse): Promise<void> {
+	if (typeof (req as any).on === "function") {
+		;(req as any).on("error", () => {})
+	}
+	if (!(req as any).socket) {
+		;(req as any).socket = {
+			removeListener: () => {},
+			destroyed: true,
+		}
+	}
+
 	if (!assertDevOnly(res)) {
 		return
 	}

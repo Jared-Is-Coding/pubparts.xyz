@@ -19,6 +19,7 @@
         "start": "gatsby develop",
         "prebuild": "npm run check:node",
         "build": "gatsby build",
+        "postbuild": "tsx scripts/patchNetlifyFunctions.ts",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "typecheck": "tsc --noEmit",

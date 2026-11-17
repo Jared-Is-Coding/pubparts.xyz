@@ -92,21 +92,25 @@ function loadFunctionEnv(): void {
 	}
 }
 
-loadFunctionEnv()
+let prismaInstance: PrismaClient | null = null
 
-const databaseUrl = process.env.DATABASE_URL
-
-const prisma = new PrismaClient(
-	databaseUrl
-		? {
-				datasources: {
-					db: {
-						url: databaseUrl,
-					},
+function getPrisma(): PrismaClient {
+	if (!prismaInstance) {
+		loadFunctionEnv()
+		const databaseUrl = process.env.DATABASE_URL
+		if (!databaseUrl) {
+			throw new Error("DATABASE_URL is not configured in the server environment.")
+		}
+		prismaInstance = new PrismaClient({
+			datasources: {
+				db: {
+					url: databaseUrl,
 				},
-			}
-		: undefined,
-)
+			},
+		})
+	}
+	return prismaInstance
+}
 
 let tablesEnsured = false
 async function ensurePendingTables(): Promise<void> {
@@ -115,6 +119,7 @@ async function ensurePendingTables(): Promise<void> {
 	}
 
 	try {
+		const prisma = getPrisma()
 		await prisma.$executeRawUnsafe(`
             CREATE TABLE IF NOT EXISTS "parts_pending" (
                 "id" SERIAL PRIMARY KEY,
@@ -191,6 +196,50 @@ async function verifyTurnstileToken(
 	}
 }
 
+async function parseRequestBody(req: GatsbyFunctionRequest): Promise<any> {
+	if (req.body) {
+		if (typeof req.body === "string") {
+			try {
+				return JSON.parse(req.body)
+			} catch {
+				return null
+			}
+		}
+		return req.body
+	}
+
+	const netlifyEvent = (req as any).netlifyFunctionParams?.event
+	if (netlifyEvent?.body) {
+		try {
+			const raw = netlifyEvent.isBase64Encoded
+				? Buffer.from(netlifyEvent.body, "base64").toString("utf8")
+				: netlifyEvent.body
+			return typeof raw === "string" ? JSON.parse(raw) : raw
+		} catch {
+			return null
+		}
+	}
+
+	return new Promise((resolve) => {
+		let data = ""
+		if (typeof (req as any).on !== "function") {
+			resolve(null)
+			return
+		}
+		;(req as any).on("data", (chunk: any) => {
+			data += chunk
+		})
+		;(req as any).on("end", () => {
+			try {
+				resolve(data ? JSON.parse(data) : null)
+			} catch {
+				resolve(null)
+			}
+		})
+		;(req as any).on("error", () => resolve(null))
+	})
+}
+
 export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFunctionResponse): Promise<void> {
 	if (typeof (req as any).on === "function") {
 		;(req as any).on("error", () => {})
@@ -203,6 +252,7 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
 	}
 
 	if (req.method === "GET") {
+		loadFunctionEnv()
 		res.status(200).json({
 			turnstileSiteKey: process.env.TURNSTILE_SITE_KEY?.trim() || "",
 		})
@@ -214,164 +264,172 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
 		return
 	}
 
-	await ensurePendingTables()
-
-	let body: any
 	try {
-		body = typeof req.body === "string" ? JSON.parse(req.body) : req.body
-	} catch {
-		res.status(400).json({ error: "Invalid JSON body." })
-		return
-	}
+		await ensurePendingTables()
 
-	const { type, turnstileToken, item } = body || {}
-
-	if (!type || !item) {
-		res.status(400).json({ error: "Missing submission type or item data." })
-		return
-	}
-
-	// Verify Turnstile
-	const clientIp =
-		(req.headers["cf-connecting-ip"] as string)?.trim() ||
-		(req.headers["x-forwarded-for"] as string)?.split(",")[0]?.trim()
-	const turnstileResult = await verifyTurnstileToken(turnstileToken, clientIp)
-	if (!turnstileResult.ok) {
-		res.status(400).json({ error: turnstileResult.message || "Turnstile verification failed." })
-		return
-	}
-
-	if (type === "part") {
-		const title = (item.title || "").trim()
-		const externalUrl = (item.externalUrl || "").trim()
-		const imageUrls = (Array.isArray(item.imageUrls) ? item.imageUrls : [item.imageUrls])
-			.map((url: unknown) => (typeof url === "string" ? url.trim() : ""))
-			.filter(Boolean)
-		const fabricationMethods = Array.isArray(item.fabricationMethods) ? item.fabricationMethods : []
-		const platformTypes = Array.isArray(item.platformTypes) ? item.platformTypes : []
-		const partTypes = Array.isArray(item.partTypes) ? item.partTypes : []
-
-		if (!title) {
-			res.status(400).json({ error: "Part title is required." })
+		const body = await parseRequestBody(req)
+		if (!body || typeof body !== "object") {
+			res.status(400).json({ error: "Invalid JSON body." })
 			return
 		}
 
-		if (!externalUrl) {
-			res.status(400).json({ error: "Part external URL is required." })
+		const { type, turnstileToken, item } = body || {}
+
+		if (!type || !item) {
+			res.status(400).json({ error: "Missing submission type or item data." })
 			return
 		}
 
-		if (!isAllowedPartUrl(externalUrl)) {
-			res.status(400).json({
-				error: "External URL must be from an allowed repository (MakerWorld, Printables, Thingiverse, Cults, MyMiniFactory, Sketchfab, CGTrader, TurboSquid, Fab, Yeggi, STLFinder, or Thangs).",
-			})
+		// Verify Turnstile
+		const clientIp =
+			(req.headers["cf-connecting-ip"] as string)?.trim() ||
+			(req.headers["x-forwarded-for"] as string)?.split(",")[0]?.trim()
+		const turnstileResult = await verifyTurnstileToken(turnstileToken, clientIp)
+		if (!turnstileResult.ok) {
+			res.status(400).json({ error: turnstileResult.message || "Turnstile verification failed." })
 			return
 		}
 
-		if (!imageUrls.length) {
-			res.status(400).json({ error: "At least one image URL is required." })
-			return
-		}
+		const prisma = getPrisma()
 
-		for (const imgUrl of imageUrls) {
-			if (!isAllowedImageUrl(imgUrl)) {
+		if (type === "part") {
+			const title = (item.title || "").trim()
+			const externalUrl = (item.externalUrl || "").trim()
+			const imageUrls = (Array.isArray(item.imageUrls) ? item.imageUrls : [item.imageUrls])
+				.map((url: unknown) => (typeof url === "string" ? url.trim() : ""))
+				.filter(Boolean)
+			const fabricationMethods = Array.isArray(item.fabricationMethods) ? item.fabricationMethods : []
+			const platformTypes = Array.isArray(item.platformTypes) ? item.platformTypes : []
+			const partTypes = Array.isArray(item.partTypes) ? item.partTypes : []
+
+			if (!title) {
+				res.status(400).json({ error: "Part title is required." })
+				return
+			}
+
+			if (!externalUrl) {
+				res.status(400).json({ error: "Part external URL is required." })
+				return
+			}
+
+			if (!isAllowedPartUrl(externalUrl)) {
 				res.status(400).json({
-					error: `Image URL "${imgUrl}" must be hosted on an allowed repository domain.`,
+					error: "External URL must be from an allowed repository (MakerWorld, Printables, Thingiverse, Cults, MyMiniFactory, Sketchfab, CGTrader, TurboSquid, Fab, Yeggi, STLFinder, or Thangs).",
 				})
+				return
+			}
+
+			if (!imageUrls.length) {
+				res.status(400).json({ error: "At least one image URL is required." })
+				return
+			}
+
+			for (const imgUrl of imageUrls) {
+				if (!isAllowedImageUrl(imgUrl)) {
+					res.status(400).json({
+						error: `Image URL "${imgUrl}" must be hosted on an allowed repository domain.`,
+					})
+					return
+				}
+			}
+
+			if (!fabricationMethods.length) {
+				res.status(400).json({ error: "At least one fabrication method must be selected." })
+				return
+			}
+
+			if (!platformTypes.length) {
+				res.status(400).json({ error: "At least one platform type must be selected." })
+				return
+			}
+
+			if (!partTypes.length) {
+				res.status(400).json({ error: "At least one part type must be selected." })
+				return
+			}
+
+			try {
+				await (prisma as any).partPending.create({
+					data: {
+						title,
+						externalUrl,
+						imageUrls,
+						fabricationMethods,
+						platformTypes,
+						partTypes,
+					},
+				})
+
+				res.status(200).json({
+					ok: true,
+					message: "Part submission received! Thank you for contributing.",
+				})
+				return
+			} catch (dbError: any) {
+				console.error("Failed to insert pending part:", dbError)
+				const detail = dbError?.message || String(dbError)
+				res.status(500).json({ error: `Failed to save submission: ${detail}` })
 				return
 			}
 		}
 
-		if (!fabricationMethods.length) {
-			res.status(400).json({ error: "At least one fabrication method must be selected." })
-			return
+		if (type === "resource") {
+			const title = (item.title || "").trim()
+			const resourceTypes = Array.isArray(item.resourceTypes) ? item.resourceTypes : []
+			const externalUrl = (item.externalUrl || "").trim()
+			const appStoreLink = (item.appStoreLink || "").trim() || null
+			const playStoreLink = (item.playStoreLink || "").trim() || null
+			const description = (item.description || "").trim()
+
+			if (!title) {
+				res.status(400).json({ error: "Resource title is required." })
+				return
+			}
+
+			if (!resourceTypes.length) {
+				res.status(400).json({ error: "At least one resource type must be selected." })
+				return
+			}
+
+			if (!externalUrl) {
+				res.status(400).json({ error: "External URL is required." })
+				return
+			}
+
+			if (!description) {
+				res.status(400).json({ error: "Description is required." })
+				return
+			}
+
+			try {
+				await (prisma as any).resourcePending.create({
+					data: {
+						title,
+						resourceTypes,
+						externalUrl,
+						appStoreLink,
+						playStoreLink,
+						description,
+					},
+				})
+
+				res.status(200).json({
+					ok: true,
+					message: "Resource submission received! Thank you for contributing.",
+				})
+				return
+			} catch (dbError: any) {
+				console.error("Failed to insert pending resource:", dbError)
+				const detail = dbError?.message || String(dbError)
+				res.status(500).json({ error: `Failed to save submission: ${detail}` })
+				return
+			}
 		}
 
-		if (!platformTypes.length) {
-			res.status(400).json({ error: "At least one platform type must be selected." })
-			return
-		}
-
-		if (!partTypes.length) {
-			res.status(400).json({ error: "At least one part type must be selected." })
-			return
-		}
-
-		try {
-			await (prisma as any).partPending.create({
-				data: {
-					title,
-					externalUrl,
-					imageUrls,
-					fabricationMethods,
-					platformTypes,
-					partTypes,
-				},
-			})
-
-			res.status(200).json({
-				ok: true,
-				message: "Part submission received! Thank you for contributing.",
-			})
-			return
-		} catch (dbError) {
-			console.error("Failed to insert pending part:", dbError)
-			res.status(500).json({ error: "Failed to save submission. Please try again." })
-			return
-		}
+		res.status(400).json({ error: `Unknown submission type "${type}".` })
+	} catch (topLevelError: any) {
+		console.error("Unhandled error in /api/propose:", topLevelError)
+		const message = topLevelError?.message || String(topLevelError)
+		res.status(500).json({ error: `Internal server error: ${message}` })
 	}
-
-	if (type === "resource") {
-		const title = (item.title || "").trim()
-		const resourceTypes = Array.isArray(item.resourceTypes) ? item.resourceTypes : []
-		const externalUrl = (item.externalUrl || "").trim()
-		const appStoreLink = (item.appStoreLink || "").trim() || null
-		const playStoreLink = (item.playStoreLink || "").trim() || null
-		const description = (item.description || "").trim()
-
-		if (!title) {
-			res.status(400).json({ error: "Resource title is required." })
-			return
-		}
-
-		if (!resourceTypes.length) {
-			res.status(400).json({ error: "At least one resource type must be selected." })
-			return
-		}
-
-		if (!externalUrl) {
-			res.status(400).json({ error: "External URL is required." })
-			return
-		}
-
-		if (!description) {
-			res.status(400).json({ error: "Description is required." })
-			return
-		}
-
-		try {
-			await (prisma as any).resourcePending.create({
-				data: {
-					title,
-					resourceTypes,
-					externalUrl,
-					appStoreLink,
-					playStoreLink,
-					description,
-				},
-			})
-
-			res.status(200).json({
-				ok: true,
-				message: "Resource submission received! Thank you for contributing.",
-			})
-			return
-		} catch (dbError) {
-			console.error("Failed to insert pending resource:", dbError)
-			res.status(500).json({ error: "Failed to save submission. Please try again." })
-			return
-		}
-	}
-
-	res.status(400).json({ error: `Unknown submission type "${type}".` })
 }

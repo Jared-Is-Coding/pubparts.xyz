@@ -74,7 +74,12 @@ const emptyResourceDraft = (): ResourceDraft => ({
 	description: "",
 })
 
-const API_PROPOSE_PATHS = ["/api/propose", "/.netlify/functions/propose-js", "/.netlify/functions/propose"]
+const API_PROPOSE_PATHS = [
+	"/api/propose",
+	"/api/propose/",
+	"/.netlify/functions/propose-js",
+	"/.netlify/functions/propose",
+]
 
 const ProposePage: React.FC<PageProps> = () => {
 	const [selectedKind, setSelectedKind] = useState<SubmissionKind>(null)
@@ -176,19 +181,48 @@ const ProposePage: React.FC<PageProps> = () => {
 					body: JSON.stringify(bodyPayload),
 				})
 
-				const data = await res.json().catch(() => ({}))
+				const rawText = await res.text()
+				let data: { error?: string } = {}
+				try {
+					data = rawText ? (JSON.parse(rawText) as { error?: string }) : {}
+				} catch {
+					if (res.status === 404 || rawText.startsWith("<!DOCTYPE") || rawText.startsWith("<html")) {
+						if (!lastErr) {
+							lastErr = new Error(`Server responded with status ${res.status}`)
+						}
+						continue
+					}
+				}
+
 				if (!res.ok) {
-					throw new Error(data.error || `Server responded with status ${res.status}`)
+					if (res.status === 404 && !data.error) {
+						if (!lastErr) {
+							lastErr = new Error("Server responded with status 404")
+						}
+						continue
+					}
+					lastErr = new Error(data.error || `Server responded with status ${res.status}`)
+					break
 				}
 
 				setSubmitSuccess(true)
 				setSubmitting(false)
 				return
 			} catch (err) {
-				lastErr = err instanceof Error ? err : new Error("Failed to submit")
+				if (!lastErr) {
+					lastErr = err instanceof Error ? err : new Error("Failed to submit")
+				}
 			}
 		}
 
+		if (turnstileSiteKey) {
+			setTurnstileToken("")
+			try {
+				window.turnstile?.reset()
+			} catch {
+				// Ignore reset errors
+			}
+		}
 		setErrorMessage(lastErr?.message || "Failed to submit. Please try again.")
 		setSubmitting(false)
 	}

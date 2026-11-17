@@ -2,6 +2,8 @@ import type { GatsbyConfig } from "gatsby"
 import netlifyAdapter from "gatsby-adapter-netlify"
 import "dotenv/config"
 
+process.env.GATSBY_PRECOMPILE_DEVELOP_FUNCTIONS = "true"
+
 const config: GatsbyConfig = {
 	adapter: netlifyAdapter(),
 	siteMetadata: {

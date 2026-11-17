@@ -178,6 +178,7 @@ async function verifyTurnstileToken(
 
 		const data = (await response.json()) as { success: boolean; "error-codes"?: string[] }
 		if (!data.success) {
+			console.warn("Turnstile siteverify failed:", data["error-codes"])
 			return { ok: false, message: "Turnstile verification failed. Please try again." }
 		}
 
@@ -231,7 +232,9 @@ export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFun
 	}
 
 	// Verify Turnstile
-	const clientIp = (req.headers["x-forwarded-for"] as string)?.split(",")[0]?.trim() || req.socket?.remoteAddress
+	const clientIp =
+		(req.headers["cf-connecting-ip"] as string)?.trim() ||
+		(req.headers["x-forwarded-for"] as string)?.split(",")[0]?.trim()
 	const turnstileResult = await verifyTurnstileToken(turnstileToken, clientIp)
 	if (!turnstileResult.ok) {
 		res.status(400).json({ error: turnstileResult.message || "Turnstile verification failed." })

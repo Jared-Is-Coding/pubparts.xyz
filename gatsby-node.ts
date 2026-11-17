@@ -44,6 +44,17 @@ exports.createPages = ({ actions }: CreatePagesArgs) => {
 			redirectInBrowser: true,
 		})
 	}
+
+	createRedirect({
+		fromPath: "/api/propose",
+		toPath: "/.netlify/functions/propose-js",
+		statusCode: 200,
+	})
+	createRedirect({
+		fromPath: "/api/admin-db",
+		toPath: "/.netlify/functions/admin-db-js",
+		statusCode: 200,
+	})
 }
 
 exports.onCreateWebpackConfig = ({ actions, plugins }: CreateWebpackConfigArgs) => {

@@ -36,6 +36,15 @@ export default function TurnstileWidget({
 }: TurnstileWidgetProps): React.JSX.Element | null {
 	const containerRef = useRef<HTMLDivElement>(null)
 	const widgetIdRef = useRef<string | null>(null)
+	const onSuccessRef = useRef(onSuccess)
+	const onExpireRef = useRef(onExpire)
+	const onErrorRef = useRef(onError)
+
+	useEffect(() => {
+		onSuccessRef.current = onSuccess
+		onExpireRef.current = onExpire
+		onErrorRef.current = onError
+	}, [onSuccess, onExpire, onError])
 
 	useEffect(() => {
 		if (!siteKey || !containerRef.current) {
@@ -65,47 +74,48 @@ export default function TurnstileWidget({
 					theme,
 					callback: (token: string) => {
 						if (!isCancelled) {
-							onSuccess(token)
+							onSuccessRef.current(token)
 						}
 					},
 					"expired-callback": () => {
-						if (!isCancelled && onExpire) {
-							onExpire()
+						if (!isCancelled && onExpireRef.current) {
+							onExpireRef.current()
 						}
 					},
 					"error-callback": (err?: unknown) => {
-						if (!isCancelled && onError) {
-							onError(err)
+						if (!isCancelled && onErrorRef.current) {
+							onErrorRef.current(err)
 						}
 					},
 				})
 			} catch (err) {
-				if (onError) {
-					onError(err)
+				if (onErrorRef.current) {
+					onErrorRef.current(err)
 				}
 			}
 		}
 
+		let scriptEl: HTMLScriptElement | null = null
+
 		if (window.turnstile) {
 			renderWidget()
 		} else {
-			const existingScript = document.querySelector<HTMLScriptElement>(
-				'script[src*="challenges.cloudflare.com/turnstile"]',
-			)
-			if (existingScript) {
-				existingScript.addEventListener("load", renderWidget)
-			} else {
-				const script = document.createElement("script")
-				script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
-				script.async = true
-				script.defer = true
-				script.onload = renderWidget
-				document.head.appendChild(script)
+			scriptEl = document.querySelector<HTMLScriptElement>('script[src*="challenges.cloudflare.com/turnstile"]')
+			if (!scriptEl) {
+				scriptEl = document.createElement("script")
+				scriptEl.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+				scriptEl.async = true
+				scriptEl.defer = true
+				document.head.appendChild(scriptEl)
 			}
+			scriptEl.addEventListener("load", renderWidget)
 		}
 
 		return () => {
 			isCancelled = true
+			if (scriptEl) {
+				scriptEl.removeEventListener("load", renderWidget)
+			}
 			if (widgetIdRef.current && window.turnstile) {
 				try {
 					window.turnstile.remove(widgetIdRef.current)
@@ -115,7 +125,7 @@ export default function TurnstileWidget({
 				widgetIdRef.current = null
 			}
 		}
-	}, [siteKey, theme, onSuccess, onExpire, onError])
+	}, [siteKey, theme])
 
 	if (!siteKey) {
 		return null
